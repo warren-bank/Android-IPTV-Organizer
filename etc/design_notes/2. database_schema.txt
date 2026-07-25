@@ -1,0 +1,125 @@
+-------------------------------------------------------------------------------- model summary
+
+m3u_channels
+============
+(required) name
+(required) media_url
+(optional) tvg_id
+(optional) tvg_name
+
+xmltv_channels
+==============
+(required) id
+(required) name
+(optional) icon_url
+
+xmltv_programs
+==============
+(required) channel_id
+(required) start_timestamp_ms
+(optional) stop_timestamp_ms
+(required) title
+(optional) description
+
+----------------------------------------
+
+m3u_channels_mapping_name_to_id
+===============================
+(required) name
+(required) new_tvg_id
+
+m3u_channels_mapping_id_to_id
+=============================
+(required) old_tvg_id
+(required) new_tvg_id
+
+m3u_channels_media_url_static_values
+====================================
+(required) value
+
+notes:
+======
+  * mapping tables will be serialized for import/export dialogs in the format: one record per line, each line contains: "${target_value}\s+=>\s+${new_tvg_id}"
+  * url static values will be serialized for import/export dialogs in the format: one record per line
+
+----------------------------------------
+
+m3u_channels_filter_whitelist_names
+===================================
+(required) name
+
+m3u_channels_filter_whitelist_ids
+=================================
+(required) tvg_id
+
+notes:
+======
+  * whitelist values will be serialized for import/export dialogs in the format: one record per line
+  * whitelists are applied AFTER mapping tables are applied
+    - micro-optimization:
+      1. apply: whitelist_names
+      2. remap: tvg_id values
+      3. apply: whitelist_ids
+      4. apply: media_url_static_values
+      5. delete: all old records in m3u_channels
+      6. save:   all new records to m3u_channels
+    - where:
+      * (5) and (6) are a single atomic transaction
+
+-------------------------------------------------------------------------------- SQL
+
+CREATE TABLE IF NOT EXISTS application (
+    version INTEGER NOT NULL PRIMARY KEY
+);
+
+INSERT INTO application (version) VALUES (1);
+
+CREATE TABLE IF NOT EXISTS m3u_channels (
+    position             INTEGER NOT NULL PRIMARY KEY,
+    name                 VARCHAR NOT NULL,
+    media_url            VARCHAR NOT NULL,
+    tvg_id               VARCHAR,
+    tvg_name             VARCHAR,
+
+    UNIQUE (media_url)
+);
+
+CREATE TABLE IF NOT EXISTS xmltv_channels (
+    id                   VARCHAR NOT NULL PRIMARY KEY,
+    name                 VARCHAR NOT NULL,
+    icon_url             VARCHAR
+);
+
+CREATE TABLE IF NOT EXISTS xmltv_programs (
+    channel_id           VARCHAR NOT NULL,
+    start_timestamp_ms   INTEGER NOT NULL,
+    stop_timestamp_ms    INTEGER,
+    title                VARCHAR NOT NULL,
+    description          VARCHAR,
+
+    UNIQUE (channel_id, start_timestamp_ms),
+    FOREIGN KEY (channel_id) REFERENCES xmltv_channels (id)
+);
+
+CREATE TABLE IF NOT EXISTS m3u_channels_mapping_name_to_id (
+    name                 VARCHAR NOT NULL PRIMARY KEY,
+    new_tvg_id           VARCHAR NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS m3u_channels_mapping_id_to_id (
+    old_tvg_id           VARCHAR NOT NULL PRIMARY KEY,
+    new_tvg_id           VARCHAR NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS m3u_channels_media_url_static_values (
+    position             INTEGER NOT NULL PRIMARY KEY,
+    value                VARCHAR NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS m3u_channels_filter_whitelist_names (
+    name                 VARCHAR NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE IF NOT EXISTS m3u_channels_filter_whitelist_ids (
+    tvg_id               VARCHAR NOT NULL PRIMARY KEY
+);

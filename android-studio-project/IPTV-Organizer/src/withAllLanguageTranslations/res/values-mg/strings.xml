@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Mpikarakara</string>
+  <string name="activity_channels">M3U Fantsona</string>
+  <string name="activity_epg">EPG Fantsona</string>
+  <string name="cancel">Fanafoanana</string>
+  <string name="enter_url">Midira URL</string>
+  <string name="exit">Mivoaka</string>
+  <string name="export_file">Exporta ny rakitra</string>
+  <string name="import_file">Ampidiro ny rakitra</string>
+  <string name="import_generic">Fanafarana</string>
+  <string name="save">Tehirizo</string>
+  <string name="search">Fikarohana</string>
+  <string name="settings">Fikirana</string>
+  <string name="toast_error_no_app_found">Tsy hita ny mpilalao haino aman-jery ivelany</string>
+  <string name="channels_menuitem_import_m3u_url">Fanafarana M3U Lisitry ny hira URL</string>
+  <string name="channels_menuitem_import_m3u_file">Fanafarana M3U Rakitra lisitry ny hira</string>
+  <string name="channels_menuitem_sort_sequential">Alaharo araka ny filaharana</string>
+  <string name="channels_menuitem_sort_alphabetic">Alaharo araka ny abidy</string>
+  <string name="epg_menuitem_import_xmltv_url">Fanafarana XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Fanafarana XMLTV EPG Rakitra</string>
+  <string name="pref_default_m3u_url_title">Araka ny mahazatra M3U Lisitry ny hira URL</string>
+  <string name="pref_default_m3u_url_summary">Sanda voalohany ao \"Fanafarana M3U Lisitry ny hira URL\" resadresaka.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Mampifandray ny anaran\'ny fantsona amin\'ny fantsona. ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Sanda iray isaky ny andalana. Endrika: \"[anarana na tvg-name] =\> [vaovao tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Sarintany avy amin\'ny fantsona ID hanatontosa ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Sanda iray isaky ny andalana. Endrika: \"[Taloha tvg-id] =\> [vaovao tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Sivana araka ny anaran\'ny fantsona ao amin\'ny lisitra fotsy</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sanda iray isaky ny andalana. Endrika: \"[anarana na tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Sivana araka ny fantsona ID Lisitra fotsy</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Sanda iray isaky ny andalana. Endrika: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Fampitam-baovao URL Sanda kofehy tsy miova</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Sanda iray isaky ny andalana.</string>
+  <string name="pref_default_xmltv_url_title">Araka ny mahazatra XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Sanda voalohany ao \"Fanafarana XMLTV EPG URL\" resadresaka.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Ampiharo ny sivana fampidirana</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Fantsona fampidirana hita ao amin\'ny M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Ampidiro ny fantsona rehetra</string>
+</resources>

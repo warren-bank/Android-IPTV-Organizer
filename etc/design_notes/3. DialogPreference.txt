@@ -1,0 +1,170 @@
+required features:
+==================
+1. display a large multi-line EditText field
+2. save to DB, rather than SharedPreferences
+3. more than 2 buttons
+   * ideally:
+     1. Import File
+     2. Import URL
+     3. Export File
+     4. Save
+
+strategy that is easiest to implement:
+======================================
+1. set XML attributes to <EditTextPreference> tag, which customizes display of the EditText widget
+   - docs:
+      https://developer.android.com/reference/android/widget/EditText#xml-attributes
+      https://developer.android.com/reference/android/widget/TextView#xml-attributes
+          android:inputType          ("1|51|20001|80001") // text, textLongMessage, textMultiLine, textNoSuggestions
+          android:minLines
+          android:maxLines
+          android:lines
+          android:lineBreakStyle     (0 = none)
+          android:lineBreakWordStyle (0 = none)
+          android:autoLink           (0 = none)
+          android:linksClickable     (false)
+          android:singleLine         (false)
+          android:scrollHorizontally (true)
+          android:textSize           ("10sp")
+
+2. editTextPreference.setPreferenceDataStore(new PreferenceDataStore() {
+      @Override
+      public void putString(String key, @Nullable String value) {
+          // Save the value to DB
+      }
+
+      @Override
+      public String getString(String key, @Nullable String defValue) {
+          // Retrieve the value from DB
+      }
+   })
+
+3. extend EditTextPreference to enable use of the NeutralButton
+   - where:
+     * ThreeButtonEditTextPreference > EditTextPreference > DialogPreference > Preference
+   - docs:
+       https://developer.android.com/reference/android/app/AlertDialog.Builder#setNeutralButton(java.lang.CharSequence,%20android.content.DialogInterface.OnClickListener)
+   - pseudo code:
+
+public class NeutralButtonEditTextPreference extends EditTextPreference {
+
+    private CharSequence mNeutralButtonText;
+
+    public NeutralButtonEditTextPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+    }
+
+    public void setNeutralButtonText(CharSequence neutralButtonText) {
+        mNeutralButtonText = neutralButtonText;
+    }
+    public void setNeutralButtonText(@StringRes int neutralButtonTextResId) {
+        setNeutralButtonText(getContext().getString(neutralButtonTextResId));
+    }
+    public CharSequence getNeutralButtonText() {
+        return mNeutralButtonText;
+    }
+
+    @Override
+    protected void onPrepareDialogBuilder(AlertDialog.Builder builder) {
+        super.onPrepareDialogBuilder(builder);
+
+        if (!TextUtils.isEmpty(mNeutralButtonText)) {
+            builder.setNeutralButton(mNeutralButtonText, this);
+        }
+    }
+
+    @Override
+    public void onClick(DialogInterface dialog, int which) {
+        super.onClick(dialog, which);
+
+        switch(which) {
+            case DialogInterface.BUTTON_POSITIVE: {
+                // use default behavior:
+                // 1. DialogPreference.onClick() sets private: mWhichButtonClicked = which;
+                // 2. DialogPreference.onDismiss calls: onDialogClosed(mWhichButtonClicked == DialogInterface.BUTTON_POSITIVE);
+                // 3. EditTextPreference.onDialogClosed() calls: setText(text);
+                // 4. EditTextPreference.setText() calls: persistString(text);
+                // 5. Preference.persistString() calls: dataStore.putString(mKey, value);
+                // 6.   => Save the value to DB
+            }
+            break;
+            case DialogInterface.BUTTON_NEUTRAL: {
+                // Import File
+            }
+            break;
+            case DialogInterface.BUTTON_NEGATIVE: {
+                // Export File
+            }
+            break;
+        }
+    }
+}
+
+   - notes:
+     * the value of the XML attribute:
+          <NeutralButtonEditTextPreference android:key="" />
+       is:
+          1. always accessible via:
+                Preference.getKey()
+          2. passed to all methods of the interface:
+                PreferenceDataStore
+   - usage:
+     * new PreferenceDataStore() {
+          @Override
+          public void putString(String key, @Nullable String value) {
+            switch(key) {
+                case "m3u_channels_mapping_name_to_id": {
+                    Map<String, String> data = DbUtils.decodeMap(getText());
+                    DbUtils.getDb().saveChannelNameMappings(data);
+                }
+                break;
+                case "m3u_channels_mapping_id_to_id": {
+                    Map<String, String> data = DbUtils.decodeMap(getText());
+                    DbUtils.getDb().saveChannelIdMappings(data);
+                }
+                break;
+                case "m3u_channels_media_url_static_values": {
+                    List<String> data = DbUtils.decodeList(getText());
+                    DbUtils.getDb().saveChannelUrlStaticValues(data);
+                }
+                break;
+                case "m3u_channels_filter_whitelist_names": {
+                    List<String> data = DbUtils.decodeList(getText());
+                    DbUtils.getDb().saveChannelNameFilterWhitelist(data);
+                }
+                break;
+                case "m3u_channels_filter_whitelist_ids": {
+                    List<String> data = DbUtils.decodeList(getText());
+                    DbUtils.getDb().saveChannelIdFilterWhitelist(data);
+                }
+                break;
+            }
+          }
+
+          @Override
+          public String getString(String key, @Nullable String defValue) {
+            switch(key) {
+                case "m3u_channels_mapping_name_to_id": {
+                    Map<String, String> data = DbUtils.getDb().getChannelNameMappings();
+                    return DbUtils.encodeMap(data);
+                }
+                case "m3u_channels_mapping_id_to_id": {
+                    Map<String, String> data = DbUtils.getDb().getChannelIdMappings();
+                    return DbUtils.encodeMap(data);
+                }
+                case "m3u_channels_media_url_static_values": {
+                    List<String> data = DbUtils.getDb().getChannelUrlStaticValues();
+                    return DbUtils.encodeList(data);
+                }
+                case "m3u_channels_filter_whitelist_names": {
+                    List<String> data = DbUtils.getDb().getChannelNameFilterWhitelist();
+                    return DbUtils.encodeList(data);
+                }
+                case "m3u_channels_filter_whitelist_ids": {
+                    List<String> data = DbUtils.getDb().getChannelIdFilterWhitelist();
+                    return DbUtils.encodeList(data);
+                }
+            }
+            return defValue;
+          }
+       }

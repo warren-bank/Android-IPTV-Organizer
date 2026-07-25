@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- label: Application -->
+  <string name="app_name">IPTV Organizer</string>
+
+  <!-- label: Activities -->
+  <string name="activity_channels">M3U Channels</string>
+  <string name="activity_epg">EPG Channels</string>
+
+  <!-- common -->
+  <string name="cancel">Cancel</string>
+  <string name="enter_url">Enter URL</string>
+  <string name="exit">Exit</string>
+  <string name="export_file">Export File</string>
+  <string name="import_file">Import File</string>
+  <string name="import_generic">Import</string>
+  <string name="save">Save</string>
+  <string name="search">Search</string>
+  <string name="settings">Settings</string>
+
+  <!-- common: Toasts -->
+  <string name="toast_error_no_app_found">External media player not found</string>
+
+  <!-- ChannelsActivity: menu items -->
+  <string name="channels_menuitem_epg">@string/activity_epg</string>
+  <string name="channels_menuitem_import_m3u_url">Import M3U Playlist URL</string>
+  <string name="channels_menuitem_import_m3u_file">Import M3U Playlist File</string>
+  <string name="channels_menuitem_search">@string/search</string>
+  <string name="channels_menuitem_sort_sequential">Sort Sequentially</string>
+  <string name="channels_menuitem_sort_alphabetic">Sort Alphabetic</string>
+  <string name="channels_menuitem_settings">@string/settings</string>
+  <string name="channels_menuitem_exit">@string/exit</string>
+
+  <!-- ChannelsActivity [menu item dialog]: Import M3U Playlist URL -->
+  <string name="channels_dialog_import_m3u_url_title">@string/enter_url</string>
+  <string name="channels_dialog_import_m3u_url_button_positive">@string/import_generic</string>
+  <string name="channels_dialog_import_m3u_url_button_negative">@string/cancel</string>
+
+  <!-- EpgActivity: menu items -->
+  <string name="epg_menuitem_channels">@string/activity_channels</string>
+  <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG File</string>
+  <string name="epg_menuitem_search">@string/search</string>
+  <string name="epg_menuitem_settings">@string/settings</string>
+  <string name="epg_menuitem_exit">@string/exit</string>
+
+  <!-- EpgActivity [menu item dialog]: Import XMLTV EPG URL -->
+  <string name="epg_dialog_import_xmltv_url_title">@string/enter_url</string>
+  <string name="epg_dialog_import_xmltv_url_button_positive">@string/import_generic</string>
+  <string name="epg_dialog_import_xmltv_url_button_negative">@string/cancel</string>
+
+  <!-- SettingsActivity: PreferenceCategory titles -->
+  <string name="pref_category_m3u_channels">@string/activity_channels</string>
+  <string name="pref_category_epg_channels">@string/activity_epg</string>
+
+  <!-- SettingsActivity: DbEditTextPreference button labels -->
+  <string name="dbedittextpreference_buttontext_negative">@string/import_file</string>
+  <string name="dbedittextpreference_buttontext_neutral">@string/export_file</string>
+  <string name="dbedittextpreference_buttontext_positive">@string/save</string>
+
+  <!-- SettingsActivity [M3U Channels]: Default M3U Playlist URL -->
+  <string translatable="false" name="pref_default_m3u_url_key">pref_default_m3u_url</string>
+  <string name="pref_default_m3u_url_title">Default M3U Playlist URL</string>
+  <string name="pref_default_m3u_url_summary">Initial value in \"Import M3U Playlist URL\" dialog.</string>
+  <string translatable="false" name="pref_default_m3u_url_hint">https://example.com/playlist.m3u</string>
+  <string translatable="false" name="pref_default_m3u_url_default"></string>
+
+  <!-- SettingsActivity [M3U Channels]: Map from channel name to channel ID -->
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Map from channel name to channel ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">One value per line. Format: \"[name or tvg-name] =\> [new tvg-id]\"</string>
+
+  <!-- SettingsActivity [M3U Channels]: Map from channel ID to channel ID -->
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Map from channel ID to channel ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">One value per line. Format: \"[old tvg-id] =\> [new tvg-id]\"</string>
+
+  <!-- SettingsActivity [M3U Channels]: Filter by channel name whitelist -->
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filter by channel name whitelist</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">One value per line. Format: \"[name or tvg-name]\"</string>
+
+  <!-- SettingsActivity [M3U Channels]: Filter by channel ID whitelist -->
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filter by channel ID whitelist</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">One value per line. Format: \"[tvg-id]\"</string>
+
+  <!-- SettingsActivity [M3U Channels]: Media URL static string values -->
+  <string name="pref_m3u_channels_media_url_static_values_title">Media URL static string values</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">One value per line.</string>
+
+  <!-- SettingsActivity [EPG Channels]: Default XMLTV EPG URL -->
+  <string translatable="false" name="pref_default_xmltv_url_key">pref_default_xmltv_url</string>
+  <string name="pref_default_xmltv_url_title">Default XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Initial value in \"Import XMLTV EPG URL\" dialog.</string>
+  <string translatable="false" name="pref_default_xmltv_url_hint">https://example.com/epg.xmltv</string>
+  <string translatable="false" name="pref_default_xmltv_url_default"></string>
+
+  <!-- SettingsActivity [EPG Channels]: Apply Import Filter -->
+  <string translatable="false" name="pref_apply_import_filter_xmltv_channels_key">pref_apply_import_filter_xmltv_channels</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Apply Import Filter</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Import channels found in M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Import all channels</string>
+  <string translatable="false" name="pref_apply_import_filter_xmltv_channels_default">true</string>
+</resources>

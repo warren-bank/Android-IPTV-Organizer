@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Aozour</string>
+  <string name="activity_channels">M3U Kanolioù</string>
+  <string name="activity_epg">EPG Kanolioù</string>
+  <string name="cancel">Riklañ</string>
+  <string name="enter_url">Mont e-barzh URL</string>
+  <string name="exit">Emañ ar pajenn-mañ o paouez bezañ adwelet.</string>
+  <string name="export_file">Ezhornata ar restr</string>
+  <string name="import_file">Enporzhiañ restr</string>
+  <string name="import_generic">Enporzhiañ</string>
+  <string name="save">Enrollañ</string>
+  <string name="search">Klask</string>
+  <string name="settings">Arventennoù</string>
+  <string name="toast_error_no_app_found">Lennour media diavaez n\'eo ket bet kavet</string>
+  <string name="channels_menuitem_import_m3u_url">Enporzhiañ M3U Roll sonioù URL</string>
+  <string name="channels_menuitem_import_m3u_file">Enporzhiañ M3U Restroll ar sonerezh</string>
+  <string name="channels_menuitem_sort_sequential">Renkañ a-steud</string>
+  <string name="channels_menuitem_sort_alphabetic">Renkañ dre an urzh alfabetek</string>
+  <string name="epg_menuitem_import_xmltv_url">Enporzhiañ XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Enporzhiañ XMLTV EPG Restr</string>
+  <string name="pref_default_m3u_url_title">Diouer M3U Roll sonioù URL</string>
+  <string name="pref_default_m3u_url_summary">Talvoudegezh kentañ e \"Enporzhiañ M3U Roll sonioù URL\" Kaozeadenn.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kevreañ anv ar c\'hanol gant ar c\'hanol ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Un talvoud dre linenn. Furmad: \"[anv pe tvg-name] =\> [nevez tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kartenn eus ar chadenn ID da ganoliañ ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Un talvoud dre linenn. Furmad: \"[kozh tvg-id] =\> [nevez tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Silit dre anv ar chadenn war ar roll aotreet</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un talvoud dre linenn. Furmad: \"[anv pe tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Silañ dre ganol ID roll a-vihan</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Un talvoud dre linenn. Furmad: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Kelaouennoù URL Talvoudoù kadennoù statik</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Un talvoud dre linenn.</string>
+  <string name="pref_default_xmltv_url_title">Diouer XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Talvoudegezh kentañ e \"Enporzhiañ XMLTV EPG URL\" Kaozeadenn.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Lakaat ar sil enporzhiañ</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Enporzhiañ kanolioù kavet e M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Enporzhiañ an holl ganolioù</string>
+</resources>

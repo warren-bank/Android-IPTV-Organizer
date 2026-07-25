@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Tagapag-ayos</string>
+  <string name="activity_channels">M3U Mga Kanal</string>
+  <string name="activity_epg">EPG Mga Kanal</string>
+  <string name="cancel">I-cancel</string>
+  <string name="enter_url">Pindutin ang Enter URL</string>
+  <string name="exit">Lumabas</string>
+  <string name="export_file">I-export ang File</string>
+  <string name="import_file">I-import ang file</string>
+  <string name="import_generic">I-import</string>
+  <string name="save">I-save</string>
+  <string name="search">Maghanap</string>
+  <string name="settings">Mga setting</string>
+  <string name="toast_error_no_app_found">Hindi natagpuan ang panlabas na media player</string>
+  <string name="channels_menuitem_import_m3u_url">I-import M3U Playlist URL</string>
+  <string name="channels_menuitem_import_m3u_file">I-import M3U File ng playlist</string>
+  <string name="channels_menuitem_sort_sequential">Ayusin nang sunud-sunod</string>
+  <string name="channels_menuitem_sort_alphabetic">Ayusin ayon sa alpabeto</string>
+  <string name="epg_menuitem_import_xmltv_url">I-import XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">I-import XMLTV EPG File</string>
+  <string name="pref_default_m3u_url_title">Default M3U Playlist URL</string>
+  <string name="pref_default_m3u_url_summary">Paunang halaga sa \"I-import M3U Playlist URL\" dayalogo.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">I-map ang pangalan ng channel sa channel ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Isang halaga bawat linya. Format: \"[pangalan o tvg-name] =\> [bago tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa mula sa channel ID upang mag-channel ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Isang halaga bawat linya. Format: \"[luma tvg-id] =\> [bago tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Salain ayon sa pangalan ng channel sa puting listahan</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Isang halaga bawat linya. Format: \"[pangalan o tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Salain ayon sa channel ID puting listahan</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Isang halaga bawat linya. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Midya URL mga static na halaga ng string</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Isang halaga bawat linya.</string>
+  <string name="pref_default_xmltv_url_title">Default XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Paunang halaga sa \"I-import XMLTV EPG URL\" dayalogo.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Ilapat ang Salain sa Pag-import</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >I-import ang mga channel na matatagpuan sa M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">I-import ang lahat ng mga channel</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Organiseerder</string>
+  <string name="activity_channels">M3U Kanale</string>
+  <string name="activity_epg">EPG Kanale</string>
+  <string name="cancel">Kanselleer</string>
+  <string name="enter_url">Gaan in URL</string>
+  <string name="exit">Uitstek</string>
+  <string name="export_file">Eksporteer lêer</string>
+  <string name="import_file">Invoerlêer</string>
+  <string name="import_generic">Invoer</string>
+  <string name="save">Bewaar</string>
+  <string name="search">Soek</string>
+  <string name="settings">Instellings</string>
+  <string name="toast_error_no_app_found">Eksterne media-speler nie gevind nie</string>
+  <string name="channels_menuitem_import_m3u_url">Invoer M3U Speellys URL</string>
+  <string name="channels_menuitem_import_m3u_file">Invoer M3U Speellys-lêer</string>
+  <string name="channels_menuitem_sort_sequential">Sorteer opeenvolgend</string>
+  <string name="channels_menuitem_sort_alphabetic">Sorteer alfabeties</string>
+  <string name="epg_menuitem_import_xmltv_url">Invoer XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Invoer XMLTV EPG Lêer</string>
+  <string name="pref_default_m3u_url_title">Standaard M3U Speellys URL</string>
+  <string name="pref_default_m3u_url_summary">Inisiale waarde in \"Invoer M3U Speellys URL\" dialoog.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kaart van kanaalnaam na kanaal ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Een waarde per reël. Formaat: \"[naam of tvg-name] =\> [nuut tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart vanaf kanaal ID om te kanaliseer ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Een waarde per reël. Formaat: \"[oud tvg-id] =\> [nuut tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtreer volgens kanaalnaam-witslys</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Een waarde per reël. Formaat: \"[naam of tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtreer per kanaal ID witlys</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Een waarde per reël. Formaat: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Media URL statiese reekswaardes</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Een waarde per reël.</string>
+  <string name="pref_default_xmltv_url_title">Standaard XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Inisiale waarde in \"Invoer XMLTV EPG URL\" dialoog.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Pas invoerfilter toe</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Ingevoerde kanale gevind in M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Voer alle kanale in</string>
+</resources>

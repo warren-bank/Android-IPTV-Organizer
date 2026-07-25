@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Mratibu</string>
+  <string name="activity_channels">M3U Vituo</string>
+  <string name="activity_epg">EPG Vituo</string>
+  <string name="cancel">Futa</string>
+  <string name="enter_url">Ingia URL</string>
+  <string name="exit">Toka</string>
+  <string name="export_file">Tuma Faili</string>
+  <string name="import_file">Ingiza Faili</string>
+  <string name="import_generic">Agiza</string>
+  <string name="save">Hifadhi</string>
+  <string name="search">Tafuta</string>
+  <string name="settings">Mipangilio</string>
+  <string name="toast_error_no_app_found">Kicheza midia cha nje hakikutopatikana</string>
+  <string name="channels_menuitem_import_m3u_url">Agiza M3U Orodha ya nyimbo URL</string>
+  <string name="channels_menuitem_import_m3u_file">Agiza M3U Faili ya orodha ya nyimbo</string>
+  <string name="channels_menuitem_sort_sequential">Panga kwa mfuatano</string>
+  <string name="channels_menuitem_sort_alphabetic">Panga kwa herufi</string>
+  <string name="epg_menuitem_import_xmltv_url">Agiza XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Agiza XMLTV EPG Faili</string>
+  <string name="pref_default_m3u_url_title">Kawaida M3U Orodha ya nyimbo URL</string>
+  <string name="pref_default_m3u_url_summary">Thamani ya awali katika \"Agiza M3U Orodha ya nyimbo URL\" mazungumzo.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Ramani kutoka kwa jina la kituo hadi kituo ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Thamani moja kwa kila mstari. Fomati: \"[jina au tvg-name] =\> [mpya tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Ramani kutoka kwenye kituo ID kuelekeza ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Thamani moja kwa kila mstari. Fomati: \"[kizamani tvg-id] =\> [mpya tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Chuja kwa jina la kituo kilicho kwenye orodha nyeupe</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Thamani moja kwa kila mstari. Fomati: \"[jina au tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Chuja kwa njia ID orodha ya kuaminika</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Thamani moja kwa kila mstari. Fomati: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Vyombo vya habari URL Thamani za mfululizo tuli</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Thamani moja kwa kila mstari.</string>
+  <string name="pref_default_xmltv_url_title">Kawaida XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Thamani ya awali katika \"Agiza XMLTV EPG URL\" mazungumzo.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Tumia kichujio cha uingizaji</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Vipengele vya kuagiza vilivyopatikana katika M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Ingiza vituo vyote</string>
+</resources>

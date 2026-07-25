@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV 主辦單位</string>
+  <string name="activity_channels">M3U 頻道</string>
+  <string name="activity_epg">EPG 頻道</string>
+  <string name="cancel">取消</string>
+  <string name="enter_url">輸入 URL</string>
+  <string name="exit">退出</string>
+  <string name="export_file">匯出檔案</string>
+  <string name="import_file">匯入檔案</string>
+  <string name="import_generic">匯入</string>
+  <string name="save">儲存</string>
+  <string name="search">搜尋</string>
+  <string name="settings">設定</string>
+  <string name="toast_error_no_app_found">找不到外部媒體播放器</string>
+  <string name="channels_menuitem_import_m3u_url">匯入 M3U 播放清單 URL</string>
+  <string name="channels_menuitem_import_m3u_file">匯入 M3U 播放清單檔案</string>
+  <string name="channels_menuitem_sort_sequential">依序排序</string>
+  <string name="channels_menuitem_sort_alphabetic">按字母順序排序</string>
+  <string name="epg_menuitem_import_xmltv_url">匯入 XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">匯入 XMLTV EPG 檔案</string>
+  <string name="pref_default_m3u_url_title">預設 M3U 播放清單 URL</string>
+  <string name="pref_default_m3u_url_summary">初始值在 \"匯入 M3U 播放清單 URL\" 對話框.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">將頻道名稱映射至頻道 ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">每行一個數值。格式: \"[名稱或 tvg-name] =\> [新 tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">來自頻道的地圖 ID 以引導 ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">每行一個數值。格式: \"[舊的 tvg-id] =\> [新 tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">依頻道名稱白名單篩選</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">每行一個數值。格式: \"[名稱或 tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">依頻道篩選 ID 白名單</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">每行一個數值。格式: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">媒體 URL 靜態字串值</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">每行一個數值.</string>
+  <string name="pref_default_xmltv_url_title">預設 XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">初始值在 \"匯入 XMLTV EPG URL\" 對話框.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">套用匯入篩選器</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >在以下位置找到的匯入通道： M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">匯入所有頻道</string>
+</resources>

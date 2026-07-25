@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV আয়োজক</string>
+  <string name="activity_channels">M3U চেনেলসমূহ</string>
+  <string name="activity_epg">EPG চেনেলসমূহ</string>
+  <string name="cancel">বাতিল কৰক</string>
+  <string name="enter_url">সোমোৱা URL</string>
+  <string name="exit">বাহিৰ</string>
+  <string name="export_file">ফাইল ৰপ্তানি কৰক</string>
+  <string name="import_file">ফাইল আমদানি কৰক</string>
+  <string name="import_generic">আমদানি</string>
+  <string name="save">সংৰক্ষণ কৰক</string>
+  <string name="search">খোজা</string>
+  <string name="settings">ছেটিংছ</string>
+  <string name="toast_error_no_app_found">বাহ্যিক মিডিয়া প্লেয়াৰ পোৱা নগ\'ল</string>
+  <string name="channels_menuitem_import_m3u_url">আমদানি M3U প্লেলিষ্ট URL</string>
+  <string name="channels_menuitem_import_m3u_file">আমদানি M3U প্লেলিষ্ট ফাইল</string>
+  <string name="channels_menuitem_sort_sequential">ক্ৰমানুসাৰে সজাওক</string>
+  <string name="channels_menuitem_sort_alphabetic">বৰ্ণানুক্ৰমিক কৰক</string>
+  <string name="epg_menuitem_import_xmltv_url">আমদানি XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">আমদানি XMLTV EPG ফাইল</string>
+  <string name="pref_default_m3u_url_title">নিৰ্ধাৰিত M3U প্লেলিষ্ট URL</string>
+  <string name="pref_default_m3u_url_summary">প্ৰাৰম্ভিক মান \"আমদানি M3U প্লেলিষ্ট URL\" সংলাপ.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">চেনেলৰ নামৰ পৰা চেনেললৈ মানচিত্ৰ ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">প্ৰতিটো শাৰীত এটা মান। ফৰ্মেট: \"[নাম বা tvg-name] =\> [নতুন tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">চেনেলৰ পৰা মানচিত্ৰ ID প্ৰবাহিত কৰিবলৈ ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">প্ৰতিটো শাৰীত এটা মান। ফৰ্মেট: \"[পুৰণি tvg-id] =\> [নতুন tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">চেনেলৰ নামৰ হোৱাইটলিষ্ট অনুসৰি ফিল্টাৰ কৰক</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">প্ৰতিটো শাৰীত এটা মান। ফৰ্মেট: \"[নাম বা tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">চেনেল অনুসৰি ফিল্টাৰ কৰক ID শ্বেত তালিকা</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">প্ৰতিটো শাৰীত এটা মান। ফৰ্মেট: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">মিডিয়া URL স্থিৰ ষ্ট্ৰিং মানসমূহ</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">প্ৰতি শাৰীত এটা মান.</string>
+  <string name="pref_default_xmltv_url_title">নিৰ্ধাৰিত XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">প্ৰাৰম্ভিক মান \"আমদানি XMLTV EPG URL\" সংলাপ.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">আমদানি ফিল্টাৰ প্ৰয়োগ কৰক</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >তথ্য পোৱা চেনেলসমূহ M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">সকলো চেনেল আমদানি কৰক</string>
+</resources>

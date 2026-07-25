@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Gurnamaçy</string>
+  <string name="activity_channels">M3U Kanalary</string>
+  <string name="activity_epg">EPG Kanalary</string>
+  <string name="cancel">Bygatlamak</string>
+  <string name="enter_url">Girmek URL</string>
+  <string name="exit">Çykmak</string>
+  <string name="export_file">Faýly eksport etmek</string>
+  <string name="import_file">Faýly import etmek</string>
+  <string name="import_generic">Import</string>
+  <string name="save">Sakla</string>
+  <string name="search">Gözläň</string>
+  <string name="settings">Täze sazlamalar</string>
+  <string name="toast_error_no_app_found">Daşarky media pleýer tapylmady</string>
+  <string name="channels_menuitem_import_m3u_url">Import M3U Aýdymlar sanawy URL</string>
+  <string name="channels_menuitem_import_m3u_file">Import M3U Pleylist faýly</string>
+  <string name="channels_menuitem_sort_sequential">Yzly-yzyna tertipleşdirmek</string>
+  <string name="channels_menuitem_sort_alphabetic">Alfawit tertibine görä tertipleşdirmek</string>
+  <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Faýl</string>
+  <string name="pref_default_m3u_url_title">Öňünden kesgitlenen M3U Aýdymlar sanawy URL</string>
+  <string name="pref_default_m3u_url_summary">Başlangyç gymmaty \"Import M3U Aýdymlar sanawy URL\" dialog.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal adyny kanala bagla ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Her setirde bir gymmat. Format: \"[at ýa-da tvg-name] =\> [täze tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kanal boýunça harita ID ugurlamaq ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Her setirde bir gymmat. Format: \"[köne tvg-id] =\> [täze tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Akylly sanaw boýunça kanal ady boýunça süzüň</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Her setirde bir gymmat. Format: \"[at ýa-da tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanal boýunça süzüň ID Ak sanaw</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Her setirde bir gymmat. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Metbugat URL statik simlik bahalar</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Her setirde bir gymmat.</string>
+  <string name="pref_default_xmltv_url_title">Öňünden kesgitlenen XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Başlangyç gymmaty \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Import süzgüçini ulan</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Tapylan import kanallary M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Ähli kanallary import ediň</string>
+</resources>

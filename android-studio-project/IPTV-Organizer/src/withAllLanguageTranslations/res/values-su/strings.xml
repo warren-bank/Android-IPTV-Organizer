@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Panata</string>
+  <string name="activity_channels">M3U Saluran</string>
+  <string name="activity_epg">EPG Saluran</string>
+  <string name="cancel">Batalkeun</string>
+  <string name="enter_url">Asup URL</string>
+  <string name="exit">Kaluar</string>
+  <string name="export_file">Ékspor Berkas</string>
+  <string name="import_file">Impor Berkas</string>
+  <string name="import_generic">Impor</string>
+  <string name="save">Simpen</string>
+  <string name="search">Pilarian</string>
+  <string name="settings">Setélan</string>
+  <string name="toast_error_no_app_found">Pemuter média éksternal teu kapanggih</string>
+  <string name="channels_menuitem_import_m3u_url">Impor M3U Daptar lagu URL</string>
+  <string name="channels_menuitem_import_m3u_file">Impor M3U File daptar lagu</string>
+  <string name="channels_menuitem_sort_sequential">Susun sacara runtuyan</string>
+  <string name="channels_menuitem_sort_alphabetic">Susun numutkeun abjad</string>
+  <string name="epg_menuitem_import_xmltv_url">Impor XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Impor XMLTV EPG File</string>
+  <string name="pref_default_m3u_url_title">Standar M3U Daptar lagu URL</string>
+  <string name="pref_default_m3u_url_summary">Nilai awal dina \"Impor M3U Daptar lagu URL\" paguneman.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Peta tina ngaran saluran ka saluran ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Hiji nilai per baris. Format: \"[nami atawa tvg-name] =\> [anyar tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Peta tina saluran ID pikeun ngalirkeun ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Hiji nilai per baris. Format: \"[kolot tvg-id] =\> [anyar tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Nyaring ku nami saluran dina daptar bodas</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Hiji nilai per baris. Format: \"[nami atawa tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Nyaring ku saluran ID daptar bodas</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Hiji nilai per baris. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Média URL nilai string statik</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Hiji nilai per baris.</string>
+  <string name="pref_default_xmltv_url_title">Standar XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Nilai awal dina \"Impor XMLTV EPG URL\" paguneman.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Nerapkeun saringan impor</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Impor saluran anu kapanggih di M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Impor sadaya saluran</string>
+</resources>

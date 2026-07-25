@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Ordinator</string>
+  <string name="activity_channels">M3U Canales</string>
+  <string name="activity_epg">EPG Canales</string>
+  <string name="cancel">Sine</string>
+  <string name="enter_url">Ingredere URL</string>
+  <string name="exit">Exitus</string>
+  <string name="export_file">Exportare Documentum</string>
+  <string name="import_file">Documentum Importare</string>
+  <string name="import_generic">Importare</string>
+  <string name="save">Serva</string>
+  <string name="search">Quaere</string>
+  <string name="settings">Configurationes</string>
+  <string name="toast_error_no_app_found">Lector mediorum externus non inventus</string>
+  <string name="channels_menuitem_import_m3u_url">Importare M3U Index canticorum URL</string>
+  <string name="channels_menuitem_import_m3u_file">Importare M3U Index Canticorum</string>
+  <string name="channels_menuitem_sort_sequential">Ordo sequens</string>
+  <string name="channels_menuitem_sort_alphabetic">Ordine Alphabeto</string>
+  <string name="epg_menuitem_import_xmltv_url">Importare XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Importare XMLTV EPG Archivum</string>
+  <string name="pref_default_m3u_url_title">Defectio M3U Index canticorum URL</string>
+  <string name="pref_default_m3u_url_summary">Valor initialis in \"Importare M3U Index canticorum URL\" Sermo.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Nomen canalis ad canalem ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Unus valor per lineam. Forma: \"[nomen aut tvg-name] =\> [novus tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Tabula ex canali ID dirigere ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Unus valor per lineam. Forma: \"[vetus tvg-id] =\> [novus tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtra per nomen canalis in albo</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Unus valor per lineam. Forma: \"[nomen aut tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Per canalem filtra ID Index Fidelium</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Unus valor per lineam. Forma: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Media URL valores catenarum staticarum</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Unum valor per lineam.</string>
+  <string name="pref_default_xmltv_url_title">Defectio XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Valor initialis in \"Importare XMLTV EPG URL\" Sermo.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Applica Filtrum Importationis</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Canales importati in M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Omnes canales importa</string>
+</resources>

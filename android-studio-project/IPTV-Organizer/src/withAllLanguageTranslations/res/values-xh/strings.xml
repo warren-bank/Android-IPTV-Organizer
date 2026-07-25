@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Umlungelisi</string>
+  <string name="activity_channels">M3U Iitshaneli</string>
+  <string name="activity_epg">EPG Iitshaneli</string>
+  <string name="cancel">Rhoxisa</string>
+  <string name="enter_url">Ngena URL</string>
+  <string name="exit">Phuma</string>
+  <string name="export_file">Thumela ifayile ngaphandle</string>
+  <string name="import_file">Faka ifayile</string>
+  <string name="import_generic">Ngenisa</string>
+  <string name="save">Gcina</string>
+  <string name="search">Khangela</string>
+  <string name="settings">Iisetingi</string>
+  <string name="toast_error_no_app_found">Isidlali semidiya sangaphandle asifunyanwanga</string>
+  <string name="channels_menuitem_import_m3u_url">Ngenisa M3U Uluhlu lweengoma URL</string>
+  <string name="channels_menuitem_import_m3u_file">Ngenisa M3U Ifayile yodlalo</string>
+  <string name="channels_menuitem_sort_sequential">Cwangcisa ngokulandelelana</string>
+  <string name="channels_menuitem_sort_alphabetic">Cwangcisa ngokwe-alfabhethi</string>
+  <string name="epg_menuitem_import_xmltv_url">Ngenisa XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Ngenisa XMLTV EPG Ifayile</string>
+  <string name="pref_default_m3u_url_title">Okumiselweyo M3U Uluhlu lweengoma URL</string>
+  <string name="pref_default_m3u_url_summary">Ixabiso lokuqala elingena \"Ngenisa M3U Uluhlu lweengoma URL\" incoko.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Ukudibanisa igama lesitishi nesitishi. ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[igama okanye tvg-name] =\> [entsha tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Imephu evela kwitshaneli ID ukwalathisa ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[indala tvg-id] =\> [entsha tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Hluzisa ngokwegama lesitishi esikuluhlu olumhlophe</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[igama okanye tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Hlela ngomjelo ID Uluhlu oluvumelekileyo</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Amajelo eendaba URL Amaxabiso oqhagamshelwano angaguqukiyo</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Inani elinye kumgca ngamnye.</string>
+  <string name="pref_default_xmltv_url_title">Okumiselweyo XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Ixabiso lokuqala elingena \"Ngenisa XMLTV EPG URL\" incoko.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Faka iSihluzo Sokungenisa</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Iindlela zokungenisa ezifumaneka kwi M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Ngenisa zonke iitshaneli</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Organizátor</string>
+  <string name="activity_channels">M3U Kanály</string>
+  <string name="activity_epg">EPG Kanály</string>
+  <string name="cancel">Zrušiť</string>
+  <string name="enter_url">Vstúpiť URL</string>
+  <string name="exit">Ukončiť</string>
+  <string name="export_file">Exportovať súbor</string>
+  <string name="import_file">Načítať súbor</string>
+  <string name="import_generic">Import</string>
+  <string name="save">Uložiť</string>
+  <string name="search">Vyhľadávanie</string>
+  <string name="settings">Nastavenia</string>
+  <string name="toast_error_no_app_found">Nenašiel sa externý prehrávač médií</string>
+  <string name="channels_menuitem_import_m3u_url">Import M3U Zoznam skladieb URL</string>
+  <string name="channels_menuitem_import_m3u_file">Import M3U Súbor so zoznamom skladieb</string>
+  <string name="channels_menuitem_sort_sequential">Triediť postupne</string>
+  <string name="channels_menuitem_sort_alphabetic">Zoradiť abecedne</string>
+  <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Súbor</string>
+  <string name="pref_default_m3u_url_title">Predvolené nastavenie M3U Zoznam skladieb URL</string>
+  <string name="pref_default_m3u_url_summary">Počiatočná hodnota v \"Import M3U Zoznam skladieb URL\" dialóg.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Priradenie medzi názvom kanála a kanálom ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Jedna hodnota na riadok. Formát: \"[názov alebo tvg-name] =\> [nové tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa z kanála ID do kanála ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Jedna hodnota na riadok. Formát: \"[starý tvg-id] =\> [nové tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrovať podľa zoznamu povolených názvov kanálov</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Jedna hodnota na riadok. Formát: \"[názov alebo tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrovať podľa kanála ID zoznam povolených adries</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Jedna hodnota na riadok. Formát: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Médiá URL statické reťazcové hodnoty</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Jedna hodnota na riadok.</string>
+  <string name="pref_default_xmltv_url_title">Predvolené nastavenie XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Počiatočná hodnota v \"Import XMLTV EPG URL\" dialóg.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Použiť importný filter</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Našli sa importné kanály v M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Načítať všetky kanály</string>
+</resources>

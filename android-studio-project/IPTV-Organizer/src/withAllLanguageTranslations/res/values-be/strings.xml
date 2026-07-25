@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Арганізатар</string>
+  <string name="activity_channels">M3U Кanaлы</string>
+  <string name="activity_epg">EPG Кanaлы</string>
+  <string name="cancel">Скасаваць</string>
+  <string name="enter_url">Увайсці URL</string>
+  <string name="exit">Выхад</string>
+  <string name="export_file">Экспарт файла</string>
+  <string name="import_file">Імпартаваць файл</string>
+  <string name="import_generic">Імпарт</string>
+  <string name="save">Захаваць</string>
+  <string name="search">Пошук</string>
+  <string name="settings">Налады</string>
+  <string name="toast_error_no_app_found">Знешні медыяплэер не знойдзены</string>
+  <string name="channels_menuitem_import_m3u_url">Імпарт M3U Плэйліст URL</string>
+  <string name="channels_menuitem_import_m3u_file">Імпарт M3U Файл плэйліста</string>
+  <string name="channels_menuitem_sort_sequential">Сартаваць па парадку</string>
+  <string name="channels_menuitem_sort_alphabetic">Сартаваць па алфавіце</string>
+  <string name="epg_menuitem_import_xmltv_url">Імпарт XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Імпарт XMLTV EPG Файл</string>
+  <string name="pref_default_m3u_url_title">Па змаўчанні M3U Плэйліст URL</string>
+  <string name="pref_default_m3u_url_summary">Пачатковае значэнне ў \"Імпарт M3U Плэйліст URL\" дыялог.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Карта ад назвы канала да канала ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Адна значэнне на радок. Фармат: \"[імя або tvg-name] =\> [новы tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Карта з канала ID накіроўваць ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Адна значэнне на радок. Фармат: \"[стары tvg-id] =\> [новы tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Фільтраваць па імя канала з белага спіса</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Адна значэнне на радок. Фармат: \"[імя або tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Фільтраваць па канале ID Белы спіс</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Адна значэнне на радок. Фармат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Медыя URL Статычныя радкі</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Адна значэнне на радок.</string>
+  <string name="pref_default_xmltv_url_title">Па змаўчанні XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Пачатковае значэнне ў \"Імпарт XMLTV EPG URL\" дыялог.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Прымяніць імпартны фільтр</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Знойдзеныя каналы імпарту M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Імпартаваць усе каналы</string>
+</resources>

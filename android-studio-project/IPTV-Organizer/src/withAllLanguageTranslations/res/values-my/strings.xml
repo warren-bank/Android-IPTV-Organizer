@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV စီစဉ်သူ</string>
+  <string name="activity_channels">M3U ချန်နယ်များ</string>
+  <string name="activity_epg">EPG ချန်နယ်များ</string>
+  <string name="cancel">ဖျက်ရန်</string>
+  <string name="enter_url">ထည့်ပါ URL</string>
+  <string name="exit">ထွက်ရန်</string>
+  <string name="export_file">ဖိုင်ကို ထုတ်ပို့ပါ</string>
+  <string name="import_file">ဖိုင်တင်သွင်း</string>
+  <string name="import_generic">တင်သွင်း</string>
+  <string name="save">သိမ်းရန်</string>
+  <string name="search">ရှာဖွေ</string>
+  <string name="settings">ဆက်တင်များ</string>
+  <string name="toast_error_no_app_found">ပြင်ပ မီဒီယာဖွင့်စက် မတွေ့ပါ</string>
+  <string name="channels_menuitem_import_m3u_url">တင်သွင်း M3U ကစားစာရင်း URL</string>
+  <string name="channels_menuitem_import_m3u_file">တင်သွင်း M3U ကစားစာရင်း ဖိုင်</string>
+  <string name="channels_menuitem_sort_sequential">အဆင့်လိုက် စီရန်</string>
+  <string name="channels_menuitem_sort_alphabetic">အက္ခရာအလိုက် စီရန်</string>
+  <string name="epg_menuitem_import_xmltv_url">တင်သွင်း XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">တင်သွင်း XMLTV EPG ဖိုင်</string>
+  <string name="pref_default_m3u_url_title">မူလတန်ဖိုး M3U ကစားစာရင်း URL</string>
+  <string name="pref_default_m3u_url_summary">အစပိုင်းတန်ဖိုးကို ထည့်ပါ \"တင်သွင်း M3U ကစားစာရင်း URL\" ဆွေးနွေးချက်.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">ချန်နယ်အမည်မှ ချန်နယ်သို့ မြေပုံချိတ်ဆက်ခြင်း ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[နာမည် သို့မဟုတ် tvg-name] =\> [အသစ် tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">ချန်နယ်မှ မြေပုံ ID လမ်းကြောင်းပေးရန် ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[ဟောင်း tvg-id] =\> [အသစ် tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">ချန်နယ်အမည်ဖြူစာရင်းဖြင့် စစ်ထုတ်</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[နာမည် သို့မဟုတ် tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">ချန်နယ်အလိုက် စစ်ထုတ်ပါ ID ဖြူစာရင်း</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">မီဒီယာ URL စတက်တစ် စာကြောင်းတန်ဖိုးများ</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု.</string>
+  <string name="pref_default_xmltv_url_title">မူလတန်ဖိုး XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">အစပိုင်းတန်ဖိုးကို ထည့်ပါ \"တင်သွင်း XMLTV EPG URL\" ဆွေးနွေးချက်.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">တင်သွင်း စစ်ထုတ်ကိရိယာ လျှောက်ထားပါ</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >တွင်တွေ့ရှိသော တင်သွင်းချန်နယ်များ M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">ချန်နယ်အားလုံးကို တင်သွင်းပါ</string>
+</resources>

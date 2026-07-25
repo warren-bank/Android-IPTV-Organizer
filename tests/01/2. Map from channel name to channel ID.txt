@@ -1,0 +1,6 @@
+CHANNEL 1 => ch1.us
+CHANNEL 2 => ch2.us
+CHANNEL 3 => ch3.us
+CHANNEL 4 => ch4.us
+CHANNEL 5 => ch5.us
+CHANNEL 6 => ch6.us

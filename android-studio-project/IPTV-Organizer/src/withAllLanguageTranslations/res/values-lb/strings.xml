@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Organisator</string>
+  <string name="activity_channels">M3U Kanäl</string>
+  <string name="activity_epg">EPG Kanäl</string>
+  <string name="cancel">Ofsoen</string>
+  <string name="enter_url">Gitt eran URL</string>
+  <string name="exit">Ausgang</string>
+  <string name="export_file">Exportdatei</string>
+  <string name="import_file">Datei importéieren</string>
+  <string name="import_generic">Importéieren</string>
+  <string name="save">Späicheren</string>
+  <string name="search">Sichen</string>
+  <string name="settings">Astellungen</string>
+  <string name="toast_error_no_app_found">Externe Mediespiller net fonnt</string>
+  <string name="channels_menuitem_import_m3u_url">Importéieren M3U Liddelëscht URL</string>
+  <string name="channels_menuitem_import_m3u_file">Importéieren M3U Playlist-Datei</string>
+  <string name="channels_menuitem_sort_sequential">Sortéiert sequentiell</string>
+  <string name="channels_menuitem_sort_alphabetic">Alphabetesch sortéieren</string>
+  <string name="epg_menuitem_import_xmltv_url">Importéieren XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Importéieren XMLTV EPG Datei</string>
+  <string name="pref_default_m3u_url_title">Standard M3U Liddelëscht URL</string>
+  <string name="pref_default_m3u_url_summary">Initialwäert an \"Importéieren M3U Liddelëscht URL\" Dialog.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kaart vum Kanalnumm op de Kanal ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Eng Wäert pro Zeil. Format: \"[Numm oder tvg-name] =\> [nei tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart vum Kanal ID ze kanaliséieren ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Eng Wäert pro Zeil. Format: \"[al tvg-id] =\> [nei tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtere no Kanalnumm-Weisslëscht</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eng Wäert pro Zeil. Format: \"[Numm oder tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filteren no Kanal ID Weisslëscht</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Eng Wäert pro Zeil. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Medien URL statësch String-Wäerter</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Eng Wäert pro Zeil.</string>
+  <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Initialwäert an \"Importéieren XMLTV EPG URL\" Dialog.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Importfilter uwenden</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Importkanäl fonnt an M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">All Kanäl importéieren</string>
+</resources>

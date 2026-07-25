@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV מארגן</string>
+  <string name="activity_channels">M3U ערוצים</string>
+  <string name="activity_epg">EPG ערוצים</string>
+  <string name="cancel">ביטול</string>
+  <string name="enter_url">הזן URL</string>
+  <string name="exit">יציאה</string>
+  <string name="export_file">ייצא קובץ</string>
+  <string name="import_file">ייבוא קובץ</string>
+  <string name="import_generic">ייבוא</string>
+  <string name="save">שמור</string>
+  <string name="search">חיפוש</string>
+  <string name="settings">הגדרות</string>
+  <string name="toast_error_no_app_found">לא נמצא נגן מדיה חיצוני</string>
+  <string name="channels_menuitem_import_m3u_url">ייבוא M3U רשימת השמעה URL</string>
+  <string name="channels_menuitem_import_m3u_file">ייבוא M3U קובץ רשימת השמעה</string>
+  <string name="channels_menuitem_sort_sequential">מיון לפי סדר</string>
+  <string name="channels_menuitem_sort_alphabetic">מיון לפי סדר אלפביתי</string>
+  <string name="epg_menuitem_import_xmltv_url">ייבוא XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">ייבוא XMLTV EPG קובץ</string>
+  <string name="pref_default_m3u_url_title">ברירת מחדל M3U רשימת השמעה URL</string>
+  <string name="pref_default_m3u_url_summary">הערך ההתחלתי ב- \"ייבוא M3U רשימת השמעה URL\" דיאלוג.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">מיפוי משם הערוץ לערוץ ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">ערך אחד בכל שורה. פורמט: \"[שם או tvg-name] =\> [חדש tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">מפה מהערוץ ID לערוץ ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">ערך אחד בכל שורה. פורמט: \"[ישן tvg-id] =\> [חדש tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">סינון לפי רשימת שמות הערוצים המותרים</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ערך אחד בכל שורה. פורמט: \"[שם או tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">סינון לפי ערוץ ID רשימת המאושרים</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">ערך אחד בכל שורה. פורמט: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">מדיה URL ערכי מחרוזת סטטיים</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">ערך אחד בכל שורה.</string>
+  <string name="pref_default_xmltv_url_title">ברירת מחדל XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">הערך ההתחלתי ב- \"ייבוא XMLTV EPG URL\" דיאלוג.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">החל מסנן ייבוא</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >ערוצי ייבוא הנמצאים ב- M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">ייבא את כל הערוצים</string>
+</resources>

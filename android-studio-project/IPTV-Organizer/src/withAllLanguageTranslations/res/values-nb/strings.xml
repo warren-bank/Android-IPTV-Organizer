@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Arrangør</string>
+  <string name="activity_channels">M3U Kanaler</string>
+  <string name="activity_epg">EPG Kanaler</string>
+  <string name="cancel">Avbryt</string>
+  <string name="enter_url">Trykk Enter URL</string>
+  <string name="exit">Avslutt</string>
+  <string name="export_file">Eksporter fil</string>
+  <string name="import_file">Importer fil</string>
+  <string name="import_generic">Import</string>
+  <string name="save">Lagre</string>
+  <string name="search">Søk</string>
+  <string name="settings">Innstillinger</string>
+  <string name="toast_error_no_app_found">Ekstern mediespiller ikke funnet</string>
+  <string name="channels_menuitem_import_m3u_url">Import M3U Spilleliste URL</string>
+  <string name="channels_menuitem_import_m3u_file">Import M3U Spillelistefil</string>
+  <string name="channels_menuitem_sort_sequential">Sorter i rekkefølge</string>
+  <string name="channels_menuitem_sort_alphabetic">Sorter alfabetisk</string>
+  <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Fil</string>
+  <string name="pref_default_m3u_url_title">Standard M3U Spilleliste URL</string>
+  <string name="pref_default_m3u_url_summary">Startverdi i \"Import M3U Spilleliste URL\" dialog.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kartlegging fra kanalnavn til kanal ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Én verdi per linje. Format: \"[navn eller tvg-name] =\> [ny tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kart fra kanalen ID til kanalen ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Én verdi per linje. Format: \"[gammel tvg-id] =\> [ny tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrer etter hviteliste over kanalnavn</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Én verdi per linje. Format: \"[navn eller tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrer etter kanal ID hvitliste</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Én verdi per linje. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Media URL statiske strengverdier</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Én verdi per linje.</string>
+  <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Startverdi i \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Bruk importfilter</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Importkanaler som finnes i M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importer alle kanaler</string>
+</resources>

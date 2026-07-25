@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Организатор</string>
+  <string name="activity_channels">M3U Канали</string>
+  <string name="activity_epg">EPG Канали</string>
+  <string name="cancel">Откажи</string>
+  <string name="enter_url">Внесете URL</string>
+  <string name="exit">Излез</string>
+  <string name="export_file">Извези датотека</string>
+  <string name="import_file">Увоз на датотека</string>
+  <string name="import_generic">Увоз</string>
+  <string name="save">Зачувај</string>
+  <string name="search">Пребарување</string>
+  <string name="settings">Поставки</string>
+  <string name="toast_error_no_app_found">Не е пронајден надворешен медиумски плеер</string>
+  <string name="channels_menuitem_import_m3u_url">Увоз M3U Плејлиста URL</string>
+  <string name="channels_menuitem_import_m3u_file">Увоз M3U Датотека со плејлиста</string>
+  <string name="channels_menuitem_sort_sequential">Сортирај по редослед</string>
+  <string name="channels_menuitem_sort_alphabetic">Сортирај по азбучен ред</string>
+  <string name="epg_menuitem_import_xmltv_url">Увоз XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Увоз XMLTV EPG Датотека</string>
+  <string name="pref_default_m3u_url_title">Стандардно M3U Плејлиста URL</string>
+  <string name="pref_default_m3u_url_summary">Почетна вредност во \"Увоз M3U Плејлиста URL\" дијалог.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Мапа од името на каналот до каналот ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Една вредност по ред. Формат: \"[име или tvg-name] =\> [ново tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Мапа од канал ID да канализира ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Една вредност по ред. Формат: \"[стар tvg-id] =\> [ново tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Филтрирај по име на канал (бела листа)</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Една вредност по ред. Формат: \"[име или tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Филтрирај по канал ID бела листа</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Една вредност по ред. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Медиуми URL статички низови</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Една вредност по ред.</string>
+  <string name="pref_default_xmltv_url_title">Стандардно XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Почетна вредност во \"Увоз XMLTV EPG URL\" дијалог.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Примени филтер за увоз</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Увезени канали пронајдени во M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Увези ги сите канали</string>
+</resources>

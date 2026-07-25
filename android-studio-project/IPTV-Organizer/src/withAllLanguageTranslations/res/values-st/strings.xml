@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Mohlophisi</string>
+  <string name="activity_channels">M3U Mekgwa</string>
+  <string name="activity_epg">EPG Mekgwa</string>
+  <string name="cancel">Hlakola</string>
+  <string name="enter_url">Kena URL</string>
+  <string name="exit">Tsoa</string>
+  <string name="export_file">Romela Faele kantle</string>
+  <string name="import_file">Kenya Faele</string>
+  <string name="import_generic">Kenya</string>
+  <string name="save">Boloka</string>
+  <string name="search">Batla</string>
+  <string name="settings">Litlhophiso</string>
+  <string name="toast_error_no_app_found">Sebapadi sa mecha ya phatlalatso sa kantle ha se fumanwe</string>
+  <string name="channels_menuitem_import_m3u_url">Kenya M3U Lenane la lipina URL</string>
+  <string name="channels_menuitem_import_m3u_file">Kenya M3U Faele ea lenane la lipina</string>
+  <string name="channels_menuitem_sort_sequential">Hlophisa ka tatellano</string>
+  <string name="channels_menuitem_sort_alphabetic">Hlophisa ka tšebetso ea litlhaku</string>
+  <string name="epg_menuitem_import_xmltv_url">Kenya XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Kenya XMLTV EPG Faele</string>
+  <string name="pref_default_m3u_url_title">Tloaelehileng M3U Lenane la lipina URL</string>
+  <string name="pref_default_m3u_url_summary">Boleng ba pele ka hare \"Kenya M3U Lenane la lipina URL\" Puisano.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Ho fetolela lebitso la kanale ho ba kanale. ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Boleng bo le bong moleng o le mong. Fomate: \"[Lebitso kapa tvg-name] =\> [secha tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">\'Mapa o tsoang kanale ID ho tsamaisa ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Boleng bo le bong moleng o le mong. Fomate: \"[khale tvg-id] =\> [secha tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Sefa ka lebitso la kanale e thathamisitsoeng e tšoeu</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Boleng bo le bong moleng o le mong. Fomate: \"[Lebitso kapa tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Sefa ka kanale ID Lethathamo le letle</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Boleng bo le bong moleng o le mong. Fomate: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Bobegakgang URL Boleng ba mohala bo sa fetoheng</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Boleng bo le bong moleng o le mong.</string>
+  <string name="pref_default_xmltv_url_title">Tloaelehileng XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Boleng ba pele ka hare \"Kenya XMLTV EPG URL\" Puisano.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Sebelisa Sefe ea Keno</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Mecha ea phatlalatso e fumanoeng M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Kenya liteishene kaofela</string>
+</resources>

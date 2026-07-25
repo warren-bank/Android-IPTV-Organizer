@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Eagraitheoir</string>
+  <string name="activity_channels">M3U Cainéil</string>
+  <string name="activity_epg">EPG Cainéil</string>
+  <string name="cancel">Cealaigh</string>
+  <string name="enter_url">Cuir isteach URL</string>
+  <string name="exit">Scoir</string>
+  <string name="export_file">Easpórtáil Comhad</string>
+  <string name="import_file">Iompórtáil Comhad</string>
+  <string name="import_generic">Iompórtáil</string>
+  <string name="save">Sábháil</string>
+  <string name="search">Cuardaigh</string>
+  <string name="settings">Socruithe</string>
+  <string name="toast_error_no_app_found">Níor aimsíodh seinnteoir meán seachtrach</string>
+  <string name="channels_menuitem_import_m3u_url">Iompórtáil M3U Liosta Seinnte URL</string>
+  <string name="channels_menuitem_import_m3u_file">Iompórtáil M3U Comhad an liosta seinnte</string>
+  <string name="channels_menuitem_sort_sequential">Sórtáil go seicheamhach</string>
+  <string name="channels_menuitem_sort_alphabetic">Sórtáil in ord aibítre</string>
+  <string name="epg_menuitem_import_xmltv_url">Iompórtáil XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Iompórtáil XMLTV EPG Comhad</string>
+  <string name="pref_default_m3u_url_title">Réamhshocrú M3U Liosta Seinnte URL</string>
+  <string name="pref_default_m3u_url_summary">Luach tosaigh isteach \"Iompórtáil M3U Liosta Seinnte URL\" comhrá.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Mapáil ainm an chainéil chuig an gcainéal ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Amháin luach in aghaidh an líne. Formáid: \"[ainm nó tvg-name] =\> [nua tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Léarscáil ón gcainéal ID a sheoladh ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Amháin luach in aghaidh an líne. Formáid: \"[sean tvg-id] =\> [nua tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Scag de réir ainm an chainéil ar an liosta bán</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Amháin luach in aghaidh an líne. Formáid: \"[ainm nó tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Scag de réir cainéil ID Liosta Bán</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Amháin luach in aghaidh an líne. Formáid: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Meáin URL Luachanna sreangacha statacha</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Luach amháin in aghaidh an líne.</string>
+  <string name="pref_default_xmltv_url_title">Réamhshocrú XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Luach tosaigh isteach \"Iompórtáil XMLTV EPG URL\" comhrá.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Cuir Scagaire Iompórtála i bhfeidhm</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Ionportáil cainéal atá le fáil i M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Iompórtáil na cainéil go léir</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV المنظم</string>
+  <string name="activity_channels">M3U القنوات</string>
+  <string name="activity_epg">EPG القنوات</string>
+  <string name="cancel">إلغاء</string>
+  <string name="enter_url">أدخل URL</string>
+  <string name="exit">خروج</string>
+  <string name="export_file">تصدير الملف</string>
+  <string name="import_file">استيراد ملف</string>
+  <string name="import_generic">استيراد</string>
+  <string name="save">حفظ</string>
+  <string name="search">بحث</string>
+  <string name="settings">الإعدادات</string>
+  <string name="toast_error_no_app_found">لم يتم العثور على مشغل الوسائط الخارجي</string>
+  <string name="channels_menuitem_import_m3u_url">استيراد M3U قائمة التشغيل URL</string>
+  <string name="channels_menuitem_import_m3u_file">استيراد M3U ملف قائمة التشغيل</string>
+  <string name="channels_menuitem_sort_sequential">الترتيب التسلسلي</string>
+  <string name="channels_menuitem_sort_alphabetic">الترتيب الأبجدي</string>
+  <string name="epg_menuitem_import_xmltv_url">استيراد XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">استيراد XMLTV EPG ملف</string>
+  <string name="pref_default_m3u_url_title">الافتراضي M3U قائمة التشغيل URL</string>
+  <string name="pref_default_m3u_url_summary">القيمة الأولية في \"استيراد M3U قائمة التشغيل URL\" حوار.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">خريطة تربط بين اسم القناة والقناة نفسها ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">قيمة واحدة في كل سطر. التنسيق: \"[الاسم أو tvg-name] =\> [جديد tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">خريطة من القناة ID إلى القناة ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">قيمة واحدة في كل سطر. التنسيق: \"[قديم tvg-id] =\> [جديد tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">التصفية حسب قائمة القنوات المسموح بها</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">قيمة واحدة في كل سطر. التنسيق: \"[الاسم أو tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">التصفية حسب القناة ID القائمة البيضاء</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">قيمة واحدة في كل سطر. التنسيق: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">وسائل الإعلام URL قيم سلاسل ثابتة</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">قيمة واحدة في كل سطر.</string>
+  <string name="pref_default_xmltv_url_title">الافتراضي XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">القيمة الأولية في \"استيراد XMLTV EPG URL\" حوار.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">تطبيق مرشح الاستيراد</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >قنوات الاستيراد الموجودة في M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">استيراد جميع القنوات</string>
+</resources>

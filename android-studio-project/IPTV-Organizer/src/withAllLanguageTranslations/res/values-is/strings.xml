@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Skipuleggjandi</string>
+  <string name="activity_channels">M3U Rásir</string>
+  <string name="activity_epg">EPG Rásir</string>
+  <string name="cancel">Hætta</string>
+  <string name="enter_url">Sláðu inn URL</string>
+  <string name="exit">Útgangur</string>
+  <string name="export_file">Exporta skrá</string>
+  <string name="import_file">Flytja inn skrá</string>
+  <string name="import_generic">Innflutningur</string>
+  <string name="save">Vista</string>
+  <string name="search">Leita</string>
+  <string name="settings">Stillingar</string>
+  <string name="toast_error_no_app_found">Enginn ytri fjölmiðlaspilari fundinn</string>
+  <string name="channels_menuitem_import_m3u_url">Innflutningur M3U Spilunarlisti URL</string>
+  <string name="channels_menuitem_import_m3u_file">Innflutningur M3U Spilunarlista skrá</string>
+  <string name="channels_menuitem_sort_sequential">Raða í réttri röð</string>
+  <string name="channels_menuitem_sort_alphabetic">Raða eftir stafrófi</string>
+  <string name="epg_menuitem_import_xmltv_url">Innflutningur XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Innflutningur XMLTV EPG Skjal</string>
+  <string name="pref_default_m3u_url_title">Sjálfgefið M3U Spilunarlisti URL</string>
+  <string name="pref_default_m3u_url_summary">Upphafleg gildi í \"Innflutningur M3U Spilunarlisti URL\" Skilaboðargluggi.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kortleggja nafn rásarinnar til rásarinnar ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Eitt gildi á línu. Sniðmát: \"[nafn eða tvg-name] =\> [nýtt tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kort úr rás ID að beina ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Eitt gildi á línu. Sniðmát: \"[gamall tvg-id] =\> [nýtt tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Sía eftir nafni hvíta lista rásarinnar</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eitt gildi á línu. Sniðmát: \"[nafn eða tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Sía eftir rás ID hvítt listi</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Eitt gildi á línu. Sniðmát: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Miðlar URL fastar strengsgildi</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Eitt gildi á línu.</string>
+  <string name="pref_default_xmltv_url_title">Sjálfgefið XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Upphafleg gildi í \"Innflutningur XMLTV EPG URL\" Skilaboðargluggi.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Beita innflutningssíu</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Innflutningsrásir sem finnast í M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Flytja inn alla rásir</string>
+</resources>

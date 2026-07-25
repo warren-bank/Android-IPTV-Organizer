@@ -1,0 +1,7 @@
+include ':IPTV-Organizer'
+
+include ':FilterableRecyclerView'
+project(':FilterableRecyclerView').projectDir = new File(rootDir, 'libs/FilterableRecyclerView-library')
+
+include ':android-tv-epg'
+project(':android-tv-epg').projectDir = new File(rootDir, 'libs/android-tv-epg')

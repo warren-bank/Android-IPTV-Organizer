@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Оештырыусы</string>
+  <string name="activity_channels">M3U Каналдар</string>
+  <string name="activity_epg">EPG Каналдар</string>
+  <string name="cancel">Һөҙөмтәне юҡҡа сығарыу</string>
+  <string name="enter_url">Кер URL</string>
+  <string name="exit">Сығыу</string>
+  <string name="export_file">Файлды экспортлау</string>
+  <string name="import_file">Файлды индереү</string>
+  <string name="import_generic">Импорт</string>
+  <string name="save">Һаҡларға</string>
+  <string name="search">Эҙләү</string>
+  <string name="settings">Көйләүҙәр</string>
+  <string name="toast_error_no_app_found">Тышҡы медиа плеер табылманы</string>
+  <string name="channels_menuitem_import_m3u_url">Импорт M3U Плейлист URL</string>
+  <string name="channels_menuitem_import_m3u_file">Импорт M3U Плейлист файлы</string>
+  <string name="channels_menuitem_sort_sequential">Рәтләп сортлау</string>
+  <string name="channels_menuitem_sort_alphabetic">Алифба буйынса сортлау</string>
+  <string name="epg_menuitem_import_xmltv_url">Импорт XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Импорт XMLTV EPG Файл</string>
+  <string name="pref_default_m3u_url_title">Төп M3U Плейлист URL</string>
+  <string name="pref_default_m3u_url_summary">Башланғыс ҡиммәт \"Импорт M3U Плейлист URL\" диалог.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Канал исеменән каналға карта ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Һәр юлда бер ҡиммәт. Формат: \"[исем йәки tvg-name] =\> [яңы tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Каналдан карта ID юнәлтергә ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Һәр юлда бер ҡиммәт. Формат: \"[иҫке tvg-id] =\> [яңы tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Канал исеме буйынса аҡ исемлеккә фильтрлау</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Һәр юлда бер ҡиммәт. Формат: \"[исем йәки tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Канал буйынса фильтрларға ID аҡ исемлек</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Һәр юлда бер ҡиммәт. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Медиа URL статик юл ҡиммәттәре</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Һәр юлда бер ҡиммәт.</string>
+  <string name="pref_default_xmltv_url_title">Төп XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Башланғыс ҡиммәт \"Импорт XMLTV EPG URL\" диалог.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Импорт фильтрын ҡулланығыҙ</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Табылған каналдарҙы импорт итеү M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Барлыҡ каналдарҙы импорт итегеҙ</string>
+</resources>

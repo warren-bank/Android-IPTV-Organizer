@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Rīkotājs</string>
+  <string name="activity_channels">M3U Kanāli</string>
+  <string name="activity_epg">EPG Kanāli</string>
+  <string name="cancel">Atcelt</string>
+  <string name="enter_url">Ievadiet URL</string>
+  <string name="exit">Iziet</string>
+  <string name="export_file">Eksportēt failu</string>
+  <string name="import_file">Importēt failu</string>
+  <string name="import_generic">Importēt</string>
+  <string name="save">Saglabāt</string>
+  <string name="search">Meklēt</string>
+  <string name="settings">Iestatījumi</string>
+  <string name="toast_error_no_app_found">Nav atrasts ārējais multivides atskaņotājs</string>
+  <string name="channels_menuitem_import_m3u_url">Importēt M3U Atskaņošanas saraksts URL</string>
+  <string name="channels_menuitem_import_m3u_file">Importēt M3U Atskaņošanas saraksta fails</string>
+  <string name="channels_menuitem_sort_sequential">Kārtot secīgi</string>
+  <string name="channels_menuitem_sort_alphabetic">Kārtot pēc alfabēta</string>
+  <string name="epg_menuitem_import_xmltv_url">Importēt XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Importēt XMLTV EPG Fails</string>
+  <string name="pref_default_m3u_url_title">Noklusējums M3U Atskaņošanas saraksts URL</string>
+  <string name="pref_default_m3u_url_summary">Sākotnējā vērtība \"Importēt M3U Atskaņošanas saraksts URL\" dialogs.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Saistība starp kanāla nosaukumu un kanālu ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Viena vērtība katrā rindā. Formāts: \"[nosaukums vai tvg-name] =\> [jauns tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Karte no kanāla ID uz kanālu ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Viena vērtība katrā rindā. Formāts: \"[vecs tvg-id] =\> [jauns tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrēt pēc kanālu nosaukumu atļauto saraksta</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Viena vērtība katrā rindā. Formāts: \"[nosaukums vai tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrēt pēc kanāla ID balto saraksts</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Viena vērtība katrā rindā. Formāts: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Mediji URL statiskas teksta vērtības</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Viena vērtība katrā rindā.</string>
+  <string name="pref_default_xmltv_url_title">Noklusējums XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Sākotnējā vērtība \"Importēt XMLTV EPG URL\" dialogs.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Piemērot importēšanas filtru</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Atrastie importa kanāli M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importēt visus kanālus</string>
+</resources>

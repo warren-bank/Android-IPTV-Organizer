@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV אָרגאַניזאַטאָר</string>
+  <string name="activity_channels">M3U קאַנאַלן</string>
+  <string name="activity_epg">EPG קאַנאַלן</string>
+  <string name="cancel">אָפּזאָגן</string>
+  <string name="enter_url">אַרײַנגיין URL</string>
+  <string name="exit">אויסגאַנג</string>
+  <string name="export_file">עקספּאָרטירן טעקע</string>
+  <string name="import_file">אימפּאָרטירן טעקע</string>
+  <string name="import_generic">אימפּאָרט</string>
+  <string name="save">אויפֿהיטן</string>
+  <string name="search">זוכן</string>
+  <string name="settings">איינשטעלונגען</string>
+  <string name="toast_error_no_app_found">אויסערלעכער מעדיע־שפּילער ניט געפֿונען</string>
+  <string name="channels_menuitem_import_m3u_url">אימפּאָרט M3U שפּיל־ליסטע URL</string>
+  <string name="channels_menuitem_import_m3u_file">אימפּאָרט M3U פּלייַליסט־טעקע</string>
+  <string name="channels_menuitem_sort_sequential">סאָרטירן נאָך סדר</string>
+  <string name="channels_menuitem_sort_alphabetic">סאָרטן לויט אַלף־בית</string>
+  <string name="epg_menuitem_import_xmltv_url">אימפּאָרט XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">אימפּאָרט XMLTV EPG טעקע</string>
+  <string name="pref_default_m3u_url_title">סטאַנדאַרט M3U שפּיל־ליסטע URL</string>
+  <string name="pref_default_m3u_url_summary">אָנהייב־ווערט אין \"אימפּאָרט M3U שפּיל־ליסטע URL\" דיאַלאָג.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">מאַפּע פֿון קאַנאַל־נאָמען צו קאַנאַל ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[נאָמען אָדער tvg-name] =\> [נײַ tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">מאַפּע פֿון קאַנאַל ID צו קאַנאַליזירן ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[אַלט tvg-id] =\> [נײַ tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">פֿילטרירן לויט קאַנאַל־נאָמען ווײַטלײַסט</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[נאָמען אָדער tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">פֿילטרירן לויט קאַנאַל ID ווייסליסטע</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">מעדיע URL סטאַטישע שטרינג־ווערטן</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">איין ווערט פּער שורה.</string>
+  <string name="pref_default_xmltv_url_title">סטאַנדאַרט XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">אָנהייב־ווערט אין \"אימפּאָרט XMLTV EPG URL\" דיאַלאָג.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">אַפּליצירן ימפּאָרט־פֿילטער</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >אימפּאָרטירטע קאַנאַלן געפֿונען אין M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">אימפּאָרטירן אַלע קאַנאַלן</string>
+</resources>

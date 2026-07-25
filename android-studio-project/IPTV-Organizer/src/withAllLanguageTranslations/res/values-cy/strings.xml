@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Trefnydd</string>
+  <string name="activity_channels">M3U Sianeli</string>
+  <string name="activity_epg">EPG Sianeli</string>
+  <string name="cancel">Canslo</string>
+  <string name="enter_url">Mewnbwn URL</string>
+  <string name="exit">Allan</string>
+  <string name="export_file">Allforio Ffeil</string>
+  <string name="import_file">Mewnforio Ffeil</string>
+  <string name="import_generic">Mewnforio</string>
+  <string name="save">Cadw</string>
+  <string name="search">Chwilio</string>
+  <string name="settings">Gosodiadau</string>
+  <string name="toast_error_no_app_found">Ni chanfuwyd chwaraewr cyfryngau allanol</string>
+  <string name="channels_menuitem_import_m3u_url">Mewnforio M3U Rhestr chwarae URL</string>
+  <string name="channels_menuitem_import_m3u_file">Mewnforio M3U Ffeil y rhestr chwarae</string>
+  <string name="channels_menuitem_sort_sequential">Trefnu\'n ddilyniannol</string>
+  <string name="channels_menuitem_sort_alphabetic">Trefnu\'n alffanrifol</string>
+  <string name="epg_menuitem_import_xmltv_url">Mewnforio XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Mewnforio XMLTV EPG Ffeil</string>
+  <string name="pref_default_m3u_url_title">Rhagosodedig M3U Rhestr chwarae URL</string>
+  <string name="pref_default_m3u_url_summary">Gwerth cychwynnol yn \"Mewnforio M3U Rhestr chwarae URL\" deialog.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Mapio enw\'r sianel i\'r sianel ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Un gwerth fesul llinell. Fformat: \"[enw neu tvg-name] =\> [newydd tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Map o\'r sianel ID i sianelu ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Un gwerth fesul llinell. Fformat: \"[hen tvg-id] =\> [newydd tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Hidlo yn ôl enw sianel gwyn-rhestr</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un gwerth fesul llinell. Fformat: \"[enw neu tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Hidlo yn ôl sianel ID rhestr wen</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Un gwerth fesul llinell. Fformat: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Cyfrwng URL gwerthoedd llinyn statig</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Un gwerth fesul llinell.</string>
+  <string name="pref_default_xmltv_url_title">Rhagosodedig XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Gwerth cychwynnol yn \"Mewnforio XMLTV EPG URL\" deialog.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Gwneud cais am hidlydd mewnforio</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Mewnforio sianeli a ddarganfuwyd yn M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Mewnforio\'r holl sianeli</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="@string/pref_category_m3u_channels">
+
+    <EditTextPreference
+      android:key="@string/pref_default_m3u_url_key"
+      android:title="@string/pref_default_m3u_url_title"
+      android:summary="@string/pref_default_m3u_url_summary"
+      android:inputType="text"
+      android:hint="@string/pref_default_m3u_url_hint"
+      android:defaultValue="@string/pref_default_m3u_url_default" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="m3u_channels_mapping_name_to_id"
+      android:title="@string/pref_m3u_channels_mapping_name_to_id_title"
+      android:summary="@string/pref_m3u_channels_mapping_name_to_id_summary"
+      android:defaultValue="" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="m3u_channels_mapping_id_to_id"
+      android:title="@string/pref_m3u_channels_mapping_id_to_id_title"
+      android:summary="@string/pref_m3u_channels_mapping_id_to_id_summary"
+      android:defaultValue="" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="m3u_channels_filter_whitelist_names"
+      android:title="@string/pref_m3u_channels_filter_whitelist_names_title"
+      android:summary="@string/pref_m3u_channels_filter_whitelist_names_summary"
+      android:defaultValue="" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="m3u_channels_filter_whitelist_ids"
+      android:title="@string/pref_m3u_channels_filter_whitelist_ids_title"
+      android:summary="@string/pref_m3u_channels_filter_whitelist_ids_summary"
+      android:defaultValue="" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="m3u_channels_media_url_static_values"
+      android:title="@string/pref_m3u_channels_media_url_static_values_title"
+      android:summary="@string/pref_m3u_channels_media_url_static_values_summary"
+      android:defaultValue="" />
+
+  </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/pref_category_epg_channels">
+
+    <EditTextPreference
+      android:key="@string/pref_default_xmltv_url_key"
+      android:title="@string/pref_default_xmltv_url_title"
+      android:summary="@string/pref_default_xmltv_url_summary"
+      android:inputType="text"
+      android:hint="@string/pref_default_xmltv_url_hint"
+      android:defaultValue="@string/pref_default_xmltv_url_default" />
+
+    <CheckBoxPreference
+      android:key="@string/pref_apply_import_filter_xmltv_channels_key"
+      android:title="@string/pref_apply_import_filter_xmltv_channels_title"
+      android:summaryOn="@string/pref_apply_import_filter_xmltv_channels_summary_on"
+      android:summaryOff="@string/pref_apply_import_filter_xmltv_channels_summary_off"
+      android:defaultValue="@string/pref_apply_import_filter_xmltv_channels_default" />
+
+  </PreferenceCategory>
+</PreferenceScreen>

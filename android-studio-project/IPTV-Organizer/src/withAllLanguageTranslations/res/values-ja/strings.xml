@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV 主催者</string>
+  <string name="activity_channels">M3U チャンネル</string>
+  <string name="activity_epg">EPG チャンネル</string>
+  <string name="cancel">キャンセル</string>
+  <string name="enter_url">入力 URL</string>
+  <string name="exit">終了</string>
+  <string name="export_file">ファイルをエクスポート</string>
+  <string name="import_file">ファイルのインポート</string>
+  <string name="import_generic">インポート</string>
+  <string name="save">保存</string>
+  <string name="search">検索</string>
+  <string name="settings">設定</string>
+  <string name="toast_error_no_app_found">外部メディアプレーヤーが見つかりません</string>
+  <string name="channels_menuitem_import_m3u_url">インポート M3U プレイリスト URL</string>
+  <string name="channels_menuitem_import_m3u_file">インポート M3U プレイリストファイル</string>
+  <string name="channels_menuitem_sort_sequential">順番に並べ替える</string>
+  <string name="channels_menuitem_sort_alphabetic">アルファベット順に並べ替え</string>
+  <string name="epg_menuitem_import_xmltv_url">インポート XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">インポート XMLTV EPG ファイル</string>
+  <string name="pref_default_m3u_url_title">デフォルト M3U プレイリスト URL</string>
+  <string name="pref_default_m3u_url_summary">初期値は \"インポート M3U プレイリスト URL\" ダイアログ.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">チャンネル名からチャンネルへの対応表 ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">1行につき1つの値。形式: \"[名前、または tvg-name] =\> [新着 tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">チャンネルからの地図 ID ～へ導く ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">1行につき1つの値。形式: \"[古い tvg-id] =\> [新着 tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">チャンネル名のホワイトリストでフィルタリング</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">1行につき1つの値。形式: \"[名前、または tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">チャンネルで絞り込む ID ホワイトリスト</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">1行につき1つの値。形式: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">メディア URL 静的な文字列値</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">1行につき1つの値.</string>
+  <string name="pref_default_xmltv_url_title">デフォルト XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">初期値は \"インポート XMLTV EPG URL\" ダイアログ.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">インポートフィルターを適用する</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >以下の場所に存在するインポートチャネル M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">すべてのチャンネルをインポートする</string>
+</resources>

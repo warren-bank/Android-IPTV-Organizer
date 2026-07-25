@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Organizador</string>
+  <string name="activity_channels">M3U Canals</string>
+  <string name="activity_epg">EPG Canals</string>
+  <string name="cancel">Anular</string>
+  <string name="enter_url">Dentrar URL</string>
+  <string name="exit">Salir</string>
+  <string name="export_file">Exportar fichero</string>
+  <string name="import_file">Importar fichero</string>
+  <string name="import_generic">Importar</string>
+  <string name="save">Alzar</string>
+  <string name="search">Buscar</string>
+  <string name="settings">Aconfiguracions</string>
+  <string name="toast_error_no_app_found">Reproductor de medios externo no trobau</string>
+  <string name="channels_menuitem_import_m3u_url">Importar M3U Lista de reproducción URL</string>
+  <string name="channels_menuitem_import_m3u_file">Importar M3U Archivo de lista de reproducción</string>
+  <string name="channels_menuitem_sort_sequential">Ordenar secuencialment</string>
+  <string name="channels_menuitem_sort_alphabetic">Ordenar alfabetico</string>
+  <string name="epg_menuitem_import_xmltv_url">Importar XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Importar XMLTV EPG Archivo</string>
+  <string name="pref_default_m3u_url_title">Por defecto M3U Lista de reproducción URL</string>
+  <string name="pref_default_m3u_url_summary">Valor inicial en \"Importar M3U Lista de reproducción URL\" Dialogo.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Mapa d\'o nombre d\'o canal a o canal ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Un valor por linia. Formato: \"[nombre u tvg-name] =\> [nuevo tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa d\'a canal ID canalizar ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Un valor por linia. Formato: \"[viello tvg-id] =\> [nuevo tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrar por o nombre d\'o canal en a lista blanca</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un valor por linia. Formato: \"[nombre u tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrar por canal ID lista blanca</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Un valor por linia. Formato: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Meyos URL valors de cadena estaticas</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Una valura por linia.</string>
+  <string name="pref_default_xmltv_url_title">Por defecto XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Valor inicial en \"Importar XMLTV EPG URL\" Dialogo.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Aplicar filtro d\'importación</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Importar canals trobadas en M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importar toz os canals</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV സംഘാടകൻ</string>
+  <string name="activity_channels">M3U ചാനലുകൾ</string>
+  <string name="activity_epg">EPG ചാനലുകൾ</string>
+  <string name="cancel">റദ്ദാക്കുക</string>
+  <string name="enter_url">പ്രവേശിക്കുക URL</string>
+  <string name="exit">പുറത്തുകടക്കുക</string>
+  <string name="export_file">എക്സ്പോർട്ട് ഫയൽ</string>
+  <string name="import_file">ഫയൽ ഇറക്കുമതി ചെയ്യുക</string>
+  <string name="import_generic">ഇറക്കുമതി</string>
+  <string name="save">സേവ് ചെയ്യുക</string>
+  <string name="search">തിരയുക</string>
+  <string name="settings">ക്രമീകരണങ്ങൾ</string>
+  <string name="toast_error_no_app_found">പുറമെയുള്ള മീഡിയ പ്ലെയർ കണ്ടെത്താനായില്ല</string>
+  <string name="channels_menuitem_import_m3u_url">ഇറക്കുമതി M3U പ്ലേലിസ്റ്റ് URL</string>
+  <string name="channels_menuitem_import_m3u_file">ഇറക്കുമതി M3U പ്ലേലിസ്റ്റ് ഫയൽ</string>
+  <string name="channels_menuitem_sort_sequential">ക്രമീകരിക്കുക</string>
+  <string name="channels_menuitem_sort_alphabetic">അക്ഷരമാലാക്രമത്തിൽ ചിട്ടപ്പെടുത്തുക</string>
+  <string name="epg_menuitem_import_xmltv_url">ഇറക്കുമതി XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">ഇറക്കുമതി XMLTV EPG ഫയൽ</string>
+  <string name="pref_default_m3u_url_title">നിലവിലുള്ള M3U പ്ലേലിസ്റ്റ് URL</string>
+  <string name="pref_default_m3u_url_summary">പ്രാരംഭ മൂല്യം \"ഇറക്കുമതി M3U പ്ലേലിസ്റ്റ് URL\" സംഭാഷണം.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">ചാനലിന്റെ പേരിൽ നിന്ന് ചാനലിലേക്ക് മാപ്പ് ചെയ്യുക ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പേര് അല്ലെങ്കിൽ tvg-name] =\> [പുതിയ tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">ചാനലിൽ നിന്നുള്ള ഭൂപടം ID നയിക്കാൻ ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പഴയ tvg-id] =\> [പുതിയ tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">വൈറ്റ്‌ലിസ്റ്റ് ചെയ്ത ചാനൽ പേര് അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പേര് അല്ലെങ്കിൽ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">ചാനൽ അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക ID വൈറ്റ്‌ലിസ്റ്റ്</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">മാധ്യമങ്ങൾ URL സ്ഥിരമായ സ്ട്രിംഗ് മൂല്യങ്ങൾ</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">ഓരോ വരിയിലും ഒരു മൂല്യം.</string>
+  <string name="pref_default_xmltv_url_title">നിലവിലുള്ള XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">പ്രാരംഭ മൂല്യം \"ഇറക്കുമതി XMLTV EPG URL\" സംഭാഷണം.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">ഇറക്കുമതി ഫിൽട്ടർ പ്രയോഗിക്കുക</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >ഇറക്കുമതി ചാനലുകൾ കണ്ടെത്തിയത് M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">എല്ലാ ചാനലുകളും ഇറക്കുമതി ചെയ്യുക</string>
+</resources>

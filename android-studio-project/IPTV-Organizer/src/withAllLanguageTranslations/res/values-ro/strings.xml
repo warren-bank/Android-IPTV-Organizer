@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Organizator</string>
+  <string name="activity_channels">M3U Canale</string>
+  <string name="activity_epg">EPG Canale</string>
+  <string name="cancel">Anulează</string>
+  <string name="enter_url">Introduceți URL</string>
+  <string name="exit">Ieșire</string>
+  <string name="export_file">Exportare fișier</string>
+  <string name="import_file">Importare fișier</string>
+  <string name="import_generic">Import</string>
+  <string name="save">Salvare</string>
+  <string name="search">Căutare</string>
+  <string name="settings">Setări</string>
+  <string name="toast_error_no_app_found">Nu s-a găsit un player media extern</string>
+  <string name="channels_menuitem_import_m3u_url">Import M3U Listă de redare URL</string>
+  <string name="channels_menuitem_import_m3u_file">Import M3U Fișier cu lista de redare</string>
+  <string name="channels_menuitem_sort_sequential">Sortare secvențială</string>
+  <string name="channels_menuitem_sort_alphabetic">Sortare alfabetică</string>
+  <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Fișier</string>
+  <string name="pref_default_m3u_url_title">Implicit M3U Listă de redare URL</string>
+  <string name="pref_default_m3u_url_summary">Valoarea inițială în \"Import M3U Listă de redare URL\" dialog.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Corelare între numele canalului și canal ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">O singură valoare pe rând. Format: \"[nume sau tvg-name] =\> [nou tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Harta de pe canal ID spre canal ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">O singură valoare pe rând. Format: \"[vechi tvg-id] =\> [nou tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrare după lista albă a numelor de canale</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">O singură valoare pe rând. Format: \"[nume sau tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrează după canal ID lista albă</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">O singură valoare pe rând. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Mass-media URL valori statice de tip șir de caractere</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">O singură valoare pe rând.</string>
+  <string name="pref_default_xmltv_url_title">Implicit XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Valoarea inițială în \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Aplică filtrul de import</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Canalele de import găsite în M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importă toate canalele</string>
+</resources>

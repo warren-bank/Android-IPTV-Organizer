@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV ผู้จัดงาน</string>
+  <string name="activity_channels">M3U ช่อง</string>
+  <string name="activity_epg">EPG ช่อง</string>
+  <string name="cancel">ยกเลิก</string>
+  <string name="enter_url">กด Enter URL</string>
+  <string name="exit">ออก</string>
+  <string name="export_file">ส่งออกไฟล์</string>
+  <string name="import_file">นำเข้าไฟล์</string>
+  <string name="import_generic">นำเข้า</string>
+  <string name="save">บันทึก</string>
+  <string name="search">ค้นหา</string>
+  <string name="settings">การตั้งค่า</string>
+  <string name="toast_error_no_app_found">ไม่พบเครื่องเล่นสื่อภายนอก</string>
+  <string name="channels_menuitem_import_m3u_url">นำเข้า M3U รายชื่อเพลง URL</string>
+  <string name="channels_menuitem_import_m3u_file">นำเข้า M3U ไฟล์รายชื่อเพลง</string>
+  <string name="channels_menuitem_sort_sequential">จัดเรียงตามลำดับ</string>
+  <string name="channels_menuitem_sort_alphabetic">จัดเรียงตามตัวอักษร</string>
+  <string name="epg_menuitem_import_xmltv_url">นำเข้า XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">นำเข้า XMLTV EPG ไฟล์</string>
+  <string name="pref_default_m3u_url_title">ค่าเริ่มต้น M3U รายชื่อเพลง URL</string>
+  <string name="pref_default_m3u_url_summary">ค่าเริ่มต้นใน \"นำเข้า M3U รายชื่อเพลง URL\" กล่องสนทนา.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">แผนที่จากชื่อช่องไปยังช่อง ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[ชื่อ หรือ tvg-name] =\> [ใหม่ tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">แผนที่จากช่อง ID เพื่อส่งผ่าน ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[เก่า tvg-id] =\> [ใหม่ tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">กรองตามรายชื่อช่องที่อนุญาต</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[ชื่อ หรือ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">กรองตามช่อง ID รายชื่ออนุญาต</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">สื่อ URL ค่าสตริงแบบคงที่</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">ค่าหนึ่งต่อบรรทัด.</string>
+  <string name="pref_default_xmltv_url_title">ค่าเริ่มต้น XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">ค่าเริ่มต้นใน \"นำเข้า XMLTV EPG URL\" กล่องสนทนา.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">ใช้ตัวกรองการนำเข้า</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >ช่องทางการนำเข้าที่พบใน M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">นำเข้าทุกช่อง</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Motambwisi</string>
+  <string name="activity_channels">M3U Ba chaines</string>
+  <string name="activity_epg">EPG Ba chaines</string>
+  <string name="cancel">Kata</string>
+  <string name="enter_url">Kɔ́tá URL</string>
+  <string name="exit">Bima</string>
+  <string name="export_file">Bimisa fisyé</string>
+  <string name="import_file">Kotiya fisyé</string>
+  <string name="import_generic">Kokɔtisa</string>
+  <string name="save">Bomba</string>
+  <string name="search">Luka</string>
+  <string name="settings">Bongiseli</string>
+  <string name="toast_error_no_app_found">Tálisi ya media ya libándá emɔnɔnɔkɔ tɛ</string>
+  <string name="channels_menuitem_import_m3u_url">Kokɔtisa M3U Liste ya nzembo URL</string>
+  <string name="channels_menuitem_import_m3u_file">Kokɔtisa M3U Fisyé ya liste ya miziki</string>
+  <string name="channels_menuitem_sort_sequential">Tondisa na molongo</string>
+  <string name="channels_menuitem_sort_alphabetic">Tondisa na molongo ya alfabɛ</string>
+  <string name="epg_menuitem_import_xmltv_url">Kokɔtisa XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Kokɔtisa XMLTV EPG Fayili</string>
+  <string name="pref_default_m3u_url_title">Ndenge ezali M3U Liste ya nzembo URL</string>
+  <string name="pref_default_m3u_url_summary">Motuya ya liboso na \"Kokɔtisa M3U Liste ya nzembo URL\" Lisolo.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Bongola nkombo ya chaîne na chaîne. ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Motuya moko na molongo moko. Format: \"[nkombo to tvg-name] =\> [ya sika tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Karte uta na chaîne ID kokamba ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Motuya moko na molongo moko. Format: \"[Mokóló tvg-id] =\> [ya sika tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Pona na nkombo ya chaîne ya liste ya kondima</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Motuya moko na molongo moko. Format: \"[nkombo to tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Pona na kolanda chaîne ID Liste ya bato oyo bandimami</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Motuya moko na molongo moko. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Bapanzi sango URL Bavale ya ba chaînes statiques</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Motuya moko na molongo moko.</string>
+  <string name="pref_default_xmltv_url_title">Ndenge ezali XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Motuya ya liboso na \"Kokɔtisa XMLTV EPG URL\" Lisolo.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Tia filtre ya kokɔtisa</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Ba canaux ya importation oyo ezwami na M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Kɔtisá ba canaux nyonso</string>
+</resources>

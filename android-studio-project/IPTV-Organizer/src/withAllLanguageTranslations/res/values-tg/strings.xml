@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Ташкилкунанда</string>
+  <string name="activity_channels">M3U Каналҳо</string>
+  <string name="activity_epg">EPG Каналҳо</string>
+  <string name="cancel">Бекор кардан</string>
+  <string name="enter_url">Ворид шавед URL</string>
+  <string name="exit">Баромад</string>
+  <string name="export_file">Содироти файл</string>
+  <string name="import_file">Воридкунии файл</string>
+  <string name="import_generic">Воридкунӣ</string>
+  <string name="save">Нигоҳ доштан</string>
+  <string name="search">Ҷустуҷӯ</string>
+  <string name="settings">Танзимот</string>
+  <string name="toast_error_no_app_found">Плеёри медиаи беруна пайдо нашуд</string>
+  <string name="channels_menuitem_import_m3u_url">Воридкунӣ M3U Рӯйхати навозиш URL</string>
+  <string name="channels_menuitem_import_m3u_file">Воридкунӣ M3U Файли плейлист</string>
+  <string name="channels_menuitem_sort_sequential">Ба тартиб ҷобаҷо кунед</string>
+  <string name="channels_menuitem_sort_alphabetic">Ба тартиби алифбо ҷудо кунед</string>
+  <string name="epg_menuitem_import_xmltv_url">Воридкунӣ XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Воридкунӣ XMLTV EPG Файл</string>
+  <string name="pref_default_m3u_url_title">Тавсиявӣ M3U Рӯйхати навозиш URL</string>
+  <string name="pref_default_m3u_url_summary">Арзиши ибтидоӣ дар \"Воридкунӣ M3U Рӯйхати навозиш URL\" гуфтугӯ.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Мапа аз номи канал ба канал ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Як арзиш дар як сатр. Формат: \"[ном ё tvg-name] =\> [нав tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Нақша аз канал ID равона кардан ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Як арзиш дар як сатр. Формат: \"[куҳна tvg-id] =\> [нав tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Филтр кардан бо номи канал дар рӯйхати сафед</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Як арзиш дар як сатр. Формат: \"[ном ё tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Филтр кардан аз рӯи канал ID Рӯйхати сафед</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Як арзиш дар як сатр. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Воситаҳои ахбори омма URL арзишҳои статикӣ сатрӣ</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Як арзиш дар ҳар сатр.</string>
+  <string name="pref_default_xmltv_url_title">Тавсиявӣ XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Арзиши ибтидоӣ дар \"Воридкунӣ XMLTV EPG URL\" гуфтугӯ.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Филтри воридотро татбиқ кунед</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Каналҳои воридотиёфта дар M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Ҳамаи каналҳоро ворид кунед</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Mai shirya</string>
+  <string name="activity_channels">M3U Tashoshi</string>
+  <string name="activity_epg">EPG Tashoshi</string>
+  <string name="cancel">Soke</string>
+  <string name="enter_url">Shiga URL</string>
+  <string name="exit">Fita</string>
+  <string name="export_file">Fitar da Fayil</string>
+  <string name="import_file">Shigo da Fayil</string>
+  <string name="import_generic">Shigo</string>
+  <string name="save">Ajiye</string>
+  <string name="search">Nemo</string>
+  <string name="settings">Saituna</string>
+  <string name="toast_error_no_app_found">Ba a sami mai kunnawa na waje ba</string>
+  <string name="channels_menuitem_import_m3u_url">Shigo M3U Jerin waƙoƙi URL</string>
+  <string name="channels_menuitem_import_m3u_file">Shigo M3U Fayil ɗin jerin waƙoƙi</string>
+  <string name="channels_menuitem_sort_sequential">Tsara a jere</string>
+  <string name="channels_menuitem_sort_alphabetic">Jera bisa haruffan alif</string>
+  <string name="epg_menuitem_import_xmltv_url">Shigo XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Shigo XMLTV EPG Fayil</string>
+  <string name="pref_default_m3u_url_title">Zaɓi na asali M3U Jerin waƙoƙi URL</string>
+  <string name="pref_default_m3u_url_summary">Kimar farko a cikin \"Shigo M3U Jerin waƙoƙi URL\" tattaunawa.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Jadawalin sunan tashar zuwa tashar ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Ɗaya ƙima a kowace layi. Tsari: \"[suna ko tvg-name] =\> [sabon tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Taswira daga tashar ID don tura ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Ɗaya ƙima a kowace layi. Tsari: \"[tsoho tvg-id] =\> [sabon tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Tace ta sunan tashar a jerin amincewa</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ɗaya ƙima a kowace layi. Tsari: \"[suna ko tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Tace ta tashar ID Jerin masu amincewa</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ɗaya ƙima a kowace layi. Tsari: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Kafofin watsa labarai URL ƙimomin igiya marasa canzawa</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Ɗaya ƙima a kowace layi.</string>
+  <string name="pref_default_xmltv_url_title">Zaɓi na asali XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Kimar farko a cikin \"Shigo XMLTV EPG URL\" tattaunawa.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Aiwatar da tace shigo</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Shigo da tashoshin da aka samu a M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Shigo da duk tashoshi</string>
+</resources>

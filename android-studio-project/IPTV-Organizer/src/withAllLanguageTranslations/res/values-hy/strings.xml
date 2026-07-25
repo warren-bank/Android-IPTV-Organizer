@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Կազմակերպիչ</string>
+  <string name="activity_channels">M3U Ալիքներ</string>
+  <string name="activity_epg">EPG Ալիքներ</string>
+  <string name="cancel">Չեղարկել</string>
+  <string name="enter_url">Մուտք գործել URL</string>
+  <string name="exit">Ելք</string>
+  <string name="export_file">Ֆայլի արտահանման</string>
+  <string name="import_file">Ֆայլ ներմուծել</string>
+  <string name="import_generic">Իմպորտ</string>
+  <string name="save">Պահպանել</string>
+  <string name="search">Փնտրել</string>
+  <string name="settings">Կարգավորումներ</string>
+  <string name="toast_error_no_app_found">Արտաքին մեդիա նվագարկիչ չի գտնվել</string>
+  <string name="channels_menuitem_import_m3u_url">Իմպորտ M3U Ցուցակ URL</string>
+  <string name="channels_menuitem_import_m3u_file">Իմպորտ M3U Պլեյլիստի ֆայլ</string>
+  <string name="channels_menuitem_sort_sequential">Հերթական դասավորել</string>
+  <string name="channels_menuitem_sort_alphabetic">Ալֆավիտային կարգավորել</string>
+  <string name="epg_menuitem_import_xmltv_url">Իմպորտ XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Իմպորտ XMLTV EPG Ֆայլ</string>
+  <string name="pref_default_m3u_url_title">Ստանդարտ M3U Ցուցակ URL</string>
+  <string name="pref_default_m3u_url_summary">Սկզբնական արժեքը ներսում \"Իմպորտ M3U Ցուցակ URL\" զրույց.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Ալիքի անվանումից ալիքին ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Յուրաքանչյուր տողում մեկ արժեք։ Ֆորմատ: \"[անուն կամ tvg-name] =\> [նոր tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Շատերի ալիքից քարտեզ ID ուղղորդել ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Յուրաքանչյուր տողում մեկ արժեք։ Ֆորմատ: \"[հին tvg-id] =\> [նոր tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Ֆիլտրել ըստ ալիքի անվան սպիտակ ցուցակի</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Յուրաքանչյուր տողում մեկ արժեք։ Ֆորմատ: \"[անուն կամ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Ֆիլտրել ըստ ալիքի ID սպիտակ ցուցակ</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Յուրաքանչյուր տողում մեկ արժեք։ Ֆորմատ: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Մեդիա URL ստատիկ տողային արժեքներ</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Յուրաքանչյուր տողում մեկ արժեք.</string>
+  <string name="pref_default_xmltv_url_title">Ստանդարտ XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Սկզբնական արժեքը ներսում \"Իմպորտ XMLTV EPG URL\" զրույց.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Կիրառել ներմուծման ֆիլտր</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Գտնված ներմուծման ալիքները M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Իմպորտավորել բոլոր ալիքները</string>
+</resources>

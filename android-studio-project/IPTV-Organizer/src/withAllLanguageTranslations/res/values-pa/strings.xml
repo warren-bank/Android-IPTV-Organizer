@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV ਪ੍ਰਬੰਧਕ</string>
+  <string name="activity_channels">M3U ਚੈਨਲ</string>
+  <string name="activity_epg">EPG ਚੈਨਲ</string>
+  <string name="cancel">ਰੱਦ ਕਰੋ</string>
+  <string name="enter_url">ਦਾਖਲ ਕਰੋ URL</string>
+  <string name="exit">ਬਾਹਰ ਨਿਕਲੋ</string>
+  <string name="export_file">ਫਾਈਲ ਨਿਰਯਾਤ ਕਰੋ</string>
+  <string name="import_file">ਫਾਈਲ ਆਯਾਤ ਕਰੋ</string>
+  <string name="import_generic">ਆਯਾਤ</string>
+  <string name="save">ਬਚਾਓ</string>
+  <string name="search">ਖੋਜੋ</string>
+  <string name="settings">ਸੈਟਿੰਗਾਂ</string>
+  <string name="toast_error_no_app_found">ਬਾਹਰੀ ਮੀਡੀਆ ਪਲੇਅਰ ਨਹੀਂ ਮਿਲਿਆ</string>
+  <string name="channels_menuitem_import_m3u_url">ਆਯਾਤ M3U ਪਲੇਲਿਸਟ URL</string>
+  <string name="channels_menuitem_import_m3u_file">ਆਯਾਤ M3U ਪਲੇਲਿਸਟ ਫਾਈਲ</string>
+  <string name="channels_menuitem_sort_sequential">ਕ੍ਰਮਵਾਰ ਸੋਰਟ ਕਰੋ</string>
+  <string name="channels_menuitem_sort_alphabetic">ਵਰਣਮਾਲਾ ਅਨੁਸਾਰ ਕ੍ਰਮਬੱਧ ਕਰੋ</string>
+  <string name="epg_menuitem_import_xmltv_url">ਆਯਾਤ XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">ਆਯਾਤ XMLTV EPG ਫਾਈਲ</string>
+  <string name="pref_default_m3u_url_title">ਮੂਲ M3U ਪਲੇਲਿਸਟ URL</string>
+  <string name="pref_default_m3u_url_summary">ਵਿੱਚ ਸ਼ੁਰੂਆਤੀ ਮੁੱਲ \"ਆਯਾਤ M3U ਪਲੇਲਿਸਟ URL\" ਗੱਲਬਾਤ.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">ਚੈਨਲ ਦੇ ਨਾਮ ਤੋਂ ਚੈਨਲ ਤੱਕ ਨਕਸ਼ਾ ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਫਾਰਮੈਟ: \"[ਨਾਮ ਜਾਂ tvg-name] =\> [ਨਵਾਂ tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">ਚੈਨਲ ਤੋਂ ਨਕਸ਼ਾ ID ਨਾਲੀ ਲਗਾਉਣ ਲਈ ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਫਾਰਮੈਟ: \"[ਪੁਰਾਣਾ tvg-id] =\> [ਨਵਾਂ tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">ਚੈਨਲ ਦੇ ਨਾਮ ਨਾਲ ਵ੍ਹਾਈਟਲਿਸਟ ਫਿਲਟਰ ਕਰੋ</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਫਾਰਮੈਟ: \"[ਨਾਮ ਜਾਂ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">ਚੈਨਲ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ ID ਵਾਈਟਲਿਸਟ</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਫਾਰਮੈਟ: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">ਮੀਡੀਆ URL ਸਥਿਰ ਸਤਰ ਮੁੱਲ</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ.</string>
+  <string name="pref_default_xmltv_url_title">ਮੂਲ XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">ਵਿੱਚ ਸ਼ੁਰੂਆਤੀ ਮੁੱਲ \"ਆਯਾਤ XMLTV EPG URL\" ਗੱਲਬਾਤ.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">ਆਯਾਤ ਫਿਲਟਰ ਲਾਗੂ ਕਰੋ</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >ਵਿੱਚ ਮਿਲੇ ਚੈਨਲਾਂ ਨੂੰ ਆਯਾਤ ਕਰੋ M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">ਸਾਰੇ ਚੈਨਲ ਆਯਾਤ ਕਰੋ</string>
+</resources>

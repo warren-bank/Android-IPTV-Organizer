@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Muhleri</string>
+  <string name="activity_channels">M3U Switeshi</string>
+  <string name="activity_epg">EPG Switeshi</string>
+  <string name="cancel">Herisa</string>
+  <string name="enter_url">Ngena URL</string>
+  <string name="exit">Humela</string>
+  <string name="export_file">Rhumela Fayili</string>
+  <string name="import_file">Nghenisa Fayili</string>
+  <string name="import_generic">Nghenisa</string>
+  <string name="save">Hlayisa</string>
+  <string name="search">Lava</string>
+  <string name="settings">Swilunghiselo</string>
+  <string name="toast_error_no_app_found">Xitlangi xa le handle a xi kumekanga</string>
+  <string name="channels_menuitem_import_m3u_url">Nghenisa M3U Nxaxamelo wa tinsimu URL</string>
+  <string name="channels_menuitem_import_m3u_file">Nghenisa M3U Fayili ya nxaxamelo wa tinsimu</string>
+  <string name="channels_menuitem_sort_sequential">Hlela hi ku landzelelana</string>
+  <string name="channels_menuitem_sort_alphabetic">Hlela hi maletere</string>
+  <string name="epg_menuitem_import_xmltv_url">Nghenisa XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Nghenisa XMLTV EPG Fayili</string>
+  <string name="pref_default_m3u_url_title">Lexi tolovelekeke M3U Nxaxamelo wa tinsimu URL</string>
+  <string name="pref_default_m3u_url_summary">Ntsengo wo sungula endzeni \"Nghenisa M3U Nxaxamelo wa tinsimu URL\" bulo.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Hundzuluxa vito ra xitichi eka xitichi. ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[vito kumbe tvg-name] =\> [lentshwa tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Mepe kusuka eka xitichi ID ku kongomisa ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[khale tvg-id] =\> [lentshwa tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Sefa hi vito ra xitichi lexi pfumeleriweke</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[vito kumbe tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Hluta hi xitichi ID Nxaxamelo wa lava pfumeleriwaka</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Vuhaxi URL Tinhla ta static ta xitsari</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Ntsengo wun\'we hi layini.</string>
+  <string name="pref_default_xmltv_url_title">Lexi tolovelekeke XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Ntsengo wo sungula endzeni \"Nghenisa XMLTV EPG URL\" bulo.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Tirhisa Sefo yo Nghenisa</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Switirhisiwa swo nghenisa leswi kumekaka eka M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Nghenisa switichi hinkwaswo</string>
+</resources>

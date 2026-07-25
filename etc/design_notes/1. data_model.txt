@@ -1,0 +1,176 @@
+-------------------------------------------------------------------------------- example data
+
+M3U:
+====
+#EXTINF:-1,CA MSNBC CANADA
+http://kytv.xyz:80/USERNAME/PASSWORD/228579.ts
+
+M3U Plus:
+=========
+#EXTINF:-1 tvg-id="msnbc.us" tvg-name="CA MSNBC CANADA" tvg-logo="http://185.193.88.130:80/images/bea541f9c065fa18f77850c72423fb7c.png" group-title="CA: Canada News",CA MSNBC CANADA
+http://kytv.xyz:80/USERNAME/PASSWORD/228579.m3u8
+
+EPG:
+====
+	<channel id="msnbc.us">
+		<display-name>CA MSNBC CANADA</display-name>
+		<icon src="http://23.227.147.172:80/images/bea541f9c065fa18f77850c72423fb7c.png" />
+	</channel>
+	<channel id="msnbc.us">
+		<display-name>USA MS NOW</display-name>
+		<icon src="http://23.227.147.172:80/images/8b031cea7363cc243f16adca8925c131.png" />
+	</channel>
+	<channel id="msnbc.us">
+		<display-name>USA MS NOW (Backup)</display-name>
+		<icon src="http://185.193.88.130:80/images/8b031cea7363cc243f16adca8925c131.png" />
+	</channel>
+
+	<programme start="20260717090000 +0000" stop="20260717100000 +0000" start_timestamp="1784278800" stop_timestamp="1784282400" channel="msnbc.us" >
+		<title>Way Too Early With Ali Vitali</title>
+		<desc>Inside-the-beltway political news and critical stories shaping the national conversation.</desc>
+	</programme>
+	<programme start="20260717100000 +0000" stop="20260717130000 +0000" start_timestamp="1784282400" stop_timestamp="1784293200" channel="msnbc.us" >
+		<title>Morning Joe</title>
+		<desc>Hosts Joe Scarborough, Mika Brzezinski and Willie Geist present in-depth and informed discussions that help drive the day&apos;s current political conversation.</desc>
+	</programme>
+	<programme start="20260717130000 +0000" stop="20260717150000 +0000" start_timestamp="1784293200" stop_timestamp="1784300400" channel="msnbc.us" >
+		<title>Money, Power, Politics With Stephanie Ruhle</title>
+		<desc>Host Stephanie Ruhle brings her business acumen, hard-hitting interview style and original reporting to mornings, helping you understand what&apos;s happening today and why it matters; make sense of it all, together.</desc>
+	</programme>
+
+-------------------------------------------------------------------------------- specs
+
+https://github.com/XMLTV/xmltv/blob/v1.4.0/xmltv.dtd
+
+exerpts:
+========
+  <programme start="20220331180000 +0000" channel="channel-two.tv">
+    <title>Programme Two: The minimum valid programme</title>
+  </programme>
+
+notes:
+======
+  * the following attributes are non-standard: "start_timestamp", "stop_timestamp"
+      import java.text.SimpleDateFormat;
+      private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss Z", Locale.US);
+      long start_timestamp_ms = dateFormat.parse(programme.getAttributeValue("start")).getTime();
+      long stop_timestamp_ms  = dateFormat.parse(programme.getAttributeValue("stop" )).getTime();
+
+-------------------------------------------------------------------------------- model
+
+m3u_channels
+============
+(required) name
+(required) media_url
+(optional) tvg_id
+(optional) tvg_name
+
+xmltv_channels
+==============
+(required) id
+(required) name
+(optional) icon_url
+
+xmltv_programs
+==============
+(required) channel_id
+(required) start_timestamp_ms
+(optional) stop_timestamp_ms
+(required) title
+(optional) description
+
+-------------------------------------------------------------------------------- data mapping
+
+optional user-defined value-rewrite mapping-tables
+==================================================
+
+1. m3u_channels.name     => m3u_channels.tvg_id
+2. m3u_channels.tvg_name => m3u_channels.tvg_id
+3. m3u_channels.tvg_id   => m3u_channels.tvg_id
+
+notes:
+  * the same mapping table can be applied to both:
+      m3u_channels.name
+      m3u_channels.tvg_name
+  * assuming they have different values;
+    otherwise, only need to process the mapping table once
+
+optional user-defined value-rewrite string-substitution
+=======================================================
+
+1. m3u_channels.media_url
+   - example:
+     * original value:
+         http://kytv.xyz:80/USERNAME/PASSWORD/228579.m3u8
+     * static strings
+         [
+            "http://kytv.xyz:80",
+            "USERNAME",
+            "PASSWORD",
+          ]
+     * stored in DB as:
+         %1$s/%2$s/%3$s/228579.m3u8
+     * rehydrated by:
+         String.format(db_url, static_strings)
+   - advantages:
+     * reduces size of DB by extracting duplicate strings
+     * allows the user to update the static string values without needing to refresh the M3U data
+       - if changing account credentials for the same IPTV service provider
+       - if the IPTV service provider changes its video hosting domain
+     * supports Channel URLs in the M3U file that include variations
+       - example:
+           http://kytv.xyz:80/USERNAME/PASSWORD/LIVE_CHANNEL_ID.ts
+           http://kytv.xyz:80/USERNAME/PASSWORD/LIVE_CHANNEL_ID.m3u8
+           http://kytv.xyz:80/movie/USERNAME/PASSWORD/VOD_MOVIE_ID.mp4
+           http://kytv.xyz:80/series/USERNAME/PASSWORD/VOD_EPISODE_ID.mkv
+   - dangers:
+     * if used incorrectly (ex: removing or reordering static string values),
+       then all "m3u_channels.media_url" values will become gibberish
+     * if so, then the M3U will need to be refreshed
+       - ie: redownloaded, and parsed using the new static string values
+   - notes:
+     * this is a slightly different methodology than used by my earlier app: "M3U Viewer"
+         https://github.com/warren-bank/Android-IPTV-M3U-Channel-List-Viewer#settings
+     * in "M3U Viewer":
+       - the Channel URLs in the M3U file are edited manually prior to import
+       - the "Channel URL Template" is edited manually
+     * with this methodology:
+       - the Channel URLs in the M3U file are input,
+         and each generates its own distinct (though hardly unique) "Channel URL Template" (by replacing static strings with template variables),
+         which is stored in the DB,
+         and later used to rehydrate the Channel URL (by substituting static strings for template variables)
+       - which is automatic,
+         albeit a bit fragile to users that don't understand how to use the feature
+       - of course, usage of this feature is optional:
+           no static strings values => no templates => no substitution
+
+-------------------------------------------------------------------------------- data filtering
+
+M3U whitelists
+==============
+whitelist_channel_names = []
+whitelist_channel_ids   = []
+
+save = !whitelist_channel_names && !whitelist_channel_ids
+
+if (!save && whitelist_channel_names)
+  save = (
+    whitelist_channel_names.includes(channel.name) ||
+    whitelist_channel_names.includes(channel.tvg_name)
+  )
+)
+
+if (!save && whitelist_channel_ids)
+  save = (
+    whitelist_channel_ids.includes(channel.tvg_id)
+  )
+)
+
+if (save)
+  add_channel_to_db(channel)
+
+EPG whitelist
+=============
+String query = "SELECT COUNT(*) FROM m3u_channels WHERE tvg_id = " + sqlEscapeString(channel.id);
+
+--------------------------------------------------------------------------------

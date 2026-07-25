@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV நிறுவனர்</string>
+  <string name="activity_channels">M3U சேனல்கள்</string>
+  <string name="activity_epg">EPG சேனல்கள்</string>
+  <string name="cancel">ரத்து செய்</string>
+  <string name="enter_url">உள்ளே நுழைக URL</string>
+  <string name="exit">வெளியேறு</string>
+  <string name="export_file">ஏற்றுமதி கோப்பு</string>
+  <string name="import_file">கோப்பை இறக்குமதி செய்</string>
+  <string name="import_generic">இறக்குமதி</string>
+  <string name="save">சேமி</string>
+  <string name="search">தேடல்</string>
+  <string name="settings">அமைப்புகள்</string>
+  <string name="toast_error_no_app_found">வெளிப்புற மீடியா பிளேயர் காணப்படவில்லை</string>
+  <string name="channels_menuitem_import_m3u_url">இறக்குமதி M3U பாடலட்டை URL</string>
+  <string name="channels_menuitem_import_m3u_file">இறக்குமதி M3U பட்டியல் கோப்பு</string>
+  <string name="channels_menuitem_sort_sequential">தொடர்ச்சியாக வரிசைப்படுத்து</string>
+  <string name="channels_menuitem_sort_alphabetic">அகரவரிசைப்படுத்தவும்</string>
+  <string name="epg_menuitem_import_xmltv_url">இறக்குமதி XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">இறக்குமதி XMLTV EPG கோப்பு</string>
+  <string name="pref_default_m3u_url_title">பூர்வநிலை M3U பாடலட்டை URL</string>
+  <string name="pref_default_m3u_url_summary">உள்ளே ஆரம்ப மதிப்பு \"இறக்குமதி M3U பாடலட்டை URL\" உரையாடல்.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">சேனல் பெயரிலிருந்து சேனலுக்கு வரைபடம் ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. வடிவம்: \"[பெயர் அல்லது tvg-name] =\> [புதிய tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">சேனலிலிருந்து வரைபடம் ID வழிக்க ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. வடிவம்: \"[பழைய tvg-id] =\> [புதிய tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">சேனல் பெயர் வெள்ளைப்பட்டியல் மூலம் வடிகட்டவும்</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. வடிவம்: \"[பெயர் அல்லது tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">சேனல் மூலம் வடிகட்டவும் ID வெள்ளைப் பட்டியல்</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. வடிவம்: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">ஊடகம் URL நிலையான சர மதிப்புகள்</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு.</string>
+  <string name="pref_default_xmltv_url_title">பூர்வநிலை XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">உள்ளே ஆரம்ப மதிப்பு \"இறக்குமதி XMLTV EPG URL\" உரையாடல்.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">இறக்கு வடிகட்டியைப் பயன்படுத்துக</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >கண்டறியப்பட்ட இறக்குமதி சேனல்கள் M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">அனைத்து சேனல்களையும் இறக்குமதி செய்</string>
+</resources>

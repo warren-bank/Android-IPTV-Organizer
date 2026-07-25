@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Organizanto</string>
+  <string name="activity_channels">M3U Kanaloj</string>
+  <string name="activity_epg">EPG Kanaloj</string>
+  <string name="cancel">Anuligi</string>
+  <string name="enter_url">Eniru URL</string>
+  <string name="exit">Eksiri</string>
+  <string name="export_file">Eksporti dosieron</string>
+  <string name="import_file">Enporti dosieron</string>
+  <string name="import_generic">Enporti</string>
+  <string name="save">Konservi</string>
+  <string name="search">Serĉi</string>
+  <string name="settings">Agordoj</string>
+  <string name="toast_error_no_app_found">Ekstera plurmedia ludilo ne trovita</string>
+  <string name="channels_menuitem_import_m3u_url">Enporti M3U Ludlisto URL</string>
+  <string name="channels_menuitem_import_m3u_file">Enporti M3U Ludlista dosiero</string>
+  <string name="channels_menuitem_sort_sequential">Ordigi sekvence</string>
+  <string name="channels_menuitem_sort_alphabetic">Ordigi laŭ alfabeto</string>
+  <string name="epg_menuitem_import_xmltv_url">Enporti XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Enporti XMLTV EPG Dosiero</string>
+  <string name="pref_default_m3u_url_title">Normala M3U Ludlisto URL</string>
+  <string name="pref_default_m3u_url_summary">Komenca valoro en \"Enporti M3U Ludlisto URL\" dialogo.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Mapu la nomon de la kanalo al la kanalo. ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Unu valoro po linio. Formato: \"[nomo aŭ tvg-name] =\> [nova tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Mapo el kanalo ID direkti ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Unu valoro po linio. Formato: \"[malnova tvg-id] =\> [nova tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtri laŭ blanklisto de kanalnomoj</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Unu valoro po linio. Formato: \"[nomo aŭ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtri laŭ kanalo ID blanka listo</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Unu valoro po linio. Formato: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Amaskomunikiloj URL statikaj ĉenvaloroj</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Unu valoro po linio.</string>
+  <string name="pref_default_xmltv_url_title">Normala XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Komenca valoro en \"Enporti XMLTV EPG URL\" dialogo.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Apliku importan filtrilon</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Enportaj kanaloj trovitaj en M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Enportu ĉiujn kanalojn</string>
+</resources>

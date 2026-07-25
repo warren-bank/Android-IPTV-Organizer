@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV تنظیموونکی</string>
+  <string name="activity_channels">M3U چینلونه</string>
+  <string name="activity_epg">EPG چینلونه</string>
+  <string name="cancel">لغوه کړئ</string>
+  <string name="enter_url">ننوځئ URL</string>
+  <string name="exit">وتل</string>
+  <string name="export_file">د فایل صادرول</string>
+  <string name="import_file">فایل وارد کړئ</string>
+  <string name="import_generic">واردول</string>
+  <string name="save">خوندي کول</string>
+  <string name="search">لټون</string>
+  <string name="settings">تنظیمات</string>
+  <string name="toast_error_no_app_found">بهرنی میډیا پلیر پیدا نه شو</string>
+  <string name="channels_menuitem_import_m3u_url">واردول M3U د سندرو لړلیک URL</string>
+  <string name="channels_menuitem_import_m3u_file">واردول M3U د غږیزو فایلونو لړلیک</string>
+  <string name="channels_menuitem_sort_sequential">په ترتیب سره ترتیب کړئ</string>
+  <string name="channels_menuitem_sort_alphabetic">د الفبا له مخې ترتیب کړئ</string>
+  <string name="epg_menuitem_import_xmltv_url">واردول XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">واردول XMLTV EPG فایل</string>
+  <string name="pref_default_m3u_url_title">اصلي M3U د سندرو لړلیک URL</string>
+  <string name="pref_default_m3u_url_summary">په ... کې لومړنی ارزښت \"واردول M3U د سندرو لړلیک URL\" خبرې اترې.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">د چینل نوم څخه چینل ته نقشه ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">په هره کرښه کې یو ارزښت. بڼه: \"[نوم یا tvg-name] =\> [نوی tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">له چینله نقشه ID لارښودل ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">په هره کرښه کې یو ارزښت. بڼه: \"[زوړ tvg-id] =\> [نوی tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">د چینل نوم له مخې فلټر کړئ سپین لیست</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">په هره کرښه کې یو ارزښت. بڼه: \"[نوم یا tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">د چینل له مخې فلټر کړئ ID سپین لیست</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">په هره کرښه کې یو ارزښت. بڼه: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">رسنۍ URL ثابتې تارې ارزښتونه</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">په هره کرښه کې یو ارزښت.</string>
+  <string name="pref_default_xmltv_url_title">اصلي XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">په ... کې لومړنی ارزښت \"واردول XMLTV EPG URL\" خبرې اترې.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">د واردولو فلټر پلي کړئ</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >په کې موندل شوي وارداتي چینلونه M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">ټول چینلونه وارد کړئ</string>
+</resources>

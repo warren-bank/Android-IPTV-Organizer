@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Διοργανωτής</string>
+  <string name="activity_channels">M3U Κανάλια</string>
+  <string name="activity_epg">EPG Κανάλια</string>
+  <string name="cancel">Ακύρωση</string>
+  <string name="enter_url">Εισαγωγή URL</string>
+  <string name="exit">Έξοδος</string>
+  <string name="export_file">Εξαγωγή αρχείου</string>
+  <string name="import_file">Εισαγωγή αρχείου</string>
+  <string name="import_generic">Εισαγωγή</string>
+  <string name="save">Αποθήκευση</string>
+  <string name="search">Αναζήτηση</string>
+  <string name="settings">Ρυθμίσεις</string>
+  <string name="toast_error_no_app_found">Δεν εντοπίστηκε εξωτερική συσκευή αναπαραγωγής πολυμέσων</string>
+  <string name="channels_menuitem_import_m3u_url">Εισαγωγή M3U Λίστα αναπαραγωγής URL</string>
+  <string name="channels_menuitem_import_m3u_file">Εισαγωγή M3U Αρχείο λίστας αναπαραγωγής</string>
+  <string name="channels_menuitem_sort_sequential">Ταξινόμηση κατά σειρά</string>
+  <string name="channels_menuitem_sort_alphabetic">Αλφαβητική ταξινόμηση</string>
+  <string name="epg_menuitem_import_xmltv_url">Εισαγωγή XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Εισαγωγή XMLTV EPG Αρχείο</string>
+  <string name="pref_default_m3u_url_title">Προεπιλογή M3U Λίστα αναπαραγωγής URL</string>
+  <string name="pref_default_m3u_url_summary">Αρχική τιμή σε \"Εισαγωγή M3U Λίστα αναπαραγωγής URL\" διάλογος.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Αντιστοίχιση από το όνομα καναλιού προς το κανάλι ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Μία τιμή ανά γραμμή. Μορφή: \"[όνομα ή tvg-name] =\> [νέο tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Χάρτης από το κανάλι ID προς το κανάλι ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Μία τιμή ανά γραμμή. Μορφή: \"[παλιό tvg-id] =\> [νέο tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Φιλτράρισμα βάσει λίστας επιτρεπόμενων ονομάτων καναλιών</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Μία τιμή ανά γραμμή. Μορφή: \"[όνομα ή tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Φιλτράρισμα ανά κανάλι ID λίστα επιτρεπόμενων</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Μία τιμή ανά γραμμή. Μορφή: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Μέσα ενημέρωσης URL στατικές τιμές συμβολοσειρών</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Μία τιμή ανά γραμμή.</string>
+  <string name="pref_default_xmltv_url_title">Προεπιλογή XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Αρχική τιμή σε \"Εισαγωγή XMLTV EPG URL\" διάλογος.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Εφαρμογή φίλτρου εισαγωγής</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Κανάλια εισαγωγής που βρίσκονται στο M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Εισαγωγή όλων των καναλιών</string>
+</resources>

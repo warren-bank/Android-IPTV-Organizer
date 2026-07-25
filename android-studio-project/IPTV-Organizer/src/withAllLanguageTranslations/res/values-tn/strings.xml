@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Morulaganyi</string>
+  <string name="activity_channels">M3U Ditsela</string>
+  <string name="activity_epg">EPG Ditsela</string>
+  <string name="cancel">Hlakola</string>
+  <string name="enter_url">Tsena URL</string>
+  <string name="exit">Tswa</string>
+  <string name="export_file">Romela Faele kwa Ntle</string>
+  <string name="import_file">Tsenya Faele</string>
+  <string name="import_generic">Tsenya</string>
+  <string name="save">Boloka</string>
+  <string name="search">Batla</string>
+  <string name="settings">Ditlhophiso</string>
+  <string name="toast_error_no_app_found">Sebapadi sa media sa kwa ntle ga se fitlhelwa</string>
+  <string name="channels_menuitem_import_m3u_url">Tsenya M3U Lenaane la dipina URL</string>
+  <string name="channels_menuitem_import_m3u_file">Tsenya M3U Faele ya lenaane la dipina</string>
+  <string name="channels_menuitem_sort_sequential">Tlhopha ka go latelana</string>
+  <string name="channels_menuitem_sort_alphabetic">Tlhopha ka Tlhaka</string>
+  <string name="epg_menuitem_import_xmltv_url">Tsenya XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Tsenya XMLTV EPG Faele</string>
+  <string name="pref_default_m3u_url_title">Tlwaelo M3U Lenaane la dipina URL</string>
+  <string name="pref_default_m3u_url_summary">Boleng jwa tshimologo mo \"Tsenya M3U Lenaane la dipina URL\" Puisano.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Lebeletsa leina la setheo le setheo ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[leina kgotsa tvg-name] =\> [sešwa tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Mmapa go tswa mo kaneleng ID go tsamaisa ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[kgologolo tvg-id] =\> [sešwa tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Sefa ka leina la setšhaba se se letleletsweng</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[leina kgotsa tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Sefa ka mofuta wa phasalatso ID Lethathamo la ba ba letleletsweng</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Bobegakgang URL Boleng jwa molaetsa jo bo sa fetogeng</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Boleng bo le bongwe mo moleng mongwe le mongwe.</string>
+  <string name="pref_default_xmltv_url_title">Tlwaelo XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Boleng jwa tshimologo mo \"Tsenya XMLTV EPG URL\" Puisano.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Tsenya Sefe ya Tsenyo</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Ditsela tsa go tsena tse di fitlhelwang mo M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Tsenya dikanale tsotlhe</string>
+</resources>

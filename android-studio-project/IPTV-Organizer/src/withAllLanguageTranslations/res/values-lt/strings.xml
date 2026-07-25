@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Rengėjas</string>
+  <string name="activity_channels">M3U Kanalai</string>
+  <string name="activity_epg">EPG Kanalai</string>
+  <string name="cancel">Atšaukti</string>
+  <string name="enter_url">Įvesti URL</string>
+  <string name="exit">Išeiti</string>
+  <string name="export_file">Eksportuoti failą</string>
+  <string name="import_file">Importuoti failą</string>
+  <string name="import_generic">Importas</string>
+  <string name="save">Išsaugoti</string>
+  <string name="search">Paieška</string>
+  <string name="settings">Nustatymai</string>
+  <string name="toast_error_no_app_found">Išorinis medijos grotuvas nerastas</string>
+  <string name="channels_menuitem_import_m3u_url">Importas M3U Grojaraštis URL</string>
+  <string name="channels_menuitem_import_m3u_file">Importas M3U Grojaraščio failas</string>
+  <string name="channels_menuitem_sort_sequential">Rūšiuoti eilės tvarka</string>
+  <string name="channels_menuitem_sort_alphabetic">Rūšiuoti abėcėlės tvarka</string>
+  <string name="epg_menuitem_import_xmltv_url">Importas XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Importas XMLTV EPG Failas</string>
+  <string name="pref_default_m3u_url_title">Numatytasis M3U Grojaraštis URL</string>
+  <string name="pref_default_m3u_url_summary">Pradinė vertė \"Importas M3U Grojaraštis URL\" dialogas.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Atitikmenų lentelė tarp kanalo pavadinimo ir kanalo ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Viena reikšmė vienoje eilutėje. Formatas: \"[pavadinimas arba tvg-name] =\> [naujas tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Žemėlapis iš kanalo ID į kanalą ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Viena reikšmė vienoje eilutėje. Formatas: \"[senas tvg-id] =\> [naujas tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtruoti pagal leidžiamų kanalų sąrašą</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Viena reikšmė vienoje eilutėje. Formatas: \"[pavadinimas arba tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtruoti pagal kanalą ID baltasis sąrašas</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Viena reikšmė vienoje eilutėje. Formatas: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Žiniasklaida URL statinės eilutės reikšmės</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Viena reikšmė vienoje eilutėje.</string>
+  <string name="pref_default_xmltv_url_title">Numatytasis XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Pradinė vertė \"Importas XMLTV EPG URL\" dialogas.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Taikyti importo filtrą</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Rasti importo kanalai, esantys M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importuoti visus kanalus</string>
+</resources>

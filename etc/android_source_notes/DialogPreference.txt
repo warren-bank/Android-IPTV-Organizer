@@ -1,0 +1,160 @@
+----------------------------------------------------------------------------------------------------
+
+https://developer.android.com/develop/ui/views/components/settings/use-saved-values#prederence-datastore
+https://developer.android.com/develop/ui/views/components/settings/use-saved-values#custom-data-store
+
+https://developer.android.com/reference/android/preference/PreferenceDataStore
+  API 26+
+
+https://android.googlesource.com/platform/frameworks/base/+/HEAD/core/java/android/preference/PreferenceDataStore.java
+  public interface PreferenceDataStore {
+
+----------------------------------------------------------------------------------------------------
+
+https://android.googlesource.com/platform/frameworks/base/+/HEAD/core/java/android/preference/Preference.java
+  public class Preference implements Comparable<Preference> {
+
+    public void setPreferenceDataStore(PreferenceDataStore dataStore) {
+        mPreferenceDataStore = dataStore;
+    }
+
+    public PreferenceDataStore getPreferenceDataStore() {
+        if (mPreferenceDataStore != null) {
+            return mPreferenceDataStore;
+        } else if (mPreferenceManager != null) {
+            return mPreferenceManager.getPreferenceDataStore();
+        }
+        return null;
+    }
+
+    protected void onAttachedToHierarchy(PreferenceManager preferenceManager) {
+        mPreferenceManager = preferenceManager;
+        mId = preferenceManager.getNextId();
+        dispatchSetInitialValue();
+    }
+
+    protected boolean shouldPersist() {
+        return mPreferenceManager != null && isPersistent() && hasKey();
+    }
+
+    protected boolean persistString(String value) {
+        if (!shouldPersist()) {
+            return false;
+        }
+
+        PreferenceDataStore dataStore = getPreferenceDataStore();
+        if (dataStore != null) {
+            dataStore.putString(mKey, value);
+        } else {
+            SharedPreferences.Editor editor = mPreferenceManager.getEditor();
+            editor.putString(mKey, value);
+            tryCommit(editor);
+        }
+        return true;
+    }
+
+----------------------------------------------------------------------------------------------------
+
+https://android.googlesource.com/platform/frameworks/base/+/HEAD/core/res/res/values/styles.xml#1065
+
+
+https://android.googlesource.com/platform/frameworks/base/+/HEAD/core/java/android/preference/DialogPreference.java
+  public abstract class DialogPreference extends Preference implements
+        DialogInterface.OnClickListener, DialogInterface.OnDismissListener,
+        PreferenceManager.OnActivityDestroyListener {
+
+    private CharSequence mPositiveButtonText;
+    private CharSequence mNegativeButtonText;
+
+    public DialogPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+
+        final TypedArray a = context.obtainStyledAttributes(attrs, com.android.internal.R.styleable.DialogPreference, defStyleAttr, defStyleRes);
+        mPositiveButtonText = a.getString(com.android.internal.R.styleable.DialogPreference_positiveButtonText);
+        mNegativeButtonText = a.getString(com.android.internal.R.styleable.DialogPreference_negativeButtonText);
+    }
+
+    public void setPositiveButtonText(CharSequence positiveButtonText) {
+        mPositiveButtonText = positiveButtonText;
+    }
+    public void setPositiveButtonText(@StringRes int positiveButtonTextResId) {
+        setPositiveButtonText(getContext().getString(positiveButtonTextResId));
+    }
+    public void setNegativeButtonText(CharSequence negativeButtonText) {
+        mNegativeButtonText = negativeButtonText;
+    }
+    public void setNegativeButtonText(@StringRes int negativeButtonTextResId) {
+        setNegativeButtonText(getContext().getString(negativeButtonTextResId));
+    }
+
+    public void setDialogLayoutResource(int dialogLayoutResId) {
+        mDialogLayoutResId = dialogLayoutResId;
+    }
+
+    protected View onCreateDialogView() {
+        LayoutInflater inflater = LayoutInflater.from(mBuilder.getContext());
+        return inflater.inflate(mDialogLayoutResId, null);
+    }
+
+    protected void showDialog(Bundle state) {
+        mBuilder = new AlertDialog.Builder(context);
+        View contentView = onCreateDialogView();
+        onBindDialogView(contentView);
+        mBuilder.setView(contentView);
+        onPrepareDialogBuilder(mBuilder);
+    }
+
+    protected void onBindDialogView(View view) {
+        View dialogMessageView = view.findViewById(com.android.internal.R.id.message);
+        final CharSequence message = getDialogMessage();
+        ((TextView) dialogMessageView).setText(message);
+    }
+
+    public void setDialogMessage(int dialogMessageResId) {
+        setDialogMessage(getContext().getString(dialogMessageResId));
+    }
+    public CharSequence getDialogMessage() {
+        return mDialogMessage;
+    }
+
+----------------------------------------------------------------------------------------------------
+
+https://android.googlesource.com/platform/frameworks/base/+/HEAD/core/java/android/preference/EditTextPreference.java
+  public class EditTextPreference extends DialogPreference {
+
+    public EditTextPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+
+        mEditText = new EditText(context, attrs);
+        mEditText.setId(com.android.internal.R.id.edit);
+        mEditText.setEnabled(true);
+    }
+
+    @Override
+    protected void onBindDialogView(View view) {
+        super.onBindDialogView(view);
+        onAddEditTextToDialogView(view, editText);
+    }
+
+    protected void onAddEditTextToDialogView(View dialogView, EditText editText) {
+        ViewGroup container = (ViewGroup) dialogView.findViewById(com.android.internal.R.id.edittext_container);
+
+        container.addView(editText, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+    }
+
+    public void setText(String text) {
+        persistString(text);
+        notifyChanged();
+    }
+
+    @Override
+    protected void onDialogClosed(boolean positiveResult) {
+        super.onDialogClosed(positiveResult);
+
+        if (positiveResult) {
+            String value = mEditText.getText().toString();
+            setText(value);
+        }
+    }
+
+----------------------------------------------------------------------------------------------------

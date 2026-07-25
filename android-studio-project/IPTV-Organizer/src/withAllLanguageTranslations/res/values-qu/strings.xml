@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Wakichiq</string>
+  <string name="activity_channels">M3U Ñankuna</string>
+  <string name="activity_epg">EPG Ñankuna</string>
+  <string name="cancel">Qichuy</string>
+  <string name="enter_url">Yaykuy URL</string>
+  <string name="exit">Lluqsinapaq</string>
+  <string name="export_file">Willakuyta Hawaman Apachiy</string>
+  <string name="import_file">Willakuyta Apamuy</string>
+  <string name="import_generic">Hawa llaqtamanta apamuy</string>
+  <string name="save">Waqaychay</string>
+  <string name="search">Mask\'ay</string>
+  <string name="settings">Allichaykuna</string>
+  <string name="toast_error_no_app_found">Hawa kaq media waqachiq mana tarisqachu</string>
+  <string name="channels_menuitem_import_m3u_url">Hawa llaqtamanta apamuy M3U Takikunaq qatiynin URL</string>
+  <string name="channels_menuitem_import_m3u_file">Hawa llaqtamanta apamuy M3U Takikunaq qillqasqan</string>
+  <string name="channels_menuitem_sort_sequential">Qatiqatillanmanta allichay</string>
+  <string name="channels_menuitem_sort_alphabetic">Simi qillqahina t\'aqay</string>
+  <string name="epg_menuitem_import_xmltv_url">Hawa llaqtamanta apamuy XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Hawa llaqtamanta apamuy XMLTV EPG Willañiqita</string>
+  <string name="pref_default_m3u_url_title">Qallariylla M3U Takikunaq qatiynin URL</string>
+  <string name="pref_default_m3u_url_summary">Qallariy chanin yaykunanpaq \"Hawa llaqtamanta apamuy M3U Takikunaq qatiynin URL\" Rimanakuy.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">T\'uqu sutimanta t\'uquman ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[suti utaq tvg-name] =\> [musuq tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Qhawanamanta saywiti ID pusay ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[Mawka tvg-id] =\> [musuq tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Q\'ispichay: ñan sutinwan yuraq listapi</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[suti utaq tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Ñanman hina suysuy ID Allin kaqkunapaq lista</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Willaykuna URL mana hukmanta kaq qillqa chaninkuna</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Sapa siqipi huk chanin.</string>
+  <string name="pref_default_xmltv_url_title">Qallariylla XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Qallariy chanin yaykunanpaq \"Hawa llaqtamanta apamuy XMLTV EPG URL\" Rimanakuy.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Apamuy suysunata churay</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Taripasqa yaykuchina ñankuna M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Lliw kanalakunata apamuy</string>
+</resources>

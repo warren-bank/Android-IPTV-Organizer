@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Зохион байгуулагч</string>
+  <string name="activity_channels">M3U Сувгууд</string>
+  <string name="activity_epg">EPG Сувгууд</string>
+  <string name="cancel">Хуцлах</string>
+  <string name="enter_url">Орох URL</string>
+  <string name="exit">Гарах</string>
+  <string name="export_file">Файлыг экспортлох</string>
+  <string name="import_file">Файл импортлох</string>
+  <string name="import_generic">Импорт</string>
+  <string name="save">Хадгалах</string>
+  <string name="search">Хайх</string>
+  <string name="settings">Тохиргоо</string>
+  <string name="toast_error_no_app_found">Гадаад медиа тоглуулагч олдоогүй</string>
+  <string name="channels_menuitem_import_m3u_url">Импорт M3U Тоглолтын жагсаалт URL</string>
+  <string name="channels_menuitem_import_m3u_file">Импорт M3U Тоглолтын жагсаалтын файл</string>
+  <string name="channels_menuitem_sort_sequential">Дарааллаар ангилах</string>
+  <string name="channels_menuitem_sort_alphabetic">Үсгийн дарааллаар эрэмбэлэх</string>
+  <string name="epg_menuitem_import_xmltv_url">Импорт XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Импорт XMLTV EPG Файл</string>
+  <string name="pref_default_m3u_url_title">Анхдагч M3U Тоглолтын жагсаалт URL</string>
+  <string name="pref_default_m3u_url_summary">Оролтын анхны утга \"Импорт M3U Тоглолтын жагсаалт URL\" харилцах.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Сувгийн нэрээс сувгийг холбох зураг ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Мөр бүрт нэг утга. Формат: \"[нэр эсвэл tvg-name] =\> [шинэ tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Сувгаас авсан газрын зураг ID чиглүүлэх ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Мөр бүрт нэг утга. Формат: \"[хуучин tvg-id] =\> [шинэ tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Сувгийн нэрний цагаан жагсаалтаар шүүгээрэй</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Мөр бүрт нэг утга. Формат: \"[нэр эсвэл tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Сувгаар шүүх ID Цагаан жагсаалт</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Мөр бүрт нэг утга. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Мэдээлэл URL статик очерёг утгууд</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Мөр бүрт нэг утга.</string>
+  <string name="pref_default_xmltv_url_title">Анхдагч XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Оролтын анхны утга \"Импорт XMLTV EPG URL\" харилцах.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Импортын шүүлтүүр хэрэглэ</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Олдсон импортын сувгууд M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Бүх сувгуудыг импортлох</string>
+</resources>

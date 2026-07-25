@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Penyelenggara</string>
+  <string name="activity_channels">M3U Saluran</string>
+  <string name="activity_epg">EPG Saluran</string>
+  <string name="cancel">Batal</string>
+  <string name="enter_url">Masuk URL</string>
+  <string name="exit">Keluar</string>
+  <string name="export_file">Ekspor File</string>
+  <string name="import_file">Impor Berkas</string>
+  <string name="import_generic">Impor</string>
+  <string name="save">Simpan</string>
+  <string name="search">Cari</string>
+  <string name="settings">Pengaturan</string>
+  <string name="toast_error_no_app_found">Pemutar media eksternal tidak ditemukan</string>
+  <string name="channels_menuitem_import_m3u_url">Impor M3U Daftar Putar URL</string>
+  <string name="channels_menuitem_import_m3u_file">Impor M3U Berkas Daftar Putar</string>
+  <string name="channels_menuitem_sort_sequential">Urutkan Secara Berurutan</string>
+  <string name="channels_menuitem_sort_alphabetic">Urutkan Menurut Abjad</string>
+  <string name="epg_menuitem_import_xmltv_url">Impor XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Impor XMLTV EPG Berkas</string>
+  <string name="pref_default_m3u_url_title">Default M3U Daftar Putar URL</string>
+  <string name="pref_default_m3u_url_summary">Nilai awal di \"Impor M3U Daftar Putar URL\" dialog.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Pemetaan dari nama saluran ke saluran ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Satu nilai per baris. Format: \"[nama atau tvg-name] =\> [baru tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Peta dari saluran ID ke saluran ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Satu nilai per baris. Format: \"[lama tvg-id] =\> [baru tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Saring berdasarkan daftar putih nama saluran</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Satu nilai per baris. Format: \"[nama atau tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Saring berdasarkan saluran ID daftar putih</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Satu nilai per baris. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Media URL nilai string statis</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Satu nilai per baris.</string>
+  <string name="pref_default_xmltv_url_title">Default XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Nilai awal di \"Impor XMLTV EPG URL\" dialog.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Terapkan Filter Impor</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Saluran impor yang terdapat di M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Impor semua saluran</string>
+</resources>

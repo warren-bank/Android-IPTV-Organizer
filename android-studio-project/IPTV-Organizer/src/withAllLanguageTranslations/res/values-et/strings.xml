@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Korraldaja</string>
+  <string name="activity_channels">M3U Kanalid</string>
+  <string name="activity_epg">EPG Kanalid</string>
+  <string name="cancel">Tühista</string>
+  <string name="enter_url">Sisesta URL</string>
+  <string name="exit">Väljumine</string>
+  <string name="export_file">Faili eksportimine</string>
+  <string name="import_file">Faili importimine</string>
+  <string name="import_generic">Import</string>
+  <string name="save">Salvesta</string>
+  <string name="search">Otsing</string>
+  <string name="settings">Seaded</string>
+  <string name="toast_error_no_app_found">Välist meediapleierit ei leitud</string>
+  <string name="channels_menuitem_import_m3u_url">Import M3U Esitusloend URL</string>
+  <string name="channels_menuitem_import_m3u_file">Import M3U Esitusloendi fail</string>
+  <string name="channels_menuitem_sort_sequential">Järjestada järjestikku</string>
+  <string name="channels_menuitem_sort_alphabetic">Järjesta tähestiku järgi</string>
+  <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Fail</string>
+  <string name="pref_default_m3u_url_title">Vaikimisi M3U Esitusloend URL</string>
+  <string name="pref_default_m3u_url_summary">Algväärtus \"Import M3U Esitusloend URL\" dialoog.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kaart, mis seostab kanali nime kanaliga ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Üks väärtus real. Vorming: \"[nimi või tvg-name] =\> [uus tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart kanalilt ID kanalisse ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Üks väärtus real. Vorming: \"[vana tvg-id] =\> [uus tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtreeri kanali nime lubatud nimekirja järgi</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Üks väärtus real. Vorming: \"[nimi või tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtreeri kanali järgi ID lubatud nimekiri</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Üks väärtus real. Vorming: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Meedia URL staatilised string-väärtused</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Üks väärtus real.</string>
+  <string name="pref_default_xmltv_url_title">Vaikimisi XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Algväärtus \"Import XMLTV EPG URL\" dialoog.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Kohalda importfiltrit</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Leitud importkanalid asuvad M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Kõik kanalid importida</string>
+</resources>

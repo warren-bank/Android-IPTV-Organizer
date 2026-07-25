@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV برگزارکننده</string>
+  <string name="activity_channels">M3U کانال‌ها</string>
+  <string name="activity_epg">EPG کانال‌ها</string>
+  <string name="cancel">لغو</string>
+  <string name="enter_url">وارد شوید URL</string>
+  <string name="exit">خروج</string>
+  <string name="export_file">صادرات فایل</string>
+  <string name="import_file">وارد کردن فایل</string>
+  <string name="import_generic">واردات</string>
+  <string name="save">ذخیره</string>
+  <string name="search">جستجو</string>
+  <string name="settings">تنظیمات</string>
+  <string name="toast_error_no_app_found">پخش‌کنندهٔ رسانه‌ای خارجی پیدا نشد</string>
+  <string name="channels_menuitem_import_m3u_url">واردات M3U لیست پخش URL</string>
+  <string name="channels_menuitem_import_m3u_file">واردات M3U فایل پخش‌موسیقی</string>
+  <string name="channels_menuitem_sort_sequential">ترتیب زمانی</string>
+  <string name="channels_menuitem_sort_alphabetic">ترتیب الفبایی</string>
+  <string name="epg_menuitem_import_xmltv_url">واردات XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">واردات XMLTV EPG فایل</string>
+  <string name="pref_default_m3u_url_title">پیش‌فرض M3U لیست پخش URL</string>
+  <string name="pref_default_m3u_url_summary">مقدار اولیه در \"واردات M3U لیست پخش URL\" گفتگو.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">نقشه از نام کانال به کانال ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">یک مقدار در هر خط. قالب: \"[نام یا tvg-name] =\> [جدید tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">نقشه از کانال ID راهنمایی کردن ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">یک مقدار در هر خط. قالب: \"[پیر tvg-id] =\> [جدید tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">فیلتر بر اساس نام کانال در لیست سفید</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">یک مقدار در هر خط. قالب: \"[نام یا tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">فیلتر بر اساس کانال ID فهرست سفید</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">یک مقدار در هر خط. قالب: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">رسانه‌ها URL مقادیر رشته‌ای ایستا</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">یک مقدار در هر خط.</string>
+  <string name="pref_default_xmltv_url_title">پیش‌فرض XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">مقدار اولیه در \"واردات XMLTV EPG URL\" گفتگو.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">اعمال فیلتر واردات</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >کانال‌های وارداتی یافت‌شده در M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">وارد کردن همهٔ کانال‌ها</string>
+</resources>

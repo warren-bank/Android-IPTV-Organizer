@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Tashkilotchi</string>
+  <string name="activity_channels">M3U Kanalalar</string>
+  <string name="activity_epg">EPG Kanalalar</string>
+  <string name="cancel">Bekor qilish</string>
+  <string name="enter_url">Kirish URL</string>
+  <string name="exit">Chiqish</string>
+  <string name="export_file">Faylni eksport qilish</string>
+  <string name="import_file">Faylni import qilish</string>
+  <string name="import_generic">Import</string>
+  <string name="save">Saqlash</string>
+  <string name="search">Qidiruv</string>
+  <string name="settings">Sozlamalar</string>
+  <string name="toast_error_no_app_found">Tashqi media pleer topilmadi</string>
+  <string name="channels_menuitem_import_m3u_url">Import M3U Pleylist URL</string>
+  <string name="channels_menuitem_import_m3u_file">Import M3U Playlist fayli</string>
+  <string name="channels_menuitem_sort_sequential">Navbatma-navbat tartibga solish</string>
+  <string name="channels_menuitem_sort_alphabetic">Alfavit bo\'yicha tartiblash</string>
+  <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Hujjat</string>
+  <string name="pref_default_m3u_url_title">Standart M3U Pleylist URL</string>
+  <string name="pref_default_m3u_url_summary">Boshlang\'ich qiymat \"Import M3U Pleylist URL\" dialog.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal nomidan kanalga xarita ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Har bir satrda bitta qiymat. Format: \"[nomi yoki tvg-name] =\> [yangi tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kanalning xaritasi ID yo\'naltirish uchun ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Har bir satrda bitta qiymat. Format: \"[eski tvg-id] =\> [yangi tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Kanal nomiga ko\'ra oq ro\'yxat bo\'yicha filtrlash</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Har bir satrda bitta qiymat. Format: \"[nomi yoki tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanal bo\'yicha filtrlash ID Oq ro\'yxat</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Har bir satrda bitta qiymat. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Ommaviy axborot vositalari URL statik satr qiymatlari</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Har bir satrda bitta qiymat.</string>
+  <string name="pref_default_xmltv_url_title">Standart XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Boshlang\'ich qiymat \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Import filtrini qo\'llang</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Topilgan import kanallari M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Barcha kanallarni import qiling</string>
+</resources>

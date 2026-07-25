@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Szervező</string>
+  <string name="activity_channels">M3U Csatornák</string>
+  <string name="activity_epg">EPG Csatornák</string>
+  <string name="cancel">Mégse</string>
+  <string name="enter_url">Belépés URL</string>
+  <string name="exit">Kilépés</string>
+  <string name="export_file">Fájl exportálása</string>
+  <string name="import_file">Fájl importálása</string>
+  <string name="import_generic">Importálás</string>
+  <string name="save">Mentés</string>
+  <string name="search">Keresés</string>
+  <string name="settings">Beállítások</string>
+  <string name="toast_error_no_app_found">Nem található külső médialejátszó</string>
+  <string name="channels_menuitem_import_m3u_url">Importálás M3U Lejátszási lista URL</string>
+  <string name="channels_menuitem_import_m3u_file">Importálás M3U Lejátszási lista fájl</string>
+  <string name="channels_menuitem_sort_sequential">Sorba rendezés</string>
+  <string name="channels_menuitem_sort_alphabetic">Ábécésorrendbe rendezés</string>
+  <string name="epg_menuitem_import_xmltv_url">Importálás XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Importálás XMLTV EPG Fájl</string>
+  <string name="pref_default_m3u_url_title">Alapértelmezett M3U Lejátszási lista URL</string>
+  <string name="pref_default_m3u_url_summary">Kezdőérték a \"Importálás M3U Lejátszási lista URL\" párbeszéd.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">A csatorna neve és a csatorna közötti leképezés ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Soronként egy érték. Formátum: \"[név vagy tvg-name] =\> [új tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Térkép a csatornáról ID csatornázni ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Soronként egy érték. Formátum: \"[régi tvg-id] =\> [új tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Szűrés a csatornanevek engedélyezett listája alapján</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Soronként egy érték. Formátum: \"[név vagy tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Szűrés csatorna szerint ID fehér lista</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Soronként egy érték. Formátum: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Média URL statikus karakterlánc-értékek</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Soronként egy érték.</string>
+  <string name="pref_default_xmltv_url_title">Alapértelmezett XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Kezdőérték a \"Importálás XMLTV EPG URL\" párbeszéd.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Importszűrő alkalmazása</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Az alábbi helyeken található importcsatornák: M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Az összes csatorna importálása</string>
+</resources>

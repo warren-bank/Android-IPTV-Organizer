@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Antolatzailea</string>
+  <string name="activity_channels">M3U Kanalak</string>
+  <string name="activity_epg">EPG Kanalak</string>
+  <string name="cancel">Ezeztatu</string>
+  <string name="enter_url">Sartu URL</string>
+  <string name="exit">Irten</string>
+  <string name="export_file">Exportatu fitxategia</string>
+  <string name="import_file">Inportatu fitxategia</string>
+  <string name="import_generic">Inportatu</string>
+  <string name="save">Gorde</string>
+  <string name="search">Bilatu</string>
+  <string name="settings">Ezarpenak</string>
+  <string name="toast_error_no_app_found">Kanpoko media erreproduzitzailea ez da aurkitu</string>
+  <string name="channels_menuitem_import_m3u_url">Inportatu M3U Entzuteko zerrenda URL</string>
+  <string name="channels_menuitem_import_m3u_file">Inportatu M3U Playlist fitxategia</string>
+  <string name="channels_menuitem_sort_sequential">Seurkako ordenan sailkatu</string>
+  <string name="channels_menuitem_sort_alphabetic">Hurrenkatu alfabetikoki</string>
+  <string name="epg_menuitem_import_xmltv_url">Inportatu XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Inportatu XMLTV EPG Fitxategia</string>
+  <string name="pref_default_m3u_url_title">Lehenetsia M3U Entzuteko zerrenda URL</string>
+  <string name="pref_default_m3u_url_summary">Balio hasierakoa sartzeko \"Inportatu M3U Entzuteko zerrenda URL\" elkarrizketa.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal-izenetik kanalera mapaketa ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Ilara bakoitzeko balio bat. Formatu: \"[izena edo tvg-name] =\> [berri tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kanaleko mapa ID bideratzeko ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Ilara bakoitzeko balio bat. Formatu: \"[zaharra tvg-id] =\> [berri tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Kanalaren izenaren arabera zuri-zerrendatu</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ilara bakoitzeko balio bat. Formatu: \"[izena edo tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanalaren arabera iragazi ID Zerrenda zuria</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ilara bakoitzeko balio bat. Formatu: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Komunikabideak URL balio estatikoak katean</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary"> Lerro bakoitzeko balio bat.</string>
+  <string name="pref_default_xmltv_url_title">Lehenetsia XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Balio hasierakoa sartzeko \"Inportatu XMLTV EPG URL\" elkarrizketa.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Inportazio-iragazkia aplikatu</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >aurkitutako inportazio-kanalak M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Inportatu kanal guztiak</string>
+</resources>

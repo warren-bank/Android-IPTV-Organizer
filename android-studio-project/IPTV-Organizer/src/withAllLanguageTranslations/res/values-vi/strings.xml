@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Đơn vị tổ chức</string>
+  <string name="activity_channels">M3U Kênh</string>
+  <string name="activity_epg">EPG Kênh</string>
+  <string name="cancel">Hủy</string>
+  <string name="enter_url">Nhập URL</string>
+  <string name="exit">Thoát</string>
+  <string name="export_file">Xuất tệp</string>
+  <string name="import_file">Nhập tệp</string>
+  <string name="import_generic">Nhập khẩu</string>
+  <string name="save">Lưu</string>
+  <string name="search">Tìm kiếm</string>
+  <string name="settings">Cài đặt</string>
+  <string name="toast_error_no_app_found">Không tìm thấy trình phát đa phương tiện bên ngoài</string>
+  <string name="channels_menuitem_import_m3u_url">Nhập khẩu M3U Danh sách phát URL</string>
+  <string name="channels_menuitem_import_m3u_file">Nhập khẩu M3U Tệp danh sách phát</string>
+  <string name="channels_menuitem_sort_sequential">Sắp xếp theo thứ tự</string>
+  <string name="channels_menuitem_sort_alphabetic">Sắp xếp theo thứ tự bảng chữ cái</string>
+  <string name="epg_menuitem_import_xmltv_url">Nhập khẩu XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Nhập khẩu XMLTV EPG Tệp</string>
+  <string name="pref_default_m3u_url_title">Mặc định M3U Danh sách phát URL</string>
+  <string name="pref_default_m3u_url_summary">Giá trị ban đầu trong \"Nhập khẩu M3U Danh sách phát URL\" hộp thoại.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Bảng đối chiếu từ tên kênh sang kênh ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Mỗi dòng một giá trị. Định dạng: \"[tên hoặc tvg-name] =\> [mới tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Bản đồ từ kênh ID để dẫn truyền ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Mỗi dòng một giá trị. Định dạng: \"[cũ tvg-id] =\> [mới tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Lọc theo danh sách trắng tên kênh</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Mỗi dòng một giá trị. Định dạng: \"[tên hoặc tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Lọc theo kênh ID danh sách trắng</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Mỗi dòng một giá trị. Định dạng: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Phương tiện truyền thông URL các giá trị chuỗi tĩnh</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Mỗi dòng một giá trị.</string>
+  <string name="pref_default_xmltv_url_title">Mặc định XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Giá trị ban đầu trong \"Nhập khẩu XMLTV EPG URL\" hộp thoại.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Áp dụng bộ lọc nhập khẩu</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Các kênh nhập khẩu được tìm thấy trong M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Nhập tất cả các kênh</string>
+</resources>

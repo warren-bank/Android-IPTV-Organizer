@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV आयोजकः</string>
+  <string name="activity_channels">M3U वाहिन्यः</string>
+  <string name="activity_epg">EPG वाहिन्यः</string>
+  <string name="cancel">रद्दीकरणम्</string>
+  <string name="enter_url">प्रवेशयतु URL</string>
+  <string name="exit">निर्गमनम्</string>
+  <string name="export_file">निर्यातपत्रिका</string>
+  <string name="import_file">आयातपत्रिका</string>
+  <string name="import_generic">आयातः</string>
+  <string name="save">रक्षतु</string>
+  <string name="search">अन्वेषणम्</string>
+  <string name="settings">विन्यासाः</string>
+  <string name="toast_error_no_app_found">बाह्यमाध्यमवाद्ययन्त्रम् न दृष्टम्</string>
+  <string name="channels_menuitem_import_m3u_url">आयातः M3U गीतसूची URL</string>
+  <string name="channels_menuitem_import_m3u_file">आयातः M3U गीतसूचीपत्रिका</string>
+  <string name="channels_menuitem_sort_sequential">क्रमबद्धतया विविन्यतु</string>
+  <string name="channels_menuitem_sort_alphabetic">वर्णक्रमेण विविन्यतु</string>
+  <string name="epg_menuitem_import_xmltv_url">आयातः XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">आयातः XMLTV EPG पत्रिका</string>
+  <string name="pref_default_m3u_url_title">पूर्वनिर्धारितम् M3U गीतसूची URL</string>
+  <string name="pref_default_m3u_url_summary">प्रारम्भिक मूल्ये \"आयातः M3U गीतसूची URL\" संवादः.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">नालिकानाम्नात् नालिकायाः नामनिर्देशः ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[नाम वा tvg-name] =\> [नवीनः tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">वाहिन्याः मानचित्रम् ID मार्गयितुम् ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[पुरातनः tvg-id] =\> [नवीनः tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">चैनलनाम्ना श्वेतसूचीकरणं कुर्वन्तु</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[नाम वा tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">मार्गेण छानयतु ID श्वेतसूची</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">माध्यमाः URL स्थिर-श्रृङ्खला-मूल्यानि</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">प्रतिपङ्क्तौ एकः मानः.</string>
+  <string name="pref_default_xmltv_url_title">पूर्वनिर्धारितम् XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">प्रारम्भिक मूल्ये \"आयातः XMLTV EPG URL\" संवादः.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">आयात-छन्निकां प्रयोजयतु</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >प्राप्तमार्गाः यत्र सन्ति M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">सर्वाणि चैनलाणि आयातयतु</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/epg_menuitem_channels"
+        android:orderInCategory="1"
+        android:title="@string/epg_menuitem_channels"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/epg_menuitem_import_xmltv_url"
+        android:orderInCategory="2"
+        android:title="@string/epg_menuitem_import_xmltv_url"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/epg_menuitem_import_xmltv_file"
+        android:orderInCategory="3"
+        android:title="@string/epg_menuitem_import_xmltv_file"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/epg_menuitem_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:orderInCategory="4"
+        android:title="@string/epg_menuitem_search"
+        android:icon="@drawable/baseline_search_black_24"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/epg_menuitem_settings"
+        android:orderInCategory="5"
+        android:title="@string/epg_menuitem_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/epg_menuitem_exit"
+        android:orderInCategory="6"
+        android:title="@string/epg_menuitem_exit"
+        app:showAsAction="never" />
+</menu>

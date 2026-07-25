@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Onye nhazi</string>
+  <string name="activity_channels">M3U Ụzọ mgbasa ozi</string>
+  <string name="activity_epg">EPG Ụzọ mgbasa ozi</string>
+  <string name="cancel">Kwụsị</string>
+  <string name="enter_url">Banye URL</string>
+  <string name="exit">Pụọ</string>
+  <string name="export_file">Bipụta faịlụ</string>
+  <string name="import_file">Banye faịlụ</string>
+  <string name="import_generic">Bubata</string>
+  <string name="save">Chekwaa</string>
+  <string name="search">Chọọ</string>
+  <string name="settings">Ntọala</string>
+  <string name="toast_error_no_app_found">E nweghị ịchọta onye na-egwu mgbasa ozi mpụga</string>
+  <string name="channels_menuitem_import_m3u_url">Bubata M3U Ndepụta egwu URL</string>
+  <string name="channels_menuitem_import_m3u_file">Bubata M3U Faịlụ ndepụta egwu</string>
+  <string name="channels_menuitem_sort_sequential">Hazie n\'usoro</string>
+  <string name="channels_menuitem_sort_alphabetic">Tọọ n\'usoro mkpụrụedemede</string>
+  <string name="epg_menuitem_import_xmltv_url">Bubata XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Bubata XMLTV EPG Faịlụ</string>
+  <string name="pref_default_m3u_url_title">Ntọala M3U Ndepụta egwu URL</string>
+  <string name="pref_default_m3u_url_summary">Ọnụahịa mbido n\'ime \"Bubata M3U Ndepụta egwu URL\" mkparịta ụka.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Mepụta map si na aha ọwa gaa na ọwa ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Otu uru n\'ahịrị ọ bụla. Usoro: \"[aha ma ọ bụ tvg-name] =\> [ọhụrụ tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Maapụ si na ọwa ID iji ụzọ ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Otu uru n\'ahịrị ọ bụla. Usoro: \"[ochie tvg-id] =\> [ọhụrụ tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Tinye nzacha site na aha ọwa dị na ndepụta ọcha</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Otu uru n\'ahịrị ọ bụla. Usoro: \"[aha ma ọ bụ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Tinye nzacha site na ọwa ID ndepụta ndị a nabatara</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Otu uru n\'ahịrị ọ bụla. Usoro: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Mgbasa ozi URL Ụkpụrụ eriri kwụsiri ike</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Otu uru n\'ahịrị ọ bụla.</string>
+  <string name="pref_default_xmltv_url_title">Ntọala XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Ọnụahịa mbido n\'ime \"Bubata XMLTV EPG URL\" mkparịta ụka.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Tinye nzacha mbubata</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Banye na ọwa ndị achọtara na M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Bubata ọwa niile</string>
+</resources>

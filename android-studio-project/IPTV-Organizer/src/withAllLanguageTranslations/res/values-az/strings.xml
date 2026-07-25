@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Təşkilatçı</string>
+  <string name="activity_channels">M3U Kanalər</string>
+  <string name="activity_epg">EPG Kanalər</string>
+  <string name="cancel">Ləğv et</string>
+  <string name="enter_url">Giriş edin URL</string>
+  <string name="exit">Çıxış</string>
+  <string name="export_file">Faylı ixrac et</string>
+  <string name="import_file">Fayl idxal et</string>
+  <string name="import_generic">İdxal</string>
+  <string name="save">Yadda saxla</string>
+  <string name="search">Axtarış</string>
+  <string name="settings">Tənzimləmələr</string>
+  <string name="toast_error_no_app_found">Xarici media pleyeri tapılmadı</string>
+  <string name="channels_menuitem_import_m3u_url">İdxal M3U Pleylist URL</string>
+  <string name="channels_menuitem_import_m3u_file">İdxal M3U Pleylist faylı</string>
+  <string name="channels_menuitem_sort_sequential">Ardıcıl sırala</string>
+  <string name="channels_menuitem_sort_alphabetic">Alfabet üzrə sırala</string>
+  <string name="epg_menuitem_import_xmltv_url">İdxal XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">İdxal XMLTV EPG Fayl</string>
+  <string name="pref_default_m3u_url_title">Standart M3U Pleylist URL</string>
+  <string name="pref_default_m3u_url_summary">Başlanğıc dəyəri daxil edin \"İdxal M3U Pleylist URL\" dialoq.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal adından kanala xəritə ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Hər sətrdə bir dəyər. Format: \"[ad və ya tvg-name] =\> [yeni tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Kanalın xəritəsi ID istiqamətləndirmək ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Hər sətrdə bir dəyər. Format: \"[köhnə tvg-id] =\> [yeni tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Kanal adı ağ siyahısı üzrə filtrləyin</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Hər sətrdə bir dəyər. Format: \"[ad və ya tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanal üzrə filtrləyin ID Ağ siyahı</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Hər sətrdə bir dəyər. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Media URL statik sətir dəyərləri</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Hər sətrdə bir dəyər.</string>
+  <string name="pref_default_xmltv_url_title">Standart XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Başlanğıc dəyəri daxil edin \"İdxal XMLTV EPG URL\" dialoq.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">İdxal filtri tətbiq et</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Tapılan idxal kanalları M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Bütün kanalları idxal et</string>
+</resources>

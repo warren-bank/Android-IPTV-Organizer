@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">IPTV Organizzatur</string>
+  <string name="activity_channels">M3U Kanali</string>
+  <string name="activity_epg">EPG Kanali</string>
+  <string name="cancel">Ikkanċella</string>
+  <string name="enter_url">Idħol URL</string>
+  <string name="exit">ħruġ</string>
+  <string name="export_file">Esporta fajl</string>
+  <string name="import_file">Importa fajl</string>
+  <string name="import_generic">Importazzjoni</string>
+  <string name="save">Salva</string>
+  <string name="search">Fittex</string>
+  <string name="settings">Issettjarijiet</string>
+  <string name="toast_error_no_app_found">Il-plejer tal-midja estern ma nstabx</string>
+  <string name="channels_menuitem_import_m3u_url">Importazzjoni M3U Lista tal-kanzunetti URL</string>
+  <string name="channels_menuitem_import_m3u_file">Importazzjoni M3U Fajl tal-playlist</string>
+  <string name="channels_menuitem_sort_sequential">Ordna sekwenzjalment</string>
+  <string name="channels_menuitem_sort_alphabetic">Ordna alfabetikament</string>
+  <string name="epg_menuitem_import_xmltv_url">Importazzjoni XMLTV EPG URL</string>
+  <string name="epg_menuitem_import_xmltv_file">Importazzjoni XMLTV EPG Fajl</string>
+  <string name="pref_default_m3u_url_title">Default M3U Lista tal-kanzunetti URL</string>
+  <string name="pref_default_m3u_url_summary">Valur inizjali f\' \"Importazzjoni M3U Lista tal-kanzunetti URL\" djalogu.</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_title">Mappa mis-isem tal-kanal għall-kanal ID</string>
+  <string name="pref_m3u_channels_mapping_name_to_id_summary">Valur wieħed għal kull linja. Format: \"[isem jew tvg-name] =\> [ġdid tvg-id]\"</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_title">Mappa mill-kanal ID biex tikkana ID</string>
+  <string name="pref_m3u_channels_mapping_id_to_id_summary">Valur wieħed għal kull linja. Format: \"[qadim tvg-id] =\> [ġdid tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_title">Filtra skont il-lista bajda tal-ismijiet tal-kanali</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Valur wieħed għal kull linja. Format: \"[isem jew tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtra skont il-kanal ID lista bajda</string>
+  <string name="pref_m3u_channels_filter_whitelist_ids_summary">Valur wieħed għal kull linja. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_media_url_static_values_title">Midja URL valuri ta\' stringa statika</string>
+  <string name="pref_m3u_channels_media_url_static_values_summary">Valur wieħed għal kull linja.</string>
+  <string name="pref_default_xmltv_url_title">Default XMLTV EPG URL</string>
+  <string name="pref_default_xmltv_url_summary">Valur inizjali f\' \"Importazzjoni XMLTV EPG URL\" djalogu.</string>
+  <string name="pref_apply_import_filter_xmltv_channels_title">Aplika l-filtru tal-importazzjoni</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Importa kanali misjuba f\' M3U</string>
+  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importa l-kanali kollha</string>
+</resources>
