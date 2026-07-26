@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="ch1.us">
+    <display-name>Ch1</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/1.png" />
+  </channel>
+  <channel id="ch2.us">
+    <display-name>Ch2</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/2.png" />
+  </channel>
+  <channel id="ch3.us">
+    <display-name>Ch3</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/3.png" />
+  </channel>
+  <channel id="ch4.us">
+    <display-name>Ch4</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/4.png" />
+  </channel>
+  <channel id="ch5.us">
+    <display-name>Ch5</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/5.png" />
+  </channel>
+  <channel id="ch6.us">
+    <display-name>Ch6</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/6.png" />
+  </channel>
+
+  <programme start="20260101000000 +0000" stop="20400101000000 +0000" channel="ch1.us">
+    <title>Best of Ch1</title>
+  </programme>
+  <programme start="20260101000000 +0000" stop="20400101000000 +0000" channel="ch2.us">
+    <title>Best of Ch2</title>
+  </programme>
+  <programme start="20260101000000 +0000" stop="20400101000000 +0000" channel="ch3.us">
+    <title>Best of Ch3</title>
+  </programme>
+  <programme start="20260101000000 +0000" stop="20400101000000 +0000" channel="ch4.us">
+    <title>Best of Ch4</title>
+  </programme>
+  <programme start="20260101000000 +0000" stop="20400101000000 +0000" channel="ch5.us">
+    <title>Best of Ch5</title>
+  </programme>
+  <programme start="20260101000000 +0000" stop="20400101000000 +0000" channel="ch6.us">
+    <title>Best of Ch6</title>
+  </programme>
+</tv>

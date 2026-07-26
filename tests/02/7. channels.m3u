@@ -1,0 +1,13 @@
+#EXTM3U
+#EXTINF:-1,CHANNEL 1
+https://example.com/USERNAME/PASSWORD/11111.ts
+#EXTINF:-1 tvg-name="Ch2",CHANNEL 2
+https://example.com/USERNAME/PASSWORD/22222.ts
+#EXTINF:-1 tvg-id="ch3.us",CHANNEL 3
+https://example.com/USERNAME/PASSWORD/33333.ts
+#EXTINF:-1 tvg-name="Foo4",CHANNEL 4
+https://example.com/USERNAME/PASSWORD/44444.ts
+#EXTINF:-1 tvg-id="foo5.us",CHANNEL 5
+https://example.com/USERNAME/PASSWORD/55555.ts
+#EXTINF:-1,CHANNEL 6
+https://example.com/USERNAME/PASSWORD/66666.ts
