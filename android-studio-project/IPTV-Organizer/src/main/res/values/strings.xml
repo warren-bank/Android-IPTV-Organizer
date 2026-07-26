@@ -3,10 +3,6 @@
   <!-- label: Application -->
   <string name="app_name">IPTV Organizer</string>
 
-  <!-- label: Activities -->
-  <string name="activity_channels">M3U Channels</string>
-  <string name="activity_epg">EPG Channels</string>
-
   <!-- common -->
   <string name="cancel">Cancel</string>
   <string name="enter_url">Enter URL</string>
@@ -18,6 +14,11 @@
   <string name="search">Search</string>
   <string name="settings">Settings</string>
 
+  <!-- label: Activities -->
+  <string name="activity_channels">M3U Channels</string>
+  <string name="activity_epg">EPG Channels</string>
+  <string name="activity_settings">@string/settings</string>
+
   <!-- common: Toasts -->
   <string name="toast_error_no_app_found">External media player not found</string>
 
@@ -28,7 +29,7 @@
   <string name="channels_menuitem_search">@string/search</string>
   <string name="channels_menuitem_sort_sequential">Sort Sequentially</string>
   <string name="channels_menuitem_sort_alphabetic">Sort Alphabetic</string>
-  <string name="channels_menuitem_settings">@string/settings</string>
+  <string name="channels_menuitem_settings">@string/activity_settings</string>
   <string name="channels_menuitem_exit">@string/exit</string>
 
   <!-- ChannelsActivity [menu item dialog]: Import M3U Playlist URL -->
@@ -41,7 +42,7 @@
   <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG File</string>
   <string name="epg_menuitem_search">@string/search</string>
-  <string name="epg_menuitem_settings">@string/settings</string>
+  <string name="epg_menuitem_settings">@string/activity_settings</string>
   <string name="epg_menuitem_exit">@string/exit</string>
 
   <!-- EpgActivity [menu item dialog]: Import XMLTV EPG URL -->
@@ -50,6 +51,7 @@
   <string name="epg_dialog_import_xmltv_url_button_negative">@string/cancel</string>
 
   <!-- SettingsActivity: PreferenceCategory titles -->
+  <string name="pref_category_settings">@string/activity_settings</string>
   <string name="pref_category_m3u_channels">@string/activity_channels</string>
   <string name="pref_category_epg_channels">@string/activity_epg</string>
 
@@ -57,6 +59,27 @@
   <string name="dbedittextpreference_buttontext_negative">@string/import_file</string>
   <string name="dbedittextpreference_buttontext_neutral">@string/export_file</string>
   <string name="dbedittextpreference_buttontext_positive">@string/save</string>
+
+  <!-- SettingsActivity [Settings]: Auto save data after file import -->
+  <string translatable="false" name="pref_dbedittextpreference_autosave_key">pref_dbedittextpreference_autosave</string>
+  <string name="pref_dbedittextpreference_autosave_title">Auto save data after file import</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Imported data is immediately saved to DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Imported data is copied to text field in dialog, but not yet saved to DB</string>
+  <string translatable="false" name="pref_dbedittextpreference_autosave_default">true</string>
+
+  <!-- SettingsActivity [Settings]: Auto close dialog after file import -->
+  <string translatable="false" name="pref_dbedittextpreference_autoclose_key">pref_dbedittextpreference_autoclose</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Auto close dialog after file import</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Close dialog after data is imported and automatically saved to DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Do not close dialog after data is imported and automatically saved to DB</string>
+  <string translatable="false" name="pref_dbedittextpreference_autoclose_default">true</string>
+
+  <!-- SettingsActivity [Settings]: Apply static string values to user-defined default import URL templates -->
+  <string translatable="false" name="pref_apply_default_url_templates_key">pref_apply_default_url_templates</string>
+  <string name="pref_apply_default_url_templates_title">Apply static string values to user-defined default import URL templates</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Default import URL values are templates</string>
+  <string name="pref_apply_default_url_templates_summary_off">Default import URL values are not templates</string>
+  <string translatable="false" name="pref_apply_default_url_templates_default">true</string>
 
   <!-- SettingsActivity [M3U Channels]: Default M3U Playlist URL -->
   <string translatable="false" name="pref_default_m3u_url_key">pref_default_m3u_url</string>

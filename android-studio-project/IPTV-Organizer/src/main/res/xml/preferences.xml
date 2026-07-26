@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
   <PreferenceCategory
+    android:title="@string/pref_category_settings">
+
+    <CheckBoxPreference
+      android:key="@string/pref_dbedittextpreference_autosave_key"
+      android:title="@string/pref_dbedittextpreference_autosave_title"
+      android:summaryOn="@string/pref_dbedittextpreference_autosave_summary_on"
+      android:summaryOff="@string/pref_dbedittextpreference_autosave_summary_off"
+      android:defaultValue="@string/pref_dbedittextpreference_autosave_default" />
+
+    <CheckBoxPreference
+      android:key="@string/pref_dbedittextpreference_autoclose_key"
+      android:dependency="@string/pref_dbedittextpreference_autosave_key"
+      android:title="@string/pref_dbedittextpreference_autoclose_title"
+      android:summaryOn="@string/pref_dbedittextpreference_autoclose_summary_on"
+      android:summaryOff="@string/pref_dbedittextpreference_autoclose_summary_off"
+      android:defaultValue="@string/pref_dbedittextpreference_autoclose_default" />
+
+    <CheckBoxPreference
+      android:key="@string/pref_apply_default_url_templates_key"
+      android:title="@string/pref_apply_default_url_templates_title"
+      android:summaryOn="@string/pref_apply_default_url_templates_summary_on"
+      android:summaryOff="@string/pref_apply_default_url_templates_summary_off"
+      android:defaultValue="@string/pref_apply_default_url_templates_default" />
+
+  </PreferenceCategory>
+  <PreferenceCategory
     android:title="@string/pref_category_m3u_channels">
 
     <EditTextPreference

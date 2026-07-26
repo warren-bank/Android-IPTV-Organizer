@@ -14,6 +14,48 @@ public class SettingsUtils {
 
   // --------------------
 
+  public static boolean getDbEditTextPreferenceAutoSave(Context context) {
+    return getDbEditTextPreferenceAutoSave(context, getPrefs(context));
+  }
+
+  private static boolean getDbEditTextPreferenceAutoSave(Context context, SharedPreferences prefs) {
+    String pref_key     = context.getString(R.string.pref_dbedittextpreference_autosave_key);
+    String pref_default = context.getString(R.string.pref_dbedittextpreference_autosave_default);
+    boolean val_default = "true".equals(pref_default);
+
+    return prefs.getBoolean(pref_key, val_default);
+  }
+
+  // --------------------
+
+  public static boolean getDbEditTextPreferenceAutoClose(Context context) {
+    return getDbEditTextPreferenceAutoClose(context, getPrefs(context));
+  }
+
+  private static boolean getDbEditTextPreferenceAutoClose(Context context, SharedPreferences prefs) {
+    String pref_key     = context.getString(R.string.pref_dbedittextpreference_autoclose_key);
+    String pref_default = context.getString(R.string.pref_dbedittextpreference_autoclose_default);
+    boolean val_default = "true".equals(pref_default);
+
+    return prefs.getBoolean(pref_key, val_default);
+  }
+
+  // --------------------
+
+  public static boolean getApplyDefaultUrlTemplates(Context context) {
+    return getApplyDefaultUrlTemplates(context, getPrefs(context));
+  }
+
+  private static boolean getApplyDefaultUrlTemplates(Context context, SharedPreferences prefs) {
+    String pref_key     = context.getString(R.string.pref_apply_default_url_templates_key);
+    String pref_default = context.getString(R.string.pref_apply_default_url_templates_default);
+    boolean val_default = "true".equals(pref_default);
+
+    return prefs.getBoolean(pref_key, val_default);
+  }
+
+  // --------------------
+
   public static String getDefaultM3uUrlPreference(Context context) {
     return getDefaultM3uUrlPreference(context, getPrefs(context));
   }

@@ -6,7 +6,6 @@ import com.github.warren_bank.iptv_organizer.ui.EpgActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
-import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
 import com.github.warren_bank.filterablerecyclerview.Filter;
 import com.github.warren_bank.filterablerecyclerview.FilterableListItem;
@@ -216,7 +215,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     input.setInputType(InputType.TYPE_TEXT_VARIATION_URI);
     input.setHint(R.string.pref_default_m3u_url_hint);
     input.setText(
-      SettingsUtils.getDefaultM3uUrlPreference(ChannelsActivity.this),
+      DbUtils.getDefaultM3uUrlPreference(ChannelsActivity.this),
       TextView.BufferType.NORMAL
     );
 

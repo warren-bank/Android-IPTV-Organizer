@@ -1,5 +1,7 @@
 package com.github.warren_bank.iptv_organizer.utils;
 
+import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
+
 import com.github.warren_bank.iptv_organizer.database.DbGateway;
 import com.github.warren_bank.iptv_organizer.database.Update;
 
@@ -123,6 +125,24 @@ public class DbUtils {
     return ((values == null) || values.isEmpty())
       ? template
       : String.format(template, values.toArray(new String[0]));
+  }
+
+  public static String getDefaultM3uUrlPreference(Context context) {
+    String url = SettingsUtils.getDefaultM3uUrlPreference(context);
+
+    if (!TextUtils.isEmpty(url) && SettingsUtils.getApplyDefaultUrlTemplates(context))
+      url = DbUtils.resolveM3uMediaUrl(url);
+
+    return url;
+  }
+
+  public static String getDefaultXmltvEpgUrlPreference(Context context) {
+    String url = SettingsUtils.getDefaultXmltvEpgUrlPreference(context);
+
+    if (!TextUtils.isEmpty(url) && SettingsUtils.getApplyDefaultUrlTemplates(context))
+      url = DbUtils.resolveM3uMediaUrl(url);
+
+    return url;
   }
 
 }

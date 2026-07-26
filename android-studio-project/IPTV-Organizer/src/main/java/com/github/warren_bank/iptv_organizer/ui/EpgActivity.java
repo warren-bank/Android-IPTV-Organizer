@@ -1,10 +1,9 @@
 package com.github.warren_bank.iptv_organizer.ui;
 
 import com.github.warren_bank.iptv_organizer.R;
+import com.github.warren_bank.iptv_organizer.data.model.EPGDataImpl;
 import com.github.warren_bank.iptv_organizer.ui.ChannelsActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
-import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
-import com.github.warren_bank.iptv_organizer.data.model.EPGDataImpl;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
 
@@ -161,7 +160,7 @@ public class EpgActivity extends AppCompatActivity {
     input.setInputType(InputType.TYPE_TEXT_VARIATION_URI);
     input.setHint(R.string.pref_default_xmltv_url_hint);
     input.setText(
-      SettingsUtils.getDefaultXmltvEpgUrlPreference(EpgActivity.this),
+      DbUtils.getDefaultXmltvEpgUrlPreference(EpgActivity.this),
       TextView.BufferType.NORMAL
     );
 

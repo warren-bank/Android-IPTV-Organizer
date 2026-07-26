@@ -2,6 +2,7 @@ package com.github.warren_bank.iptv_organizer.ui.settings.custom_preference;
 
 import com.github.warren_bank.iptv_organizer.R;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
+import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 import com.github.warren_bank.iptv_organizer.utils.StreamUtils;
 
 import android.app.Activity;
@@ -160,8 +161,16 @@ public class DbEditTextPreference extends EditTextPreference {
           // update EditText field
           getEditText().setText(text, TextView.BufferType.NORMAL);
 
-          // save to DB
-          setText(text);
+          boolean autosave  = SettingsUtils.getDbEditTextPreferenceAutoSave(getContext());
+          boolean autoclose = autosave && SettingsUtils.getDbEditTextPreferenceAutoClose(getContext());
+
+          // conditionally save to DB
+          if (autosave)
+            setText(text);
+
+          // conditionally dismiss the dialog
+          if (autoclose)
+            getDialog().dismiss();
         }
         catch (Exception e) {}
       }
