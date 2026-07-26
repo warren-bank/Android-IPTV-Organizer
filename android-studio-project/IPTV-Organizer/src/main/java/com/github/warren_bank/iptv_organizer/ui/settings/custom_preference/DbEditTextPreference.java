@@ -24,6 +24,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 public class DbEditTextPreference extends EditTextPreference {
+  private boolean shouldPersist;
+
   public DbEditTextPreference(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
     super(context, attrs, defStyleAttr, defStyleRes);
     applyCustomizations();
@@ -61,7 +63,9 @@ public class DbEditTextPreference extends EditTextPreference {
 
     // initialize value in EditText from DB
     // equivalent to: setText(getPersistedString(null))
+    shouldPersist = false;
     onSetInitialValue(true, null);
+    shouldPersist = true;
 
     // during:  onAttachedToHierarchy() -> dispatchSetInitialValue()
     // prevent: onSetInitialValue(false, mDefaultValue)
@@ -198,6 +202,8 @@ public class DbEditTextPreference extends EditTextPreference {
 
   @Override
   protected boolean persistString(String value) {
+    if (!shouldPersist) return false;
+
     String key = getKey();
 
     // write to DB
