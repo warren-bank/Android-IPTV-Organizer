@@ -47,16 +47,6 @@ public class DbEditTextPreference extends EditTextPreference {
   private CharSequence mNeutralButtonText;
 
   private void applyCustomizations() {
-    if (Build.VERSION.SDK_INT >= 26) {
-      setPreferenceDataStore(new DbPreferenceDataStore());
-    }
-    else {
-      // TODO
-      //   in v1.x: minSDK = 26 (Android 8.0 Oreo)
-      //   in v2.x: minSDK = 19 (Android 4.4 KitKat, and equal to the "android-tv-epg" library)
-      //            a different methodology will be used.. TBD
-    }
-
     getEditText().setInputType(
       InputType.TYPE_CLASS_TEXT |
       InputType.TYPE_TEXT_VARIATION_NORMAL |
@@ -68,6 +58,14 @@ public class DbEditTextPreference extends EditTextPreference {
     setNegativeButtonText(R.string.dbedittextpreference_buttontext_negative); // Import File
     setNeutralButtonText(R.string.dbedittextpreference_buttontext_neutral);   // Export File
     setPositiveButtonText(R.string.dbedittextpreference_buttontext_positive); // Save
+
+    // initialize value in EditText from DB
+    // equivalent to: setText(getPersistedString(null))
+    onSetInitialValue(true, null);
+
+    // during:  onAttachedToHierarchy() -> dispatchSetInitialValue()
+    // prevent: onSetInitialValue(false, mDefaultValue)
+    setDefaultValue(null);
   }
 
   public void setNeutralButtonText(CharSequence neutralButtonText) {
@@ -88,6 +86,7 @@ public class DbEditTextPreference extends EditTextPreference {
 
     Button negativeButton = dialog.getButton(DialogInterface.BUTTON_NEGATIVE);
     Button neutralButton  = dialog.getButton(DialogInterface.BUTTON_NEUTRAL);
+    Button positiveButton = dialog.getButton(DialogInterface.BUTTON_POSITIVE);
 
     negativeButton.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
@@ -127,25 +126,27 @@ public class DbEditTextPreference extends EditTextPreference {
         activity.startActivityForResult(intent, FILE_EXPORT_REQUEST_CODE);
       }
     });
+
+    positiveButton.setOnClickListener(new View.OnClickListener() {
+      public void onClick(View v) {
+        // save to DB
+        String text = getEditText().getText().toString();
+        setText(text);
+
+        // dismiss the dialog
+        getDialog().dismiss();
+      }
+    });
   }
 
   @Override
   protected void onPrepareDialogBuilder(AlertDialog.Builder builder) {
     super.onPrepareDialogBuilder(builder);
 
-    // Do NOT assign listeners to "negative" or "neutral" here!
-    // The default behavior is to dismiss the dialog when clicked, and call onClick().
+    // disable default onclick listeners
     builder.setNegativeButton(getNegativeButtonText(), null);
     builder.setNeutralButton( getNeutralButtonText(),  null);
-
-    // note: This is allowed for "positive" (Save)..
-    // Its default behavior is:
-    // 1. DialogPreference.onClick() sets private: mWhichButtonClicked = which;
-    // 2. DialogPreference.onDismiss calls: onDialogClosed(mWhichButtonClicked == DialogInterface.BUTTON_POSITIVE);
-    // 3. EditTextPreference.onDialogClosed() calls: setText(text);
-    // 4. EditTextPreference.setText() calls: persistString(text);
-    // 5. Preference.persistString() calls: dataStore.putString(mKey, value);
-    // 6.   => Save the value to DB
+    builder.setPositiveButton(getPositiveButtonText(), null);
   }
 
   public void onResult(int requestCode, Uri uri) {
@@ -191,4 +192,32 @@ public class DbEditTextPreference extends EditTextPreference {
     }
   }
 
+  // ---------------------------------------------------------------------------
+  // persistence: use DB instead of SharedPreferences
+  // ---------------------------------------------------------------------------
+
+  @Override
+  protected boolean persistString(String value) {
+    String key = getKey();
+
+    // write to DB
+    return DbPreferenceDataStore.putString(key, value);
+  }
+
+  @Override
+  protected String getPersistedString(String defaultReturnValue) {
+    String key = getKey();
+
+    // read from DB
+    return DbPreferenceDataStore.getString(key, defaultReturnValue);
+  }
+
+  // ---------------------------------------------------------------------------
+  // disable unwanted behavior
+  // ---------------------------------------------------------------------------
+
+  @Override
+  protected void onDialogClosed(boolean positiveResult) {
+    super.onDialogClosed(false);
+  }
 }

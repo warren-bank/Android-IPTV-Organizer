@@ -40,32 +40,27 @@
     <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
       android:key="m3u_channels_mapping_name_to_id"
       android:title="@string/pref_m3u_channels_mapping_name_to_id_title"
-      android:summary="@string/pref_m3u_channels_mapping_name_to_id_summary"
-      android:defaultValue="" />
+      android:summary="@string/pref_m3u_channels_mapping_name_to_id_summary" />
 
     <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
       android:key="m3u_channels_mapping_id_to_id"
       android:title="@string/pref_m3u_channels_mapping_id_to_id_title"
-      android:summary="@string/pref_m3u_channels_mapping_id_to_id_summary"
-      android:defaultValue="" />
+      android:summary="@string/pref_m3u_channels_mapping_id_to_id_summary" />
 
     <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
       android:key="m3u_channels_filter_whitelist_names"
       android:title="@string/pref_m3u_channels_filter_whitelist_names_title"
-      android:summary="@string/pref_m3u_channels_filter_whitelist_names_summary"
-      android:defaultValue="" />
+      android:summary="@string/pref_m3u_channels_filter_whitelist_names_summary" />
 
     <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
       android:key="m3u_channels_filter_whitelist_ids"
       android:title="@string/pref_m3u_channels_filter_whitelist_ids_title"
-      android:summary="@string/pref_m3u_channels_filter_whitelist_ids_summary"
-      android:defaultValue="" />
+      android:summary="@string/pref_m3u_channels_filter_whitelist_ids_summary" />
 
     <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
       android:key="m3u_channels_media_url_static_values"
       android:title="@string/pref_m3u_channels_media_url_static_values_title"
-      android:summary="@string/pref_m3u_channels_media_url_static_values_summary"
-      android:defaultValue="" />
+      android:summary="@string/pref_m3u_channels_media_url_static_values_summary" />
 
   </PreferenceCategory>
   <PreferenceCategory

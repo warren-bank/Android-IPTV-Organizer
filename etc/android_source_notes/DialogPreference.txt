@@ -56,7 +56,10 @@ https://android.googlesource.com/platform/frameworks/base/+/HEAD/core/java/andro
 ----------------------------------------------------------------------------------------------------
 
 https://android.googlesource.com/platform/frameworks/base/+/HEAD/core/res/res/values/styles.xml#1065
-
+  <style name="Preference.DialogPreference">
+    <item name="positiveButtonText">@string/ok</item>
+    <item name="negativeButtonText">@string/cancel</item>
+  </style>
 
 https://android.googlesource.com/platform/frameworks/base/+/HEAD/core/java/android/preference/DialogPreference.java
   public abstract class DialogPreference extends Preference implements

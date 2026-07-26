@@ -2,52 +2,45 @@ package com.github.warren_bank.iptv_organizer.ui.settings.custom_preference;
 
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 
-import android.preference.PreferenceDataStore;
-
 import java.util.List;
 import java.util.Map;
 
-public class DbPreferenceDataStore implements PreferenceDataStore {
-  @Override
-  public void putString(String key, String value) {
+public class DbPreferenceDataStore {
+
+  public static boolean putString(String key, String value) {
     try {
       switch(key) {
           case "m3u_channels_mapping_name_to_id": {
               Map<String, String> data = DbUtils.decodeMap(value);
-              DbUtils.getDb().saveChannelNameMappings(data);
+              return DbUtils.getDb().saveChannelNameMappings(data);
           }
-          break;
 
           case "m3u_channels_mapping_id_to_id": {
               Map<String, String> data = DbUtils.decodeMap(value);
-              DbUtils.getDb().saveChannelIdMappings(data);
+              return DbUtils.getDb().saveChannelIdMappings(data);
           }
-          break;
 
           case "m3u_channels_media_url_static_values": {
               List<String> data = DbUtils.decodeList(value);
-              DbUtils.getDb().saveChannelUrlStaticValues(data);
+              return DbUtils.getDb().saveChannelUrlStaticValues(data);
           }
-          break;
 
           case "m3u_channels_filter_whitelist_names": {
               List<String> data = DbUtils.decodeList(value);
-              DbUtils.getDb().saveChannelNameFilterWhitelist(data);
+              return DbUtils.getDb().saveChannelNameFilterWhitelist(data);
           }
-          break;
 
           case "m3u_channels_filter_whitelist_ids": {
               List<String> data = DbUtils.decodeList(value);
-              DbUtils.getDb().saveChannelIdFilterWhitelist(data);
+              return DbUtils.getDb().saveChannelIdFilterWhitelist(data);
           }
-          break;
       }
     }
     catch(Exception e) {}
+    return false;
   }
 
-  @Override
-  public String getString(String key, String defValue) {
+  public static String getString(String key, String defValue) {
     try {
       switch(key) {
           case "m3u_channels_mapping_name_to_id": {
