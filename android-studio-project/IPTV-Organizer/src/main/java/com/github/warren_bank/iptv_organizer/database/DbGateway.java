@@ -683,6 +683,34 @@ public class DbGateway {
     return names;
   }
 
+  public List<String> getChannelNameFilterWhitelistSubset(boolean getSubstringPatterns) {
+    List<String> names = new ArrayList<String>();
+    String query = "SELECT name FROM m3u_channels_filter_whitelist_names WHERE name" + (getSubstringPatterns ? "" : " NOT") + " LIKE " + sqlEscapeString(Constants.M3U_CHANNELS_FILTER_WHITELIST_NAMES_BY_SUBSTRING_TOKEN + "%") + " ORDER BY name ASC";
+    String name;
+
+    Cursor c = null;
+    try {
+      c = db.query(query);
+
+      if ((c != null) && c.moveToFirst() && c.isFirst()) {
+        do {
+          name = getColumnString(c, "name");
+
+          // remove leading token sequence from substring patterns
+          if (getSubstringPatterns)
+            name = name.substring(Constants.M3U_CHANNELS_FILTER_WHITELIST_NAMES_BY_SUBSTRING_TOKEN.length());
+
+          names.add(name);
+        } while (c.moveToNext());
+      }
+    }
+    catch (SQLiteException e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    }
+    if (c != null) c.close();
+    return names;
+  }
+
   public List<String> getChannelIdFilterWhitelist() {
     List<String> ids = new ArrayList<String>();
     String query = "SELECT * FROM m3u_channels_filter_whitelist_ids ORDER BY tvg_id ASC";

@@ -81,6 +81,35 @@ Android app that organizes IPTV channel and EPG information.
        USA C-SPAN 3
        USA CNN INTERNATIONAL
        ```
+     - when `target_value` begins with the sequence: `+*`
+       * rather than being tested for equality to the value of this string,<br>channel fields are tested for the presence of this substring (excluding the leading 2-char sequence)
+       * examples:
+         1. VOD series
+            - `target_value` = `+*Supernatural S`
+            - M3U channel names that pass the filter:
+              ```text
+              Supernatural S01E01
+              Supernatural S01E02
+              Supernatural S01E03
+              ```
+         2. alternate live streams
+            - `target_value` = `+*CNN`
+            - M3U channel names that pass the filter:
+              ```text
+              US: CNN
+              CA: CNN
+              CNN International
+              ```
+         3. related live streams
+            - `target_value` = `+*ESPN`
+            - M3U channel names that pass the filter:
+              ```text
+              ESPN
+              ESPN+
+              ESPN2
+              ESPN3
+              ESPNU
+              ```
   5. Filter by channel ID whitelist
      - specify one channel ID (ie: `target_value`) per line
      - where `target_value` is equal to:

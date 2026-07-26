@@ -58,15 +58,25 @@ public class ImportUtils {
     // =======================
     // apply filter whitelists
     // =======================
-    List<String> nameWhitelist = db.getChannelNameFilterWhitelist();
-    List<String> idWhitelist   = db.getChannelIdFilterWhitelist();
+    List<String> nameWhitelistSubstrings = db.getChannelNameFilterWhitelistSubset(true);
+    List<String> nameWhitelist           = db.getChannelNameFilterWhitelistSubset(false);
+    List<String> idWhitelist             = db.getChannelIdFilterWhitelist();
 
-    if (!nameWhitelist.isEmpty() || !idWhitelist.isEmpty()) {
+    if (!nameWhitelistSubstrings.isEmpty() || !nameWhitelist.isEmpty() || !idWhitelist.isEmpty()) {
       // One or more whitelists are configured. Channel must match one to pass filter.
 
+      channelNameFilterLoop:
       for (int i = (channels.size() - 1); i >= 0; i--) {
         ChannelListItem channel = channels.get(i);
 
+        if (!nameWhitelistSubstrings.isEmpty()) {
+          for (String substr : nameWhitelistSubstrings) {
+            if (!TextUtils.isEmpty(channel.name)     && channel.name.contains(substr))
+              continue channelNameFilterLoop;
+            if (!TextUtils.isEmpty(channel.tvg_name) && channel.tvg_name.contains(substr))
+              continue channelNameFilterLoop;
+          }
+        }
         if (!nameWhitelist.isEmpty()) {
           if (!TextUtils.isEmpty(channel.name)     && nameWhitelist.contains(channel.name))
             continue;
