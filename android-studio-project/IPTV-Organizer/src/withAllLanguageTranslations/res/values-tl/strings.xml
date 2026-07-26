@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Ayusin ayon sa alpabeto</string>
   <string name="epg_menuitem_import_xmltv_url">I-import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">I-import XMLTV EPG File</string>
+  <string name="pref_dbedittextpreference_autosave_title">Awtomatikong i-save ang datos pagkatapos ng pag-import ng file.</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Ang na-import na datos ay agad na nai-save sa DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Kinokopya ang na-import na datos sa patlang ng teksto sa dialog, ngunit hindi pa ito nai-save sa DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Awtomatikong isara ang dialog pagkatapos ng pag-import ng file</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Isara ang dialog pagkatapos ma-import ang data at awtomatikong mai-save sa DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Huwag isara ang dialog pagkatapos ma-import ang data at awtomatikong mai-save sa DB</string>
+  <string name="pref_apply_default_url_templates_title">Ilapat ang mga nakapirming halaga ng string sa default na import na itinakda ng gumagamit URL mga template</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Default na pag-import URL Ang mga halaga ay mga template.</string>
+  <string name="pref_apply_default_url_templates_summary_off">Default na pag-import URL Ang mga halaga ay hindi mga template.</string>
   <string name="pref_default_m3u_url_title">Default M3U Playlist URL</string>
   <string name="pref_default_m3u_url_summary">Paunang halaga sa \"I-import M3U Playlist URL\" dayalogo.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">I-map ang pangalan ng channel sa channel ID</string>

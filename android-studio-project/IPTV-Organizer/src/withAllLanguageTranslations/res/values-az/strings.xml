@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Alfabet üzrə sırala</string>
   <string name="epg_menuitem_import_xmltv_url">İdxal XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">İdxal XMLTV EPG Fayl</string>
+  <string name="pref_dbedittextpreference_autosave_title">Fayl idxalından sonra avtomatik saxla</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >İdxar edilən məlumat dərhal yadda saxlanılır DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">İdxal olunan məlumat dialoqdakı mətn sahəsinə kopyalanır, lakin hələ yadda saxlanılmayıb. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Fayl idxalından sonra dialoq qutusunu avtomatik bağla</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Məlumat idxal olunduqdan və avtomatik olaraq yedəklənib saxlanıldıqdan sonra dialoqu bağlayın DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Məlumat idxal olunduqdan və avtomatik olaraq yadda saxlanıldıqdan sonra dialoq pəncərəsini bağlamayın DB</string>
+  <string name="pref_apply_default_url_templates_title">İstifadəçi tərəfindən təyin edilmiş standart idxala statik sətir dəyərlərini tətbiq edin URL şablonlar</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Standart idxal URL Dəyərlər şablonlardır</string>
+  <string name="pref_apply_default_url_templates_summary_off">Standart idxal URL Dəyərlər şablonlar deyil</string>
   <string name="pref_default_m3u_url_title">Standart M3U Pleylist URL</string>
   <string name="pref_default_m3u_url_summary">Başlanğıc dəyəri daxil edin \"İdxal M3U Pleylist URL\" dialoq.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal adından kanala xəritə ID</string>

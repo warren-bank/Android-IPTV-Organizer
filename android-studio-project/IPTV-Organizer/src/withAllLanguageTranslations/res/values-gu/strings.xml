@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">વર્ણક્રમ અનુસાર ગોઠવો</string>
   <string name="epg_menuitem_import_xmltv_url">આયાત XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">આયાત XMLTV EPG ફાઇલ</string>
+  <string name="pref_dbedittextpreference_autosave_title">ફાઇલ આયાત પછી આપોઆપ ડેટા સાચવો</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >આયાત કરેલા ડેટાને તરત જ સાચવવામાં આવે છે DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">આયાત કરેલું ડેટા સંવાદમાં ટેક્સ્ટ ફીલ્ડમાં નકલ થાય છે, પરંતુ હજી સુધી તે સાચવવામાં આવ્યું નથી. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ફાઇલ આયાત પછી સંવાદબોક્સ આપમેળે બંધ કરો</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >ડેટા આયાત થયા પછી સંવાદબોક્સ બંધ કરો અને આપમેળે સાચવો DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">ડેટા આયાત થયા પછી અને આપમેળે સંગ્રહિત થયા પછી સંવાદબોક્સ બંધ ન કરો DB</string>
+  <string name="pref_apply_default_url_templates_title">વપરાશકર્તા-વ્યાખ્યાયિત ડિફોલ્ટ આયાત માટે સ્થિર સ્ટ્રિંગ મૂલ્યો લાગુ કરો URL નમૂનાઓ</string>
+  <string name="pref_apply_default_url_templates_summary_on" >ડિફોલ્ટ આયાત URL મૂલ્યો ટેમ્પલેટ્સ છે</string>
+  <string name="pref_apply_default_url_templates_summary_off">ડિફોલ્ટ આયાત URL મૂલ્યો ટેમ્પલેટ નથી</string>
   <string name="pref_default_m3u_url_title">નિર્ધારિત M3U પ્લેલિસ્ટ URL</string>
   <string name="pref_default_m3u_url_summary">પ્રારંભિક મૂલ્ય \"આયાત M3U પ્લેલિસ્ટ URL\" સંવાદ.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ચેનલ નામથી ચેનલ તરફ નકશો ID</string>

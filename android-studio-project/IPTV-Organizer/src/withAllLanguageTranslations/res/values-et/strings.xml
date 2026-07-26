@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Järjesta tähestiku järgi</string>
   <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Fail</string>
+  <string name="pref_dbedittextpreference_autosave_title">Andmete automaatne salvestamine pärast faili importimist</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Imporditud andmed salvestatakse kohe DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Imporditud andmed kopeeritakse dialoogakna tekstiväljale, kuid neid ei ole veel salvestatud DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Dialoogakna automaatne sulgemine pärast faili importimist</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Sulge dialoogaken pärast andmete importimist ja automaatset salvestamist DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ärge sulgege dialoogakent pärast andmete importimist ja automaatset salvestamist DB</string>
+  <string name="pref_apply_default_url_templates_title">Kohalda staatilisi string-väärtusi kasutaja määratud vaikimisi impordile URL mallid</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Vaikimisi import URL väärtused on mallid</string>
+  <string name="pref_apply_default_url_templates_summary_off">Vaikimisi import URL väärtused ei ole mallid</string>
   <string name="pref_default_m3u_url_title">Vaikimisi M3U Esitusloend URL</string>
   <string name="pref_default_m3u_url_summary">Algväärtus \"Import M3U Esitusloend URL\" dialoog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kaart, mis seostab kanali nime kanaliga ID</string>

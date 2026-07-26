@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Emohenda tai rupive</string>
   <string name="epg_menuitem_import_xmltv_url">Mbohypy XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Mbohypy XMLTV EPG Kuatiarogue</string>
+  <string name="pref_dbedittextpreference_autosave_title">Oñeñongatu ijeheguiete marandu oñemoinge rire kuatiarogue.</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Marandu ojeguerúva oñeñongatu voi DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Dato ojeguerúva oñekopia pe ñe\'ẽrã rendápe diálogo-pe, ha katu ne\'ĩra oñeñongatu DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Oñemboty ijehegui pe ñe\'ẽmondoha oñemoinge rire kuatiarogue</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Emboty ñe\'ẽngaha oñemoinge rire marandu ha oñeñongatu ijeheguiete DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ani emboty pe ñe\'ẽngaha oñemoinge rire marandukuéra ha oñeñongatu ijeheguiete DB</string>
+  <string name="pref_apply_default_url_templates_title">Emoĩ mbojoajuha jehaipyre opytáva puruhára omoĩva import-pe g̃uarã. URL Techaukarã</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Jeike ypykue URL Umi mba\'e hepy ha\'e techapyrã.</string>
+  <string name="pref_apply_default_url_templates_summary_off">Jeike ypykue URL Umi mba\'e ndaha\'éi ta\'anga\'ita.</string>
   <string name="pref_default_m3u_url_title">Ojehechaháichaite M3U Purahéi aty URL</string>
   <string name="pref_default_m3u_url_summary">Mbohepy ñepyrũrã \"Mbohypy M3U Purahéi aty URL\" Ñomongeta.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Moñe\'ẽha réra moñe\'ẽhágui ID</string>

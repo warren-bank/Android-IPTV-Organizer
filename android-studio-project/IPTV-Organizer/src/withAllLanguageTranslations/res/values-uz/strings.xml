@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Alfavit bo\'yicha tartiblash</string>
   <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Hujjat</string>
+  <string name="pref_dbedittextpreference_autosave_title">Faylni import qilgandan so\'ng ma\'lumotlarni avtomatik saqlash</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Import qilingan ma\'lumotlar darhol saqlanadi DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Import qilingan ma\'lumotlar dialogdagi matn maydoniga nusxalanadi, lekin hali saqlangan emas. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Fayl import qilingandan so\'ng dialog oynasini avtomatik yopish</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Ma\'lumotlar import qilingach va avtomatik saqlanganidan keyin dialog oynasini yoping DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ma\'lumotlar import qilingach va avtomatik saqlanganidan keyin dialog oynasini yopmang DB</string>
+  <string name="pref_apply_default_url_templates_title">Foydalanuvchi belgilagan standart importga statik satm qiymatlarini qo\'llang URL shablonlar</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Standart import URL Qiymatlar shablonlardir</string>
+  <string name="pref_apply_default_url_templates_summary_off">Standart import URL Qiymatlar shablonlar emas</string>
   <string name="pref_default_m3u_url_title">Standart M3U Pleylist URL</string>
   <string name="pref_default_m3u_url_summary">Boshlang\'ich qiymat \"Import M3U Pleylist URL\" dialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal nomidan kanalga xarita ID</string>

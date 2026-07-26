@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Tọọ n\'usoro mkpụrụedemede</string>
   <string name="epg_menuitem_import_xmltv_url">Bubata XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Bubata XMLTV EPG Faịlụ</string>
+  <string name="pref_dbedittextpreference_autosave_title">Nchekwa akpaghị aka data mgbe ebugara faịlụ</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >A na-echekwa data ebubara ozugbo na DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">E detụrụla data ebubara na ubi ederede n\'ime igbe mkparịta ụka, mana echebeghị ya ka ọ chekwaa. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Mee ka windo mkparịta ụka mechie onwe ya mgbe ebugorịrị faịlụ</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Meechi windo mkparịta ụka mgbe ebugorịrị data ma chekwaa ya akpaghị aka na DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Echegbula windo mkparịta ụka mgbe ebugorịrị data ma chekwaa ya akpaghị aka na DB</string>
+  <string name="pref_apply_default_url_templates_title">Tinye uru eriri kwụ ọtọ na mbubata ndabara onye ọrụ kpebiri URL ntụziaka</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Ntinye ndabara URL Uru bụ ụdị atụ</string>
+  <string name="pref_apply_default_url_templates_summary_off">Ntinye ndabara URL Uru abụghị nlereanya</string>
   <string name="pref_default_m3u_url_title">Ntọala M3U Ndepụta egwu URL</string>
   <string name="pref_default_m3u_url_summary">Ọnụahịa mbido n\'ime \"Bubata M3U Ndepụta egwu URL\" mkparịta ụka.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mepụta map si na aha ọwa gaa na ọwa ID</string>

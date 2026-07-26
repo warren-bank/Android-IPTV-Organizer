@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">จัดเรียงตามตัวอักษร</string>
   <string name="epg_menuitem_import_xmltv_url">นำเข้า XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">นำเข้า XMLTV EPG ไฟล์</string>
+  <string name="pref_dbedittextpreference_autosave_title">บันทึกข้อมูลอัตโนมัติหลังจากนำเข้าไฟล์</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >ข้อมูลที่นำเข้าจะถูกบันทึกทันทีไปยัง DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">ข้อมูลที่นำเข้าถูกคัดลอกไปยังช่องข้อความในหน้าต่างสนทนา แต่ยังไม่ได้บันทึกไปยัง DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ปิดหน้าต่างสนทนาอัตโนมัติหลังจากนำเข้าไฟล์</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >ปิดหน้าต่างสนทนาหลังจากนำเข้าข้อมูลและบันทึกอัตโนมัติไปยัง DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">อย่าปิดหน้าต่างสนทนาหลังจากที่ข้อมูลถูกนำเข้าและบันทึกอัตโนมัติไปยัง DB</string>
+  <string name="pref_apply_default_url_templates_title">ใช้ค่าสตริงคงที่กับการนำเข้าค่าเริ่มต้นที่ผู้ใช้กำหนดเอง URL แม่แบบ</string>
+  <string name="pref_apply_default_url_templates_summary_on" >การนำเข้าตามค่าเริ่มต้น URL ค่าคือเทมเพลต</string>
+  <string name="pref_apply_default_url_templates_summary_off">การนำเข้าตามค่าเริ่มต้น URL ค่าไม่ใช่เทมเพลต</string>
   <string name="pref_default_m3u_url_title">ค่าเริ่มต้น M3U รายชื่อเพลง URL</string>
   <string name="pref_default_m3u_url_summary">ค่าเริ่มต้นใน \"นำเข้า M3U รายชื่อเพลง URL\" กล่องสนทนา.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">แผนที่จากชื่อช่องไปยังช่อง ID</string>

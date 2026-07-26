@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Alaharo araka ny abidy</string>
   <string name="epg_menuitem_import_xmltv_url">Fanafarana XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Fanafarana XMLTV EPG Rakitra</string>
+  <string name="pref_dbedittextpreference_autosave_title">Fitehirizana mandeha ho azy ny angona aorian\'ny fampidirana rakitra</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Ny angon-drakitra nafarana dia voatahiry avy hatrany ao amin\'ny DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Ny angon-drakitra nafarana dia adika ao amin\'ny saha lahatsoratra ao amin\'ny boaty fifanakalozan-kevitra, saingy mbola tsy voatahiry ao amin\'ny DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Mikatona ho azy ny varavarankely fifampidinihana aorian\'ny fampidirana rakitra</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Akato ny varavarankely rehefa tafiditra ny angona ary voatahiry ho azy ao amin\'ny DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Aza akatona ny varavarankely fifampiresahana rehefa tafiditra ny angona ary voatahiry ho azy ao amin\'ny DB</string>
+  <string name="pref_apply_default_url_templates_title">Ampiharo ny sanda tady statika amin\'ny fampidirana mahazatra voafaritin\'ny mpampiasa URL modely</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Fampidirana mahazatra URL Ny sanda dia modely</string>
+  <string name="pref_apply_default_url_templates_summary_off">Fampidirana mahazatra URL Ny sanda dia tsy modely.</string>
   <string name="pref_default_m3u_url_title">Araka ny mahazatra M3U Lisitry ny hira URL</string>
   <string name="pref_default_m3u_url_summary">Sanda voalohany ao \"Fanafarana M3U Lisitry ny hira URL\" resadresaka.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mampifandray ny anaran\'ny fantsona amin\'ny fantsona. ID</string>

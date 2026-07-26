@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Jera bisa haruffan alif</string>
   <string name="epg_menuitem_import_xmltv_url">Shigo XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Shigo XMLTV EPG Fayil</string>
+  <string name="pref_dbedittextpreference_autosave_title">Ajiye bayanai ta atomatik bayan shigo da fayil</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Ana adana bayanan da aka shigo da su nan take zuwa DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">An kwafa bayanan da aka shigo da su zuwa filin rubutu a cikin tattaunawa, amma ba a ajiye su ba tukuna. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Rufe taga bayan shigo da fayil</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Rufe taga bayan an shigo da bayanai kuma an ajiye su ta atomatik zuwa DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Kada a rufe taga bayan an shigo da bayanai kuma an ajiye su ta atomatik DB</string>
+  <string name="pref_apply_default_url_templates_title">Aiwatar da ƙimar igiya mai tsayayye ga shigo da bayanai na tsoho da mai amfani ya ƙayyade URL samfura</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Shigo ta tsohuwa URL ƙimomi su ne samfura</string>
+  <string name="pref_apply_default_url_templates_summary_off">Shigo ta tsohuwa URL Ƙimomi ba samfura ba ne</string>
   <string name="pref_default_m3u_url_title">Zaɓi na asali M3U Jerin waƙoƙi URL</string>
   <string name="pref_default_m3u_url_summary">Kimar farko a cikin \"Shigo M3U Jerin waƙoƙi URL\" tattaunawa.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Jadawalin sunan tashar zuwa tashar ID</string>

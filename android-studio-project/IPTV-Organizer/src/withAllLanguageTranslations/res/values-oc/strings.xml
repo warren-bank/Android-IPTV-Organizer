@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Triar alfabeticament</string>
   <string name="epg_menuitem_import_xmltv_url">Importar XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importar XMLTV EPG Fichièr</string>
+  <string name="pref_dbedittextpreference_autosave_title">Enregistrament automatic de las donadas après l\'importacion del fichièr</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Las donadas importadas son salvadas immediatament dins DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Las donadas importadas son copiadas dins lo camp de tèxte del dialòg, mas pas encara enregistradas dins lo DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Fermar automaticament la boita de dialòg aprèp l\'importacion del fichièr</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Tancar lo dialòg après que las donadas son importadas e salvadas automaticament dins DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Non pas tancar lo quadre de dialòg après que las donadas son importadas e enregistradas automaticament dins DB</string>
+  <string name="pref_apply_default_url_templates_title">Aplicar de valors de cadena estatica a l\'importacion per defaut definida per l\'utilizaire URL modèls</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Importacion per defaut URL Las valors son de modèls.</string>
+  <string name="pref_apply_default_url_templates_summary_off">Importacion per defaut URL Las valors son pas de modèls.</string>
   <string name="pref_default_m3u_url_title">Per defaut M3U Lista de reproduccion URL</string>
   <string name="pref_default_m3u_url_summary">Valor iniciala dins \"Importar M3U Lista de reproduccion URL\" Dialòg.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapa del nom del canal al canal ID</string>

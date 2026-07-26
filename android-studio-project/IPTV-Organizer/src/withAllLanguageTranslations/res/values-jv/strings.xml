@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Urutake miturut abjad</string>
   <string name="epg_menuitem_import_xmltv_url">Impor XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Impor XMLTV EPG File</string>
+  <string name="pref_dbedittextpreference_autosave_title">Nyimpen data otomatis sawisé ngimpor file</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Data sing diimpor langsung disimpen ing DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Data sing diimpor disalin menyang kolom teks ing dialog, nanging durung disimpen menyang DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Tutup dialog kanthi otomatis sawisé ngimpor file</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Tutup dialog sawisé data diimpor lan disimpen kanthi otomatis ing DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Aja nutup dialog sawisé data diimpor lan disimpen kanthi otomatis ing DB</string>
+  <string name="pref_apply_default_url_templates_title">Terapake nilai string statis marang impor bawaan sing diatur pangguna URL cithakan</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Impor baku URL Nilai-nilai iku cithakan</string>
+  <string name="pref_apply_default_url_templates_summary_off">Impor baku URL Nilai-nilai ora minangka cithakan</string>
   <string name="pref_default_m3u_url_title">Standar M3U Dhaptar lagu URL</string>
   <string name="pref_default_m3u_url_summary">Nilai awal ing \"Impor M3U Dhaptar lagu URL\" obrolan.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Peta saka jeneng saluran menyang saluran ID</string>

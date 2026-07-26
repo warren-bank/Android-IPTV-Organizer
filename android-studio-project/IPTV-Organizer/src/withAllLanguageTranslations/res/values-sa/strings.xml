@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">वर्णक्रमेण विविन्यतु</string>
   <string name="epg_menuitem_import_xmltv_url">आयातः XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">आयातः XMLTV EPG पत्रिका</string>
+  <string name="pref_dbedittextpreference_autosave_title">फाइल्-आयानानन्तरम् स्वयमेव दत्तांशं रक्षतु।</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >आयातितदत्तानि तत्क्षणात् सङ्गृहीतानि भवन्ति। DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">आयातितदत्तांशः संवादपेटिकायाः पाठक्षेत्रे प्रतिलिप्यते, किन्तु अद्यापि सङ्गृहीतः न भवति। DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">फाइल्-आयातनानन्तरम् संवादपेटिका स्वयमेव समाप्यते।</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >दत्तानाम् आयानन्तरम् स्वयमेव सुरक्षितानन्तरम् संवादपेटिकां समापयतु। DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">दत्तानाम् आयातनानन्तरम् स्वयमेव संरक्षितानन्तरम् संवादपेटिकां मा समापय। DB</string>
+  <string name="pref_apply_default_url_templates_title">स्थिरतन्तुमूल्यानि प्रयोगकर्तृ-नियत-डिफ़ॉल्ट् आयासाय प्रयोजयतु। URL आदर्शरूपाणि</string>
+  <string name="pref_apply_default_url_templates_summary_on" >पूर्वनिर्धारित आयात URL मूल्यानि आदर्शरूपाणि सन्ति।</string>
+  <string name="pref_apply_default_url_templates_summary_off">पूर्वनिर्धारित आयात URL मूल्यानि रूपरेखाः न सन्ति।</string>
   <string name="pref_default_m3u_url_title">पूर्वनिर्धारितम् M3U गीतसूची URL</string>
   <string name="pref_default_m3u_url_summary">प्रारम्भिक मूल्ये \"आयातः M3U गीतसूची URL\" संवादः.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">नालिकानाम्नात् नालिकायाः नामनिर्देशः ID</string>

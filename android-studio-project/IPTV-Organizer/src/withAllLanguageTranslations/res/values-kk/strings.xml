@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Әліпби тәртібімен сұрыптау</string>
   <string name="epg_menuitem_import_xmltv_url">Импорт XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Импорт XMLTV EPG Файл</string>
+  <string name="pref_dbedittextpreference_autosave_title">Файлды импорттағаннан кейін деректерді автоматты түрде сақтау</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Импортталған деректер дереу сақталады DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Импортталған деректер диалогтегі мәтіндік өріске көшірілді, бірақ әлі сақталған жоқ DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Файлды импорттағаннан кейін диалог терезесін автоматты түрде жабу</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Деректер импортталғаннан кейін және автоматты түрде сақталғаннан кейін диалог терезесін жабу DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Мәліметтер импортталғаннан және автоматты түрде сақталғаннан кейін диалог терезесін жаппаңыз DB</string>
+  <string name="pref_apply_default_url_templates_title">Пайдаланушы анықтаған әдепкі импортқа статикалық жол мәндерін қолданыңыз URL шаблондар</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Әдепкі бойынша импорт URL Мәнділер шаблондар</string>
+  <string name="pref_apply_default_url_templates_summary_off">Әдепкі бойынша импорт URL Мәнділер шаблондар емес</string>
   <string name="pref_default_m3u_url_title">Әдепкі M3U Плейлист URL</string>
   <string name="pref_default_m3u_url_summary">Кіріс мәні \"Импорт M3U Плейлист URL\" диалог.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Арна атауынан арнаға дейінгі карта ID</string>

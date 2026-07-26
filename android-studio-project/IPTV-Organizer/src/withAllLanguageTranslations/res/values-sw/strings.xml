@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Panga kwa herufi</string>
   <string name="epg_menuitem_import_xmltv_url">Agiza XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Agiza XMLTV EPG Faili</string>
+  <string name="pref_dbedittextpreference_autosave_title">Hifadhi data kiotomatiki baada ya kuagiza faili</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Data iliyoingizwa huhifadhiwa mara moja kwenye DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Data iliyopakiwa ina nakiliwa kwenye uwanja wa maandishi katika kisanduku cha mazungumzo, lakini bado haijasalishwa kwenye DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Funga kisanduku cha mazungumzo kiotomatiki baada ya kuingiza faili</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Funga kisanduku cha mazungumzo baada ya data kuingizwa na kuhifadhiwa kiotomatiki kwenye DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Usifunge kisanduku cha mazungumzo baada ya data kuingizwa na kuhifadhiwa kiotomatiki kwenye DB</string>
+  <string name="pref_apply_default_url_templates_title">Tumia thamani za kamba zisizobadilika kwa uingizaji chaguo-msingi uliotolewa na mtumiaji URL Violezo</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Uingizaji chaguo-msingi URL Thamani ni kiolezo</string>
+  <string name="pref_apply_default_url_templates_summary_off">Uingizaji chaguo-msingi URL Thamani si kiolezo</string>
   <string name="pref_default_m3u_url_title">Kawaida M3U Orodha ya nyimbo URL</string>
   <string name="pref_default_m3u_url_summary">Thamani ya awali katika \"Agiza M3U Orodha ya nyimbo URL\" mazungumzo.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Ramani kutoka kwa jina la kituo hadi kituo ID</string>

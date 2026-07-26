@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Trier par ordre alphabétique</string>
   <string name="epg_menuitem_import_xmltv_url">Importation XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importation XMLTV EPG Fichier</string>
+  <string name="pref_dbedittextpreference_autosave_title">Enregistrement automatique des données après l\'importation d\'un fichier</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Les données importées sont immédiatement enregistrées dans DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Les données importées sont copiées dans le champ de texte de la boîte de dialogue, mais ne sont pas encore enregistrées dans DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Fermer automatiquement la boîte de dialogue après l\'importation d\'un fichier</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Fermer la boîte de dialogue une fois les données importées et automatiquement enregistrées dans DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ne pas fermer la boîte de dialogue une fois les données importées et automatiquement enregistrées dans DB</string>
+  <string name="pref_apply_default_url_templates_title">Appliquer des valeurs de chaîne statiques à l\'importation par défaut définie par l\'utilisateur URL modèles</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Importation par défaut URL les valeurs sont des modèles</string>
+  <string name="pref_apply_default_url_templates_summary_off">Importation par défaut URL les valeurs ne sont pas des modèles</string>
   <string name="pref_default_m3u_url_title">Par défaut M3U Liste de lecture URL</string>
   <string name="pref_default_m3u_url_summary">Valeur initiale en \"Importation M3U Liste de lecture URL\" boîte de dialogue.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Correspondance entre le nom d\'une chaîne et la chaîne elle-même ID</string>

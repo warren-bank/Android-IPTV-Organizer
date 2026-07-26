@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Сортирај по азбучен ред</string>
   <string name="epg_menuitem_import_xmltv_url">Увоз XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Увоз XMLTV EPG Датотека</string>
+  <string name="pref_dbedittextpreference_autosave_title">Автоматско зачувување на податоците по увоз на датотека</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Увезените податоци веднаш се зачувуваат во DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Увезените податоци се копираат во поле за текст во дијалогот, но сè уште не се зачувани во DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Автоматско затворање на дијалогот по увоз на датотека</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Затвори го дијалогот откако податоците ќе бидат увезени и автоматски зачувани во DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Не го затворајте дијалогот откако податоците се увезени и автоматски зачувани во DB</string>
+  <string name="pref_apply_default_url_templates_title">Применете статички вредности на стринг за кориснички дефиниран стандарден увоз URL шаблони</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Стандарден увоз URL Вредностите се шаблони</string>
+  <string name="pref_apply_default_url_templates_summary_off">Стандарден увоз URL Вредностите не се шаблони</string>
   <string name="pref_default_m3u_url_title">Стандардно M3U Плејлиста URL</string>
   <string name="pref_default_m3u_url_summary">Почетна вредност во \"Увоз M3U Плејлиста URL\" дијалог.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Мапа од името на каналот до каналот ID</string>

@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">დალაგება ანბანის მიხედვით</string>
   <string name="epg_menuitem_import_xmltv_url">იმპორტი XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">იმპორტი XMLTV EPG ფაილი</string>
+  <string name="pref_dbedittextpreference_autosave_title">ფაილის იმპორტის შემდეგ მონაცემების ავტომატური შენახვა</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >იმპორტირებული მონაცემები დაუყოვნებლივ ინახება DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">იმპორტირებული მონაცემები დიალოგის ტექსტურ ველში კოპირდება, მაგრამ ჯერ არ არის შენახული DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ფაილის იმპორტის შემდეგ დიალოგის ავტომატურად დახურვა</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >დიალოგის დახურვა მონაცემების იმპორტისა და ავტომატურად შენახვის შემდეგ DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">არ დახუროთ დიალოგი მონაცემების იმპორტისა და ავტომატურად შენახვის შემდეგ DB</string>
+  <string name="pref_apply_default_url_templates_title">მივანიჭოთ სტატიკური სიმები მომხმარებლის მიერ განსაზღვრულ ნაგულისხმევ იმპორტს URL შაბლონები</string>
+  <string name="pref_apply_default_url_templates_summary_on" >ნაგულისხმევი იმპორტი URL მნიშვნელობები შაბლონებია</string>
+  <string name="pref_apply_default_url_templates_summary_off">ნაგულისხმევი იმპორტი URL ღირებულებები არ არის შაბლონები</string>
   <string name="pref_default_m3u_url_title">ნაგულისხმევი M3U პლეისლიsti URL</string>
   <string name="pref_default_m3u_url_summary">საწყისი ღირებულება \"იმპორტი M3U პლეისლიsti URL\" დიალოგი.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">არხის სახელის რუკა არხამდე ID</string>

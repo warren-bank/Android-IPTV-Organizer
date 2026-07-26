@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Cwangcisa ngokwe-alfabhethi</string>
   <string name="epg_menuitem_import_xmltv_url">Ngenisa XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Ngenisa XMLTV EPG Ifayile</string>
+  <string name="pref_dbedittextpreference_autosave_title">Igcina ngokuzenzekelayo idatha emva kokungeniswa kwefayile.</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Idatha engenisiweyo igcinwa kwangoko kwi- DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Idatha engenisiweyo ikopishwa kwibala lombhalo kwibhokisi yencoko, kodwa ayikagcinwa DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Ibhokisi yencoko ivale ngokuzenzekelayo emva kokungeniswa kwefayile</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Vala ibhokisi yencoko emva kokuba idatha ingenisiwe yaza yagcinwa ngokuzenzekelayo kwi DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Musa ukuvala ibhokisi yencoko emva kokuba idatha ingenisiwe yaza yagcinwa ngokuzenzekelayo kwi DB</string>
+  <string name="pref_apply_default_url_templates_title">Sebenzisa amaxabiso omtya angaguqukiyo ekungenisweni okuseta ngokusetyenziswa ngumsebenzisi. URL iitempleyithi</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Okungeniswe ngokuzenzekelayo URL Amaxabiso ziitemplates</string>
+  <string name="pref_apply_default_url_templates_summary_off">Okungeniswe ngokuzenzekelayo URL Iinqobo azizizo iitemplates.</string>
   <string name="pref_default_m3u_url_title">Okumiselweyo M3U Uluhlu lweengoma URL</string>
   <string name="pref_default_m3u_url_summary">Ixabiso lokuqala elingena \"Ngenisa M3U Uluhlu lweengoma URL\" incoko.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Ukudibanisa igama lesitishi nesitishi. ID</string>

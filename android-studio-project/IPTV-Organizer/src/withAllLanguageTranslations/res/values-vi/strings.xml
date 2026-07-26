@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Sắp xếp theo thứ tự bảng chữ cái</string>
   <string name="epg_menuitem_import_xmltv_url">Nhập khẩu XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Nhập khẩu XMLTV EPG Tệp</string>
+  <string name="pref_dbedittextpreference_autosave_title">Tự động lưu dữ liệu sau khi nhập tệp</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Dữ liệu được nhập vào sẽ được lưu ngay lập tức vào DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Dữ liệu được nhập vào đã được sao chép vào trường văn bản trong hộp thoại, nhưng chưa được lưu vào DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Tự động đóng hộp thoại sau khi nhập tệp</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Đóng hộp thoại sau khi dữ liệu được nhập và tự động lưu vào DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Không đóng hộp thoại sau khi dữ liệu đã được nhập và tự động lưu vào DB</string>
+  <string name="pref_apply_default_url_templates_title">Áp dụng các giá trị chuỗi cố định cho cài đặt nhập mặc định do người dùng định nghĩa URL mẫu</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Nhập mặc định URL các giá trị là các mẫu</string>
+  <string name="pref_apply_default_url_templates_summary_off">Nhập mặc định URL các giá trị không phải là các mẫu</string>
   <string name="pref_default_m3u_url_title">Mặc định M3U Danh sách phát URL</string>
   <string name="pref_default_m3u_url_summary">Giá trị ban đầu trong \"Nhập khẩu M3U Danh sách phát URL\" hộp thoại.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Bảng đối chiếu từ tên kênh sang kênh ID</string>

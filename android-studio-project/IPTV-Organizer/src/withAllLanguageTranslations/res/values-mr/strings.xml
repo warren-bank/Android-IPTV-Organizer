@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">अक्षरक्रमानुसार क्रमवा</string>
   <string name="epg_menuitem_import_xmltv_url">आयात XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">आयात XMLTV EPG फाइल</string>
+  <string name="pref_dbedittextpreference_autosave_title">फाइल आयात केल्यानंतर डेटा आपोआप जतन करा</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >आयात केलेला डेटा त्वरित जतन केला जातो DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">आयात केलेला डेटा संवादातील मजकूर क्षेत्रात कॉपी केला गेला आहे, परंतु अद्याप जतन केलेला नाही. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">फाइल आयात केल्यानंतर संवाद बॉक्स आपोआप बंद करा</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >डेटा आयात झाल्यानंतर आणि स्वयंचलितपणे जतन झाल्यानंतर संवाद बॉक्स बंद करा DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">डेटा आयात झाल्यानंतर आणि स्वयंचलितपणे जतन झाल्यानंतर संवाद बॉक्स बंद करू नका DB</string>
+  <string name="pref_apply_default_url_templates_title">वापरकर्ता-परिभाषित डीफॉल्ट आयातीसाठी स्थिर स्ट्रिंग मूल्ये लागू करा URL नमुने</string>
+  <string name="pref_apply_default_url_templates_summary_on" >डीफॉल्ट आयात URL मूल्यां म्हणजे साचे</string>
+  <string name="pref_apply_default_url_templates_summary_off">डीफॉल्ट आयात URL मूल्यां म्हणजे टेम्पलेट्स नाहीत</string>
   <string name="pref_default_m3u_url_title">प्राथमिक M3U प्लेलिस्ट URL</string>
   <string name="pref_default_m3u_url_summary">मूळ मूल्य इनमध्ये \"आयात M3U प्लेलिस्ट URL\" संवाद.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">चॅनेलच्या नावापासून चॅनेलपर्यंत नकाशा ID</string>

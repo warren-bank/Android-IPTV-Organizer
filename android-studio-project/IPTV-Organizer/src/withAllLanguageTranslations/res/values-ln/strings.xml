@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Tondisa na molongo ya alfabɛ</string>
   <string name="epg_menuitem_import_xmltv_url">Kokɔtisa XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Kokɔtisa XMLTV EPG Fayili</string>
+  <string name="pref_dbedittextpreference_autosave_title">Kobomba ba données automatique sima ya kokotisa fisyé</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Ba données oyo ekɔtisami ebombami mbala moko na DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Ba données oyo ekɔtisami ekopi na esika ya kokoma makomi na kati ya dialogue, kasi ebombami naino te na DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Kanga dialogue sima ya kokɔtisa fisyé</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Kanga dialogue sima ya kokɔtisa ba données mpe kobomba yango automatiquement na DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Kanga te fenetre ya dialogue sima ya kokotisa ba données mpe kobomba yango automatiquement na DB</string>
+  <string name="pref_apply_default_url_templates_title">Kɔtisa ba valeurs ya ba chaînes statiques oyo mosaleli aponi lokola import par défaut. URL Bandakisa</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Kotia ya liboso URL Ba valeurs ezali ba modèles</string>
+  <string name="pref_apply_default_url_templates_summary_off">Kotia ya liboso URL Ba valeurs ezali ba modèles te.</string>
   <string name="pref_default_m3u_url_title">Ndenge ezali M3U Liste ya nzembo URL</string>
   <string name="pref_default_m3u_url_summary">Motuya ya liboso na \"Kokɔtisa M3U Liste ya nzembo URL\" Lisolo.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Bongola nkombo ya chaîne na chaîne. ID</string>

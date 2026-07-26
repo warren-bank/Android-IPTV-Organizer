@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Rūšiuoti abėcėlės tvarka</string>
   <string name="epg_menuitem_import_xmltv_url">Importas XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importas XMLTV EPG Failas</string>
+  <string name="pref_dbedittextpreference_autosave_title">Automatinis duomenų išsaugojimas po failo importavimo</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Importuoti duomenys iš karto išsaugomi į DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Importuoti duomenys nukopijuojami į dialogo lango tekstinį laukelį, tačiau dar nėra išsaugoti į DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Automatiškai uždaryti dialogo langą po failo importavimo</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Uždaryti dialogo langą, kai duomenys bus importuoti ir automatiškai išsaugoti į DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Neuždarykite dialogo lango, kai duomenys bus importuoti ir automatiškai išsaugoti į DB</string>
+  <string name="pref_apply_default_url_templates_title">Taikyti statines eilutės reikšmes vartotojo apibrėžtam numatytam importui URL šablonai</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Importavimas pagal numatytuosius nustatymus URL reikšmės yra šablonai</string>
+  <string name="pref_apply_default_url_templates_summary_off">Importavimas pagal numatytuosius nustatymus URL reikšmės nėra šablonai</string>
   <string name="pref_default_m3u_url_title">Numatytasis M3U Grojaraštis URL</string>
   <string name="pref_default_m3u_url_summary">Pradinė vertė \"Importas M3U Grojaraštis URL\" dialogas.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Atitikmenų lentelė tarp kanalo pavadinimo ir kanalo ID</string>

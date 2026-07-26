@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">বৰ্ণানুক্ৰমিক কৰক</string>
   <string name="epg_menuitem_import_xmltv_url">আমদানি XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">আমদানি XMLTV EPG ফাইল</string>
+  <string name="pref_dbedittextpreference_autosave_title">ফাইল আমদানি কৰাৰ পিছত স্বয়ংক্ৰিয়ভাৱে ডাটা সংৰক্ষণ কৰক</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >আমদানি কৰা তথ্য তৎক্ষণাত ...ত সংৰক্ষণ কৰা হয়। DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">আমদানি কৰা ডাটাটো ডায়লগৰ টেক্সট ফিল্ডলৈ কপি কৰা হৈছে, কিন্তু এতিয়াও সংৰক্ষণ কৰা হোৱা নাই। DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ফাইল আমদানিৰ পিছত ডায়লগ স্বয়ংক্ৰিয়ভাৱে বন্ধ</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >ডাটা আমদানি আৰু স্বয়ংক্ৰিয়ভাৱে সংৰক্ষণ হোৱাৰ পিছত সংলাপ বন্ধ কৰক DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">ডাটা আমদানি কৰাৰ পিছত আৰু স্বয়ংক্ৰিয়ভাৱে সংৰক্ষণ হোৱাৰ পিছত সংলাপটো বন্ধ নকৰিব। DB</string>
+  <string name="pref_apply_default_url_templates_title">ব্যৱহাৰকাৰী-নিৰ্ধাৰিত ডিফল্ট আমদানিৰ বাবে স্থিৰ শৃংখল মান প্ৰয়োগ কৰক URL নমুনা</string>
+  <string name="pref_apply_default_url_templates_summary_on" >ডিফল্ট আমদানি URL মূল্যসমূহ টেমপ্লেট।</string>
+  <string name="pref_apply_default_url_templates_summary_off">ডিফল্ট আমদানি URL মূল্যবোধবোৰ নমুনা নহয়।</string>
   <string name="pref_default_m3u_url_title">নিৰ্ধাৰিত M3U প্লেলিষ্ট URL</string>
   <string name="pref_default_m3u_url_summary">প্ৰাৰম্ভিক মান \"আমদানি M3U প্লেলিষ্ট URL\" সংলাপ.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">চেনেলৰ নামৰ পৰা চেনেললৈ মানচিত্ৰ ID</string>

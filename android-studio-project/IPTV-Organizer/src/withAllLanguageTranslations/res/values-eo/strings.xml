@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Ordigi laŭ alfabeto</string>
   <string name="epg_menuitem_import_xmltv_url">Enporti XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Enporti XMLTV EPG Dosiero</string>
+  <string name="pref_dbedittextpreference_autosave_title">Aŭtomata konservado de datumoj post dosier-importado</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Enimportitaj datumoj estas tuj konservitaj al DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Enimportitaj datumoj estas kopiitaj al tekstkampo en la dialogujo, sed ankoraŭ ne konservitaj al DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Aŭtomata fermo de dialogo post dosier-importado</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Fermu la dialogon post kiam la datumoj estas importitaj kaj aŭtomate konservitaj al DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ne fermu la dialogon post kiam la datumoj estas importitaj kaj aŭtomate konservitaj al DB</string>
+  <string name="pref_apply_default_url_templates_title">Apliku statikajn ŝnurfunkciojn al uzant-difinita defaŭlta importo URL ŝablonoj</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Normala enigo URL Valoroj estas ŝablonoj.</string>
+  <string name="pref_apply_default_url_templates_summary_off">Normala enigo URL Valoroj ne estas ŝablonoj.</string>
   <string name="pref_default_m3u_url_title">Normala M3U Ludlisto URL</string>
   <string name="pref_default_m3u_url_summary">Komenca valoro en \"Enporti M3U Ludlisto URL\" dialogo.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapu la nomon de la kanalo al la kanalo. ID</string>

@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">按字母順序排序</string>
   <string name="epg_menuitem_import_xmltv_url">匯入 XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">匯入 XMLTV EPG 檔案</string>
+  <string name="pref_dbedittextpreference_autosave_title">匯入檔案後自動儲存資料</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >匯入的資料會立即儲存至 DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">匯入的資料已複製到對話方塊中的文字欄位，但尚未儲存至 DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">匯入檔案後自動關閉對話方塊</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >在資料匯入並自動儲存至後，關閉對話方塊 DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">資料匯入並自動儲存至後，請勿關閉對話方塊 DB</string>
+  <string name="pref_apply_default_url_templates_title">將靜態字串值套用至使用者自訂的預設匯入設定 URL 範本</string>
+  <string name="pref_apply_default_url_templates_summary_on" >預設匯入 URL 值是範本</string>
+  <string name="pref_apply_default_url_templates_summary_off">預設匯入 URL 值並非範本</string>
   <string name="pref_default_m3u_url_title">預設 M3U 播放清單 URL</string>
   <string name="pref_default_m3u_url_summary">初始值在 \"匯入 M3U 播放清單 URL\" 對話框.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">將頻道名稱映射至頻道 ID</string>

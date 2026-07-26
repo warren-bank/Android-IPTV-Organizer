@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Hurrenkatu alfabetikoki</string>
   <string name="epg_menuitem_import_xmltv_url">Inportatu XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Inportatu XMLTV EPG Fitxategia</string>
+  <string name="pref_dbedittextpreference_autosave_title">Fitxategi inportatu ondoren automatikoki gorde datuak</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Inportatutako datuak berehala gordetzen dira DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Inportatutako datuak elkarrizketa-koadroko testu-eremura kopiatu dira, baina oraindik ez dira gordeta. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Fitxategiaren inportazioaren ondoren elkarrizketa-koadroa automatikoki itxi</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Datuak inportatu eta automatikoki gorde ondoren, itxi elkarrizketa-koadroa DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ez itxi elkarrizketa-koadroa datuak inportatu eta automatikoki gorde ondoren DB</string>
+  <string name="pref_apply_default_url_templates_title">Erabili kate estatikoen balioak erabiltzaileak definitutako lehenetsi inportazioan URL txantiloiak</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Inportazio lehenetsia URL Balioak txantiloiak dira</string>
+  <string name="pref_apply_default_url_templates_summary_off">Inportazio lehenetsia URL Balioak ez dira txantiloiak</string>
   <string name="pref_default_m3u_url_title">Lehenetsia M3U Entzuteko zerrenda URL</string>
   <string name="pref_default_m3u_url_summary">Balio hasierakoa sartzeko \"Inportatu M3U Entzuteko zerrenda URL\" elkarrizketa.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal-izenetik kanalera mapaketa ID</string>

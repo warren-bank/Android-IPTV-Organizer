@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">அகரவரிசைப்படுத்தவும்</string>
   <string name="epg_menuitem_import_xmltv_url">இறக்குமதி XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">இறக்குமதி XMLTV EPG கோப்பு</string>
+  <string name="pref_dbedittextpreference_autosave_title">கோப்பை இறக்குமதி செய்த பிறகு தானாகச் சேமி</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >இறக்குமதி செய்யப்பட்ட தரவு உடனடியாக சேமிக்கப்படுகிறது DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">இறக்குமதி செய்யப்பட்ட தரவு உரையாடலில் உள்ள உரைப் புலத்திற்கு நகலெடுக்கப்படுகிறது, ஆனால் இன்னும் சேமிக்கப்படவில்லை. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">கோப்பை இறக்குமதி செய்த பிறகு உரையாடல் தானாக மூடும்</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >தரவு இறக்குமதி செய்யப்பட்டு தானாகச் சேமிக்கப்பட்ட பிறகு உரையாடலை மூடுக DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">தரவுகள் இறக்குமதி செய்யப்பட்டு தானாகச் சேமிக்கப்பட்ட பிறகு உரையாடல் பெட்டியை மூட வேண்டாம். DB</string>
+  <string name="pref_apply_default_url_templates_title">பயனர்-வரையறுத்த இயல்புநிலை இறக்குமதிக்கு நிலையான சர மதிப்புகளைப் பயன்படுத்துக URL வார்ப்புருகள்</string>
+  <string name="pref_apply_default_url_templates_summary_on" >பூர்வீக இறக்குமதி URL மதிப்புகள் வார்ப்புருக்கள்</string>
+  <string name="pref_apply_default_url_templates_summary_off">பூர்வீக இறக்குமதி URL மதிப்புகள் வார்ப்புருக்கள் அல்ல</string>
   <string name="pref_default_m3u_url_title">பூர்வநிலை M3U பாடலட்டை URL</string>
   <string name="pref_default_m3u_url_summary">உள்ளே ஆரம்ப மதிப்பு \"இறக்குமதி M3U பாடலட்டை URL\" உரையாடல்.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">சேனல் பெயரிலிருந்து சேனலுக்கு வரைபடம் ID</string>

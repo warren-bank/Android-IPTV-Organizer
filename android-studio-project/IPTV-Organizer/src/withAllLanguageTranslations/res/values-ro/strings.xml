@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Sortare alfabetică</string>
   <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Fișier</string>
+  <string name="pref_dbedittextpreference_autosave_title">Salvarea automată a datelor după importul fișierului</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Datele importate sunt salvate imediat în DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Datele importate sunt copiate în câmpul de text din fereastra de dialog, dar nu sunt încă salvate în DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Închiderea automată a ferestrei de dialog după importul fișierului</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Închide fereastra de dialog după ce datele au fost importate și salvate automat în DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Nu închideți fereastra de dialog după ce datele au fost importate și salvate automat în DB</string>
+  <string name="pref_apply_default_url_templates_title">Aplicarea valorilor statice sub formă de șiruri de caractere la importul implicit definit de utilizator URL șabloane</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Import implicit URL valorile sunt șabloane</string>
+  <string name="pref_apply_default_url_templates_summary_off">Import implicit URL valorile nu sunt șabloane</string>
   <string name="pref_default_m3u_url_title">Implicit M3U Listă de redare URL</string>
   <string name="pref_default_m3u_url_summary">Valoarea inițială în \"Import M3U Listă de redare URL\" dialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Corelare între numele canalului și canal ID</string>

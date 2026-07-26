@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Sortoni alfabetikisht</string>
   <string name="epg_menuitem_import_xmltv_url">Importo XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importo XMLTV EPG Skedar</string>
+  <string name="pref_dbedittextpreference_autosave_title">Ruajtje automatike e të dhënave pas importimit të skedarit</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Të dhënat e importuara ruhen menjëherë në DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Të dhënat e importuara kopjohen në fushën e tekstit në dialog, por ende nuk janë ruajtur në DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Mbyllni automatikisht dialogun pas importimit të skedarit</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Mbyll dialogun pasi të importohen të dhënat dhe të ruhen automatikisht në DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Mos e mbyllni dialogun pasi të jenë importuar të dhënat dhe të jenë ruajtur automatikisht në DB</string>
+  <string name="pref_apply_default_url_templates_title">Aplikoni vlera statike të shiritit për importin e paracaktuar të përcaktuar nga përdoruesi URL shabllone</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Import i paracaktuar URL vlerat janë shabllone</string>
+  <string name="pref_apply_default_url_templates_summary_off">Import i paracaktuar URL Vlerat nuk janë shabllone</string>
   <string name="pref_default_m3u_url_title">Parazgjedhje M3U Lista e këngëve URL</string>
   <string name="pref_default_m3u_url_summary">Vlera fillestare në \"Importo M3U Lista e këngëve URL\" dialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Hartë nga emri i kanalit në kanal ID</string>

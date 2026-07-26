@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Renkañ dre an urzh alfabetek</string>
   <string name="epg_menuitem_import_xmltv_url">Enporzhiañ XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Enporzhiañ XMLTV EPG Restr</string>
+  <string name="pref_dbedittextpreference_autosave_title">Enrollañ emgefre ar roadennoù goude enporzhiañ ar restr</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >An roadennoù enporzhiet a vez enrollet diouzhtu e DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Eiladet eo ar roadennoù enporzhiet d\'ar vaezienn destenn er voest diviz, met n\'int ket bet enrollet c\'hoazh e DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Serriñ ar voest diviz goude enporzhiañ ar restr</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Serriñ ar voest diviz goude ma vo enporzhiet an roadennoù ha saveteet ent emgefreek DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Na serret ket ar voest diviz goude ma vo enporzhiet an roadennoù ha saveteet ent emgefreek e DB</string>
+  <string name="pref_apply_default_url_templates_title">Lakaat talvouzhioù kerdin statik da enporzhiañ dre ziouer termenet gant an implijer URL Patromoù</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Enporzh dre ziouer URL An talvoudoù zo patromoù.</string>
+  <string name="pref_apply_default_url_templates_summary_off">Enporzh dre ziouer URL An talvoudoù n\'int ket patromoù.</string>
   <string name="pref_default_m3u_url_title">Diouer M3U Roll sonioù URL</string>
   <string name="pref_default_m3u_url_summary">Talvoudegezh kentañ e \"Enporzhiañ M3U Roll sonioù URL\" Kaozeadenn.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kevreañ anv ar c\'hanol gant ar c\'hanol ID</string>

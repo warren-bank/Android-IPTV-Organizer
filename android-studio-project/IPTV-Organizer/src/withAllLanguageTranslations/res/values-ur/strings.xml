@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">حروفِ تہجی کے مطابق ترتیب دیں</string>
   <string name="epg_menuitem_import_xmltv_url">درآمد XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">درآمد XMLTV EPG فائل</string>
+  <string name="pref_dbedittextpreference_autosave_title">فائل درآمد کے بعد ڈیٹا خودکار طور پر محفوظ کریں</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >درآمد شدہ ڈیٹا فوری طور پر میں محفوظ ہو جاتا ہے۔ DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">درآمد شدہ ڈیٹا ڈائیلاگ میں ٹیکسٹ فیلڈ میں کاپی ہو گیا ہے، لیکن ابھی تک محفوظ نہیں ہوا۔ DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">فائل درآمد کے بعد ڈائیلاگ خود بخود بند کریں</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >ڈیٹا درآمد ہونے اور خود بخود محفوظ ہونے کے بعد ڈائیلاگ بند کریں۔ DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">ڈیٹا درآمد ہونے اور خود بخود محفوظ ہونے کے بعد ڈائیلاگ بند نہ کریں۔ DB</string>
+  <string name="pref_apply_default_url_templates_title">صارف کے متعین کردہ ڈیفالٹ امپورٹ پر جامد سٹرنگ کی قدریں لاگو کریں۔ URL نمونے</string>
+  <string name="pref_apply_default_url_templates_summary_on" >ڈیفالٹ درآمد URL قدرتیں سانچے ہیں</string>
+  <string name="pref_apply_default_url_templates_summary_off">ڈیفالٹ درآمد URL قدرتیں سانچے نہیں ہوتیں</string>
   <string name="pref_default_m3u_url_title">مقرر شدہ M3U فہرستِ گانوں URL</string>
   <string name="pref_default_m3u_url_summary">ابتدائی قدر میں \"درآمد M3U فہرستِ گانوں URL\" گفتگو.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">چینل کے نام کو چینل سے منسلک کریں ID</string>

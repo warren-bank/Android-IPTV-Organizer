@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">按字母顺序排序</string>
   <string name="epg_menuitem_import_xmltv_url">导入 XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">导入 XMLTV EPG 文件</string>
+  <string name="pref_dbedittextpreference_autosave_title">导入文件后自动保存数据</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >导入的数据会立即保存到 DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">导入的数据已复制到对话框中的文本框中，但尚未保存到 DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">导入文件后自动关闭对话框</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >数据导入并自动保存后关闭对话框 DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">数据导入并自动保存到后，请勿关闭对话框 DB</string>
+  <string name="pref_apply_default_url_templates_title">将静态字符串值应用于用户定义的默认导入 URL 模板</string>
+  <string name="pref_apply_default_url_templates_summary_on" >默认导入 URL 值是模板</string>
+  <string name="pref_apply_default_url_templates_summary_off">默认导入 URL 值不是模板</string>
   <string name="pref_default_m3u_url_title">默认 M3U 播放列表 URL</string>
   <string name="pref_default_m3u_url_summary">初始值在 \"导入 M3U 播放列表 URL\" 对话框.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">将频道名称映射到频道 ID</string>

@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Tlhopha ka Tlhaka</string>
   <string name="epg_menuitem_import_xmltv_url">Tsenya XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Tsenya XMLTV EPG Faele</string>
+  <string name="pref_dbedittextpreference_autosave_title">Boloka tshedimosetso ka boyone morago ga go tsenya faele</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Datha e e tsenyeng e bolokwa ka bonako kwa DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Datha e e tsenyeditsweng e kopilwe kwa lefelong la mokwalo mo lebokosong la dipuisano, mme ga e ise e bolokwe kwa DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Lebokoso la puisano le ipotlakele go tswala morago ga go tsenya faele</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Tswala lebokoso la puisano morago ga gore data e tsenngwe le go bolokwa ka boyone kwa DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Se tswalele lebokoso la puisano morago ga gore data e tsenngwe mme e bolokwe ka boyone kwa DB</string>
+  <string name="pref_apply_default_url_templates_title">Tsenya boleng jwa mogala o o sa fetogeng mo go tsenyeng ka bo yone jo bo beilweng ke modirisi. URL ditempoleite</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Tsenyo e e tlwaelegileng URL Ditekanyetso ke ditempoleite</string>
+  <string name="pref_apply_default_url_templates_summary_off">Tsenyo e e tlwaelegileng URL Ditekanyetso ga se ditempoleite</string>
   <string name="pref_default_m3u_url_title">Tlwaelo M3U Lenaane la dipina URL</string>
   <string name="pref_default_m3u_url_summary">Boleng jwa tshimologo mo \"Tsenya M3U Lenaane la dipina URL\" Puisano.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Lebeletsa leina la setheo le setheo ID</string>

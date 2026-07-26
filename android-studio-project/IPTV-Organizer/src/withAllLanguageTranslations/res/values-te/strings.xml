@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">అక్షర క్రమంలో అమర్చు</string>
   <string name="epg_menuitem_import_xmltv_url">దిగుమతి XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">దిగుమతి XMLTV EPG ఫైల్</string>
+  <string name="pref_dbedittextpreference_autosave_title">ఫైల్ దిగుమతి తర్వాత ఆటో సేవ్ డేటా</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >దిగుమతి చేసుకున్న డేటా వెంటనే సేవ్ చేయబడుతుంది DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">దిగుమతి చేసుకున్న డేటా డైలాగ్‌లోని టెక్స్ట్ ఫీల్డ్‌కు కాపీ చేయబడింది, కానీ ఇంకా సేవ్ చేయబడలేదు DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ఫైల్ దిగుమతి తర్వాత డైలాగ్ స్వయంచాలకంగా మూసివేయబడుతుంది</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >డేటా దిగుమతి అయి, ఆటోమేటిక్‌గా సేవ్ అయిన తర్వాత డైలాగ్‌ను మూసివేయండి DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">డేటా దిగుమతి అయి, ఆటోమేటిక్‌గా సేవ్ అయిన తర్వాత డైలాగ్‌ను మూసివేయవద్దు. DB</string>
+  <string name="pref_apply_default_url_templates_title">వినియోగదారు-నిర్వచించిన డిఫాల్ట్ ఇంపోర్ట్‌కు స్థిరమైన స్ట్రింగ్ విలువలను వర్తింపజేయండి URL నమూనాలు</string>
+  <string name="pref_apply_default_url_templates_summary_on" >డిఫాల్ట్ దిగుమతి URL విలువలు టెంప్లేట్లు</string>
+  <string name="pref_apply_default_url_templates_summary_off">డిఫాల్ట్ దిగుమతి URL విలువలు టెంప్లేట్లు కావు</string>
   <string name="pref_default_m3u_url_title">ప్రామాణికం M3U ప్లేలిస్ట్ URL</string>
   <string name="pref_default_m3u_url_summary">లో ప్రారంభ విలువ \"దిగుమతి M3U ప్లేలిస్ట్ URL\" సంభాషణ.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ఛానెల్ పేరు నుండి ఛానెల్‌కు మ్యాప్ ID</string>

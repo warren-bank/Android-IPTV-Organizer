@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Alfabetisch sorteren</string>
   <string name="epg_menuitem_import_xmltv_url">Importeren XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importeren XMLTV EPG Bestand</string>
+  <string name="pref_dbedittextpreference_autosave_title">Gegevens automatisch opslaan na het importeren van een bestand</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Geïmporteerde gegevens worden onmiddellijk opgeslagen in DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">De geïmporteerde gegevens worden naar het tekstveld in het dialoogvenster gekopieerd, maar nog niet opgeslagen in DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Dialoogvenster automatisch sluiten na het importeren van een bestand</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Sluit het dialoogvenster nadat de gegevens zijn geïmporteerd en automatisch zijn opgeslagen in DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Sluit het dialoogvenster niet nadat de gegevens zijn geïmporteerd en automatisch zijn opgeslagen in DB</string>
+  <string name="pref_apply_default_url_templates_title">Stabiele tekenreekswaarden toepassen op door de gebruiker gedefinieerde standaardimport URL sjablonen</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Standaardimport URL waarden zijn sjablonen</string>
+  <string name="pref_apply_default_url_templates_summary_off">Standaardimport URL waarden zijn geen sjablonen</string>
   <string name="pref_default_m3u_url_title">Standaard M3U Afspeellijst URL</string>
   <string name="pref_default_m3u_url_summary">Beginswaarde in \"Importeren M3U Afspeellijst URL\" dialoogvenster.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Toewijzing van kanaalnaam naar kanaal ID</string>

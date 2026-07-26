@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">סאָרטן לויט אַלף־בית</string>
   <string name="epg_menuitem_import_xmltv_url">אימפּאָרט XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">אימפּאָרט XMLTV EPG טעקע</string>
+  <string name="pref_dbedittextpreference_autosave_title">אויטאָמאַטיש אויפֿהיטן דאַטן נאָך אַרײַנפֿירן פֿון אַ טעקע</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >אימפּאָרטירטע דאַטן ווערן גלייך געשפּאַרט צו DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">אימפּאָרטירטע דאַטן ווערן קאָפּירט אין טעקסט־פֿעלד אין דעם דיאַלאָג, אָבער נאָך נישט געשפּאַרט צו DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">דיאַלאָג פֿאַרמאַכן אויטאָמאַטיש נאָך טעקע־אימפּאָרט</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >שליסן דיאַלאָג נאָך די דאַטן ווערן אימפּאָרטירט און אויטאָמאַטיש געשפּאַרט צו DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">נאָך די דאַטן זענען אימפּאָרטירט און אויטאָמאַטיש געשפּאַרט צו DB</string>
+  <string name="pref_apply_default_url_templates_title">אַפּליצירן סטאַטישע שטריקל־ווערטן צו באַניצער־דעפֿינירטן דיפאָלט־אימפּאָרט URL מוסטערן</string>
+  <string name="pref_apply_default_url_templates_summary_on" >סטאַנדאַרט־אימפּאָרט URL ווערטן זענען מוסטערן</string>
+  <string name="pref_apply_default_url_templates_summary_off">סטאַנדאַרט־אימפּאָרט URL ווערטן זענען נישט קיין מוסטערן</string>
   <string name="pref_default_m3u_url_title">סטאַנדאַרט M3U שפּיל־ליסטע URL</string>
   <string name="pref_default_m3u_url_summary">אָנהייב־ווערט אין \"אימפּאָרט M3U שפּיל־ליסטע URL\" דיאַלאָג.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">מאַפּע פֿון קאַנאַל־נאָמען צו קאַנאַל ID</string>

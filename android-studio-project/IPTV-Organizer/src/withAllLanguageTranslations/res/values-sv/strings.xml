@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Sortera alfabetiskt</string>
   <string name="epg_menuitem_import_xmltv_url">Importera XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importera XMLTV EPG Fil</string>
+  <string name="pref_dbedittextpreference_autosave_title">Spara data automatiskt efter filimport</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Importerade data sparas omedelbart i DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Importerade data kopieras till textfältet i dialogrutan, men har ännu inte sparats till DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Stäng dialogrutan automatiskt efter filimport</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Stäng dialogrutan när data har importerats och automatiskt sparats till DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Stäng inte dialogrutan efter att data har importerats och automatiskt sparats till DB</string>
+  <string name="pref_apply_default_url_templates_title">Använd statiska strängvärden för användardefinierad standardimport URL mallar</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Standardimport URL värdena är mallar</string>
+  <string name="pref_apply_default_url_templates_summary_off">Standardimport URL värden är inte mallar</string>
   <string name="pref_default_m3u_url_title">Standard M3U Spellista URL</string>
   <string name="pref_default_m3u_url_summary">Startvärde i \"Importera M3U Spellista URL\" dialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mappning från kanalnamn till kanal ID</string>

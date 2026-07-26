@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">അക്ഷരമാലാക്രമത്തിൽ ചിട്ടപ്പെടുത്തുക</string>
   <string name="epg_menuitem_import_xmltv_url">ഇറക്കുമതി XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">ഇറക്കുമതി XMLTV EPG ഫയൽ</string>
+  <string name="pref_dbedittextpreference_autosave_title">ഫയൽ ഇമ്പോർട്ടിന് ശേഷം ഡാറ്റ ഓട്ടോ സേവ് ചെയ്യുക</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >ഇറക്കുമതി ചെയ്ത ഡാറ്റ ഉടനടി സേവ് ചെയ്യപ്പെടുന്നു DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">ഇറക്കുമതി ചെയ്ത ഡാറ്റ ഡയലോഗിലെ ടെക്സ്റ്റ് ഫീൽഡിലേക്ക് പകർത്തുന്നു, എന്നാൽ ഇതുവരെ സേവ് ചെയ്തിട്ടില്ല DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ഫയൽ ഇമ്പോർട്ടിന് ശേഷം ഡയലോഗ് സ്വയമേവ അടയ്ക്കുക</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >ഡാറ്റ ഇറക്കുമതി ചെയ്ത് സ്വയമേവ സേവ് ചെയ്ത ശേഷം ഡയലോഗ് അടയ്ക്കുക DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">ഡാറ്റ ഇറക്കുമതി ചെയ്ത് സ്വയമേവ സേവ് ചെയ്ത ശേഷം ഡയലോഗ് അടയ്ക്കരുത്. DB</string>
+  <string name="pref_apply_default_url_templates_title">ഉപയോക്താവ് നിർവചിച്ച ഡിഫോൾട്ട് ഇമ്പോർട്ടിലേക്ക് സ്റ്റാറ്റിക് സ്ട്രിംഗ് മൂല്യങ്ങൾ പ്രയോഗിക്കുക URL മാതൃകകൾ</string>
+  <string name="pref_apply_default_url_templates_summary_on" >നിലവിലെ ഇറക്കുമതി URL മൂല്യങ്ങൾ ടെംപ്ലേറ്റുകളാണ്</string>
+  <string name="pref_apply_default_url_templates_summary_off">നിലവിലെ ഇറക്കുമതി URL മൂല്യങ്ങൾ ടെംപ്ലേറ്റുകളല്ല</string>
   <string name="pref_default_m3u_url_title">നിലവിലുള്ള M3U പ്ലേലിസ്റ്റ് URL</string>
   <string name="pref_default_m3u_url_summary">പ്രാരംഭ മൂല്യം \"ഇറക്കുമതി M3U പ്ലേലിസ്റ്റ് URL\" സംഭാഷണം.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ചാനലിന്റെ പേരിൽ നിന്ന് ചാനലിലേക്ക് മാപ്പ് ചെയ്യുക ID</string>

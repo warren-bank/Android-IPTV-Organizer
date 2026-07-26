@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Whakarōpū ā-pūtautanga</string>
   <string name="epg_menuitem_import_xmltv_url">Kaweake XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Kaweake XMLTV EPG Kōnae</string>
+  <string name="pref_dbedittextpreference_autosave_title">Tārua aunoa i ngā raraunga i muri i te kawemai kōnae</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Ka tiakina tonu ngā raraunga kawemai ki DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Kua kapea ngā raraunga kawemai ki te mara kuputuhi i roto i te matapihi kōrerorero, engari kāore anō kia tiakina ki DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Kati aunoa i te matapihi kōrero i muri i te kawemai kōnae</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Kati i te matapihi kōrero i muri i te kawemai o ngā raraunga, ā, ka tiakina aunoa ki DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Kaua e kati i te matapihi kōrero i muri i te kawemai o ngā raraunga, ā, kua tiakina aunoa ki DB</string>
+  <string name="pref_apply_default_url_templates_title">Whakamahia ngā uara aho tū tonu ki te kawemai taunoa i tautuhia e te kaiwhakamahi URL Tārua</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Tāuru taunoa URL He tauira ngā uara</string>
+  <string name="pref_apply_default_url_templates_summary_off">Tāuru taunoa URL Ehara ngā uara i te tauira</string>
   <string name="pref_default_m3u_url_title">Taunoa M3U Rārangi waiata URL</string>
   <string name="pref_default_m3u_url_summary">Uara tuatahi i roto \"Kaweake M3U Rārangi waiata URL\" Kōrero.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Whakakapia te ingoa o te hongere ki te hongere ID</string>

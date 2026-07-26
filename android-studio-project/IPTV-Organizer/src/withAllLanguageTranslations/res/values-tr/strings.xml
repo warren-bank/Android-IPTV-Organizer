@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Alfabetik Sıralama</string>
   <string name="epg_menuitem_import_xmltv_url">İthalat XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">İthalat XMLTV EPG Dosya</string>
+  <string name="pref_dbedittextpreference_autosave_title">Dosya içe aktarıldıktan sonra verileri otomatik olarak kaydet</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >İçe aktarılan veriler hemen şu konuma kaydedilir: DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">İçe aktarılan veriler iletişim kutusundaki metin alanına kopyalanıyor, ancak henüz DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Dosya içe aktarıldıktan sonra iletişim kutusunu otomatik olarak kapat</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Veriler içe aktarıldıktan ve otomatik olarak şu konuma kaydedildikten sonra iletişim kutusunu kapat DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Veriler içe aktarıldıktan ve otomatik olarak şu konuma kaydedildikten sonra iletişim kutusunu kapatmayın: DB</string>
+  <string name="pref_apply_default_url_templates_title">Kullanıcı tanımlı varsayılan içe aktarmaya statik dize değerleri uygulayın URL şablonlar</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Varsayılan içe aktarma URL değerler şablonlardır</string>
+  <string name="pref_apply_default_url_templates_summary_off">Varsayılan içe aktarma URL değerler şablon değildir</string>
   <string name="pref_default_m3u_url_title">Varsayılan M3U Çalma listesi URL</string>
   <string name="pref_default_m3u_url_summary">Başlangıç değeri \"İthalat M3U Çalma listesi URL\" diyalog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal adından kanala karşılık gelen eşleme ID</string>

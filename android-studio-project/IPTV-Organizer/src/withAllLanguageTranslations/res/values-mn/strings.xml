@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Үсгийн дарааллаар эрэмбэлэх</string>
   <string name="epg_menuitem_import_xmltv_url">Импорт XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Импорт XMLTV EPG Файл</string>
+  <string name="pref_dbedittextpreference_autosave_title">Файл импортын дараа өгөгдлийг автоматаар хадгалах</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Импортолсон өгөгдөл шууд ...-д хадгалагддаг DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Импортолсон өгөгдөл нь диалогийн текст талбарт хуулбарлагдсан боловч одоогоор хадгалагдаагүй байна. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Файл импортын дараа харилцах цонх автоматаар хаагдах</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Өгөгдлийг импортолсны дараа харилцах цонхыг хааж, автоматаар хадгалах DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Өгөгдлийг импортолж, автоматаар хадгалсны дараа харилцах цонхыг битгий хаагаарай DB</string>
+  <string name="pref_apply_default_url_templates_title">Хэрэглэгчийн тогтоосон анхдагч импортод статик оролт утгуудыг хэрэглэ URL шаблон</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Анхдагчаар импорт URL Үнэ цэнүүд нь шаблонууд юм</string>
+  <string name="pref_apply_default_url_templates_summary_off">Анхдагчаар импорт URL Үнэ цэнүүд нь загвар биш</string>
   <string name="pref_default_m3u_url_title">Анхдагч M3U Тоглолтын жагсаалт URL</string>
   <string name="pref_default_m3u_url_summary">Оролтын анхны утга \"Импорт M3U Тоглолтын жагсаалт URL\" харилцах.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Сувгийн нэрээс сувгийг холбох зураг ID</string>

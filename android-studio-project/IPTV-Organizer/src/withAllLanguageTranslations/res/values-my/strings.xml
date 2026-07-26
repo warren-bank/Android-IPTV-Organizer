@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">အက္ခရာအလိုက် စီရန်</string>
   <string name="epg_menuitem_import_xmltv_url">တင်သွင်း XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">တင်သွင်း XMLTV EPG ဖိုင်</string>
+  <string name="pref_dbedittextpreference_autosave_title">ဖိုင်တင်သွင်းပြီးနောက် ဒေတာကို အလိုအလျောက် သိမ်းဆည်းပါ။</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >တင်သွင်းထားသော ဒေတာကို ချက်ချင်း သိမ်းဆည်းသည်။ DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">တင်သွင်းထားသော ဒေတာကို ဒိုင်ယာလော့ခ်ရှိ စာသားကွက်ထဲသို့ မိတ္တူကူးထားသော်လည်း၊ မသိမ်းဆည်းသေးပါ။ DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ဖိုင်တင်သွင်းပြီးနောက် စကားပြောဘောင်ကို အလိုအလျောက် ပိတ်ပါ။</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >ဒေတာကို တင်သွင်းပြီး အလိုအလျောက် သိမ်းဆည်းပြီးနောက် စကားပြောဘောင်ကို ပိတ်ပါ။ DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">ဒေတာကို တင်သွင်းပြီး အလိုအလျောက် သိမ်းဆည်းပြီးနောက် ဒိုင်ယာလော့ခ်ကို မပိတ်ပါနှင့်။ DB</string>
+  <string name="pref_apply_default_url_templates_title">အသုံးပြုသူ သတ်မှတ်ထားသည့် မူလ တင်သွင်းမှုတွင် တည်ငြိမ်သော စာကြောင်းတန်ဖိုးများကို သတ်မှတ်ပါ။ URL နမူနာများ</string>
+  <string name="pref_apply_default_url_templates_summary_on" >မူလတင်သွင်း URL တန်ဖိုးများသည် ပုံစံများဖြစ်သည်။</string>
+  <string name="pref_apply_default_url_templates_summary_off">မူလတင်သွင်း URL တန်ဖိုးများသည် ပုံစံများ မဟုတ်ပါ။</string>
   <string name="pref_default_m3u_url_title">မူလတန်ဖိုး M3U ကစားစာရင်း URL</string>
   <string name="pref_default_m3u_url_summary">အစပိုင်းတန်ဖိုးကို ထည့်ပါ \"တင်သွင်း M3U ကစားစာရင်း URL\" ဆွေးနွေးချက်.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ချန်နယ်အမည်မှ ချန်နယ်သို့ မြေပုံချိတ်ဆက်ခြင်း ID</string>

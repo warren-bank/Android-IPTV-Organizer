@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Raða eftir stafrófi</string>
   <string name="epg_menuitem_import_xmltv_url">Innflutningur XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Innflutningur XMLTV EPG Skjal</string>
+  <string name="pref_dbedittextpreference_autosave_title">Sjálfgeymir gögn eftir innflutning skráar</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Innflutt gögn eru strax vistuð í DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Innflutt gögn eru afrituð í textareit í glugga, en ekki enn vistuð í DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Sluðja umræðuglugga sjálfkrafa eftir skráarinnflutning</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Loka glugga eftir að gögnum hefur verið hlaðið inn og þeim sjálfkrafa vistað í DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Lokaðu ekki glugganum eftir að gögnum hefur verið hlaðið inn og þau sjálfgefið vistuð í DB</string>
+  <string name="pref_apply_default_url_templates_title">Beittu kyrrstæðum strengsgildum við notendadefineruðu sjálfgefnu innflutningi URL sniðmát</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Sjálfgefin innflutningur URL gildi eru sniðmát</string>
+  <string name="pref_apply_default_url_templates_summary_off">Sjálfgefin innflutningur URL gildi eru ekki sniðmát</string>
   <string name="pref_default_m3u_url_title">Sjálfgefið M3U Spilunarlisti URL</string>
   <string name="pref_default_m3u_url_summary">Upphafleg gildi í \"Innflutningur M3U Spilunarlisti URL\" Skilaboðargluggi.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kortleggja nafn rásarinnar til rásarinnar ID</string>

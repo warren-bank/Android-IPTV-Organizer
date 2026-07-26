@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Ordna alfabetikament</string>
   <string name="epg_menuitem_import_xmltv_url">Importazzjoni XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importazzjoni XMLTV EPG Fajl</string>
+  <string name="pref_dbedittextpreference_autosave_title">Salvja awtomatikament id-dejta wara l-importazzjoni tal-fajl</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Id-dejta importata tiġi salvata immedjatament f\' DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Id-dejta importata tiġi kkopjata fil-qasam tat-test fid-djalogu, iżda għadha mhix salvata f\' DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Għalaq id-djalogu awtomatikament wara l-importazzjoni tal-fajl</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Agħlaq id-djalogu wara li d-dejta tkun importata u awtomatikament salvata f\' DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Tgħaddix il-kaxxa tad-djalogu wara li d-dejta tkun importata u awtomatikament salvata f\' DB</string>
+  <string name="pref_apply_default_url_templates_title">Aplika valuri ta\' stringa statika għall-importazzjoni default definita mill-utent URL mudelli</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Importazzjoni default URL il-valuri huma mudelli</string>
+  <string name="pref_apply_default_url_templates_summary_off">Importazzjoni default URL Il-valuri mhumiex mudelli</string>
   <string name="pref_default_m3u_url_title">Default M3U Lista tal-kanzunetti URL</string>
   <string name="pref_default_m3u_url_summary">Valur inizjali f\' \"Importazzjoni M3U Lista tal-kanzunetti URL\" djalogu.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mappa mis-isem tal-kanal għall-kanal ID</string>

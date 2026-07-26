@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Qillqa tuqirjam t\'aqaña</string>
   <string name="epg_menuitem_import_xmltv_url">Apkataña XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Apkataña XMLTV EPG Qillqata</string>
+  <string name="pref_dbedittextpreference_autosave_title">Archivo apantañ qhipata, datos jupa pachpa imasiñapa</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Anqat apanit datunakax jank\'akiw imasi DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Anqat apanit datonakaxa aruskipañ tuqinkir qillqañ chiqaru kopiyasiwa, ukampirusa janira imatäkiti DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Archivo apkataña tukuyatatxa, aruskipañax jupapachakiw jist\'antasiñapa.</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Yatiyäwinakax apkatatäxi ukat sapaqat imatäxi ukhaxa, aruskipañ jist\'antaña. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Yatiyawinakax apkatatäxi ukat jupa pachpat imatäxi uka qhipatxa, janiw aruskipañ ventanaru jist\'antañati. DB</string>
+  <string name="pref_apply_default_url_templates_title">Apnaqirin uñstayat p\'iqinchir apthapiwirux jan kuyur chinu qillqatanaka uchaña URL Uñanchanaka</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Qallta apthapiwi URL Chanininakax plantillanakawa.</string>
+  <string name="pref_apply_default_url_templates_summary_off">Qallta apthapiwi URL Chanininakax janiw plantillanakäkiti</string>
   <string name="pref_default_m3u_url_title">Qallta M3U Jayllinaka URL</string>
   <string name="pref_default_m3u_url_summary">Qallta chani \"Apkataña M3U Jayllinaka URL\" Aruskipäwi.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Canal sutita canalaru mapa ID</string>

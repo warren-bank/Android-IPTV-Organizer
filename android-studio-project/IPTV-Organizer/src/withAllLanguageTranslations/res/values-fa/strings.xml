@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">ترتیب الفبایی</string>
   <string name="epg_menuitem_import_xmltv_url">واردات XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">واردات XMLTV EPG فایل</string>
+  <string name="pref_dbedittextpreference_autosave_title">خودکار ذخیره کردن داده‌ها پس از وارد کردن فایل</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >داده‌های واردشده بلافاصله در DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">داده‌های واردشده به فیلد متن در کادر محاوره‌ای کپی می‌شوند، اما هنوز ذخیره نشده‌اند. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">بست شدن خودکار کادر محاوره پس از وارد کردن فایل</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >پس از وارد شدن داده‌ها و ذخیرهٔ خودکار آن‌ها، دیالوگ را ببندید. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">پس از وارد شدن داده‌ها و ذخیرهٔ خودکار آن‌ها، دیالوگ را نبندید. DB</string>
+  <string name="pref_apply_default_url_templates_title">مقادیر رشته‌ای ایستا را به واردکردن پیش‌فرض تعریف‌شده توسط کاربر اعمال کنید URL قالب‌ها</string>
+  <string name="pref_apply_default_url_templates_summary_on" >واردات پیش‌فرض URL مقادیر قالب‌ها هستند</string>
+  <string name="pref_apply_default_url_templates_summary_off">واردات پیش‌فرض URL مقادیر قالب نیستند</string>
   <string name="pref_default_m3u_url_title">پیش‌فرض M3U لیست پخش URL</string>
   <string name="pref_default_m3u_url_summary">مقدار اولیه در \"واردات M3U لیست پخش URL\" گفتگو.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">نقشه از نام کانال به کانال ID</string>

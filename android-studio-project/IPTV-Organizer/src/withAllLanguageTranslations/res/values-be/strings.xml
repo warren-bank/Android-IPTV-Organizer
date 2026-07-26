@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Сартаваць па алфавіце</string>
   <string name="epg_menuitem_import_xmltv_url">Імпарт XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Імпарт XMLTV EPG Файл</string>
+  <string name="pref_dbedittextpreference_autosave_title">Аўтаматычнае захаванне даных пасля імпарту файла</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Імпартаваныя даныя неадкладна захоўваюцца ў DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Імпартаваныя даныя капіруюцца ў тэкставае поле ў дыялогу, але яшчэ не захаваны ў DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Аўтаматычнае закрыццё дыялога пасля імпарту файла</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Закрыць дыялога пасля імпарту даных і аўтаматычнага захавання ў DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Не закрывайце дыялога пасля імпарту даных і іх аўтаматычнага захавання ў DB</string>
+  <string name="pref_apply_default_url_templates_title">Прымяніце статычныя значэнні радкоў да карыстальніцка-вызначанага па змаўчанні імпарту URL шаблоны</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Стандартны імпарт URL Значэнні — гэта шаблоны</string>
+  <string name="pref_apply_default_url_templates_summary_off">Стандартны імпарт URL Каштоўнасці — не шаблоны</string>
   <string name="pref_default_m3u_url_title">Па змаўчанні M3U Плэйліст URL</string>
   <string name="pref_default_m3u_url_summary">Пачатковае значэнне ў \"Імпарт M3U Плэйліст URL\" дыялог.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Карта ад назвы канала да канала ID</string>

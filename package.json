@@ -6,7 +6,7 @@
     "@warren-bank/translate-android-strings": "^3.0.1"
   },
   "scripts": {
-    "translate":       "translate-android-strings -s \"deepl\" -i \"en\" -f \"android-studio-project/IPTV-Organizer/src/main/res/values/strings.xml\" -d \"android-studio-project/IPTV-Organizer/src/withAllLanguageTranslations/res\" -m --na --nc --nw -b \"(?:IPTV|M3U|XMLTV|EPG|URL|ID|[\\x22\\[\\]]|=>|tvg-name|tvg-id)\"",
+    "translate":       "translate-android-strings -s \"deepl\" -i \"en\" -f \"android-studio-project/IPTV-Organizer/src/main/res/values/strings.xml\" -d \"android-studio-project/IPTV-Organizer/src/withAllLanguageTranslations/res\" -m --na --nc --nw -b \"(?:IPTV|M3U|XMLTV|EPG|URL|DB|ID|[\\x22\\[\\]]|=>|tvg-name|tvg-id)\"",
     "translate:debug": "npm run translate -- -o \"en\" --debug"
   }
 }

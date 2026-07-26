@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Urutkan Menurut Abjad</string>
   <string name="epg_menuitem_import_xmltv_url">Impor XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Impor XMLTV EPG Berkas</string>
+  <string name="pref_dbedittextpreference_autosave_title">Menyimpan data secara otomatis setelah mengimpor berkas</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Data yang diimpor langsung disimpan ke DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Data yang diimpor disalin ke kolom teks di kotak dialog, tetapi belum disimpan ke DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Tutup jendela dialog secara otomatis setelah mengimpor berkas</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Tutup jendela dialog setelah data diimpor dan disimpan secara otomatis ke DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Jangan tutup jendela dialog setelah data diimpor dan disimpan secara otomatis ke DB</string>
+  <string name="pref_apply_default_url_templates_title">Terapkan nilai string statis ke impor default yang ditentukan pengguna URL templat</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Impor default URL nilai-nilai tersebut adalah templat</string>
+  <string name="pref_apply_default_url_templates_summary_off">Impor default URL nilai bukanlah templat</string>
   <string name="pref_default_m3u_url_title">Default M3U Daftar Putar URL</string>
   <string name="pref_default_m3u_url_summary">Nilai awal di \"Impor M3U Daftar Putar URL\" dialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Pemetaan dari nama saluran ke saluran ID</string>

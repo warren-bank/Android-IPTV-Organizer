@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Ба тартиби алифбо ҷудо кунед</string>
   <string name="epg_menuitem_import_xmltv_url">Воридкунӣ XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Воридкунӣ XMLTV EPG Файл</string>
+  <string name="pref_dbedittextpreference_autosave_title">Пас аз воридкунии файл маълумотро ба таври худкор захира кунед</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Маълумоти воридшуда фавран ба DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Маълумоти воридшуда ба майдони матн дар диалог нусхабардорӣ мешавад, аммо ҳанӯз сабт нашудааст. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Пас аз воридкунии файл, диалогро ба таври худкор пӯшед</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Пас аз ворид ва худкорона захира шудани маълумот, диалогро пӯшед DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Пас аз ворид ва худкорона захира шудани маълумот, диалогро пӯштан мумкин нест. DB</string>
+  <string name="pref_apply_default_url_templates_title">Арзишҳои статикӣ барои калидҳои сатрӣ дар воридоти пешфарзии муайянкардаи корбар татбиқ кунед URL шаблонҳо</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Воридоти пешфарз URL арзишҳо шаблонҳо ҳастанд</string>
+  <string name="pref_apply_default_url_templates_summary_off">Воридоти пешфарз URL Арзишҳо шаблон нестанд</string>
   <string name="pref_default_m3u_url_title">Тавсиявӣ M3U Рӯйхати навозиш URL</string>
   <string name="pref_default_m3u_url_summary">Арзиши ибтидоӣ дар \"Воридкунӣ M3U Рӯйхати навозиш URL\" гуфтугӯ.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Мапа аз номи канал ба канал ID</string>

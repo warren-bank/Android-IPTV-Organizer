@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Сортувати за алфавітом</string>
   <string name="epg_menuitem_import_xmltv_url">Імпорт XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Імпорт XMLTV EPG Файл</string>
+  <string name="pref_dbedittextpreference_autosave_title">Автоматичне збереження даних після імпорту файлу</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Імпортовані дані одразу зберігаються у DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Імпортовані дані копіюються в текстове поле діалогового вікна, але ще не збережені в DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Автоматичне закриття діалогового вікна після імпорту файлу</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Закрити діалогове вікно після імпорту даних та їх автоматичного збереження в DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Не закривайте діалогове вікно після імпорту даних та їх автоматичного збереження у DB</string>
+  <string name="pref_apply_default_url_templates_title">Застосувати статичні рядкові значення до визначеного користувачем імпорту за замовчуванням URL шаблони</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Імпорт за замовчуванням URL значення є шаблонами</string>
+  <string name="pref_apply_default_url_templates_summary_off">Імпорт за замовчуванням URL значення не є шаблонами</string>
   <string name="pref_default_m3u_url_title">За замовчуванням M3U Плейлист URL</string>
   <string name="pref_default_m3u_url_summary">Початкове значення в \"Імпорт M3U Плейлист URL\" діалог.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Відповідність між назвою каналу та самим каналом ID</string>

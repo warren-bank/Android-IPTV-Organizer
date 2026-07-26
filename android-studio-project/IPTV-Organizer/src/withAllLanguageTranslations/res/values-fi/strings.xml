@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Lajittele aakkosjärjestyksessä</string>
   <string name="epg_menuitem_import_xmltv_url">Tuonti XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Tuonti XMLTV EPG Tiedosto</string>
+  <string name="pref_dbedittextpreference_autosave_title">Tietojen automaattinen tallennus tiedoston tuonnin jälkeen</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Tuodut tiedot tallennetaan välittömästi DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Tuodut tiedot kopioidaan valintaikkunan tekstikenttään, mutta niitä ei ole vielä tallennettu DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Sulje valintaikkuna automaattisesti tiedoston tuonnin jälkeen</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Sulje valintaikkuna, kun tiedot on tuotu ja tallennettu automaattisesti kohteeseen DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Älä sulje valintaikkunaa, kun tiedot on tuotu ja tallennettu automaattisesti kohteeseen DB</string>
+  <string name="pref_apply_default_url_templates_title">Käytä staattisia merkkijonoarvoja käyttäjän määrittämässä oletusarvoisessa tuonnissa URL mallit</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Oletustuonti URL arvot ovat malleja</string>
+  <string name="pref_apply_default_url_templates_summary_off">Oletustuonti URL arvot eivät ole malleja</string>
   <string name="pref_default_m3u_url_title">Oletus M3U Soittolista URL</string>
   <string name="pref_default_m3u_url_summary">Alkuarvo \"Tuonti M3U Soittolista URL\" valintaikkuna.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Vastaavuustaulukko kanavanimestä kanavaan ID</string>

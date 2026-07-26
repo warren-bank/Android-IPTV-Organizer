@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Seřadit abecedně</string>
   <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Soubor</string>
+  <string name="pref_dbedittextpreference_autosave_title">Automatické uložení dat po importu souboru</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Importovaná data se okamžitě uloží do DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Importovaná data se zkopírují do textového pole v dialogovém okně, ale zatím se neuloží do DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Automatické zavření dialogového okna po importu souboru</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Po importu dat a jejich automatickém uložení zavřít dialogové okno DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Po importu dat a jejich automatickém uložení do souboru dialogové okno nezavírejte DB</string>
+  <string name="pref_apply_default_url_templates_title">Použít statické řetězcové hodnoty pro uživatelsky definovaný výchozí import URL šablony</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Výchozí import URL hodnoty jsou šablony</string>
+  <string name="pref_apply_default_url_templates_summary_off">Výchozí import URL hodnoty nejsou šablony</string>
   <string name="pref_default_m3u_url_title">Výchozí M3U Seznam skladeb URL</string>
   <string name="pref_default_m3u_url_summary">Počáteční hodnota v \"Import M3U Seznam skladeb URL\" dialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Převod z názvu kanálu na kanál ID</string>

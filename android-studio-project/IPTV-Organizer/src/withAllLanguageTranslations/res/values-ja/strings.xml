@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">アルファベット順に並べ替え</string>
   <string name="epg_menuitem_import_xmltv_url">インポート XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">インポート XMLTV EPG ファイル</string>
+  <string name="pref_dbedittextpreference_autosave_title">ファイルのインポート後にデータを自動保存する</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >インポートされたデータは直ちに DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">インポートされたデータはダイアログのテキストフィールドにコピーされますが、まだ DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ファイルのインポート後にダイアログを自動的に閉じる</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >データのインポートが完了し、自動的に以下に保存されたら、ダイアログを閉じる DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">データのインポートが完了し、自動的に保存された後は、ダイアログを閉じないでください。 DB</string>
+  <string name="pref_apply_default_url_templates_title">ユーザー定義のデフォルトインポートに静的な文字列値を適用する URL テンプレート</string>
+  <string name="pref_apply_default_url_templates_summary_on" >デフォルトのインポート URL 値はテンプレートです</string>
+  <string name="pref_apply_default_url_templates_summary_off">デフォルトのインポート URL 値はテンプレートではありません</string>
   <string name="pref_default_m3u_url_title">デフォルト M3U プレイリスト URL</string>
   <string name="pref_default_m3u_url_summary">初期値は \"インポート M3U プレイリスト URL\" ダイアログ.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">チャンネル名からチャンネルへの対応表 ID</string>

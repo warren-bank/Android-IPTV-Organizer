@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Sórtáil in ord aibítre</string>
   <string name="epg_menuitem_import_xmltv_url">Iompórtáil XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Iompórtáil XMLTV EPG Comhad</string>
+  <string name="pref_dbedittextpreference_autosave_title">Sábháil uathoibríoch sonraí tar éis ionportáil comhaid</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Sábháiltear sonraí iompórtáilte láithreach chuig DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Cóipeáiltear sonraí iompórtáilte chuig réimse téacs sa bhosca dialóige, ach níl siad sábháilte go fóill chuig DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Dialóg a dhúnadh go huathoibríoch tar éis comhad a allmhairiú</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Dún an bosca dialóige tar éis na sonraí a allmhairiú agus a shábháil go huathoibríoch DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ná dún an bosca dialóige tar éis na sonraí a allmhairiú agus a shábháil go huathoibríoch DB</string>
+  <string name="pref_apply_default_url_templates_title">Cuir luachanna sreang statach i bhfeidhm ar allmhairiú réamhshocraithe sainithe ag an úsáideoir URL Téamaí</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Iompórtáil réamhshocraithe URL Is teimpléid iad na luachanna</string>
+  <string name="pref_apply_default_url_templates_summary_off">Iompórtáil réamhshocraithe URL Ní teimpléid iad luachanna</string>
   <string name="pref_default_m3u_url_title">Réamhshocrú M3U Liosta Seinnte URL</string>
   <string name="pref_default_m3u_url_summary">Luach tosaigh isteach \"Iompórtáil M3U Liosta Seinnte URL\" comhrá.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapáil ainm an chainéil chuig an gcainéal ID</string>

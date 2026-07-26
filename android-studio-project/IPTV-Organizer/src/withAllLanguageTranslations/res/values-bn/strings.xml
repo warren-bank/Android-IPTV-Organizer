@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">বর্ণানুক্রমিক সাজান</string>
   <string name="epg_menuitem_import_xmltv_url">আমদানি XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">আমদানি XMLTV EPG ফাইল</string>
+  <string name="pref_dbedittextpreference_autosave_title">ফাইল আমদানির পর স্বয়ংক্রিয়ভাবে ডেটা সংরক্ষণ করুন</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >আমদানি করা ডেটা অবিলম্বে সংরক্ষণ করা হয় DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">আমদানি করা ডেটা ডায়ালগের টেক্সট ফিল্ডে অনুলিপি করা হয়েছে, কিন্তু এখনও সংরক্ষণ করা হয়নি। DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ফাইল আমদানির পর ডায়ালগ স্বয়ংক্রিয়ভাবে বন্ধ করুন</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >ডেটা আমদানি এবং স্বয়ংক্রিয়ভাবে সংরক্ষণ করার পর ডায়ালগ বন্ধ করুন DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">ডেটা আমদানি হয়ে স্বয়ংক্রিয়ভাবে সংরক্ষণ হয়ে গেলে ডায়ালগটি বন্ধ করবেন না। DB</string>
+  <string name="pref_apply_default_url_templates_title">ব্যবহারকারী-সংজ্ঞায়িত ডিফল্ট ইমপোর্টে স্ট্যাটিক স্ট্রিং মান প্রয়োগ করুন URL টেমপ্লেটসমূহ</string>
+  <string name="pref_apply_default_url_templates_summary_on" >ডিফল্ট আমদানি URL মানগুলো টেমপ্লেট</string>
+  <string name="pref_apply_default_url_templates_summary_off">ডিফল্ট আমদানি URL মানগুলো টেমপ্লেট নয়</string>
   <string name="pref_default_m3u_url_title">ডিফল্ট M3U প্লেলিস্ট URL</string>
   <string name="pref_default_m3u_url_summary">প্রাথমিক মান ইন \"আমদানি M3U প্লেলিস্ট URL\" সংলাপ.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">চ্যানেলের নাম থেকে চ্যানেলে ম্যাপ করুন ID</string>

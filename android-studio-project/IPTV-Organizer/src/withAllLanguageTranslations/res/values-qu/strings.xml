@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Simi qillqahina t\'aqay</string>
   <string name="epg_menuitem_import_xmltv_url">Hawa llaqtamanta apamuy XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Hawa llaqtamanta apamuy XMLTV EPG Willañiqita</string>
+  <string name="pref_dbedittextpreference_autosave_title">Willakuykunata kikinmanta waqaychay willakuykunata apamusqay qhipata</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Hawaqmanta apamusqa willakunaqa chaylla waqaychasqa kachkan DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Hamuq willakunaqa rimanakuypa qillqa k\'uchunman iskaychaykusqa kachkan, ichaqa manaraq waqaychasqachu kachkan. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Willay p\'anqa kikinmanta wichq\'akun qillqa apamusqa qhipata</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Willanakuyta wichq\'ay, willaykuna apamusqa hinaspa kikinmanta waqaychasqa kaptin. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ama rimanakuyta wichq\'aychu willaykuna apamusqa kasqanmanta, kikillanmanta waqaychasqa kaptinpas. DB</string>
+  <string name="pref_apply_default_url_templates_title">Chaylla qillqa chanikunata churay, runap kamachisqan sapsi apachimuyman. URL Qatinakuna</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Kikinmanta apamuy URL Chaninqa qatinakunam.</string>
+  <string name="pref_apply_default_url_templates_summary_off">Kikinmanta apamuy URL Chaninqa manan qatinakunachu.</string>
   <string name="pref_default_m3u_url_title">Qallariylla M3U Takikunaq qatiynin URL</string>
   <string name="pref_default_m3u_url_summary">Qallariy chanin yaykunanpaq \"Hawa llaqtamanta apamuy M3U Takikunaq qatiynin URL\" Rimanakuy.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">T\'uqu sutimanta t\'uquman ID</string>

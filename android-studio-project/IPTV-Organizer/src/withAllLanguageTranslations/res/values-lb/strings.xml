@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Alphabetesch sortéieren</string>
   <string name="epg_menuitem_import_xmltv_url">Importéieren XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importéieren XMLTV EPG Datei</string>
+  <string name="pref_dbedittextpreference_autosave_title">Dateien no dem Import automatesch späicheren</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Importéiert Donnéeën ginn direkt op DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Importéiert Donnéeën ginn an d\'Textfeld am Dialog kopéiert, awer nach net gespäichert zu DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">D\'Dialog fënnt no der Datei-Import automatesch zou.</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Schléiss de Dialog nodeems d\'Donnéeën importéiert an automatesch gespäichert goufen. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Maacht de Dialog net zou nodeems d\'Donnéeën importéiert an automatesch gespäichert goufen. DB</string>
+  <string name="pref_apply_default_url_templates_title">Statisch String-Wäerter op de benotzerdefinéierten Standard-Import uwenden URL Virlagen</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Standardimport URL Wäerter sinn Virlaagen</string>
+  <string name="pref_apply_default_url_templates_summary_off">Standardimport URL Wäerter sinn keng Virlagen</string>
   <string name="pref_default_m3u_url_title">Standard M3U Liddelëscht URL</string>
   <string name="pref_default_m3u_url_summary">Initialwäert an \"Importéieren M3U Liddelëscht URL\" Dialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kaart vum Kanalnumm op de Kanal ID</string>

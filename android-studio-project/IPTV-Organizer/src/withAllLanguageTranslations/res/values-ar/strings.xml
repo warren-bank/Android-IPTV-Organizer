@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">الترتيب الأبجدي</string>
   <string name="epg_menuitem_import_xmltv_url">استيراد XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">استيراد XMLTV EPG ملف</string>
+  <string name="pref_dbedittextpreference_autosave_title">الحفظ التلقائي للبيانات بعد استيراد الملف</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >يتم حفظ البيانات المستوردة على الفور في DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">يتم نسخ البيانات المستوردة إلى حقل النص في مربع الحوار، ولكن لم يتم حفظها بعد في DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">إغلاق مربع الحوار تلقائيًا بعد استيراد الملف</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >إغلاق مربع الحوار بعد استيراد البيانات وحفظها تلقائيًا في DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">لا تغلق نافذة الحوار بعد استيراد البيانات وحفظها تلقائيًا في DB</string>
+  <string name="pref_apply_default_url_templates_title">تطبيق قيم سلاسل ثابتة على الاستيراد الافتراضي المحدد من قبل المستخدم URL القوالب</string>
+  <string name="pref_apply_default_url_templates_summary_on" >الاستيراد الافتراضي URL القيم هي قوالب</string>
+  <string name="pref_apply_default_url_templates_summary_off">الاستيراد الافتراضي URL القيم ليست قوالب</string>
   <string name="pref_default_m3u_url_title">الافتراضي M3U قائمة التشغيل URL</string>
   <string name="pref_default_m3u_url_summary">القيمة الأولية في \"استيراد M3U قائمة التشغيل URL\" حوار.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">خريطة تربط بين اسم القناة والقناة نفسها ID</string>

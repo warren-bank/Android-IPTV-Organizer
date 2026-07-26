@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Alphabetisch sortieren</string>
   <string name="epg_menuitem_import_xmltv_url">Importieren XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importieren XMLTV EPG Datei</string>
+  <string name="pref_dbedittextpreference_autosave_title">Daten nach dem Import automatisch speichern</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Importierte Daten werden sofort gespeichert unter DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Die importierten Daten werden in das Textfeld im Dialogfeld kopiert, aber noch nicht gespeichert unter DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Dialogfeld nach dem Importieren von Dateien automatisch schließen</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Dialogfeld schließen, nachdem die Daten importiert und automatisch gespeichert wurden unter DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Das Dialogfeld nicht schließen, nachdem die Daten importiert und automatisch gespeichert wurden unter DB</string>
+  <string name="pref_apply_default_url_templates_title">Statische Zeichenfolgenwerte auf benutzerdefinierte Standardimporte anwenden URL Vorlagen</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Standardimport URL Werte sind Vorlagen</string>
+  <string name="pref_apply_default_url_templates_summary_off">Standardimport URL Werte sind keine Vorlagen</string>
   <string name="pref_default_m3u_url_title">Standard M3U Wiedergabeliste URL</string>
   <string name="pref_default_m3u_url_summary">Anfangswert in \"Importieren M3U Wiedergabeliste URL\" Dialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Zuordnung von Kanalnamen zu Kanälen ID</string>

@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Tànnal ci araf</string>
   <string name="epg_menuitem_import_xmltv_url">Duggal XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Duggal XMLTV EPG Dosye</string>
+  <string name="pref_dbedittextpreference_autosave_title">Dencal xibaar yi boppam ginnaaw buñu dugalee dosye bi</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Xibaar yi ñu importé, dañu leen di denc ci saa si. DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Xibaar yi ñu dugal dañu leen koppiye ci toolu mbind mi ci boyet bi, waaye dencaguñu leen ba léegi. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Biiro bi dafay tëju boppam ginnaaw bu ñu dugalee dosiye bi</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Tëj palanteer bi ginnaaw buñu dugal xibaar yi te ñu dencu seen bopp ci DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Bul tëj palante bi ginnaaw bi ñu importee xibaar yi te denc leen ci seen bopp ci DB</string>
+  <string name="pref_apply_default_url_templates_title">Jëfandikoo ay valeur yu sax yu ñu tëral ngir import bu ñu tëral bu jëfandikookat bi. URL Royukaay yi</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Importera bu ñëw URL Njariñ yi ay royukaay lañu.</string>
+  <string name="pref_apply_default_url_templates_summary_off">Importera bu ñëw URL Njariñ yi duñu ay model.</string>
   <string name="pref_default_m3u_url_title">Li ñu tëral M3U Limu woy yi URL</string>
   <string name="pref_default_m3u_url_summary">Njëlbéenu njëg ci biir \"Duggal M3U Limu woy yi URL\" Waxtaan.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Jokkaleel turu chaîne bi ak chaîne bi. ID</string>

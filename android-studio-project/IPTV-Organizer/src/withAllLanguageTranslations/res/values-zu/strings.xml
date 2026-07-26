@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Hlela ngokulandelana kwezinhlamvu</string>
   <string name="epg_menuitem_import_xmltv_url">Okungenayo XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Okungenayo XMLTV EPG Ifayela</string>
+  <string name="pref_dbedittextpreference_autosave_title">Igcina ngokuzenzakalelayo idatha ngemva kokungenisa ifayela</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Idatha engenisiwe igcinwa ngokushesha ku DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Idatha engenisiwe ikopishwa ensimini yombhalo ebhokisini lengxoxo, kodwa ayikagcinwa ku DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Iwindi lengxoxo livale ngokuzenzakalelayo ngemva kokungenisa ifayela</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Vala ibhokisi lengxoxo ngemva kokungenisa idatha nokusonga ngokuzenzakalelayo ku- DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ungavaleli ibhokisi lengxoxo ngemva kokungenisa idatha nokuyigcina ngokuzenzakalelayo ku- DB</string>
+  <string name="pref_apply_default_url_templates_title">Faka amanani omsongo angaguquki ekungenisweni okujwayelekile okusethwe ngumsebenzisi URL amathayiphu</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Ukufaka okujwayelekile URL Amanani angamathuluzi okwakha.</string>
+  <string name="pref_apply_default_url_templates_summary_off">Ukufaka okujwayelekile URL Amanani awangamathayiphu</string>
   <string name="pref_default_m3u_url_title">Okujwayelekile M3U Uhlu lokudlalwayo URL</string>
   <string name="pref_default_m3u_url_summary">Inani lokuqala ku \"Okungenayo M3U Uhlu lokudlalwayo URL\" inkulumo.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Imephu egama lesiteshi kuya esiteshini ID</string>

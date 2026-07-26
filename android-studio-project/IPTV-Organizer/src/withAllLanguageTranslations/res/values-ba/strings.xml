@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Алифба буйынса сортлау</string>
   <string name="epg_menuitem_import_xmltv_url">Импорт XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Импорт XMLTV EPG Файл</string>
+  <string name="pref_dbedittextpreference_autosave_title">Файлды импортлағандан һуң мәғлүмәтте автоматик һаҡлау</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Импортланған мәғлүмәт шунда уҡ һаҡлана DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Импортланған мәғлүмәт диалогтағы текст ҡырға күсерелә, әммә әле һаҡланмаған DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Файлды импортлағандан һуң диалог тәрәзәһен автоматик рәүештә ябыу</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Мәғлүмәттәр индерелгәндән һәм автоматик рәүештә һаҡланғас диалог тәрәзәһен ябырға DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Мәғлүмәттәр индерелгәндән һуң автоматик һаҡланғандан һуң диалог тәрәзәһен япмағыҙ DB</string>
+  <string name="pref_apply_default_url_templates_title">Ҡулланыусы билдәләгән стандарт импортҡа статик юл ҡиммәттәрен ҡулланығыҙ URL шаблондар</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Төп импорт URL Ҡиммәттәр шаблондар</string>
+  <string name="pref_apply_default_url_templates_summary_off">Төп импорт URL Ҡиммәттәр шаблондар түгел</string>
   <string name="pref_default_m3u_url_title">Төп M3U Плейлист URL</string>
   <string name="pref_default_m3u_url_summary">Башланғыс ҡиммәт \"Импорт M3U Плейлист URL\" диалог.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Канал исеменән каналға карта ID</string>

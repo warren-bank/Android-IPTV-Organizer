@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Trefnu\'n alffanrifol</string>
   <string name="epg_menuitem_import_xmltv_url">Mewnforio XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Mewnforio XMLTV EPG Ffeil</string>
+  <string name="pref_dbedittextpreference_autosave_title">Cadw data\'n awtomatig ar ôl mewnforio ffeil</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Caiff data a fewnforiwyd ei gadw ar unwaith i DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Mae\'r data a fewnforiwyd yn cael ei gopïo i\'r maes testun yn y deialog, ond nid yw wedi\'i gadw eto i DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Cau deialog yn awtomatig ar ôl mewnforio ffeil</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Cau\'r deialog ar ôl i\'r data gael ei fewnforio a\'i gadw\'n awtomatig i DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Peidiwch â chau\'r deialog ar ôl i\'r data gael ei fewnforio a\'i gadw\'n awtomatig i DB</string>
+  <string name="pref_apply_default_url_templates_title">Gwneud cais gwerthoedd llinyn statig i fewnforio diofyn a ddiffinnir gan y defnyddiwr URL Templedi</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Mewnforio diofyn URL Mae gwerthoedd yn dempledi</string>
+  <string name="pref_apply_default_url_templates_summary_off">Mewnforio diofyn URL Nid templedi yw gwerthoedd</string>
   <string name="pref_default_m3u_url_title">Rhagosodedig M3U Rhestr chwarae URL</string>
   <string name="pref_default_m3u_url_summary">Gwerth cychwynnol yn \"Mewnforio M3U Rhestr chwarae URL\" deialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapio enw\'r sianel i\'r sianel ID</string>

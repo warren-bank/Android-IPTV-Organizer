@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Sorteer alfabeties</string>
   <string name="epg_menuitem_import_xmltv_url">Invoer XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Invoer XMLTV EPG Lêer</string>
+  <string name="pref_dbedittextpreference_autosave_title">Outomaties data stoor na lêer-invoer</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Ingevoerde data word onmiddellik gestoor in DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Ingevoerde data word na die tekskassie in die dialoog gekopieer, maar nog nie daarin gestoor nie. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Outomaties sluit dialoog na lêer-invoer</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Sluit dialoog nadat data ingevoer en outomaties na gestoor is DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Moenie die dialoog sluit nadat die data ingevoer en outomaties na gestoor is nie DB</string>
+  <string name="pref_apply_default_url_templates_title">Pas statiese stringwaardes toe op gebruiker-gedefinieerde verstek-invoer URL sjablone</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Standaardinvoer URL waardes is sjablone</string>
+  <string name="pref_apply_default_url_templates_summary_off">Standaardinvoer URL waardes is nie sjablone nie</string>
   <string name="pref_default_m3u_url_title">Standaard M3U Speellys URL</string>
   <string name="pref_default_m3u_url_summary">Inisiale waarde in \"Invoer M3U Speellys URL\" dialoog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kaart van kanaalnaam na kanaal ID</string>

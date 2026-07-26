@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">د الفبا له مخې ترتیب کړئ</string>
   <string name="epg_menuitem_import_xmltv_url">واردول XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">واردول XMLTV EPG فایل</string>
+  <string name="pref_dbedittextpreference_autosave_title">د فایل له واردولو وروسته معلومات په اتوماتيک ډول خوندي کړئ</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >وارد شوي معلومات سمدستي په ... کې خوندي کیږي. DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">وارد شوي معلومات په ډایلاګ کې د متن ساحې ته کاپي شوي، خو لا په ... کې خوندي شوي نه دي. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">د فایل له واردولو وروسته د ډیالوګ بکس په اوتومات ډول بندول</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >د معلوماتو له واردولو او په اتوماتيک ډول خوندي کولو وروسته ډیالوګ بند کړئ DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">د معلوماتو له واردولو او په اتوماتيک ډول خوندي کولو وروسته، ډیالوګ مه تړئ DB</string>
+  <string name="pref_apply_default_url_templates_title">کاروونکي لخوا ټاکل شوي ډیفالټ واردولو ته ثابت سټرینګ ارزښتونه وکاروئ URL قالبونه</string>
+  <string name="pref_apply_default_url_templates_summary_on" >اصلي واردول URL ارزښتونه قالبونه دي</string>
+  <string name="pref_apply_default_url_templates_summary_off">اصلي واردول URL ارزښتونه قالبونه نه دي</string>
   <string name="pref_default_m3u_url_title">اصلي M3U د سندرو لړلیک URL</string>
   <string name="pref_default_m3u_url_summary">په ... کې لومړنی ارزښت \"واردول M3U د سندرو لړلیک URL\" خبرې اترې.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">د چینل نوم څخه چینل ته نقشه ID</string>

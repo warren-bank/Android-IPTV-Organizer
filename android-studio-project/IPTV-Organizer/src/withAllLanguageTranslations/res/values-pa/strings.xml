@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">ਵਰਣਮਾਲਾ ਅਨੁਸਾਰ ਕ੍ਰਮਬੱਧ ਕਰੋ</string>
   <string name="epg_menuitem_import_xmltv_url">ਆਯਾਤ XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">ਆਯਾਤ XMLTV EPG ਫਾਈਲ</string>
+  <string name="pref_dbedittextpreference_autosave_title">ਫਾਈਲ ਇੰਪੋਰਟ ਕਰਨ ਤੋਂ ਬਾਅਦ ਡੇਟਾ ਆਪਣੇ ਆਪ ਸੇਵ ਕਰੋ</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >ਆਯਾਤ ਕੀਤਾ ਡਾਟਾ ਤੁਰੰਤ ਨੂੰ ਸੇਵ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">ਇੰਪੋਰਟ ਕੀਤਾ ਡਾਟਾ ਡਾਇਲਾਗ ਵਿੱਚ ਟੈਕਸਟ ਫੀਲਡ ਵਿੱਚ ਕਾਪੀ ਕੀਤਾ ਗਿਆ ਹੈ, ਪਰ ਅਜੇ ਤੱਕ ਸੇਵ ਨਹੀਂ ਕੀਤਾ ਗਿਆ। DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">ਫਾਈਲ ਇੰਪੋਰਟ ਕਰਨ ਤੋਂ ਬਾਅਦ ਡਾਇਲਾਗ ਆਪਣੇ ਆਪ ਬੰਦ ਕਰੋ</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >ਡਾਟਾ ਆਯਾਤ ਹੋਣ ਅਤੇ ਆਪਣੇ ਆਪ ਸੇਵ ਹੋਣ ਤੋਂ ਬਾਅਦ ਡਾਇਲਾਗ ਬੰਦ ਕਰੋ DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">ਡਾਟਾ ਆਯਾਤ ਹੋਣ ਅਤੇ ਆਪਣੇ ਆਪ ਸੇਵ ਹੋਣ ਤੋਂ ਬਾਅਦ ਗੱਲਬਾਤ ਬਾਕਸ ਨੂੰ ਬੰਦ ਨਾ ਕਰੋ। DB</string>
+  <string name="pref_apply_default_url_templates_title">ਉਪਭੋਗਤਾ-ਨਿਰਧਾਰਿਤ ਡਿਫਾਲਟ ਇੰਪੋਰਟ ਲਈ ਸਥਿਰ ਸਟਰਿੰਗ ਮੁੱਲ ਲਾਗੂ ਕਰੋ URL ਟੈਂਪਲੇਟਸ</string>
+  <string name="pref_apply_default_url_templates_summary_on" >ਡਿਫੌਲਟ ਆਯਾਤ URL ਮੁੱਲ ਟੈਂਪਲੇਟ ਹਨ</string>
+  <string name="pref_apply_default_url_templates_summary_off">ਡਿਫੌਲਟ ਆਯਾਤ URL ਮੁੱਲ ਟੈਂਪਲੇਟ ਨਹੀਂ ਹੁੰਦੇ।</string>
   <string name="pref_default_m3u_url_title">ਮੂਲ M3U ਪਲੇਲਿਸਟ URL</string>
   <string name="pref_default_m3u_url_summary">ਵਿੱਚ ਸ਼ੁਰੂਆਤੀ ਮੁੱਲ \"ਆਯਾਤ M3U ਪਲੇਲਿਸਟ URL\" ਗੱਲਬਾਤ.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ਚੈਨਲ ਦੇ ਨਾਮ ਤੋਂ ਚੈਨਲ ਤੱਕ ਨਕਸ਼ਾ ID</string>

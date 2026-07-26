@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Hlela hi maletere</string>
   <string name="epg_menuitem_import_xmltv_url">Nghenisa XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Nghenisa XMLTV EPG Fayili</string>
+  <string name="pref_dbedittextpreference_autosave_title">Ku hlayisa datha hi xoxe endzhaku ko nghenisa fayili</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Datha leyi nghenisiweke yi hlayisiwa hi xihatla eka DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Datha leyi nghenisiweke yi kopiwile eka xibedlhele xa matsalwa eka bokisi ra mbulavurisano, kambe a yi si hlayisiwa eka DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Boha bokisi ra mbulavurisano hi xoxe endzhaku ko nghenisa fayili</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Pfalela bokisi ra mbulavurisano endzhaku ka loko data ri nghenisiwile naswona ri hlayisiwile hi roxe eka DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">U nga pfaleli bokisi ra mbulavurisano endzhaku ka loko data ri nghenisiwile naswona ri hlayisiwile hi roxe eka DB</string>
+  <string name="pref_apply_default_url_templates_title">Tirhisa mimpimo ya nsingi leyi nga cinciwiki eka ku nghenisa ka ntolovelo loku hlawuriweke hi mutirhisi URL Swipfumelelano</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Ku nghenisa loku tolovelekeke URL Tinhlayo i swikombiso</string>
+  <string name="pref_apply_default_url_templates_summary_off">Ku nghenisa loku tolovelekeke URL Tinhlayo a hi swikombiso</string>
   <string name="pref_default_m3u_url_title">Lexi tolovelekeke M3U Nxaxamelo wa tinsimu URL</string>
   <string name="pref_default_m3u_url_summary">Ntsengo wo sungula endzeni \"Nghenisa M3U Nxaxamelo wa tinsimu URL\" bulo.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Hundzuluxa vito ra xitichi eka xitichi. ID</string>

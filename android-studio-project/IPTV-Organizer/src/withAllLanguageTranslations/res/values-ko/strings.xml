@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">알파벳순 정렬</string>
   <string name="epg_menuitem_import_xmltv_url">가져오기 XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">가져오기 XMLTV EPG 파일</string>
+  <string name="pref_dbedittextpreference_autosave_title">파일 가져오기 후 데이터 자동 저장</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >가져온 데이터는 즉시 다음 위치에 저장됩니다. DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">가져온 데이터는 대화 상자의 텍스트 필드에 복사되지만, 아직 다음 위치에는 저장되지 않았습니다. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">파일 가져오기 후 대화 상자 자동 닫기</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >데이터가 가져와지고 다음 위치에 자동으로 저장된 후 대화 상자를 닫습니다. DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">데이터가 가져와져 자동으로 다음 위치에 저장된 후에는 대화 상자를 닫지 마십시오. DB</string>
+  <string name="pref_apply_default_url_templates_title">사용자 정의 기본 가져오기에 고정 문자열 값 적용 URL 템플릿</string>
+  <string name="pref_apply_default_url_templates_summary_on" >기본 가져오기 URL 값은 템플릿입니다</string>
+  <string name="pref_apply_default_url_templates_summary_off">기본 가져오기 URL 값은 템플릿이 아닙니다</string>
   <string name="pref_default_m3u_url_title">기본값 M3U 재생 목록 URL</string>
   <string name="pref_default_m3u_url_summary">초기값은 \"가져오기 M3U 재생 목록 URL\" 대화.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">채널 이름과 채널 간의 매핑 ID</string>

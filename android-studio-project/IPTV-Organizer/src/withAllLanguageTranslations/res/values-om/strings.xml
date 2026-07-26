@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Akka qubee tartiibessaa</string>
   <string name="epg_menuitem_import_xmltv_url">Galuu XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Galuu XMLTV EPG Faayilii</string>
+  <string name="pref_dbedittextpreference_autosave_title">Erga faayiliin galfamee booda daataan ofumaan qusatama</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Daataan alaa galfame battalumatti kuufama DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Daataan alaa galfame saanduqa barruu sanduuqa marii keessatti garagalchaa jira, garuu amma yoonaatti hin olkaa\'amne DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Faayilii erga galchanii booda sanduuqa marii ofiin cufi</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Daataa erga galfamee ofumaan olkaa\'amee booda sanduuqa marii cufi DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Daataa erga galfamee ofumaan ol kaa\'amee booda sanduuqa marii hin cufin. DB</string>
+  <string name="pref_apply_default_url_templates_title">Gatiiwwan funyoo dhaabbataa galtee duraa fayyadamaan ibsameef hojiirra oolchi URL Unkaalee</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Galchii idilee URL Gatiinwwan unkaawwanidha</string>
+  <string name="pref_apply_default_url_templates_summary_off">Galchii idilee URL Gatiinwwan unka miti.</string>
   <string name="pref_default_m3u_url_title">Akka duraan turetti M3U Tarree Weelluu URL</string>
   <string name="pref_default_m3u_url_summary">Gatii jalqabaa keessa \"Galuu M3U Tarree Weelluu URL\" Haasawa.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Maqaa chaanaalichaa gara chaanaalichaatti ID</string>

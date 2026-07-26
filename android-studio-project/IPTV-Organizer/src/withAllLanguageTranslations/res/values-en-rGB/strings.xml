@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Sort Alphabetic</string>
   <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG File</string>
+  <string name="pref_dbedittextpreference_autosave_title">Auto save data after file import</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Imported data is immediately saved to DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Imported data is copied to text field in dialog, but not yet saved to DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Auto close dialog after file import</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Close dialog after data is imported and automatically saved to DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Do not close dialog after data is imported and automatically saved to DB</string>
+  <string name="pref_apply_default_url_templates_title">Apply static string values to user-defined default import URL templates</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Default import URL values are templates</string>
+  <string name="pref_apply_default_url_templates_summary_off">Default import URL values are not templates</string>
   <string name="pref_default_m3u_url_title">Default M3U Playlist URL</string>
   <string name="pref_default_m3u_url_summary">Initial value in \"Import M3U Playlist URL\" dialog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Map from channel name to channel ID</string>

@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Klase pa lòd alfabetik</string>
   <string name="epg_menuitem_import_xmltv_url">Enpòte XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Enpòte XMLTV EPG Fichye</string>
+  <string name="pref_dbedittextpreference_autosave_title">Sove done otomatikman apre enpòte fichye a</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Done enpòte yo anrejistre imedyatman nan DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Done enpòte yo kopye nan chan tèks nan bwat dyalòg la, men yo poko anrejistre nan DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Fèmen bwat dyalòg la otomatikman apre enpòte fichye a</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Fèmen bwat dyalòg la apre done yo fin enpòte epi sove otomatikman nan DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Pa fèmen bwat dyalòg la apre done yo fin enpòte epi sove otomatikman nan DB</string>
+  <string name="pref_apply_default_url_templates_title">Aplike valè chèn estatik pou enpòtasyon pa defo itilizatè a defini URL modèl</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Enpòtasyon pa defo URL Valè yo se modèl</string>
+  <string name="pref_apply_default_url_templates_summary_off">Enpòtasyon pa defo URL Valè yo se pa modèl.</string>
   <string name="pref_default_m3u_url_title">Pa defo M3U Lis mizik URL</string>
   <string name="pref_default_m3u_url_summary">Valè inisyal an \"Enpòte M3U Lis mizik URL\" Dyalòg.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mete non chanèl la an korespondans ak chanèl la ID</string>

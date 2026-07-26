@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Ordena alfabèticament</string>
   <string name="epg_menuitem_import_xmltv_url">Importar XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importar XMLTV EPG Fitxer</string>
+  <string name="pref_dbedittextpreference_autosave_title">Després d\'importar el fitxer, desa automàticament les dades.</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Les dades importades es guarden immediatament a DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Les dades importades es copien al camp de text del diàleg, però encara no s\'han desat a DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Tanca automàticament el diàleg després de la importació de fitxers</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Tanca el diàleg després d\'importar les dades i desar-les automàticament a DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">No tanqueu el diàleg després que les dades s\'hagin importat i s\'hagin desat automàticament a DB</string>
+  <string name="pref_apply_default_url_templates_title">Aplica valors de cadena estàtics a la importació per defecte definida per l\'usuari URL plantilles</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Importació per defecte URL Els valors són plantilles</string>
+  <string name="pref_apply_default_url_templates_summary_off">Importació per defecte URL Els valors no són plantilles</string>
   <string name="pref_default_m3u_url_title">Per defecte M3U Llista de reproducció URL</string>
   <string name="pref_default_m3u_url_summary">Valor inicial en \"Importar M3U Llista de reproducció URL\" diàleg.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapa del nom del canal al canal ID</string>

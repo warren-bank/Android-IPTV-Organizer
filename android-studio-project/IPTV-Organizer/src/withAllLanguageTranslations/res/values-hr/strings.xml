@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">Sortiraj abecednim redom</string>
   <string name="epg_menuitem_import_xmltv_url">Uvoz XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Uvoz XMLTV EPG Datoteka</string>
+  <string name="pref_dbedittextpreference_autosave_title">Automatsko spremanje podataka nakon uvoza datoteke</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >Uvezeni podaci se odmah spremaju u DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">Uvezeni podaci su kopirani u tekstno polje u dijaloškom okviru, ali još nisu spremljeni u DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">Automatsko zatvaranje dijaloga nakon uvoza datoteke</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >Zatvori dijalog nakon uvoza podataka i automatskog spremanja u DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">Ne zatvarajte dijalog nakon uvoza podataka i automatskog spremanja u DB</string>
+  <string name="pref_apply_default_url_templates_title">Primijenite statičke vrijednosti niza na korisnički definirani zadani uvoz URL šablone</string>
+  <string name="pref_apply_default_url_templates_summary_on" >Zadani uvoz URL vrijednosti su predlošci</string>
+  <string name="pref_apply_default_url_templates_summary_off">Zadani uvoz URL vrijednosti nisu predlošci</string>
   <string name="pref_default_m3u_url_title">Zadano M3U Playlista URL</string>
   <string name="pref_default_m3u_url_summary">Početna vrijednost u \"Uvoz M3U Playlista URL\" dijalog.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapa imena kanala na kanal ID</string>

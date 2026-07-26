@@ -19,6 +19,15 @@
   <string name="channels_menuitem_sort_alphabetic">מיון לפי סדר אלפביתי</string>
   <string name="epg_menuitem_import_xmltv_url">ייבוא XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">ייבוא XMLTV EPG קובץ</string>
+  <string name="pref_dbedittextpreference_autosave_title">שמירת נתונים אוטומטית לאחר ייבוא קובץ</string>
+  <string name="pref_dbedittextpreference_autosave_summary_on" >הנתונים המיובאים נשמרים מיד ב- DB</string>
+  <string name="pref_dbedittextpreference_autosave_summary_off">הנתונים המיובאים מועתקים לשדה הטקסט בתיבת הדו-שיח, אך עדיין לא נשמרו ב- DB</string>
+  <string name="pref_dbedittextpreference_autoclose_title">סגירת תיבת הדו-שיח באופן אוטומטי לאחר ייבוא הקובץ</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_on" >סגור את תיבת הדו-שיח לאחר ייבוא הנתונים ושמירתם באופן אוטומטי ב- DB</string>
+  <string name="pref_dbedittextpreference_autoclose_summary_off">אין לסגור את תיבת הדו-שיח לאחר ייבוא הנתונים ושמירתם האוטומטית ב- DB</string>
+  <string name="pref_apply_default_url_templates_title">החלת ערכי מחרוזת סטטיים על ייבוא ברירת מחדל שהוגדר על ידי המשתמש URL תבניות</string>
+  <string name="pref_apply_default_url_templates_summary_on" >ייבוא ברירת מחדל URL ערכים הם תבניות</string>
+  <string name="pref_apply_default_url_templates_summary_off">ייבוא ברירת מחדל URL ערכים אינם תבניות</string>
   <string name="pref_default_m3u_url_title">ברירת מחדל M3U רשימת השמעה URL</string>
   <string name="pref_default_m3u_url_summary">הערך ההתחלתי ב- \"ייבוא M3U רשימת השמעה URL\" דיאלוג.</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">מיפוי משם הערוץ לערוץ ID</string>
