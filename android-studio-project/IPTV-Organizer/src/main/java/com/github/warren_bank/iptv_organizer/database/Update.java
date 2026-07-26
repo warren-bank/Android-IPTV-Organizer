@@ -20,7 +20,7 @@ public class Update {
   public static final int MODE_INSTALL = 1;
   public static final int MODE_RESTORE = 2;
 
-  public static final int VERSION_CURRENT = 3;
+  public static final int VERSION_CURRENT = 2;
   public static       int VERSION_ACTUAL  = -1;
 
   // ---------------------------------------------------------------------------
