@@ -98,11 +98,19 @@
 
   <!-- SettingsActivity [M3U Channels]: Filter by channel name whitelist -->
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filter by channel name whitelist</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">One value per line. Format: \"[name or tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">One value per line. Format: \"[name or tvg-name]\". Prefix for substring: \"+*\"</string>
 
   <!-- SettingsActivity [M3U Channels]: Filter by channel ID whitelist -->
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filter by channel ID whitelist</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">One value per line. Format: \"[tvg-id]\"</string>
+
+  <!-- SettingsActivity [M3U Channels]: Filter by channel name blacklist -->
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filter by channel name blacklist</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_summary">@string/pref_m3u_channels_filter_whitelist_names_summary</string>
+
+  <!-- SettingsActivity [M3U Channels]: Filter by channel ID blacklist -->
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filter by channel ID blacklist</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_summary">@string/pref_m3u_channels_filter_whitelist_ids_summary</string>
 
   <!-- SettingsActivity [M3U Channels]: Media URL static string values -->
   <string name="pref_m3u_channels_media_url_static_values_title">Media URL static string values</string>

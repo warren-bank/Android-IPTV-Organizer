@@ -9,7 +9,7 @@ Android app that organizes IPTV channel and EPG information.
   - M3U (IPTV channels) data can&hellip;
     * assign a new channel ID value based on the channel name
     * assign a new channel ID value based on the channel ID
-    * determine whether to save (or discard) channels by whitelist filters:
+    * determine whether to save (or discard) channels by whitelist and blacklist filters:
       1. channel name
       2. channel ID
          - after all remapping assignments have occurred
@@ -121,7 +121,15 @@ Android app that organizes IPTV channel and EPG information.
        cspan3.us
        cnninternational.us
        ```
-  6. Media URL static string values
+  6. Filter by channel name blacklist
+     - specify one channel name (ie: `target_value`) per line
+     - format of input and usage is identical to the "channel name whitelist"
+       * matching M3U channels are discarded during import
+  7. Filter by channel ID blacklist
+     - specify one channel ID (ie: `target_value`) per line
+     - format of input and usage is identical to the "channel ID whitelist"
+       * matching M3U channels are discarded during import
+  8. Media URL static string values
      - specify one static string (ie: `target_value`) per line
      - where all substring occurances of `target_value` in channel `media_url` values are replaced by template variables during import of M3U (IPTV channels) data
      - when static string values are updated, channel `media_url` values will immediately reflect the changes&hellip; the media URLs are rehydrated by substituting the static strings for template variables

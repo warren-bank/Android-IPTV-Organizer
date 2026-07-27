@@ -194,12 +194,21 @@ public class Update {
     databaseUpdateResult.didUpdateSucceed &= didUpdate;
   }
 
-  // example (for future reference)
   private boolean update_version_001() {
     Log.d(Constants.LOG_TAG, "UPDATING TO VERSION 2");
     try {
       List<String> queries = new ArrayList<String>();
       queries.add("UPDATE application SET version=2");
+      queries.add(
+          "CREATE TABLE IF NOT EXISTS m3u_channels_filter_blacklist_names ("
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      queries.add(
+          "CREATE TABLE IF NOT EXISTS m3u_channels_filter_blacklist_ids ("
+        + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
       return execTransaction(queries);
     } catch (Exception e) {
       Log.e(Constants.LOG_TAG, "Error updating database");

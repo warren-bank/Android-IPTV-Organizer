@@ -65,16 +65,16 @@ public class ImportUtils {
     if (!nameWhitelistSubstrings.isEmpty() || !nameWhitelist.isEmpty() || !idWhitelist.isEmpty()) {
       // One or more whitelists are configured. Channel must match one to pass filter.
 
-      channelNameFilterLoop:
+      channelNameWLFilterLoop:
       for (int i = (channels.size() - 1); i >= 0; i--) {
         ChannelListItem channel = channels.get(i);
 
         if (!nameWhitelistSubstrings.isEmpty()) {
           for (String substr : nameWhitelistSubstrings) {
             if (!TextUtils.isEmpty(channel.name)     && channel.name.contains(substr))
-              continue channelNameFilterLoop;
+              continue channelNameWLFilterLoop;
             if (!TextUtils.isEmpty(channel.tvg_name) && channel.tvg_name.contains(substr))
-              continue channelNameFilterLoop;
+              continue channelNameWLFilterLoop;
           }
         }
         if (!nameWhitelist.isEmpty()) {
@@ -90,6 +90,51 @@ public class ImportUtils {
 
         // no match
         channels.remove(i);
+      }
+    }
+
+    // =======================
+    // apply filter blacklists
+    // =======================
+    List<String> nameBlacklistSubstrings = db.getChannelNameFilterBlacklistSubset(true);
+    List<String> nameBlacklist           = db.getChannelNameFilterBlacklistSubset(false);
+    List<String> idBlacklist             = db.getChannelIdFilterBlacklist();
+
+    if (!nameBlacklistSubstrings.isEmpty() || !nameBlacklist.isEmpty() || !idBlacklist.isEmpty()) {
+      // One or more blacklists are configured. Channel must match none to pass filter.
+
+      channelNameBLFilterLoop:
+      for (int i = (channels.size() - 1); i >= 0; i--) {
+        ChannelListItem channel = channels.get(i);
+
+        if (!nameBlacklistSubstrings.isEmpty()) {
+          for (String substr : nameBlacklistSubstrings) {
+            if (!TextUtils.isEmpty(channel.name)     && channel.name.contains(substr)) {
+              channels.remove(i);
+              continue channelNameBLFilterLoop;
+            }
+            if (!TextUtils.isEmpty(channel.tvg_name) && channel.tvg_name.contains(substr)) {
+              channels.remove(i);
+              continue channelNameBLFilterLoop;
+            }
+          }
+        }
+        if (!nameBlacklist.isEmpty()) {
+          if (!TextUtils.isEmpty(channel.name)     && nameBlacklist.contains(channel.name)) {
+            channels.remove(i);
+            continue;
+          }
+          if (!TextUtils.isEmpty(channel.tvg_name) && nameBlacklist.contains(channel.tvg_name)) {
+            channels.remove(i);
+            continue;
+          }
+        }
+        if (!idBlacklist.isEmpty()) {
+          if (!TextUtils.isEmpty(channel.tvg_id)   && idBlacklist.contains(channel.tvg_id)) {
+            channels.remove(i);
+            continue;
+          }
+        }
       }
     }
 

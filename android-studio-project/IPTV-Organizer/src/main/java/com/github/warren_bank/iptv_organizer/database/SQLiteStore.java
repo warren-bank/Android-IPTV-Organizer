@@ -140,7 +140,7 @@ public class SQLiteStore extends SQLiteOpenHelper {
         + ");"
       );
       dbase.execSQL(
-          "INSERT INTO application (version) VALUES (" + Update.VERSION_CURRENT + ");"
+          "INSERT INTO application (version) VALUES (1);"
       );
       dbase.execSQL(
           "CREATE TABLE IF NOT EXISTS m3u_channels ("

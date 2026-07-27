@@ -34,6 +34,16 @@ public class DbPreferenceDataStore {
               List<String> data = DbUtils.decodeList(value);
               return DbUtils.getDb().saveChannelIdFilterWhitelist(data);
           }
+
+          case "m3u_channels_filter_blacklist_names": {
+              List<String> data = DbUtils.decodeList(value);
+              return DbUtils.getDb().saveChannelNameFilterBlacklist(data);
+          }
+
+          case "m3u_channels_filter_blacklist_ids": {
+              List<String> data = DbUtils.decodeList(value);
+              return DbUtils.getDb().saveChannelIdFilterBlacklist(data);
+          }
       }
     }
     catch(Exception e) {}
@@ -65,6 +75,16 @@ public class DbPreferenceDataStore {
 
           case "m3u_channels_filter_whitelist_ids": {
               List<String> data = DbUtils.getDb().getChannelIdFilterWhitelist();
+              return DbUtils.encodeList(data);
+          }
+
+          case "m3u_channels_filter_blacklist_names": {
+              List<String> data = DbUtils.getDb().getChannelNameFilterBlacklist();
+              return DbUtils.encodeList(data);
+          }
+
+          case "m3u_channels_filter_blacklist_ids": {
+              List<String> data = DbUtils.getDb().getChannelIdFilterBlacklist();
               return DbUtils.encodeList(data);
           }
       }

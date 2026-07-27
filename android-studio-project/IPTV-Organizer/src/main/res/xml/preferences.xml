@@ -58,6 +58,16 @@
       android:summary="@string/pref_m3u_channels_filter_whitelist_ids_summary" />
 
     <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="m3u_channels_filter_blacklist_names"
+      android:title="@string/pref_m3u_channels_filter_blacklist_names_title"
+      android:summary="@string/pref_m3u_channels_filter_blacklist_names_summary" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="m3u_channels_filter_blacklist_ids"
+      android:title="@string/pref_m3u_channels_filter_blacklist_ids_title"
+      android:summary="@string/pref_m3u_channels_filter_blacklist_ids_summary" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
       android:key="m3u_channels_media_url_static_values"
       android:title="@string/pref_m3u_channels_media_url_static_values_title"
       android:summary="@string/pref_m3u_channels_media_url_static_values_summary" />
