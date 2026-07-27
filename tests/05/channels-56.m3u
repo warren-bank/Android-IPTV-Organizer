@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1,CHANNEL 5
+https://example.com/USERNAME/PASSWORD/55555.ts
+#EXTINF:-1,CHANNEL 6
+https://example.com/USERNAME/PASSWORD/66666.ts

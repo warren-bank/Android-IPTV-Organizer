@@ -140,7 +140,7 @@ public class SQLiteStore extends SQLiteOpenHelper {
         + ");"
       );
       dbase.execSQL(
-          "INSERT INTO application (version) VALUES (1);"
+          "INSERT INTO application (version) VALUES (" + Update.VERSION_CURRENT + ");"
       );
       dbase.execSQL(
           "CREATE TABLE IF NOT EXISTS m3u_channels ("
@@ -197,6 +197,16 @@ public class SQLiteStore extends SQLiteOpenHelper {
       );
       dbase.execSQL(
           "CREATE TABLE IF NOT EXISTS m3u_channels_filter_whitelist_ids ("
+        + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      dbase.execSQL(
+          "CREATE TABLE IF NOT EXISTS m3u_channels_filter_blacklist_names ("
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      dbase.execSQL(
+          "CREATE TABLE IF NOT EXISTS m3u_channels_filter_blacklist_ids ("
         + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
         + ");"
       );

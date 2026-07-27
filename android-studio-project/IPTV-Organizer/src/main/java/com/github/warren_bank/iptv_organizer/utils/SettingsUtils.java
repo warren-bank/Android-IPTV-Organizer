@@ -69,6 +69,20 @@ public class SettingsUtils {
 
   // --------------------
 
+  public static boolean getAppendM3uPlaylists(Context context) {
+    return getAppendM3uPlaylists(context, getPrefs(context));
+  }
+
+  private static boolean getAppendM3uPlaylists(Context context, SharedPreferences prefs) {
+    String pref_key     = context.getString(R.string.pref_append_m3u_playlists_key);
+    String pref_default = context.getString(R.string.pref_append_m3u_playlists_default);
+    boolean val_default = "true".equals(pref_default);
+
+    return prefs.getBoolean(pref_key, val_default);
+  }
+
+  // --------------------
+
   public static String getDefaultXmltvEpgUrlPreference(Context context) {
     return getDefaultXmltvEpgUrlPreference(context, getPrefs(context));
   }

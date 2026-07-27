@@ -22,11 +22,11 @@ public class ImportUtils {
 
   // --------------------------------------------------------------------------- import M3U
 
-  public static List<ChannelListItem> importM3u(InputStream inputStream) throws Exception {
+  public static List<ChannelListItem> importM3u(InputStream inputStream, boolean appendList, int firstPosition) throws Exception {
     DbGateway db = DbUtils.getDb();
     if (db == null) throw new Exception("DbGateway is null");
 
-    List<ChannelListItem> channels = M3uParser.parseM3u(inputStream);
+    List<ChannelListItem> channels = M3uParser.parseM3u(inputStream, firstPosition);
 
     // ==============
     // apply mappings
@@ -160,7 +160,7 @@ public class ImportUtils {
     // ==========
     // save to DB
     // ==========
-    if (!db.saveM3u(channels)) throw new Exception("Failed to save imported M3U to database.");
+    if (!db.saveM3u(channels, appendList)) throw new Exception("Failed to save imported M3U to database.");
 
     return channels;
   }

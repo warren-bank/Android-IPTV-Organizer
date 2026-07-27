@@ -6,6 +6,7 @@ import com.github.warren_bank.iptv_organizer.ui.EpgActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
+import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
 import com.github.warren_bank.filterablerecyclerview.Filter;
 import com.github.warren_bank.filterablerecyclerview.FilterableListItem;
@@ -101,7 +102,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_channels);
 
-    refreshList(null);
+    refreshList(null, false);
     initToolbar();
     initRecyclerView();
     initSort();
@@ -253,14 +254,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       }
 
       inputStream = conn.getInputStream();
-      final List<ChannelListItem> newList = ImportUtils.importM3u(inputStream);
-
-      runOnUiThread(new Runnable() {
-        @Override
-        public void run() {
-          refreshList(newList);
-        }
-      });
+      importM3uFromStream(inputStream);
     } catch (Exception e) {
     } finally {
       try {
@@ -306,14 +300,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
 
     try {
       inputStream = getContentResolver().openInputStream(uri);
-      final List<ChannelListItem> newList = ImportUtils.importM3u(inputStream);
-
-      runOnUiThread(new Runnable() {
-        @Override
-        public void run() {
-          refreshList(newList);
-        }
-      });
+      importM3uFromStream(inputStream);
     } catch (Exception e) {
     } finally {
       try {
@@ -326,7 +313,24 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   // internal:
   // ---------------------------------------------------------------------------------------------
 
-  private void refreshList(List<ChannelListItem> newList) {
+  private void importM3uFromStream(InputStream inputStream) throws Exception {
+    final boolean appendList = SettingsUtils.getAppendM3uPlaylists(ChannelsActivity.this);
+
+    int firstPosition = appendList
+      ? (unfilteredList.size() + 1)
+      : 1;
+
+    final List<ChannelListItem> newList = ImportUtils.importM3u(inputStream, appendList, firstPosition);
+
+    runOnUiThread(new Runnable() {
+      @Override
+      public void run() {
+        refreshList(newList, appendList);
+      }
+    });
+  }
+
+  private void refreshList(List<ChannelListItem> newList, boolean appendList) {
     if (newList == null) {
       newList = DbUtils.getDb().getM3u();
     }
@@ -335,7 +339,9 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       unfilteredList = castList(newList);
     }
     else {
-      unfilteredList.clear();
+      if (!appendList)
+        unfilteredList.clear();
+
       unfilteredList.addAll(castList(newList));
     }
 

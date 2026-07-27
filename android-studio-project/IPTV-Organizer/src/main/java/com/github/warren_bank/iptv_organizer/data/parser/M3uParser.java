@@ -10,10 +10,10 @@ import java.util.List;
 
 public class M3uParser {
 
-  public static List<ChannelListItem> parseM3u(InputStream inputStream) throws Exception {
+  public static List<ChannelListItem> parseM3u(InputStream inputStream, int firstPosition) throws Exception {
     ArrayList<ChannelListItem> channels = new ArrayList<ChannelListItem>();
     BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-    int position = 1;
+    int position = firstPosition;
     String currentName = null;
     String currentTvgId = null;
     String currentTvgName = null;

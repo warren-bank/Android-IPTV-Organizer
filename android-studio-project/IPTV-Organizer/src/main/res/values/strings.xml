@@ -88,6 +88,13 @@
   <string translatable="false" name="pref_default_m3u_url_hint">https://example.com/playlist.m3u</string>
   <string translatable="false" name="pref_default_m3u_url_default"></string>
 
+  <!-- SettingsActivity [M3U Channels]: Append M3U Playlists -->
+  <string translatable="false" name="pref_append_m3u_playlists_key">pref_append_m3u_playlists</string>
+  <string name="pref_append_m3u_playlists_title">Append M3U Playlists</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Imported data is added to the existing list of M3U channels</string>
+  <string name="pref_append_m3u_playlists_summary_off">Imported data replaces the existing list of M3U channels</string>
+  <string translatable="false" name="pref_append_m3u_playlists_default">false</string>
+
   <!-- SettingsActivity [M3U Channels]: Map from channel name to channel ID -->
   <string name="pref_m3u_channels_mapping_name_to_id_title">Map from channel name to channel ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">One value per line. Format: \"[name or tvg-name] =\> [new tvg-id]\"</string>

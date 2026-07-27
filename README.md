@@ -56,7 +56,11 @@ Android app that organizes IPTV channel and EPG information.
          ```text
          %4$s/playlist/%1$s/%2$s/m3u_plus?output=hls
          ```
-  2. Map from channel name to channel ID
+  2. Append M3U Playlists
+     - when `true`: Imported data is added to the existing list of M3U channels
+     - when `false`: Imported data replaces the existing list of M3U channels
+     - default: `false`
+  3. Map from channel name to channel ID
      - specify one mapping per line in the format:
        ```text
        "${target_value}\s+=>\s+${new_tvg_id}"
@@ -72,7 +76,7 @@ Android app that organizes IPTV channel and EPG information.
        USA C-SPAN 3          => cspan3.us
        USA CNN INTERNATIONAL => cnninternational.us
        ```
-  3. Map from channel ID to channel ID
+  4. Map from channel ID to channel ID
      - specify one mapping per line in the format:
        ```text
        "${target_value}\s+=>\s+${new_tvg_id}"
@@ -87,7 +91,7 @@ Android app that organizes IPTV channel and EPG information.
        cspan3           => cspan3.us
        cnninternational => cnninternational.us
        ```
-  4. Filter by channel name whitelist
+  5. Filter by channel name whitelist
      - specify one channel name (ie: `target_value`) per line
      - where `target_value` is equal to either:
        * channel `name`
@@ -128,7 +132,7 @@ Android app that organizes IPTV channel and EPG information.
               ESPN3
               ESPNU
               ```
-  5. Filter by channel ID whitelist
+  6. Filter by channel ID whitelist
      - specify one channel ID (ie: `target_value`) per line
      - where `target_value` is equal to:
        * channel `tvg_id`
@@ -139,15 +143,15 @@ Android app that organizes IPTV channel and EPG information.
        cspan3.us
        cnninternational.us
        ```
-  6. Filter by channel name blacklist
+  7. Filter by channel name blacklist
      - specify one channel name (ie: `target_value`) per line
      - format of input and usage is identical to the "channel name whitelist"
        * matching M3U channels are discarded during import
-  7. Filter by channel ID blacklist
+  8. Filter by channel ID blacklist
      - specify one channel ID (ie: `target_value`) per line
      - format of input and usage is identical to the "channel ID whitelist"
        * matching M3U channels are discarded during import
-  8. Media URL static string values
+  9. Media URL static string values
      - specify one static string (ie: `target_value`) per line
      - where all substring occurances of `target_value` in channel `media_url` values are replaced by template variables during import of M3U (IPTV channels) data
      - when static string values are updated, channel `media_url` values will immediately reflect the changes&hellip; the media URLs are rehydrated by substituting the static strings for template variables

@@ -157,7 +157,7 @@ public class DbGateway {
   // write models to DB:
   // ---------------------------------------------------------------------------
 
-  public boolean saveM3u(List<ChannelListItem> channels) {
+  public boolean saveM3u(List<ChannelListItem> channels, boolean appendList) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -165,9 +165,11 @@ public class DbGateway {
     try {
       dbase.beginTransaction();
 
-      query = "DELETE FROM m3u_channels";
-      dbase.execSQL(query);
-      query = null;
+      if (!appendList) {
+        query = "DELETE FROM m3u_channels";
+        dbase.execSQL(query);
+        query = null;
+      }
 
       if ((channels != null) && !channels.isEmpty()) {
         for (ChannelListItem channel : channels) {

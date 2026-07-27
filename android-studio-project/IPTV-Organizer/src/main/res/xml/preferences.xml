@@ -37,6 +37,13 @@
       android:hint="@string/pref_default_m3u_url_hint"
       android:defaultValue="@string/pref_default_m3u_url_default" />
 
+    <CheckBoxPreference
+      android:key="@string/pref_append_m3u_playlists_key"
+      android:title="@string/pref_append_m3u_playlists_title"
+      android:summaryOn="@string/pref_append_m3u_playlists_summary_on"
+      android:summaryOff="@string/pref_append_m3u_playlists_summary_off"
+      android:defaultValue="@string/pref_append_m3u_playlists_default" />
+
     <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
       android:key="m3u_channels_mapping_name_to_id"
       android:title="@string/pref_m3u_channels_mapping_name_to_id_title"
