@@ -31,13 +31,31 @@ Android app that organizes IPTV channel and EPG information.
 
 #### Settings:
 
+* Settings
+  1. Auto save data after file import
+     - when `true`: Imported data is immediately saved to DB
+     - when `false`: Imported data is copied to text field in dialog, but not yet saved to DB
+     - default: `true`
+  2. Auto close dialog after file import
+     - when `true`: Close dialog after data is imported and automatically saved to DB
+     - when `false`: Do not close dialog after data is imported and automatically saved to DB
+     - default: `true`
+  3. Apply static string values to user-defined default import URL templates
+     - when `true`: Default import URL values are templates
+     - when `false`: Default import URL values are not templates
+     - default: `true`
 * M3U Channels
   1. Default M3U Playlist URL
      - specify the initial value in the dialog: "Import M3U Playlist URL"
      - example:
-       ```text
-       https://example.com/playlist.m3u
-       ```
+       * is not template:
+         ```text
+         http://kytv.xyz:25461/playlist/USERNAME/PASSWORD/m3u_plus?output=hls
+         ```
+       * is template:
+         ```text
+         %4$s/playlist/%1$s/%2$s/m3u_plus?output=hls
+         ```
   2. Map from channel name to channel ID
      - specify one mapping per line in the format:
        ```text
@@ -136,17 +154,23 @@ Android app that organizes IPTV channel and EPG information.
        * be careful to not remove or reorder static strings, as doing so will require the reimport of M3U (IPTV channels) data to correct the channel `media_url` template strings
      - example:
        ```text
-       http://kytv.xyz:80
        USERNAME
        PASSWORD
+       http://kytv.xyz:80
+       http://kytv.xyz:25461
        ```
 * EPG Channels
   1. Default XMLTV EPG URL
      - specify the initial value in the dialog: "Import XMLTV EPG URL"
      - example:
-       ```text
-       https://example.com/epg.xmltv
-       ```
+       * is not template:
+         ```text
+         http://kytv.xyz:80/xmltv.php?username=USERNAME&password=PASSWORD
+         ```
+       * is template:
+         ```text
+         %3$s/xmltv.php?username=%1$s&password=%2$s
+         ```
   2. Apply Import Filter
      - when `true`: Import channels found in M3U
      - when `false`: Import all channels
