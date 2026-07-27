@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart van het kanaal ID naar ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Eén waarde per regel. Opmaak: \"[oud tvg-id] =\> [nieuw tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filteren op de witte lijst met kanaalnamen</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eén waarde per regel. Opmaak: \"[naam of tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eén waarde per regel. Opmaak: \"[naam of tvg-name]\". Voorvoegsel voor een deelstring: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filteren op kanaal ID witte lijst</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Eén waarde per regel. Opmaak: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filteren op de zwarte lijst met kanaalnamen</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filteren op kanaal ID zwarte lijst</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Media URL statische tekenreekswaarden</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Eén waarde per regel.</string>
   <string name="pref_default_xmltv_url_title">Standaard XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kartenn eus ar chadenn ID da ganoliañ ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Un talvoud dre linenn. Furmad: \"[kozh tvg-id] =\> [nevez tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Silit dre anv ar chadenn war ar roll aotreet</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un talvoud dre linenn. Furmad: \"[anv pe tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un talvoud dre linenn. Furmad: \"[anv pe tvg-name]\". Ragstumm evit un is-sturienn: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Silañ dre ganol ID roll a-vihan</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Un talvoud dre linenn. Furmad: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Silit dre anv ar chadenn (rouestell du)</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Silañ dre ganol ID roll du</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Kelaouennoù URL Talvoudoù kadennoù statik</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Un talvoud dre linenn.</string>
   <string name="pref_default_xmltv_url_title">Diouer XMLTV EPG URL</string>

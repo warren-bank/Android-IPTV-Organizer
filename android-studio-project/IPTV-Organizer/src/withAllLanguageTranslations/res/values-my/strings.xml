@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">ချန်နယ်မှ မြေပုံ ID လမ်းကြောင်းပေးရန် ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[ဟောင်း tvg-id] =\> [အသစ် tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">ချန်နယ်အမည်ဖြူစာရင်းဖြင့် စစ်ထုတ်</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[နာမည် သို့မဟုတ် tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[နာမည် သို့မဟုတ် tvg-name]\". စာကြောင်းအစိတ်အပိုင်းအတွက် ကြိုတင်ဆက်စပ်စကားလုံး: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">ချန်နယ်အလိုက် စစ်ထုတ်ပါ ID ဖြူစာရင်း</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">ချန်နယ်အမည်ဖြင့် ပိတ်ပင်စာရင်း စစ်ထုတ်ပါ</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">ချန်နယ်အလိုက် စစ်ထုတ်ပါ ID အနက်စာရင်း</string>
   <string name="pref_m3u_channels_media_url_static_values_title">မီဒီယာ URL စတက်တစ် စာကြောင်းတန်ဖိုးများ</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု.</string>
   <string name="pref_default_xmltv_url_title">မူလတန်ဖိုး XMLTV EPG URL</string>

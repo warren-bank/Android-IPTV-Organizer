@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanalın haritası ID yönlendirmek için ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Her satırda bir değer. Biçim: \"[eski tvg-id] =\> [yeni tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Kanal adı beyaz listesine göre filtrele</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Her satırda bir değer. Biçim: \"[ad veya tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Her satırda bir değer. Biçim: \"[ad veya tvg-name]\". Alt dizgi için önek: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanalına göre filtrele ID beyaz liste</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Her satırda bir değer. Biçim: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Kanal adına göre filtrele: kara liste</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Kanalına göre filtrele ID kara liste</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Medya URL statik dize değerleri</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Her satırda bir değer.</string>
   <string name="pref_default_xmltv_url_title">Varsayılan XMLTV EPG URL</string>

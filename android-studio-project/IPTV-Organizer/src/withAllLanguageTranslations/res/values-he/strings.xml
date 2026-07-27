@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">מפה מהערוץ ID לערוץ ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ערך אחד בכל שורה. פורמט: \"[ישן tvg-id] =\> [חדש tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">סינון לפי רשימת שמות הערוצים המותרים</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ערך אחד בכל שורה. פורמט: \"[שם או tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ערך אחד בכל שורה. פורמט: \"[שם או tvg-name]\". קידומת למחרוזת משנה: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">סינון לפי ערוץ ID רשימת המאושרים</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ערך אחד בכל שורה. פורמט: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">סינון לפי שם הערוץ ברשימת החסימה</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">סינון לפי ערוץ ID רשימה שחורה</string>
   <string name="pref_m3u_channels_media_url_static_values_title">מדיה URL ערכי מחרוזת סטטיים</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">ערך אחד בכל שורה.</string>
   <string name="pref_default_xmltv_url_title">ברירת מחדל XMLTV EPG URL</string>

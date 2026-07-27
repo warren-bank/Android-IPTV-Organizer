@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Карта з каналу ID для передачі ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Одне значення в кожному рядку. Формат: \"[старий tvg-id] =\> [новий tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Фільтрувати за білим списком назв каналів</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Одне значення в кожному рядку. Формат: \"[ім\'я або tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Одне значення в кожному рядку. Формат: \"[ім\'я або tvg-name]\". Префікс для підрядка: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Фільтрувати за каналом ID білий список</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Одне значення в кожному рядку. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Фільтрувати за назвою каналу «blacklist»</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Фільтрувати за каналом ID чорний список</string>
   <string name="pref_m3u_channels_media_url_static_values_title">ЗМІ URL статичні рядкові значення</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Одне значення в кожному рядку.</string>
   <string name="pref_default_xmltv_url_title">За замовчуванням XMLTV EPG URL</string>

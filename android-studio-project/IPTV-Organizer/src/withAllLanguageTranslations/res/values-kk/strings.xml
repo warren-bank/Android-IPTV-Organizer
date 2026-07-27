@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Арнадан карта ID бағыттау ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Әр жолда бір мән. Формат: \"[ескі tvg-id] =\> [жаңа tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Канал атауы бойынша ақ тізім бойынша сүзгілеу</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Әр жолда бір мән. Формат: \"[аты немесе tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Әр жолда бір мән. Формат: \"[аты немесе tvg-name]\". Субстрингке арналған алғыш: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Арна бойынша сүзу ID ақ тізім</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Әр жолда бір мән. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Арна атауы бойынша қара тізім бойынша сүзу</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Арна бойынша сүзгілеу ID қара тізім</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Медиа URL статикалық жол мәндері</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Әр жолда бір мән.</string>
   <string name="pref_default_xmltv_url_title">Әдепкі XMLTV EPG URL</string>

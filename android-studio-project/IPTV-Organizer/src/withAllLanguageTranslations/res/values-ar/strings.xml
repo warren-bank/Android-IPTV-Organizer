@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">خريطة من القناة ID إلى القناة ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">قيمة واحدة في كل سطر. التنسيق: \"[قديم tvg-id] =\> [جديد tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">التصفية حسب قائمة القنوات المسموح بها</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">قيمة واحدة في كل سطر. التنسيق: \"[الاسم أو tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">قيمة واحدة في كل سطر. التنسيق: \"[الاسم أو tvg-name]\". البادئة الخاصة بالسلسلة الفرعية: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">التصفية حسب القناة ID القائمة البيضاء</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">قيمة واحدة في كل سطر. التنسيق: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">التصفية حسب اسم القناة في القائمة السوداء</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">التصفية حسب القناة ID القائمة السوداء</string>
   <string name="pref_m3u_channels_media_url_static_values_title">وسائل الإعلام URL قيم سلاسل ثابتة</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">قيمة واحدة في كل سطر.</string>
   <string name="pref_default_xmltv_url_title">الافتراضي XMLTV EPG URL</string>

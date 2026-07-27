@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">له چینله نقشه ID لارښودل ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">په هره کرښه کې یو ارزښت. بڼه: \"[زوړ tvg-id] =\> [نوی tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">د چینل نوم له مخې فلټر کړئ سپین لیست</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">په هره کرښه کې یو ارزښت. بڼه: \"[نوم یا tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">په هره کرښه کې یو ارزښت. بڼه: \"[نوم یا tvg-name]\". د فرعي تار لپاره مخکښ: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">د چینل له مخې فلټر کړئ ID سپین لیست</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">په هره کرښه کې یو ارزښت. بڼه: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">د چینل په نوم فلټر کړئ تور لیست</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">د چینل له مخې فلټر کړئ ID تور لیست</string>
   <string name="pref_m3u_channels_media_url_static_values_title">رسنۍ URL ثابتې تارې ارزښتونه</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">په هره کرښه کې یو ارزښت.</string>
   <string name="pref_default_xmltv_url_title">اصلي XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart vum Kanal ID ze kanaliséieren ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Eng Wäert pro Zeil. Format: \"[al tvg-id] =\> [nei tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtere no Kanalnumm-Weisslëscht</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eng Wäert pro Zeil. Format: \"[Numm oder tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eng Wäert pro Zeil. Format: \"[Numm oder tvg-name]\". Virleef fir Ënnerstring: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filteren no Kanal ID Weisslëscht</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Eng Wäert pro Zeil. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filtere no Kanalnumm schwaarz Lëscht</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">No Kanal filteren ID Schwaarzlëscht</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Medien URL statësch String-Wäerter</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Eng Wäert pro Zeil.</string>
   <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>

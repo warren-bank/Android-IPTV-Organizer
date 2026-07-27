@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Ta\'anga\'ita yvyrágui ID Mbohape hag̃ua ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Peteĩ mba\'e peteĩ tysýipe. Mohenda: \"[tuja tvg-id] =\> [pyahu tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Embohasa canal réra rupi lista morotĩgui</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Peteĩ mba\'e peteĩ tysýipe. Mohenda: \"[Téra térã tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Peteĩ mba\'e peteĩ tysýipe. Mohenda: \"[Téra térã tvg-name]\". Moñepyrũha vore ñe\'ẽngue\'ípe g̃uarã: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Emyatyrõ mbohasaha rupive ID Téra rysýi poravopyre</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Peteĩ mba\'e peteĩ tysýipe. Mohenda: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Embohasa canal réra rupi kuatiápe</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Emyatyrõ mbohasaha rupive ID Lista hũ</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Marandu myasãiha URL Ñe\'ẽnguéra opytáva</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Peteĩ mba\'e káda tysýipe.</string>
   <string name="pref_default_xmltv_url_title">Ojehechaháichaite XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">チャンネルからの地図 ID ～へ導く ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">1行につき1つの値。形式: \"[古い tvg-id] =\> [新着 tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">チャンネル名のホワイトリストでフィルタリング</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">1行につき1つの値。形式: \"[名前、または tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">1行につき1つの値。形式: \"[名前、または tvg-name]\". 部分文字列の接頭辞: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">チャンネルで絞り込む ID ホワイトリスト</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">1行につき1つの値。形式: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">チャンネル名のブラックリストでフィルタリング</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">チャンネルで絞り込む ID ブラックリスト</string>
   <string name="pref_m3u_channels_media_url_static_values_title">メディア URL 静的な文字列値</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">1行につき1つの値.</string>
   <string name="pref_default_xmltv_url_title">デフォルト XMLTV EPG URL</string>

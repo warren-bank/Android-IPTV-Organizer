@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">ચેનલમાંથી નકશો ID માર્ગદર્શિત કરવા ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">દરેક પંક્તિમાં એક મૂલ્ય. ફોર્મેટ: \"[જૂનું tvg-id] =\> [નવું tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">ચેનલ નામ વ્હાઇટલિસ્ટ દ્વારા ફિલ્ટર કરો</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">દરેક પંક્તિમાં એક મૂલ્ય. ફોર્મેટ: \"[નામ અથવા tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">દરેક પંક્તિમાં એક મૂલ્ય. ફોર્મેટ: \"[નામ અથવા tvg-name]\". સબસ્ટ્રિંગ માટે પૂર્વપ્રત્યય: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">ચેનલ દ્વારા ફિલ્ટર કરો ID સફેદ યાદી</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">દરેક પંક્તિમાં એક મૂલ્ય. ફોર્મેટ: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">ચેનલ નામ દ્વારા બ્લેકલિસ્ટ ફિલ્ટર કરો</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">ચેનલ દ્વારા ફિલ્ટર કરો ID કાળી યાદી</string>
   <string name="pref_m3u_channels_media_url_static_values_title">માધ્યમ URL સ્થિર સ્ટ્રિંગ મૂલ્યો</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">દરેક પંક્તિમાં એક મૂલ્ય.</string>
   <string name="pref_default_xmltv_url_title">નિર્ધારિત XMLTV EPG URL</string>

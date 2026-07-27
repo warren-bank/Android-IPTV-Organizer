@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Շատերի ալիքից քարտեզ ID ուղղորդել ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Յուրաքանչյուր տողում մեկ արժեք։ Ֆորմատ: \"[հին tvg-id] =\> [նոր tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Ֆիլտրել ըստ ալիքի անվան սպիտակ ցուցակի</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Յուրաքանչյուր տողում մեկ արժեք։ Ֆորմատ: \"[անուն կամ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Յուրաքանչյուր տողում մեկ արժեք։ Ֆորմատ: \"[անուն կամ tvg-name]\". Նախածանց ենթագրծի համար: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Ֆիլտրել ըստ ալիքի ID սպիտակ ցուցակ</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Յուրաքանչյուր տողում մեկ արժեք։ Ֆորմատ: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Ֆիլտրել ըստ ալիքի անվան սև ցուցակի</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Ֆիլտրել ըստ ալիքի ID արգելվածների ցուցակ</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Մեդիա URL ստատիկ տողային արժեքներ</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Յուրաքանչյուր տողում մեկ արժեք.</string>
   <string name="pref_default_xmltv_url_title">Ստանդարտ XMLTV EPG URL</string>

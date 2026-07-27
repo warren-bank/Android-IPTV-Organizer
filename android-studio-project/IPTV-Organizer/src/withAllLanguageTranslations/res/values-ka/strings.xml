@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">რუკა არხიდან ID მიმართულება მისცეს ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ერთი მნიშვნელობა თითო სტრიქონში. ფორმატი: \"[ძველი tvg-id] =\> [ახალი tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">ფილტრი არხის სახელის თეთრ სიაში</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ერთი მნიშვნელობა თითო სტრიქონში. ფორმატი: \"[სახელი ან tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ერთი მნიშვნელობა თითო სტრიქონში. ფორმატი: \"[სახელი ან tvg-name]\". პრაფიქსი სუბსტრიგისთვის: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">ფილტრი არხის მიხედვით ID თეთრი სია</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ერთი მნიშვნელობა თითო სტრიქონში. ფორმატი: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">ფილტრი არხის სახელის შავ სიაში</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">ფილტრი არხის მიხედვით ID შავ სიაში შეყვანა</string>
   <string name="pref_m3u_channels_media_url_static_values_title">მედია URL სტატიკური სტრიქონების მნიშვნელობები</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">ერთი მნიშვნელობა თითო სტრიქონში.</string>
   <string name="pref_default_xmltv_url_title">ნაგულისხმევი XMLTV EPG URL</string>

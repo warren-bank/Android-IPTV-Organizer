@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Karte aus dem Kanal ID zu kanalisieren ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Ein Wert pro Zeile. Format: \"[alt tvg-id] =\> [neu tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Nach Kanalnamen-Whitelist filtern</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ein Wert pro Zeile. Format: \"[Name oder tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ein Wert pro Zeile. Format: \"[Name oder tvg-name]\". Präfix für Teilzeichenfolge: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Nach Kanal filtern ID Whitelist</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ein Wert pro Zeile. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Nach Kanalnamen filtern – Blacklist</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Nach Kanal filtern ID Schwarze Liste</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Medien URL statische Zeichenfolgenwerte</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Ein Wert pro Zeile.</string>
   <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">वाहिन्याः मानचित्रम् ID मार्गयितुम् ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[पुरातनः tvg-id] =\> [नवीनः tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">चैनलनाम्ना श्वेतसूचीकरणं कुर्वन्तु</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[नाम वा tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[नाम वा tvg-name]\". उपपाठ्यशृंखलायाः उपसर्गः: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">मार्गेण छानयतु ID श्वेतसूची</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">मार्गनाम्ना निषेधसूचीकरणम्</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">मार्गेण छानयतु ID निषेधसूची</string>
   <string name="pref_m3u_channels_media_url_static_values_title">माध्यमाः URL स्थिर-श्रृङ्खला-मूल्यानि</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">प्रतिपङ्क्तौ एकः मानः.</string>
   <string name="pref_default_xmltv_url_title">पूर्वनिर्धारितम् XMLTV EPG URL</string>

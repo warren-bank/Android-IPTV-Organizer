@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kort úr rás ID að beina ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Eitt gildi á línu. Sniðmát: \"[gamall tvg-id] =\> [nýtt tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Sía eftir nafni hvíta lista rásarinnar</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eitt gildi á línu. Sniðmát: \"[nafn eða tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eitt gildi á línu. Sniðmát: \"[nafn eða tvg-name]\". Forskeyting fyrir undirstreng: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Sía eftir rás ID hvítt listi</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Eitt gildi á línu. Sniðmát: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Sía eftir rásarnafni svartlista</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Sía eftir rás ID svartlisti</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Miðlar URL fastar strengsgildi</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Eitt gildi á línu.</string>
   <string name="pref_default_xmltv_url_title">Sjálfgefið XMLTV EPG URL</string>

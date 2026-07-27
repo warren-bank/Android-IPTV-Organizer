@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa mula sa channel ID upang mag-channel ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Isang halaga bawat linya. Format: \"[luma tvg-id] =\> [bago tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Salain ayon sa pangalan ng channel sa puting listahan</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Isang halaga bawat linya. Format: \"[pangalan o tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Isang halaga bawat linya. Format: \"[pangalan o tvg-name]\". Harapin para sa subkadenang teksto: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Salain ayon sa channel ID puting listahan</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Isang halaga bawat linya. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Salain ayon sa pangalan ng channel sa blacklist</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Salain ayon sa channel ID itim na listahan</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Midya URL mga static na halaga ng string</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Isang halaga bawat linya.</string>
   <string name="pref_default_xmltv_url_title">Default XMLTV EPG URL</string>

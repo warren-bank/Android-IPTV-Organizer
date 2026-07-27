@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Karte uta na chaîne ID kokamba ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Motuya moko na molongo moko. Format: \"[Mokóló tvg-id] =\> [ya sika tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Pona na nkombo ya chaîne ya liste ya kondima</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Motuya moko na molongo moko. Format: \"[nkombo to tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Motuya moko na molongo moko. Format: \"[nkombo to tvg-name]\". Ebandeli mpo na eteni ya molongo: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Pona na kolanda chaîne ID Liste ya bato oyo bandimami</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Motuya moko na molongo moko. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Pona na nkombo ya chaîne ya liste moindo</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Pona na kolanda chaîne ID Liste ya bato ya mabe</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Bapanzi sango URL Bavale ya ba chaînes statiques</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Motuya moko na molongo moko.</string>
   <string name="pref_default_xmltv_url_title">Ndenge ezali XMLTV EPG URL</string>

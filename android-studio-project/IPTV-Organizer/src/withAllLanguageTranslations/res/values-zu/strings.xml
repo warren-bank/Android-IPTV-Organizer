@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Imephu evela esiteshini ID ukuhambisa ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Inani elilodwa kumugqa ngamunye. Ifomethi: \"[indala tvg-id] =\> [isha tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Hlunga ngegama lesiteshi kuluhlu olumhlophe</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Inani elilodwa kumugqa ngamunye. Ifomethi: \"[igama noma tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Inani elilodwa kumugqa ngamunye. Ifomethi: \"[igama noma tvg-name]\". Isandulelo somugqa ongaphansi: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Hlunga ngokweziteshi ID uhlu oluvunyiwe</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Inani elilodwa kumugqa ngamunye. Ifomethi: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Hlunga ngokwegama lesiteshi esikulesi sihlwini esimnyama</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Hlunga ngokweziteshi ID uhlu olumnyama</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Imidiya URL amanani omsongo angaguquki</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Inani elilodwa ngomugqa ngamunye.</string>
   <string name="pref_default_xmltv_url_title">Okujwayelekile XMLTV EPG URL</string>

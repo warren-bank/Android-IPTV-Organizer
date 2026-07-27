@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Ramani kutoka kwenye kituo ID kuelekeza ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Thamani moja kwa kila mstari. Fomati: \"[kizamani tvg-id] =\> [mpya tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Chuja kwa jina la kituo kilicho kwenye orodha nyeupe</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Thamani moja kwa kila mstari. Fomati: \"[jina au tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Thamani moja kwa kila mstari. Fomati: \"[jina au tvg-name]\". Kiambishi awali kwa msururu ndogo: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Chuja kwa njia ID orodha ya kuaminika</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Thamani moja kwa kila mstari. Fomati: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Chuja kwa jina la kituo kwenye orodha nyeusi</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Chuja kwa njia ID orodha nyeusi</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Vyombo vya habari URL Thamani za mfululizo tuli</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Thamani moja kwa kila mstari.</string>
   <string name="pref_default_xmltv_url_title">Kawaida XMLTV EPG URL</string>

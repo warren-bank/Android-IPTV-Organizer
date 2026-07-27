@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa del canal ID canalitzar ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Un valor per línia. Format: \"[vell tvg-id] =\> [nou tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtra per nom de canal de la llista blanca</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un valor per línia. Format: \"[nom o tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un valor per línia. Format: \"[nom o tvg-name]\". Prefix per a subcadenes: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtra per canal ID llista blanca</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Un valor per línia. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filtra per nom de canal a la llista negra</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filtra per canal ID llista negra</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Mitjans URL valors de cadena estàtics</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Un valor per línia.</string>
   <string name="pref_default_xmltv_url_title">Per defecte XMLTV EPG URL</string>

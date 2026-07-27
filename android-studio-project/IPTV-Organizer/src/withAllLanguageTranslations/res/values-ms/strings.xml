@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Peta daripada saluran ID untuk menyalurkan ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Satu nilai setiap baris. Format: \"[lama tvg-id] =\> [baru tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Tapis mengikut nama saluran putih</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Satu nilai setiap baris. Format: \"[nama atau tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Satu nilai setiap baris. Format: \"[nama atau tvg-name]\". Awalan untuk rentetan sub: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Tapis mengikut saluran ID senarai putih</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Satu nilai setiap baris. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Tapis mengikut nama saluran senarai hitam</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Tapis mengikut saluran ID senarai hitam</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Media URL nilai rentetan statik</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Satu nilai setiap baris.</string>
   <string name="pref_default_xmltv_url_title">Lalai XMLTV EPG URL</string>

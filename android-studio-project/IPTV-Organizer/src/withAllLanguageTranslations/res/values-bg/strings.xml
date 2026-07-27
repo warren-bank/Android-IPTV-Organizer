@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Карта от канала ID към канала ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Една стойност на ред. Формат: \"[стар tvg-id] =\> [ново tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Филтриране по списъка с разрешени имена на канали</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Една стойност на ред. Формат: \"[име или tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Една стойност на ред. Формат: \"[име или tvg-name]\". Префикс за подниз: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Филтриране по канал ID списък с разрешени адреси</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Една стойност на ред. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Филтриране по име на канал в черния списък</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Филтрирай по канал ID черна листа</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Медии URL статични стойности на низове</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">По една стойност на ред.</string>
   <string name="pref_default_xmltv_url_title">По подразбиране XMLTV EPG URL</string>

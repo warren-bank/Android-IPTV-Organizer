@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">چینل سے نقشہ ID راہ دینا ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ہر لائن پر ایک قدر۔ فارمیٹ: \"[پرانا tvg-id] =\> [نیا tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">چینل کے نام کے مطابق وائٹ لسٹ کریں</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ہر لائن پر ایک قدر۔ فارمیٹ: \"[نام یا tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ہر لائن پر ایک قدر۔ فارمیٹ: \"[نام یا tvg-name]\". ذیلی سٹرنگ کے لیے پیشِ نام: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">چینل کے لحاظ سے چھانٹیں ID سفید فہرست</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ہر لائن پر ایک قدر۔ فارمیٹ: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">چینل کے نام کے ذریعے بلیک لسٹ فلٹر کریں</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">چینل کے لحاظ سے چھانٹیں ID سیاہ فہرست</string>
   <string name="pref_m3u_channels_media_url_static_values_title">میڈیا URL جامد سٹرنگ کی قدریں</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">ہر لائن پر ایک عدد.</string>
   <string name="pref_default_xmltv_url_title">مقرر شدہ XMLTV EPG URL</string>

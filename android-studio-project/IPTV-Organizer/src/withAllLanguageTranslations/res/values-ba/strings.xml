@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Каналдан карта ID юнәлтергә ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Һәр юлда бер ҡиммәт. Формат: \"[иҫке tvg-id] =\> [яңы tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Канал исеме буйынса аҡ исемлеккә фильтрлау</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Һәр юлда бер ҡиммәт. Формат: \"[исем йәки tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Һәр юлда бер ҡиммәт. Формат: \"[исем йәки tvg-name]\". Субстринг өсөн алғы өҫтәмә: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Канал буйынса фильтрларға ID аҡ исемлек</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Һәр юлда бер ҡиммәт. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Канал исеме буйынса ҡара исемлек буйынса фильтрлау</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Канал буйынса фильтрларға ID ҡара исемлек</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Медиа URL статик юл ҡиммәттәре</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Һәр юлда бер ҡиммәт.</string>
   <string name="pref_default_xmltv_url_title">Төп XMLTV EPG URL</string>

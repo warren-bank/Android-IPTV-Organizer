@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanalning xaritasi ID yo\'naltirish uchun ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Har bir satrda bitta qiymat. Format: \"[eski tvg-id] =\> [yangi tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Kanal nomiga ko\'ra oq ro\'yxat bo\'yicha filtrlash</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Har bir satrda bitta qiymat. Format: \"[nomi yoki tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Har bir satrda bitta qiymat. Format: \"[nomi yoki tvg-name]\". Substring uchun prefiks: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanal bo\'yicha filtrlash ID Oq ro\'yxat</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Har bir satrda bitta qiymat. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Kanal nomi bo\'yicha qora ro\'yxat bo\'yicha filtrlash</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Kanal bo\'yicha filtrlash ID qora ro\'yxat</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Ommaviy axborot vositalari URL statik satr qiymatlari</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Har bir satrda bitta qiymat.</string>
   <string name="pref_default_xmltv_url_title">Standart XMLTV EPG URL</string>

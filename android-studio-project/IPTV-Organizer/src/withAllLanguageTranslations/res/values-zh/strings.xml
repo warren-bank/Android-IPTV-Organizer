@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">来自频道的地图 ID 至通道 ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">每行一个值。格式: \"[旧的 tvg-id] =\> [新 tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">按频道名称白名单筛选</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">每行一个值。格式: \"[名称或 tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">每行一个值。格式: \"[名称或 tvg-name]\". 子字符串的前缀: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">按频道筛选 ID 白名单</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">每行一个值。格式: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">按频道名称“blacklist”筛选</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">按频道筛选 ID 黑名单</string>
   <string name="pref_m3u_channels_media_url_static_values_title">媒体 URL 静态字符串值</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">每行一个值.</string>
   <string name="pref_default_xmltv_url_title">默认 XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa z kanału ID do kanału ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Jedna wartość w każdym wierszu. Format: \"[stary tvg-id] =\> [nowy tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtruj według białej listy nazw kanałów</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Jedna wartość w każdym wierszu. Format: \"[nazwa lub tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Jedna wartość w każdym wierszu. Format: \"[nazwa lub tvg-name]\". Przedrostek dla podciągu: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtruj według kanału ID biała lista</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Jedna wartość w każdym wierszu. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filtruj według nazwy kanału z czarnej listy</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filtruj według kanału ID czarna lista</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Media URL statyczne wartości typu string</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Jedna wartość w każdym wierszu.</string>
   <string name="pref_default_xmltv_url_title">Domyślnie XMLTV EPG URL</string>

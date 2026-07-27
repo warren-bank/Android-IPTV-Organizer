@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanal boýunça harita ID ugurlamaq ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Her setirde bir gymmat. Format: \"[köne tvg-id] =\> [täze tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Akylly sanaw boýunça kanal ady boýunça süzüň</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Her setirde bir gymmat. Format: \"[at ýa-da tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Her setirde bir gymmat. Format: \"[at ýa-da tvg-name]\". Alt satyr üçin öňgoşma: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanal boýunça süzüň ID Ak sanaw</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Her setirde bir gymmat. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Kanal ady boýunça gara sanawda süzüň</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Kanal boýunça süzüň ID gara sanaw</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Metbugat URL statik simlik bahalar</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Her setirde bir gymmat.</string>
   <string name="pref_default_xmltv_url_title">Öňünden kesgitlenen XMLTV EPG URL</string>

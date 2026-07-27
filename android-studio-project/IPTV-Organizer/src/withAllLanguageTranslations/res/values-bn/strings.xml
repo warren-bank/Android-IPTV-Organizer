@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">চ্যানেল থেকে মানচিত্র ID পরিচালিত করার জন্য ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">প্রতি লাইনে একটি মান। ফরম্যাট: \"[পুরনো tvg-id] =\> [নতুন tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">চ্যানেল নামের হোয়াইটলিস্ট অনুযায়ী ফিল্টার করুন</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">প্রতি লাইনে একটি মান। ফরম্যাট: \"[নাম অথবা tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">প্রতি লাইনে একটি মান। ফরম্যাট: \"[নাম অথবা tvg-name]\". উপসর্গ সাবস্ট্রিংয়ের জন্য: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">চ্যানেল অনুযায়ী ফিল্টার করুন ID সাদা তালিকা</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">প্রতি লাইনে একটি মান। ফরম্যাট: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">চ্যানেল নামের ব্ল্যাকলিস্ট অনুযায়ী ফিল্টার করুন</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">চ্যানেল অনুযায়ী ফিল্টার করুন ID কালো তালিকা</string>
   <string name="pref_m3u_channels_media_url_static_values_title">মিডিয়া URL স্থির স্ট্রিং মানসমূহ</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">প্রতি লাইনে একটি মান.</string>
   <string name="pref_default_xmltv_url_title">ডিফল্ট XMLTV EPG URL</string>

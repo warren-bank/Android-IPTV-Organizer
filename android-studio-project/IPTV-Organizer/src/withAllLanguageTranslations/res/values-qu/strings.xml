@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Qhawanamanta saywiti ID pusay ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[Mawka tvg-id] =\> [musuq tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Q\'ispichay: ñan sutinwan yuraq listapi</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[suti utaq tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[suti utaq tvg-name]\". Sapsi qillqa t\'aqapaq ñawpaq k\'askaq: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Ñanman hina suysuy ID Allin kaqkunapaq lista</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Q\'illaychay: Canal sutiwan hark\'asqa lista</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Ñanman hina suysuy ID Yana sutikuna qillqa</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Willaykuna URL mana hukmanta kaq qillqa chaninkuna</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Sapa siqipi huk chanin.</string>
   <string name="pref_default_xmltv_url_title">Qallariylla XMLTV EPG URL</string>

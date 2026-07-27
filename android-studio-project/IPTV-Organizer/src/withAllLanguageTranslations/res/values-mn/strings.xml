@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Сувгаас авсан газрын зураг ID чиглүүлэх ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Мөр бүрт нэг утга. Формат: \"[хуучин tvg-id] =\> [шинэ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Сувгийн нэрний цагаан жагсаалтаар шүүгээрэй</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Мөр бүрт нэг утга. Формат: \"[нэр эсвэл tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Мөр бүрт нэг утга. Формат: \"[нэр эсвэл tvg-name]\". Дэд ороомогт зориулсан урд талын залгаас: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Сувгаар шүүх ID Цагаан жагсаалт</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Мөр бүрт нэг утга. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Сувгийн нэрээр хар жагсаалтад шүүх</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Сувгаар шүүх ID хар жагсаалт</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Мэдээлэл URL статик очерёг утгууд</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Мөр бүрт нэг утга.</string>
   <string name="pref_default_xmltv_url_title">Анхдагч XMLTV EPG URL</string>

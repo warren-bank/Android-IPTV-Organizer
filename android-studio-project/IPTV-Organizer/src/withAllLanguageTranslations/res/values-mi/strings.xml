@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mahere mai i te hongere ID ki te arataki ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">He uara kotahi ia rārangi. Hōputu: \"[tawahi tvg-id] =\> [hou tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Tātari mā te ingoa hongere kei te rārangi mā</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">He uara kotahi ia rārangi. Hōputu: \"[ingoa rānei tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">He uara kotahi ia rārangi. Hōputu: \"[ingoa rānei tvg-name]\". Tautohu mō te aho-roto: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Tātari mā te hongere ID Rārangi mā</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">He uara kotahi ia rārangi. Hōputu: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Tātari mā te ingoa hongere rārangi pango</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Tātari mā te hongere ID rārangi pango</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Pāpāho URL Ngā uara aho tū</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">He uara kotahi ia rārangi.</string>
   <string name="pref_default_xmltv_url_title">Taunoa XMLTV EPG URL</string>

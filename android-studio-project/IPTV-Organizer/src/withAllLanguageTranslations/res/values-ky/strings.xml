@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Каналдан карта ID багыттоо ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Ар бир сап үчүн бир маани. Формат: \"[эски tvg-id] =\> [жаңы tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Каналдын аты боюнча ак тизме боюнча фильтрле</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ар бир сап үчүн бир маани. Формат: \"[аты же tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ар бир сап үчүн бир маани. Формат: \"[аты же tvg-name]\". Субстринг үчүн префикс: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Канал боюнча сүзгү ID ак тизме</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ар бир сап үчүн бир маани. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Каналдын аты боюнча кара тизме боюнча фильтрлөө</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Канал боюнча сүзгү ID кара тизме</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Медиа URL статикалык сап маанилери</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Ар бир сапка бир маани.</string>
   <string name="pref_default_xmltv_url_title">Алгачкы XMLTV EPG URL</string>

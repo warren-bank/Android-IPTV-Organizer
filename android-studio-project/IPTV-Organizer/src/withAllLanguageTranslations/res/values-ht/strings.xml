@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kat ki soti nan kanal la ID pou kanalize ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Yon valè pa liy. Fòma: \"[ansyen tvg-id] =\> [nouvo tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtre pa non chanèl ki sou lis blan an</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Yon valè pa liy. Fòma: \"[non oswa tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Yon valè pa liy. Fòma: \"[non oswa tvg-name]\". Prefiks pou soustreng: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtre pa kanal ID Lis blan</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Yon valè pa liy. Fòma: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filtre pa non chanèl ki sou lis nwa</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filtre pa kanal ID Lis nwa</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Medya URL valè chèn estatik</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Yon valè pa liy.</string>
   <string name="pref_default_xmltv_url_title">Pa defo XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Taswira daga tashar ID don tura ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Ɗaya ƙima a kowace layi. Tsari: \"[tsoho tvg-id] =\> [sabon tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Tace ta sunan tashar a jerin amincewa</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ɗaya ƙima a kowace layi. Tsari: \"[suna ko tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ɗaya ƙima a kowace layi. Tsari: \"[suna ko tvg-name]\". Ƙari na gaba don ɓangaren sarkar: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Tace ta tashar ID Jerin masu amincewa</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ɗaya ƙima a kowace layi. Tsari: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Tace ta sunan tashar don jerin haram</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Tace ta tashar ID jerin haram</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Kafofin watsa labarai URL ƙimomin igiya marasa canzawa</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Ɗaya ƙima a kowace layi.</string>
   <string name="pref_default_xmltv_url_title">Zaɓi na asali XMLTV EPG URL</string>

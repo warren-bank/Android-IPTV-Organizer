@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mepe kusuka eka xitichi ID ku kongomisa ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[khale tvg-id] =\> [lentshwa tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Sefa hi vito ra xitichi lexi pfumeleriweke</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[vito kumbe tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ntsengo wun\'we hi layini. Fomati: \"[vito kumbe tvg-name]\". Xirhangi xa xiphemu xa ntsari: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Hluta hi xitichi ID Nxaxamelo wa lava pfumeleriwaka</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Sefa hi vito ra xitichi xa nxaxamelo wa vubihi</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Hluta hi xitichi ID Nxaxamelo wa vubihi</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Vuhaxi URL Tinhla ta static ta xitsari</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Ntsengo wun\'we hi layini.</string>
   <string name="pref_default_xmltv_url_title">Lexi tolovelekeke XMLTV EPG URL</string>

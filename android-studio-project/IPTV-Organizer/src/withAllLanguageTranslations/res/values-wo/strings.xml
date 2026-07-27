@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart bu jóge ci channel bi ID ngir joxe yoon ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Benn tolluwa ci rëdd bu nekk. Forma: \"[mag tvg-id] =\> [lu bees tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Tànnal ci turu chaîne yi nekk ci limu ñu maye.</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Benn tolluwa ci rëdd bu nekk. Forma: \"[tur walla tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Benn tolluwa ci rëdd bu nekk. Formaat: \"[tur walla tvg-name]\". Jëkkantalu wàllu baat: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Tànnal ci seenu yi ID Limu ñi ñu nangu</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Benn tolluwa ci rëdd bu nekk. Forma: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Tànnal ci turu chaîne yi ñu tere</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Tànnal ci seenu yi ID Limu ñu bañ</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Xibaarukaay URL Tekkitali kàddu yu taxaw</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Benn tolluwaay ci rëdd bu nekk.</string>
   <string name="pref_default_xmltv_url_title">Li ñu tëral XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">แผนที่จากช่อง ID เพื่อส่งผ่าน ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[เก่า tvg-id] =\> [ใหม่ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">กรองตามรายชื่อช่องที่อนุญาต</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[ชื่อ หรือ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[ชื่อ หรือ tvg-name]\". คำนำหน้าสำหรับส่วนย่อยของสตริง: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">กรองตามช่อง ID รายชื่ออนุญาต</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">กรองตามรายชื่อช่องที่ถูกบล็อก</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">กรองตามช่อง ID รายชื่อดำ</string>
   <string name="pref_m3u_channels_media_url_static_values_title">สื่อ URL ค่าสตริงแบบคงที่</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">ค่าหนึ่งต่อบรรทัด.</string>
   <string name="pref_default_xmltv_url_title">ค่าเริ่มต้น XMLTV EPG URL</string>

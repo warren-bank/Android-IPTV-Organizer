@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Imephu evela kwitshaneli ID ukwalathisa ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[indala tvg-id] =\> [entsha tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Hluzisa ngokwegama lesitishi esikuluhlu olumhlophe</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[igama okanye tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[igama okanye tvg-name]\". Isihlomelo seqhekeza lombhalo: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Hlela ngomjelo ID Uluhlu oluvumelekileyo</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Hluzisa ngokwegama lesitishi kuluhlu olumnyama</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Hlela ngokweziteshi ID Uluhlu olumnyama</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Amajelo eendaba URL Amaxabiso oqhagamshelwano angaguqukiyo</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Inani elinye kumgca ngamnye.</string>
   <string name="pref_default_xmltv_url_title">Okumiselweyo XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaartaa chaanaalirraa ID gara ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Sarara tokko irratti gatii tokko. Unka: \"[moofaa tvg-id] =\> [haaraa tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Maqaa chaanaaliitiin filadhu (kanneen hayyamaman qofa)</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sarara tokko irratti gatii tokko. Unka: \"[Maqaa yookiin tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sarara tokko irratti gatii tokko. Unka: \"[Maqaa yookiin tvg-name]\". Jaalqabaa baafata barreeffamaa: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Chaanaaliin calali ID Tarree eeyyamamaa</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Sarara tokko irratti gatii tokko. Unka: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Maqaa chaanaaliitiin calali</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Gareedhaan calali ID Tarree dhorkaa</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Miidiyaa URL Gatiiwwan funyoo dhaabbataa</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Sarara tokko irratti gatii tokko.</string>
   <string name="pref_default_xmltv_url_title">Akka duraan turetti XMLTV EPG URL</string>

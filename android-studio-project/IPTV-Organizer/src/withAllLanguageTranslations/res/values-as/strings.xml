@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">চেনেলৰ পৰা মানচিত্ৰ ID প্ৰবাহিত কৰিবলৈ ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">প্ৰতিটো শাৰীত এটা মান। ফৰ্মেট: \"[পুৰণি tvg-id] =\> [নতুন tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">চেনেলৰ নামৰ হোৱাইটলিষ্ট অনুসৰি ফিল্টাৰ কৰক</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">প্ৰতিটো শাৰীত এটা মান। ফৰ্মেট: \"[নাম বা tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">প্ৰতিটো শাৰীত এটা মান। ফৰ্মেট: \"[নাম বা tvg-name]\". উপসৰ্গৰ বাবে উপ-ষ্ট্ৰিং: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">চেনেল অনুসৰি ফিল্টাৰ কৰক ID শ্বেত তালিকা</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">প্ৰতিটো শাৰীত এটা মান। ফৰ্মেট: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">চেনেলৰ নামৰ দ্বাৰা ব্লেকলিষ্ট ফিল্টাৰ কৰক</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">চেনেল অনুসৰি ফিল্টাৰ কৰক ID কৃষ্ণ তালিকা</string>
   <string name="pref_m3u_channels_media_url_static_values_title">মিডিয়া URL স্থিৰ ষ্ট্ৰিং মানসমূহ</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">প্ৰতি শাৰীত এটা মান.</string>
   <string name="pref_default_xmltv_url_title">নিৰ্ধাৰিত XMLTV EPG URL</string>

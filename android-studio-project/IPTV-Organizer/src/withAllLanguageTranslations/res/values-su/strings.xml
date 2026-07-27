@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Peta tina saluran ID pikeun ngalirkeun ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Hiji nilai per baris. Format: \"[kolot tvg-id] =\> [anyar tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Nyaring ku nami saluran dina daptar bodas</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Hiji nilai per baris. Format: \"[nami atawa tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Hiji nilai per baris. Format: \"[nami atawa tvg-name]\". Awalan pikeun rentetan substring: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Nyaring ku saluran ID daptar bodas</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Hiji nilai per baris. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Saring ku ngaran saluran dina daptar hideung</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Nyaring ku saluran ID daptar hideung</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Média URL nilai string statik</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Hiji nilai per baris.</string>
   <string name="pref_default_xmltv_url_title">Standar XMLTV EPG URL</string>

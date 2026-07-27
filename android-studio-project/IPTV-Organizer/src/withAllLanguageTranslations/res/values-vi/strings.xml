@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Bản đồ từ kênh ID để dẫn truyền ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Mỗi dòng một giá trị. Định dạng: \"[cũ tvg-id] =\> [mới tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Lọc theo danh sách trắng tên kênh</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Mỗi dòng một giá trị. Định dạng: \"[tên hoặc tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Mỗi dòng một giá trị. Định dạng: \"[tên hoặc tvg-name]\". Tiền tố cho chuỗi con: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Lọc theo kênh ID danh sách trắng</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Mỗi dòng một giá trị. Định dạng: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Lọc theo danh sách đen tên kênh</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Lọc theo kênh ID danh sách đen</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Phương tiện truyền thông URL các giá trị chuỗi tĩnh</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Mỗi dòng một giá trị.</string>
   <string name="pref_default_xmltv_url_title">Mặc định XMLTV EPG URL</string>

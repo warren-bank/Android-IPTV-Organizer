@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Karte no kanāla ID uz kanālu ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Viena vērtība katrā rindā. Formāts: \"[vecs tvg-id] =\> [jauns tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrēt pēc kanālu nosaukumu atļauto saraksta</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Viena vērtība katrā rindā. Formāts: \"[nosaukums vai tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Viena vērtība katrā rindā. Formāts: \"[nosaukums vai tvg-name]\". Priekšvārds apakšvirknei: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrēt pēc kanāla ID balto saraksts</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Viena vērtība katrā rindā. Formāts: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filtrēt pēc kanāla nosaukuma melnajā sarakstā</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filtrēt pēc kanāla ID melnais saraksts</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Mediji URL statiskas teksta vērtības</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Viena vērtība katrā rindā.</string>
   <string name="pref_default_xmltv_url_title">Noklusējums XMLTV EPG URL</string>

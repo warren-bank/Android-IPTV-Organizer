@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart kanalilt ID kanalisse ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Üks väärtus real. Vorming: \"[vana tvg-id] =\> [uus tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtreeri kanali nime lubatud nimekirja järgi</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Üks väärtus real. Vorming: \"[nimi või tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Üks väärtus real. Vorming: \"[nimi või tvg-name]\". Alajada eesliide: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtreeri kanali järgi ID lubatud nimekiri</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Üks väärtus real. Vorming: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filtreeri kanali nime järgi (must nimekiri)</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filtreeri kanali järgi ID must nimekiri</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Meedia URL staatilised string-väärtused</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Üks väärtus real.</string>
   <string name="pref_default_xmltv_url_title">Vaikimisi XMLTV EPG URL</string>

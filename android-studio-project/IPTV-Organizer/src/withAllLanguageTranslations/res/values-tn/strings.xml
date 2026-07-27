@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mmapa go tswa mo kaneleng ID go tsamaisa ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[kgologolo tvg-id] =\> [sešwa tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Sefa ka leina la setšhaba se se letleletsweng</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[leina kgotsa tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[leina kgotsa tvg-name]\". Mokhutlo wa karolwana ya mola: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Sefa ka mofuta wa phasalatso ID Lethathamo la ba ba letleletsweng</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Sefa ka leina la setšhaba la lenyatso</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Sefa ka kanale ID Lenaane la ba ba sa batlegeng</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Bobegakgang URL Boleng jwa molaetsa jo bo sa fetogeng</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Boleng bo le bongwe mo moleng mongwe le mongwe.</string>
   <string name="pref_default_xmltv_url_title">Tlwaelo XMLTV EPG URL</string>

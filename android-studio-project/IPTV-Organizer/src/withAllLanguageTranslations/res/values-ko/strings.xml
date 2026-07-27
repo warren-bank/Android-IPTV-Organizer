@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">채널의 지도 ID ~로 유도하기 위해 ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">한 줄에 하나의 값을 입력하십시오. 형식: \"[옛날 tvg-id] =\> [새 tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">채널 이름 허용 목록으로 필터링</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">한 줄에 하나의 값을 입력하십시오. 형식: \"[이름 또는 tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">한 줄에 하나의 값을 입력하십시오. 형식: \"[이름 또는 tvg-name]\". 부분 문자열 접두사: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">채널별로 필터링하기 ID 허용 목록</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">한 줄에 하나의 값을 입력하십시오. 형식: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">채널 이름 블랙리스트로 필터링</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">채널별로 필터링 ID 블랙리스트</string>
   <string name="pref_m3u_channels_media_url_static_values_title">미디어 URL 정적 문자열 값</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">한 줄에 하나의 값.</string>
   <string name="pref_default_xmltv_url_title">기본값 XMLTV EPG URL</string>

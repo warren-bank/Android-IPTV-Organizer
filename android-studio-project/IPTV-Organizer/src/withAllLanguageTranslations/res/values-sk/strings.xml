@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa z kanála ID do kanála ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Jedna hodnota na riadok. Formát: \"[starý tvg-id] =\> [nové tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrovať podľa zoznamu povolených názvov kanálov</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Jedna hodnota na riadok. Formát: \"[názov alebo tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Jedna hodnota na riadok. Formát: \"[názov alebo tvg-name]\". Predpona pre podreťazec: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrovať podľa kanála ID zoznam povolených adries</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Jedna hodnota na riadok. Formát: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filtrovať podľa zoznamu zakázaných názvov kanálov</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filtrovať podľa kanála ID čierny zoznam</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Médiá URL statické reťazcové hodnoty</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Jedna hodnota na riadok.</string>
   <string name="pref_default_xmltv_url_title">Predvolené nastavenie XMLTV EPG URL</string>

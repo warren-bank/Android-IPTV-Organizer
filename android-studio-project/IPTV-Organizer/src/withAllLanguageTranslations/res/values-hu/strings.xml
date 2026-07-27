@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Térkép a csatornáról ID csatornázni ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Soronként egy érték. Formátum: \"[régi tvg-id] =\> [új tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Szűrés a csatornanevek engedélyezett listája alapján</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Soronként egy érték. Formátum: \"[név vagy tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Soronként egy érték. Formátum: \"[név vagy tvg-name]\". Előtag a részszöveghez: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Szűrés csatorna szerint ID fehér lista</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Soronként egy érték. Formátum: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Szűrés csatorna neve szerint (feketelista)</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Szűrés csatorna szerint ID feketelista</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Média URL statikus karakterlánc-értékek</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Soronként egy érték.</string>
   <string name="pref_default_xmltv_url_title">Alapértelmezett XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Léarscáil ón gcainéal ID a sheoladh ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Amháin luach in aghaidh an líne. Formáid: \"[sean tvg-id] =\> [nua tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Scag de réir ainm an chainéil ar an liosta bán</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Amháin luach in aghaidh an líne. Formáid: \"[ainm nó tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Luach amháin in aghaidh an líne. Formáid: \"[ainm nó tvg-name]\". Réimír do fhotéacs: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Scag de réir cainéil ID Liosta Bán</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Amháin luach in aghaidh an líne. Formáid: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Scag de réir ainm an chainéil ar an liosta dubh</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Scag de réir cainéil ID dubhliosta</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Meáin URL Luachanna sreangacha statacha</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Luach amháin in aghaidh an líne.</string>
   <string name="pref_default_xmltv_url_title">Réamhshocrú XMLTV EPG URL</string>

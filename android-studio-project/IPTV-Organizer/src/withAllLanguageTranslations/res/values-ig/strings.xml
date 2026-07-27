@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Maapụ si na ọwa ID iji ụzọ ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Otu uru n\'ahịrị ọ bụla. Usoro: \"[ochie tvg-id] =\> [ọhụrụ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Tinye nzacha site na aha ọwa dị na ndepụta ọcha</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Otu uru n\'ahịrị ọ bụla. Usoro: \"[aha ma ọ bụ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Otu uru n\'ahịrị ọ bụla. Usoro: \"[aha ma ọ bụ tvg-name]\". Ntọala maka eriri mkpụrụokwu: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Tinye nzacha site na ọwa ID ndepụta ndị a nabatara</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Otu uru n\'ahịrị ọ bụla. Usoro: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Tinye nzacha site n\'aha ọwa ndị dị na ndepụta ojii</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Tinye nzacha site na ọwa ID ndepụta ojii</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Mgbasa ozi URL Ụkpụrụ eriri kwụsiri ike</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Otu uru n\'ahịrị ọ bụla.</string>
   <string name="pref_default_xmltv_url_title">Ntọala XMLTV EPG URL</string>

@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">च्यानलबाट नक्सा ID मार्गदर्शन गर्न ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">प्रत्येक लाइनमा एक मान। ढाँचा: \"[पुरानो tvg-id] =\> [नयाँ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">च्यानल नाम ह्वाइटलिस्टद्वारा छान्नुहोस्</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">प्रत्येक लाइनमा एक मान। ढाँचा: \"[नाम वा tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">प्रत्येक लाइनमा एउटा मान। ढाँचा: \"[नाम वा tvg-name]\". उप-स्ट्रिङको उपसर्ग: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">च्यानल अनुसार छान्नुहोस् ID सेतोसूची</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">प्रत्येक लाइनमा एक मान। ढाँचा: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">च्यानल नामद्वारा कालोसूची छान्नुहोस्</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">च्यानल अनुसार छान्नुहोस् ID कालोसूची</string>
   <string name="pref_m3u_channels_media_url_static_values_title">मिडिया URL स्थिर स्ट्रिङ मानहरू</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">प्रत्येक लाइनमा एउटा मान.</string>
   <string name="pref_default_xmltv_url_title">पूर्वनिर्धारित XMLTV EPG URL</string>

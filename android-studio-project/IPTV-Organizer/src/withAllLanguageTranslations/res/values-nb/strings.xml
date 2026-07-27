@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kart fra kanalen ID til kanalen ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Én verdi per linje. Format: \"[gammel tvg-id] =\> [ny tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrer etter hviteliste over kanalnavn</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Én verdi per linje. Format: \"[navn eller tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Én verdi per linje. Format: \"[navn eller tvg-name]\". Prefiks for delstreng: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrer etter kanal ID hvitliste</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Én verdi per linje. Format: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filtrer etter svarteliste over kanalnavn</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filtrer etter kanal ID svarteliste</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Media URL statiske strengverdier</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Én verdi per linje.</string>
   <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>

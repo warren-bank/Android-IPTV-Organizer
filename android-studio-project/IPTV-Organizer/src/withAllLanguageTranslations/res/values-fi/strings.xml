@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kartta kanavalta ID kanavaan ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Yksi arvo riviä kohden. Muoto: \"[vanha tvg-id] =\> [uusi tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Suodata kanavan nimen sallittujen luettelon mukaan</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Yksi arvo riviä kohden. Muoto: \"[nimi tai tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Yksi arvo riviä kohden. Muoto: \"[nimi tai tvg-name]\". Alimerkkijonon etuliite: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Suodata kanavan mukaan ID sallittujen luettelo</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Yksi arvo riviä kohden. Muoto: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Suodata kanavan nimen mustan listan mukaan</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Suodata kanavan mukaan ID mustalista</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Media URL staattiset merkkijonoarvot</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Yksi arvo riviä kohden.</string>
   <string name="pref_default_xmltv_url_title">Oletus XMLTV EPG URL</string>

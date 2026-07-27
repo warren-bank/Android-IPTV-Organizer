@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapo el kanalo ID direkti ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Unu valoro po linio. Formato: \"[malnova tvg-id] =\> [nova tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtri laŭ blanklisto de kanalnomoj</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Unu valoro po linio. Formato: \"[nomo aŭ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Unu valoro po linio. Formato: \"[nomo aŭ tvg-name]\". Antaffikso por substringo: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtri laŭ kanalo ID blanka listo</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Unu valoro po linio. Formato: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Filtri laŭ kanalnomo nigralisto</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Filtri laŭ kanalo ID nigralisto</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Amaskomunikiloj URL statikaj ĉenvaloroj</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Unu valoro po linio.</string>
   <string name="pref_default_xmltv_url_title">Normala XMLTV EPG URL</string>

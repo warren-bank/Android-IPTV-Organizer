@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Нақша аз канал ID равона кардан ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Як арзиш дар як сатр. Формат: \"[куҳна tvg-id] =\> [нав tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Филтр кардан бо номи канал дар рӯйхати сафед</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Як арзиш дар як сатр. Формат: \"[ном ё tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Як арзиш дар як сатр. Формат: \"[ном ё tvg-name]\". Пешфикс барои зеррӯи хат: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Филтр кардан аз рӯи канал ID Рӯйхати сафед</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Як арзиш дар як сатр. Формат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Филтр кардан бо номи канал дар рӯйхати сиёҳ</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Филтр кардан аз рӯи канал ID феҳристи сиёҳ</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Воситаҳои ахбори омма URL арзишҳои статикӣ сатрӣ</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Як арзиш дар ҳар сатр.</string>
   <string name="pref_default_xmltv_url_title">Тавсиявӣ XMLTV EPG URL</string>

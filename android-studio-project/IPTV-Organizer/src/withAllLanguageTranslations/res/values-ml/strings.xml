@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">ചാനലിൽ നിന്നുള്ള ഭൂപടം ID നയിക്കാൻ ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പഴയ tvg-id] =\> [പുതിയ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">വൈറ്റ്‌ലിസ്റ്റ് ചെയ്ത ചാനൽ പേര് അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പേര് അല്ലെങ്കിൽ tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പേര് അല്ലെങ്കിൽ tvg-name]\". സബ്സ്ട്രിംഗിനുള്ള പ്രിഫിക്സ്: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">ചാനൽ അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക ID വൈറ്റ്‌ലിസ്റ്റ്</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">ചാനൽ പേര് ബ്ലാക്ക്‌ലിസ്റ്റ് ചെയ്ത് ഫിൽട്ടർ ചെയ്യുക</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">ചാനൽ അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക ID കരിമ്പട്ടിക</string>
   <string name="pref_m3u_channels_media_url_static_values_title">മാധ്യമങ്ങൾ URL സ്ഥിരമായ സ്ട്രിംഗ് മൂല്യങ്ങൾ</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">ഓരോ വരിയിലും ഒരു മൂല്യം.</string>
   <string name="pref_default_xmltv_url_title">നിലവിലുള്ള XMLTV EPG URL</string>

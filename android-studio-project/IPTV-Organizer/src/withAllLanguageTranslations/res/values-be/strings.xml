@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Карта з канала ID накіроўваць ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Адна значэнне на радок. Фармат: \"[стары tvg-id] =\> [новы tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Фільтраваць па імя канала з белага спіса</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Адна значэнне на радок. Фармат: \"[імя або tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Адна значэнне на радок. Фармат: \"[імя або tvg-name]\". Прэфікс для падстрыжкі: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Фільтраваць па канале ID Белы спіс</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Адна значэнне на радок. Фармат: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">Фільтраваць па назве канала (чорны спіс)</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">Фільтраваць па канале ID чорны спіс</string>
   <string name="pref_m3u_channels_media_url_static_values_title">Медыя URL Статычныя радкі</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">Адна значэнне на радок.</string>
   <string name="pref_default_xmltv_url_title">Па змаўчанні XMLTV EPG URL</string>

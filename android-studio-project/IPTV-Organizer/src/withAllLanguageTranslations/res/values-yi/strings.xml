@@ -35,9 +35,11 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">מאַפּע פֿון קאַנאַל ID צו קאַנאַליזירן ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[אַלט tvg-id] =\> [נײַ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">פֿילטרירן לויט קאַנאַל־נאָמען ווײַטלײַסט</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[נאָמען אָדער tvg-name]\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[נאָמען אָדער tvg-name]\". פּרעפֿיקס פֿאַר אונטערשטרינג: \"+*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">פֿילטרירן לויט קאַנאַל ID ווייסליסטע</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[tvg-id]\"</string>
+  <string name="pref_m3u_channels_filter_blacklist_names_title">פֿילטרירן לויט קאַנאַל־נאָמען שוואַרצע ליסטע</string>
+  <string name="pref_m3u_channels_filter_blacklist_ids_title">פֿילטרירן לויט קאַנאַל ID שוואַרצע רשימה</string>
   <string name="pref_m3u_channels_media_url_static_values_title">מעדיע URL סטאַטישע שטרינג־ווערטן</string>
   <string name="pref_m3u_channels_media_url_static_values_summary">איין ווערט פּער שורה.</string>
   <string name="pref_default_xmltv_url_title">סטאַנדאַרט XMLTV EPG URL</string>
