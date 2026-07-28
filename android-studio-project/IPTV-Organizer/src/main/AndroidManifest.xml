@@ -101,8 +101,8 @@
 
     <activity
       android:name=".ui.SettingsActivity"
-      android:launchMode="standard"
-      android:exported="false" />
+      android:launchMode="singleTop"
+      android:exported="true" />
 
     <activity
       android:name=".ui.ExitActivity"

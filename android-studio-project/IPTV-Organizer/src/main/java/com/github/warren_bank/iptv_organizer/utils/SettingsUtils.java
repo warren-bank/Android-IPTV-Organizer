@@ -8,8 +8,18 @@ import android.preference.PreferenceManager;
 
 public class SettingsUtils {
 
-  public static SharedPreferences getPrefs(Context context) {
+  private static SharedPreferences getPrefs(Context context) {
     return PreferenceManager.getDefaultSharedPreferences(context);
+  }
+
+  private static SharedPreferences.Editor getPrefsEditor(Context context) {
+    SharedPreferences prefs = getPrefs(context);
+
+    return getPrefsEditor(prefs);
+  }
+
+  private static SharedPreferences.Editor getPrefsEditor(SharedPreferences prefs) {
+    return prefs.edit();
   }
 
   // --------------------
@@ -26,6 +36,18 @@ public class SettingsUtils {
     return prefs.getBoolean(pref_key, val_default);
   }
 
+  public static boolean setDbEditTextPreferenceAutoSave(Context context, boolean value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setDbEditTextPreferenceAutoSave(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setDbEditTextPreferenceAutoSave(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_dbedittextpreference_autosave_key);
+
+    editor.putBoolean(pref_key, value);
+  }
+
   // --------------------
 
   public static boolean getDbEditTextPreferenceAutoClose(Context context) {
@@ -38,6 +60,18 @@ public class SettingsUtils {
     boolean val_default = "true".equals(pref_default);
 
     return prefs.getBoolean(pref_key, val_default);
+  }
+
+  public static boolean setDbEditTextPreferenceAutoClose(Context context, boolean value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setDbEditTextPreferenceAutoClose(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setDbEditTextPreferenceAutoClose(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_dbedittextpreference_autoclose_key);
+
+    editor.putBoolean(pref_key, value);
   }
 
   // --------------------
@@ -54,6 +88,18 @@ public class SettingsUtils {
     return prefs.getBoolean(pref_key, val_default);
   }
 
+  public static boolean setApplyDefaultUrlTemplates(Context context, boolean value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setApplyDefaultUrlTemplates(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setApplyDefaultUrlTemplates(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_apply_default_url_templates_key);
+
+    editor.putBoolean(pref_key, value);
+  }
+
   // --------------------
 
   public static String getDefaultM3uUrlPreference(Context context) {
@@ -65,6 +111,18 @@ public class SettingsUtils {
     String val_default = context.getString(R.string.pref_default_m3u_url_default);
 
     return prefs.getString(pref_key, val_default);
+  }
+
+  public static boolean setDefaultM3uUrlPreference(Context context, String value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setDefaultM3uUrlPreference(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setDefaultM3uUrlPreference(Context context, String value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_default_m3u_url_key);
+
+    editor.putString(pref_key, value);
   }
 
   // --------------------
@@ -81,6 +139,18 @@ public class SettingsUtils {
     return prefs.getBoolean(pref_key, val_default);
   }
 
+  public static boolean setAppendM3uPlaylists(Context context, boolean value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setAppendM3uPlaylists(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setAppendM3uPlaylists(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_append_m3u_playlists_key);
+
+    editor.putBoolean(pref_key, value);
+  }
+
   // --------------------
 
   public static String getDefaultXmltvEpgUrlPreference(Context context) {
@@ -92,6 +162,18 @@ public class SettingsUtils {
     String val_default = context.getString(R.string.pref_default_xmltv_url_default);
 
     return prefs.getString(pref_key, val_default);
+  }
+
+  public static boolean setDefaultXmltvEpgUrlPreference(Context context, String value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setDefaultXmltvEpgUrlPreference(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setDefaultXmltvEpgUrlPreference(Context context, String value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_default_xmltv_url_key);
+
+    editor.putString(pref_key, value);
   }
 
   // --------------------
@@ -106,6 +188,18 @@ public class SettingsUtils {
     boolean val_default = "true".equals(pref_default);
 
     return prefs.getBoolean(pref_key, val_default);
+  }
+
+  public static boolean setApplyXmltvImportFilter(Context context, boolean value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setApplyXmltvImportFilter(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setApplyXmltvImportFilter(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_apply_import_filter_xmltv_channels_key);
+
+    editor.putBoolean(pref_key, value);
   }
 
 }

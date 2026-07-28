@@ -232,6 +232,68 @@ __Import XMLTV (EPG)__
    * (optional) class   = `com.github.warren_bank.iptv_organizer.ui.EpgActivity`
    * data = `<URL that ends with a .xml, .xmltv, .XML, or .XMLTV file extension>`
 
+__Update Settings__
+
+1. explicit Intent with one or more of the following Extras
+   * (required) package = `com.github.warren_bank.iptv_organizer`
+   * (required) class   = `com.github.warren_bank.iptv_organizer.ui.SettingsActivity`
+   * Extras:
+     1. name = `SETTINGS_AUTO_SAVE`
+        * type = `Boolean`
+        * setting = _Settings &gt; Auto save data after file import_
+     1. name = `SETTINGS_AUTO_CLOSE`
+        * type = `Boolean`
+        * setting = _Settings &gt; Auto close dialog after file import_
+     1. name = `SETTINGS_APPLY_STATIC_STRINGS`
+        * type = `Boolean`
+        * setting = _Settings &gt; Apply static string values to user-defined default import URL templates_
+     1. name = `M3U_DEFAULT_PLAYLIST_URL`
+        * type = `String`
+        * setting = _M3U Channels &gt; Default M3U Playlist URL_
+     1. name = `M3U_APPEND_PLAYLISTS`
+        * type = `Boolean`
+        * setting = _M3U Channels &gt; Append M3U Playlists_
+     1. name = `M3U_MAP_CHANNEL_NAME_TO_ID`
+        * type = `String[]`
+        * setting = _M3U Channels &gt; Map from channel name to channel ID_
+        * specify one mapping per `String` in the format:
+          ```text
+          "${target_value}\s+=>\s+${new_tvg_id}"
+          ```
+     1. name = `M3U_MAP_CHANNEL_ID_TO_ID`
+        * type = `String[]`
+        * setting = _M3U Channels &gt; Map from channel ID to channel ID_
+        * specify one mapping per `String` in the format:
+          ```text
+          "${target_value}\s+=>\s+${new_tvg_id}"
+          ```
+     1. name = `M3U_CHANNEL_NAME_WHITELIST`
+        * type = `String[]`
+        * setting = _M3U Channels &gt; Filter by channel name whitelist_
+        * specify one channel name per `String`
+     1. name = `M3U_CHANNEL_ID_WHITELIST`
+        * type = `String[]`
+        * setting = _M3U Channels &gt; Filter by channel ID whitelist_
+        * specify one channel ID per `String`
+     1. name = `M3U_CHANNEL_NAME_BLACKLIST`
+        * type = `String[]`
+        * setting = _M3U Channels &gt; Filter by channel name blacklist_
+        * specify one channel name per `String`
+     1. name = `M3U_CHANNEL_ID_BLACKLIST`
+        * type = `String[]`
+        * setting = _M3U Channels &gt; Filter by channel ID blacklist_
+        * specify one channel ID per `String`
+     1. name = `M3U_MEDIA_URL_STATIC_STRINGS`
+        * type = `String[]`
+        * setting = _M3U Channels &gt; Media URL static string values_
+        * specify one static string per `String`
+     1. name = `EPG_DEFAULT_XMLTV_URL`
+        * type = `String`
+        * setting = _EPG Channels &gt; Default XMLTV EPG URL_
+     1. name = `EPG_APPLY_IMPORT_FILTER`
+        * type = `Boolean`
+        * setting = _EPG Channels &gt; Apply Import Filter_
+
 #### Legal:
 
 * copyright: [Warren Bank](https://github.com/warren-bank)
