@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Import lalai URL Nilai bukan templat</string>
   <string name="pref_default_m3u_url_title">Lalai M3U Senarai main URL</string>
   <string name="pref_default_m3u_url_summary">Nilai awal dalam \"Import M3U Senarai main URL\" dialog.</string>
+  <string name="pref_append_m3u_playlists_title">Lampirkan M3U Senarai main</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Data yang diimport ditambah ke dalam senarai sedia ada M3U saluran</string>
+  <string name="pref_append_m3u_playlists_summary_off">Data yang diimport menggantikan senarai sedia ada M3U saluran</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Peta daripada nama saluran kepada saluran ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Satu nilai setiap baris. Format: \"[nama atau tvg-name] =\> [baru tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Peta daripada saluran ID untuk menyalurkan ID</string>

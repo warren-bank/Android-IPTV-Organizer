@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">預設匯入 URL 值並非範本</string>
   <string name="pref_default_m3u_url_title">預設 M3U 播放清單 URL</string>
   <string name="pref_default_m3u_url_summary">初始值在 \"匯入 M3U 播放清單 URL\" 對話框.</string>
+  <string name="pref_append_m3u_playlists_title">追加 M3U 播放清單</string>
+  <string name="pref_append_m3u_playlists_summary_on" >匯入的資料將新增至現有的 M3U 頻道</string>
+  <string name="pref_append_m3u_playlists_summary_off">匯入的資料將取代現有的清單： M3U 頻道</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">將頻道名稱映射至頻道 ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">每行一個數值。格式: \"[名稱或 tvg-name] =\> [新 tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">來自頻道的地圖 ID 以引導 ID</string>

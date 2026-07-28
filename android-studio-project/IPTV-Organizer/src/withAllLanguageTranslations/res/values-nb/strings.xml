@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Standardimport URL verdier er ikke maler</string>
   <string name="pref_default_m3u_url_title">Standard M3U Spilleliste URL</string>
   <string name="pref_default_m3u_url_summary">Startverdi i \"Import M3U Spilleliste URL\" dialog.</string>
+  <string name="pref_append_m3u_playlists_title">Legg til M3U Spillelister</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Importerte data legges til i den eksisterende listen over M3U kanaler</string>
+  <string name="pref_append_m3u_playlists_summary_off">De importerte dataene erstatter den eksisterende listen over M3U kanaler</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kartlegging fra kanalnavn til kanal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Én verdi per linje. Format: \"[navn eller tvg-name] =\> [ny tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kart fra kanalen ID til kanalen ID</string>

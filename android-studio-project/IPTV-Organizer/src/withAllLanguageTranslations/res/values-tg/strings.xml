@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Воридоти пешфарз URL Арзишҳо шаблон нестанд</string>
   <string name="pref_default_m3u_url_title">Тавсиявӣ M3U Рӯйхати навозиш URL</string>
   <string name="pref_default_m3u_url_summary">Арзиши ибтидоӣ дар \"Воридкунӣ M3U Рӯйхати навозиш URL\" гуфтугӯ.</string>
+  <string name="pref_append_m3u_playlists_title">Илова кардан M3U Плелистҳо</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Маълумоти воридшуда ба рӯйхати мавҷуда илова карда мешавад M3U каналҳо</string>
+  <string name="pref_append_m3u_playlists_summary_off">Маълумоти воридшуда рӯйхати мавҷударо иваз мекунад M3U каналҳо</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Мапа аз номи канал ба канал ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Як арзиш дар як сатр. Формат: \"[ном ё tvg-name] =\> [нав tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Нақша аз канал ID равона кардан ID</string>

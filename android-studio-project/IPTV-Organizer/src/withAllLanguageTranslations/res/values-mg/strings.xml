@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Fampidirana mahazatra URL Ny sanda dia tsy modely.</string>
   <string name="pref_default_m3u_url_title">Araka ny mahazatra M3U Lisitry ny hira URL</string>
   <string name="pref_default_m3u_url_summary">Sanda voalohany ao \"Fanafarana M3U Lisitry ny hira URL\" resadresaka.</string>
+  <string name="pref_append_m3u_playlists_title">Manampy M3U Lisitry ny hira</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Ny angon-drakitra nafarana dia ampiana amin\'ny lisitra efa misy an\'ny M3U fantsona</string>
+  <string name="pref_append_m3u_playlists_summary_off">Ny angon-drakitra nafarana dia manolo ny lisitra efa misy an\'ny M3U fantsona</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mampifandray ny anaran\'ny fantsona amin\'ny fantsona. ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Sanda iray isaky ny andalana. Endrika: \"[anarana na tvg-name] =\> [vaovao tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Sarintany avy amin\'ny fantsona ID hanatontosa ID</string>

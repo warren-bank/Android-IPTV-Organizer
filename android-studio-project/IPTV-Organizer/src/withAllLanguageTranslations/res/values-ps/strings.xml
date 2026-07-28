@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">اصلي واردول URL ارزښتونه قالبونه نه دي</string>
   <string name="pref_default_m3u_url_title">اصلي M3U د سندرو لړلیک URL</string>
   <string name="pref_default_m3u_url_summary">په ... کې لومړنی ارزښت \"واردول M3U د سندرو لړلیک URL\" خبرې اترې.</string>
+  <string name="pref_append_m3u_playlists_title">اضافه کول M3U د سندرو لړلیکونه</string>
+  <string name="pref_append_m3u_playlists_summary_on" >وارد شوي معلومات د ... موجوده لیست ته ور اضافه کیږي M3U چینلونه</string>
+  <string name="pref_append_m3u_playlists_summary_off">وارد شوي معلومات د ... موجوده لیست ځای نیسي M3U چینلونه</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">د چینل نوم څخه چینل ته نقشه ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">په هره کرښه کې یو ارزښت. بڼه: \"[نوم یا tvg-name] =\> [نوی tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">له چینله نقشه ID لارښودل ID</string>

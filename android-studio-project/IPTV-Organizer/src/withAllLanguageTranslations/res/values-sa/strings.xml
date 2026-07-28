@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">पूर्वनिर्धारित आयात URL मूल्यानि रूपरेखाः न सन्ति।</string>
   <string name="pref_default_m3u_url_title">पूर्वनिर्धारितम् M3U गीतसूची URL</string>
   <string name="pref_default_m3u_url_summary">प्रारम्भिक मूल्ये \"आयातः M3U गीतसूची URL\" संवादः.</string>
+  <string name="pref_append_m3u_playlists_title">योजयतु M3U गीतसङ्ग्रहाः</string>
+  <string name="pref_append_m3u_playlists_summary_on" >आयातितदत्तांशः विद्यमानसूच्यां योज्यते। M3U वाहिन्यः</string>
+  <string name="pref_append_m3u_playlists_summary_off">आयातितदत्तांशः विद्यमानसूचीं प्रतिस्थापयति। M3U वाहिन्यः</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">नालिकानाम्नात् नालिकायाः नामनिर्देशः ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[नाम वा tvg-name] =\> [नवीनः tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">वाहिन्याः मानचित्रम् ID मार्गयितुम् ID</string>

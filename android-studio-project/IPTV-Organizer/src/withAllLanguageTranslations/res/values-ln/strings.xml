@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Kotia ya liboso URL Ba valeurs ezali ba modèles te.</string>
   <string name="pref_default_m3u_url_title">Ndenge ezali M3U Liste ya nzembo URL</string>
   <string name="pref_default_m3u_url_summary">Motuya ya liboso na \"Kokɔtisa M3U Liste ya nzembo URL\" Lisolo.</string>
+  <string name="pref_append_m3u_playlists_title">Bakisa M3U Liste ya nzembo</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Ba données oyo ekɔtisami ebakisami na liste oyo ezali M3U Banzela</string>
+  <string name="pref_append_m3u_playlists_summary_off">Ba données oyo ekɔti ekitani liste oyo ezalaki. M3U Banzela</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Bongola nkombo ya chaîne na chaîne. ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Motuya moko na molongo moko. Format: \"[nkombo to tvg-name] =\> [ya sika tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Karte uta na chaîne ID kokamba ID</string>

@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Importavimas pagal numatytuosius nustatymus URL reikšmės nėra šablonai</string>
   <string name="pref_default_m3u_url_title">Numatytasis M3U Grojaraštis URL</string>
   <string name="pref_default_m3u_url_summary">Pradinė vertė \"Importas M3U Grojaraštis URL\" dialogas.</string>
+  <string name="pref_append_m3u_playlists_title">Pridėti M3U Grojaraščiai</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Importuoti duomenys įtraukiami į esamą sąrašą M3U kanalai</string>
+  <string name="pref_append_m3u_playlists_summary_off">Importuoti duomenys pakeičia esamą sąrašą M3U kanalai</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Atitikmenų lentelė tarp kanalo pavadinimo ir kanalo ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Viena reikšmė vienoje eilutėje. Formatas: \"[pavadinimas arba tvg-name] =\> [naujas tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Žemėlapis iš kanalo ID į kanalą ID</string>

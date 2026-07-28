@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">ڈیفالٹ درآمد URL قدرتیں سانچے نہیں ہوتیں</string>
   <string name="pref_default_m3u_url_title">مقرر شدہ M3U فہرستِ گانوں URL</string>
   <string name="pref_default_m3u_url_summary">ابتدائی قدر میں \"درآمد M3U فہرستِ گانوں URL\" گفتگو.</string>
+  <string name="pref_append_m3u_playlists_title">ضم کریں M3U فہرستِ گانوں</string>
+  <string name="pref_append_m3u_playlists_summary_on" >درآمد شدہ ڈیٹا موجودہ فہرست میں شامل کیا جاتا ہے۔ M3U نہادیں</string>
+  <string name="pref_append_m3u_playlists_summary_off">درآمد شدہ ڈیٹا موجودہ فہرست کو تبدیل کر دیتا ہے۔ M3U نہادیں</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">چینل کے نام کو چینل سے منسلک کریں ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">ہر لائن پر ایک قدر۔ فارمیٹ: \"[نام یا tvg-name] =\> [نیا tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">چینل سے نقشہ ID راہ دینا ID</string>

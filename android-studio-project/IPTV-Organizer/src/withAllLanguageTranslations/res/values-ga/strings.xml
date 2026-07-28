@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Iompórtáil réamhshocraithe URL Ní teimpléid iad luachanna</string>
   <string name="pref_default_m3u_url_title">Réamhshocrú M3U Liosta Seinnte URL</string>
   <string name="pref_default_m3u_url_summary">Luach tosaigh isteach \"Iompórtáil M3U Liosta Seinnte URL\" comhrá.</string>
+  <string name="pref_append_m3u_playlists_title">Cuir i leith M3U Liostaí seinnte</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Cuirtear sonraí iompórtáilte leis an liosta reatha de M3U cainéil</string>
+  <string name="pref_append_m3u_playlists_summary_off">Cuireann sonraí iompórtáilte in áit an liosta reatha de M3U cainéil</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapáil ainm an chainéil chuig an gcainéal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Amháin luach in aghaidh an líne. Formáid: \"[ainm nó tvg-name] =\> [nua tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Léarscáil ón gcainéal ID a sheoladh ID</string>

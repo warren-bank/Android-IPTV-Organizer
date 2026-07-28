@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Kenyo e tloaelehileng URL Boleng ha se ditempeleite</string>
   <string name="pref_default_m3u_url_title">Tloaelehileng M3U Lenane la lipina URL</string>
   <string name="pref_default_m3u_url_summary">Boleng ba pele ka hare \"Kenya M3U Lenane la lipina URL\" Puisano.</string>
+  <string name="pref_append_m3u_playlists_title">Eketsa M3U Manane a lipina</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Lintlha tse tlisitsoeng li eketsoa lenaneng le seng le le teng la M3U mekgwa</string>
+  <string name="pref_append_m3u_playlists_summary_off">Lintlha tse tlisitsoeng li nkela sebaka lenane le teng la M3U mekgwa</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Ho fetolela lebitso la kanale ho ba kanale. ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Boleng bo le bong moleng o le mong. Fomate: \"[Lebitso kapa tvg-name] =\> [secha tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">\'Mapa o tsoang kanale ID ho tsamaisa ID</string>

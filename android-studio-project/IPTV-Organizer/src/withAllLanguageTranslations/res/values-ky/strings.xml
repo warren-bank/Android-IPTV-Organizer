@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Стандарттык импорт URL Баалуулуктар шаблондор эмес</string>
   <string name="pref_default_m3u_url_title">Алгачкы M3U Плейлист URL</string>
   <string name="pref_default_m3u_url_summary">Киришүүчү баалуулук \"Импорт M3U Плейлист URL\" диалог.</string>
+  <string name="pref_append_m3u_playlists_title">Кошуу M3U Плейлисттер</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Импорттолгон маалыматтар бар тизмеге кошулат M3U каналдар</string>
+  <string name="pref_append_m3u_playlists_summary_off">Импорттолгон маалымат бар тизмени алмаштырат M3U каналдар</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Каналдын атынан каналга карталоо ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Ар бир сап үчүн бир маани. Формат: \"[аты же tvg-name] =\> [жаңы tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Каналдан карта ID багыттоо ID</string>

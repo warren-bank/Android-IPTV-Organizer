@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Galchii idilee URL Gatiinwwan unka miti.</string>
   <string name="pref_default_m3u_url_title">Akka duraan turetti M3U Tarree Weelluu URL</string>
   <string name="pref_default_m3u_url_summary">Gatii jalqabaa keessa \"Galuu M3U Tarree Weelluu URL\" Haasawa.</string>
+  <string name="pref_append_m3u_playlists_title">Dabali M3U Tarree Weelluu</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Daataan alaa galfame tarree duraan jiruutti ni dabalama. M3U Mijoota</string>
+  <string name="pref_append_m3u_playlists_summary_off">Daataan alaa galfame tarree jiru bakka bu\'a M3U Mijoota</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Maqaa chaanaalichaa gara chaanaalichaatti ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Sarara tokko irratti gatii tokko. Unka: \"[Maqaa yookiin tvg-name] =\> [haaraa tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaartaa chaanaalirraa ID gara ID</string>

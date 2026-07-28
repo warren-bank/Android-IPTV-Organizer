@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Jeike ypykue URL Umi mba\'e ndaha\'éi ta\'anga\'ita.</string>
   <string name="pref_default_m3u_url_title">Ojehechaháichaite M3U Purahéi aty URL</string>
   <string name="pref_default_m3u_url_summary">Mbohepy ñepyrũrã \"Mbohypy M3U Purahéi aty URL\" Ñomongeta.</string>
+  <string name="pref_append_m3u_playlists_title">Omoĩve M3U Purahéi aty</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Dato ojeguerúva oñemoĩ pe tysýi oĩmava\'ekuépe M3U Tape\'akuéra</string>
+  <string name="pref_append_m3u_playlists_summary_off">Marandu ojeguerúva omyengovia pe tysýi oĩmava M3U Tape\'akuéra</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Moñe\'ẽha réra moñe\'ẽhágui ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Peteĩ mba\'e peteĩ tysýipe. Mohenda: \"[Téra térã tvg-name] =\> [pyahu tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Ta\'anga\'ita yvyrágui ID Mbohape hag̃ua ID</string>

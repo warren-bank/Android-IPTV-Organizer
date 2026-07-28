@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">ডিফল্ট আমদানি URL মূল্যবোধবোৰ নমুনা নহয়।</string>
   <string name="pref_default_m3u_url_title">নিৰ্ধাৰিত M3U প্লেলিষ্ট URL</string>
   <string name="pref_default_m3u_url_summary">প্ৰাৰম্ভিক মান \"আমদানি M3U প্লেলিষ্ট URL\" সংলাপ.</string>
+  <string name="pref_append_m3u_playlists_title">সংযোজন কৰক M3U প্লেলিষ্টসমূহ</string>
+  <string name="pref_append_m3u_playlists_summary_on" >আমদানি কৰা তথ্য বিদ্যমান তালিকাখনত যোগ কৰা হয় M3U চেনেলসমূহ</string>
+  <string name="pref_append_m3u_playlists_summary_off">আমদানি কৰা ডাটাৰ দ্বাৰা বৰ্তমানৰ তালিকাখন সলনি কৰা হয় M3U চেনেলসমূহ</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">চেনেলৰ নামৰ পৰা চেনেললৈ মানচিত্ৰ ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">প্ৰতিটো শাৰীত এটা মান। ফৰ্মেট: \"[নাম বা tvg-name] =\> [নতুন tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">চেনেলৰ পৰা মানচিত্ৰ ID প্ৰবাহিত কৰিবলৈ ID</string>

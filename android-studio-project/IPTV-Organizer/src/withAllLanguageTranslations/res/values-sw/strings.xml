@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Uingizaji chaguo-msingi URL Thamani si kiolezo</string>
   <string name="pref_default_m3u_url_title">Kawaida M3U Orodha ya nyimbo URL</string>
   <string name="pref_default_m3u_url_summary">Thamani ya awali katika \"Agiza M3U Orodha ya nyimbo URL\" mazungumzo.</string>
+  <string name="pref_append_m3u_playlists_title">Ongeza M3U Orodha za nyimbo</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Data iliyopakiwa inaongezwa kwenye orodha iliyopo ya M3U vituo</string>
+  <string name="pref_append_m3u_playlists_summary_off">Data iliyoingizwa inabadilisha orodha iliyopo ya M3U vituo</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Ramani kutoka kwa jina la kituo hadi kituo ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Thamani moja kwa kila mstari. Fomati: \"[jina au tvg-name] =\> [mpya tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Ramani kutoka kwenye kituo ID kuelekeza ID</string>

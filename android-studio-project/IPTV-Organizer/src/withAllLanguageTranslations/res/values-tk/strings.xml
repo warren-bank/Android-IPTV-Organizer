@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Öňünden kesgitlenen import URL Degerler şablon däl.</string>
   <string name="pref_default_m3u_url_title">Öňünden kesgitlenen M3U Aýdymlar sanawy URL</string>
   <string name="pref_default_m3u_url_summary">Başlangyç gymmaty \"Import M3U Aýdymlar sanawy URL\" dialog.</string>
+  <string name="pref_append_m3u_playlists_title">Goşmak M3U Pleylistler</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Import edilen maglumatlar bar bolan sanawyň üstüne goşulýar M3U kanallar</string>
+  <string name="pref_append_m3u_playlists_summary_off">Import edilen maglumat bar bolan sanawy çalşýar. M3U kanallar</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal adyny kanala bagla ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Her setirde bir gymmat. Format: \"[at ýa-da tvg-name] =\> [täze tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanal boýunça harita ID ugurlamaq ID</string>

@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Import implicit URL valorile nu sunt șabloane</string>
   <string name="pref_default_m3u_url_title">Implicit M3U Listă de redare URL</string>
   <string name="pref_default_m3u_url_summary">Valoarea inițială în \"Import M3U Listă de redare URL\" dialog.</string>
+  <string name="pref_append_m3u_playlists_title">Anexare M3U Liste de redare</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Datele importate sunt adăugate la lista existentă de M3U canale</string>
+  <string name="pref_append_m3u_playlists_summary_off">Datele importate înlocuiesc lista existentă de M3U canale</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Corelare între numele canalului și canal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">O singură valoare pe rând. Format: \"[nume sau tvg-name] =\> [nou tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Harta de pe canal ID spre canal ID</string>

@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Standardimport URL värden är inte mallar</string>
   <string name="pref_default_m3u_url_title">Standard M3U Spellista URL</string>
   <string name="pref_default_m3u_url_summary">Startvärde i \"Importera M3U Spellista URL\" dialog.</string>
+  <string name="pref_append_m3u_playlists_title">Lägg till M3U Spellistor</string>
+  <string name="pref_append_m3u_playlists_summary_on" >De importerade uppgifterna läggs till i den befintliga listan över M3U kanaler</string>
+  <string name="pref_append_m3u_playlists_summary_off">De importerade uppgifterna ersätter den befintliga listan över M3U kanaler</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mappning från kanalnamn till kanal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Ett värde per rad. Format: \"[namn eller tvg-name] =\> [ny tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Karta från kanalen ID för att leda ID</string>

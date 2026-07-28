@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Importacion per defaut URL Las valors son pas de modèls.</string>
   <string name="pref_default_m3u_url_title">Per defaut M3U Lista de reproduccion URL</string>
   <string name="pref_default_m3u_url_summary">Valor iniciala dins \"Importar M3U Lista de reproduccion URL\" Dialòg.</string>
+  <string name="pref_append_m3u_playlists_title">Apondre M3U Listas de reproduccion</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Las donadas importadas son apondudas a la lista existenta de M3U canals</string>
+  <string name="pref_append_m3u_playlists_summary_off">Las donadas importadas remplaçan la lista existenta de M3U canals</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapa del nom del canal al canal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Una valor per linha. Format: \"[nom o tvg-name] =\> [novèl tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa del canal ID canalizar ID</string>

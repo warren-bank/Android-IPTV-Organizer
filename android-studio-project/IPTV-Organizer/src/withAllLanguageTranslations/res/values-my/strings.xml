@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">မူလတင်သွင်း URL တန်ဖိုးများသည် ပုံစံများ မဟုတ်ပါ။</string>
   <string name="pref_default_m3u_url_title">မူလတန်ဖိုး M3U ကစားစာရင်း URL</string>
   <string name="pref_default_m3u_url_summary">အစပိုင်းတန်ဖိုးကို ထည့်ပါ \"တင်သွင်း M3U ကစားစာရင်း URL\" ဆွေးနွေးချက်.</string>
+  <string name="pref_append_m3u_playlists_title">ထပ်ထည့် M3U ဂီတစာရင်းများ</string>
+  <string name="pref_append_m3u_playlists_summary_on" >တင်သွင်းထားသော ဒေတာကို ရှိပြီးသား စာရင်းထဲသို့ ထည့်သွင်းသည်။ M3U ချန်နယ်များ</string>
+  <string name="pref_append_m3u_playlists_summary_off">တင်သွင်းထားသော ဒေတာသည် ရှိပြီးသား စာရင်းကို အစားထိုးသည်။ M3U ချန်နယ်များ</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ချန်နယ်အမည်မှ ချန်နယ်သို့ မြေပုံချိတ်ဆက်ခြင်း ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[နာမည် သို့မဟုတ် tvg-name] =\> [အသစ် tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">ချန်နယ်မှ မြေပုံ ID လမ်းကြောင်းပေးရန် ID</string>

@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">ડિફોલ્ટ આયાત URL મૂલ્યો ટેમ્પલેટ નથી</string>
   <string name="pref_default_m3u_url_title">નિર્ધારિત M3U પ્લેલિસ્ટ URL</string>
   <string name="pref_default_m3u_url_summary">પ્રારંભિક મૂલ્ય \"આયાત M3U પ્લેલિસ્ટ URL\" સંવાદ.</string>
+  <string name="pref_append_m3u_playlists_title">ઉમેરો M3U પ્લેલિસ્ટ્સ</string>
+  <string name="pref_append_m3u_playlists_summary_on" >આયાત કરેલું ડેટા હાજર યાદીમાં ઉમેરાય છે M3U ચેનલ્સ</string>
+  <string name="pref_append_m3u_playlists_summary_off">આયાત કરેલું ડેટા હાજર યાદીને બદલે છે M3U ચેનલ્સ</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ચેનલ નામથી ચેનલ તરફ નકશો ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">દરેક પંક્તિમાં એક મૂલ્ય. ફોર્મેટ: \"[નામ અથવા tvg-name] =\> [નવું tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">ચેનલમાંથી નકશો ID માર્ગદર્શિત કરવા ID</string>

@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Tāuru taunoa URL Ehara ngā uara i te tauira</string>
   <string name="pref_default_m3u_url_title">Taunoa M3U Rārangi waiata URL</string>
   <string name="pref_default_m3u_url_summary">Uara tuatahi i roto \"Kaweake M3U Rārangi waiata URL\" Kōrero.</string>
+  <string name="pref_append_m3u_playlists_title">Tāpiri M3U Rārangi waiata</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Ka tāpirihia ngā raraunga kawemai ki te rārangi o nāianei o M3U Ngā hongere</string>
+  <string name="pref_append_m3u_playlists_summary_off">Ka whakakapi ngā raraunga kawemai i te rārangi o nāianei o M3U Ngā hongere</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Whakakapia te ingoa o te hongere ki te hongere ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">He uara kotahi ia rārangi. Hōputu: \"[ingoa rānei tvg-name] =\> [hou tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mahere mai i te hongere ID ki te arataki ID</string>

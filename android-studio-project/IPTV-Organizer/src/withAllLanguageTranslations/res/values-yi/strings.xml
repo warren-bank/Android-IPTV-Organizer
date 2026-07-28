@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">סטאַנדאַרט־אימפּאָרט URL ווערטן זענען נישט קיין מוסטערן</string>
   <string name="pref_default_m3u_url_title">סטאַנדאַרט M3U שפּיל־ליסטע URL</string>
   <string name="pref_default_m3u_url_summary">אָנהייב־ווערט אין \"אימפּאָרט M3U שפּיל־ליסטע URL\" דיאַלאָג.</string>
+  <string name="pref_append_m3u_playlists_title">צוגעבן M3U שפּיל־ליסטעס</string>
+  <string name="pref_append_m3u_playlists_summary_on" >אימפּאָרטירטע דאַטן ווערן צוגעגעבן צו דער איצטיקער רשימה פֿון M3U קאַנאַלן</string>
+  <string name="pref_append_m3u_playlists_summary_off">אימפּאָרטירטע דאַטן פֿאַרבײַטן די עקזיסטירנדיקע רשימה פֿון M3U קאַנאַלן</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">מאַפּע פֿון קאַנאַל־נאָמען צו קאַנאַל ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[נאָמען אָדער tvg-name] =\> [נײַ tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">מאַפּע פֿון קאַנאַל ID צו קאַנאַליזירן ID</string>

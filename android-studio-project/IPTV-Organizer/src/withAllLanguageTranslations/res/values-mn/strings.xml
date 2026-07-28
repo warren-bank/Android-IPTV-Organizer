@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Анхдагчаар импорт URL Үнэ цэнүүд нь загвар биш</string>
   <string name="pref_default_m3u_url_title">Анхдагч M3U Тоглолтын жагсаалт URL</string>
   <string name="pref_default_m3u_url_summary">Оролтын анхны утга \"Импорт M3U Тоглолтын жагсаалт URL\" харилцах.</string>
+  <string name="pref_append_m3u_playlists_title">Нэмэх M3U Тоглолтын жагсаалтууд</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Импортолсон өгөгдлийг одоо байгаа жагсаалтад нэмнэ M3U сувгууд</string>
+  <string name="pref_append_m3u_playlists_summary_off">Импортолсон өгөгдөл нь одоо байгаа жагсаалтыг орлуулна M3U сувгууд</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Сувгийн нэрээс сувгийг холбох зураг ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Мөр бүрт нэг утга. Формат: \"[нэр эсвэл tvg-name] =\> [шинэ tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Сувгаас авсан газрын зураг ID чиглүүлэх ID</string>

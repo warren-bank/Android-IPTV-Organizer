@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Default import URL values are not templates</string>
   <string name="pref_default_m3u_url_title">Default M3U Playlist URL</string>
   <string name="pref_default_m3u_url_summary">Initial value in \"Import M3U Playlist URL\" dialog.</string>
+  <string name="pref_append_m3u_playlists_title">Append M3U Playlists</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Imported data is added to the existing list of M3U channels</string>
+  <string name="pref_append_m3u_playlists_summary_off">Imported data replaces the existing list of M3U channels</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Map from channel name to channel ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">One value per line. Format: \"[name or tvg-name] =\> [new tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Map from channel ID to channel ID</string>

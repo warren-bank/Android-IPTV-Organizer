@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">واردات پیش‌فرض URL مقادیر قالب نیستند</string>
   <string name="pref_default_m3u_url_title">پیش‌فرض M3U لیست پخش URL</string>
   <string name="pref_default_m3u_url_summary">مقدار اولیه در \"واردات M3U لیست پخش URL\" گفتگو.</string>
+  <string name="pref_append_m3u_playlists_title">ضمیمه کردن M3U لیست‌های پخش</string>
+  <string name="pref_append_m3u_playlists_summary_on" >داده‌های واردشده به فهرست موجود اضافه می‌شوند. M3U کانال‌ها</string>
+  <string name="pref_append_m3u_playlists_summary_off">داده‌های واردشده فهرست موجود را جایگزین می‌کند. M3U کانال‌ها</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">نقشه از نام کانال به کانال ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">یک مقدار در هر خط. قالب: \"[نام یا tvg-name] =\> [جدید tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">نقشه از کانال ID راهنمایی کردن ID</string>

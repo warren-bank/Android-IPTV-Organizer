@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Mewnforio diofyn URL Nid templedi yw gwerthoedd</string>
   <string name="pref_default_m3u_url_title">Rhagosodedig M3U Rhestr chwarae URL</string>
   <string name="pref_default_m3u_url_summary">Gwerth cychwynnol yn \"Mewnforio M3U Rhestr chwarae URL\" deialog.</string>
+  <string name="pref_append_m3u_playlists_title">Atodi M3U Rhestri chwarae</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Ychwanegir data a fewnforiwyd at y rhestr bresennol o M3U sianeli</string>
+  <string name="pref_append_m3u_playlists_summary_off">Mae data a fewnforiwyd yn disodli\'r rhestr bresennol o M3U sianeli</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapio enw\'r sianel i\'r sianel ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Un gwerth fesul llinell. Fformat: \"[enw neu tvg-name] =\> [newydd tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Map o\'r sianel ID i sianelu ID</string>

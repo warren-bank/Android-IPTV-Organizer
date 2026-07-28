@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Ստանդարտ ներմուծում URL Արժեքները ձևանմուշներ չեն</string>
   <string name="pref_default_m3u_url_title">Ստանդարտ M3U Ցուցակ URL</string>
   <string name="pref_default_m3u_url_summary">Սկզբնական արժեքը ներսում \"Իմպորտ M3U Ցուցակ URL\" զրույց.</string>
+  <string name="pref_append_m3u_playlists_title">ավելացնել M3U Պլեյլիստներ</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Իմպորտացված տվյալները ավելացվում են առկա ցուցակին M3U ալիքներ</string>
+  <string name="pref_append_m3u_playlists_summary_off">Իմպորտացված տվյալները փոխարինում են առկա ցուցակը M3U ալիքներ</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Ալիքի անվանումից ալիքին ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Յուրաքանչյուր տողում մեկ արժեք։ Ֆորմատ: \"[անուն կամ tvg-name] =\> [նոր tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Շատերի ալիքից քարտեզ ID ուղղորդել ID</string>

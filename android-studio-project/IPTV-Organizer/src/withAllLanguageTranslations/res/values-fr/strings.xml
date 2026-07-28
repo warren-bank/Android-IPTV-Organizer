@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Importation par défaut URL les valeurs ne sont pas des modèles</string>
   <string name="pref_default_m3u_url_title">Par défaut M3U Liste de lecture URL</string>
   <string name="pref_default_m3u_url_summary">Valeur initiale en \"Importer M3U Liste de lecture URL\" boîte de dialogue.</string>
+  <string name="pref_append_m3u_playlists_title">Ajouter M3U Listes de lecture</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Les données importées sont ajoutées à la liste existante de M3U chaînes</string>
+  <string name="pref_append_m3u_playlists_summary_off">Les données importées remplacent la liste existante de M3U chaînes</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Correspondance entre le nom d\'une chaîne et la chaîne elle-même ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Une valeur par ligne. Format: \"[nom ou tvg-name] =\> [nouveau tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Carte tirée de la chaîne ID vers le canal ID</string>

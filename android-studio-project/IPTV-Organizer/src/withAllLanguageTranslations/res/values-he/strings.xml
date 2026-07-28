@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">ייבוא ברירת מחדל URL ערכים אינם תבניות</string>
   <string name="pref_default_m3u_url_title">ברירת מחדל M3U רשימת השמעה URL</string>
   <string name="pref_default_m3u_url_summary">הערך ההתחלתי ב- \"ייבוא M3U רשימת השמעה URL\" דיאלוג.</string>
+  <string name="pref_append_m3u_playlists_title">הוסף M3U רשימות השמעה</string>
+  <string name="pref_append_m3u_playlists_summary_on" >הנתונים שיובאו מתווספים לרשימה הקיימת של M3U ערוצים</string>
+  <string name="pref_append_m3u_playlists_summary_off">הנתונים המיובאים מחליפים את הרשימה הקיימת של M3U ערוצים</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">מיפוי משם הערוץ לערוץ ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">ערך אחד בכל שורה. פורמט: \"[שם או tvg-name] =\> [חדש tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">מפה מהערוץ ID לערוץ ID</string>

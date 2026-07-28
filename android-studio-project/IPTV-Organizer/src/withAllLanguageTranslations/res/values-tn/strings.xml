@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Tsenyo e e tlwaelegileng URL Ditekanyetso ga se ditempoleite</string>
   <string name="pref_default_m3u_url_title">Tlwaelo M3U Lenaane la dipina URL</string>
   <string name="pref_default_m3u_url_summary">Boleng jwa tshimologo mo \"Tsenya M3U Lenaane la dipina URL\" Puisano.</string>
+  <string name="pref_append_m3u_playlists_title">Koketša M3U Lethathamo la dipina</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Datha e e tswang kwa ntle e tsenngwa mo lenaaneng le le leng teng la M3U ditsela</string>
+  <string name="pref_append_m3u_playlists_summary_off">Datha e e tsentsweng e emisetsa lenaneo le le leng teng la M3U ditsela</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Lebeletsa leina la setheo le setheo ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[leina kgotsa tvg-name] =\> [sešwa tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mmapa go tswa mo kaneleng ID go tsamaisa ID</string>

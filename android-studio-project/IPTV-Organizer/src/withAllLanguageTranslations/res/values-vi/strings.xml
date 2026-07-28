@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Nhập mặc định URL các giá trị không phải là các mẫu</string>
   <string name="pref_default_m3u_url_title">Mặc định M3U Danh sách phát URL</string>
   <string name="pref_default_m3u_url_summary">Giá trị ban đầu trong \"Nhập khẩu M3U Danh sách phát URL\" hộp thoại.</string>
+  <string name="pref_append_m3u_playlists_title">Thêm vào M3U Danh sách phát</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Dữ liệu nhập vào được thêm vào danh sách hiện có gồm M3U kênh</string>
+  <string name="pref_append_m3u_playlists_summary_off">Dữ liệu nhập vào sẽ thay thế danh sách hiện có của M3U kênh</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Bảng đối chiếu từ tên kênh sang kênh ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Mỗi dòng một giá trị. Định dạng: \"[tên hoặc tvg-name] =\> [mới tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Bản đồ từ kênh ID để dẫn truyền ID</string>

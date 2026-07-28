@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">การนำเข้าตามค่าเริ่มต้น URL ค่าไม่ใช่เทมเพลต</string>
   <string name="pref_default_m3u_url_title">ค่าเริ่มต้น M3U รายชื่อเพลง URL</string>
   <string name="pref_default_m3u_url_summary">ค่าเริ่มต้นใน \"นำเข้า M3U รายชื่อเพลง URL\" กล่องสนทนา.</string>
+  <string name="pref_append_m3u_playlists_title">เพิ่ม M3U รายชื่อเพลง</string>
+  <string name="pref_append_m3u_playlists_summary_on" >ข้อมูลที่นำเข้าจะถูกเพิ่มเข้าไปในรายการที่มีอยู่ของ M3U ช่อง</string>
+  <string name="pref_append_m3u_playlists_summary_off">ข้อมูลที่นำเข้าจะแทนที่รายการที่มีอยู่ของ M3U ช่อง</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">แผนที่จากชื่อช่องไปยังช่อง ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[ชื่อ หรือ tvg-name] =\> [ใหม่ tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">แผนที่จากช่อง ID เพื่อส่งผ่าน ID</string>

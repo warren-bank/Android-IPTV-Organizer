@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Стандартны імпарт URL Каштоўнасці — не шаблоны</string>
   <string name="pref_default_m3u_url_title">Па змаўчанні M3U Плэйліст URL</string>
   <string name="pref_default_m3u_url_summary">Пачатковае значэнне ў \"Імпарт M3U Плэйліст URL\" дыялог.</string>
+  <string name="pref_append_m3u_playlists_title">Дадаць M3U Плэйлісты</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Імпартаваныя даныя дадаюцца ў існуючы спіс M3U каналы</string>
+  <string name="pref_append_m3u_playlists_summary_off">Імпартаваныя даныя замяняюць існуючы спіс M3U каналы</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Карта ад назвы канала да канала ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Адна значэнне на радок. Фармат: \"[імя або tvg-name] =\> [новы tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Карта з канала ID накіроўваць ID</string>

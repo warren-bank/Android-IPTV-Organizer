@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Kikinmanta apamuy URL Chaninqa manan qatinakunachu.</string>
   <string name="pref_default_m3u_url_title">Qallariylla M3U Takikunaq qatiynin URL</string>
   <string name="pref_default_m3u_url_summary">Qallariy chanin yaykunanpaq \"Hawa llaqtamanta apamuy M3U Takikunaq qatiynin URL\" Rimanakuy.</string>
+  <string name="pref_append_m3u_playlists_title">Yapay M3U Takikuna Huñusqa</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Hawaqmanta apamusqa willakuykunaqa ñawpaqmanta kaq listaman yapakun. M3U Ñankuna</string>
+  <string name="pref_append_m3u_playlists_summary_off">Hawaqmanta apamusqa willakuykunaqa kachkaq listata rantinchan. M3U Ñankuna</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">T\'uqu sutimanta t\'uquman ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[suti utaq tvg-name] =\> [musuq tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Qhawanamanta saywiti ID pusay ID</string>

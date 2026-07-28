@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">ডিফল্ট আমদানি URL মানগুলো টেমপ্লেট নয়</string>
   <string name="pref_default_m3u_url_title">ডিফল্ট M3U প্লেলিস্ট URL</string>
   <string name="pref_default_m3u_url_summary">প্রাথমিক মান ইন \"আমদানি M3U প্লেলিস্ট URL\" সংলাপ.</string>
+  <string name="pref_append_m3u_playlists_title">সংযোজন করুন M3U প্লেলিস্টসমূহ</string>
+  <string name="pref_append_m3u_playlists_summary_on" >আমদানি করা ডেটা বিদ্যমান তালিকায় যোগ করা হয় M3U চ্যানেলসমূহ</string>
+  <string name="pref_append_m3u_playlists_summary_off">আমদানি করা ডেটা বিদ্যমান তালিকাটি প্রতিস্থাপন করে। M3U চ্যানেলসমূহ</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">চ্যানেলের নাম থেকে চ্যানেলে ম্যাপ করুন ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">প্রতি লাইনে একটি মান। ফরম্যাট: \"[নাম অথবা tvg-name] =\> [নতুন tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">চ্যানেল থেকে মানচিত্র ID পরিচালিত করার জন্য ID</string>

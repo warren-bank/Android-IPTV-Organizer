@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Import i paracaktuar URL Vlerat nuk janë shabllone</string>
   <string name="pref_default_m3u_url_title">Parazgjedhje M3U Lista e këngëve URL</string>
   <string name="pref_default_m3u_url_summary">Vlera fillestare në \"Importo M3U Lista e këngëve URL\" dialog.</string>
+  <string name="pref_append_m3u_playlists_title">Shto M3U Lista të luajtjes</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Të dhënat e importuara i shtohen listës ekzistuese të M3U kanalet</string>
+  <string name="pref_append_m3u_playlists_summary_off">Të dhënat e importuara zëvendësojnë listën ekzistuese të M3U kanalet</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Hartë nga emri i kanalit në kanal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Një vlerë për rresht. Format: \"[emër ose tvg-name] =\> [i ri tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Hartë nga kanali ID të kanalizosh ID</string>

@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Ntinye ndabara URL Uru abụghị nlereanya</string>
   <string name="pref_default_m3u_url_title">Ntọala M3U Ndepụta egwu URL</string>
   <string name="pref_default_m3u_url_summary">Ọnụahịa mbido n\'ime \"Bubata M3U Ndepụta egwu URL\" mkparịta ụka.</string>
+  <string name="pref_append_m3u_playlists_title">Tinye n\'akụkụ M3U Ndepụta egwu</string>
+  <string name="pref_append_m3u_playlists_summary_on" >A na-agbakwunye data ebubara na ndepụta dị ugbu a nke M3U ọwa</string>
+  <string name="pref_append_m3u_playlists_summary_off">Data ebubara na-anọchi ndepụta dị ugbu a nke M3U ọwa</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mepụta map si na aha ọwa gaa na ọwa ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Otu uru n\'ahịrị ọ bụla. Usoro: \"[aha ma ọ bụ tvg-name] =\> [ọhụrụ tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Maapụ si na ọwa ID iji ụzọ ID</string>

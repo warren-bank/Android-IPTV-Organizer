@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Стандардно увођење URL Вредности нису шаблони</string>
   <string name="pref_default_m3u_url_title">Подразумјевано M3U Плејлиста URL</string>
   <string name="pref_default_m3u_url_summary">Почетна вредност у \"Увоз M3U Плејлиста URL\" дијалог.</string>
+  <string name="pref_append_m3u_playlists_title">Додај M3U Плејлисте</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Увезени подаци се додају у постојећу листу M3U канали</string>
+  <string name="pref_append_m3u_playlists_summary_off">Увезени подаци замењују постојећу листу M3U канали</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Мапа од назива канала до канала ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Једна вредност по реду. Формат: \"[име или tvg-name] =\> [нови tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Мапа са канала ID канал ID</string>

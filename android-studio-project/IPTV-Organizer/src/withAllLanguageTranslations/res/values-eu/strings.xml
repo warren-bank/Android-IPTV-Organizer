@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Inportazio lehenetsia URL Balioak ez dira txantiloiak</string>
   <string name="pref_default_m3u_url_title">Lehenetsia M3U Entzuteko zerrenda URL</string>
   <string name="pref_default_m3u_url_summary">Balio hasierakoa sartzeko \"Inportatu M3U Entzuteko zerrenda URL\" elkarrizketa.</string>
+  <string name="pref_append_m3u_playlists_title">Erantsi M3U Playlistak</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Inportatutako datuak dagoen zerrendari gehitzen zaizkio M3U kanalak</string>
+  <string name="pref_append_m3u_playlists_summary_off">Inportatutako datuek dagoen zerrenda ordezkatzen dute M3U kanalak</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal-izenetik kanalera mapaketa ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Ilara bakoitzeko balio bat. Formatu: \"[izena edo tvg-name] =\> [berri tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanaleko mapa ID bideratzeko ID</string>

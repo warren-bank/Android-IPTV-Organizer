@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Enpòtasyon pa defo URL Valè yo se pa modèl.</string>
   <string name="pref_default_m3u_url_title">Pa defo M3U Lis mizik URL</string>
   <string name="pref_default_m3u_url_summary">Valè inisyal an \"Enpòte M3U Lis mizik URL\" Dyalòg.</string>
+  <string name="pref_append_m3u_playlists_title">Ajoute M3U Lis mizik</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Done enpòte yo ajoute nan lis ki egziste deja a M3U chanèl</string>
+  <string name="pref_append_m3u_playlists_summary_off">Done enpòte yo ranplase lis ki egziste deja a M3U chanèl</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mete non chanèl la an korespondans ak chanèl la ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Yon valè pa liy. Fòma: \"[non oswa tvg-name] =\> [nouvo tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kat ki soti nan kanal la ID pou kanalize ID</string>

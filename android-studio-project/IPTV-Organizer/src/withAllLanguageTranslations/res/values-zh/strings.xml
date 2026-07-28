@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">默认导入 URL 值不是模板</string>
   <string name="pref_default_m3u_url_title">默认 M3U 播放列表 URL</string>
   <string name="pref_default_m3u_url_summary">初始值在 \"导入 M3U 播放列表 URL\" 对话框.</string>
+  <string name="pref_append_m3u_playlists_title">追加 M3U 播放列表</string>
+  <string name="pref_append_m3u_playlists_summary_on" >导入的数据被添加到现有的列表中，该列表包含 M3U 频道</string>
+  <string name="pref_append_m3u_playlists_summary_off">导入的数据将替换现有的列表，即 M3U 频道</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">将频道名称映射到频道 ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">每行一个值。格式: \"[名称或 tvg-name] =\> [新 tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">来自频道的地图 ID 至通道 ID</string>

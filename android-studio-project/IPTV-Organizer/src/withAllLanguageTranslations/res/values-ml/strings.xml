@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">നിലവിലെ ഇറക്കുമതി URL മൂല്യങ്ങൾ ടെംപ്ലേറ്റുകളല്ല</string>
   <string name="pref_default_m3u_url_title">നിലവിലുള്ള M3U പ്ലേലിസ്റ്റ് URL</string>
   <string name="pref_default_m3u_url_summary">പ്രാരംഭ മൂല്യം \"ഇറക്കുമതി M3U പ്ലേലിസ്റ്റ് URL\" സംഭാഷണം.</string>
+  <string name="pref_append_m3u_playlists_title">ചേർക്കുക M3U പ്ലേലിസ്റ്റുകൾ</string>
+  <string name="pref_append_m3u_playlists_summary_on" >ഇറക്കുമതി ചെയ്ത ഡാറ്റ നിലവിലുള്ള ലിസ്റ്റിലേക്ക് ചേർക്കുന്നു M3U ചാനലുകൾ</string>
+  <string name="pref_append_m3u_playlists_summary_off">ഇറക്കുമതി ചെയ്ത ഡാറ്റ നിലവിലുള്ള പട്ടികയെ മാറ്റിസ്ഥാപിക്കുന്നു M3U ചാനലുകൾ</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ചാനലിന്റെ പേരിൽ നിന്ന് ചാനലിലേക്ക് മാപ്പ് ചെയ്യുക ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പേര് അല്ലെങ്കിൽ tvg-name] =\> [പുതിയ tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">ചാനലിൽ നിന്നുള്ള ഭൂപടം ID നയിക്കാൻ ID</string>

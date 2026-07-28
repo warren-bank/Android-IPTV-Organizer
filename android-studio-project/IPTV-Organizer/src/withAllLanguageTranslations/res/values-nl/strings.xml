@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Standaardimport URL waarden zijn geen sjablonen</string>
   <string name="pref_default_m3u_url_title">Standaard M3U Afspeellijst URL</string>
   <string name="pref_default_m3u_url_summary">Beginswaarde in \"Importeren M3U Afspeellijst URL\" dialoogvenster.</string>
+  <string name="pref_append_m3u_playlists_title">Toevoegen M3U Afspeellijsten</string>
+  <string name="pref_append_m3u_playlists_summary_on" >De geïmporteerde gegevens worden toegevoegd aan de bestaande lijst met M3U kanalen</string>
+  <string name="pref_append_m3u_playlists_summary_off">De geïmporteerde gegevens vervangen de bestaande lijst met M3U kanalen</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Toewijzing van kanaalnaam naar kanaal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Eén waarde per regel. Opmaak: \"[naam of tvg-name] =\> [nieuw tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart van het kanaal ID naar ID</string>

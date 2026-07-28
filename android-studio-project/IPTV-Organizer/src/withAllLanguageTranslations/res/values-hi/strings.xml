@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">डिफ़ॉल्ट आयात URL मूल्य टेम्पलेट नहीं हैं</string>
   <string name="pref_default_m3u_url_title">डिफ़ॉल्ट M3U प्लेलिस्ट URL</string>
   <string name="pref_default_m3u_url_summary">में प्रारंभिक मान \"आयात M3U प्लेलिस्ट URL\" संवाद.</string>
+  <string name="pref_append_m3u_playlists_title">जोड़ें M3U प्लेलिस्ट</string>
+  <string name="pref_append_m3u_playlists_summary_on" >आयातित डेटा को मौजूदा सूची में जोड़ा जाता है। M3U चैनल</string>
+  <string name="pref_append_m3u_playlists_summary_off">आयातित डेटा मौजूदा सूची को बदल देता है। M3U चैनल</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">चैनल नाम से चैनल तक मानचित्रण ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">प्रत्येक पंक्ति में एक मान। प्रारूप: \"[नाम या tvg-name] =\> [नया tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">चैनल से नक्शा ID मार्गदर्शन करना ID</string>

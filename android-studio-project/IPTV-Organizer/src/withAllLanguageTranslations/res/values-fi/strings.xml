@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Oletustuonti URL arvot eivät ole malleja</string>
   <string name="pref_default_m3u_url_title">Oletus M3U Soittolista URL</string>
   <string name="pref_default_m3u_url_summary">Alkuarvo \"Tuonti M3U Soittolista URL\" valintaikkuna.</string>
+  <string name="pref_append_m3u_playlists_title">Lisää M3U Soittolistat</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Tuodut tiedot lisätään olemassa olevaan luetteloon, jossa on M3U kanavat</string>
+  <string name="pref_append_m3u_playlists_summary_off">Tuodut tiedot korvaavat nykyisen luettelon, jossa on M3U kanavat</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Vastaavuustaulukko kanavanimestä kanavaan ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Yksi arvo riviä kohden. Muoto: \"[nimi tai tvg-name] =\> [uusi tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kartta kanavalta ID kanavaan ID</string>

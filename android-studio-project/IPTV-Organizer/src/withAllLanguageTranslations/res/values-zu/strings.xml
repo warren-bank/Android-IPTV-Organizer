@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Ukufaka okujwayelekile URL Amanani awangamathayiphu</string>
   <string name="pref_default_m3u_url_title">Okujwayelekile M3U Uhlu lokudlalwayo URL</string>
   <string name="pref_default_m3u_url_summary">Inani lokuqala ku \"Okungenayo M3U Uhlu lokudlalwayo URL\" inkulumo.</string>
+  <string name="pref_append_m3u_playlists_title">Engeza M3U Uhlu lokudlalwayo</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Idatha engenisiwe yengezwa ohlwini olukhona lwe M3U iziteshi</string>
+  <string name="pref_append_m3u_playlists_summary_off">Idatha engenisiwe ithatha indawo yohlu olukhona lwe M3U iziteshi</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Imephu egama lesiteshi kuya esiteshini ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Inani elilodwa kumugqa ngamunye. Ifomethi: \"[igama noma tvg-name] =\> [isha tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Imephu evela esiteshini ID ukuhambisa ID</string>

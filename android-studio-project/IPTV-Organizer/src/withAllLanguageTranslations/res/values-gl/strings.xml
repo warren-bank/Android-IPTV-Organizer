@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Importación predeterminada URL Os valores non son plantillas</string>
   <string name="pref_default_m3u_url_title">Por defecto M3U Lista de reprodución URL</string>
   <string name="pref_default_m3u_url_summary">Valor inicial en \"Importar M3U Lista de reprodución URL\" diálogo.</string>
+  <string name="pref_append_m3u_playlists_title">Engadir M3U Listas de reprodución</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Os datos importados engádense á lista existente de M3U canles</string>
+  <string name="pref_append_m3u_playlists_summary_off">Os datos importados substitúen a lista existente de M3U canles</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mapa do nome do canal ao canal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Un valor por liña. Formato: \"[nome ou tvg-name] =\> [novo tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa do canal ID para canalizar ID</string>

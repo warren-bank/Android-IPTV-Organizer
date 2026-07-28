@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Standart import URL Qiymatlar shablonlar emas</string>
   <string name="pref_default_m3u_url_title">Standart M3U Pleylist URL</string>
   <string name="pref_default_m3u_url_summary">Boshlang\'ich qiymat \"Import M3U Pleylist URL\" dialog.</string>
+  <string name="pref_append_m3u_playlists_title">Ilova qilish M3U Pleylistlar</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Import qilingan ma\'lumotlar mavjud ro\'yxatga qo\'shiladi M3U kanallar</string>
+  <string name="pref_append_m3u_playlists_summary_off">Import qilingan ma\'lumotlar mavjud ro\'yxatni almashtiradi M3U kanallar</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal nomidan kanalga xarita ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Har bir satrda bitta qiymat. Format: \"[nomi yoki tvg-name] =\> [yangi tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanalning xaritasi ID yo\'naltirish uchun ID</string>

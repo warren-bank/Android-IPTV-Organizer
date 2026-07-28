@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Standart idxal URL Dəyərlər şablonlar deyil</string>
   <string name="pref_default_m3u_url_title">Standart M3U Pleylist URL</string>
   <string name="pref_default_m3u_url_summary">Başlanğıc dəyəri daxil edin \"İdxal M3U Pleylist URL\" dialoq.</string>
+  <string name="pref_append_m3u_playlists_title">Əlavə et M3U Pleylistlər</string>
+  <string name="pref_append_m3u_playlists_summary_on" >İdxal olunmuş məlumat mövcud siyahıya əlavə edilir M3U kanallar</string>
+  <string name="pref_append_m3u_playlists_summary_off">İdxal olunan məlumat mövcud siyahını əvəz edir M3U kanallar</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kanal adından kanala xəritə ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Hər sətrdə bir dəyər. Format: \"[ad və ya tvg-name] =\> [yeni tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanalın xəritəsi ID istiqamətləndirmək ID</string>

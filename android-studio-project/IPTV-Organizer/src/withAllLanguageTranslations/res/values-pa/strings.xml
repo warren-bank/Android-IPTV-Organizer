@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">ਡਿਫੌਲਟ ਆਯਾਤ URL ਮੁੱਲ ਟੈਂਪਲੇਟ ਨਹੀਂ ਹੁੰਦੇ।</string>
   <string name="pref_default_m3u_url_title">ਮੂਲ M3U ਪਲੇਲਿਸਟ URL</string>
   <string name="pref_default_m3u_url_summary">ਵਿੱਚ ਸ਼ੁਰੂਆਤੀ ਮੁੱਲ \"ਆਯਾਤ M3U ਪਲੇਲਿਸਟ URL\" ਗੱਲਬਾਤ.</string>
+  <string name="pref_append_m3u_playlists_title">ਜੋੜੋ M3U ਪਲੇਲਿਸਟਾਂ</string>
+  <string name="pref_append_m3u_playlists_summary_on" >ਆਯਾਤ ਕੀਤਾ ਡਾਟਾ ਮੌਜੂਦਾ ਸੂਚੀ ਵਿੱਚ ਸ਼ਾਮਲ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। M3U ਚੈਨਲ</string>
+  <string name="pref_append_m3u_playlists_summary_off">ਆਯਾਤ ਕੀਤਾ ਡੇਟਾ ਮੌਜੂਦਾ ਸੂਚੀ ਨੂੰ ਬਦਲ ਦਿੰਦਾ ਹੈ। M3U ਚੈਨਲ</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ਚੈਨਲ ਦੇ ਨਾਮ ਤੋਂ ਚੈਨਲ ਤੱਕ ਨਕਸ਼ਾ ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਫਾਰਮੈਟ: \"[ਨਾਮ ਜਾਂ tvg-name] =\> [ਨਵਾਂ tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">ਚੈਨਲ ਤੋਂ ਨਕਸ਼ਾ ID ਨਾਲੀ ਲਗਾਉਣ ਲਈ ID</string>

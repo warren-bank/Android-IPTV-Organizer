@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Sjálfgefin innflutningur URL gildi eru ekki sniðmát</string>
   <string name="pref_default_m3u_url_title">Sjálfgefið M3U Spilunarlisti URL</string>
   <string name="pref_default_m3u_url_summary">Upphafleg gildi í \"Innflutningur M3U Spilunarlisti URL\" Skilaboðargluggi.</string>
+  <string name="pref_append_m3u_playlists_title">Bæta við M3U Spilunarlistar</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Innflutt gögn eru bætt við núverandi lista yfir M3U rásir</string>
+  <string name="pref_append_m3u_playlists_summary_off">Innflutt gögn skipta út núverandi lista yfir M3U rásir</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kortleggja nafn rásarinnar til rásarinnar ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Eitt gildi á línu. Sniðmát: \"[nafn eða tvg-name] =\> [nýtt tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kort úr rás ID að beina ID</string>

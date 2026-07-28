@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Importera bu ñëw URL Njariñ yi duñu ay model.</string>
   <string name="pref_default_m3u_url_title">Li ñu tëral M3U Limu woy yi URL</string>
   <string name="pref_default_m3u_url_summary">Njëlbéenu njëg ci biir \"Duggal M3U Limu woy yi URL\" Waxtaan.</string>
+  <string name="pref_append_m3u_playlists_title">Yokk M3U Limu woy yi</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Xibaar yi ñu importé dañu leen yokk ci lim bi fi nekkoon. M3U Sànn yi</string>
+  <string name="pref_append_m3u_playlists_summary_off">Xibaar yu ñu duggal yi dañuy wuutu lim bi fi nekkoon. M3U Sànn yi</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Jokkaleel turu chaîne bi ak chaîne bi. ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Benn tolluwa ci rëdd bu nekk. Forma: \"[tur walla tvg-name] =\> [lu bees tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart bu jóge ci channel bi ID ngir joxe yoon ID</string>

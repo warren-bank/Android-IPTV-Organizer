@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Shigo ta tsohuwa URL Ƙimomi ba samfura ba ne</string>
   <string name="pref_default_m3u_url_title">Zaɓi na asali M3U Jerin waƙoƙi URL</string>
   <string name="pref_default_m3u_url_summary">Kimar farko a cikin \"Shigo M3U Jerin waƙoƙi URL\" tattaunawa.</string>
+  <string name="pref_append_m3u_playlists_title">Ƙara M3U Jerin waƙoƙi</string>
+  <string name="pref_append_m3u_playlists_summary_on" >An ƙara bayanan da aka shigo da su cikin jerin da ke akwai na M3U tashoshi</string>
+  <string name="pref_append_m3u_playlists_summary_off">Bayanan da aka shigo da su sun maye gurbin jerin da ke akwai na M3U tashoshi</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Jadawalin sunan tashar zuwa tashar ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Ɗaya ƙima a kowace layi. Tsari: \"[suna ko tvg-name] =\> [sabon tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Taswira daga tashar ID don tura ID</string>

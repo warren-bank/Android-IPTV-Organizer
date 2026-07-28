@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Importazzjoni default URL Il-valuri mhumiex mudelli</string>
   <string name="pref_default_m3u_url_title">Default M3U Lista tal-kanzunetti URL</string>
   <string name="pref_default_m3u_url_summary">Valur inizjali f\' \"Importazzjoni M3U Lista tal-kanzunetti URL\" djalogu.</string>
+  <string name="pref_append_m3u_playlists_title">Żid M3U Playlists</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Id-dejta importata tiżdied mal-lista eżistenti ta\' M3U kanali</string>
+  <string name="pref_append_m3u_playlists_summary_off">Id-dejta importata tissostitwixxi l-lista eżistenti ta\' M3U kanali</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Mappa mis-isem tal-kanal għall-kanal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Valur wieħed għal kull linja. Format: \"[isem jew tvg-name] =\> [ġdid tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mappa mill-kanal ID biex tikkana ID</string>

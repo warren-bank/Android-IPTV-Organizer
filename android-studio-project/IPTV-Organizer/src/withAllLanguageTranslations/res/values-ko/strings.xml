@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">기본 가져오기 URL 값은 템플릿이 아닙니다</string>
   <string name="pref_default_m3u_url_title">기본값 M3U 재생 목록 URL</string>
   <string name="pref_default_m3u_url_summary">초기값은 \"가져오기 M3U 재생 목록 URL\" 대화.</string>
+  <string name="pref_append_m3u_playlists_title">추가 M3U 재생 목록</string>
+  <string name="pref_append_m3u_playlists_summary_on" >가져온 데이터는 기존 목록에 추가됩니다. M3U 채널</string>
+  <string name="pref_append_m3u_playlists_summary_off">가져온 데이터가 기존 목록을 대체합니다. M3U 채널</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">채널 이름과 채널 간의 매핑 ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">한 줄에 하나의 값을 입력하십시오. 형식: \"[이름 또는 tvg-name] =\> [새 tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">채널의 지도 ID ~로 유도하기 위해 ID</string>

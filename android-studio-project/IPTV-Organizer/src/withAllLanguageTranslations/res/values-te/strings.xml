@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">డిఫాల్ట్ దిగుమతి URL విలువలు టెంప్లేట్లు కావు</string>
   <string name="pref_default_m3u_url_title">ప్రామాణికం M3U ప్లేలిస్ట్ URL</string>
   <string name="pref_default_m3u_url_summary">లో ప్రారంభ విలువ \"దిగుమతి M3U ప్లేలిస్ట్ URL\" సంభాషణ.</string>
+  <string name="pref_append_m3u_playlists_title">జోడించు M3U ప్లేలిస్ట్‌లు</string>
+  <string name="pref_append_m3u_playlists_summary_on" >దిగుమతి చేసుకున్న డేటా, ఇప్పటికే ఉన్న జాబితాకు జోడించబడుతుంది M3U ఛానెళ్ళు</string>
+  <string name="pref_append_m3u_playlists_summary_off">దిగుమతి చేసుకున్న డేటా ఇప్పటికే ఉన్న జాబితాను భర్తీ చేస్తుంది M3U ఛానెళ్ళు</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">ఛానెల్ పేరు నుండి ఛానెల్‌కు మ్యాప్ ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">ప్రతి లైన్‌కు ఒక విలువ. ఫార్మాట్: \"[పేరు లేదా tvg-name] =\> [కొత్త tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">ఛానెల్ నుండి పటం ID మళ్లించడానికి ID</string>

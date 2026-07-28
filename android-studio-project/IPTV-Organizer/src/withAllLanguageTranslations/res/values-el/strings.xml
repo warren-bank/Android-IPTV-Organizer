@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Προεπιλεγμένη εισαγωγή URL οι τιμές δεν είναι πρότυπα</string>
   <string name="pref_default_m3u_url_title">Προεπιλογή M3U Λίστα αναπαραγωγής URL</string>
   <string name="pref_default_m3u_url_summary">Αρχική τιμή σε \"Εισαγωγή M3U Λίστα αναπαραγωγής URL\" διάλογος.</string>
+  <string name="pref_append_m3u_playlists_title">Προσθήκη M3U Λίστες αναπαραγωγής</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Τα εισαγόμενα δεδομένα προστίθενται στον υπάρχοντα κατάλογο των M3U κανάλια</string>
+  <string name="pref_append_m3u_playlists_summary_off">Τα εισαγόμενα δεδομένα αντικαθιστούν την υπάρχουσα λίστα των M3U κανάλια</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Αντιστοίχιση από το όνομα καναλιού προς το κανάλι ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Μία τιμή ανά γραμμή. Μορφή: \"[όνομα ή tvg-name] =\> [νέο tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Χάρτης από το κανάλι ID προς το κανάλι ID</string>

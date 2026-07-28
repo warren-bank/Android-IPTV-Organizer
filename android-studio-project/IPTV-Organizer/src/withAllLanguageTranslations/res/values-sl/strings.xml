@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Uvoz po privzetih nastavitvah URL vrednosti niso predloge</string>
   <string name="pref_default_m3u_url_title">Privzeto M3U Seznam predvajanja URL</string>
   <string name="pref_default_m3u_url_summary">Začetna vrednost v \"Uvoz M3U Seznam predvajanja URL\" pogovor.</string>
+  <string name="pref_append_m3u_playlists_title">Dodaj M3U Seznami predvajanja</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Uvoženi podatki se dodajo na obstoječi seznam M3U kanali</string>
+  <string name="pref_append_m3u_playlists_summary_off">Uvoženi podatki nadomestijo obstoječi seznam M3U kanali</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Povezava med imenom kanala in kanalom ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Ena vrednost na vrstico. Oblika: \"[ime ali tvg-name] =\> [novo tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Zemljevid s kanala ID v kanal ID</string>

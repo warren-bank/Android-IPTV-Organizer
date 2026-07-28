@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">ნაგულისხმევი იმპორტი URL ღირებულებები არ არის შაბლონები</string>
   <string name="pref_default_m3u_url_title">ნაგულისხმევი M3U პლეისლიsti URL</string>
   <string name="pref_default_m3u_url_summary">საწყისი ღირებულება \"იმპორტი M3U პლეისლიsti URL\" დიალოგი.</string>
+  <string name="pref_append_m3u_playlists_title">დამატება M3U პლეისლისტები</string>
+  <string name="pref_append_m3u_playlists_summary_on" >იმპორტირებული მონაცემები დაემატება არსებულ სიას M3U არხები</string>
+  <string name="pref_append_m3u_playlists_summary_off">იმპორტირებული მონაცემები ცვლის არსებულ სიას M3U არხები</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">არხის სახელის რუკა არხამდე ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">ერთი მნიშვნელობა თითო სტრიქონში. ფორმატი: \"[სახელი ან tvg-name] =\> [ახალი tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">რუკა არხიდან ID მიმართულება მისცეს ID</string>

@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Importēšana pēc noklusējuma URL vērtības nav veidnes</string>
   <string name="pref_default_m3u_url_title">Noklusējums M3U Atskaņošanas saraksts URL</string>
   <string name="pref_default_m3u_url_summary">Sākotnējā vērtība \"Importēt M3U Atskaņošanas saraksts URL\" dialogs.</string>
+  <string name="pref_append_m3u_playlists_title">Pievienot M3U Atskaņošanas saraksti</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Importētie dati tiek pievienoti esošajam sarakstam M3U kanāli</string>
+  <string name="pref_append_m3u_playlists_summary_off">Importētie dati aizstāj esošo sarakstu ar M3U kanāli</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Saistība starp kanāla nosaukumu un kanālu ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Viena vērtība katrā rindā. Formāts: \"[nosaukums vai tvg-name] =\> [jauns tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Karte no kanāla ID uz kanālu ID</string>

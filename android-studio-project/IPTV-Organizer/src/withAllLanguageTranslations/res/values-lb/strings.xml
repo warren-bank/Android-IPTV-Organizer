@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Standardimport URL Wäerter sinn keng Virlagen</string>
   <string name="pref_default_m3u_url_title">Standard M3U Liddelëscht URL</string>
   <string name="pref_default_m3u_url_summary">Initialwäert an \"Importéieren M3U Liddelëscht URL\" Dialog.</string>
+  <string name="pref_append_m3u_playlists_title">Bäifüügen M3U Playlëschten</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Importéiert Donnéeën ginn der bestehender Lëscht vu M3U Kanäl</string>
+  <string name="pref_append_m3u_playlists_summary_off">Importéiert Donnéeën ersat d\'bestoend Lëscht vun M3U Kanäl</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Kaart vum Kanalnumm op de Kanal ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Eng Wäert pro Zeil. Format: \"[Numm oder tvg-name] =\> [nei tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart vum Kanal ID ze kanaliséieren ID</string>

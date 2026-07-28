@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Ku nghenisa loku tolovelekeke URL Tinhlayo a hi swikombiso</string>
   <string name="pref_default_m3u_url_title">Lexi tolovelekeke M3U Nxaxamelo wa tinsimu URL</string>
   <string name="pref_default_m3u_url_summary">Ntsengo wo sungula endzeni \"Nghenisa M3U Nxaxamelo wa tinsimu URL\" bulo.</string>
+  <string name="pref_append_m3u_playlists_title">Engetela M3U Nxaxamelo wa tinsimu</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Datha leyi nghenisiweke yi engeteriwa eka nxaxamelo lowu seke wu ri kona wa M3U Switichi</string>
+  <string name="pref_append_m3u_playlists_summary_off">Datha leyi nghenisiweke yi siva nxaxamelo lowu nga kona wa M3U Switichi</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Hundzuluxa vito ra xitichi eka xitichi. ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[vito kumbe tvg-name] =\> [lentshwa tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mepe kusuka eka xitichi ID ku kongomisa ID</string>

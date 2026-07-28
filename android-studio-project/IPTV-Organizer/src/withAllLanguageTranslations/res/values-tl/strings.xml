@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Default na pag-import URL Ang mga halaga ay hindi mga template.</string>
   <string name="pref_default_m3u_url_title">Default M3U Playlist URL</string>
   <string name="pref_default_m3u_url_summary">Paunang halaga sa \"I-import M3U Playlist URL\" dayalogo.</string>
+  <string name="pref_append_m3u_playlists_title">Magdagdag M3U Mga listahan ng kanta</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Ang na-import na datos ay idinadagdag sa umiiral na listahan ng M3U mga daluyan</string>
+  <string name="pref_append_m3u_playlists_summary_off">Pinapalitan ng na-import na datos ang umiiral na listahan ng M3U mga daluyan</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">I-map ang pangalan ng channel sa channel ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Isang halaga bawat linya. Format: \"[pangalan o tvg-name] =\> [bago tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa mula sa channel ID upang mag-channel ID</string>

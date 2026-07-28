@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">Impor baku URL Nilai-nilai ora minangka cithakan</string>
   <string name="pref_default_m3u_url_title">Standar M3U Dhaptar lagu URL</string>
   <string name="pref_default_m3u_url_summary">Nilai awal ing \"Impor M3U Dhaptar lagu URL\" obrolan.</string>
+  <string name="pref_append_m3u_playlists_title">Nambahake M3U Dhaptar lagu</string>
+  <string name="pref_append_m3u_playlists_summary_on" >Data sing diimpor ditambahake menyang dhaptar sing wis ana M3U saluran</string>
+  <string name="pref_append_m3u_playlists_summary_off">Data sing diimpor ngganti dhaptar sing ana M3U saluran</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">Peta saka jeneng saluran menyang saluran ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">Siji nilai saben baris. Format: \"[jeneng utawa tvg-name] =\> [anyar tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">Peta saka saluran ID kanggo ngalirake ID</string>

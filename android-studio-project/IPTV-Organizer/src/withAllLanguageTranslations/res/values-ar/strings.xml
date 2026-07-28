@@ -30,6 +30,9 @@
   <string name="pref_apply_default_url_templates_summary_off">الاستيراد الافتراضي URL القيم ليست قوالب</string>
   <string name="pref_default_m3u_url_title">الافتراضي M3U قائمة التشغيل URL</string>
   <string name="pref_default_m3u_url_summary">القيمة الأولية في \"استيراد M3U قائمة التشغيل URL\" حوار.</string>
+  <string name="pref_append_m3u_playlists_title">إضافة M3U قوائم التشغيل</string>
+  <string name="pref_append_m3u_playlists_summary_on" >تُضاف البيانات المستوردة إلى القائمة الحالية لـ M3U القنوات</string>
+  <string name="pref_append_m3u_playlists_summary_off">تحل البيانات المستوردة محل القائمة الحالية لـ M3U القنوات</string>
   <string name="pref_m3u_channels_mapping_name_to_id_title">خريطة تربط بين اسم القناة والقناة نفسها ID</string>
   <string name="pref_m3u_channels_mapping_name_to_id_summary">قيمة واحدة في كل سطر. التنسيق: \"[الاسم أو tvg-name] =\> [جديد tvg-id]\"</string>
   <string name="pref_m3u_channels_mapping_id_to_id_title">خريطة من القناة ID إلى القناة ID</string>
