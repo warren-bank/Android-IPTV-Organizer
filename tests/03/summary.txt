@@ -1,0 +1,52 @@
+purpose:
+========
+test the "+*" prefix to match substrings in setting:
+  05. Filter by channel name whitelist
+
+================
+10. channels.m3u
+================
+
+| channel name        |
+|---------------------|
+| Supernatural S01E01 |
+| Supernatural S01E02 |
+| Supernatural S01E03 |
+| US: CNN             |
+| CA: CNN             |
+| CNN International   |
+| ESPN                |
+| ESPN+               |
+| ESPN2               |
+| ESPN3               |
+| ESPNU               |
+| CHANNEL 1           |
+| CHANNEL 2           |
+| CHANNEL 3           |
+| CHANNEL 4           |
+| CHANNEL 5           |
+| CHANNEL 6           |
+
+====================================
+05. Filter by channel name whitelist
+====================================
+
+| channel name        | save |
+|---------------------|------|
+| Supernatural S01E01 | Y    |
+| Supernatural S01E02 | Y    |
+| Supernatural S01E03 | Y    |
+| US: CNN             | Y    |
+| CA: CNN             | Y    |
+| CNN International   | Y    |
+| ESPN                | Y    |
+| ESPN+               | Y    |
+| ESPN2               | Y    |
+| ESPN3               | Y    |
+| ESPNU               | Y    |
+| CHANNEL 1           | Y    |
+| CHANNEL 2           | Y    |
+| CHANNEL 3           | N    |
+| CHANNEL 4           | N    |
+| CHANNEL 5           | N    |
+| CHANNEL 6           | N    |

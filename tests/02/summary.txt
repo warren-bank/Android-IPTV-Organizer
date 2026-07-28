@@ -1,0 +1,77 @@
+================
+10. channels.m3u
+================
+
+| channel name | tvg-name | channel ID |
+|--------------|----------|------------|
+| CHANNEL 1    |          |            |
+| CHANNEL 2    | Ch2      |            |
+| CHANNEL 3    |          | ch3.us     |
+| CHANNEL 4    | Foo4     |            |
+| CHANNEL 5    |          | foo5.us    |
+| CHANNEL 6    |          |            |
+
+=======================================
+03. Map from channel name to channel ID
+=======================================
+
+| channel name | tvg-name | channel ID |
+|--------------|----------|------------|
+| CHANNEL 1    |          |            |
+| CHANNEL 2    | Ch2      |            |
+| CHANNEL 3    |          | ch3.us     |
+| CHANNEL 4    | Foo4     | ch4.us     |
+| CHANNEL 5    |          | foo5.us    |
+| CHANNEL 6    |          |            |
+
+=====================================
+04. Map from channel ID to channel ID
+=====================================
+
+| channel name | tvg-name | channel ID |
+|--------------|----------|------------|
+| CHANNEL 1    |          |            |
+| CHANNEL 2    | Ch2      |            |
+| CHANNEL 3    |          | ch3.us     |
+| CHANNEL 4    | Foo4     | ch4.us     |
+| CHANNEL 5    |          | ch5.us     |
+| CHANNEL 6    |          |            |
+
+====================================
+05. Filter by channel name whitelist
+====================================
+
+| channel name | tvg-name | channel ID | save |
+|--------------|----------|------------|------|
+| CHANNEL 1    |          |            | Y    |
+| CHANNEL 2    | Ch2      |            | Y    |
+| CHANNEL 3    |          | ch3.us     | N    |
+| CHANNEL 4    | Foo4     | ch4.us     | N    |
+| CHANNEL 5    |          | ch5.us     | N    |
+| CHANNEL 6    |          |            | N    |
+
+==================================
+06. Filter by channel ID whitelist
+==================================
+
+| channel name | tvg-name | channel ID | save |
+|--------------|----------|------------|------|
+| CHANNEL 1    |          |            | N    |
+| CHANNEL 2    | Ch2      |            | N    |
+| CHANNEL 3    |          | ch3.us     | Y    |
+| CHANNEL 4    | Foo4     | ch4.us     | Y    |
+| CHANNEL 5    |          | ch5.us     | Y    |
+| CHANNEL 6    |          |            | N    |
+
+=====================
+final combined result
+=====================
+
+| channel name | tvg-name | channel ID | save |
+|--------------|----------|------------|------|
+| CHANNEL 1    |          |            | Y    |
+| CHANNEL 2    | Ch2      |            | Y    |
+| CHANNEL 3    |          | ch3.us     | Y    |
+| CHANNEL 4    | Foo4     | ch4.us     | Y    |
+| CHANNEL 5    |          | ch5.us     | Y    |
+| CHANNEL 6    |          |            | N    |

@@ -1,0 +1,64 @@
+================
+10. channels.m3u
+================
+
+| channel name | channel ID |
+|--------------|------------|
+| CHANNEL 1    |
+| CHANNEL 2    |
+| CHANNEL 3    |
+| CHANNEL 4    |
+| CHANNEL 5    |
+| CHANNEL 6    |
+
+=======================================
+03. Map from channel name to channel ID
+=======================================
+
+| channel name | channel ID |
+|--------------|------------|
+| CHANNEL 1    | ch1.us     |
+| CHANNEL 2    | ch2.us     |
+| CHANNEL 3    | ch3.us     |
+| CHANNEL 4    | ch4.us     |
+| CHANNEL 5    | ch5.us     |
+| CHANNEL 6    | ch6.us     |
+
+====================================
+05. Filter by channel name whitelist
+====================================
+
+| channel name | channel ID | save |
+|--------------|------------|------|
+| CHANNEL 1    | ch1.us     | Y    |
+| CHANNEL 2    | ch2.us     | Y    |
+| CHANNEL 3    | ch3.us     | N    |
+| CHANNEL 4    | ch4.us     | N    |
+| CHANNEL 5    | ch5.us     | N    |
+| CHANNEL 6    | ch6.us     | N    |
+
+==================================
+06. Filter by channel ID whitelist
+==================================
+
+| channel name | channel ID | save |
+|--------------|------------|------|
+| CHANNEL 1    | ch1.us     | N    |
+| CHANNEL 2    | ch2.us     | N    |
+| CHANNEL 3    | ch3.us     | Y    |
+| CHANNEL 4    | ch4.us     | Y    |
+| CHANNEL 5    | ch5.us     | N    |
+| CHANNEL 6    | ch6.us     | N    |
+
+=====================
+final combined result
+=====================
+
+| channel name | channel ID | save |
+|--------------|------------|------|
+| CHANNEL 1    | ch1.us     | Y    |
+| CHANNEL 2    | ch2.us     | Y    |
+| CHANNEL 3    | ch3.us     | Y    |
+| CHANNEL 4    | ch4.us     | Y    |
+| CHANNEL 5    | ch5.us     | N    |
+| CHANNEL 6    | ch6.us     | N    |

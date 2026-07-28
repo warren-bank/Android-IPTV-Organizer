@@ -1,5 +1,6 @@
 package com.github.warren_bank.iptv_organizer.data.parser;
 
+import com.github.warren_bank.iptv_organizer.data.filter.M3uFilter;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
 
 import java.io.BufferedReader;
@@ -13,6 +14,7 @@ public class M3uParser {
   public static List<ChannelListItem> parseM3u(InputStream inputStream, int firstPosition) throws Exception {
     ArrayList<ChannelListItem> channels = new ArrayList<ChannelListItem>();
     BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+    M3uFilter m3uFilter = new M3uFilter();
     int position = firstPosition;
     String currentName = null;
     String currentTvgId = null;
@@ -32,8 +34,13 @@ public class M3uParser {
       } else if (!line.isEmpty() && !line.startsWith("#")) {
         // media URL
         if (currentName != null) {
-          channels.add(new ChannelListItem(position, currentName, line, currentTvgId, currentTvgName));
-          position += 1;
+          ChannelListItem channel = new ChannelListItem(position, currentName, line, currentTvgId, currentTvgName);
+
+          if (m3uFilter.passesM3uFilter(channel)) {
+            channels.add(channel);
+            position += 1;
+          }
+
           // Reset
           currentName = null;
           currentTvgId = null;

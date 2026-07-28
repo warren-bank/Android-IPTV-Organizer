@@ -1,5 +1,7 @@
 package com.github.warren_bank.iptv_organizer.data.parser;
 
+import com.github.warren_bank.iptv_organizer.data.filter.XmlTvFilter;
+
 import se.kmdev.tvepg.epg.domain.EPGChannel;
 import se.kmdev.tvepg.epg.domain.EPGEvent;
 
@@ -21,6 +23,7 @@ public class XmlTvParser {
   public static Map<EPGChannel, List<EPGEvent>> parseXmlTv(InputStream inputStream) throws Exception {
     Map<String, EPGChannel> channelMap = new LinkedHashMap<>();
     Map<EPGChannel, List<EPGEvent>> parsedData = new LinkedHashMap<>();
+    XmlTvFilter xmlTvFilter = new XmlTvFilter();
      
     XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
     XmlPullParser parser = factory.newPullParser();
@@ -73,7 +76,11 @@ public class XmlTvParser {
             currentChannelId = null;
             currentTitle = null;
             currentDescription = null;
-          } else if ("channel".equals(tagName)) {
+          } else if ("channel".equals(tagName) && currentChannel != null) {
+            if (!xmlTvFilter.passesXmlTvFilter(currentChannel)) {
+              String id = currentChannel.getChannelID();
+              channelMap.remove(id);
+            }
             currentChannel = null;
           }
           break;

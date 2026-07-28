@@ -1,0 +1,31 @@
+purpose:
+========
+test the setting:
+  2. Append M3U Playlists
+
+===============
+channels-12.m3u
+===============
+
+| channel name |
+|--------------|
+| CHANNEL 1    |
+| CHANNEL 2    |
+
+===============
+channels-34.m3u
+===============
+
+| channel name |
+|--------------|
+| CHANNEL 3    |
+| CHANNEL 4    |
+
+===============
+channels-56.m3u
+===============
+
+| channel name |
+|--------------|
+| CHANNEL 5    |
+| CHANNEL 6    |
