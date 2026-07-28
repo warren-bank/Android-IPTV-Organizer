@@ -293,6 +293,53 @@ __Update Settings__
      1. name = `EPG_APPLY_IMPORT_FILTER`
         * type = `Boolean`
         * setting = _EPG Channels &gt; Apply Import Filter_
+2. example: how to update _IPTV-Organizer_ settings on a remote device that is also running [_ExoAirPlayer_](https://github.com/warren-bank/Android-ExoPlayer-AirPlay-Receiver)
+   ```bash
+   # network address for running instance of 'ExoPlayer AirPlay Receiver'
+   airplay_ip='192.168.1.100:8192'
+   
+   post_body='
+     package: com.github.warren_bank.iptv_organizer
+     class: com.github.warren_bank.iptv_organizer.ui.SettingsActivity
+     extra-SETTINGS_AUTO_SAVE: (bool) true
+     extra-SETTINGS_AUTO_CLOSE: (bool) true
+     extra-SETTINGS_APPLY_STATIC_STRINGS: (bool) true
+     extra-M3U_DEFAULT_PLAYLIST_URL: %4$s/playlist/%1$s/%2$s/m3u_plus?output=hls
+     extra-M3U_APPEND_PLAYLISTS: (bool) false
+     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN            => cspan.us
+     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN 2          => cspan2.us
+     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN 3          => cspan3.us
+     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA CNN INTERNATIONAL => cnninternational.us
+     extra-M3U_MAP_CHANNEL_ID_TO_ID: cspan                   => cspan.us
+     extra-M3U_MAP_CHANNEL_ID_TO_ID: cspan2                  => cspan2.us
+     extra-M3U_MAP_CHANNEL_ID_TO_ID: cspan3                  => cspan3.us
+     extra-M3U_MAP_CHANNEL_ID_TO_ID: cnninternational        => cnninternational.us
+     extra-M3U_CHANNEL_NAME_WHITELIST: USA C-SPAN
+     extra-M3U_CHANNEL_NAME_WHITELIST: USA C-SPAN 2
+     extra-M3U_CHANNEL_NAME_WHITELIST: USA C-SPAN 3
+     extra-M3U_CHANNEL_NAME_WHITELIST: USA CNN INTERNATIONAL
+     extra-M3U_CHANNEL_NAME_WHITELIST: +*Supernatural S
+     extra-M3U_CHANNEL_NAME_WHITELIST: +*CNN
+     extra-M3U_CHANNEL_NAME_WHITELIST: +*ESPN
+     extra-M3U_CHANNEL_ID_WHITELIST: cspan.us
+     extra-M3U_CHANNEL_ID_WHITELIST: cspan2.us
+     extra-M3U_CHANNEL_ID_WHITELIST: cspan3.us
+     extra-M3U_CHANNEL_ID_WHITELIST: cnninternational.us
+     extra-M3U_CHANNEL_NAME_BLACKLIST: (String[]) null
+     extra-M3U_CHANNEL_ID_BLACKLIST: (String[]) null
+     extra-M3U_MEDIA_URL_STATIC_STRINGS: USERNAME
+     extra-M3U_MEDIA_URL_STATIC_STRINGS: PASSWORD
+     extra-M3U_MEDIA_URL_STATIC_STRINGS: http://kytv.xyz:80
+     extra-M3U_MEDIA_URL_STATIC_STRINGS: http://kytv.xyz:25461
+     extra-EPG_DEFAULT_XMLTV_URL: %3$s/xmltv.php?username=%1$s&password=%2$s
+     extra-EPG_APPLY_IMPORT_FILTER: (bool) true
+   '
+   
+   curl --silent -X POST \
+     -H "Content-Type: text/parameters" \
+     --data-binary "$post_body" \
+     "http://${airplay_ip}/start-activity"
+   ```
 
 #### Legal:
 
