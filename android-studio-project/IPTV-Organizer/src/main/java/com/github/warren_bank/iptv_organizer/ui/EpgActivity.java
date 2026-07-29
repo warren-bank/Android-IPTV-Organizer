@@ -5,6 +5,7 @@ import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.model.EPGDataImpl;
 import com.github.warren_bank.iptv_organizer.ui.ChannelsActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
+import com.github.warren_bank.iptv_organizer.ui.dialog.ImportProgressDialog;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
 
@@ -68,11 +69,13 @@ public class EpgActivity extends AppCompatActivity {
       Uri data = intent.getData();
       if (data == null) return;
 
-      String urlText = data.toString().trim();
+      final String urlText = data.toString().trim();
       if (urlText.isEmpty()) return;
 
+      final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
+
       // Do network on a background thread
-      new Thread(() -> openUrlAsStream(urlText)).start();
+      new Thread(() -> openUrlAsStream(urlText, listener)).start();
     } catch (Exception ignored) {}
   }
 
@@ -172,18 +175,20 @@ public class EpgActivity extends AppCompatActivity {
         .setPositiveButton(R.string.epg_dialog_import_xmltv_url_button_positive, new DialogInterface.OnClickListener() {
           @Override
           public void onClick(DialogInterface dialog, int which) {
-            String urlText = input.getText().toString().trim();
+            final String urlText = input.getText().toString().trim();
             if (urlText.isEmpty()) return;
 
+            final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
+
             // Do network on a background thread
-            new Thread(() -> openUrlAsStream(urlText)).start();
+            new Thread(() -> openUrlAsStream(urlText, listener)).start();
           }
         })
         .setNegativeButton(R.string.epg_dialog_import_xmltv_url_button_negative, null)
         .show();
   }
 
-  private void openUrlAsStream(String urlText) {
+  private void openUrlAsStream(String urlText, ImportProgressDialog listener) {
     HttpURLConnection conn = null;
     InputStream inputStream = null;
 
@@ -200,7 +205,7 @@ public class EpgActivity extends AppCompatActivity {
       }
 
       inputStream = conn.getInputStream();
-      importXmlTvFromStream(inputStream);
+      importXmlTvFromStream(inputStream, listener);
     } catch (Exception e) {
       Log.e(Constants.LOG_TAG, e.getMessage());
     } finally {
@@ -208,6 +213,7 @@ public class EpgActivity extends AppCompatActivity {
         if (inputStream != null) inputStream.close();
       } catch (Exception ignored) {}
       if (conn != null) conn.disconnect();
+      listener.dismiss();
     }
   }
 
@@ -235,26 +241,29 @@ public class EpgActivity extends AppCompatActivity {
     super.onActivityResult(requestCode, resultCode, data);
 
     if ((requestCode == FILE_CHOOSER_REQUEST_CODE) && (resultCode == RESULT_OK)) {
-      Uri uri = data.getData();
+      final Uri uri = data.getData();
       if (uri == null) return;
 
+      final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
+
       // Read file on a background thread
-      new Thread(() -> openFileAsStream(uri)).start();
+      new Thread(() -> openFileAsStream(uri, listener)).start();
     }
   }
 
-  private void openFileAsStream(Uri uri) {
+  private void openFileAsStream(Uri uri, ImportProgressDialog listener) {
     InputStream inputStream = null;
 
     try {
       inputStream = getContentResolver().openInputStream(uri);
-      importXmlTvFromStream(inputStream);
+      importXmlTvFromStream(inputStream, listener);
     } catch (Exception e) {
       Log.e(Constants.LOG_TAG, e.getMessage());
     } finally {
       try {
         if (inputStream != null) inputStream.close();
       } catch (Exception ignored) {}
+      listener.dismiss();
     }
   }
 
@@ -262,9 +271,9 @@ public class EpgActivity extends AppCompatActivity {
   // internal:
   // ---------------------------------------------------------------------------------------------
 
-  private void importXmlTvFromStream(InputStream inputStream) throws Exception {
+  private void importXmlTvFromStream(InputStream inputStream, ImportProgressDialog listener) throws Exception {
     final EPGDataImpl newEpgData = new EPGDataImpl(
-      ImportUtils.importXmlTv(inputStream)
+      ImportUtils.importXmlTv(inputStream, listener)
     );
 
     runOnUiThread(new Runnable() {

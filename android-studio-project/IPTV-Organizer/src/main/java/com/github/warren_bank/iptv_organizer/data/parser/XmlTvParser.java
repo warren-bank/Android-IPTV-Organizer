@@ -1,6 +1,7 @@
 package com.github.warren_bank.iptv_organizer.data.parser;
 
 import com.github.warren_bank.iptv_organizer.data.filter.XmlTvFilter;
+import com.github.warren_bank.iptv_organizer.data.parser.ParserProgressListener;
 
 import se.kmdev.tvepg.epg.domain.EPGChannel;
 import se.kmdev.tvepg.epg.domain.EPGEvent;
@@ -20,7 +21,7 @@ public class XmlTvParser {
   // Standard XMLTV date format: 20260716171500 +0000
   private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss Z", Locale.US);
 
-  public static Map<EPGChannel, List<EPGEvent>> parseXmlTv(InputStream inputStream) throws Exception {
+  public static Map<EPGChannel, List<EPGEvent>> parseXmlTv(InputStream inputStream, ParserProgressListener listener) throws Exception {
     Map<String, EPGChannel> channelMap = new LinkedHashMap<>();
     Map<EPGChannel, List<EPGEvent>> parsedData = new LinkedHashMap<>();
     XmlTvFilter xmlTvFilter = new XmlTvFilter();
@@ -77,6 +78,8 @@ public class XmlTvParser {
             currentTitle = null;
             currentDescription = null;
           } else if ("channel".equals(tagName) && currentChannel != null) {
+            if (listener != null) listener.onData(currentChannel.getName());
+
             if (!xmlTvFilter.passesXmlTvFilter(currentChannel)) {
               String id = currentChannel.getChannelID();
               channelMap.remove(id);
