@@ -1,0 +1,3 @@
+purpose:
+========
+test M3U parser with a few more difficult M3U-Plus channel entries
