@@ -3,6 +3,7 @@ package com.github.warren_bank.iptv_organizer.database;
 import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
 import com.github.warren_bank.iptv_organizer.data.model.EPGDataImpl;
+import com.github.warren_bank.iptv_organizer.data.parser.ParserProgressListener;
 
 import se.kmdev.tvepg.epg.domain.EPGChannel;
 import se.kmdev.tvepg.epg.domain.EPGEvent;
@@ -170,7 +171,7 @@ public class DbGateway {
   // write models to DB:
   // ---------------------------------------------------------------------------
 
-  public boolean saveM3u(List<ChannelListItem> channels, boolean appendList) {
+  public boolean saveM3u(List<ChannelListItem> channels, boolean appendList, ParserProgressListener listener) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -187,6 +188,8 @@ public class DbGateway {
       if ((channels != null) && !channels.isEmpty()) {
         for (ChannelListItem channel : channels) {
           if (channel == null) continue;
+
+          if (listener != null) listener.onData(channel.name);
 
           cvals = new ContentValues();
           cvals.put("position",  channel.position);
@@ -212,15 +215,15 @@ public class DbGateway {
     return result;
   }
 
-  public boolean saveEpgData(EPGDataImpl epgData) {
+  public boolean saveEpgData(EPGDataImpl epgData, ParserProgressListener listener) {
     Map<EPGChannel, List<EPGEvent>> data = (epgData != null)
       ? epgData.getData()
       : null;
 
-    return saveEpg(data);
+    return saveEpg(data, listener);
   }
 
-  public boolean saveEpg(Map<EPGChannel, List<EPGEvent>> data) {
+  public boolean saveEpg(Map<EPGChannel, List<EPGEvent>> data, ParserProgressListener listener) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -240,6 +243,8 @@ public class DbGateway {
         for (Map.Entry<EPGChannel, List<EPGEvent>> entry : data.entrySet()) {
           EPGChannel     channel  = (EPGChannel)     entry.getKey();
           List<EPGEvent> programs = (List<EPGEvent>) entry.getValue();
+
+          if (listener != null) listener.onData(channel.getName());
 
           cvals = new ContentValues();
           cvals.put("id",       channel.getChannelID());

@@ -12,7 +12,16 @@ public class ImportProgressDialog implements ParserProgressListener {
 
   private Activity activity;
   private ProgressDialog dialog;
+  private CharSequence title;
   private CharSequence message;
+
+  private Runnable changeTitle = new Runnable() {
+    public void run() {
+      if (dialog == null) return;
+
+      dialog.setTitle(title);
+    }
+  };
 
   private Runnable changeMessage = new Runnable() {
     public void run() {
@@ -32,12 +41,28 @@ public class ImportProgressDialog implements ParserProgressListener {
   @Override
   public void onData(String data) {
     try {
-      update(data);
+      updateMessage(data);
     }
     catch(Exception ignored) {}
   }
 
-  public void update(CharSequence message) {
+  public void updateTitle(int resId) {
+    if (activity == null) return;
+
+    updateTitle(
+      activity.getString(resId)
+    );
+  }
+
+  public void updateTitle(CharSequence title) {
+    if (activity == null) return;
+
+    this.title = title;
+
+    activity.runOnUiThread(changeTitle);
+  }
+
+  public void updateMessage(CharSequence message) {
     if (activity == null) return;
 
     this.message = message;
@@ -54,6 +79,7 @@ public class ImportProgressDialog implements ParserProgressListener {
     dialog.dismiss();
     activity = null;
     dialog   = null;
+    title    = null;
     message  = null;
   }
 }
