@@ -1,0 +1,16 @@
+purpose:
+========
+test M3U import that contains DB unique constraint violations
+
+============
+channels.m3u
+============
+
+| channel media_url              | count |
+|--------------------------------|-------|
+| https://example.com/live_01.ts | 1     |
+| https://example.com/live_02.ts | 3     |
+| https://example.com/live_03.ts | 1     |
+| https://example.com/live_04.ts | 1     |
+| https://example.com/live_05.ts | 3     |
+| https://example.com/live_06.ts | 1     |

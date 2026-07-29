@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:-1,CHANNEL 1
+https://example.com/live_01.ts
+#EXTINF:-1,CHANNEL 2A
+https://example.com/live_02.ts
+#EXTINF:-1,CHANNEL 2B
+https://example.com/live_02.ts
+#EXTINF:-1,CHANNEL 2C
+https://example.com/live_02.ts
+#EXTINF:-1,CHANNEL 3
+https://example.com/live_03.ts
+#EXTINF:-1,CHANNEL 4
+https://example.com/live_04.ts
+#EXTINF:-1,CHANNEL 5A
+https://example.com/live_05.ts
+#EXTINF:-1,CHANNEL 5B
+https://example.com/live_05.ts
+#EXTINF:-1,CHANNEL 5C
+https://example.com/live_05.ts
+#EXTINF:-1,CHANNEL 6
+https://example.com/live_06.ts

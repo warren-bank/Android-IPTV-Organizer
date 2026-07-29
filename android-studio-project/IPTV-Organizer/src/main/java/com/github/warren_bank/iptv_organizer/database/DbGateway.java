@@ -12,6 +12,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.SQLException;
+import android.database.sqlite.SQLiteConstraintException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.text.TextUtils;
@@ -153,6 +154,18 @@ public class DbGateway {
     return (value == 1);
   }
 
+  private long insertOrThrowUnlessConstraintViolated(SQLiteDatabase dbase, String table, String nullColumnHack, ContentValues values) {
+    try {
+      return dbase.insertOrThrow(table, nullColumnHack, values);
+    }
+    catch(SQLException e) {
+      if (e instanceof SQLiteConstraintException)
+        return -1;
+      else
+        throw e;
+    }
+  }
+
   // ---------------------------------------------------------------------------
   // write models to DB:
   // ---------------------------------------------------------------------------
@@ -182,7 +195,7 @@ public class DbGateway {
           cvals.put("tvg_id",    channel.tvg_id);
           cvals.put("tvg_name",  channel.tvg_name);
 
-          dbase.insertOrThrow("m3u_channels", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels", null, cvals);
           cvals = null;
         }
       }
@@ -233,7 +246,7 @@ public class DbGateway {
           cvals.put("name",     channel.getName());
           cvals.put("icon_url", channel.getImageURL());
 
-          dbase.insertOrThrow("xmltv_channels", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, "xmltv_channels", null, cvals);
           cvals = null;
 
           for (EPGEvent program : programs) {
@@ -246,7 +259,7 @@ public class DbGateway {
             cvals.put("title",              program.getTitle());
             cvals.put("description",        program.getDescription());
 
-            dbase.insertOrThrow("xmltv_programs", null, cvals);
+            insertOrThrowUnlessConstraintViolated(dbase, "xmltv_programs", null, cvals);
             cvals = null;
           }
         }
@@ -400,7 +413,7 @@ public class DbGateway {
           cvals.put("name",       name);
           cvals.put("new_tvg_id", new_tvg_id);
 
-          dbase.insertOrThrow("m3u_channels_mapping_name_to_id", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_mapping_name_to_id", null, cvals);
           cvals = null;
         }
       }
@@ -438,7 +451,7 @@ public class DbGateway {
           cvals.put("old_tvg_id", old_tvg_id);
           cvals.put("new_tvg_id", new_tvg_id);
 
-          dbase.insertOrThrow("m3u_channels_mapping_id_to_id", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_mapping_id_to_id", null, cvals);
           cvals = null;
         }
       }
@@ -535,7 +548,7 @@ public class DbGateway {
           cvals.put("position", position);
           cvals.put("value",    value);
 
-          dbase.insertOrThrow("m3u_channels_media_url_static_values", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_media_url_static_values", null, cvals);
           cvals = null;
           position += 1;
         }
@@ -604,7 +617,7 @@ public class DbGateway {
           cvals = new ContentValues();
           cvals.put("name", name);
 
-          dbase.insertOrThrow("m3u_channels_filter_whitelist_names", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_filter_whitelist_names", null, cvals);
           cvals = null;
         }
       }
@@ -640,7 +653,7 @@ public class DbGateway {
           cvals = new ContentValues();
           cvals.put("tvg_id", tvg_id);
 
-          dbase.insertOrThrow("m3u_channels_filter_whitelist_ids", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_filter_whitelist_ids", null, cvals);
           cvals = null;
         }
       }
@@ -760,7 +773,7 @@ public class DbGateway {
           cvals = new ContentValues();
           cvals.put("name", name);
 
-          dbase.insertOrThrow("m3u_channels_filter_blacklist_names", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_filter_blacklist_names", null, cvals);
           cvals = null;
         }
       }
@@ -796,7 +809,7 @@ public class DbGateway {
           cvals = new ContentValues();
           cvals.put("tvg_id", tvg_id);
 
-          dbase.insertOrThrow("m3u_channels_filter_blacklist_ids", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_filter_blacklist_ids", null, cvals);
           cvals = null;
         }
       }
