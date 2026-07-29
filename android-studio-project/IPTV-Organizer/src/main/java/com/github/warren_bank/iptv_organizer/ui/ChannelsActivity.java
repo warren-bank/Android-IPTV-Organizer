@@ -1,6 +1,7 @@
 package com.github.warren_bank.iptv_organizer.ui;
 
 import com.github.warren_bank.iptv_organizer.R;
+import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
 import com.github.warren_bank.iptv_organizer.ui.EpgActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
@@ -23,6 +24,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -256,6 +258,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       inputStream = conn.getInputStream();
       importM3uFromStream(inputStream);
     } catch (Exception e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
     } finally {
       try {
         if (inputStream != null) inputStream.close();
@@ -302,6 +305,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       inputStream = getContentResolver().openInputStream(uri);
       importM3uFromStream(inputStream);
     } catch (Exception e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
     } finally {
       try {
         if (inputStream != null) inputStream.close();
@@ -376,7 +380,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       String title = getString(R.string.activity_channels);
       getSupportActionBar().setTitle(title);
     }
-    catch(Exception e) {}
+    catch(Exception ignored) {}
   }
 
   private void initRecyclerView() {

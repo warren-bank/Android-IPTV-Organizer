@@ -1,6 +1,7 @@
 package com.github.warren_bank.iptv_organizer.ui;
 
 import com.github.warren_bank.iptv_organizer.R;
+import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.model.EPGDataImpl;
 import com.github.warren_bank.iptv_organizer.ui.ChannelsActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
@@ -20,6 +21,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -198,17 +200,9 @@ public class EpgActivity extends AppCompatActivity {
       }
 
       inputStream = conn.getInputStream();
-      final EPGDataImpl newEpgData = new EPGDataImpl(
-        ImportUtils.importXmlTv(inputStream)
-      );
-
-      runOnUiThread(new Runnable() {
-        @Override
-        public void run() {
-          refreshEpg(newEpgData);
-        }
-      });
+      importXmlTvFromStream(inputStream);
     } catch (Exception e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
     } finally {
       try {
         if (inputStream != null) inputStream.close();
@@ -253,17 +247,9 @@ public class EpgActivity extends AppCompatActivity {
 
     try {
       inputStream = getContentResolver().openInputStream(uri);
-      final EPGDataImpl newEpgData = new EPGDataImpl(
-        ImportUtils.importXmlTv(inputStream)
-      );
-
-      runOnUiThread(new Runnable() {
-        @Override
-        public void run() {
-          refreshEpg(newEpgData);
-        }
-      });
+      importXmlTvFromStream(inputStream);
     } catch (Exception e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
     } finally {
       try {
         if (inputStream != null) inputStream.close();
@@ -274,6 +260,19 @@ public class EpgActivity extends AppCompatActivity {
   // ---------------------------------------------------------------------------------------------
   // internal:
   // ---------------------------------------------------------------------------------------------
+
+  private void importXmlTvFromStream(InputStream inputStream) throws Exception {
+    final EPGDataImpl newEpgData = new EPGDataImpl(
+      ImportUtils.importXmlTv(inputStream)
+    );
+
+    runOnUiThread(new Runnable() {
+      @Override
+      public void run() {
+        refreshEpg(newEpgData);
+      }
+    });
+  }
 
   private void initEpg() {
     epgView = (EPG) findViewById(R.id.epg);
@@ -340,7 +339,7 @@ public class EpgActivity extends AppCompatActivity {
       String title = getString(R.string.activity_epg);
       getSupportActionBar().setTitle(title);
     }
-    catch(Exception e) {}
+    catch(Exception ignored) {}
   }
 
   private void initSearch() {

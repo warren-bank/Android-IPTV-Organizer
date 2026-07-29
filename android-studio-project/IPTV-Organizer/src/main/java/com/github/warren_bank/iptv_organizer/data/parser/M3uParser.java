@@ -1,7 +1,10 @@
 package com.github.warren_bank.iptv_organizer.data.parser;
 
+import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.filter.M3uFilter;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
+
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -24,11 +27,16 @@ public class M3uParser {
     while ((line = reader.readLine()) != null) {
       line = line.trim();
       if (line.startsWith("#EXTINF:")) {
-        SimpleM3UParser.M3U_Entry curEntry = SimpleM3UParser.parseExtInf(line);
-        if (curEntry.name != null) {
-          currentName    = curEntry.name;
-          currentTvgId   = curEntry.tvgId;
-          currentTvgName = curEntry.tvgName;
+        try {
+          SimpleM3UParser.M3U_Entry curEntry = SimpleM3UParser.parseExtInf(line);
+          if (curEntry.name != null) {
+            currentName    = curEntry.name;
+            currentTvgId   = curEntry.tvgId;
+            currentTvgName = curEntry.tvgName;
+          }
+        }
+        catch(Exception e) {
+          Log.e(Constants.LOG_TAG, "Failed to parse M3U line: " + line);
         }
       } else if (!line.isEmpty() && !line.startsWith("#")) {
         // media URL
