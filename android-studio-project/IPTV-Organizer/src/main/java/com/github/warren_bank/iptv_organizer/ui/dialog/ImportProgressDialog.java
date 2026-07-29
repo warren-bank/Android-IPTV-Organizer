@@ -7,6 +7,9 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 
 public class ImportProgressDialog implements ParserProgressListener {
+  private static final long UI_UPDATE_INTERVAL_MS = 200l;
+  private long lastUpdateTime;
+
   private Activity activity;
   private ProgressDialog dialog;
   private CharSequence message;
@@ -20,6 +23,8 @@ public class ImportProgressDialog implements ParserProgressListener {
   };
 
   public ImportProgressDialog(Activity activity) {
+    this.lastUpdateTime = 0l;
+
     this.activity = activity;
     this.dialog   = ProgressDialog.show(activity, activity.getString(R.string.import_file), null, true, false);
   }
@@ -36,7 +41,13 @@ public class ImportProgressDialog implements ParserProgressListener {
     if (activity == null) return;
 
     this.message = message;
-    activity.runOnUiThread(changeMessage);
+
+    long currentTime = System.currentTimeMillis();
+    if (currentTime - lastUpdateTime >= UI_UPDATE_INTERVAL_MS) {
+      lastUpdateTime = currentTime;
+      activity.runOnUiThread(changeMessage);
+      Thread.yield();
+    }
   }
 
   public void dismiss() {
