@@ -238,7 +238,8 @@ public class EpgActivity extends AppCompatActivity {
       Uri uri = data.getData();
       if (uri == null) return;
 
-      openFileAsStream(uri);
+      // Read file on a background thread
+      new Thread(() -> openFileAsStream(uri)).start();
     }
   }
 

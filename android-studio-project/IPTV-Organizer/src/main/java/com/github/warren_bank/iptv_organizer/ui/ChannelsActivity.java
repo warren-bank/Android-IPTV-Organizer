@@ -294,7 +294,8 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       Uri uri = data.getData();
       if (uri == null) return;
 
-      openFileAsStream(uri);
+      // Read file on a background thread
+      new Thread(() -> openFileAsStream(uri)).start();
     }
   }
 
