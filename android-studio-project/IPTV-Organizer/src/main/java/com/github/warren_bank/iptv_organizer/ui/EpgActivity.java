@@ -49,6 +49,12 @@ public class EpgActivity extends AppCompatActivity {
   private SearchView  searchView;
 
   // ---------------------------------------------------------------------------------------------
+  // ImportProgressDialog:
+  // ---------------------------------------------------------------------------------------------
+
+  private ImportProgressDialog importProgressDialog;
+
+  // ---------------------------------------------------------------------------------------------
   // Lifecycle Events:
   // ---------------------------------------------------------------------------------------------
 
@@ -73,10 +79,25 @@ public class EpgActivity extends AppCompatActivity {
       if (urlText.isEmpty()) return;
 
       final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
+      importProgressDialog = listener;
 
       // Do network on a background thread
       new Thread(() -> openUrlAsStream(urlText, listener)).start();
     } catch (Exception ignored) {}
+  }
+
+  @Override
+  protected void onResume() {
+    super.onResume();
+
+    if (importProgressDialog != null) importProgressDialog.resume();
+  }
+
+  @Override
+  protected void onPause() {
+    super.onPause();
+
+    if (importProgressDialog != null) importProgressDialog.pause();
   }
 
   @Override
@@ -179,6 +200,7 @@ public class EpgActivity extends AppCompatActivity {
             if (urlText.isEmpty()) return;
 
             final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
+            importProgressDialog = listener;
 
             // Do network on a background thread
             new Thread(() -> openUrlAsStream(urlText, listener)).start();
@@ -214,6 +236,7 @@ public class EpgActivity extends AppCompatActivity {
       } catch (Exception ignored) {}
       if (conn != null) conn.disconnect();
       listener.dismiss();
+      importProgressDialog = null;
     }
   }
 
@@ -245,6 +268,7 @@ public class EpgActivity extends AppCompatActivity {
       if (uri == null) return;
 
       final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
+      importProgressDialog = listener;
 
       // Read file on a background thread
       new Thread(() -> openFileAsStream(uri, listener)).start();
@@ -264,6 +288,7 @@ public class EpgActivity extends AppCompatActivity {
         if (inputStream != null) inputStream.close();
       } catch (Exception ignored) {}
       listener.dismiss();
+      importProgressDialog = null;
     }
   }
 

@@ -9,6 +9,7 @@ import android.app.ProgressDialog;
 public class ImportProgressDialog implements ParserProgressListener {
   private static final long UI_UPDATE_INTERVAL_MS = 200l;
   private long lastUpdateTime;
+  private boolean isPaused;
 
   private Activity activity;
   private ProgressDialog dialog;
@@ -17,7 +18,7 @@ public class ImportProgressDialog implements ParserProgressListener {
 
   private Runnable changeTitle = new Runnable() {
     public void run() {
-      if (dialog == null) return;
+      if ((dialog == null) || (title == null)) return;
 
       dialog.setTitle(title);
     }
@@ -25,7 +26,7 @@ public class ImportProgressDialog implements ParserProgressListener {
 
   private Runnable changeMessage = new Runnable() {
     public void run() {
-      if (dialog == null) return;
+      if ((dialog == null) || (message == null)) return;
 
       dialog.setMessage(message);
     }
@@ -33,9 +34,24 @@ public class ImportProgressDialog implements ParserProgressListener {
 
   public ImportProgressDialog(Activity activity) {
     this.lastUpdateTime = 0l;
+    this.isPaused = false;
 
     this.activity = activity;
     this.dialog   = ProgressDialog.show(activity, activity.getString(R.string.import_file), null, true, false);
+  }
+
+  public void pause() {
+    this.isPaused = true;
+
+    this.title = null;
+    this.message = null;
+  }
+
+  public void resume() {
+    this.isPaused = false;
+
+    if (title   != null) updateTitle(title);
+    if (message != null) updateMessage(message);
   }
 
   @Override
@@ -55,17 +71,17 @@ public class ImportProgressDialog implements ParserProgressListener {
   }
 
   public void updateTitle(CharSequence title) {
-    if (activity == null) return;
-
     this.title = title;
+
+    if ((activity == null) || isPaused) return;
 
     activity.runOnUiThread(changeTitle);
   }
 
   public void updateMessage(CharSequence message) {
-    if (activity == null) return;
-
     this.message = message;
+
+    if ((activity == null) || isPaused) return;
 
     long currentTime = System.currentTimeMillis();
     if (currentTime - lastUpdateTime >= UI_UPDATE_INTERVAL_MS) {
