@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Һәр юлда бер кыйммәт.</string>
   <string name="pref_default_xmltv_url_title">Төп XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Керү кыйммәте \"Импорт XMLTV EPG URL\" Диалог.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Импорт фильтрын кулланыгыз</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Табылган импорт каналлары M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Барлык каналларны импорт ит</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Буенча фильтрлау M3U каналлар</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ак исемлек каналнары табылды M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Табылган каналларны ак исемлеккә кертмәгез M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Һәр юлда бер кыйммәт.   Субстринг өчен алдан куела торган өлеш.: \"+*\"</string>
 </resources>

@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Одно значение в каждой строке.</string>
   <string name="pref_default_xmltv_url_title">По умолчанию XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Начальное значение в \"Импорт XMLTV EPG URL\" диалог.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Применить фильтр импорта</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Каналы импорта, найденные в M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Импортировать все каналы</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Фильтровать по M3U каналы</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Каналы из «белого списка», найденные в M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Не добавляйте в белый список каналы, найденные в M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Одно значение в каждой строке. Префикс для подстроки: \"+*\"</string>
 </resources>

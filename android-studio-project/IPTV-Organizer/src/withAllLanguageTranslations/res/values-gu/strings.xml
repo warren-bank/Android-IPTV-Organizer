@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">દરેક પંક્તિમાં એક મૂલ્ય.</string>
   <string name="pref_default_xmltv_url_title">નિર્ધારિત XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">પ્રારંભિક મૂલ્ય \"આયાત XMLTV EPG URL\" સંવાદ.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">આયાત ફિલ્ટર લાગુ કરો</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >માં મળેલા ચેનલો આયાત કરો M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">બધા ચેનલો આયાત કરો</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">દ્વારા ફિલ્ટર કરો M3U ચેનલ્સ</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >માં શ્વેતસૂચીમાં સામેલ ચેનલો મળ્યાં M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">માં મળતા ચેનલોને વ્હાઇટલિસ્ટ ન કરો M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">દરેક પંક્તિમાં એક મૂલ્ય. ઉપસૂત્ર માટે પૂર્વપ્રત્યય: \"+*\"</string>
 </resources>

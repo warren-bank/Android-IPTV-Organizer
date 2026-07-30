@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">په هره کرښه کې یو ارزښت.</string>
   <string name="pref_default_xmltv_url_title">اصلي XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">په ... کې لومړنی ارزښت \"واردول XMLTV EPG URL\" خبرې اترې.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">د واردولو فلټر پلي کړئ</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >په کې موندل شوي وارداتي چینلونه M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ټول چینلونه وارد کړئ</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">د له مخې فلټر کړئ M3U چینلونه</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >په ... کې موندل شوي سپین لیست چینلونه M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">په کې موندل شوي چینلونه سفيد مه کړئ M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">په هره کرښه کې یو ارزښت. د فرعي تار لپاره مخکینی.: \"+*\"</string>
 </resources>

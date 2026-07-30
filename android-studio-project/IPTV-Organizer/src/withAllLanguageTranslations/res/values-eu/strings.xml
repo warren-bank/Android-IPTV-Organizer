@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary"> Lerro bakoitzeko balio bat.</string>
   <string name="pref_default_xmltv_url_title">Lehenetsia XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Balio hasierakoa sartzeko \"Inportatu XMLTV EPG URL\" elkarrizketa.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Inportazio-iragazkia aplikatu</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >aurkitutako inportazio-kanalak M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Inportatu kanal guztiak</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Iragazi honen arabera M3U kanalak</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Zerrenda-zuri kanalak aurkitu dira M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ez zerrenda zurian sartu bertan aurkitutako kanalak M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Ilara bakoitzeko balio bat. Azpi-katearen aurreizkia: \"+*\"</string>
 </resources>

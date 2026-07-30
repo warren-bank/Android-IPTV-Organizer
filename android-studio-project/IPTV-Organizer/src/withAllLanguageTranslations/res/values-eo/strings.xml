@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Unu valoro po linio.</string>
   <string name="pref_default_xmltv_url_title">Normala XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Komenca valoro en \"Enporti XMLTV EPG URL\" dialogo.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Apliku importan filtrilon</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Enportaj kanaloj trovitaj en M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Enportu ĉiujn kanalojn</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtri laŭ M3U kanaloj</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Blanklistaj kanaloj trovitaj en M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ne blanklistigu kanalojn trovitajn en M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Unu valoro por linio. Prefikso por substringo: \"+*\"</string>
 </resources>

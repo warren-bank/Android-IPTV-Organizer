@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Soronként egy érték.</string>
   <string name="pref_default_xmltv_url_title">Alapértelmezett XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Kezdőérték a \"Importálás XMLTV EPG URL\" párbeszéd.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Importszűrő alkalmazása</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Az alábbi helyeken található importcsatornák: M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Az összes csatorna importálása</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Szűrés M3U csatornák</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >A következő helyeken található csatornák felvétele a fehérlistára: M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ne vegye fel a fehérlistára az alábbi helyeken található csatornákat: M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Soronként egy érték. Az alkaraktersorozat előtagja: \"+*\"</string>
 </resources>

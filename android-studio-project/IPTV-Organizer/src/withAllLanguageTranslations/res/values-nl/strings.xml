@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Eén waarde per regel.</string>
   <string name="pref_default_xmltv_url_title">Standaard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Beginswaarde in \"Importeren XMLTV EPG URL\" dialoogvenster.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Importfilter toepassen</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Importkanalen gevonden in M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Alle kanalen importeren</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Filteren op M3U kanalen</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanalen op de witte lijst die zijn gevonden in M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Zet kanalen die je aantreft in M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Eén waarde per regel. Voorvoegsel voor de deelstring: \"+*\"</string>
 </resources>

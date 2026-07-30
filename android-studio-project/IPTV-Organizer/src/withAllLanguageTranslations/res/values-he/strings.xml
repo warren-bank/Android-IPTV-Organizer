@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ערך אחד בכל שורה.</string>
   <string name="pref_default_xmltv_url_title">ברירת מחדל XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">הערך ההתחלתי ב- \"ייבוא XMLTV EPG URL\" דיאלוג.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">החל מסנן ייבוא</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ערוצי ייבוא הנמצאים ב- M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ייבא את כל הערוצים</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">סינון לפי M3U ערוצים</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ערוצים ברשימת ההיתרים שנמצאו ב- M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">אין להוסיף לרשימת ההיתרים ערוצים הנמצאים ב- M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">ערך אחד בכל שורה. קידומת למחרוזת משנה: \"+*\"</string>
 </resources>

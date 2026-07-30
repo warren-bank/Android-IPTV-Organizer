@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Un talvoud dre linenn.</string>
   <string name="pref_default_xmltv_url_title">Diouer XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Talvoudegezh kentañ e \"Enporzhiañ XMLTV EPG URL\" Kaozeadenn.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Lakaat ar sil enporzhiañ</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Enporzhiañ kanolioù kavet e M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Enporzhiañ an holl ganolioù</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Silit dre M3U kanolioù</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanolioù gwenn kavet e M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Na lakait ket war ar roll aotreet ar c\'hanolioù kavet e M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Un talvoud dre linenn. Rakger evit an is-stennadenn: \"+*\"</string>
 </resources>

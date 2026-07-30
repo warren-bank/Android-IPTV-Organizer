@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Un valor por liña.</string>
   <string name="pref_default_xmltv_url_title">Por defecto XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valor inicial en \"Importar XMLTV EPG URL\" diálogo.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Aplicar filtro de importación</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Importar canles atopadas en M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Importar todos os canles</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrar por M3U canles</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Canles da lista branca atopadas en M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Non engadas á lista branca os canais atopados en M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Un valor por liña. Prefixo para a subcadena: \"+*\"</string>
 </resources>

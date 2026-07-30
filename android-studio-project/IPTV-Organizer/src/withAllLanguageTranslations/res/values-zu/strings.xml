@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Inani elilodwa ngomugqa ngamunye.</string>
   <string name="pref_default_xmltv_url_title">Okujwayelekile XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Inani lokuqala ku \"Okungenayo XMLTV EPG URL\" inkulumo.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Faka isihlungi sokungenisa</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Iziteshi zokungenisa ezitholakala ku M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Landa zonke iziteshi</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Hlunga ngokwe M3U iziteshi</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Iziteshi ezitholakala ohlwini olumhlophe M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ungabeki ohlwini olumhlophe iziteshi ezitholakala ku- M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Inani elilodwa kumugqa ngamunye. Isandulelo se-substring: \"+*\"</string>
 </resources>

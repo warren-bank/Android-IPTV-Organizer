@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Jedna vrijednost po redu.</string>
   <string name="pref_default_xmltv_url_title">Zadano XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Početna vrijednost u \"Uvoz XMLTV EPG URL\" dijalog.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Primijeni filter za uvoz</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Uvezeni kanali pronađeni u M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Uvezi sve kanale</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtriraj po M3U kanali</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Pronađeni kanali na bijeloj listi u M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ne dodajte na bijelu listu kanale pronađene u M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Jedna vrijednost po redu. Prefix za podnizor: \"+*\"</string>
 </resources>

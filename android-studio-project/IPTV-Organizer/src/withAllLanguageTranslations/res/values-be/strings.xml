@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Адна значэнне на радок.</string>
   <string name="pref_default_xmltv_url_title">Па змаўчанні XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Пачатковае значэнне ў \"Імпарт XMLTV EPG URL\" дыялог.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Прымяніць імпартны фільтр</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Знойдзеныя каналы імпарту M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Імпартаваць усе каналы</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Фільтраваць па M3U каналы</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Знайдзены каналы ў белым спісе M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Не дадаваць у белы спіс знойдзеныя каналы M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Адна значэнне на радок. Прэфікс для падстрокі: \"+*\"</string>
 </resources>

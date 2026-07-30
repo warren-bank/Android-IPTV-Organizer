@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Boleng bo le bongwe mo moleng mongwe le mongwe.</string>
   <string name="pref_default_xmltv_url_title">Tlwaelo XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Boleng jwa tshimologo mo \"Tsenya XMLTV EPG URL\" Puisano.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Tsenya Sefe ya Tsenyo</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ditsela tsa go tsena tse di fitlhelwang mo M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Tsenya dikanale tsotlhe</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Tlhotlha ka M3U ditsela</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ditsela tse di letleletsweng tse di fitlhelwang mo M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">O se ka wa tsenya mo lenaneong le le letleletsweng dikanale tse di fitlhelwang mo M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Se se tlang pele ga karolwana ya mola.: \"+*\"</string>
 </resources>

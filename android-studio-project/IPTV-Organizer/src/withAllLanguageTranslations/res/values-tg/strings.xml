@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Як арзиш дар ҳар сатр.</string>
   <string name="pref_default_xmltv_url_title">Тавсиявӣ XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Арзиши ибтидоӣ дар \"Воридкунӣ XMLTV EPG URL\" гуфтугӯ.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Филтри воридотро татбиқ кунед</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Каналҳои воридотиёфта дар M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ҳамаи каналҳоро ворид кунед</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Филтр кунед бо M3U каналҳо</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Каналҳои сафедшуда дар M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Каналҳое, ки дар ... пайдо шудаанд, ба рӯйхати сафед дохил накунед. M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Як арзиш дар ҳар сатр. Пешфикс барои зерсатр: \"+*\"</string>
 </resources>

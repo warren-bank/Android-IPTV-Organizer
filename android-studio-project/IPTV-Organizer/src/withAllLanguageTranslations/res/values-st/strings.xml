@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Boleng bo le bong moleng o le mong.</string>
   <string name="pref_default_xmltv_url_title">Tloaelehileng XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Boleng ba pele ka hare \"Kenya XMLTV EPG URL\" Puisano.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Sebelisa Sefe ea Keno</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Mecha ea phatlalatso e fumanoeng M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kenya liteishene kaofela</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Sefa ka M3U mekgwa</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Lekala tse fumanoeng lethathamong le lethekoang M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Se kenye lethathamong le lethefisitsoeng liteishene tse fumanoeng ho M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Boleng bo le bong moleng o le mong. Sehlongwatheng bakeng sa karoloana ea mola.: \"+*\"</string>
 </resources>

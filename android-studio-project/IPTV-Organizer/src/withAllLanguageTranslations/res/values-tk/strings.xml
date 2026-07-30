@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Her setirde bir gymmat.</string>
   <string name="pref_default_xmltv_url_title">Öňünden kesgitlenen XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Başlangyç gymmaty \"Import XMLTV EPG URL\" dialog.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Import süzgüçini ulan</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Tapylan import kanallary M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ähli kanallary import ediň</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Boýunça süzüň M3U kanallar</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ak sanawdaky kanallar tapyldy M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Tapylan kanallary ak sanawa goýmaň M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Her setirde bir gymmat. Alt setir üçin öňgoşma: \"+*\"</string>
 </resources>

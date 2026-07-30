@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု.</string>
   <string name="pref_default_xmltv_url_title">မူလတန်ဖိုး XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">အစပိုင်းတန်ဖိုးကို ထည့်ပါ \"တင်သွင်း XMLTV EPG URL\" ဆွေးနွေးချက်.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">တင်သွင်း စစ်ထုတ်ကိရိယာ လျှောက်ထားပါ</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >တွင်တွေ့ရှိသော တင်သွင်းချန်နယ်များ M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ချန်နယ်အားလုံးကို တင်သွင်းပါ</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">ဖြင့် စစ်ထုတ်ပါ M3U ချန်နယ်များ</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Whitelist ချန်နယ်များတွေ့ရှိသော M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">တွေ့ရှိထားသော ချန်နယ်များကို အဖြူစာရင်းမထည့်ပါနှင့်။ M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ စာကြောင်းအတွင်းမှ အစိတ်အပိုင်းအတွက် ကြိုတင်စာလုံး။: \"+*\"</string>
 </resources>

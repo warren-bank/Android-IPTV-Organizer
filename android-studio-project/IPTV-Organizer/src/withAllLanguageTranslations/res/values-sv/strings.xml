@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Ett värde per rad.</string>
   <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Startvärde i \"Importera XMLTV EPG URL\" dialog.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Tillämpa importfilter</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Importkanaler som finns i M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Importera alla kanaler</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrera efter M3U kanaler</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Lägg till kanaler som finns i M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Lägg inte till kanaler som finns i M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Ett värde per rad. Prefix för delsträng: \"+*\"</string>
 </resources>

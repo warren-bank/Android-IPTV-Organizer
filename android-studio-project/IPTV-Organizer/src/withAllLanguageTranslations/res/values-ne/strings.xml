@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">प्रत्येक लाइनमा एउटा मान.</string>
   <string name="pref_default_xmltv_url_title">पूर्वनिर्धारित XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">प्रारम्भिक मान \"आयात XMLTV EPG URL\" संवाद.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">आयात फिल्टर लागू गर्नुहोस्</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >मा फेला परेका आयात च्यानलहरू M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">सबै च्यानलहरू आयात गर्नुहोस्</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">द्वारा छान्नुहोस् M3U च्यानलहरू</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >पाइने ह्वाइटलिस्ट च्यानलहरू M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">मा फेला परेका च्यानलहरूलाई ह्वाइटलिस्ट नगर्नुहोस् M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">प्रत्येक लाइनमा एउटा मान। उपस्ट्रिङको लागि पूर्वाग्रह।: \"+*\"</string>
 </resources>

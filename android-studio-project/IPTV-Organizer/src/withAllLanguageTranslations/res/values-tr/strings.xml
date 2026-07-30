@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Her satırda bir değer.</string>
   <string name="pref_default_xmltv_url_title">Varsayılan XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Başlangıç değeri \"İthalat XMLTV EPG URL\" diyalog.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">İçe Aktarma Filtresini Uygula</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Şu konumda bulunan içe aktarma kanalları: M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Tüm kanalları içe aktar</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Şu kriterlere göre filtrele M3U kanallar</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Aşağıdaki konumda bulunan kanalları beyaz listeye ekle: M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Aşağıda bulunan kanalları beyaz listeye eklemeyin: M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Her satırda tek bir değer. Alt dizinin öneki: \"+*\"</string>
 </resources>

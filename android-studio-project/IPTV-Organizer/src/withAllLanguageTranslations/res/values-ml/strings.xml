@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ഓരോ വരിയിലും ഒരു മൂല്യം.</string>
   <string name="pref_default_xmltv_url_title">നിലവിലുള്ള XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">പ്രാരംഭ മൂല്യം \"ഇറക്കുമതി XMLTV EPG URL\" സംഭാഷണം.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">ഇറക്കുമതി ഫിൽട്ടർ പ്രയോഗിക്കുക</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ഇറക്കുമതി ചാനലുകൾ കണ്ടെത്തിയത് M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">എല്ലാ ചാനലുകളും ഇറക്കുമതി ചെയ്യുക</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">ഇതുവഴി ഫിൽട്ടർ ചെയ്യുക M3U ചാനലുകൾ</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >വൈറ്റ്‌ലിസ്റ്റ് ചെയ്ത ചാനലുകൾ കണ്ടെത്തിയത് M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ഇതിൽ കണ്ടെത്തിയ ചാനലുകൾ വൈറ്റ്‌ലിസ്റ്റ് ചെയ്യരുത് M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. സബ്സ്ട്രിംഗിനുള്ള പ്രിഫിക്സ്: \"+*\"</string>
 </resources>

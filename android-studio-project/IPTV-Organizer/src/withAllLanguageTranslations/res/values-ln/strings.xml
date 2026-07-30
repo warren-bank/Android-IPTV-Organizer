@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Motuya moko na molongo moko.</string>
   <string name="pref_default_xmltv_url_title">Ndenge ezali XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Motuya ya liboso na \"Kokɔtisa XMLTV EPG URL\" Lisolo.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Tia filtre ya kokɔtisa</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ba canaux ya importation oyo ezwami na M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kɔtisá ba canaux nyonso</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Pona na M3U Banzela</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Liste ya ba chaines oyo ezwami M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kotia te na liste ya ba chaines oyo emonani na M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Motuya moko na molongo moko. Ebandeli mpo na eteni ya molongo.: \"+*\"</string>
 </resources>

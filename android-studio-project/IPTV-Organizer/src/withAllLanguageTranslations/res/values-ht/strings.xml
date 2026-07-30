@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Yon valè pa liy.</string>
   <string name="pref_default_xmltv_url_title">Pa defo XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valè inisyal an \"Enpòte XMLTV EPG URL\" Dyalòg.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Aplike Filtè Enpòtasyon</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Enpòte chanèl yo jwenn nan M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Enpòte tout chanèl yo</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtre pa M3U chanèl</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Chèn ki jwenn sou lis blan M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Pa mete sou lis blan chanèl ki jwenn nan M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Yon valè pa liy. Prefix pou soustreng: \"+*\"</string>
 </resources>

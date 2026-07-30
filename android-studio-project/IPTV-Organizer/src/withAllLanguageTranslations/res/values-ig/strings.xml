@@ -47,7 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Otu uru n\'ahịrị ọ bụla.</string>
   <string name="pref_default_xmltv_url_title">Ntọala XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Ọnụahịa mbido n\'ime \"Bubata XMLTV EPG URL\" mkparịta ụka.</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_title">Tinye nzacha mbubata</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Banye na ọwa ndị achọtara na M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Bubata ọwa niile</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Tinye nzacha site na M3U ọwa</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Chọọchị ndị e depụtara n\'ọcha achọtara na M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ekwela itinye ọwa ndị achọtara na ndepụta ọcha. M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Otu uru n\'ahịrị ọ bụla. Ntinye maka mpempe ahịrịokwu: \"+*\"</string>
 </resources>
