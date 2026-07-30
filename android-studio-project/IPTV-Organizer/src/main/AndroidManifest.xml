@@ -5,6 +5,7 @@
   package="com.github.warren_bank.iptv_organizer">
 
   <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
 
   <application
     android:name=".App"

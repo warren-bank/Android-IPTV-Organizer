@@ -2,6 +2,7 @@ package com.github.warren_bank.iptv_organizer.ui.dialog;
 
 import com.github.warren_bank.iptv_organizer.R;
 import com.github.warren_bank.iptv_organizer.data.parser.ParserProgressListener;
+import com.github.warren_bank.iptv_organizer.utils.WakeLockMgr;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -37,7 +38,11 @@ public class ImportProgressDialog implements ParserProgressListener {
     this.isPaused = false;
 
     this.activity = activity;
-    this.dialog   = ProgressDialog.show(activity, activity.getString(R.string.import_file), null, true, false);
+    this.dialog = (activity != null)
+      ? ProgressDialog.show(activity, activity.getString(R.string.import_file), null, true, false)
+      : null;
+
+    WakeLockMgr.acquire(activity);
   }
 
   public void pause() {
@@ -97,5 +102,7 @@ public class ImportProgressDialog implements ParserProgressListener {
     dialog   = null;
     title    = null;
     message  = null;
+
+    WakeLockMgr.release();
   }
 }
