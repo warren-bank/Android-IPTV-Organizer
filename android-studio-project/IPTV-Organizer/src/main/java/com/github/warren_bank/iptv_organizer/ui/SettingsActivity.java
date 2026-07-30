@@ -192,6 +192,12 @@ public class SettingsActivity extends PreferenceActivity {
   }
 
   private static String joinStringArray(String[] value) {
-    return TextUtils.join("\n", value);
+    String result = (value != null)
+      ? TextUtils.join("\n", value)
+      : null;
+
+    if ("null".equals(result)) result = null;
+
+    return result;
   }
 }
