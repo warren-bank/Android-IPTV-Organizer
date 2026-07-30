@@ -64,6 +64,8 @@ public class XmlTvParser {
 
         case XmlPullParser.END_TAG:
           if ("programme".equals(tagName) && currentChannelId != null) {
+            if ((listener != null) && (currentTitle != null)) listener.onData(currentTitle);
+
             EPGChannel channel = channelMap.get(currentChannelId);
             if (channel != null) {
               EPGEvent event = new EPGEvent(startTime, endTime, currentTitle, currentDescription);
@@ -78,7 +80,7 @@ public class XmlTvParser {
             currentTitle = null;
             currentDescription = null;
           } else if ("channel".equals(tagName) && currentChannel != null) {
-            if (listener != null) listener.onData(currentChannel.getName());
+            if ((listener != null) && (currentChannel.getName() != null)) listener.onData(currentChannel.getName());
 
             if (!xmlTvFilter.passesXmlTvFilter(currentChannel)) {
               String id = currentChannel.getChannelID();
