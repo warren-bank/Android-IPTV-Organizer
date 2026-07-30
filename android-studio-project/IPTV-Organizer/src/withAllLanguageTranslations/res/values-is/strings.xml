@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Eitt gildi á línu.</string>
   <string name="pref_default_xmltv_url_title">Sjálfgefið XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Upphafleg gildi í \"Innflutningur XMLTV EPG URL\" Skilaboðargluggi.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Beita innflutningssíu</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Innflutningsrásir sem finnast í M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Flytja inn alla rásir</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Beita innflutningssíu</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Innflutningsrásir sem finnast í M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Flytja inn alla rásir</string>
 </resources>

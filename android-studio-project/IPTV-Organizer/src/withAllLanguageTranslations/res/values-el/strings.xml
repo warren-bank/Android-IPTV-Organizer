@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Μία τιμή ανά γραμμή.</string>
   <string name="pref_default_xmltv_url_title">Προεπιλογή XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Αρχική τιμή σε \"Εισαγωγή XMLTV EPG URL\" διάλογος.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Εφαρμογή φίλτρου εισαγωγής</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Κανάλια εισαγωγής που βρίσκονται στο M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Εισαγωγή όλων των καναλιών</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Εφαρμογή φίλτρου εισαγωγής</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Κανάλια εισαγωγής που βρίσκονται στο M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Εισαγωγή όλων των καναλιών</string>
 </resources>

@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Üks väärtus real.</string>
   <string name="pref_default_xmltv_url_title">Vaikimisi XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Algväärtus \"Import XMLTV EPG URL\" dialoog.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Kohalda importfiltrit</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Leitud importkanalid asuvad M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Kõik kanalid importida</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Kohalda importfiltrit</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Leitud importkanalid asuvad M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kõik kanalid importida</string>
 </resources>

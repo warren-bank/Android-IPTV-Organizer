@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Viena vērtība katrā rindā.</string>
   <string name="pref_default_xmltv_url_title">Noklusējums XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Sākotnējā vērtība \"Importēt XMLTV EPG URL\" dialogs.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Piemērot importēšanas filtru</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Atrastie importa kanāli M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importēt visus kanālus</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Piemērot importēšanas filtru</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Atrastie importa kanāli M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Importēt visus kanālus</string>
 </resources>

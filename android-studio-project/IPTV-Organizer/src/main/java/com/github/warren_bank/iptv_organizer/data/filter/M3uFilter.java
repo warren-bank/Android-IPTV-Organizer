@@ -25,15 +25,15 @@ public class M3uFilter {
     DbGateway db = DbUtils.getDb();
     if (db == null) throw new Exception("DbGateway is null");
 
-    this.nameMapping             = db.getChannelNameMappings();
-    this.idMapping               = db.getChannelIdMappings();
-    this.nameWhitelistSubstrings = db.getChannelNameFilterWhitelistSubset(true);
-    this.nameWhitelist           = db.getChannelNameFilterWhitelistSubset(false);
-    this.idWhitelist             = db.getChannelIdFilterWhitelist();
-    this.nameBlacklistSubstrings = db.getChannelNameFilterBlacklistSubset(true);
-    this.nameBlacklist           = db.getChannelNameFilterBlacklistSubset(false);
-    this.idBlacklist             = db.getChannelIdFilterBlacklist();
-    this.urlValues               = db.getChannelUrlStaticValues();
+    this.nameMapping             = db.getM3uChannelNameMappings();
+    this.idMapping               = db.getM3uChannelIdMappings();
+    this.nameWhitelistSubstrings = db.getM3uChannelNameFilterWhitelistSubset(true);
+    this.nameWhitelist           = db.getM3uChannelNameFilterWhitelistSubset(false);
+    this.idWhitelist             = db.getM3uChannelIdFilterWhitelist();
+    this.nameBlacklistSubstrings = db.getM3uChannelNameFilterBlacklistSubset(true);
+    this.nameBlacklist           = db.getM3uChannelNameFilterBlacklistSubset(false);
+    this.idBlacklist             = db.getM3uChannelIdFilterBlacklist();
+    this.urlValues               = db.getM3uChannelUrlStaticValues();
   }
 
   public void filterM3u(List<ChannelListItem> channels) {

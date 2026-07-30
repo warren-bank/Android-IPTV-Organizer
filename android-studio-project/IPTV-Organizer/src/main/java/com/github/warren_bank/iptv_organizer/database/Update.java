@@ -20,7 +20,7 @@ public class Update {
   public static final int MODE_INSTALL = 1;
   public static final int MODE_RESTORE = 2;
 
-  public static final int VERSION_CURRENT = 2;
+  public static final int VERSION_CURRENT = 3;
   public static       int VERSION_ACTUAL  = -1;
 
   // ---------------------------------------------------------------------------
@@ -190,6 +190,13 @@ public class Update {
       databaseUpdateResult.didUpdateFail      |= !result;
       version                                  = getVersionNumber();
     }
+    if (!databaseUpdateResult.didUpdateFail && (version == 2)) {
+      didUpdate                                = true;
+      result                                   = update_version_002();
+      databaseUpdateResult.didUpdateSucceed   &= result;
+      databaseUpdateResult.didUpdateFail      |= !result;
+      version                                  = getVersionNumber();
+    }
 
     databaseUpdateResult.didUpdateSucceed &= didUpdate;
   }
@@ -206,6 +213,39 @@ public class Update {
       );
       queries.add(
           "CREATE TABLE IF NOT EXISTS m3u_channels_filter_blacklist_ids ("
+        + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      return execTransaction(queries);
+    } catch (Exception e) {
+      Log.e(Constants.LOG_TAG, "Error updating database");
+      e.printStackTrace();
+      return false;
+    }
+  }
+
+  private boolean update_version_002() {
+    Log.d(Constants.LOG_TAG, "UPDATING TO VERSION 3");
+    try {
+      List<String> queries = new ArrayList<String>();
+      queries.add("UPDATE application SET version=3");
+      queries.add(
+          "CREATE TABLE IF NOT EXISTS epg_channels_filter_whitelist_names ("
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      queries.add(
+          "CREATE TABLE IF NOT EXISTS epg_channels_filter_whitelist_ids ("
+        + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      queries.add(
+          "CREATE TABLE IF NOT EXISTS epg_channels_filter_blacklist_names ("
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      queries.add(
+          "CREATE TABLE IF NOT EXISTS epg_channels_filter_blacklist_ids ("
         + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
         + ");"
       );

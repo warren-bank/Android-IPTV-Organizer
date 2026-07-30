@@ -130,10 +130,26 @@
   <string translatable="false" name="pref_default_xmltv_url_hint">https://example.com/epg.xmltv</string>
   <string translatable="false" name="pref_default_xmltv_url_default"></string>
 
-  <!-- SettingsActivity [EPG Channels]: Apply Import Filter -->
-  <string translatable="false" name="pref_apply_import_filter_xmltv_channels_key">pref_apply_import_filter_xmltv_channels</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Apply Import Filter</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Import channels found in M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Import all channels</string>
-  <string translatable="false" name="pref_apply_import_filter_xmltv_channels_default">true</string>
+  <!-- SettingsActivity [EPG Channels]: Filter by M3U channels -->
+  <string translatable="false" name="pref_epg_channels_filter_whitelist_m3u_key">pref_epg_channels_filter_whitelist_m3u</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Filter by M3U channels</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Whitelist channels found in M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Do not whitelist channels found in M3U</string>
+  <string translatable="false" name="pref_epg_channels_filter_whitelist_m3u_default">true</string>
+
+  <!-- SettingsActivity [EPG Channels]: Filter by channel name whitelist -->
+  <string name="pref_epg_channels_filter_whitelist_names_title">@string/pref_m3u_channels_filter_whitelist_names_title</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">One value per line. Prefix for substring: \"+*\"</string>
+
+  <!-- SettingsActivity [EPG Channels]: Filter by channel ID whitelist -->
+  <string name="pref_epg_channels_filter_whitelist_ids_title">@string/pref_m3u_channels_filter_whitelist_ids_title</string>
+  <string name="pref_epg_channels_filter_whitelist_ids_summary">@string/pref_m3u_channels_media_url_static_values_summary</string>
+
+  <!-- SettingsActivity [EPG Channels]: Filter by channel name blacklist -->
+  <string name="pref_epg_channels_filter_blacklist_names_title">@string/pref_m3u_channels_filter_blacklist_names_title</string>
+  <string name="pref_epg_channels_filter_blacklist_names_summary">@string/pref_epg_channels_filter_whitelist_names_summary</string>
+
+  <!-- SettingsActivity [EPG Channels]: Filter by channel ID blacklist -->
+  <string name="pref_epg_channels_filter_blacklist_ids_title">@string/pref_m3u_channels_filter_blacklist_ids_title</string>
+  <string name="pref_epg_channels_filter_blacklist_ids_summary">@string/pref_epg_channels_filter_whitelist_ids_summary</string>
 </resources>

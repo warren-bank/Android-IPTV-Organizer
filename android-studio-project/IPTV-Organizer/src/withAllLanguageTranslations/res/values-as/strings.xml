@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">প্ৰতি শাৰীত এটা মান.</string>
   <string name="pref_default_xmltv_url_title">নিৰ্ধাৰিত XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">প্ৰাৰম্ভিক মান \"আমদানি XMLTV EPG URL\" সংলাপ.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">আমদানি ফিল্টাৰ প্ৰয়োগ কৰক</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >তথ্য পোৱা চেনেলসমূহ M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">সকলো চেনেল আমদানি কৰক</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">আমদানি ফিল্টাৰ প্ৰয়োগ কৰক</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >তথ্য পোৱা চেনেলসমূহ M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">সকলো চেনেল আমদানি কৰক</string>
 </resources>

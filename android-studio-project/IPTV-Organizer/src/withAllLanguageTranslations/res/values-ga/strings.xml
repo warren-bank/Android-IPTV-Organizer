@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Luach amháin in aghaidh an líne.</string>
   <string name="pref_default_xmltv_url_title">Réamhshocrú XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Luach tosaigh isteach \"Iompórtáil XMLTV EPG URL\" comhrá.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Cuir Scagaire Iompórtála i bhfeidhm</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Ionportáil cainéal atá le fáil i M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Iompórtáil na cainéil go léir</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Cuir Scagaire Iompórtála i bhfeidhm</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ionportáil cainéal atá le fáil i M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Iompórtáil na cainéil go léir</string>
 </resources>

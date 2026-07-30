@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Hiji nilai per baris.</string>
   <string name="pref_default_xmltv_url_title">Standar XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Nilai awal dina \"Impor XMLTV EPG URL\" paguneman.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Nerapkeun saringan impor</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Impor saluran anu kapanggih di M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Impor sadaya saluran</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Nerapkeun saringan impor</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Impor saluran anu kapanggih di M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Impor sadaya saluran</string>
 </resources>

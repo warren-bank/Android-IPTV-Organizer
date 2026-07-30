@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">O singură valoare pe rând.</string>
   <string name="pref_default_xmltv_url_title">Implicit XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valoarea inițială în \"Import XMLTV EPG URL\" dialog.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Aplică filtrul de import</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Canalele de import găsite în M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importă toate canalele</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Aplică filtrul de import</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Canalele de import găsite în M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Importă toate canalele</string>
 </resources>

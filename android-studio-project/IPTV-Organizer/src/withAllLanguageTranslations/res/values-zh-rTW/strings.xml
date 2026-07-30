@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">每行一個數值.</string>
   <string name="pref_default_xmltv_url_title">預設 XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">初始值在 \"匯入 XMLTV EPG URL\" 對話框.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">套用匯入篩選器</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >在以下位置找到的匯入通道： M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">匯入所有頻道</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">套用匯入篩選器</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >在以下位置找到的匯入通道： M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">匯入所有頻道</string>
 </resources>

@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ہر لائن پر ایک عدد.</string>
   <string name="pref_default_xmltv_url_title">مقرر شدہ XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">ابتدائی قدر میں \"درآمد XMLTV EPG URL\" گفتگو.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">درآمد فلٹر لاگو کریں</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >میں پائے جانے والے درآمدی چینلز M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">تمام چینلز درآمد کریں</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">درآمد فلٹر لاگو کریں</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >میں پائے جانے والے درآمدی چینلز M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">تمام چینلز درآمد کریں</string>
 </resources>

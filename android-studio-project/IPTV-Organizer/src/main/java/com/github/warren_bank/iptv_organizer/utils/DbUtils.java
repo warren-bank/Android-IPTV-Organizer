@@ -120,7 +120,7 @@ public class DbUtils {
   public static String resolveM3uMediaUrl(String template) {
     if (TextUtils.isEmpty(template)) return null;
 
-    List<String> values = DbUtils.getDb().getChannelUrlStaticValues();
+    List<String> values = DbUtils.getDb().getM3uChannelUrlStaticValues();
 
     return ((values == null) || values.isEmpty())
       ? template

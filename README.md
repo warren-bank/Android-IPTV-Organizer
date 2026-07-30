@@ -175,10 +175,24 @@ Android app that organizes IPTV channel and EPG information.
          ```text
          %3$s/xmltv.php?username=%1$s&password=%2$s
          ```
-  2. Apply Import Filter
-     - when `true`: Import channels found in M3U
-     - when `false`: Import all channels
+  2. Filter by M3U channels
+     - when `true`: Whitelist channels found in M3U
+     - when `false`: Do not whitelist channels found in M3U
      - default: `true`
+  3. Filter by channel name whitelist
+     - specify one channel name (ie: `target_value`) per line
+     - when `target_value` begins with the sequence: `+*`
+       * rather than being tested for equality to the value of this string,<br>channel names are tested for the presence of this substring (excluding the leading 2-char sequence)
+  4. Filter by channel ID whitelist
+     - specify one channel ID (ie: `target_value`) per line
+  5. Filter by channel name blacklist
+     - specify one channel name (ie: `target_value`) per line
+     - format of input and usage is identical to the "channel name whitelist"
+       * matching EPG channels are discarded during import
+  6. Filter by channel ID blacklist
+     - specify one channel ID (ie: `target_value`) per line
+     - format of input and usage is identical to the "channel ID whitelist"
+       * matching EPG channels are discarded during import
 
 #### Intent filters:
 
@@ -290,9 +304,25 @@ __Update Settings__
      1. name = `EPG_DEFAULT_XMLTV_URL`
         * type = `String`
         * setting = _EPG Channels &gt; Default XMLTV EPG URL_
-     1. name = `EPG_APPLY_IMPORT_FILTER`
+     1. name = `EPG_CHANNEL_M3U_WHITELIST`
         * type = `Boolean`
-        * setting = _EPG Channels &gt; Apply Import Filter_
+        * setting = _EPG Channels &gt; Filter by M3U channels_
+     1. name = `EPG_CHANNEL_NAME_WHITELIST`
+        * type = `String[]`
+        * setting = _EPG Channels &gt; Filter by channel name whitelist_
+        * specify one channel name per `String`
+     1. name = `EPG_CHANNEL_ID_WHITELIST`
+        * type = `String[]`
+        * setting = _EPG Channels &gt; Filter by channel ID whitelist_
+        * specify one channel ID per `String`
+     1. name = `EPG_CHANNEL_NAME_BLACKLIST`
+        * type = `String[]`
+        * setting = _EPG Channels &gt; Filter by channel name blacklist_
+        * specify one channel name per `String`
+     1. name = `EPG_CHANNEL_ID_BLACKLIST`
+        * type = `String[]`
+        * setting = _EPG Channels &gt; Filter by channel ID blacklist_
+        * specify one channel ID per `String`
 2. example: how to update _IPTV-Organizer_ settings on a remote device that is also running [_ExoAirPlayer_](https://github.com/warren-bank/Android-ExoPlayer-AirPlay-Receiver)
    ```bash
    # network address for running instance of 'ExoPlayer AirPlay Receiver'
@@ -332,7 +362,11 @@ __Update Settings__
      extra-M3U_MEDIA_URL_STATIC_STRINGS: http://kytv.xyz:80
      extra-M3U_MEDIA_URL_STATIC_STRINGS: http://kytv.xyz:25461
      extra-EPG_DEFAULT_XMLTV_URL: %3$s/xmltv.php?username=%1$s&password=%2$s
-     extra-EPG_APPLY_IMPORT_FILTER: (bool) true
+     extra-EPG_CHANNEL_M3U_WHITELIST: (bool) true
+     extra-EPG_CHANNEL_NAME_WHITELIST: (String[]) null
+     extra-EPG_CHANNEL_ID_WHITELIST: (String[]) null
+     extra-EPG_CHANNEL_NAME_BLACKLIST: (String[]) null
+     extra-EPG_CHANNEL_ID_BLACKLIST: (String[]) null
    '
    
    curl --silent -X POST \

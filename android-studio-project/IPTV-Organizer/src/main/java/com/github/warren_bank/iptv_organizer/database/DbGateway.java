@@ -397,7 +397,7 @@ public class DbGateway {
   // write M3U channel mappings to DB:
   // ---------------------------------------------------------------------------
 
-  public boolean saveChannelNameMappings(Map<String, String> data) {
+  public boolean saveM3uChannelNameMappings(Map<String, String> data) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -435,7 +435,7 @@ public class DbGateway {
     return result;
   }
 
-  public boolean saveChannelIdMappings(Map<String, String> data) {
+  public boolean saveM3uChannelIdMappings(Map<String, String> data) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -477,7 +477,7 @@ public class DbGateway {
   // read M3U channel mappings from DB:
   // ---------------------------------------------------------------------------
 
-  public Map<String, String> getChannelNameMappings() {
+  public Map<String, String> getM3uChannelNameMappings() {
     Map<String, String> data = new HashMap<String, String>();
     String query = "SELECT * FROM m3u_channels_mapping_name_to_id ORDER BY name ASC";
     String name, new_tvg_id;
@@ -502,7 +502,7 @@ public class DbGateway {
     return data;
   }
 
-  public Map<String, String> getChannelIdMappings() {
+  public Map<String, String> getM3uChannelIdMappings() {
     Map<String, String> data = new HashMap<String, String>();
     String query = "SELECT * FROM m3u_channels_mapping_id_to_id ORDER BY old_tvg_id ASC";
     String old_tvg_id, new_tvg_id;
@@ -531,7 +531,7 @@ public class DbGateway {
   // write M3U channel url static values to DB:
   // ---------------------------------------------------------------------------
 
-  public boolean saveChannelUrlStaticValues(List<String> values) {
+  public boolean saveM3uChannelUrlStaticValues(List<String> values) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -575,7 +575,7 @@ public class DbGateway {
   // read M3U channel url static values from DB:
   // ---------------------------------------------------------------------------
 
-  public List<String> getChannelUrlStaticValues() {
+  public List<String> getM3uChannelUrlStaticValues() {
     List<String> values = new ArrayList<String>();
     String query = "SELECT * FROM m3u_channels_media_url_static_values ORDER BY position ASC";
     String value;
@@ -600,10 +600,10 @@ public class DbGateway {
   }
 
   // ---------------------------------------------------------------------------
-  // write M3U channel filter whitelists to DB:
+  // internal: write generic channel filter lists to DB:
   // ---------------------------------------------------------------------------
 
-  public boolean saveChannelNameFilterWhitelist(List<String> names) {
+  private boolean saveChannelNameFilterList(List<String> names, String tableName) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -611,7 +611,7 @@ public class DbGateway {
     try {
       dbase.beginTransaction();
 
-      query = "DELETE FROM m3u_channels_filter_whitelist_names";
+      query = "DELETE FROM " + tableName;
       dbase.execSQL(query);
       query = null;
 
@@ -622,7 +622,7 @@ public class DbGateway {
           cvals = new ContentValues();
           cvals.put("name", name);
 
-          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_filter_whitelist_names", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, tableName, null, cvals);
           cvals = null;
         }
       }
@@ -639,7 +639,7 @@ public class DbGateway {
     return result;
   }
 
-  public boolean saveChannelIdFilterWhitelist(List<String> ids) {
+  private boolean saveChannelIdFilterList(List<String> ids, String tableName) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -647,7 +647,7 @@ public class DbGateway {
     try {
       dbase.beginTransaction();
 
-      query = "DELETE FROM m3u_channels_filter_whitelist_ids";
+      query = "DELETE FROM " + tableName;
       dbase.execSQL(query);
       query = null;
 
@@ -658,7 +658,7 @@ public class DbGateway {
           cvals = new ContentValues();
           cvals.put("tvg_id", tvg_id);
 
-          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_filter_whitelist_ids", null, cvals);
+          insertOrThrowUnlessConstraintViolated(dbase, tableName, null, cvals);
           cvals = null;
         }
       }
@@ -673,242 +673,218 @@ public class DbGateway {
       dbase.endTransaction();
     }
     return result;
+  }
+
+  // ---------------------------------------------------------------------------
+  // internal: read generic channel filter lists from DB:
+  // ---------------------------------------------------------------------------
+
+  private List<String> getChannelNameFilterList(String tableName) {
+    List<String> names = new ArrayList<String>();
+    String query = "SELECT * FROM " + tableName + " ORDER BY name ASC";
+    String name;
+
+    Cursor c = null;
+    try {
+      c = db.query(query);
+
+      if ((c != null) && c.moveToFirst() && c.isFirst()) {
+        do {
+          name = getColumnString(c, "name");
+
+          names.add(name);
+        } while (c.moveToNext());
+      }
+    }
+    catch (SQLiteException e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    }
+    if (c != null) c.close();
+    return names;
+  }
+
+  private List<String> getChannelNameFilterListSubset(boolean getSubstringPatterns, String tableName) {
+    List<String> names = new ArrayList<String>();
+    String query = "SELECT name FROM " + tableName + " WHERE name" + (getSubstringPatterns ? "" : " NOT") + " LIKE " + sqlEscapeString(Constants.FILTER_LIST_NAMES_BY_SUBSTRING_TOKEN + "%") + " ORDER BY name ASC";
+    String name;
+
+    Cursor c = null;
+    try {
+      c = db.query(query);
+
+      if ((c != null) && c.moveToFirst() && c.isFirst()) {
+        do {
+          name = getColumnString(c, "name");
+
+          // remove leading token sequence from substring patterns
+          if (getSubstringPatterns)
+            name = name.substring(Constants.FILTER_LIST_NAMES_BY_SUBSTRING_TOKEN.length());
+
+          names.add(name);
+        } while (c.moveToNext());
+      }
+    }
+    catch (SQLiteException e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    }
+    if (c != null) c.close();
+    return names;
+  }
+
+  private List<String> getChannelIdFilterList(String tableName) {
+    List<String> ids = new ArrayList<String>();
+    String query = "SELECT * FROM " + tableName + " ORDER BY tvg_id ASC";
+    String tvg_id;
+
+    Cursor c = null;
+    try {
+      c = db.query(query);
+
+      if ((c != null) && c.moveToFirst() && c.isFirst()) {
+        do {
+          tvg_id = getColumnString(c, "tvg_id");
+
+          ids.add(tvg_id);
+        } while (c.moveToNext());
+      }
+    }
+    catch (SQLiteException e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    }
+    if (c != null) c.close();
+    return ids;
+  }
+
+  // ---------------------------------------------------------------------------
+  // write M3U channel filter whitelists to DB:
+  // ---------------------------------------------------------------------------
+
+  public boolean saveM3uChannelNameFilterWhitelist(List<String> names) {
+    String tableName = "m3u_channels_filter_whitelist_names";
+    return saveChannelNameFilterList(names, tableName);
+  }
+
+  public boolean saveM3uChannelIdFilterWhitelist(List<String> ids) {
+    String tableName = "m3u_channels_filter_whitelist_ids";
+    return saveChannelIdFilterList(ids, tableName);
   }
 
   // ---------------------------------------------------------------------------
   // read M3U channel filter whitelists from DB:
   // ---------------------------------------------------------------------------
 
-  public List<String> getChannelNameFilterWhitelist() {
-    List<String> names = new ArrayList<String>();
-    String query = "SELECT * FROM m3u_channels_filter_whitelist_names ORDER BY name ASC";
-    String name;
-
-    Cursor c = null;
-    try {
-      c = db.query(query);
-
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          name = getColumnString(c, "name");
-
-          names.add(name);
-        } while (c.moveToNext());
-      }
-    }
-    catch (SQLiteException e) {
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    if (c != null) c.close();
-    return names;
+  public List<String> getM3uChannelNameFilterWhitelist() {
+    String tableName = "m3u_channels_filter_whitelist_names";
+    return getChannelNameFilterList(tableName);
   }
 
-  public List<String> getChannelNameFilterWhitelistSubset(boolean getSubstringPatterns) {
-    List<String> names = new ArrayList<String>();
-    String query = "SELECT name FROM m3u_channels_filter_whitelist_names WHERE name" + (getSubstringPatterns ? "" : " NOT") + " LIKE " + sqlEscapeString(Constants.M3U_CHANNELS_FILTER_WHITELIST_NAMES_BY_SUBSTRING_TOKEN + "%") + " ORDER BY name ASC";
-    String name;
-
-    Cursor c = null;
-    try {
-      c = db.query(query);
-
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          name = getColumnString(c, "name");
-
-          // remove leading token sequence from substring patterns
-          if (getSubstringPatterns)
-            name = name.substring(Constants.M3U_CHANNELS_FILTER_WHITELIST_NAMES_BY_SUBSTRING_TOKEN.length());
-
-          names.add(name);
-        } while (c.moveToNext());
-      }
-    }
-    catch (SQLiteException e) {
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    if (c != null) c.close();
-    return names;
+  public List<String> getM3uChannelNameFilterWhitelistSubset(boolean getSubstringPatterns) {
+    String tableName = "m3u_channels_filter_whitelist_names";
+    return getChannelNameFilterListSubset(getSubstringPatterns, tableName);
   }
 
-  public List<String> getChannelIdFilterWhitelist() {
-    List<String> ids = new ArrayList<String>();
-    String query = "SELECT * FROM m3u_channels_filter_whitelist_ids ORDER BY tvg_id ASC";
-    String tvg_id;
-
-    Cursor c = null;
-    try {
-      c = db.query(query);
-
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          tvg_id = getColumnString(c, "tvg_id");
-
-          ids.add(tvg_id);
-        } while (c.moveToNext());
-      }
-    }
-    catch (SQLiteException e) {
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    if (c != null) c.close();
-    return ids;
+  public List<String> getM3uChannelIdFilterWhitelist() {
+    String tableName = "m3u_channels_filter_whitelist_ids";
+    return getChannelIdFilterList(tableName);
   }
 
   // ---------------------------------------------------------------------------
   // write M3U channel filter blacklists to DB:
   // ---------------------------------------------------------------------------
 
-  public boolean saveChannelNameFilterBlacklist(List<String> names) {
-    SQLiteDatabase dbase = db.getSQLiteDatabase();
-    String query;
-    ContentValues cvals;
-    boolean result = true;
-    try {
-      dbase.beginTransaction();
-
-      query = "DELETE FROM m3u_channels_filter_blacklist_names";
-      dbase.execSQL(query);
-      query = null;
-
-      if ((names != null) && !names.isEmpty()) {
-        for (String name : names) {
-          if (TextUtils.isEmpty(name)) continue;
-
-          cvals = new ContentValues();
-          cvals.put("name", name);
-
-          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_filter_blacklist_names", null, cvals);
-          cvals = null;
-        }
-      }
-
-      dbase.setTransactionSuccessful();
-    }
-    catch (SQLException e) {
-      result = false;
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    finally {
-      dbase.endTransaction();
-    }
-    return result;
+  public boolean saveM3uChannelNameFilterBlacklist(List<String> names) {
+    String tableName = "m3u_channels_filter_blacklist_names";
+    return saveChannelNameFilterList(names, tableName);
   }
 
-  public boolean saveChannelIdFilterBlacklist(List<String> ids) {
-    SQLiteDatabase dbase = db.getSQLiteDatabase();
-    String query;
-    ContentValues cvals;
-    boolean result = true;
-    try {
-      dbase.beginTransaction();
-
-      query = "DELETE FROM m3u_channels_filter_blacklist_ids";
-      dbase.execSQL(query);
-      query = null;
-
-      if ((ids != null) && !ids.isEmpty()) {
-        for (String tvg_id : ids) {
-          if (TextUtils.isEmpty(tvg_id)) continue;
-
-          cvals = new ContentValues();
-          cvals.put("tvg_id", tvg_id);
-
-          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_filter_blacklist_ids", null, cvals);
-          cvals = null;
-        }
-      }
-
-      dbase.setTransactionSuccessful();
-    }
-    catch (SQLException e) {
-      result = false;
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    finally {
-      dbase.endTransaction();
-    }
-    return result;
+  public boolean saveM3uChannelIdFilterBlacklist(List<String> ids) {
+    String tableName = "m3u_channels_filter_blacklist_ids";
+    return saveChannelIdFilterList(ids, tableName);
   }
 
   // ---------------------------------------------------------------------------
   // read M3U channel filter blacklists from DB:
   // ---------------------------------------------------------------------------
 
-  public List<String> getChannelNameFilterBlacklist() {
-    List<String> names = new ArrayList<String>();
-    String query = "SELECT * FROM m3u_channels_filter_blacklist_names ORDER BY name ASC";
-    String name;
-
-    Cursor c = null;
-    try {
-      c = db.query(query);
-
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          name = getColumnString(c, "name");
-
-          names.add(name);
-        } while (c.moveToNext());
-      }
-    }
-    catch (SQLiteException e) {
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    if (c != null) c.close();
-    return names;
+  public List<String> getM3uChannelNameFilterBlacklist() {
+    String tableName = "m3u_channels_filter_blacklist_names";
+    return getChannelNameFilterList(tableName);
   }
 
-  public List<String> getChannelNameFilterBlacklistSubset(boolean getSubstringPatterns) {
-    List<String> names = new ArrayList<String>();
-    String query = "SELECT name FROM m3u_channels_filter_blacklist_names WHERE name" + (getSubstringPatterns ? "" : " NOT") + " LIKE " + sqlEscapeString(Constants.M3U_CHANNELS_FILTER_BLACKLIST_NAMES_BY_SUBSTRING_TOKEN + "%") + " ORDER BY name ASC";
-    String name;
-
-    Cursor c = null;
-    try {
-      c = db.query(query);
-
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          name = getColumnString(c, "name");
-
-          // remove leading token sequence from substring patterns
-          if (getSubstringPatterns)
-            name = name.substring(Constants.M3U_CHANNELS_FILTER_BLACKLIST_NAMES_BY_SUBSTRING_TOKEN.length());
-
-          names.add(name);
-        } while (c.moveToNext());
-      }
-    }
-    catch (SQLiteException e) {
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    if (c != null) c.close();
-    return names;
+  public List<String> getM3uChannelNameFilterBlacklistSubset(boolean getSubstringPatterns) {
+    String tableName = "m3u_channels_filter_blacklist_names";
+    return getChannelNameFilterListSubset(getSubstringPatterns, tableName);
   }
 
-  public List<String> getChannelIdFilterBlacklist() {
-    List<String> ids = new ArrayList<String>();
-    String query = "SELECT * FROM m3u_channels_filter_blacklist_ids ORDER BY tvg_id ASC";
-    String tvg_id;
+  public List<String> getM3uChannelIdFilterBlacklist() {
+    String tableName = "m3u_channels_filter_blacklist_ids";
+    return getChannelIdFilterList(tableName);
+  }
 
-    Cursor c = null;
-    try {
-      c = db.query(query);
+  // ---------------------------------------------------------------------------
+  // write EPG channel filter whitelists to DB:
+  // ---------------------------------------------------------------------------
 
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          tvg_id = getColumnString(c, "tvg_id");
+  public boolean saveEpgChannelNameFilterWhitelist(List<String> names) {
+    String tableName = "epg_channels_filter_whitelist_names";
+    return saveChannelNameFilterList(names, tableName);
+  }
 
-          ids.add(tvg_id);
-        } while (c.moveToNext());
-      }
-    }
-    catch (SQLiteException e) {
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    if (c != null) c.close();
-    return ids;
+  public boolean saveEpgChannelIdFilterWhitelist(List<String> ids) {
+    String tableName = "epg_channels_filter_whitelist_ids";
+    return saveChannelIdFilterList(ids, tableName);
+  }
+
+  // ---------------------------------------------------------------------------
+  // read EPG channel filter whitelists from DB:
+  // ---------------------------------------------------------------------------
+
+  public List<String> getEpgChannelNameFilterWhitelist() {
+    String tableName = "epg_channels_filter_whitelist_names";
+    return getChannelNameFilterList(tableName);
+  }
+
+  public List<String> getEpgChannelNameFilterWhitelistSubset(boolean getSubstringPatterns) {
+    String tableName = "epg_channels_filter_whitelist_names";
+    return getChannelNameFilterListSubset(getSubstringPatterns, tableName);
+  }
+
+  public List<String> getEpgChannelIdFilterWhitelist() {
+    String tableName = "epg_channels_filter_whitelist_ids";
+    return getChannelIdFilterList(tableName);
+  }
+
+  // ---------------------------------------------------------------------------
+  // write EPG channel filter blacklists to DB:
+  // ---------------------------------------------------------------------------
+
+  public boolean saveEpgChannelNameFilterBlacklist(List<String> names) {
+    String tableName = "epg_channels_filter_blacklist_names";
+    return saveChannelNameFilterList(names, tableName);
+  }
+
+  public boolean saveEpgChannelIdFilterBlacklist(List<String> ids) {
+    String tableName = "epg_channels_filter_blacklist_ids";
+    return saveChannelIdFilterList(ids, tableName);
+  }
+
+  // ---------------------------------------------------------------------------
+  // read EPG channel filter blacklists from DB:
+  // ---------------------------------------------------------------------------
+
+  public List<String> getEpgChannelNameFilterBlacklist() {
+    String tableName = "epg_channels_filter_blacklist_names";
+    return getChannelNameFilterList(tableName);
+  }
+
+  public List<String> getEpgChannelNameFilterBlacklistSubset(boolean getSubstringPatterns) {
+    String tableName = "epg_channels_filter_blacklist_names";
+    return getChannelNameFilterListSubset(getSubstringPatterns, tableName);
+  }
+
+  public List<String> getEpgChannelIdFilterBlacklist() {
+    String tableName = "epg_channels_filter_blacklist_ids";
+    return getChannelIdFilterList(tableName);
   }
 
   // ---------------------------------------------------------------------------

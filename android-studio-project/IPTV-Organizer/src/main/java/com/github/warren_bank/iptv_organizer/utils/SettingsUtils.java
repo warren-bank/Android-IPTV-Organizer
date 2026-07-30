@@ -178,26 +178,26 @@ public class SettingsUtils {
 
   // --------------------
 
-  public static boolean getApplyXmltvImportFilter(Context context) {
-    return getApplyXmltvImportFilter(context, getPrefs(context));
+  public static boolean getFilterM3uChannels(Context context) {
+    return getFilterM3uChannels(context, getPrefs(context));
   }
 
-  private static boolean getApplyXmltvImportFilter(Context context, SharedPreferences prefs) {
-    String pref_key     = context.getString(R.string.pref_apply_import_filter_xmltv_channels_key);
-    String pref_default = context.getString(R.string.pref_apply_import_filter_xmltv_channels_default);
+  private static boolean getFilterM3uChannels(Context context, SharedPreferences prefs) {
+    String pref_key     = context.getString(R.string.pref_epg_channels_filter_whitelist_m3u_key);
+    String pref_default = context.getString(R.string.pref_epg_channels_filter_whitelist_m3u_default);
     boolean val_default = "true".equals(pref_default);
 
     return prefs.getBoolean(pref_key, val_default);
   }
 
-  public static boolean setApplyXmltvImportFilter(Context context, boolean value) {
+  public static boolean setFilterM3uChannels(Context context, boolean value) {
     SharedPreferences.Editor editor = getPrefsEditor(context);
-    setApplyXmltvImportFilter(context, value, editor);
+    setFilterM3uChannels(context, value, editor);
     return editor.commit();
   }
 
-  private static void setApplyXmltvImportFilter(Context context, boolean value, SharedPreferences.Editor editor) {
-    String pref_key = context.getString(R.string.pref_apply_import_filter_xmltv_channels_key);
+  private static void setFilterM3uChannels(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_epg_channels_filter_whitelist_m3u_key);
 
     editor.putBoolean(pref_key, value);
   }

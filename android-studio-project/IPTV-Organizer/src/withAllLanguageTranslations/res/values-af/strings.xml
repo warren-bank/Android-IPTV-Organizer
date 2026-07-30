@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Een waarde per reël.</string>
   <string name="pref_default_xmltv_url_title">Standaard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Inisiale waarde in \"Invoer XMLTV EPG URL\" dialoog.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Pas invoerfilter toe</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Ingevoerde kanale gevind in M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Voer alle kanale in</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Pas invoerfilter toe</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ingevoerde kanale gevind in M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Voer alle kanale in</string>
 </resources>

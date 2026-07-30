@@ -21,7 +21,7 @@ public class XmlTvFilter {
   private List<ChannelListItem> m3uChannels;
 
   public XmlTvFilter() throws Exception {
-    this.applyFilter = SettingsUtils.getApplyXmltvImportFilter(App.context);
+    this.applyFilter = SettingsUtils.getFilterM3uChannels(App.context);
 
     if (applyFilter) {
       DbGateway db = DbUtils.getDb();

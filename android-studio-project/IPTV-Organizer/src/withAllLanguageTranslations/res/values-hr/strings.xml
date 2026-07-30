@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Jedna vrijednost po retku.</string>
   <string name="pref_default_xmltv_url_title">Zadano XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Početna vrijednost u \"Uvoz XMLTV EPG URL\" dijalog.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Primijeni filtar za uvoz</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Uvezeni kanali pronađeni u M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Uvezi sve kanale</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Primijeni filtar za uvoz</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Uvezeni kanali pronađeni u M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Uvezi sve kanale</string>
 </resources>

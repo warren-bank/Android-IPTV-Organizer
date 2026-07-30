@@ -210,6 +210,26 @@ public class SQLiteStore extends SQLiteOpenHelper {
         + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
         + ");"
       );
+      dbase.execSQL(
+          "CREATE TABLE IF NOT EXISTS epg_channels_filter_whitelist_names ("
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      dbase.execSQL(
+          "CREATE TABLE IF NOT EXISTS epg_channels_filter_whitelist_ids ("
+        + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      dbase.execSQL(
+          "CREATE TABLE IF NOT EXISTS epg_channels_filter_blacklist_names ("
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      dbase.execSQL(
+          "CREATE TABLE IF NOT EXISTS epg_channels_filter_blacklist_ids ("
+        + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
     }
     catch (SQLiteException e) {
       Log.e(Constants.LOG_TAG, e.getMessage());

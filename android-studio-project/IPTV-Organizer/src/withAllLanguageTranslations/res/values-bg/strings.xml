@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">По една стойност на ред.</string>
   <string name="pref_default_xmltv_url_title">По подразбиране XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Начална стойност в \"Импорт XMLTV EPG URL\" диалог.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Приложи филтър за импортиране</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Канали за внос, намиращи се в M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Импортиране на всички канали</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Приложи филтър за импортиране</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Канали за внос, намиращи се в M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Импортиране на всички канали</string>
 </resources>

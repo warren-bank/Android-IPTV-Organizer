@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Sanda iray isaky ny andalana.</string>
   <string name="pref_default_xmltv_url_title">Araka ny mahazatra XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Sanda voalohany ao \"Fanafarana XMLTV EPG URL\" resadresaka.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Ampiharo ny sivana fampidirana</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Fantsona fampidirana hita ao amin\'ny M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Ampidiro ny fantsona rehetra</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Ampiharo ny sivana fampidirana</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Fantsona fampidirana hita ao amin\'ny M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ampidiro ny fantsona rehetra</string>
 </resources>

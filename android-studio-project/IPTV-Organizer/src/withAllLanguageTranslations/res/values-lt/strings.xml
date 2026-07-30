@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Viena reikšmė vienoje eilutėje.</string>
   <string name="pref_default_xmltv_url_title">Numatytasis XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Pradinė vertė \"Importas XMLTV EPG URL\" dialogas.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Taikyti importo filtrą</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Rasti importo kanalai, esantys M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importuoti visus kanalus</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Taikyti importo filtrą</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Rasti importo kanalai, esantys M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Importuoti visus kanalus</string>
 </resources>

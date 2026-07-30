@@ -92,11 +92,31 @@
       android:defaultValue="@string/pref_default_xmltv_url_default" />
 
     <CheckBoxPreference
-      android:key="@string/pref_apply_import_filter_xmltv_channels_key"
-      android:title="@string/pref_apply_import_filter_xmltv_channels_title"
-      android:summaryOn="@string/pref_apply_import_filter_xmltv_channels_summary_on"
-      android:summaryOff="@string/pref_apply_import_filter_xmltv_channels_summary_off"
-      android:defaultValue="@string/pref_apply_import_filter_xmltv_channels_default" />
+      android:key="@string/pref_epg_channels_filter_whitelist_m3u_key"
+      android:title="@string/pref_epg_channels_filter_whitelist_m3u_title"
+      android:summaryOn="@string/pref_epg_channels_filter_whitelist_m3u_summary_on"
+      android:summaryOff="@string/pref_epg_channels_filter_whitelist_m3u_summary_off"
+      android:defaultValue="@string/pref_epg_channels_filter_whitelist_m3u_default" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="epg_channels_filter_whitelist_names"
+      android:title="@string/pref_epg_channels_filter_whitelist_names_title"
+      android:summary="@string/pref_epg_channels_filter_whitelist_names_summary" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="epg_channels_filter_whitelist_ids"
+      android:title="@string/pref_epg_channels_filter_whitelist_ids_title"
+      android:summary="@string/pref_epg_channels_filter_whitelist_ids_summary" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="epg_channels_filter_blacklist_names"
+      android:title="@string/pref_epg_channels_filter_blacklist_names_title"
+      android:summary="@string/pref_epg_channels_filter_blacklist_names_summary" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference
+      android:key="epg_channels_filter_blacklist_ids"
+      android:title="@string/pref_epg_channels_filter_blacklist_ids_title"
+      android:summary="@string/pref_epg_channels_filter_blacklist_ids_summary" />
 
   </PreferenceCategory>
 </PreferenceScreen>

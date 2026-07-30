@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Inani elinye kumgca ngamnye.</string>
   <string name="pref_default_xmltv_url_title">Okumiselweyo XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Ixabiso lokuqala elingena \"Ngenisa XMLTV EPG URL\" incoko.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Faka iSihluzo Sokungenisa</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Iindlela zokungenisa ezifumaneka kwi M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Ngenisa zonke iitshaneli</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Faka iSihluzo Sokungenisa</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Iindlela zokungenisa ezifumaneka kwi M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ngenisa zonke iitshaneli</string>
 </resources>

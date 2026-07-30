@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ప్రతి లైన్‌కు ఒక విలువ.</string>
   <string name="pref_default_xmltv_url_title">ప్రామాణికం XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">లో ప్రారంభ విలువ \"దిగుమతి XMLTV EPG URL\" సంభాషణ.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">దిగుమతి ఫిల్టర్‌ను వర్తింపజేయండి</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >లో కనుగొనబడిన ఇంపోర్ట్ ఛానెల్స్ M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">అన్ని ఛానెళ్లను దిగుమతి చేసుకోండి</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">దిగుమతి ఫిల్టర్‌ను వర్తింపజేయండి</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >లో కనుగొనబడిన ఇంపోర్ట్ ఛానెల్స్ M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">అన్ని ఛానెళ్లను దిగుమతి చేసుకోండి</string>
 </resources>

@@ -33,7 +33,11 @@ public class SettingsActivity extends PreferenceActivity {
   private static final String EXTRA_M3U_CHANNEL_ID_BLACKLIST      = "M3U_CHANNEL_ID_BLACKLIST";       // String[]
   private static final String EXTRA_M3U_MEDIA_URL_STATIC_STRINGS  = "M3U_MEDIA_URL_STATIC_STRINGS";   // String[]
   private static final String EXTRA_EPG_DEFAULT_XMLTV_URL         = "EPG_DEFAULT_XMLTV_URL";          // String
-  private static final String EXTRA_EPG_APPLY_IMPORT_FILTER       = "EPG_APPLY_IMPORT_FILTER";        // Boolean
+  private static final String EXTRA_EPG_CHANNEL_M3U_WHITELIST     = "EPG_CHANNEL_M3U_WHITELIST";      // Boolean
+  private static final String EXTRA_EPG_CHANNEL_NAME_WHITELIST    = "EPG_CHANNEL_NAME_WHITELIST";     // String[]
+  private static final String EXTRA_EPG_CHANNEL_ID_WHITELIST      = "EPG_CHANNEL_ID_WHITELIST";       // String[]
+  private static final String EXTRA_EPG_CHANNEL_NAME_BLACKLIST    = "EPG_CHANNEL_NAME_BLACKLIST";     // String[]
+  private static final String EXTRA_EPG_CHANNEL_ID_BLACKLIST      = "EPG_CHANNEL_ID_BLACKLIST";       // String[]
 
   private static Activity             self   = null;
   private static DbEditTextPreference dbPref = null;
@@ -173,9 +177,45 @@ public class SettingsActivity extends PreferenceActivity {
         didUpdate = true;
       }
 
-      if (intent.hasExtra(EXTRA_EPG_APPLY_IMPORT_FILTER)) {
-        boolean value = intent.getBooleanExtra(EXTRA_EPG_APPLY_IMPORT_FILTER, true);
-        SettingsUtils.setApplyXmltvImportFilter(SettingsActivity.this, value);
+      if (intent.hasExtra(EXTRA_EPG_CHANNEL_M3U_WHITELIST)) {
+        boolean value = intent.getBooleanExtra(EXTRA_EPG_CHANNEL_M3U_WHITELIST, true);
+        SettingsUtils.setFilterM3uChannels(SettingsActivity.this, value);
+        didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_EPG_CHANNEL_NAME_WHITELIST)) {
+        String[] value = intent.getStringArrayExtra(EXTRA_EPG_CHANNEL_NAME_WHITELIST);
+        DbPreferenceDataStore.putString(
+          DbPreferenceDataStore.KEY_EPG_CHANNELS_FILTER_WHITELIST_NAMES,
+          joinStringArray(value)
+        );
+        didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_EPG_CHANNEL_ID_WHITELIST)) {
+        String[] value = intent.getStringArrayExtra(EXTRA_EPG_CHANNEL_ID_WHITELIST);
+        DbPreferenceDataStore.putString(
+          DbPreferenceDataStore.KEY_EPG_CHANNELS_FILTER_WHITELIST_IDS,
+          joinStringArray(value)
+        );
+        didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_EPG_CHANNEL_NAME_BLACKLIST)) {
+        String[] value = intent.getStringArrayExtra(EXTRA_EPG_CHANNEL_NAME_BLACKLIST);
+        DbPreferenceDataStore.putString(
+          DbPreferenceDataStore.KEY_EPG_CHANNELS_FILTER_BLACKLIST_NAMES,
+          joinStringArray(value)
+        );
+        didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_EPG_CHANNEL_ID_BLACKLIST)) {
+        String[] value = intent.getStringArrayExtra(EXTRA_EPG_CHANNEL_ID_BLACKLIST);
+        DbPreferenceDataStore.putString(
+          DbPreferenceDataStore.KEY_EPG_CHANNELS_FILTER_BLACKLIST_IDS,
+          joinStringArray(value)
+        );
         didUpdate = true;
       }
     }

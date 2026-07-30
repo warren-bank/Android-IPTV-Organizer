@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Una valura por linia.</string>
   <string name="pref_default_xmltv_url_title">Por defecto XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valor inicial en \"Importar XMLTV EPG URL\" Dialogo.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Aplicar filtro d\'importación</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Importar canals trobadas en M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Importar toz os canals</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Aplicar filtro d\'importación</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Importar canals trobadas en M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Importar toz os canals</string>
 </resources>

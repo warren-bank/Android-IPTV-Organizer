@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">한 줄에 하나의 값.</string>
   <string name="pref_default_xmltv_url_title">기본값 XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">초기값은 \"가져오기 XMLTV EPG URL\" 대화.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">가져오기 필터 적용</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >다음 위치에서 발견된 가져오기 채널: M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">모든 채널 가져오기</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">가져오기 필터 적용</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >다음 위치에서 발견된 가져오기 채널: M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">모든 채널 가져오기</string>
 </resources>

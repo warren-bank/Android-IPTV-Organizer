@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">איין ווערט פּער שורה.</string>
   <string name="pref_default_xmltv_url_title">סטאַנדאַרט XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">אָנהייב־ווערט אין \"אימפּאָרט XMLTV EPG URL\" דיאַלאָג.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">אַפּליצירן ימפּאָרט־פֿילטער</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >אימפּאָרטירטע קאַנאַלן געפֿונען אין M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">אימפּאָרטירן אַלע קאַנאַלן</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">אַפּליצירן ימפּאָרט־פֿילטער</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >אימפּאָרטירטע קאַנאַלן געפֿונען אין M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">אימפּאָרטירן אַלע קאַנאַלן</string>
 </resources>

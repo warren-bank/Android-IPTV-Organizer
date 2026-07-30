@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">یک مقدار در هر خط.</string>
   <string name="pref_default_xmltv_url_title">پیش‌فرض XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">مقدار اولیه در \"واردات XMLTV EPG URL\" گفتگو.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">اعمال فیلتر واردات</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >کانال‌های وارداتی یافت‌شده در M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">وارد کردن همهٔ کانال‌ها</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">اعمال فیلتر واردات</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >کانال‌های وارداتی یافت‌شده در M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">وارد کردن همهٔ کانال‌ها</string>
 </resources>

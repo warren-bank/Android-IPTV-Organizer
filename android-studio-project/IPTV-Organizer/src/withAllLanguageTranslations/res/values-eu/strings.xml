@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary"> Lerro bakoitzeko balio bat.</string>
   <string name="pref_default_xmltv_url_title">Lehenetsia XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Balio hasierakoa sartzeko \"Inportatu XMLTV EPG URL\" elkarrizketa.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Inportazio-iragazkia aplikatu</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >aurkitutako inportazio-kanalak M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Inportatu kanal guztiak</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Inportazio-iragazkia aplikatu</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >aurkitutako inportazio-kanalak M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Inportatu kanal guztiak</string>
 </resources>

@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ერთი მნიშვნელობა თითო სტრიქონში.</string>
   <string name="pref_default_xmltv_url_title">ნაგულისხმევი XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">საწყისი ღირებულება \"იმპორტი XMLTV EPG URL\" დიალოგი.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">გამოიყენეთ იმპორტის ფილტრი</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >პორტალში ნაპოვნი იმპორტის არხები M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">ყველა არხის იმპორტი</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">გამოიყენეთ იმპორტის ფილტრი</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >პორტალში ნაპოვნი იმპორტის არხები M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ყველა არხის იმპორტი</string>
 </resources>

@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Sarara tokko irratti gatii tokko.</string>
   <string name="pref_default_xmltv_url_title">Akka duraan turetti XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Gatii jalqabaa keessa \"Galuu XMLTV EPG URL\" Haasawa.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">Calaltuu Galchii Hojiirra Oolchi</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Meeshaalee alaa galchan kan argaman M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Chaanaalota hunda galchi</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">Calaltuu Galchii Hojiirra Oolchi</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Meeshaalee alaa galchan kan argaman M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Chaanaalota hunda galchi</string>
 </resources>

@@ -47,7 +47,7 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Her satırda bir değer.</string>
   <string name="pref_default_xmltv_url_title">Varsayılan XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Başlangıç değeri \"İthalat XMLTV EPG URL\" diyalog.</string>
-  <string name="pref_apply_import_filter_xmltv_channels_title">İçe Aktarma Filtresini Uygula</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_on" >Şu konumda bulunan içe aktarma kanalları: M3U</string>
-  <string name="pref_apply_import_filter_xmltv_channels_summary_off">Tüm kanalları içe aktar</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_title">İçe Aktarma Filtresini Uygula</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Şu konumda bulunan içe aktarma kanalları: M3U</string>
+  <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Tüm kanalları içe aktar</string>
 </resources>
