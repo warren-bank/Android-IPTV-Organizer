@@ -375,7 +375,23 @@ public class EPG extends ViewGroup {
         // Loading channel image into target for
         final String imageURL = epgData.getChannel(position).getImageURL();
 
-        if (mChannelImageCache.containsKey(imageURL)) {
+        if ((imageURL == null) || imageURL.isEmpty()) {
+            // Display channel name in place of an icon image
+
+            // Background
+            mPaint.setColor(mChannelLayoutBackground);
+            canvas.drawRect(drawingRect, mPaint);
+
+            // Text
+            mPaint.setColor(mEventLayoutTextColor);
+            mPaint.setTextSize(mTimeBarTextSize);
+            mPaint.setTextAlign(Paint.Align.CENTER);
+            canvas.drawText(epgData.getChannel(position).getName(),
+                    drawingRect.left + ((drawingRect.right - drawingRect.left) / 2),
+                    drawingRect.top + (((drawingRect.bottom - drawingRect.top) / 2) + (mTimeBarTextSize / 2)), mPaint);
+
+            mPaint.setTextAlign(Paint.Align.LEFT);
+        } else if (mChannelImageCache.containsKey(imageURL)) {
             Bitmap image = mChannelImageCache.get(imageURL);
             drawingRect = getDrawingRectForChannelImage(drawingRect, image);
             canvas.drawBitmap(image, null, drawingRect, null);
