@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Soronként egy érték.</string>
   <string name="pref_default_xmltv_url_title">Alapértelmezett XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Kezdőérték a \"Importálás XMLTV EPG URL\" párbeszéd.</string>
+  <string name="pref_preferred_xmltv_language_title">Előnyben részesített nyelv</string>
+  <string name="pref_preferred_xmltv_language_summary">A címek és leírások fontossági sorrendjét a \"lang\" olyan attribútum, amelynek értéke pontosan ez.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Szűrés M3U csatornák</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >A következő helyeken található csatornák felvétele a fehérlistára: M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ne vegye fel a fehérlistára az alábbi helyeken található csatornákat: M3U</string>

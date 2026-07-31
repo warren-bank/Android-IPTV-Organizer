@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Valur wieħed għal kull linja.</string>
   <string name="pref_default_xmltv_url_title">Default XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valur inizjali f\' \"Importazzjoni XMLTV EPG URL\" djalogu.</string>
+  <string name="pref_preferred_xmltv_language_title">Lingwa preferuta</string>
+  <string name="pref_preferred_xmltv_language_summary">Agħti prijorità lit-titli u d-deskrizzjonijiet b\' \"lang\" attribut li għandu dan il-valur eżatt.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtra skont M3U kanali</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanali fil-lista bajda misjuba f\' M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ma żidx fil-lista bajda l-kanali li nstabu f\' M3U</string>

@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">1行につき1つの値.</string>
   <string name="pref_default_xmltv_url_title">デフォルト XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">初期値は \"インポート XMLTV EPG URL\" ダイアログ.</string>
+  <string name="pref_preferred_xmltv_language_title">希望する言語</string>
+  <string name="pref_preferred_xmltv_language_summary">タイトルと説明文の優先順位を、 \"lang\" この正確な値を持つ属性.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">絞り込み条件 M3U チャンネル</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >以下の場所に存在するホワイトリスト登録チャンネル M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">以下の場所にあるチャンネルをホワイトリストに登録しないでください M3U</string>

@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Ар бир сапка бир маани.</string>
   <string name="pref_default_xmltv_url_title">Алгачкы XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Киришүүчү баалуулук \"Импорт XMLTV EPG URL\" диалог.</string>
+  <string name="pref_preferred_xmltv_language_title">Артык көргөн тил</string>
+  <string name="pref_preferred_xmltv_language_summary">Аталыштарды жана сүрөттөмөлөрдү a менен артыкчылык кылыңыз \"lang\" Ушул так мааниге ээ атрибут.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Бул боюнча сүзгү M3U каналдар</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ак тизмедеги каналдар табылды M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Табылган каналдарды ак тизмеге киргизбеңиз M3U</string>

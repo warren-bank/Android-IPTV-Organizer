@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Ntsengo wun\'we hi layini.</string>
   <string name="pref_default_xmltv_url_title">Lexi tolovelekeke XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Ntsengo wo sungula endzeni \"Nghenisa XMLTV EPG URL\" bulo.</string>
+  <string name="pref_preferred_xmltv_language_title">Ririmi leri rhandziwaka</string>
+  <string name="pref_preferred_xmltv_language_summary">Rhangisa tinhloko-mhaka na tinhlamuselo hi \"lang\" Xihlawulekisi lexi nga na nkoka lowu fanaka.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Hluta hi M3U Switichi</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Switichi leswi kumekaka eka nxaxamelo wo pfumeleriwa M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">U nga pfumeleli switichi leswi kumekaka eka M3U</string>

@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Μία τιμή ανά γραμμή.</string>
   <string name="pref_default_xmltv_url_title">Προεπιλογή XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Αρχική τιμή σε \"Εισαγωγή XMLTV EPG URL\" διάλογος.</string>
+  <string name="pref_preferred_xmltv_language_title">Προτιμώμενη γλώσσα</string>
+  <string name="pref_preferred_xmltv_language_summary">Προτεραιοποιήστε τους τίτλους και τις περιγραφές με ένα \"lang\" χαρακτηριστικό που έχει ακριβώς αυτή την τιμή.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Φιλτράρισμα κατά M3U κανάλια</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Κανάλια της λίστας επιτρεπόμενων που βρέθηκαν στο M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Μην προσθέτετε στη λίστα εξαιρέσεων τα κανάλια που βρίσκονται στο M3U</string>

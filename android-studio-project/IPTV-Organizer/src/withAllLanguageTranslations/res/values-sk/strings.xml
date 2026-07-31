@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Jedna hodnota na riadok.</string>
   <string name="pref_default_xmltv_url_title">Predvolené nastavenie XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Počiatočná hodnota v \"Import XMLTV EPG URL\" dialóg.</string>
+  <string name="pref_preferred_xmltv_language_title">Preferovaný jazyk</string>
+  <string name="pref_preferred_xmltv_language_summary">Určte poradie dôležitosti názvov a popisov pomocou \"lang\" atribút s touto presnou hodnotou.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrovať podľa M3U kanály</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanály zo zoznamu povolených sa nachádzajú v M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kanály nachádzajúce sa v M3U</string>

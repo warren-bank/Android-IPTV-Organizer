@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ప్రతి లైన్‌కు ఒక విలువ.</string>
   <string name="pref_default_xmltv_url_title">ప్రామాణికం XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">లో ప్రారంభ విలువ \"దిగుమతి XMLTV EPG URL\" సంభాషణ.</string>
+  <string name="pref_preferred_xmltv_language_title">ఇష్టమైన భాష</string>
+  <string name="pref_preferred_xmltv_language_summary">శీర్షికలు మరియు వివరణలకు ఒక దానితో ప్రాధాన్యత ఇవ్వండి \"lang\" ఈ కచ్చితమైన విలువను కలిగి ఉన్న గుణం.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">ద్వారా వడకట్టండి M3U ఛానెళ్ళు</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >లో కనుగొనబడిన వైట్‌లిస్ట్ ఛానెల్‌లు M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">లో కనుగొనబడిన ఛానెళ్లలను వైట్‌లిస్ట్ చేయవద్దు M3U</string>

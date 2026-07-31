@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Yon valè pa liy.</string>
   <string name="pref_default_xmltv_url_title">Pa defo XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valè inisyal an \"Enpòte XMLTV EPG URL\" Dyalòg.</string>
+  <string name="pref_preferred_xmltv_language_title">Lang preferab</string>
+  <string name="pref_preferred_xmltv_language_summary">Priyorize tit ak deskripsyon ak yon \"lang\" atribi ki gen egzakteman valè sa a.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtre pa M3U chanèl</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Chèn ki jwenn sou lis blan M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Pa mete sou lis blan chanèl ki jwenn nan M3U</string>

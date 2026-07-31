@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ.</string>
   <string name="pref_default_xmltv_url_title">ਮੂਲ XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">ਵਿੱਚ ਸ਼ੁਰੂਆਤੀ ਮੁੱਲ \"ਆਯਾਤ XMLTV EPG URL\" ਗੱਲਬਾਤ.</string>
+  <string name="pref_preferred_xmltv_language_title">ਤਰਜੀਹੀ ਭਾਸ਼ਾ</string>
+  <string name="pref_preferred_xmltv_language_summary">ਸਿਰਲੇਖਾਂ ਅਤੇ ਵੇਰਵਿਆਂ ਨੂੰ ਇੱਕ ਨਾਲ ਤਰਜੀਹ ਦਿਓ \"lang\" ਇਸ ਬਿਲਕੁਲ ਇਸੇ ਮੁੱਲ ਵਾਲਾ ਗੁਣ.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">ਦੇ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ M3U ਚੈਨਲ</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ਵਿੱਚ ਲੱਭੇ ਗਏ ਵਾਈਟਲਿਸਟ ਚੈਨਲ M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ਵਿੱਚ ਪਾਏ ਗਏ ਚੈਨਲਾਂ ਨੂੰ ਵਾਈਟਲਿਸਟ ਨਾ ਕਰੋ M3U</string>

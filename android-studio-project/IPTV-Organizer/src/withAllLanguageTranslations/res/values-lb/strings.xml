@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Eng Wäert pro Zeil.</string>
   <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Initialwäert an \"Importéieren XMLTV EPG URL\" Dialog.</string>
+  <string name="pref_preferred_xmltv_language_title">Virgezunn Sprooch</string>
+  <string name="pref_preferred_xmltv_language_summary">Prioritéiert Titelen a Beschreiwungen mat engem \"lang\" Eegeschaft mat dësem exakten Wäert.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filteren no M3U Kanäl</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Op der Weisse Lëscht fonnt Kanäl an M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Maacht keng Weisse Lëscht vun de Kanäl, déi an M3U</string>

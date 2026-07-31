@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Isang halaga bawat linya.</string>
   <string name="pref_default_xmltv_url_title">Default XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Paunang halaga sa \"I-import XMLTV EPG URL\" dayalogo.</string>
+  <string name="pref_preferred_xmltv_language_title">Mas gustong wika</string>
+  <string name="pref_preferred_xmltv_language_summary">Unahin ang mga pamagat at paglalarawan gamit ang isang \"lang\" katangian na may eksaktong halagang ito.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Salain ayon sa M3U mga daluyan</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Mga channel sa whitelist na matatagpuan sa M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Huwag i-whitelist ang mga channel na matatagpuan sa M3U</string>

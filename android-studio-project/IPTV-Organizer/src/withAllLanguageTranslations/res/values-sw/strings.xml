@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Thamani moja kwa kila mstari.</string>
   <string name="pref_default_xmltv_url_title">Kawaida XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Thamani ya awali katika \"Agiza XMLTV EPG URL\" mazungumzo.</string>
+  <string name="pref_preferred_xmltv_language_title">Lugha inayopendekezwa</string>
+  <string name="pref_preferred_xmltv_language_summary">Weka vipaumbele vichwa na maelezo kwa kutumia \"lang\" sifa yenye thamani hii kamili.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Chuja kwa M3U vituo</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Orodha ya njia zilizo kwenye M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Usiorodheshe kwenye orodha nyeupe vituo vinavyopatikana katika M3U</string>

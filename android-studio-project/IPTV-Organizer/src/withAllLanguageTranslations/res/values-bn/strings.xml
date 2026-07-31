@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">প্রতি লাইনে একটি মান.</string>
   <string name="pref_default_xmltv_url_title">ডিফল্ট XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">প্রাথমিক মান ইন \"আমদানি XMLTV EPG URL\" সংলাপ.</string>
+  <string name="pref_preferred_xmltv_language_title">প্রাধান্যপ্রাপ্ত ভাষা</string>
+  <string name="pref_preferred_xmltv_language_summary">শিরোনাম এবং বিবরণকে একটির সাথে অগ্রাধিকার দিন \"lang\" এই সঠিক মানবিশিষ্ট বৈশিষ্ট্য.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">দ্বারা ফিল্টার করুন M3U চ্যানেলসমূহ</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >হোয়াইটলিস্ট চ্যানেলগুলি পাওয়া গেছে M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">এতে পাওয়া চ্যানেলগুলো হোয়াইটলিস্ট করবেন না M3U</string>

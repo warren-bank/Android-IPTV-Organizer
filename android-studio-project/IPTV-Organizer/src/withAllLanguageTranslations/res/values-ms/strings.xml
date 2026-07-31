@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Satu nilai setiap baris.</string>
   <string name="pref_default_xmltv_url_title">Lalai XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Nilai awal dalam \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_preferred_xmltv_language_title">Bahasa pilihan</string>
+  <string name="pref_preferred_xmltv_language_summary">Keutamakan tajuk dan keterangan dengan \"lang\" atribut yang mempunyai nilai tepat ini.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Tapis mengikut M3U saluran</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Saluran senarai putih yang ditemui dalam M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Jangan masukkan saluran yang ditemui dalam senarai putih. M3U</string>

@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Sapa siqita mä chani.</string>
   <string name="pref_default_xmltv_url_title">Qallta XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Qallta chani \"Apkataña XMLTV EPG URL\" Aruskipäwi.</string>
+  <string name="pref_preferred_xmltv_language_title">Ajllita aru</string>
+  <string name="pref_preferred_xmltv_language_summary">Sutinaksa qhanañchäwinaksa nayrar uchaña mampi \"lang\" Aka pachpa chimpuni.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Akhamarjam suyt\'aña M3U Thakhinaka</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Jalsuñataki churanaka jikxatasi M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Janiw jikxatat canales ukanakax q\'umachat listaru uchañati. M3U</string>

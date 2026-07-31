@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Boleng bo le bongwe mo moleng mongwe le mongwe.</string>
   <string name="pref_default_xmltv_url_title">Tlwaelo XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Boleng jwa tshimologo mo \"Tsenya XMLTV EPG URL\" Puisano.</string>
+  <string name="pref_preferred_xmltv_language_title">Puo e e rategang</string>
+  <string name="pref_preferred_xmltv_language_summary">Baya ditlhogo le ditlhaloso kwa pele ka \"lang\" Tshwano e e nang le boleng jono tota.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Tlhotlha ka M3U ditsela</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ditsela tse di letleletsweng tse di fitlhelwang mo M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">O se ka wa tsenya mo lenaneong le le letleletsweng dikanale tse di fitlhelwang mo M3U</string>

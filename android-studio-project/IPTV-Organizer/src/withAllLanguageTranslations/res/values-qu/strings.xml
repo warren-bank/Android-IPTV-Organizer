@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Sapa siqipi huk chanin.</string>
   <string name="pref_default_xmltv_url_title">Qallariylla XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Qallariy chanin yaykunanpaq \"Hawa llaqtamanta apamuy XMLTV EPG URL\" Rimanakuy.</string>
+  <string name="pref_preferred_xmltv_language_title">Akllasqa simi</string>
+  <string name="pref_preferred_xmltv_language_summary">Sutikunata sut\'inchayninkunatawan ñawpaqman churay hukwan \"lang\" Kay kikin chaniyuq kaq.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Akllaymanhina M3U Ñankuna</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Taripasqa yupasqa ñankuna M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ama allinchanchu tarisqa kanalakunata M3U</string>

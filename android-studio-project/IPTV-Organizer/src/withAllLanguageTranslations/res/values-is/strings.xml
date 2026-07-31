@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Eitt gildi á línu.</string>
   <string name="pref_default_xmltv_url_title">Sjálfgefið XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Upphafleg gildi í \"Innflutningur XMLTV EPG URL\" Skilaboðargluggi.</string>
+  <string name="pref_preferred_xmltv_language_title">Valið tungumál</string>
+  <string name="pref_preferred_xmltv_language_summary">Forgangsraðið titla og lýsingar með a \"lang\" eiginleiki sem hefur þetta nákvæma gildi.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Sía eftir M3U rásir</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Hvíttlistaðir rásir fundnar í M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ekki setja rásir sem finnast í hvítlista M3U</string>

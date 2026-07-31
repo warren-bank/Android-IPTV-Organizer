@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Benn tolluwaay ci rëdd bu nekk.</string>
   <string name="pref_default_xmltv_url_title">Li ñu tëral XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Njëlbéenu njëg ci biir \"Duggal XMLTV EPG URL\" Waxtaan.</string>
+  <string name="pref_preferred_xmltv_language_title">Làkk bu ñu gëna bëgg</string>
+  <string name="pref_preferred_xmltv_language_summary">Jëkkaleel tur yi ak tekki yi ak benn \"lang\" Melokaan bu am tolluwaay bii.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Tànnal ci M3U Sànn yi</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Limu seen yi ñu gis ci M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Bul duggal ci limu ñu nangu yoon yi ñu fekk ci M3U</string>

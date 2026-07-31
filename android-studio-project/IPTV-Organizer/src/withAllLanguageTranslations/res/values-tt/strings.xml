@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Һәр юлда бер кыйммәт.</string>
   <string name="pref_default_xmltv_url_title">Төп XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Керү кыйммәте \"Импорт XMLTV EPG URL\" Диалог.</string>
+  <string name="pref_preferred_xmltv_language_title">Өстен тел</string>
+  <string name="pref_preferred_xmltv_language_summary">Заголовокларны һәм тасвирламаларны a ярдәмендә өстенлекләгез \"lang\" Нәкъ менә шушы кыйммәткә ия булган атрибут.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Буенча фильтрлау M3U каналлар</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ак исемлек каналнары табылды M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Табылган каналларны ак исемлеккә кертмәгез M3U</string>

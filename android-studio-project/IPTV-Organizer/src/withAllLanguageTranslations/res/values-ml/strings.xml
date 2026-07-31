@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ഓരോ വരിയിലും ഒരു മൂല്യം.</string>
   <string name="pref_default_xmltv_url_title">നിലവിലുള്ള XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">പ്രാരംഭ മൂല്യം \"ഇറക്കുമതി XMLTV EPG URL\" സംഭാഷണം.</string>
+  <string name="pref_preferred_xmltv_language_title">ഇഷ്ടപ്പെട്ട ഭാഷ</string>
+  <string name="pref_preferred_xmltv_language_summary">ശീർഷകങ്ങളും വിവരണങ്ങളും ഒരു ... ഉപയോഗിച്ച് മുൻഗണിക്കുക \"lang\" ഈ കൃത്യമായ മൂല്യമുള്ള ആട്രിബ്യൂട്ട്.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">ഇതുവഴി ഫിൽട്ടർ ചെയ്യുക M3U ചാനലുകൾ</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >വൈറ്റ്‌ലിസ്റ്റ് ചെയ്ത ചാനലുകൾ കണ്ടെത്തിയത് M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ഇതിൽ കണ്ടെത്തിയ ചാനലുകൾ വൈറ്റ്‌ലിസ്റ്റ് ചെയ്യരുത് M3U</string>

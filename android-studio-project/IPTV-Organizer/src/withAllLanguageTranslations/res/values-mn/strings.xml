@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Мөр бүрт нэг утга.</string>
   <string name="pref_default_xmltv_url_title">Анхдагч XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Оролтын анхны утга \"Импорт XMLTV EPG URL\" харилцах.</string>
+  <string name="pref_preferred_xmltv_language_title">Урьдал хэл</string>
+  <string name="pref_preferred_xmltv_language_summary">Гарчиг, тайлбаруудыг a ашиглан эрэмбэлнэ үү \"lang\" Яг энэ утгатай шинж чанар.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">...-ээр шүүх M3U сувгууд</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Олдсон цагаан жагсаалтын сувгууд M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Олдсон сувгуудыг цагаан жагсаалтад оруулахгүй M3U</string>

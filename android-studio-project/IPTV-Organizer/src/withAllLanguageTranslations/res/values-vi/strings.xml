@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Mỗi dòng một giá trị.</string>
   <string name="pref_default_xmltv_url_title">Mặc định XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Giá trị ban đầu trong \"Nhập khẩu XMLTV EPG URL\" hộp thoại.</string>
+  <string name="pref_preferred_xmltv_language_title">Ngôn ngữ ưa thích</string>
+  <string name="pref_preferred_xmltv_language_summary">Xếp hạng các tiêu đề và mô tả theo thứ tự ưu tiên bằng cách sử dụng một \"lang\" thuộc tính có giá trị chính xác này.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Lọc theo M3U kênh</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Các kênh trong danh sách trắng được tìm thấy trong M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Không đưa các kênh được tìm thấy trong M3U</string>

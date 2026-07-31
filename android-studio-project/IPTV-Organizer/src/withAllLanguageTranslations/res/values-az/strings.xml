@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Hər sətrdə bir dəyər.</string>
   <string name="pref_default_xmltv_url_title">Standart XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Başlanğıc dəyəri daxil edin \"İdxal XMLTV EPG URL\" dialoq.</string>
+  <string name="pref_preferred_xmltv_language_title">Üstünlük verilən dil</string>
+  <string name="pref_preferred_xmltv_language_summary">Başlıqları və təsvirləri bir ilə prioritetləşdirin \"lang\" Bu dəqiq dəyərə malik atribut.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrlə M3U kanallar</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ağ siyahı kanalları tapıldı M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Tapılan kanalları ağ siyahıya salmayın M3U</string>

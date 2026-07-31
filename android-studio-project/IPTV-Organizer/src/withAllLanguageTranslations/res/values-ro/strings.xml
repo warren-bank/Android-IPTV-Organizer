@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">O singură valoare pe rând.</string>
   <string name="pref_default_xmltv_url_title">Implicit XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valoarea inițială în \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_preferred_xmltv_language_title">Limba preferată</string>
+  <string name="pref_preferred_xmltv_language_summary">Stabiliți ordinea de prioritate a titlurilor și descrierilor folosind un \"lang\" atribut care are exact această valoare.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrează după M3U canale</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Canalele incluse în lista albă găsite în M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Nu adăugați pe lista albă canalele găsite în M3U</string>

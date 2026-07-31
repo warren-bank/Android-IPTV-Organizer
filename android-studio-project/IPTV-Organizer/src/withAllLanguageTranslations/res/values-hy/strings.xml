@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Յուրաքանչյուր տողում մեկ արժեք.</string>
   <string name="pref_default_xmltv_url_title">Ստանդարտ XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Սկզբնական արժեքը ներսում \"Իմպորտ XMLTV EPG URL\" զրույց.</string>
+  <string name="pref_preferred_xmltv_language_title">Նախընտրելի լեզու</string>
+  <string name="pref_preferred_xmltv_language_summary">Առաջնահերթեք վերնագրերն ու նկարագրությունները a-ով \"lang\" այս ճշգրիտ արժեքը ունեցող հատկանիշ.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Ըստ զտիչի M3U ալիքներ</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ցուցակում գտնվող ալիքները հայտնաբերվել են M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Մի՛ ավելացրեք սպիտակ ցուցակում գտնված ալիքները։ M3U</string>

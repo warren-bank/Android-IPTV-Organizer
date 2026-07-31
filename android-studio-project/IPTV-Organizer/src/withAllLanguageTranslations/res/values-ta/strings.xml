@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு.</string>
   <string name="pref_default_xmltv_url_title">பூர்வநிலை XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">உள்ளே ஆரம்ப மதிப்பு \"இறக்குமதி XMLTV EPG URL\" உரையாடல்.</string>
+  <string name="pref_preferred_xmltv_language_title">விரும்பிய மொழி</string>
+  <string name="pref_preferred_xmltv_language_summary">தலைப்புகள் மற்றும் விளக்கங்களுக்கு முன்னுரிமை அளிக்கவும் \"lang\" இந்தத் துல்லியமான மதிப்பைக் கொண்ட பண்பு.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">வடிகட்டவும் M3U சேனல்கள்</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >கண்டறியப்பட்ட வெள்ளைப் பட்டியல் சேனல்கள் M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">கண்டறியப்பட்ட சேனல்களை வெள்ளைப் பட்டியலில் சேர்க்க வேண்டாம் M3U</string>

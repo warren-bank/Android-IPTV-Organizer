@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Yksi arvo riviä kohden.</string>
   <string name="pref_default_xmltv_url_title">Oletus XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Alkuarvo \"Tuonti XMLTV EPG URL\" valintaikkuna.</string>
+  <string name="pref_preferred_xmltv_language_title">Ensisijainen kieli</string>
+  <string name="pref_preferred_xmltv_language_summary">Järjestä otsikot ja kuvaukset tärkeysjärjestykseen käyttämällä \"lang\" attribuutti, jolla on juuri tämä arvo.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Suodata M3U kanavat</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Sallittujen kanavien luettelo löytyy kohdasta M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Älä lisää sallittujen kanavien luetteloon kanavia, jotka löytyvät M3U</string>

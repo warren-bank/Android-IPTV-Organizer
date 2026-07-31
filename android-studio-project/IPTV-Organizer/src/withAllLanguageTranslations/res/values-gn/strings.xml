@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Peteĩ mba\'e káda tysýipe.</string>
   <string name="pref_default_xmltv_url_title">Ojehechaháichaite XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Mbohepy ñepyrũrã \"Mbohypy XMLTV EPG URL\" Ñomongeta.</string>
+  <string name="pref_preferred_xmltv_language_title">Ñe\'ẽ ojeiporavovéva</string>
+  <string name="pref_preferred_xmltv_language_summary">Emoĩ tenonderã umi téra ha mombe\'u peteĩ \"lang\" Mba\'e orekóva ko mbojojaite.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Eiporavo... rupive M3U Mbohasaha</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Mbohasaha rysýi ojejuhúva M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ani emoinge umi canal ojejuhúva M3U</string>

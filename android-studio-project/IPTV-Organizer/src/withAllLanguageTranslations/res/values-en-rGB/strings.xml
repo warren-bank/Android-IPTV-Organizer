@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">One value per line.</string>
   <string name="pref_default_xmltv_url_title">Default XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Initial value in \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_preferred_xmltv_language_title">Preferred language</string>
+  <string name="pref_preferred_xmltv_language_summary">Prioritize titles and descriptions with a \"lang\" attribute having this exact value.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filter by M3U channels</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Whitelist channels found in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Do not whitelist channels found in M3U</string>

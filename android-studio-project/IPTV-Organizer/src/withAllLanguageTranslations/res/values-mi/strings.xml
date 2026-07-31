@@ -47,6 +47,8 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">He uara kotahi ia rārangi.</string>
   <string name="pref_default_xmltv_url_title">Taunoa XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Uara tuatahi i roto \"Kaweake XMLTV EPG URL\" Kōrero.</string>
+  <string name="pref_preferred_xmltv_language_title">Reo manakohia</string>
+  <string name="pref_preferred_xmltv_language_summary">Whakaritea ngā taitara me ngā whakamārama mā te \"lang\" āhuatanga e whai ana i tēnei uara tika.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Tātari mā M3U Ngā hongere</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ngā hongere kua kitea i te rārangi mā M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kaua e whakarārangihia ngā hongere i kitea i roto i M3U</string>
