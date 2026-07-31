@@ -413,14 +413,14 @@ public class EpgActivity extends AppCompatActivity {
     searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
       @Override
       public boolean onQueryTextSubmit(String constraint) {
-        epgData.filterChannels(constraint, false);
+        epgData.filterChannels(constraint, Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX, Constants.SEARCH_KEYWORD_MIN_LENGTH, Constants.SEARCH_KEYWORD_CASE_SENSITIVE);
         epgView.recalculateAndRedraw(false);
         return false;
       }
 
       @Override
       public boolean onQueryTextChange(String constraint) {
-        epgData.filterChannels(constraint, false);
+        epgData.filterChannels(constraint, Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX, Constants.SEARCH_KEYWORD_MIN_LENGTH, Constants.SEARCH_KEYWORD_CASE_SENSITIVE);
         epgView.recalculateAndRedraw(false);
         return false;
       }

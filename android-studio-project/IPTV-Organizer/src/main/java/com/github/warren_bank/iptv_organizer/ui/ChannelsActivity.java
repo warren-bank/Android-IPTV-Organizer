@@ -425,7 +425,10 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       ChannelsActivity.this,
       ChannelsFilterableViewHolder.class,
       ChannelsActivity.class,
-      ChannelsActivity.this
+      ChannelsActivity.this,
+      Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX,
+      Constants.SEARCH_KEYWORD_MIN_LENGTH,
+      Constants.SEARCH_KEYWORD_CASE_SENSITIVE
     );
 
     recyclerView = findViewById(R.id.rv_channels);

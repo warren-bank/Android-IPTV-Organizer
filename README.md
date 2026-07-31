@@ -2,7 +2,7 @@
 
 Android app that organizes IPTV channel and EPG information.
 
-#### Features:
+#### Features
 
 * M3U (IPTV channels) and XMLTV (EPG) files can be imported from either a network URL or the local filesystem
 * during import&hellip;
@@ -29,7 +29,22 @@ Android app that organizes IPTV channel and EPG information.
     * searched by keyword
     * clicked to start an Intent, which can open the channel's audio/video stream in an external media player
 
-#### Settings:
+#### Search Keywords
+
+* are not case sensitive
+* are 2 or more characters long
+* support boolean `OR`
+  - any of the following tokens can be used to separate keyword values: `|` or `,`
+  - whitespace surrounding these tokens is removed
+  - examples:
+    1. `aaa|bbb|ccc`<br>
+       =&gt; `aaa` or `bbb` or `ccc`
+    2. `aaa,bbb,ccc`<br>
+       =&gt; `aaa` or `bbb` or `ccc`
+    3. `aaa | bbb , ccc`<br>
+       =&gt; `aaa` or `bbb` or `ccc`
+
+#### Settings
 
 * Settings
   1. Auto save data after file import
@@ -227,7 +242,7 @@ Android app that organizes IPTV channel and EPG information.
      - format of input and usage is identical to the "channel ID whitelist"
        * matching EPG channels are discarded during import
 
-#### Intent filters:
+#### Intent filters
 
 Enables the automatic updating of IPTV channel and EPG information from externally bookmarked network URLs.
 
@@ -412,7 +427,7 @@ __Update Settings__
      "http://${airplay_ip}/start-activity"
    ```
 
-#### Legal:
+#### Legal
 
 * copyright: [Warren Bank](https://github.com/warren-bank)
 * license: [GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt)

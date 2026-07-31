@@ -17,6 +17,9 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
     final private Class filterableViewHolderClass;
     final private Class parentClass;
     final private Object parentInstance;
+    final private String keywordArraySplitRegex;
+    final private int minKeywordLength;
+    final private boolean caseSensitive;
     final private Filter searchFilter;
 
     public FilterableAdapter(
@@ -31,7 +34,10 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
             listener,
             filterableViewHolderClass,
             (Class) null,
-            (Object) null
+            (Object) null,
+            (String) null,
+            2,
+            false
         );
     }
 
@@ -41,8 +47,14 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
         FilterableListItemOnClickListener listener,
         Class filterableViewHolderClass,
         Class parentClass,
-        Object parentInstance
+        Object parentInstance,
+        String keywordArraySplitRegex,
+        int minKeywordLength,
+        boolean caseSensitive
     ) {
+        if ((keywordArraySplitRegex != null) && !caseSensitive)
+          keywordArraySplitRegex = keywordArraySplitRegex.toLowerCase();
+
         this.row_layout_id             = row_layout_id;
         this.unfilteredList            = unfilteredList;
         this.filteredList              = new ArrayList<FilterableListItem>();
@@ -50,6 +62,9 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
         this.filterableViewHolderClass = filterableViewHolderClass;
         this.parentClass               = parentClass;
         this.parentInstance            = parentInstance;
+        this.keywordArraySplitRegex    = keywordArraySplitRegex;
+        this.minKeywordLength          = minKeywordLength;
+        this.caseSensitive             = caseSensitive;
         this.searchFilter              = createSearchFilter();
 
         resetFilteredList();
@@ -128,16 +143,28 @@ public class FilterableAdapter extends RecyclerView.Adapter<FilterableViewHolder
 
             @Override
             protected FilterResults performFiltering(CharSequence charSequence) {
-                String charString = charSequence.toString();
+                String charString = charSequence.toString().trim();
                 if (charString.isEmpty()) {
                     resetFilteredList();
                 } else {
                     filteredList.clear();
+
+                    if (!caseSensitive) charString = charString.toLowerCase();
+
+                    String[] keywords = (keywordArraySplitRegex != null)
+                      ? charString.split(keywordArraySplitRegex)
+                      : new String[]{charString};
+
                     for (FilterableListItem item : unfilteredList) {
                         String filterableValue = item.getFilterableValue();
 
-                        if (filterableValue.toLowerCase().contains(charString.toLowerCase())) {
-                            filteredList.add(item);
+                        if (!caseSensitive) filterableValue = filterableValue.toLowerCase();
+
+                        for (String keyword : keywords) {
+                            if ((keyword.length() >= minKeywordLength) && filterableValue.contains(keyword)) {
+                                filteredList.add(item);
+                                break;
+                            }
                         }
                     }
                 }

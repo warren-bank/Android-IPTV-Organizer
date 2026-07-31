@@ -1,0 +1,23 @@
+purpose:
+========
+test search queries that use boolean OR
+
+test #1
+=======
+1. import M3U
+2. search: AA
+   - expected result: AA1,AA2,AA3
+3. search: AA|BB
+   - expected result: AA1,AA2,AA3,BB1,BB2,BB3
+4. search: DD,CC
+   - expected result: CCC,DDD
+
+test #2
+=======
+1. import EPG
+2. search: AA
+   - expected result: AA1,AA2,AA3
+3. search: AA|BB
+   - expected result: AA1,AA2,AA3,BB1,BB2,BB3
+4. search: DD,CC
+   - expected result: CCC,DDD

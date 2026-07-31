@@ -28,28 +28,41 @@ public class EPGDataImpl implements EPGData {
       allChannels = Lists.newArrayList();
     }
 
-    filterChannels(null, false);
+    filterChannels(null, null, 0, false);
   }
 
   public Map<EPGChannel, List<EPGEvent>> getData() {
     return data;
   }
 
-  public void filterChannels(String constraint, boolean caseSensitive) {
+  public void filterChannels(String constraint, String keywordArraySplitRegex, int minKeywordLength, boolean caseSensitive) {
     if ((constraint == null) || constraint.isEmpty()) {
       filteredChannels = Lists.newArrayList(allChannels);
     }
     else {
       filteredChannels = Lists.newArrayList();
 
-      if (!caseSensitive) constraint = constraint.toLowerCase();
+      if (!caseSensitive) {
+        constraint = constraint.toLowerCase();
+
+        if (keywordArraySplitRegex != null) keywordArraySplitRegex = keywordArraySplitRegex.toLowerCase();
+      }
+
+      String[] keywords = (keywordArraySplitRegex != null)
+        ? constraint.split(keywordArraySplitRegex)
+        : new String[]{constraint};
 
       for (EPGChannel channel : allChannels) {
         String name = channel.getName();
+
         if (!caseSensitive) name = name.toLowerCase();
 
-        if (name.contains(constraint))
-          filteredChannels.add(channel);
+        for (String keyword : keywords) {
+          if ((keyword.length() >= minKeywordLength) && name.contains(keyword)) {
+            filteredChannels.add(channel);
+            break;
+          }
+        }
       }
     }
   }

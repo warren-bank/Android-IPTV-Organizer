@@ -1,0 +1,17 @@
+#EXTM3U
+#EXTINF:-1,AA1
+https://example.com/aa1.ts
+#EXTINF:-1,AA2
+https://example.com/aa2.ts
+#EXTINF:-1,AA3
+https://example.com/aa3.ts
+#EXTINF:-1,BB1
+https://example.com/bb1.ts
+#EXTINF:-1,BB2
+https://example.com/bb2.ts
+#EXTINF:-1,BB3
+https://example.com/bb3.ts
+#EXTINF:-1,CCC
+https://example.com/ccc.ts
+#EXTINF:-1,DDD
+https://example.com/ddd.ts

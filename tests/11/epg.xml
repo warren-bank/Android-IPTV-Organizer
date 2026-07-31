@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="aa1.us">
+    <display-name>AA1</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/1.png" />
+  </channel>
+  <channel id="aa2.us">
+    <display-name>AA2</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/2.png" />
+  </channel>
+  <channel id="aa3.us">
+    <display-name>AA3</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/3.png" />
+  </channel>
+  <channel id="bb1.us">
+    <display-name>BB1</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/1.png" />
+  </channel>
+  <channel id="bb2.us">
+    <display-name>BB2</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/2.png" />
+  </channel>
+  <channel id="bb3.us">
+    <display-name>BB3</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/3.png" />
+  </channel>
+  <channel id="ccc.us">
+    <display-name>CCC</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/1.png" />
+  </channel>
+  <channel id="ddd.us">
+    <display-name>DDD</display-name>
+    <icon src="https://github.com/louh/mta-subway-bullets/raw/main/dist/png/2.png" />
+  </channel>
+  <programme start="20260101000000 +0000" channel="aa1.us">
+    <title>Best of AA1</title>
+  </programme>
+  <programme start="20260101000000 +0000" channel="aa2.us">
+    <title>Best of AA2</title>
+  </programme>
+  <programme start="20260101000000 +0000" channel="aa3.us">
+    <title>Best of AA3</title>
+  </programme>
+  <programme start="20260101000000 +0000" channel="bb1.us">
+    <title>Best of BB1</title>
+  </programme>
+  <programme start="20260101000000 +0000" channel="bb2.us">
+    <title>Best of BB2</title>
+  </programme>
+  <programme start="20260101000000 +0000" channel="bb3.us">
+    <title>Best of BB3</title>
+  </programme>
+  <programme start="20260101000000 +0000" channel="ccc.us">
+    <title>Best of CCC</title>
+  </programme>
+  <programme start="20260101000000 +0000" channel="ddd.us">
+    <title>Best of DDD</title>
+  </programme>
+</tv>
