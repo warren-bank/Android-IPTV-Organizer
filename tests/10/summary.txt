@@ -1,0 +1,105 @@
+purpose:
+========
+test that MySharedPreferenceChangeListener works properly in SettingsActivity
+
+--------------------------------------------------------------------------------
+
+test #1a
+========
+1. SettingsActivity: Settings > Apply static string values to user-defined default import URL templates
+   - value: true
+2. SettingsActivity: M3U Channels > Media URL static string values
+   - import file: "09. Media URL static string values.txt"
+3. SettingsActivity: M3U Channels > Default M3U Playlist URL
+   - value: https://example.com/USERNAME/PASSWORD/playlist.m3u
+   - click: OK
+4. SettingsActivity: M3U Channels > Default M3U Playlist URL
+   - assert: value has been converted to a template
+   - value:  %1$s/%2$s/%3$s/playlist.m3u
+
+test #1b (continued)
+====================
+1. SettingsActivity: Settings > Apply static string values to user-defined default import URL templates
+   - value: false
+2. SettingsActivity: M3U Channels > Default M3U Playlist URL
+   - assert: value has been converted from a template to a fully resolved URL (using the current static string values)
+   - value:  https://example.com/USERNAME/PASSWORD/playlist.m3u
+
+--------------------------------------------------------------------------------
+
+test #2:
+========
+* repeat test #1 but change values via Intents
+* uses the ExoAirPlayer HTTP API
+
+test #2a
+========
+1. bash:
+
+   # network address for running instance of 'ExoPlayer AirPlay Receiver'
+   airplay_ip='192.168.1.100:8192'
+
+test #2b (continued)
+====================
+1. bash:
+
+   post_body='
+     package: com.github.warren_bank.iptv_organizer
+     class: com.github.warren_bank.iptv_organizer.ui.SettingsActivity
+     extra-SETTINGS_APPLY_STATIC_STRINGS: (bool) true
+     extra-M3U_MEDIA_URL_STATIC_STRINGS: https://example.com
+     extra-M3U_MEDIA_URL_STATIC_STRINGS: USERNAME
+     extra-M3U_MEDIA_URL_STATIC_STRINGS: PASSWORD
+   '
+
+   curl --silent -X POST \
+     -H "Content-Type: text/parameters" \
+     --data-binary "$post_body" \
+     "http://${airplay_ip}/start-activity"
+
+2. bash:
+
+   post_body='
+     package: com.github.warren_bank.iptv_organizer
+     class: com.github.warren_bank.iptv_organizer.ui.SettingsActivity
+     extra-M3U_DEFAULT_PLAYLIST_URL: https://example.com/USERNAME/PASSWORD/playlist.m3u
+     extra-EPG_DEFAULT_XMLTV_URL:    https://example.com/USERNAME/PASSWORD/epg.xml
+   '
+
+   curl --silent -X POST \
+     -H "Content-Type: text/parameters" \
+     --data-binary "$post_body" \
+     "http://${airplay_ip}/start-activity"
+
+3. SettingsActivity: M3U Channels > Default M3U Playlist URL
+   - assert: value has been converted to a template
+   - value:  %1$s/%2$s/%3$s/playlist.m3u
+
+4. SettingsActivity: EPG Channels > Default XMLTV EPG URL
+   - assert: value has been converted to a template
+   - value:  %1$s/%2$s/%3$s/epg.xml
+
+test #2c (continued)
+====================
+1. bash:
+
+   post_body='
+     package: com.github.warren_bank.iptv_organizer
+     class: com.github.warren_bank.iptv_organizer.ui.SettingsActivity
+     extra-SETTINGS_APPLY_STATIC_STRINGS: (bool) false
+   '
+
+   curl --silent -X POST \
+     -H "Content-Type: text/parameters" \
+     --data-binary "$post_body" \
+     "http://${airplay_ip}/start-activity"
+
+2. SettingsActivity: M3U Channels > Default M3U Playlist URL
+   - assert: value has been converted from a template to a fully resolved URL (using the current static string values)
+   - value:  https://example.com/USERNAME/PASSWORD/playlist.m3u
+
+3. SettingsActivity: EPG Channels > Default XMLTV EPG URL
+   - assert: value has been converted from a template to a fully resolved URL (using the current static string values)
+   - value:  https://example.com/USERNAME/PASSWORD/epg.xml
+
+--------------------------------------------------------------------------------

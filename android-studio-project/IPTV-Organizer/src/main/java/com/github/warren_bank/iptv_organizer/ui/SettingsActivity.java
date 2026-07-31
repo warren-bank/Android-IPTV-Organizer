@@ -2,6 +2,7 @@ package com.github.warren_bank.iptv_organizer.ui;
 
 import com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference;
 import com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbPreferenceDataStore;
+import com.github.warren_bank.iptv_organizer.ui.settings.MySharedPreferenceChangeListener;
 import com.github.warren_bank.iptv_organizer.ui.settings.SettingsFragment;
 import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
@@ -13,7 +14,7 @@ import android.os.Bundle;
 import android.preference.PreferenceActivity;
 import android.text.TextUtils;
 
-public class SettingsActivity extends PreferenceActivity {
+public class SettingsActivity extends PreferenceActivity implements MySharedPreferenceChangeListener.UpdateListener {
 
   public static void open(Context context) {
     Intent intent = new Intent(context, SettingsActivity.class);
@@ -50,12 +51,28 @@ public class SettingsActivity extends PreferenceActivity {
     return self;
   }
 
+  private MySharedPreferenceChangeListener listener;
+
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     self = this;
 
+    listener = new MySharedPreferenceChangeListener(this, this);
+
     onNewIntent(getIntent());
+  }
+
+  @Override
+  protected void onStart() {
+    super.onStart();
+    listener.register();
+  }
+
+  @Override
+  protected void onStop() {
+    super.onStop();
+    listener.unregister();
   }
 
   @Override
@@ -75,6 +92,8 @@ public class SettingsActivity extends PreferenceActivity {
   @Override
   protected void onNewIntent(Intent intent) {
     if (intent == null) return;
+
+    listener.register();
 
     boolean didUpdate = false;
 
@@ -228,14 +247,29 @@ public class SettingsActivity extends PreferenceActivity {
     }
     catch(Exception e) {}
 
-    if (!didUpdate) {
-      SettingsFragment fragment = (SettingsFragment) getFragmentManager().findFragmentById(android.R.id.content);
-      if (fragment == null)
-        didUpdate = true;
-    }
+    if (!didUpdate && !hasFragment())
+      didUpdate = true;
 
     if (didUpdate)
-      getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
+      reloadFragment();
+  }
+
+  @Override
+  public void onSharedPreferenceChanged() {
+    reloadFragment();
+  }
+
+  private void reloadFragment() {
+    getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
+  }
+
+  private SettingsFragment getFragment() {
+    return (SettingsFragment) getFragmentManager().findFragmentById(android.R.id.content);
+  }
+
+  private boolean hasFragment() {
+    SettingsFragment fragment = getFragment();
+    return (fragment != null);
   }
 
   private static String joinStringArray(String[] value) {

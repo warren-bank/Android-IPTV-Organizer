@@ -109,13 +109,8 @@ public class DbUtils {
   }
 
   // ---------------------------------------------------------------------------
-  // misc business logic:
+  // resolve M3U channel url from template + static values
   // ---------------------------------------------------------------------------
-
-  public static String getM3uMediaUrlForEpgChannel(EPGChannel epgChannel) {
-    String media_url = DbUtils.getDb().getM3uMediaUrlForEpgChannel(epgChannel);
-    return DbUtils.resolveM3uMediaUrl(media_url);
-  }
 
   public static String resolveM3uMediaUrl(String template) {
     if (TextUtils.isEmpty(template)) return null;
@@ -125,6 +120,11 @@ public class DbUtils {
     return ((values == null) || values.isEmpty())
       ? template
       : String.format(template, values.toArray(new String[0]));
+  }
+
+  public static String getM3uMediaUrlForEpgChannel(EPGChannel epgChannel) {
+    String media_url = DbUtils.getDb().getM3uMediaUrlForEpgChannel(epgChannel);
+    return DbUtils.resolveM3uMediaUrl(media_url);
   }
 
   public static String getDefaultM3uUrlPreference(Context context) {
@@ -143,6 +143,34 @@ public class DbUtils {
       url = DbUtils.resolveM3uMediaUrl(url);
 
     return url;
+  }
+
+  // ---------------------------------------------------------------------------
+  // extract M3U channel template from url + static values
+  // ---------------------------------------------------------------------------
+
+  public static String extractM3uMediaTemplate(String media_url) {
+    if (TextUtils.isEmpty(media_url)) return null;
+
+    List<String> values = DbUtils.getDb().getM3uChannelUrlStaticValues();
+
+    return extractM3uMediaTemplate(media_url, values);
+  }
+
+  public static String extractM3uMediaTemplate(String media_url, List<String> values) {
+    if (TextUtils.isEmpty(media_url)) return null;
+
+    if ((values == null) || values.isEmpty()) return media_url;
+
+    for (int i=0; i < values.size(); i++) {
+      String target = values.get(i);
+      String replacement = "%" + (i+1) + "$s";
+
+      if (!TextUtils.isEmpty(target))
+        media_url = media_url.replace(target, replacement);
+    }
+
+    return media_url;
   }
 
 }

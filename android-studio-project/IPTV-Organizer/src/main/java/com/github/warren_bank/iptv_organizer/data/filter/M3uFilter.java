@@ -145,15 +145,7 @@ public class M3uFilter {
 
     if (!urlValues.isEmpty()) {
       for (ChannelListItem channel : channels) {
-        if (TextUtils.isEmpty(channel.media_url)) continue;
-
-        for (int i=0; i < urlValues.size(); i++) {
-          String target = urlValues.get(i);
-          String replacement = "%" + (i+1) + "$s";
-
-          if (!TextUtils.isEmpty(target))
-            channel.media_url = channel.media_url.replace(target, replacement);
-        }
+        channel.media_url = DbUtils.extractM3uMediaTemplate(channel.media_url, urlValues);
       }
     }
   }
