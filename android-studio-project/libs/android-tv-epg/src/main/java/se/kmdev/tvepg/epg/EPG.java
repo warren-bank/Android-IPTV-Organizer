@@ -334,6 +334,11 @@ public class EPG extends ViewGroup {
         mPaint.getTextBounds(event.getTitle(), 0, event.getTitle().length(), mMeasuringRect);
         drawingRect.top += (((drawingRect.bottom - drawingRect.top) / 2) + (mMeasuringRect.height()/2));
 
+        // Move drawing.left for a program that is in progress, so text will be visible within the viewport
+        int now = getXFrom(System.currentTimeMillis()) + mChannelLayoutPadding;
+        if (drawingRect.left < now)
+          drawingRect.left = now;
+
         String title = event.getTitle();
         title = title.substring(0,
                 mPaint.breakText(title, true, drawingRect.right - drawingRect.left, null));
