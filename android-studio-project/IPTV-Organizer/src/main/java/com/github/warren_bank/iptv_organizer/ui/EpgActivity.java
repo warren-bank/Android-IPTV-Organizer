@@ -22,6 +22,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.InputType;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -315,6 +316,8 @@ public class EpgActivity extends AppCompatActivity {
     epgView.setEPGClickListener(new EPGClickListener() {
       @Override
       public void onChannelClicked(int channelPosition, EPGChannel epgChannel) {
+        if (epgChannel == null) return;
+
         String channelUrl = DbUtils.getM3uMediaUrlForEpgChannel(epgChannel);
         if (channelUrl == null) return;
 
@@ -329,6 +332,33 @@ public class EpgActivity extends AppCompatActivity {
 
       @Override
       public void onEventClicked(int channelPosition, int programPosition, EPGEvent epgEvent) {
+        if (epgEvent == null) return;
+
+        EPGChannel epgChannel = epgData.getChannel(channelPosition);
+
+        String channelName  = (epgChannel != null) ? epgChannel.getName() : null;
+        String programTitle = epgEvent.getTitle();
+        String programDescr = epgEvent.getDescription();
+
+        if (TextUtils.isEmpty(channelName))  channelName  = null;
+        if (TextUtils.isEmpty(programTitle)) programTitle = null;
+        if (TextUtils.isEmpty(programDescr)) programDescr = null;
+
+        StringBuilder message = new StringBuilder();
+        if (programTitle != null)
+          message.append(programTitle);
+        if ((programTitle != null) && (programDescr != null))
+          message.append("\n\n");
+        if (programDescr != null)
+          message.append(programDescr);
+
+        if (message.length() <= 0) return;
+
+        new AlertDialog.Builder(EpgActivity.this)
+          .setTitle(channelName)
+          .setMessage(message.toString())
+          .setPositiveButton(R.string.ok, null)
+          .show();
       }
 
       @Override

@@ -4,6 +4,7 @@
   <string name="app_name">IPTV Organizer</string>
 
   <!-- common -->
+  <string translatable="false" name="ok">OK</string>
   <string name="cancel">Cancel</string>
   <string name="enter_url">Enter URL</string>
   <string name="exit">Exit</string>
