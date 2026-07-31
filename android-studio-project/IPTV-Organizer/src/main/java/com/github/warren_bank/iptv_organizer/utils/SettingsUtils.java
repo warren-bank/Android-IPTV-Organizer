@@ -178,6 +178,31 @@ public class SettingsUtils {
 
   // --------------------
 
+  public static String getPreferredXmltvLanguage(Context context) {
+    return getPreferredXmltvLanguage(context, getPrefs(context));
+  }
+
+  private static String getPreferredXmltvLanguage(Context context, SharedPreferences prefs) {
+    String pref_key    = context.getString(R.string.pref_preferred_xmltv_language_key);
+    String val_default = context.getString(R.string.pref_preferred_xmltv_language_default);
+
+    return prefs.getString(pref_key, val_default);
+  }
+
+  public static boolean setPreferredXmltvLanguage(Context context, String value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setPreferredXmltvLanguage(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setPreferredXmltvLanguage(Context context, String value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_preferred_xmltv_language_key);
+
+    editor.putString(pref_key, value);
+  }
+
+  // --------------------
+
   public static boolean getFilterM3uChannels(Context context) {
     return getFilterM3uChannels(context, getPrefs(context));
   }

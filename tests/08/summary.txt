@@ -1,0 +1,30 @@
+purpose:
+========
+test EPG parser
+
+test #1
+=======
+settings:
+  EPG Channels > Preferred language = ""
+parsed values:
+  channel name = CGTN
+  program title = 新闻
+  program description = 每日纵览全球大事。
+
+test #2
+=======
+settings:
+  EPG Channels > Preferred language = "english"
+parsed values:
+  channel name = CGTN
+  program title = 新闻
+  program description = 每日纵览全球大事。
+
+test #3
+=======
+settings:
+  EPG Channels > Preferred language = "en"
+parsed values:
+  channel name = China Global TV Network
+  program title = The News
+  program description = A daily look at global events.

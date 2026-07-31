@@ -130,6 +130,13 @@
   <string translatable="false" name="pref_default_xmltv_url_hint">https://example.com/epg.xmltv</string>
   <string translatable="false" name="pref_default_xmltv_url_default"></string>
 
+  <!-- SettingsActivity [EPG Channels]: Preferred language -->
+  <string translatable="false" name="pref_preferred_xmltv_language_key">pref_preferred_xmltv_language</string>
+  <string name="pref_preferred_xmltv_language_title">Preferred language</string>
+  <string name="pref_preferred_xmltv_language_summary">Prioritize titles and descriptions with a \"lang\" attribute having this exact value.</string>
+  <string translatable="false" name="pref_preferred_xmltv_language_hint">en</string>
+  <string translatable="false" name="pref_preferred_xmltv_language_default">@string/pref_preferred_xmltv_language_hint</string>
+
   <!-- SettingsActivity [EPG Channels]: Filter by M3U channels -->
   <string translatable="false" name="pref_epg_channels_filter_whitelist_m3u_key">pref_epg_channels_filter_whitelist_m3u</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filter by M3U channels</string>

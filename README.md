@@ -175,21 +175,54 @@ Android app that organizes IPTV channel and EPG information.
          ```text
          %3$s/xmltv.php?username=%1$s&password=%2$s
          ```
-  2. Filter by M3U channels
+  2. Preferred language
+     - specify the exact value of the `lang` attribute on `display-name`, `title` and `desc` fields to prioritize
+     - example:
+       * XMLTV (EPG) data:
+         ```xml
+         <channel id="channel1">
+           <display-name>CGTN</display-name>
+           <display-name lang="en">China Global TV Network</display-name>
+         </channel>
+         <programme start="20260101000000 +0000" stop="20400101000000 +0000" channel="channel1">
+           <title lang="zh">新闻</title>
+           <title lang="en">The News</title>
+           <title lang="es">Las Noticias</title>
+
+           <desc lang="zh">每日纵览全球大事。</desc>
+           <desc lang="en">A daily look at global events.</desc>
+           <desc lang="es">Un vistazo diario a los eventos mundiales.</desc>
+           <orig-language lang="en">en</orig-language>
+         </programme>
+         ```
+       * value: empty
+         - default behavior is to read the first of each tag, and ignore duplicates
+         - channel name = CGTN
+         - program title = 新闻
+         - program description = 每日纵览全球大事。
+       * value: not found
+         - example: `english`
+         - same as default behavior
+       * value: `en`
+         - channel name = China Global TV Network
+         - program title = The News
+         - program description = A daily look at global events.
+     - default: `en`
+  3. Filter by M3U channels
      - when `true`: Whitelist channels found in M3U
      - when `false`: Do not whitelist channels found in M3U
      - default: `true`
-  3. Filter by channel name whitelist
+  4. Filter by channel name whitelist
      - specify one channel name (ie: `target_value`) per line
      - when `target_value` begins with the sequence: `+*`
        * rather than being tested for equality to the value of this string,<br>channel names are tested for the presence of this substring (excluding the leading 2-char sequence)
-  4. Filter by channel ID whitelist
+  5. Filter by channel ID whitelist
      - specify one channel ID (ie: `target_value`) per line
-  5. Filter by channel name blacklist
+  6. Filter by channel name blacklist
      - specify one channel name (ie: `target_value`) per line
      - format of input and usage is identical to the "channel name whitelist"
        * matching EPG channels are discarded during import
-  6. Filter by channel ID blacklist
+  7. Filter by channel ID blacklist
      - specify one channel ID (ie: `target_value`) per line
      - format of input and usage is identical to the "channel ID whitelist"
        * matching EPG channels are discarded during import
@@ -304,6 +337,9 @@ __Update Settings__
      1. name = `EPG_DEFAULT_XMLTV_URL`
         * type = `String`
         * setting = _EPG Channels &gt; Default XMLTV EPG URL_
+     1. name = `EPG_PREFERRED_LANGUAGE`
+        * type = `String`
+        * setting = _EPG Channels &gt; Preferred language_
      1. name = `EPG_CHANNEL_M3U_WHITELIST`
         * type = `Boolean`
         * setting = _EPG Channels &gt; Filter by M3U channels_
@@ -362,6 +398,7 @@ __Update Settings__
      extra-M3U_MEDIA_URL_STATIC_STRINGS: http://kytv.xyz:80
      extra-M3U_MEDIA_URL_STATIC_STRINGS: http://kytv.xyz:25461
      extra-EPG_DEFAULT_XMLTV_URL: %3$s/xmltv.php?username=%1$s&password=%2$s
+     extra-EPG_PREFERRED_LANGUAGE: en
      extra-EPG_CHANNEL_M3U_WHITELIST: (bool) true
      extra-EPG_CHANNEL_NAME_WHITELIST: (String[]) null
      extra-EPG_CHANNEL_ID_WHITELIST: (String[]) null

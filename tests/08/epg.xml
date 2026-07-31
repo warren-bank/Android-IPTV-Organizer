@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="channel1">
+    <display-name>CGTN</display-name>
+    <display-name lang="en">China Global TV Network</display-name>
+  </channel>
+  <programme start="20260101000000 +0000" stop="20400101000000 +0000" channel="channel1">
+    <title lang="zh">新闻</title>
+    <title lang="en">The News</title>
+    <title lang="es">Las Noticias</title>
+
+    <desc lang="zh">每日纵览全球大事。</desc>
+    <desc lang="en">A daily look at global events.</desc>
+    <desc lang="es">Un vistazo diario a los eventos mundiales.</desc>
+    <orig-language lang="en">en</orig-language>
+  </programme>
+</tv>

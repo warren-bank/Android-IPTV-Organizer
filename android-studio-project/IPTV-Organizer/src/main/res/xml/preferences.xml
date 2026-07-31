@@ -91,6 +91,14 @@
       android:hint="@string/pref_default_xmltv_url_hint"
       android:defaultValue="@string/pref_default_xmltv_url_default" />
 
+    <EditTextPreference
+      android:key="@string/pref_preferred_xmltv_language_key"
+      android:title="@string/pref_preferred_xmltv_language_title"
+      android:summary="@string/pref_preferred_xmltv_language_summary"
+      android:inputType="text"
+      android:hint="@string/pref_preferred_xmltv_language_hint"
+      android:defaultValue="@string/pref_preferred_xmltv_language_default" />
+
     <CheckBoxPreference
       android:key="@string/pref_epg_channels_filter_whitelist_m3u_key"
       android:title="@string/pref_epg_channels_filter_whitelist_m3u_title"

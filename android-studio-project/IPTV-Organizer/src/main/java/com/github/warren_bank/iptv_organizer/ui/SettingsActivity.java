@@ -33,6 +33,7 @@ public class SettingsActivity extends PreferenceActivity {
   private static final String EXTRA_M3U_CHANNEL_ID_BLACKLIST      = "M3U_CHANNEL_ID_BLACKLIST";       // String[]
   private static final String EXTRA_M3U_MEDIA_URL_STATIC_STRINGS  = "M3U_MEDIA_URL_STATIC_STRINGS";   // String[]
   private static final String EXTRA_EPG_DEFAULT_XMLTV_URL         = "EPG_DEFAULT_XMLTV_URL";          // String
+  private static final String EXTRA_EPG_PREFERRED_LANGUAGE        = "EPG_PREFERRED_LANGUAGE";         // String
   private static final String EXTRA_EPG_CHANNEL_M3U_WHITELIST     = "EPG_CHANNEL_M3U_WHITELIST";      // Boolean
   private static final String EXTRA_EPG_CHANNEL_NAME_WHITELIST    = "EPG_CHANNEL_NAME_WHITELIST";     // String[]
   private static final String EXTRA_EPG_CHANNEL_ID_WHITELIST      = "EPG_CHANNEL_ID_WHITELIST";       // String[]
@@ -174,6 +175,12 @@ public class SettingsActivity extends PreferenceActivity {
       if (intent.hasExtra(EXTRA_EPG_DEFAULT_XMLTV_URL)) {
         String value = intent.getStringExtra(EXTRA_EPG_DEFAULT_XMLTV_URL);
         SettingsUtils.setDefaultXmltvEpgUrlPreference(SettingsActivity.this, value);
+        didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_EPG_PREFERRED_LANGUAGE)) {
+        String value = intent.getStringExtra(EXTRA_EPG_PREFERRED_LANGUAGE);
+        SettingsUtils.setPreferredXmltvLanguage(SettingsActivity.this, value);
         didUpdate = true;
       }
 
