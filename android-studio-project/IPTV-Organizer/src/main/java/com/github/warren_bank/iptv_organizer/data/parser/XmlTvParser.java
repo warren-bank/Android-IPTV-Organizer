@@ -22,6 +22,19 @@ import java.util.Map;
 public class XmlTvParser {
   // Standard XMLTV date format: 20260716171500 +0000
   private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss Z", Locale.US);
+  private static final long MILLISECONDS_PER_YEAR  = 31_536_000_000L;
+  private static final long INDETERMINATE_END_TIME = System.currentTimeMillis() + MILLISECONDS_PER_YEAR;
+
+  private static long parseDateFormat(String value) {
+    try {
+      if (value == null) throw new Exception("null");
+
+      return XmlTvParser.dateFormat.parse(value).getTime();
+    }
+    catch(Exception e) {
+      return -1L;
+    }
+  }
 
   public static Map<EPGChannel, List<EPGEvent>> parseXmlTv(InputStream inputStream, ParserProgressListener listener) throws Exception {
     String preferredLang = SettingsUtils.getPreferredXmltvLanguage(App.context);
@@ -30,7 +43,7 @@ public class XmlTvParser {
     Map<String, EPGChannel> channelMap = new LinkedHashMap<>();
     Map<EPGChannel, List<EPGEvent>> parsedData = new LinkedHashMap<>();
     XmlTvFilter xmlTvFilter = new XmlTvFilter();
-     
+
     XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
     XmlPullParser parser = factory.newPullParser();
     parser.setInput(inputStream, null);
@@ -52,13 +65,15 @@ public class XmlTvParser {
 
     while (eventType != XmlPullParser.END_DOCUMENT) {
       String tagName = parser.getName();
-       
+
       switch (eventType) {
         case XmlPullParser.START_TAG:
           if ("channel".equals(tagName)) {
             String id = parser.getAttributeValue(null, "id");
-            currentChannel = new EPGChannel(id, null, null);
-            channelMap.put(id, currentChannel);
+            if (id != null) {
+              currentChannel = new EPGChannel(id, null, null);
+              channelMap.put(id, currentChannel);
+            }
           } else if ("display-name".equals(tagName) && currentChannel != null) {
             if ((preferredLang != null) && !currentChannelNameIsPreferredLang && preferredLang.equals(parser.getAttributeValue(null, "lang"))) {
               currentChannel.setName(null);
@@ -70,8 +85,10 @@ public class XmlTvParser {
             currentChannel.setImageURL(parser.getAttributeValue(null, "src"));
           } else if ("programme".equals(tagName)) {
             currentChannelId = parser.getAttributeValue(null, "channel");
-            startTime = XmlTvParser.dateFormat.parse(parser.getAttributeValue(null, "start")).getTime();
-            endTime   = XmlTvParser.dateFormat.parse(parser.getAttributeValue(null, "stop")).getTime();
+            startTime = XmlTvParser.parseDateFormat(parser.getAttributeValue(null, "start"));
+            endTime   = XmlTvParser.parseDateFormat(parser.getAttributeValue(null, "stop"));
+
+            if (endTime == -1L) endTime = INDETERMINATE_END_TIME;
           } else if ("title".equals(tagName) && currentChannelId != null) {
             if ((preferredLang != null) && !currentTitleIsPreferredLang && preferredLang.equals(parser.getAttributeValue(null, "lang"))) {
               currentTitle = null;
@@ -96,11 +113,13 @@ public class XmlTvParser {
             EPGChannel channel = channelMap.get(currentChannelId);
             if (channel != null) {
               EPGEvent event = new EPGEvent(startTime, endTime, currentTitle, currentDescription);
-               
-              if (!parsedData.containsKey(channel)) {
-                parsedData.put(channel, new ArrayList<>());
+
+              if (xmlTvFilter.passesXmlTvValidator(event)) {
+                if (!parsedData.containsKey(channel)) {
+                  parsedData.put(channel, new ArrayList<>());
+                }
+                parsedData.get(channel).add(event);
               }
-              parsedData.get(channel).add(event);
             }
             // Reset temporary programme state
             currentChannelId = null;
@@ -111,7 +130,7 @@ public class XmlTvParser {
           } else if ("channel".equals(tagName) && currentChannel != null) {
             if ((listener != null) && (currentChannel.getName() != null)) listener.onData(currentChannel.getName());
 
-            if (!xmlTvFilter.passesXmlTvFilter(currentChannel)) {
+            if (!xmlTvFilter.passesXmlTvValidator(currentChannel) || !xmlTvFilter.passesXmlTvFilter(currentChannel)) {
               String id = currentChannel.getChannelID();
               channelMap.remove(id);
             }

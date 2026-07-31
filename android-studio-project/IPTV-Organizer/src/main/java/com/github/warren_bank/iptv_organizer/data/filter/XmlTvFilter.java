@@ -143,4 +143,14 @@ public class XmlTvFilter {
     filterXmlTv(data);
     return !data.isEmpty();
   }
+
+  public boolean passesXmlTvValidator(EPGChannel channel) {
+    // required fields: channelID, name
+    return ((channel != null) && !TextUtils.isEmpty(channel.getChannelID()) && !TextUtils.isEmpty(channel.getName()));
+  }
+
+  public boolean passesXmlTvValidator(EPGEvent program) {
+    // required fields: start, title
+    return ((program != null) && (program.getStart() >= 0) && !TextUtils.isEmpty(program.getTitle()));
+  }
 }

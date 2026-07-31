@@ -1,0 +1,7 @@
+purpose:
+========
+test XMLTV (EPG) data that contains the minimum fields required to be valid
+
+specs:
+======
+https://github.com/XMLTV/xmltv/blob/v1.4.0/xmltv.dtd

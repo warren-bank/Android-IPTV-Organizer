@@ -44,6 +44,9 @@ https://github.com/XMLTV/xmltv/blob/v1.4.0/xmltv.dtd
 
 exerpts:
 ========
+  <channel id="channel-two.tv">
+    <display-name>Channel Two: Minimum valid channel</display-name>
+  </channel>
   <programme start="20220331180000 +0000" channel="channel-two.tv">
     <title>Programme Two: The minimum valid programme</title>
   </programme>
