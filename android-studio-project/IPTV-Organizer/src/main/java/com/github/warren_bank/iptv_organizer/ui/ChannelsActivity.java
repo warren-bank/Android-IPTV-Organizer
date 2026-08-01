@@ -6,6 +6,7 @@ import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
 import com.github.warren_bank.iptv_organizer.ui.EpgActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
 import com.github.warren_bank.iptv_organizer.ui.dialog.ImportProgressDialog;
+import com.github.warren_bank.iptv_organizer.ui.dialog.SavedSearchKeywordsListDialog;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
 import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
@@ -97,10 +98,11 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   }
 
   // ---------------------------------------------------------------------------------------------
-  // ImportProgressDialog:
+  // Dialogs:
   // ---------------------------------------------------------------------------------------------
 
-  private ImportProgressDialog importProgressDialog;
+  private SavedSearchKeywordsListDialog savedSearchDialog;
+  private ImportProgressDialog          importProgressDialog;
 
   // ---------------------------------------------------------------------------------------------
   // Lifecycle Events:
@@ -140,6 +142,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   protected void onResume() {
     super.onResume();
 
+    if (savedSearchDialog    != null) savedSearchDialog.refresh();
     if (importProgressDialog != null) importProgressDialog.resume();
   }
 
@@ -147,6 +150,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   protected void onPause() {
     super.onPause();
 
+    if (savedSearchDialog    != null) savedSearchDialog.hide();
     if (importProgressDialog != null) importProgressDialog.pause();
   }
 
@@ -168,6 +172,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     menu.findItem(R.id.channels_menuitem_sort_alphabetic).setVisible(isVisible);
 
     searchView = (SearchView) menu.findItem(R.id.channels_menuitem_search).getActionView();
+    initSavedSearchDialog();
     initSearch();
 
     return true;
@@ -449,6 +454,10 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     sort_order = SORT_OPTION.SEQUENTIAL;
   }
 
+  private void initSavedSearchDialog() {
+    savedSearchDialog = new SavedSearchKeywordsListDialog(ChannelsActivity.this, searchView, R.drawable.bookmark);
+  }
+
   private void initSearch() {
     searchView.setMaxWidth(Integer.MAX_VALUE);
 
@@ -456,12 +465,14 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       @Override
       public boolean onQueryTextSubmit(String constraint) {
         searchFilter.query(constraint);
+        savedSearchDialog.update();
         return false;
       }
 
       @Override
       public boolean onQueryTextChange(String constraint) {
         searchFilter.query(constraint);
+        savedSearchDialog.update();
         return false;
       }
     });

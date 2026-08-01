@@ -230,6 +230,11 @@ public class SQLiteStore extends SQLiteOpenHelper {
         + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
         + ");"
       );
+      dbase.execSQL(
+          "CREATE TABLE IF NOT EXISTS saved_search_keywords_list ("
+        + "    search_keywords      VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
     }
     catch (SQLiteException e) {
       Log.e(Constants.LOG_TAG, e.getMessage());

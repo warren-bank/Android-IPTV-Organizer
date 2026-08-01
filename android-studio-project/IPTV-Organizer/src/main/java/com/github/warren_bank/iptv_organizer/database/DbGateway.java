@@ -603,7 +603,7 @@ public class DbGateway {
   // internal: write generic channel filter lists to DB:
   // ---------------------------------------------------------------------------
 
-  private boolean saveChannelNameFilterList(List<String> names, String tableName) {
+  private boolean saveChannelFilterList(List<String> fieldValues, String tableName, String fieldName) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -615,12 +615,12 @@ public class DbGateway {
       dbase.execSQL(query);
       query = null;
 
-      if ((names != null) && !names.isEmpty()) {
-        for (String name : names) {
-          if (TextUtils.isEmpty(name)) continue;
+      if ((fieldValues != null) && !fieldValues.isEmpty()) {
+        for (String fieldValue : fieldValues) {
+          if (TextUtils.isEmpty(fieldValue)) continue;
 
           cvals = new ContentValues();
-          cvals.put("name", name);
+          cvals.put(fieldName, fieldValue);
 
           insertOrThrowUnlessConstraintViolated(dbase, tableName, null, cvals);
           cvals = null;
@@ -639,50 +639,22 @@ public class DbGateway {
     return result;
   }
 
+  private boolean saveChannelNameFilterList(List<String> names, String tableName) {
+    return saveChannelFilterList(names, tableName, "name");
+  }
+
   private boolean saveChannelIdFilterList(List<String> ids, String tableName) {
-    SQLiteDatabase dbase = db.getSQLiteDatabase();
-    String query;
-    ContentValues cvals;
-    boolean result = true;
-    try {
-      dbase.beginTransaction();
-
-      query = "DELETE FROM " + tableName;
-      dbase.execSQL(query);
-      query = null;
-
-      if ((ids != null) && !ids.isEmpty()) {
-        for (String tvg_id : ids) {
-          if (TextUtils.isEmpty(tvg_id)) continue;
-
-          cvals = new ContentValues();
-          cvals.put("tvg_id", tvg_id);
-
-          insertOrThrowUnlessConstraintViolated(dbase, tableName, null, cvals);
-          cvals = null;
-        }
-      }
-
-      dbase.setTransactionSuccessful();
-    }
-    catch (SQLException e) {
-      result = false;
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    finally {
-      dbase.endTransaction();
-    }
-    return result;
+    return saveChannelFilterList(ids, tableName, "tvg_id");
   }
 
   // ---------------------------------------------------------------------------
   // internal: read generic channel filter lists from DB:
   // ---------------------------------------------------------------------------
 
-  private List<String> getChannelNameFilterList(String tableName) {
-    List<String> names = new ArrayList<String>();
-    String query = "SELECT * FROM " + tableName + " ORDER BY name ASC";
-    String name;
+  private List<String> getChannelFilterList(String tableName, String fieldName) {
+    List<String> fieldValues = new ArrayList<String>();
+    String query = "SELECT " + fieldName + " FROM " + tableName + " ORDER BY " + fieldName + " ASC";
+    String fieldValue;
 
     Cursor c = null;
     try {
@@ -690,9 +662,9 @@ public class DbGateway {
 
       if ((c != null) && c.moveToFirst() && c.isFirst()) {
         do {
-          name = getColumnString(c, "name");
+          fieldValue = getColumnString(c, fieldName);
 
-          names.add(name);
+          fieldValues.add(fieldValue);
         } while (c.moveToNext());
       }
     }
@@ -700,41 +672,21 @@ public class DbGateway {
       Log.e(Constants.LOG_TAG, e.getMessage());
     }
     if (c != null) c.close();
-    return names;
+    return fieldValues;
   }
 
-  private List<String> getChannelNameFilterListSubset(boolean getSubstringPatterns, String tableName) {
-    List<String> names = new ArrayList<String>();
-    String query = "SELECT name FROM " + tableName + " WHERE name" + (getSubstringPatterns ? "" : " NOT") + " LIKE " + sqlEscapeString(Constants.FILTER_LIST_NAMES_BY_SUBSTRING_TOKEN + "%") + " ORDER BY name ASC";
-    String name;
-
-    Cursor c = null;
-    try {
-      c = db.query(query);
-
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          name = getColumnString(c, "name");
-
-          // remove leading token sequence from substring patterns
-          if (getSubstringPatterns)
-            name = name.substring(Constants.FILTER_LIST_NAMES_BY_SUBSTRING_TOKEN.length());
-
-          names.add(name);
-        } while (c.moveToNext());
-      }
-    }
-    catch (SQLiteException e) {
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    if (c != null) c.close();
-    return names;
+  private List<String> getChannelNameFilterList(String tableName) {
+    return getChannelFilterList(tableName, "name");
   }
 
   private List<String> getChannelIdFilterList(String tableName) {
-    List<String> ids = new ArrayList<String>();
-    String query = "SELECT * FROM " + tableName + " ORDER BY tvg_id ASC";
-    String tvg_id;
+    return getChannelFilterList(tableName, "tvg_id");
+  }
+
+  private List<String> getChannelFilterListSubset(boolean getSubstringPatterns, String tableName, String fieldName) {
+    List<String> fieldValues = new ArrayList<String>();
+    String query = "SELECT " + fieldName + " FROM " + tableName + " WHERE " + fieldName + (getSubstringPatterns ? "" : " NOT") + " LIKE " + sqlEscapeString(Constants.FILTER_LIST_NAMES_BY_SUBSTRING_TOKEN + "%") + " ORDER BY " + fieldName + " ASC";
+    String fieldValue;
 
     Cursor c = null;
     try {
@@ -742,9 +694,13 @@ public class DbGateway {
 
       if ((c != null) && c.moveToFirst() && c.isFirst()) {
         do {
-          tvg_id = getColumnString(c, "tvg_id");
+          fieldValue = getColumnString(c, fieldName);
 
-          ids.add(tvg_id);
+          // remove leading token sequence from substring patterns
+          if (getSubstringPatterns)
+            fieldValue = fieldValue.substring(Constants.FILTER_LIST_NAMES_BY_SUBSTRING_TOKEN.length());
+
+          fieldValues.add(fieldValue);
         } while (c.moveToNext());
       }
     }
@@ -752,7 +708,11 @@ public class DbGateway {
       Log.e(Constants.LOG_TAG, e.getMessage());
     }
     if (c != null) c.close();
-    return ids;
+    return fieldValues;
+  }
+
+  private List<String> getChannelNameFilterListSubset(boolean getSubstringPatterns, String tableName) {
+    return getChannelFilterListSubset(getSubstringPatterns, tableName, "name");
   }
 
   // ---------------------------------------------------------------------------
@@ -885,6 +845,32 @@ public class DbGateway {
   public List<String> getEpgChannelIdFilterBlacklist() {
     String tableName = "epg_channels_filter_blacklist_ids";
     return getChannelIdFilterList(tableName);
+  }
+
+  // ---------------------------------------------------------------------------
+  // saved search keywords:
+  // ---------------------------------------------------------------------------
+
+  public boolean setSavedSearchKeywordsList(List<String> keywordsList) {
+    String tableName = "saved_search_keywords_list";
+    String fieldName = "search_keywords";
+    return saveChannelFilterList(keywordsList, tableName, fieldName);
+  }
+
+  public List<String> getSavedSearchKeywordsList() {
+    String tableName = "saved_search_keywords_list";
+    String fieldName = "search_keywords";
+    return getChannelFilterList(tableName, fieldName);
+  }
+
+  public boolean addSavedSearchKeywordsListItem(String keywords) {
+    String query = "INSERT INTO saved_search_keywords_list (search_keywords) VALUES (" + sqlEscapeString(keywords) + ")";
+    return db.execQuery(query);
+  }
+
+  public boolean removeSavedSearchKeywordsListItem(String keywords) {
+    String query = "DELETE FROM saved_search_keywords_list WHERE search_keywords = " + sqlEscapeString(keywords);
+    return db.execQuery(query);
   }
 
   // ---------------------------------------------------------------------------

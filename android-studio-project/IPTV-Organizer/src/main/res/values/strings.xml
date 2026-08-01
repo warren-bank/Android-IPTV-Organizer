@@ -4,13 +4,16 @@
   <string name="app_name">IPTV Organizer</string>
 
   <!-- common -->
-  <string translatable="false" name="ok">OK</string>
+  <string name="add">Add</string>
   <string name="cancel">Cancel</string>
+  <string name="close">Close</string>
   <string name="enter_url">Enter URL</string>
   <string name="exit">Exit</string>
   <string name="export_file">Export File</string>
   <string name="import_file">Import File</string>
   <string name="import_generic">Import</string>
+  <string translatable="false" name="ok">OK</string>
+  <string name="remove">Remove</string>
   <string name="save">Save</string>
   <string name="search">Search</string>
   <string name="settings">Settings</string>
@@ -19,6 +22,9 @@
   <string name="activity_channels">M3U Channels</string>
   <string name="activity_epg">EPG Channels</string>
   <string name="activity_settings">@string/settings</string>
+
+  <!-- common [menu item dialog]: SavedSearchKeywordsListDialog -->
+  <string name="dialog_saved_search_keywords_list_title">Saved Search Keywords</string>
 
   <!-- common: Toasts -->
   <string name="toast_error_no_app_found">External media player not found</string>

@@ -20,7 +20,7 @@ public class Update {
   public static final int MODE_INSTALL = 1;
   public static final int MODE_RESTORE = 2;
 
-  public static final int VERSION_CURRENT = 3;
+  public static final int VERSION_CURRENT = 4;
   public static       int VERSION_ACTUAL  = -1;
 
   // ---------------------------------------------------------------------------
@@ -197,6 +197,13 @@ public class Update {
       databaseUpdateResult.didUpdateFail      |= !result;
       version                                  = getVersionNumber();
     }
+    if (!databaseUpdateResult.didUpdateFail && (version == 3)) {
+      didUpdate                                = true;
+      result                                   = update_version_003();
+      databaseUpdateResult.didUpdateSucceed   &= result;
+      databaseUpdateResult.didUpdateFail      |= !result;
+      version                                  = getVersionNumber();
+    }
 
     databaseUpdateResult.didUpdateSucceed &= didUpdate;
   }
@@ -247,6 +254,24 @@ public class Update {
       queries.add(
           "CREATE TABLE IF NOT EXISTS epg_channels_filter_blacklist_ids ("
         + "    tvg_id               VARCHAR NOT NULL PRIMARY KEY"
+        + ");"
+      );
+      return execTransaction(queries);
+    } catch (Exception e) {
+      Log.e(Constants.LOG_TAG, "Error updating database");
+      e.printStackTrace();
+      return false;
+    }
+  }
+
+  private boolean update_version_003() {
+    Log.d(Constants.LOG_TAG, "UPDATING TO VERSION 4");
+    try {
+      List<String> queries = new ArrayList<String>();
+      queries.add("UPDATE application SET version=4");
+      queries.add(
+          "CREATE TABLE IF NOT EXISTS saved_search_keywords_list ("
+        + "    search_keywords      VARCHAR NOT NULL PRIMARY KEY"
         + ");"
       );
       return execTransaction(queries);

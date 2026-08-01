@@ -21,7 +21,7 @@
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         android:orderInCategory="4"
         android:title="@string/channels_menuitem_search"
-        android:icon="@drawable/baseline_search_black_24"
+        android:icon="@drawable/search"
         app:showAsAction="always" />
     <item
         android:id="@+id/channels_menuitem_sort_sequential"

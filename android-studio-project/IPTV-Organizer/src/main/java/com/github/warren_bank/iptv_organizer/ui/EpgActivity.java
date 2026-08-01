@@ -6,6 +6,7 @@ import com.github.warren_bank.iptv_organizer.data.model.EPGDataImpl;
 import com.github.warren_bank.iptv_organizer.ui.ChannelsActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
 import com.github.warren_bank.iptv_organizer.ui.dialog.ImportProgressDialog;
+import com.github.warren_bank.iptv_organizer.ui.dialog.SavedSearchKeywordsListDialog;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
 
@@ -50,10 +51,11 @@ public class EpgActivity extends AppCompatActivity {
   private SearchView  searchView;
 
   // ---------------------------------------------------------------------------------------------
-  // ImportProgressDialog:
+  // Dialogs:
   // ---------------------------------------------------------------------------------------------
 
-  private ImportProgressDialog importProgressDialog;
+  private SavedSearchKeywordsListDialog savedSearchDialog;
+  private ImportProgressDialog          importProgressDialog;
 
   // ---------------------------------------------------------------------------------------------
   // Lifecycle Events:
@@ -91,6 +93,7 @@ public class EpgActivity extends AppCompatActivity {
   protected void onResume() {
     super.onResume();
 
+    if (savedSearchDialog    != null) savedSearchDialog.refresh();
     if (importProgressDialog != null) importProgressDialog.resume();
   }
 
@@ -98,6 +101,7 @@ public class EpgActivity extends AppCompatActivity {
   protected void onPause() {
     super.onPause();
 
+    if (savedSearchDialog    != null) savedSearchDialog.hide();
     if (importProgressDialog != null) importProgressDialog.pause();
   }
 
@@ -125,6 +129,7 @@ public class EpgActivity extends AppCompatActivity {
     menu.findItem(R.id.epg_menuitem_search).setVisible(isVisible);
 
     searchView = (SearchView) menu.findItem(R.id.epg_menuitem_search).getActionView();
+    initSavedSearchDialog();
     initSearch();
 
     return true;
@@ -407,6 +412,10 @@ public class EpgActivity extends AppCompatActivity {
     catch(Exception ignored) {}
   }
 
+  private void initSavedSearchDialog() {
+    savedSearchDialog = new SavedSearchKeywordsListDialog(EpgActivity.this, searchView, R.drawable.bookmark);
+  }
+
   private void initSearch() {
     searchView.setMaxWidth(Integer.MAX_VALUE);
 
@@ -415,6 +424,7 @@ public class EpgActivity extends AppCompatActivity {
       public boolean onQueryTextSubmit(String constraint) {
         epgData.filterChannels(constraint, Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX, Constants.SEARCH_KEYWORD_MIN_LENGTH, Constants.SEARCH_KEYWORD_CASE_SENSITIVE);
         epgView.recalculateAndRedraw(false);
+        savedSearchDialog.update();
         return false;
       }
 
@@ -422,6 +432,7 @@ public class EpgActivity extends AppCompatActivity {
       public boolean onQueryTextChange(String constraint) {
         epgData.filterChannels(constraint, Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX, Constants.SEARCH_KEYWORD_MIN_LENGTH, Constants.SEARCH_KEYWORD_CASE_SENSITIVE);
         epgView.recalculateAndRedraw(false);
+        savedSearchDialog.update();
         return false;
       }
     });
