@@ -18,6 +18,7 @@ public class DbPreferenceDataStore {
   public static final String KEY_EPG_CHANNELS_FILTER_WHITELIST_IDS    = "epg_channels_filter_whitelist_ids";
   public static final String KEY_EPG_CHANNELS_FILTER_BLACKLIST_NAMES  = "epg_channels_filter_blacklist_names";
   public static final String KEY_EPG_CHANNELS_FILTER_BLACKLIST_IDS    = "epg_channels_filter_blacklist_ids";
+  public static final String KEY_SAVED_SEARCH_KEYWORDS_LIST           = "saved_search_keywords_list";
 
   public static boolean putString(String key, String value) {
     try {
@@ -75,6 +76,11 @@ public class DbPreferenceDataStore {
           case KEY_EPG_CHANNELS_FILTER_BLACKLIST_IDS: {
               List<String> data = DbUtils.decodeList(value);
               return DbUtils.getDb().saveEpgChannelIdFilterBlacklist(data);
+          }
+
+          case KEY_SAVED_SEARCH_KEYWORDS_LIST: {
+              List<String> data = DbUtils.decodeList(value);
+              return DbUtils.getDb().setSavedSearchKeywordsList(data);
           }
       }
     }
@@ -137,6 +143,11 @@ public class DbPreferenceDataStore {
 
           case KEY_EPG_CHANNELS_FILTER_BLACKLIST_IDS: {
               List<String> data = DbUtils.getDb().getEpgChannelIdFilterBlacklist();
+              return DbUtils.encodeList(data);
+          }
+
+          case KEY_SAVED_SEARCH_KEYWORDS_LIST: {
+              List<String> data = DbUtils.getDb().getSavedSearchKeywordsList();
               return DbUtils.encodeList(data);
           }
       }

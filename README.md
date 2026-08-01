@@ -374,6 +374,10 @@ __Update Settings__
         * type = `String[]`
         * setting = _EPG Channels &gt; Filter by channel ID blacklist_
         * specify one channel ID per `String`
+     1. name = `SAVED_SEARCH_KEYWORDS_LIST`
+        * type = `String[]`
+        * specify one saved search term per `String`
+        * this is a common list of saved search terms that appears on the search bar for both M3U and EPG channels when the _bookmark_ icon is clicked
 2. example: how to update _IPTV-Organizer_ settings on a remote device that is also running [_ExoAirPlayer_](https://github.com/warren-bank/Android-ExoPlayer-AirPlay-Receiver)
    ```bash
    # network address for running instance of 'ExoPlayer AirPlay Receiver'
@@ -419,6 +423,8 @@ __Update Settings__
      extra-EPG_CHANNEL_ID_WHITELIST: (String[]) null
      extra-EPG_CHANNEL_NAME_BLACKLIST: (String[]) null
      extra-EPG_CHANNEL_ID_BLACKLIST: (String[]) null
+     extra-SAVED_SEARCH_KEYWORDS_LIST: cspan|cnn|msnbc|cgtv
+     extra-SAVED_SEARCH_KEYWORDS_LIST: espn|nesn|sport|nfl|nba|golf
    '
    
    curl --silent -X POST \

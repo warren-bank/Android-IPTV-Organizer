@@ -40,6 +40,7 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
   private static final String EXTRA_EPG_CHANNEL_ID_WHITELIST      = "EPG_CHANNEL_ID_WHITELIST";       // String[]
   private static final String EXTRA_EPG_CHANNEL_NAME_BLACKLIST    = "EPG_CHANNEL_NAME_BLACKLIST";     // String[]
   private static final String EXTRA_EPG_CHANNEL_ID_BLACKLIST      = "EPG_CHANNEL_ID_BLACKLIST";       // String[]
+  private static final String EXTRA_SAVED_SEARCH_KEYWORDS_LIST    = "SAVED_SEARCH_KEYWORDS_LIST";     // String[]
 
   private static Activity             self   = null;
   private static DbEditTextPreference dbPref = null;
@@ -243,6 +244,15 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
           joinStringArray(value)
         );
         didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_SAVED_SEARCH_KEYWORDS_LIST)) {
+        String[] value = intent.getStringArrayExtra(EXTRA_SAVED_SEARCH_KEYWORDS_LIST);
+        DbPreferenceDataStore.putString(
+          DbPreferenceDataStore.KEY_SAVED_SEARCH_KEYWORDS_LIST,
+          joinStringArray(value)
+        );
+//      didUpdate = true;
       }
     }
     catch(Exception e) {}
