@@ -93,7 +93,8 @@ public class EpgActivity extends AppCompatActivity {
   protected void onResume() {
     super.onResume();
 
-    if (savedSearchDialog    != null) savedSearchDialog.refresh();
+    initSavedSearchDialog();
+
     if (importProgressDialog != null) importProgressDialog.resume();
   }
 
@@ -101,7 +102,11 @@ public class EpgActivity extends AppCompatActivity {
   protected void onPause() {
     super.onPause();
 
-    if (savedSearchDialog    != null) savedSearchDialog.hide();
+    if (savedSearchDialog != null) {
+      savedSearchDialog.release();
+      savedSearchDialog = null;
+    }
+
     if (importProgressDialog != null) importProgressDialog.pause();
   }
 
@@ -413,7 +418,8 @@ public class EpgActivity extends AppCompatActivity {
   }
 
   private void initSavedSearchDialog() {
-    savedSearchDialog = new SavedSearchKeywordsListDialog(EpgActivity.this, searchView, R.drawable.bookmark);
+    if ((savedSearchDialog == null) && (searchView != null))
+      savedSearchDialog = new SavedSearchKeywordsListDialog(EpgActivity.this, searchView, R.drawable.bookmark);
   }
 
   private void initSearch() {
@@ -424,7 +430,7 @@ public class EpgActivity extends AppCompatActivity {
       public boolean onQueryTextSubmit(String constraint) {
         epgData.filterChannels(constraint, Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX, Constants.SEARCH_KEYWORD_MIN_LENGTH, Constants.SEARCH_KEYWORD_CASE_SENSITIVE);
         epgView.recalculateAndRedraw(false);
-        savedSearchDialog.update();
+        if (savedSearchDialog != null) savedSearchDialog.update();
         return false;
       }
 
@@ -432,7 +438,7 @@ public class EpgActivity extends AppCompatActivity {
       public boolean onQueryTextChange(String constraint) {
         epgData.filterChannels(constraint, Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX, Constants.SEARCH_KEYWORD_MIN_LENGTH, Constants.SEARCH_KEYWORD_CASE_SENSITIVE);
         epgView.recalculateAndRedraw(false);
-        savedSearchDialog.update();
+        if (savedSearchDialog != null) savedSearchDialog.update();
         return false;
       }
     });

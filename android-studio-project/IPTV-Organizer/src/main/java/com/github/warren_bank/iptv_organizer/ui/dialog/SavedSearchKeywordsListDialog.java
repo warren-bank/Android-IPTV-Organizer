@@ -222,15 +222,6 @@ public class SavedSearchKeywordsListDialog {
     }
   }
 
-  public void refresh() {
-    List<String> newList = DbUtils.getDb().getSavedSearchKeywordsList();
-
-    keywordsList.clear();
-    keywordsList.addAll(newList);
-    adapter.notifyDataSetChanged();
-    update();
-  }
-
   public void update() {
     if (!isShowing) return;
 
@@ -246,5 +237,18 @@ public class SavedSearchKeywordsListDialog {
       addButton.setVisibility(View.VISIBLE);
       delButton.setVisibility(View.GONE);
     }
+  }
+
+  public void release() {
+    if (dialog.isShowing())
+      dialog.dismiss();
+
+    this.searchView   = null;
+    this.keywordsList = null;
+    this.adapter      = null;
+    this.dialog       = null;
+    this.addButton    = null;
+    this.delButton    = null;
+    this.isShowing    = false;
   }
 }

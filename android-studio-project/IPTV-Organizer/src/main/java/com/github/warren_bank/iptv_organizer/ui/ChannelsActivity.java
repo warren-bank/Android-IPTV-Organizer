@@ -142,7 +142,8 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   protected void onResume() {
     super.onResume();
 
-    if (savedSearchDialog    != null) savedSearchDialog.refresh();
+    initSavedSearchDialog();
+
     if (importProgressDialog != null) importProgressDialog.resume();
   }
 
@@ -150,7 +151,11 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   protected void onPause() {
     super.onPause();
 
-    if (savedSearchDialog    != null) savedSearchDialog.hide();
+    if (savedSearchDialog != null) {
+      savedSearchDialog.release();
+      savedSearchDialog = null;
+    }
+
     if (importProgressDialog != null) importProgressDialog.pause();
   }
 
@@ -455,7 +460,8 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   }
 
   private void initSavedSearchDialog() {
-    savedSearchDialog = new SavedSearchKeywordsListDialog(ChannelsActivity.this, searchView, R.drawable.bookmark);
+    if ((savedSearchDialog == null) && (searchView != null))
+      savedSearchDialog = new SavedSearchKeywordsListDialog(ChannelsActivity.this, searchView, R.drawable.bookmark);
   }
 
   private void initSearch() {
@@ -465,14 +471,14 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       @Override
       public boolean onQueryTextSubmit(String constraint) {
         searchFilter.query(constraint);
-        savedSearchDialog.update();
+        if (savedSearchDialog != null) savedSearchDialog.update();
         return false;
       }
 
       @Override
       public boolean onQueryTextChange(String constraint) {
         searchFilter.query(constraint);
-        savedSearchDialog.update();
+        if (savedSearchDialog != null) savedSearchDialog.update();
         return false;
       }
     });
