@@ -236,6 +236,13 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
 
   @Override
   public void onBackPressed() {
+    if (importProgressDialog != null) {
+      return;
+    }
+    if ((savedSearchDialog != null) && savedSearchDialog.isShowing()) {
+      savedSearchDialog.hide();
+      return;
+    }
     if (!searchView.isIconified()) {
       searchView.setIconified(true);
       return;
