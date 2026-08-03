@@ -5,7 +5,7 @@ import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.model.EPGDataImpl;
 import com.github.warren_bank.iptv_organizer.ui.ChannelsActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
-import com.github.warren_bank.iptv_organizer.ui.dialog.ImportProgressDialog;
+import com.github.warren_bank.iptv_organizer.ui.dialog.DataProgressDialog;
 import com.github.warren_bank.iptv_organizer.ui.dialog.SavedSearchKeywordsListDialog;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
@@ -54,7 +54,7 @@ public class EpgActivity extends AppCompatActivity {
   // Dialogs:
   // ---------------------------------------------------------------------------------------------
 
-  private ImportProgressDialog          importProgressDialog;
+  private DataProgressDialog            dataProgressDialog;
   private SavedSearchKeywordsListDialog savedSearchDialog;
 
   // ---------------------------------------------------------------------------------------------
@@ -77,8 +77,8 @@ public class EpgActivity extends AppCompatActivity {
       importNewIntentDataUri(urlText);
     }
     else {
-      final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this, R.string.loading, getString(R.string.activity_epg));
-      importProgressDialog = listener;
+      final DataProgressDialog listener = new DataProgressDialog(EpgActivity.this, R.string.loading, getString(R.string.activity_epg));
+      dataProgressDialog = listener;
 
       // Read channels from DB on a background thread
       new Thread(() -> initEpgData(listener)).start();
@@ -107,8 +107,8 @@ public class EpgActivity extends AppCompatActivity {
   }
 
   private void importNewIntentDataUri(final String urlText) {
-    final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
-    importProgressDialog = listener;
+    final DataProgressDialog listener = new DataProgressDialog(EpgActivity.this);
+    dataProgressDialog = listener;
 
     // Do network on a background thread
     new Thread(() -> openUrlAsStream(urlText, listener)).start();
@@ -120,12 +120,12 @@ public class EpgActivity extends AppCompatActivity {
 
     initSavedSearchDialog();
 
-    if (importProgressDialog != null) importProgressDialog.resume(EpgActivity.this);
+    if (dataProgressDialog != null) dataProgressDialog.resume(EpgActivity.this);
   }
 
   @Override
   protected void onPause() {
-    if (importProgressDialog != null) importProgressDialog.pause();
+    if (dataProgressDialog != null) dataProgressDialog.pause();
 
     if (savedSearchDialog != null) {
       savedSearchDialog.release();
@@ -206,7 +206,7 @@ public class EpgActivity extends AppCompatActivity {
 
   @Override
   public void onBackPressed() {
-    if (importProgressDialog != null) {
+    if (dataProgressDialog != null) {
       return;
     }
     if ((savedSearchDialog != null) && savedSearchDialog.isShowing()) {
@@ -242,8 +242,8 @@ public class EpgActivity extends AppCompatActivity {
             final String urlText = input.getText().toString().trim();
             if (urlText.isEmpty()) return;
 
-            final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
-            importProgressDialog = listener;
+            final DataProgressDialog listener = new DataProgressDialog(EpgActivity.this);
+            dataProgressDialog = listener;
 
             // Do network on a background thread
             new Thread(() -> openUrlAsStream(urlText, listener)).start();
@@ -253,7 +253,7 @@ public class EpgActivity extends AppCompatActivity {
         .show();
   }
 
-  private void openUrlAsStream(String urlText, ImportProgressDialog listener) {
+  private void openUrlAsStream(String urlText, DataProgressDialog listener) {
     HttpURLConnection conn = null;
     InputStream inputStream = null;
 
@@ -279,7 +279,7 @@ public class EpgActivity extends AppCompatActivity {
       } catch (Exception ignored) {}
       if (conn != null) conn.disconnect();
       listener.dismiss(true);
-      importProgressDialog = null;
+      dataProgressDialog = null;
     }
   }
 
@@ -310,15 +310,15 @@ public class EpgActivity extends AppCompatActivity {
       final Uri uri = data.getData();
       if (uri == null) return;
 
-      final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
-      importProgressDialog = listener;
+      final DataProgressDialog listener = new DataProgressDialog(EpgActivity.this);
+      dataProgressDialog = listener;
 
       // Read file on a background thread
       new Thread(() -> openFileAsStream(uri, listener)).start();
     }
   }
 
-  private void openFileAsStream(Uri uri, ImportProgressDialog listener) {
+  private void openFileAsStream(Uri uri, DataProgressDialog listener) {
     InputStream inputStream = null;
 
     try {
@@ -331,7 +331,7 @@ public class EpgActivity extends AppCompatActivity {
         if (inputStream != null) inputStream.close();
       } catch (Exception ignored) {}
       listener.dismiss(true);
-      importProgressDialog = null;
+      dataProgressDialog = null;
     }
   }
 
@@ -339,7 +339,7 @@ public class EpgActivity extends AppCompatActivity {
   // internal:
   // ---------------------------------------------------------------------------------------------
 
-  private void importXmlTvFromStream(InputStream inputStream, ImportProgressDialog listener) throws Exception {
+  private void importXmlTvFromStream(InputStream inputStream, DataProgressDialog listener) throws Exception {
     final EPGDataImpl newEpgData = new EPGDataImpl(
       ImportUtils.importXmlTv(inputStream, listener)
     );
@@ -410,7 +410,7 @@ public class EpgActivity extends AppCompatActivity {
     });
   }
 
-  private void initEpgData(ImportProgressDialog listener) {
+  private void initEpgData(DataProgressDialog listener) {
     try {
       final EPGDataImpl newEpgData = DbUtils.getDb().getEpgData(listener);
 
@@ -424,7 +424,7 @@ public class EpgActivity extends AppCompatActivity {
       Log.e(Constants.LOG_TAG, e.getMessage());
     } finally {
       listener.dismiss(true);
-      importProgressDialog = null;
+      dataProgressDialog = null;
     }
   }
 

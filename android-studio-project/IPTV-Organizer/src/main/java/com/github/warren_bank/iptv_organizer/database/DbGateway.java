@@ -1,9 +1,9 @@
 package com.github.warren_bank.iptv_organizer.database;
 
 import com.github.warren_bank.iptv_organizer.common.Constants;
+import com.github.warren_bank.iptv_organizer.data.DataProgressListener;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
 import com.github.warren_bank.iptv_organizer.data.model.EPGDataImpl;
-import com.github.warren_bank.iptv_organizer.data.parser.ParserProgressListener;
 
 import se.kmdev.tvepg.epg.domain.EPGChannel;
 import se.kmdev.tvepg.epg.domain.EPGEvent;
@@ -171,7 +171,7 @@ public class DbGateway {
   // write models to DB:
   // ---------------------------------------------------------------------------
 
-  public boolean saveM3u(List<ChannelListItem> channels, boolean appendList, ParserProgressListener listener) {
+  public boolean saveM3u(List<ChannelListItem> channels, boolean appendList, DataProgressListener listener) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -215,7 +215,7 @@ public class DbGateway {
     return result;
   }
 
-  public boolean saveEpgData(EPGDataImpl epgData, ParserProgressListener listener) {
+  public boolean saveEpgData(EPGDataImpl epgData, DataProgressListener listener) {
     Map<EPGChannel, List<EPGEvent>> data = (epgData != null)
       ? epgData.getData()
       : null;
@@ -223,7 +223,7 @@ public class DbGateway {
     return saveEpg(data, listener);
   }
 
-  public boolean saveEpg(Map<EPGChannel, List<EPGEvent>> data, ParserProgressListener listener) {
+  public boolean saveEpg(Map<EPGChannel, List<EPGEvent>> data, DataProgressListener listener) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -290,7 +290,7 @@ public class DbGateway {
     return getM3u(null);
   }
 
-  public List<ChannelListItem> getM3u(ParserProgressListener listener) {
+  public List<ChannelListItem> getM3u(DataProgressListener listener) {
     List<ChannelListItem> channels = new ArrayList<ChannelListItem>();
     String query = "SELECT * FROM m3u_channels ORDER BY position ASC";
     int position;
@@ -326,7 +326,7 @@ public class DbGateway {
     return getEpgData(null);
   }
 
-  public EPGDataImpl getEpgData(ParserProgressListener listener) {
+  public EPGDataImpl getEpgData(DataProgressListener listener) {
     Map<EPGChannel, List<EPGEvent>> data = getEpg(listener);
     return new EPGDataImpl(data);
   }
@@ -335,7 +335,7 @@ public class DbGateway {
     return getEpg(null);
   }
 
-  public Map<EPGChannel, List<EPGEvent>> getEpg(ParserProgressListener listener) {
+  public Map<EPGChannel, List<EPGEvent>> getEpg(DataProgressListener listener) {
     Map<EPGChannel, List<EPGEvent>> data = new HashMap<EPGChannel, List<EPGEvent>>();
 
     List<EPGChannel> channels = getEpgChannels(listener);
@@ -351,7 +351,7 @@ public class DbGateway {
     return data;
   }
 
-  private List<EPGChannel> getEpgChannels(ParserProgressListener listener) {
+  private List<EPGChannel> getEpgChannels(DataProgressListener listener) {
     List<EPGChannel> channels = new ArrayList<EPGChannel>();
     String query = "SELECT * FROM xmltv_channels ORDER BY name ASC";
     String id, name, icon_url;
@@ -380,7 +380,7 @@ public class DbGateway {
     return channels;
   }
 
-  private List<EPGEvent> getEpgEvents(EPGChannel channel, ParserProgressListener listener) {
+  private List<EPGEvent> getEpgEvents(EPGChannel channel, DataProgressListener listener) {
     List<EPGEvent> programs = new ArrayList<EPGEvent>();
     String query = "SELECT * FROM xmltv_programs WHERE channel_id = " + sqlEscapeString(channel.getChannelID()) + " ORDER BY start_timestamp_ms ASC";
     long start_timestamp_ms, stop_timestamp_ms;

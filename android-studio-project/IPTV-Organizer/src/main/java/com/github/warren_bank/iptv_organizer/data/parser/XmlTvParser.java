@@ -1,8 +1,8 @@
 package com.github.warren_bank.iptv_organizer.data.parser;
 
 import com.github.warren_bank.iptv_organizer.App;
+import com.github.warren_bank.iptv_organizer.data.DataProgressListener;
 import com.github.warren_bank.iptv_organizer.data.filter.XmlTvFilter;
-import com.github.warren_bank.iptv_organizer.data.parser.ParserProgressListener;
 import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
 import se.kmdev.tvepg.epg.domain.EPGChannel;
@@ -36,7 +36,7 @@ public class XmlTvParser {
     }
   }
 
-  public static Map<EPGChannel, List<EPGEvent>> parseXmlTv(InputStream inputStream, ParserProgressListener listener) throws Exception {
+  public static Map<EPGChannel, List<EPGEvent>> parseXmlTv(InputStream inputStream, DataProgressListener listener) throws Exception {
     String preferredLang = SettingsUtils.getPreferredXmltvLanguage(App.context);
     if ((preferredLang != null) && preferredLang.isEmpty()) preferredLang = null;
 

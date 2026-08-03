@@ -5,7 +5,7 @@ import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
 import com.github.warren_bank.iptv_organizer.data.parser.M3uParser;
 import com.github.warren_bank.iptv_organizer.data.parser.XmlTvParser;
 import com.github.warren_bank.iptv_organizer.database.DbGateway;
-import com.github.warren_bank.iptv_organizer.ui.dialog.ImportProgressDialog;
+import com.github.warren_bank.iptv_organizer.ui.dialog.DataProgressDialog;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 
 import se.kmdev.tvepg.epg.domain.EPGChannel;
@@ -19,7 +19,7 @@ public class ImportUtils {
 
   // --------------------------------------------------------------------------- import M3U
 
-  public static List<ChannelListItem> importM3u(InputStream inputStream, boolean appendList, int firstPosition, ImportProgressDialog listener) throws Exception {
+  public static List<ChannelListItem> importM3u(InputStream inputStream, boolean appendList, int firstPosition, DataProgressDialog listener) throws Exception {
     DbGateway db = DbUtils.getDb();
     if (db == null) throw new Exception("DbGateway is null");
 
@@ -38,7 +38,7 @@ public class ImportUtils {
 
   // --------------------------------------------------------------------------- import XMLTV
 
-  public static Map<EPGChannel, List<EPGEvent>> importXmlTv(InputStream inputStream, ImportProgressDialog listener) throws Exception {
+  public static Map<EPGChannel, List<EPGEvent>> importXmlTv(InputStream inputStream, DataProgressDialog listener) throws Exception {
     DbGateway db = DbUtils.getDb();
     if (db == null) throw new Exception("DbGateway is null");
 

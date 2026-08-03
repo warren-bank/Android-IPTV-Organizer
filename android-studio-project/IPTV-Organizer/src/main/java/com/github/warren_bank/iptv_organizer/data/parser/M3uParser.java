@@ -1,9 +1,9 @@
 package com.github.warren_bank.iptv_organizer.data.parser;
 
 import com.github.warren_bank.iptv_organizer.common.Constants;
+import com.github.warren_bank.iptv_organizer.data.DataProgressListener;
 import com.github.warren_bank.iptv_organizer.data.filter.M3uFilter;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
-import com.github.warren_bank.iptv_organizer.data.parser.ParserProgressListener;
 
 import android.util.Log;
 
@@ -15,7 +15,7 @@ import java.util.List;
 
 public class M3uParser {
 
-  public static List<ChannelListItem> parseM3u(InputStream inputStream, int firstPosition, ParserProgressListener listener) throws Exception {
+  public static List<ChannelListItem> parseM3u(InputStream inputStream, int firstPosition, DataProgressListener listener) throws Exception {
     ArrayList<ChannelListItem> channels = new ArrayList<ChannelListItem>();
     BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
     M3uFilter m3uFilter = new M3uFilter();

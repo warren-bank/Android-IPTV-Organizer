@@ -5,7 +5,7 @@ import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
 import com.github.warren_bank.iptv_organizer.ui.EpgActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
-import com.github.warren_bank.iptv_organizer.ui.dialog.ImportProgressDialog;
+import com.github.warren_bank.iptv_organizer.ui.dialog.DataProgressDialog;
 import com.github.warren_bank.iptv_organizer.ui.dialog.SavedSearchKeywordsListDialog;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
@@ -102,7 +102,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   // Dialogs:
   // ---------------------------------------------------------------------------------------------
 
-  private ImportProgressDialog          importProgressDialog;
+  private DataProgressDialog            dataProgressDialog;
   private SavedSearchKeywordsListDialog savedSearchDialog;
 
   // ---------------------------------------------------------------------------------------------
@@ -126,8 +126,8 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       importNewIntentDataUri(urlText);
     }
     else {
-      final ImportProgressDialog listener = new ImportProgressDialog(ChannelsActivity.this, R.string.loading, getString(R.string.activity_channels));
-      importProgressDialog = listener;
+      final DataProgressDialog listener = new DataProgressDialog(ChannelsActivity.this, R.string.loading, getString(R.string.activity_channels));
+      dataProgressDialog = listener;
 
       // Read channels from DB on a background thread
       new Thread(() -> initList(listener)).start();
@@ -156,8 +156,8 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   }
 
   private void importNewIntentDataUri(final String urlText) {
-    final ImportProgressDialog listener = new ImportProgressDialog(ChannelsActivity.this);
-    importProgressDialog = listener;
+    final DataProgressDialog listener = new DataProgressDialog(ChannelsActivity.this);
+    dataProgressDialog = listener;
 
     // Do network on a background thread
     new Thread(() -> openUrlAsStream(urlText, listener)).start();
@@ -169,12 +169,12 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
 
     initSavedSearchDialog();
 
-    if (importProgressDialog != null) importProgressDialog.resume(ChannelsActivity.this);
+    if (dataProgressDialog != null) dataProgressDialog.resume(ChannelsActivity.this);
   }
 
   @Override
   protected void onPause() {
-    if (importProgressDialog != null) importProgressDialog.pause();
+    if (dataProgressDialog != null) dataProgressDialog.pause();
 
     if (savedSearchDialog != null) {
       savedSearchDialog.release();
@@ -261,7 +261,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
 
   @Override
   public void onBackPressed() {
-    if (importProgressDialog != null) {
+    if (dataProgressDialog != null) {
       return;
     }
     if ((savedSearchDialog != null) && savedSearchDialog.isShowing()) {
@@ -297,8 +297,8 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
             final String urlText = input.getText().toString().trim();
             if (urlText.isEmpty()) return;
 
-            final ImportProgressDialog listener = new ImportProgressDialog(ChannelsActivity.this);
-            importProgressDialog = listener;
+            final DataProgressDialog listener = new DataProgressDialog(ChannelsActivity.this);
+            dataProgressDialog = listener;
 
             // Do network on a background thread
             new Thread(() -> openUrlAsStream(urlText, listener)).start();
@@ -308,7 +308,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
         .show();
   }
 
-  private void openUrlAsStream(String urlText, ImportProgressDialog listener) {
+  private void openUrlAsStream(String urlText, DataProgressDialog listener) {
     HttpURLConnection conn = null;
     InputStream inputStream = null;
 
@@ -334,7 +334,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       } catch (Exception ignored) {}
       if (conn != null) conn.disconnect();
       listener.dismiss(true);
-      importProgressDialog = null;
+      dataProgressDialog = null;
     }
   }
 
@@ -365,15 +365,15 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       final Uri uri = data.getData();
       if (uri == null) return;
 
-      final ImportProgressDialog listener = new ImportProgressDialog(ChannelsActivity.this);
-      importProgressDialog = listener;
+      final DataProgressDialog listener = new DataProgressDialog(ChannelsActivity.this);
+      dataProgressDialog = listener;
 
       // Read file on a background thread
       new Thread(() -> openFileAsStream(uri, listener)).start();
     }
   }
 
-  private void openFileAsStream(Uri uri, ImportProgressDialog listener) {
+  private void openFileAsStream(Uri uri, DataProgressDialog listener) {
     InputStream inputStream = null;
 
     try {
@@ -386,7 +386,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
         if (inputStream != null) inputStream.close();
       } catch (Exception ignored) {}
       listener.dismiss(true);
-      importProgressDialog = null;
+      dataProgressDialog = null;
     }
   }
 
@@ -394,7 +394,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   // internal:
   // ---------------------------------------------------------------------------------------------
 
-  private void importM3uFromStream(InputStream inputStream, ImportProgressDialog listener) throws Exception {
+  private void importM3uFromStream(InputStream inputStream, DataProgressDialog listener) throws Exception {
     final boolean appendList = SettingsUtils.getAppendM3uPlaylists(ChannelsActivity.this);
 
     int firstPosition = appendList
@@ -411,7 +411,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     });
   }
 
-  private void initList(ImportProgressDialog listener) {
+  private void initList(DataProgressDialog listener) {
     try {
       final List<ChannelListItem> newList = DbUtils.getDb().getM3u(listener);
 
@@ -425,7 +425,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       Log.e(Constants.LOG_TAG, e.getMessage());
     } finally {
       listener.dismiss(true);
-      importProgressDialog = null;
+      dataProgressDialog = null;
     }
   }
 

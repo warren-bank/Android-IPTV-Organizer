@@ -1,13 +1,13 @@
 package com.github.warren_bank.iptv_organizer.ui.dialog;
 
 import com.github.warren_bank.iptv_organizer.R;
-import com.github.warren_bank.iptv_organizer.data.parser.ParserProgressListener;
+import com.github.warren_bank.iptv_organizer.data.DataProgressListener;
 import com.github.warren_bank.iptv_organizer.utils.WakeLockMgr;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
 
-public class ImportProgressDialog implements ParserProgressListener {
+public class DataProgressDialog implements DataProgressListener {
   private static final long UI_UPDATE_INTERVAL_MS = 200l;
   private long lastUpdateTime;
   private boolean isPaused;
@@ -34,19 +34,19 @@ public class ImportProgressDialog implements ParserProgressListener {
     }
   };
 
-  public ImportProgressDialog(Activity activity) {
+  public DataProgressDialog(Activity activity) {
     this(activity, R.string.import_file, null, null);
   }
 
-  public ImportProgressDialog(Activity activity, int titleResId, CharSequence message) {
+  public DataProgressDialog(Activity activity, int titleResId, CharSequence message) {
     this(activity, titleResId, null, message);
   }
 
-  public ImportProgressDialog(Activity activity, CharSequence title, CharSequence message) {
+  public DataProgressDialog(Activity activity, CharSequence title, CharSequence message) {
     this(activity, -1, title, message);
   }
 
-  private ImportProgressDialog(Activity activity, int titleResId, CharSequence title, CharSequence message) {
+  private DataProgressDialog(Activity activity, int titleResId, CharSequence title, CharSequence message) {
     this.titleResId     = titleResId;
     this.title          = title;
     this.message        = message;
