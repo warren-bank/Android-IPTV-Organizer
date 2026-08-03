@@ -4,6 +4,7 @@ import com.github.warren_bank.iptv_organizer.App;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
 import com.github.warren_bank.iptv_organizer.database.DbGateway;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
+import com.github.warren_bank.iptv_organizer.utils.FilterUtils;
 import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
 import se.kmdev.tvepg.epg.domain.EPGChannel;
@@ -19,12 +20,21 @@ import java.util.Map;
 public class XmlTvFilter {
   private boolean filterM3uChannels;
   private List<ChannelListItem> m3uChannels;
-  private List<String> nameWhitelistSubstrings;
-  private List<String> nameWhitelist;
+
+  private List<String> nameWhitelist_FF;
+  private List<String> nameWhitelist_TF;
+  private List<String> nameWhitelist_FT;
+  private List<String> nameWhitelist_TT;
   private List<String> idWhitelist;
-  private List<String> nameBlacklistSubstrings;
-  private List<String> nameBlacklist;
+
+  private List<String> nameBlacklist_FF;
+  private List<String> nameBlacklist_TF;
+  private List<String> nameBlacklist_FT;
+  private List<String> nameBlacklist_TT;
   private List<String> idBlacklist;
+
+  private boolean hasWhitelist;
+  private boolean hasBlacklist;
 
   public XmlTvFilter() throws Exception {
     DbGateway db = DbUtils.getDb();
@@ -34,12 +44,21 @@ public class XmlTvFilter {
     this.m3uChannels = filterM3uChannels
       ? db.getM3u()
       : null;
-    this.nameWhitelistSubstrings = db.getEpgChannelNameFilterWhitelistSubset(true);
-    this.nameWhitelist           = db.getEpgChannelNameFilterWhitelistSubset(false);
-    this.idWhitelist             = db.getEpgChannelIdFilterWhitelist();
-    this.nameBlacklistSubstrings = db.getEpgChannelNameFilterBlacklistSubset(true);
-    this.nameBlacklist           = db.getEpgChannelNameFilterBlacklistSubset(false);
-    this.idBlacklist             = db.getEpgChannelIdFilterBlacklist();
+
+    this.nameWhitelist_FF = db.getEpgChannelNameFilterWhitelistSubset(false, false);
+    this.nameWhitelist_TF = db.getEpgChannelNameFilterWhitelistSubset(true,  false);
+    this.nameWhitelist_FT = db.getEpgChannelNameFilterWhitelistSubset(false, true);
+    this.nameWhitelist_TT = db.getEpgChannelNameFilterWhitelistSubset(true,  true);
+    this.idWhitelist      = db.getEpgChannelIdFilterWhitelist();
+
+    this.nameBlacklist_FF = db.getEpgChannelNameFilterBlacklistSubset(false, false);
+    this.nameBlacklist_TF = db.getEpgChannelNameFilterBlacklistSubset(true,  false);
+    this.nameBlacklist_FT = db.getEpgChannelNameFilterBlacklistSubset(false, true);
+    this.nameBlacklist_TT = db.getEpgChannelNameFilterBlacklistSubset(true,  true);
+    this.idBlacklist      = db.getEpgChannelIdFilterBlacklist();
+
+    this.hasWhitelist     = (!nameWhitelist_FF.isEmpty() || !nameWhitelist_TF.isEmpty() || !nameWhitelist_FT.isEmpty() || !nameWhitelist_TT.isEmpty() || !idWhitelist.isEmpty());
+    this.hasBlacklist     = (!nameBlacklist_FF.isEmpty() || !nameBlacklist_TF.isEmpty() || !nameBlacklist_FT.isEmpty() || !nameBlacklist_TT.isEmpty() || !idBlacklist.isEmpty());
   }
 
   public void filterXmlTv(Map<EPGChannel, List<EPGEvent>> data) {
@@ -47,34 +66,29 @@ public class XmlTvFilter {
     // apply filter whitelists
     // =======================
 
-    if ((filterM3uChannels && !m3uChannels.isEmpty()) || !nameWhitelistSubstrings.isEmpty() || !nameWhitelist.isEmpty() || !idWhitelist.isEmpty()) {
+    if ((filterM3uChannels && !m3uChannels.isEmpty()) || hasWhitelist) {
       // One or more whitelists are configured. Channel must match one to pass filter.
 
       List<EPGChannel> pendingDeletion = new ArrayList<EPGChannel>();
 
-      channelNameWLFilterLoop:
+      boolean found;
       for (EPGChannel channel : data.keySet()) {
-        if (filterM3uChannels && !m3uChannels.isEmpty()) {
-          if (passM3uChannelsFilter(channel, m3uChannels))
-            continue;
-        }
-        if (!nameWhitelistSubstrings.isEmpty()) {
-          for (String substr : nameWhitelistSubstrings) {
-            if (!TextUtils.isEmpty(channel.getName()) && channel.getName().contains(substr))
-              continue channelNameWLFilterLoop;
-          }
-        }
-        if (!nameWhitelist.isEmpty()) {
-          if (!TextUtils.isEmpty(channel.getName()) && nameWhitelist.contains(channel.getName()))
-            continue;
-        }
-        if (!idWhitelist.isEmpty()) {
-          if (!TextUtils.isEmpty(channel.getChannelID()) && idWhitelist.contains(channel.getChannelID()))
-            continue;
-        }
+        found = false;
 
-        // no match
-        pendingDeletion.add(channel);
+        if (!found && filterM3uChannels && !m3uChannels.isEmpty())
+          found = passM3uChannelsFilter(channel, m3uChannels);
+        if (!found)
+          found = FilterUtils.listContains(nameWhitelist_FF, channel.getName(),      false, false);
+        if (!found)
+          found = FilterUtils.listContains(nameWhitelist_TF, channel.getName(),      true,  false);
+        if (!found)
+          found = FilterUtils.listContains(nameWhitelist_FT, channel.getName(),      false, true);
+        if (!found)
+          found = FilterUtils.listContains(nameWhitelist_TT, channel.getName(),      true,  true);
+        if (!found)
+          found = FilterUtils.listContains(idWhitelist,      channel.getChannelID(), false, false);
+        if (!found)
+          pendingDeletion.add(channel);
       }
 
       if (!pendingDeletion.isEmpty()) {
@@ -89,33 +103,27 @@ public class XmlTvFilter {
     // apply filter blacklists
     // =======================
 
-    if (!nameBlacklistSubstrings.isEmpty() || !nameBlacklist.isEmpty() || !idBlacklist.isEmpty()) {
+    if (hasBlacklist) {
       // One or more blacklists are configured. Channel must match none to pass filter.
 
       List<EPGChannel> pendingDeletion = new ArrayList<EPGChannel>();
 
-      channelNameBLFilterLoop:
+      boolean found;
       for (EPGChannel channel : data.keySet()) {
-        if (!nameBlacklistSubstrings.isEmpty()) {
-          for (String substr : nameBlacklistSubstrings) {
-            if (!TextUtils.isEmpty(channel.getName()) && channel.getName().contains(substr)) {
-              pendingDeletion.add(channel);
-              continue channelNameBLFilterLoop;
-            }
-          }
-        }
-        if (!nameBlacklist.isEmpty()) {
-          if (!TextUtils.isEmpty(channel.getName()) && nameBlacklist.contains(channel.getName())) {
-            pendingDeletion.add(channel);
-            continue;
-          }
-        }
-        if (!idBlacklist.isEmpty()) {
-          if (!TextUtils.isEmpty(channel.getChannelID()) && idBlacklist.contains(channel.getChannelID())) {
-            pendingDeletion.add(channel);
-            continue;
-          }
-        }
+        found = false;
+
+        if (!found)
+          found = FilterUtils.listContains(nameBlacklist_FF, channel.getName(),      false, false);
+        if (!found)
+          found = FilterUtils.listContains(nameBlacklist_TF, channel.getName(),      true,  false);
+        if (!found)
+          found = FilterUtils.listContains(nameBlacklist_FT, channel.getName(),      false, true);
+        if (!found)
+          found = FilterUtils.listContains(nameBlacklist_TT, channel.getName(),      true,  true);
+        if (!found)
+          found = FilterUtils.listContains(idBlacklist,      channel.getChannelID(), false, false);
+        if (found)
+          pendingDeletion.add(channel);
       }
 
       if (!pendingDeletion.isEmpty()) {

@@ -86,10 +86,10 @@ Android app that organizes IPTV channel and EPG information.
      - where `new_tvg_id` should match an EPG channel ID
      - example:
        ```text
-       USA C-SPAN            => cspan.us
-       USA C-SPAN 2          => cspan2.us
-       USA C-SPAN 3          => cspan3.us
-       USA CNN INTERNATIONAL => cnninternational.us
+       USA C-SPAN        => cspan.us
+       USA C-SPAN 2      => cspan2.us
+       USA C-SPAN 3      => cspan3.us
+       CNN INTERNATIONAL => cnninternational.us
        ```
   4. Map from channel ID to channel ID
      - specify one mapping per line in the format:
@@ -116,37 +116,8 @@ Android app that organizes IPTV channel and EPG information.
        USA C-SPAN
        USA C-SPAN 2
        USA C-SPAN 3
-       USA CNN INTERNATIONAL
+       CNN INTERNATIONAL
        ```
-     - when `target_value` begins with the sequence: `+*`
-       * rather than being tested for equality to the value of this string,<br>channel fields are tested for the presence of this substring (excluding the leading 2-char sequence)
-       * examples:
-         1. VOD series
-            - `target_value` = `+*Supernatural S`
-            - M3U channel names that pass the filter:
-              ```text
-              Supernatural S01E01
-              Supernatural S01E02
-              Supernatural S01E03
-              ```
-         2. alternate live streams
-            - `target_value` = `+*CNN`
-            - M3U channel names that pass the filter:
-              ```text
-              US: CNN
-              CA: CNN
-              CNN International
-              ```
-         3. related live streams
-            - `target_value` = `+*ESPN`
-            - M3U channel names that pass the filter:
-              ```text
-              ESPN
-              ESPN+
-              ESPN2
-              ESPN3
-              ESPNU
-              ```
   6. Filter by channel ID whitelist
      - specify one channel ID (ie: `target_value`) per line
      - where `target_value` is equal to:
@@ -229,8 +200,6 @@ Android app that organizes IPTV channel and EPG information.
      - default: `true`
   4. Filter by channel name whitelist
      - specify one channel name (ie: `target_value`) per line
-     - when `target_value` begins with the sequence: `+*`
-       * rather than being tested for equality to the value of this string,<br>channel names are tested for the presence of this substring (excluding the leading 2-char sequence)
   5. Filter by channel ID whitelist
      - specify one channel ID (ie: `target_value`) per line
   6. Filter by channel name blacklist
@@ -241,6 +210,51 @@ Android app that organizes IPTV channel and EPG information.
      - specify one channel ID (ie: `target_value`) per line
      - format of input and usage is identical to the "channel ID whitelist"
        * matching EPG channels are discarded during import
+
+#### Special Map and Filter Formats
+
+This section only applies to the following settings:
+
+* M3U Channels &gt; Map from channel name to channel ID
+* M3U Channels &gt; Filter by channel name whitelist
+* M3U Channels &gt; Filter by channel name blacklist
+* EPG Channels &gt; Filter by channel name whitelist
+* EPG Channels &gt; Filter by channel name blacklist
+
+By default, map keys and filter list values are:
+
+* case sensitive
+* compared for equality
+
+This behavior can be configured for each individual value added to any of these settings.
+
+Configuration is done by prepending a special token before the value.
+
+Supported tokens include:
+
+* `#~`
+  - perform a case insensitive comparison
+  - which is to say&hellip; ignore the difference between uppercase and lowercase characters
+* `#*`
+  - match any value that contains this substring
+* `#~*`
+  - perform a case insensitive comparison, and match any value that contains this substring
+
+For example:
+
+* if the M3U contains a channel with the name: `Best of Espn`
+* if the setting:
+  - M3U Channels &gt; Filter by channel name whitelist
+* includes the value: `ESPN`
+  - no match: not equal
+* includes the value: `Best of ESPN`
+  - no match: case sensitive
+* includes the value: `#~ESPN`
+  - no match: not equal
+* includes the value: `#*ESPN`
+  - no match: case sensitive
+* includes the value: `#~*ESPN`
+  - **match**: `ESPN` is a substring when case is ignored
 
 #### Intent filters
 
@@ -391,21 +405,18 @@ __Update Settings__
      extra-SETTINGS_APPLY_STATIC_STRINGS: (bool) true
      extra-M3U_DEFAULT_PLAYLIST_URL: %4$s/playlist/%1$s/%2$s/m3u_plus?output=hls
      extra-M3U_APPEND_PLAYLISTS: (bool) false
-     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN            => cspan.us
-     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN 2          => cspan2.us
-     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN 3          => cspan3.us
-     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA CNN INTERNATIONAL => cnninternational.us
-     extra-M3U_MAP_CHANNEL_ID_TO_ID: cspan                   => cspan.us
-     extra-M3U_MAP_CHANNEL_ID_TO_ID: cspan2                  => cspan2.us
-     extra-M3U_MAP_CHANNEL_ID_TO_ID: cspan3                  => cspan3.us
-     extra-M3U_MAP_CHANNEL_ID_TO_ID: cnninternational        => cnninternational.us
+     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN           => cspan.us
+     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN 2         => cspan2.us
+     extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN 3         => cspan3.us
+     extra-M3U_MAP_CHANNEL_NAME_TO_ID: #~*CNN INTERNATIONAL => cnninternational.us
+     extra-M3U_MAP_CHANNEL_ID_TO_ID: cspan                  => cspan.us
+     extra-M3U_MAP_CHANNEL_ID_TO_ID: cspan2                 => cspan2.us
+     extra-M3U_MAP_CHANNEL_ID_TO_ID: cspan3                 => cspan3.us
+     extra-M3U_MAP_CHANNEL_ID_TO_ID: cnninternational       => cnninternational.us
      extra-M3U_CHANNEL_NAME_WHITELIST: USA C-SPAN
      extra-M3U_CHANNEL_NAME_WHITELIST: USA C-SPAN 2
      extra-M3U_CHANNEL_NAME_WHITELIST: USA C-SPAN 3
-     extra-M3U_CHANNEL_NAME_WHITELIST: USA CNN INTERNATIONAL
-     extra-M3U_CHANNEL_NAME_WHITELIST: +*Supernatural S
-     extra-M3U_CHANNEL_NAME_WHITELIST: +*CNN
-     extra-M3U_CHANNEL_NAME_WHITELIST: +*ESPN
+     extra-M3U_CHANNEL_NAME_WHITELIST: #~*CNN INTERNATIONAL
      extra-M3U_CHANNEL_ID_WHITELIST: cspan.us
      extra-M3U_CHANNEL_ID_WHITELIST: cspan2.us
      extra-M3U_CHANNEL_ID_WHITELIST: cspan3.us

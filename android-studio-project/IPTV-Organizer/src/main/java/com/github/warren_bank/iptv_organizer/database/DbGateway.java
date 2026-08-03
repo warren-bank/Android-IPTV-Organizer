@@ -412,140 +412,6 @@ public class DbGateway {
   }
 
   // ---------------------------------------------------------------------------
-  // write M3U channel mappings to DB:
-  // ---------------------------------------------------------------------------
-
-  public boolean saveM3uChannelNameMappings(Map<String, String> data) {
-    SQLiteDatabase dbase = db.getSQLiteDatabase();
-    String query;
-    ContentValues cvals;
-    boolean result = true;
-    try {
-      dbase.beginTransaction();
-
-      query = "DELETE FROM m3u_channels_mapping_name_to_id";
-      dbase.execSQL(query);
-      query = null;
-
-      if ((data != null) && !data.isEmpty()) {
-        for (Map.Entry<String, String> entry : data.entrySet()) {
-          String name       = (String) entry.getKey();
-          String new_tvg_id = (String) entry.getValue();
-
-          cvals = new ContentValues();
-          cvals.put("name",       name);
-          cvals.put("new_tvg_id", new_tvg_id);
-
-          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_mapping_name_to_id", null, cvals);
-          cvals = null;
-        }
-      }
-
-      dbase.setTransactionSuccessful();
-    }
-    catch (SQLException e) {
-      result = false;
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    finally {
-      dbase.endTransaction();
-    }
-    return result;
-  }
-
-  public boolean saveM3uChannelIdMappings(Map<String, String> data) {
-    SQLiteDatabase dbase = db.getSQLiteDatabase();
-    String query;
-    ContentValues cvals;
-    boolean result = true;
-    try {
-      dbase.beginTransaction();
-
-      query = "DELETE FROM m3u_channels_mapping_id_to_id";
-      dbase.execSQL(query);
-      query = null;
-
-      if ((data != null) && !data.isEmpty()) {
-        for (Map.Entry<String, String> entry : data.entrySet()) {
-          String old_tvg_id = (String) entry.getKey();
-          String new_tvg_id = (String) entry.getValue();
-
-          cvals = new ContentValues();
-          cvals.put("old_tvg_id", old_tvg_id);
-          cvals.put("new_tvg_id", new_tvg_id);
-
-          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_mapping_id_to_id", null, cvals);
-          cvals = null;
-        }
-      }
-
-      dbase.setTransactionSuccessful();
-    }
-    catch (SQLException e) {
-      result = false;
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    finally {
-      dbase.endTransaction();
-    }
-    return result;
-  }
-
-  // ---------------------------------------------------------------------------
-  // read M3U channel mappings from DB:
-  // ---------------------------------------------------------------------------
-
-  public Map<String, String> getM3uChannelNameMappings() {
-    Map<String, String> data = new HashMap<String, String>();
-    String query = "SELECT * FROM m3u_channels_mapping_name_to_id ORDER BY name ASC";
-    String name, new_tvg_id;
-
-    Cursor c = null;
-    try {
-      c = db.query(query);
-
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          name       = getColumnString(c, "name");
-          new_tvg_id = getColumnString(c, "new_tvg_id");
-
-          data.put(name, new_tvg_id);
-        } while (c.moveToNext());
-      }
-    }
-    catch (SQLiteException e) {
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    if (c != null) c.close();
-    return data;
-  }
-
-  public Map<String, String> getM3uChannelIdMappings() {
-    Map<String, String> data = new HashMap<String, String>();
-    String query = "SELECT * FROM m3u_channels_mapping_id_to_id ORDER BY old_tvg_id ASC";
-    String old_tvg_id, new_tvg_id;
-
-    Cursor c = null;
-    try {
-      c = db.query(query);
-
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          old_tvg_id = getColumnString(c, "old_tvg_id");
-          new_tvg_id = getColumnString(c, "new_tvg_id");
-
-          data.put(old_tvg_id, new_tvg_id);
-        } while (c.moveToNext());
-      }
-    }
-    catch (SQLiteException e) {
-      Log.e(Constants.LOG_TAG, e.getMessage());
-    }
-    if (c != null) c.close();
-    return data;
-  }
-
-  // ---------------------------------------------------------------------------
   // write M3U channel url static values to DB:
   // ---------------------------------------------------------------------------
 
@@ -618,10 +484,92 @@ public class DbGateway {
   }
 
   // ---------------------------------------------------------------------------
-  // internal: write generic channel filter lists to DB:
+  // internal: encode/decode fields that contain prefix flags
   // ---------------------------------------------------------------------------
 
-  private boolean saveChannelFilterList(List<String> fieldValues, String tableName, String fieldName) {
+  private static class FieldFlags {
+    public boolean case_insensitive;
+    public boolean match_substring;
+    public String encoded;
+    public String decoded;
+
+    public static int toInt(boolean value) {
+      return value ? 1 : 0;
+    }
+
+    public FieldFlags(String encoded) {
+      if (encoded != null) encoded = encoded.trim();
+      int length = (encoded == null) ? 0 : encoded.length();
+      if (length == 0) encoded = null;
+
+      this.case_insensitive = false;
+      this.match_substring  = false;
+      this.encoded          = encoded;
+      this.decoded          = encoded;
+
+      int index = 0;
+      while (length > index) {
+        char c = encoded.charAt(index);
+
+        if ((index == 0) && (c == '#')) {
+          index += 1;
+          continue;
+        }
+
+        if (c == '~') {
+          this.case_insensitive = true;
+          index += 1;
+          continue;
+        }
+
+        if (c == '*') {
+          this.match_substring = true;
+          index += 1;
+          continue;
+        }
+
+        break;
+      }
+
+      if (index > 0) {
+        this.decoded = encoded.substring(index).trim();
+      }
+
+      if (this.case_insensitive) {
+        this.encoded = this.encoded.toLowerCase();
+        this.decoded = this.decoded.toLowerCase();
+      }
+    }
+
+    public FieldFlags(int case_insensitive, int match_substring, String decoded) {
+      this.case_insensitive = (case_insensitive == 1);
+      this.match_substring  = (match_substring  == 1);
+
+      if (decoded != null) {
+        decoded = decoded.trim();
+        if (this.case_insensitive) decoded = decoded.toLowerCase();
+      }
+
+      this.decoded = decoded;
+      this.encoded = decoded;
+
+      if ((decoded != null) && (this.case_insensitive || this.match_substring)) {
+        StringBuffer sb = new StringBuffer();
+        sb.append('#');
+        if (this.case_insensitive) sb.append('~');
+        if (this.match_substring)  sb.append('*');
+        sb.append(decoded);
+
+        this.encoded = sb.toString();
+      }
+    }
+  }
+
+  // ---------------------------------------------------------------------------
+  // internal: write generic channel mappings to DB:
+  // ---------------------------------------------------------------------------
+
+  private boolean saveChannelMappings(Map<String, String> data, String tableName, String field1Name, String field2Name, boolean hasFieldFlags) {
     SQLiteDatabase dbase = db.getSQLiteDatabase();
     String query;
     ContentValues cvals;
@@ -633,12 +581,26 @@ public class DbGateway {
       dbase.execSQL(query);
       query = null;
 
-      if ((fieldValues != null) && !fieldValues.isEmpty()) {
-        for (String fieldValue : fieldValues) {
-          if (TextUtils.isEmpty(fieldValue)) continue;
+      if ((data != null) && !data.isEmpty()) {
+        for (Map.Entry<String, String> entry : data.entrySet()) {
+          String field1Value = (String) entry.getKey();
+          String field2Value = (String) entry.getValue();
 
           cvals = new ContentValues();
-          cvals.put(fieldName, fieldValue);
+
+          if (hasFieldFlags) {
+            FieldFlags flags = new FieldFlags(field1Value);
+
+            cvals.put(field1Name, flags.decoded);
+            cvals.put(field2Name, field2Value);
+
+            cvals.put("case_insensitive", FieldFlags.toInt(flags.case_insensitive));
+            cvals.put("match_substring",  FieldFlags.toInt(flags.match_substring));
+          }
+          else {
+            cvals.put(field1Name, field1Value);
+            cvals.put(field2Name, field2Value);
+          }
 
           insertOrThrowUnlessConstraintViolated(dbase, tableName, null, cvals);
           cvals = null;
@@ -657,21 +619,159 @@ public class DbGateway {
     return result;
   }
 
-  private boolean saveChannelNameFilterList(List<String> names, String tableName) {
-    return saveChannelFilterList(names, tableName, "name");
+  // ---------------------------------------------------------------------------
+  // internal: read generic channel mappings from DB:
+  // ---------------------------------------------------------------------------
+
+  private Map<String, String> getChannelMappings(String tableName, String field1Name, String field2Name, boolean hasFieldFlags) {
+    Map<String, String> data = new HashMap<String, String>();
+    String query = "SELECT * FROM " + tableName + " ORDER BY " + field1Name + " ASC";
+    String field1Value, field2Value;
+
+    Cursor c = null;
+    try {
+      c = db.query(query);
+
+      if ((c != null) && c.moveToFirst() && c.isFirst()) {
+        do {
+          field1Value = getColumnString(c, field1Name);
+          field2Value = getColumnString(c, field2Name);
+
+          if (hasFieldFlags) {
+            int case_insensitive = getColumnInteger(c, "case_insensitive");
+            int match_substring  = getColumnInteger(c, "match_substring");
+
+            FieldFlags flags = new FieldFlags(case_insensitive, match_substring, field1Value);
+            field1Value = flags.encoded;
+          }
+
+          data.put(field1Value, field2Value);
+        } while (c.moveToNext());
+      }
+    }
+    catch (SQLiteException e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    }
+    if (c != null) c.close();
+    return data;
   }
 
-  private boolean saveChannelIdFilterList(List<String> ids, String tableName) {
-    return saveChannelFilterList(ids, tableName, "tvg_id");
+  // ---------------------------------------------------------------------------
+  // internal: read subset of decoded generic channel mappings from DB:
+  // notes:
+  //   * can only be used if tableName hasFieldFlags
+  //   * map keys are decoded, and do not include a prefix with encoded flags
+  // ---------------------------------------------------------------------------
+
+  private Map<String, String> getChannelMappingsSubset(String tableName, String field1Name, String field2Name, Boolean case_insensitive, Boolean match_substring) {
+    Map<String, String> data = new HashMap<String, String>();
+
+    ArrayList<String> conditions = new ArrayList<String>();
+    if (case_insensitive != null) {
+      conditions.add("case_insensitive = " + FieldFlags.toInt(case_insensitive));
+    }
+    if (match_substring != null) {
+      conditions.add("match_substring = " + FieldFlags.toInt(match_substring));
+    }
+    String WHERE = !conditions.isEmpty()
+      ? (" WHERE " + TextUtils.join(" AND ", conditions))
+      : "";
+
+    String query = "SELECT " + field1Name + ", " + field2Name + " FROM " + tableName + WHERE + " ORDER BY " + field1Name + " ASC";
+    String field1Value, field2Value;
+
+    Cursor c = null;
+    try {
+      c = db.query(query);
+
+      if ((c != null) && c.moveToFirst() && c.isFirst()) {
+        do {
+          field1Value = getColumnString(c, field1Name);
+          field2Value = getColumnString(c, field2Name);
+
+          data.put(field1Value, field2Value);
+        } while (c.moveToNext());
+      }
+    }
+    catch (SQLiteException e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    }
+    if (c != null) c.close();
+    return data;
+  }
+
+  // ---------------------------------------------------------------------------
+  // internal: write generic channel filter lists to DB:
+  // ---------------------------------------------------------------------------
+
+  private boolean saveChannelFilterList(List<String> fieldValues, String tableName, String fieldName, boolean hasFieldFlags) {
+    SQLiteDatabase dbase = db.getSQLiteDatabase();
+    String query;
+    ContentValues cvals;
+    boolean result = true;
+    try {
+      dbase.beginTransaction();
+
+      query = "DELETE FROM " + tableName;
+      dbase.execSQL(query);
+      query = null;
+
+      if ((fieldValues != null) && !fieldValues.isEmpty()) {
+        for (String fieldValue : fieldValues) {
+          if (TextUtils.isEmpty(fieldValue)) continue;
+
+          cvals = new ContentValues();
+
+          if (hasFieldFlags) {
+            FieldFlags flags = new FieldFlags(fieldValue);
+
+            cvals.put(fieldName, flags.decoded);
+
+            cvals.put("case_insensitive", FieldFlags.toInt(flags.case_insensitive));
+            cvals.put("match_substring",  FieldFlags.toInt(flags.match_substring));
+          }
+          else {
+            cvals.put(fieldName, fieldValue);
+          }
+
+          insertOrThrowUnlessConstraintViolated(dbase, tableName, null, cvals);
+          cvals = null;
+        }
+      }
+
+      dbase.setTransactionSuccessful();
+    }
+    catch (SQLException e) {
+      result = false;
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    }
+    finally {
+      dbase.endTransaction();
+    }
+    return result;
+  }
+
+  private boolean saveChannelNameFilterList(List<String> fieldValues, String tableName) {
+    String fieldName      = "name";
+    boolean hasFieldFlags = true;
+
+    return saveChannelFilterList(fieldValues, tableName, fieldName, hasFieldFlags);
+  }
+
+  private boolean saveChannelIdFilterList(List<String> fieldValues, String tableName) {
+    String fieldName      = "tvg_id";
+    boolean hasFieldFlags = false;
+
+    return saveChannelFilterList(fieldValues, tableName, fieldName, hasFieldFlags);
   }
 
   // ---------------------------------------------------------------------------
   // internal: read generic channel filter lists from DB:
   // ---------------------------------------------------------------------------
 
-  private List<String> getChannelFilterList(String tableName, String fieldName) {
+  private List<String> getChannelFilterList(String tableName, String fieldName, boolean hasFieldFlags) {
     List<String> fieldValues = new ArrayList<String>();
-    String query = "SELECT " + fieldName + " FROM " + tableName + " ORDER BY " + fieldName + " ASC";
+    String query = "SELECT * FROM " + tableName + " ORDER BY " + fieldName + " ASC";
     String fieldValue;
 
     Cursor c = null;
@@ -681,6 +781,14 @@ public class DbGateway {
       if ((c != null) && c.moveToFirst() && c.isFirst()) {
         do {
           fieldValue = getColumnString(c, fieldName);
+
+          if (hasFieldFlags) {
+            int case_insensitive = getColumnInteger(c, "case_insensitive");
+            int match_substring  = getColumnInteger(c, "match_substring");
+
+            FieldFlags flags = new FieldFlags(case_insensitive, match_substring, fieldValue);
+            fieldValue = flags.encoded;
+          }
 
           fieldValues.add(fieldValue);
         } while (c.moveToNext());
@@ -694,16 +802,41 @@ public class DbGateway {
   }
 
   private List<String> getChannelNameFilterList(String tableName) {
-    return getChannelFilterList(tableName, "name");
+    String fieldName      = "name";
+    boolean hasFieldFlags = true;
+
+    return getChannelFilterList(tableName, fieldName, hasFieldFlags);
   }
 
   private List<String> getChannelIdFilterList(String tableName) {
-    return getChannelFilterList(tableName, "tvg_id");
+    String fieldName      = "tvg_id";
+    boolean hasFieldFlags = false;
+
+    return getChannelFilterList(tableName, fieldName, hasFieldFlags);
   }
 
-  private List<String> getChannelFilterListSubset(boolean getSubstringPatterns, String tableName, String fieldName) {
+  // ---------------------------------------------------------------------------
+  // internal: read subset of decoded generic channel filter lists from DB:
+  // notes:
+  //   * can only be used if tableName hasFieldFlags
+  //   * list items are decoded, and do not include a prefix with encoded flags
+  // ---------------------------------------------------------------------------
+
+  private List<String> getChannelFilterListSubset(String tableName, String fieldName, Boolean case_insensitive, Boolean match_substring) {
     List<String> fieldValues = new ArrayList<String>();
-    String query = "SELECT " + fieldName + " FROM " + tableName + " WHERE " + fieldName + (getSubstringPatterns ? "" : " NOT") + " LIKE " + sqlEscapeString(Constants.FILTER_LIST_NAMES_BY_SUBSTRING_TOKEN + "%") + " ORDER BY " + fieldName + " ASC";
+
+    ArrayList<String> conditions = new ArrayList<String>();
+    if (case_insensitive != null) {
+      conditions.add("case_insensitive = " + FieldFlags.toInt(case_insensitive));
+    }
+    if (match_substring != null) {
+      conditions.add("match_substring = " + FieldFlags.toInt(match_substring));
+    }
+    String WHERE = !conditions.isEmpty()
+      ? (" WHERE " + TextUtils.join(" AND ", conditions))
+      : "";
+
+    String query = "SELECT " + fieldName + " FROM " + tableName + WHERE + " ORDER BY " + fieldName + " ASC";
     String fieldValue;
 
     Cursor c = null;
@@ -713,10 +846,6 @@ public class DbGateway {
       if ((c != null) && c.moveToFirst() && c.isFirst()) {
         do {
           fieldValue = getColumnString(c, fieldName);
-
-          // remove leading token sequence from substring patterns
-          if (getSubstringPatterns)
-            fieldValue = fieldValue.substring(Constants.FILTER_LIST_NAMES_BY_SUBSTRING_TOKEN.length());
 
           fieldValues.add(fieldValue);
         } while (c.moveToNext());
@@ -729,8 +858,62 @@ public class DbGateway {
     return fieldValues;
   }
 
-  private List<String> getChannelNameFilterListSubset(boolean getSubstringPatterns, String tableName) {
-    return getChannelFilterListSubset(getSubstringPatterns, tableName, "name");
+  private List<String> getChannelNameFilterListSubset(String tableName, Boolean case_insensitive, Boolean match_substring) {
+    String fieldName = "name";
+
+    return getChannelFilterListSubset(tableName, fieldName, case_insensitive, match_substring);
+  }
+
+  // ---------------------------------------------------------------------------
+  // write M3U channel mappings to DB:
+  // ---------------------------------------------------------------------------
+
+  public boolean saveM3uChannelNameMappings(Map<String, String> data) {
+    String tableName      = "m3u_channels_mapping_name_to_id";
+    String field1Name     = "name";
+    String field2Name     = "new_tvg_id";
+    boolean hasFieldFlags = true;
+
+    return saveChannelMappings(data, tableName, field1Name, field2Name, hasFieldFlags);
+  }
+
+  public boolean saveM3uChannelIdMappings(Map<String, String> data) {
+    String tableName      = "m3u_channels_mapping_id_to_id";
+    String field1Name     = "old_tvg_id";
+    String field2Name     = "new_tvg_id";
+    boolean hasFieldFlags = false;
+
+    return saveChannelMappings(data, tableName, field1Name, field2Name, hasFieldFlags);
+  }
+
+  // ---------------------------------------------------------------------------
+  // read M3U channel mappings from DB:
+  // ---------------------------------------------------------------------------
+
+  public Map<String, String> getM3uChannelNameMappings() {
+    String tableName      = "m3u_channels_mapping_name_to_id";
+    String field1Name     = "name";
+    String field2Name     = "new_tvg_id";
+    boolean hasFieldFlags = true;
+
+    return getChannelMappings(tableName, field1Name, field2Name, hasFieldFlags);
+  }
+
+  public Map<String, String> getM3uChannelNameMappingsSubset(Boolean case_insensitive, Boolean match_substring) {
+    String tableName      = "m3u_channels_mapping_name_to_id";
+    String field1Name     = "name";
+    String field2Name     = "new_tvg_id";
+
+    return getChannelMappingsSubset(tableName, field1Name, field2Name, case_insensitive, match_substring);
+  }
+
+  public Map<String, String> getM3uChannelIdMappings() {
+    String tableName      = "m3u_channels_mapping_id_to_id";
+    String field1Name     = "old_tvg_id";
+    String field2Name     = "new_tvg_id";
+    boolean hasFieldFlags = false;
+
+    return getChannelMappings(tableName, field1Name, field2Name, hasFieldFlags);
   }
 
   // ---------------------------------------------------------------------------
@@ -756,9 +939,9 @@ public class DbGateway {
     return getChannelNameFilterList(tableName);
   }
 
-  public List<String> getM3uChannelNameFilterWhitelistSubset(boolean getSubstringPatterns) {
+  public List<String> getM3uChannelNameFilterWhitelistSubset(Boolean case_insensitive, Boolean match_substring) {
     String tableName = "m3u_channels_filter_whitelist_names";
-    return getChannelNameFilterListSubset(getSubstringPatterns, tableName);
+    return getChannelNameFilterListSubset(tableName, case_insensitive, match_substring);
   }
 
   public List<String> getM3uChannelIdFilterWhitelist() {
@@ -789,9 +972,9 @@ public class DbGateway {
     return getChannelNameFilterList(tableName);
   }
 
-  public List<String> getM3uChannelNameFilterBlacklistSubset(boolean getSubstringPatterns) {
+  public List<String> getM3uChannelNameFilterBlacklistSubset(Boolean case_insensitive, Boolean match_substring) {
     String tableName = "m3u_channels_filter_blacklist_names";
-    return getChannelNameFilterListSubset(getSubstringPatterns, tableName);
+    return getChannelNameFilterListSubset(tableName, case_insensitive, match_substring);
   }
 
   public List<String> getM3uChannelIdFilterBlacklist() {
@@ -822,9 +1005,9 @@ public class DbGateway {
     return getChannelNameFilterList(tableName);
   }
 
-  public List<String> getEpgChannelNameFilterWhitelistSubset(boolean getSubstringPatterns) {
+  public List<String> getEpgChannelNameFilterWhitelistSubset(Boolean case_insensitive, Boolean match_substring) {
     String tableName = "epg_channels_filter_whitelist_names";
-    return getChannelNameFilterListSubset(getSubstringPatterns, tableName);
+    return getChannelNameFilterListSubset(tableName, case_insensitive, match_substring);
   }
 
   public List<String> getEpgChannelIdFilterWhitelist() {
@@ -855,9 +1038,9 @@ public class DbGateway {
     return getChannelNameFilterList(tableName);
   }
 
-  public List<String> getEpgChannelNameFilterBlacklistSubset(boolean getSubstringPatterns) {
+  public List<String> getEpgChannelNameFilterBlacklistSubset(Boolean case_insensitive, Boolean match_substring) {
     String tableName = "epg_channels_filter_blacklist_names";
-    return getChannelNameFilterListSubset(getSubstringPatterns, tableName);
+    return getChannelNameFilterListSubset(tableName, case_insensitive, match_substring);
   }
 
   public List<String> getEpgChannelIdFilterBlacklist() {
@@ -870,15 +1053,19 @@ public class DbGateway {
   // ---------------------------------------------------------------------------
 
   public boolean setSavedSearchKeywordsList(List<String> keywordsList) {
-    String tableName = "saved_search_keywords_list";
-    String fieldName = "search_keywords";
-    return saveChannelFilterList(keywordsList, tableName, fieldName);
+    String tableName      = "saved_search_keywords_list";
+    String fieldName      = "search_keywords";
+    boolean hasFieldFlags = false;
+
+    return saveChannelFilterList(keywordsList, tableName, fieldName, hasFieldFlags);
   }
 
   public List<String> getSavedSearchKeywordsList() {
-    String tableName = "saved_search_keywords_list";
-    String fieldName = "search_keywords";
-    return getChannelFilterList(tableName, fieldName);
+    String tableName      = "saved_search_keywords_list";
+    String fieldName      = "search_keywords";
+    boolean hasFieldFlags = false;
+
+    return getChannelFilterList(tableName, fieldName, hasFieldFlags);
   }
 
   public boolean addSavedSearchKeywordsListItem(String keywords) {

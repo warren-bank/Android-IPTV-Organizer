@@ -1,6 +1,6 @@
 purpose:
 ========
-test the "+*" prefix to match substrings in setting:
+test the "#*" (substring) and "#~*" (case-insensitive substring) prefix in setting:
   05. Filter by channel name whitelist
 
 ================

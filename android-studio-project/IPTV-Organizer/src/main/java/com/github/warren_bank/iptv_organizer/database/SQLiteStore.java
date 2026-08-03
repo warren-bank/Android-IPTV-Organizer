@@ -173,9 +173,17 @@ public class SQLiteStore extends SQLiteOpenHelper {
         + ");"
       );
       dbase.execSQL(
+          "CREATE TABLE IF NOT EXISTS m3u_channels_media_url_static_values ("
+        + "    position             INTEGER NOT NULL PRIMARY KEY,"
+        + "    value                VARCHAR NOT NULL"
+        + ");"
+      );
+      dbase.execSQL(
           "CREATE TABLE IF NOT EXISTS m3u_channels_mapping_name_to_id ("
         + "    name                 VARCHAR NOT NULL PRIMARY KEY,"
-        + "    new_tvg_id           VARCHAR NOT NULL"
+        + "    new_tvg_id           VARCHAR NOT NULL,"
+        + "    case_insensitive     INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1)),"
+        + "    match_substring      INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1))"
         + ");"
       );
       dbase.execSQL(
@@ -185,14 +193,10 @@ public class SQLiteStore extends SQLiteOpenHelper {
         + ");"
       );
       dbase.execSQL(
-          "CREATE TABLE IF NOT EXISTS m3u_channels_media_url_static_values ("
-        + "    position             INTEGER NOT NULL PRIMARY KEY,"
-        + "    value                VARCHAR NOT NULL"
-        + ");"
-      );
-      dbase.execSQL(
           "CREATE TABLE IF NOT EXISTS m3u_channels_filter_whitelist_names ("
-        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY,"
+        + "    case_insensitive     INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1)),"
+        + "    match_substring      INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1))"
         + ");"
       );
       dbase.execSQL(
@@ -202,7 +206,9 @@ public class SQLiteStore extends SQLiteOpenHelper {
       );
       dbase.execSQL(
           "CREATE TABLE IF NOT EXISTS m3u_channels_filter_blacklist_names ("
-        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY,"
+        + "    case_insensitive     INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1)),"
+        + "    match_substring      INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1))"
         + ");"
       );
       dbase.execSQL(
@@ -212,7 +218,9 @@ public class SQLiteStore extends SQLiteOpenHelper {
       );
       dbase.execSQL(
           "CREATE TABLE IF NOT EXISTS epg_channels_filter_whitelist_names ("
-        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY,"
+        + "    case_insensitive     INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1)),"
+        + "    match_substring      INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1))"
         + ");"
       );
       dbase.execSQL(
@@ -222,7 +230,9 @@ public class SQLiteStore extends SQLiteOpenHelper {
       );
       dbase.execSQL(
           "CREATE TABLE IF NOT EXISTS epg_channels_filter_blacklist_names ("
-        + "    name                 VARCHAR NOT NULL PRIMARY KEY"
+        + "    name                 VARCHAR NOT NULL PRIMARY KEY,"
+        + "    case_insensitive     INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1)),"
+        + "    match_substring      INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1))"
         + ");"
       );
       dbase.execSQL(

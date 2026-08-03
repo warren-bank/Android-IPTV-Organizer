@@ -20,7 +20,7 @@ public class Update {
   public static final int MODE_INSTALL = 1;
   public static final int MODE_RESTORE = 2;
 
-  public static final int VERSION_CURRENT = 4;
+  public static final int VERSION_CURRENT = 5;
   public static       int VERSION_ACTUAL  = -1;
 
   // ---------------------------------------------------------------------------
@@ -204,6 +204,13 @@ public class Update {
       databaseUpdateResult.didUpdateFail      |= !result;
       version                                  = getVersionNumber();
     }
+    if (!databaseUpdateResult.didUpdateFail && (version == 4)) {
+      didUpdate                                = true;
+      result                                   = update_version_004();
+      databaseUpdateResult.didUpdateSucceed   &= result;
+      databaseUpdateResult.didUpdateFail      |= !result;
+      version                                  = getVersionNumber();
+    }
 
     databaseUpdateResult.didUpdateSucceed &= didUpdate;
   }
@@ -274,6 +281,29 @@ public class Update {
         + "    search_keywords      VARCHAR NOT NULL PRIMARY KEY"
         + ");"
       );
+      return execTransaction(queries);
+    } catch (Exception e) {
+      Log.e(Constants.LOG_TAG, "Error updating database");
+      e.printStackTrace();
+      return false;
+    }
+  }
+
+  private boolean update_version_004() {
+    Log.d(Constants.LOG_TAG, "UPDATING TO VERSION 5");
+    try {
+      List<String> queries = new ArrayList<String>();
+      queries.add("UPDATE application SET version=5");
+      queries.add("ALTER TABLE m3u_channels_mapping_name_to_id     ADD COLUMN case_insensitive INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1));");
+      queries.add("ALTER TABLE m3u_channels_mapping_name_to_id     ADD COLUMN match_substring  INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1));");
+      queries.add("ALTER TABLE m3u_channels_filter_whitelist_names ADD COLUMN case_insensitive INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1));");
+      queries.add("ALTER TABLE m3u_channels_filter_whitelist_names ADD COLUMN match_substring  INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1));");
+      queries.add("ALTER TABLE m3u_channels_filter_blacklist_names ADD COLUMN case_insensitive INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1));");
+      queries.add("ALTER TABLE m3u_channels_filter_blacklist_names ADD COLUMN match_substring  INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1));");
+      queries.add("ALTER TABLE epg_channels_filter_whitelist_names ADD COLUMN case_insensitive INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1));");
+      queries.add("ALTER TABLE epg_channels_filter_whitelist_names ADD COLUMN match_substring  INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1));");
+      queries.add("ALTER TABLE epg_channels_filter_blacklist_names ADD COLUMN case_insensitive INTEGER NOT NULL DEFAULT 0 CHECK (case_insensitive IN (0, 1));");
+      queries.add("ALTER TABLE epg_channels_filter_blacklist_names ADD COLUMN match_substring  INTEGER NOT NULL DEFAULT 0 CHECK (match_substring  IN (0, 1));");
       return execTransaction(queries);
     } catch (Exception e) {
       Log.e(Constants.LOG_TAG, "Error updating database");

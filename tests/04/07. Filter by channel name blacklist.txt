@@ -1,2 +1,2 @@
-+*ESPNU
+#*PNU
 CHANNEL 2

@@ -1,5 +1,5 @@
-+*Supernatural S
-+*CNN
-+*ESPN
+#*Supernatural S
+#*CNN
+#~*espn
 CHANNEL 1
 CHANNEL 2
