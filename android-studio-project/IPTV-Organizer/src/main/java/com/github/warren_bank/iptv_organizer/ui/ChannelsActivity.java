@@ -43,6 +43,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -101,8 +102,8 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   // Dialogs:
   // ---------------------------------------------------------------------------------------------
 
-  private SavedSearchKeywordsListDialog savedSearchDialog;
   private ImportProgressDialog          importProgressDialog;
+  private SavedSearchKeywordsListDialog savedSearchDialog;
 
   // ---------------------------------------------------------------------------------------------
   // Lifecycle Events:
@@ -113,29 +114,53 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_channels);
 
-    refreshList(null, false);
+    unfilteredList = new ArrayList<FilterableListItem>();
+
     initToolbar();
     initRecyclerView();
     initSort();
 
-    onNewIntent(getIntent());
+    final String urlText = getNewIntentDataUri(getIntent());
+
+    if (urlText != null) {
+      importNewIntentDataUri(urlText);
+    }
+    else {
+      final ImportProgressDialog listener = new ImportProgressDialog(ChannelsActivity.this, R.string.loading, getString(R.string.activity_channels));
+      importProgressDialog = listener;
+
+      // Read channels from DB on a background thread
+      new Thread(() -> initList(listener)).start();
+    }
   }
 
   @Override
   protected void onNewIntent(Intent intent) {
-    try {
-      Uri data = intent.getData();
-      if (data == null) return;
+    final String urlText = getNewIntentDataUri(getIntent());
 
-      final String urlText = data.toString().trim();
-      if (urlText.isEmpty()) return;
+    if (urlText != null) {
+      importNewIntentDataUri(urlText);
+    }
+  }
 
-      final ImportProgressDialog listener = new ImportProgressDialog(ChannelsActivity.this);
-      importProgressDialog = listener;
+  private String getNewIntentDataUri(Intent intent) {
+    if (intent == null) return null;
 
-      // Do network on a background thread
-      new Thread(() -> openUrlAsStream(urlText, listener)).start();
-    } catch (Exception ignored) {}
+    Uri data = intent.getData();
+    if (data == null) return null;
+
+    String urlText = data.toString().trim();
+    if (urlText.isEmpty()) return null;
+
+    return urlText;
+  }
+
+  private void importNewIntentDataUri(final String urlText) {
+    final ImportProgressDialog listener = new ImportProgressDialog(ChannelsActivity.this);
+    importProgressDialog = listener;
+
+    // Do network on a background thread
+    new Thread(() -> openUrlAsStream(urlText, listener)).start();
   }
 
   @Override
@@ -144,19 +169,19 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
 
     initSavedSearchDialog();
 
-    if (importProgressDialog != null) importProgressDialog.resume();
+    if (importProgressDialog != null) importProgressDialog.resume(ChannelsActivity.this);
   }
 
   @Override
   protected void onPause() {
-    super.onPause();
+    if (importProgressDialog != null) importProgressDialog.pause();
 
     if (savedSearchDialog != null) {
       savedSearchDialog.release();
       savedSearchDialog = null;
     }
 
-    if (importProgressDialog != null) importProgressDialog.pause();
+    super.onPause();
   }
 
   // ---------------------------------------------------------------------------------------------
@@ -308,7 +333,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
         if (inputStream != null) inputStream.close();
       } catch (Exception ignored) {}
       if (conn != null) conn.disconnect();
-      listener.dismiss();
+      listener.dismiss(true);
       importProgressDialog = null;
     }
   }
@@ -360,7 +385,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       try {
         if (inputStream != null) inputStream.close();
       } catch (Exception ignored) {}
-      listener.dismiss();
+      listener.dismiss(true);
       importProgressDialog = null;
     }
   }
@@ -386,12 +411,32 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     });
   }
 
+  private void initList(ImportProgressDialog listener) {
+    try {
+      final List<ChannelListItem> newList = DbUtils.getDb().getM3u(listener);
+
+      runOnUiThread(new Runnable() {
+        @Override
+        public void run() {
+          refreshList(newList, false);
+        }
+      });
+    } catch (Exception e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    } finally {
+      listener.dismiss(true);
+      importProgressDialog = null;
+    }
+  }
+
   private void refreshList(List<ChannelListItem> newList, boolean appendList) {
     if (newList == null) {
+      // fallback: this should never happen; channel list is always read in a background thread and passed as input.
       newList = DbUtils.getDb().getM3u();
     }
 
     if (unfilteredList == null) {
+      // fallback: this should never happen; an empty list is initialized at creation and passed to the RecyclerView adapter.
       unfilteredList = castList(newList);
     }
     else {

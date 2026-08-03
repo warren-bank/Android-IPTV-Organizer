@@ -287,6 +287,10 @@ public class DbGateway {
   // ---------------------------------------------------------------------------
 
   public List<ChannelListItem> getM3u() {
+    return getM3u(null);
+  }
+
+  public List<ChannelListItem> getM3u(ParserProgressListener listener) {
     List<ChannelListItem> channels = new ArrayList<ChannelListItem>();
     String query = "SELECT * FROM m3u_channels ORDER BY position ASC";
     int position;
@@ -304,6 +308,8 @@ public class DbGateway {
           tvg_id    = getColumnString (c, "tvg_id");
           tvg_name  = getColumnString (c, "tvg_name");
 
+          if (listener != null) listener.onData(name);
+
           ChannelListItem channel = new ChannelListItem(position, name, media_url, tvg_id, tvg_name);
           channels.add(channel);
         } while (c.moveToNext());
@@ -317,17 +323,25 @@ public class DbGateway {
   }
 
   public EPGDataImpl getEpgData() {
-    Map<EPGChannel, List<EPGEvent>> data = getEpg();
+    return getEpgData(null);
+  }
+
+  public EPGDataImpl getEpgData(ParserProgressListener listener) {
+    Map<EPGChannel, List<EPGEvent>> data = getEpg(listener);
     return new EPGDataImpl(data);
   }
 
   public Map<EPGChannel, List<EPGEvent>> getEpg() {
+    return getEpg(null);
+  }
+
+  public Map<EPGChannel, List<EPGEvent>> getEpg(ParserProgressListener listener) {
     Map<EPGChannel, List<EPGEvent>> data = new HashMap<EPGChannel, List<EPGEvent>>();
 
-    List<EPGChannel> channels = getEpgChannels();
+    List<EPGChannel> channels = getEpgChannels(listener);
     if ((channels != null) && !channels.isEmpty()) {
       for (EPGChannel channel : channels) {
-        List<EPGEvent> programs = getEpgEvents(channel);
+        List<EPGEvent> programs = getEpgEvents(channel, listener);
         if ((programs != null) && !programs.isEmpty()) {
           data.put(channel, programs);
         }
@@ -337,7 +351,7 @@ public class DbGateway {
     return data;
   }
 
-  private List<EPGChannel> getEpgChannels() {
+  private List<EPGChannel> getEpgChannels(ParserProgressListener listener) {
     List<EPGChannel> channels = new ArrayList<EPGChannel>();
     String query = "SELECT * FROM xmltv_channels ORDER BY name ASC";
     String id, name, icon_url;
@@ -352,6 +366,8 @@ public class DbGateway {
           name     = getColumnString(c, "name");
           icon_url = getColumnString(c, "icon_url");
 
+          if (listener != null) listener.onData(name);
+
           EPGChannel channel = new EPGChannel(id, name, icon_url);
           channels.add(channel);
         } while (c.moveToNext());
@@ -364,7 +380,7 @@ public class DbGateway {
     return channels;
   }
 
-  private List<EPGEvent> getEpgEvents(EPGChannel channel) {
+  private List<EPGEvent> getEpgEvents(EPGChannel channel, ParserProgressListener listener) {
     List<EPGEvent> programs = new ArrayList<EPGEvent>();
     String query = "SELECT * FROM xmltv_programs WHERE channel_id = " + sqlEscapeString(channel.getChannelID()) + " ORDER BY start_timestamp_ms ASC";
     long start_timestamp_ms, stop_timestamp_ms;
@@ -380,6 +396,8 @@ public class DbGateway {
           stop_timestamp_ms  = getColumnLong  (c, "stop_timestamp_ms", -1l);
           title              = getColumnString(c, "title");
           description        = getColumnString(c, "description");
+
+          if (listener != null) listener.onData(title);
 
           EPGEvent program = new EPGEvent(start_timestamp_ms, stop_timestamp_ms, title, description);
           programs.add(program);

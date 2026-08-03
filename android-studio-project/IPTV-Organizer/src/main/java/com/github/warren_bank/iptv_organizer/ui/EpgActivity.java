@@ -54,8 +54,8 @@ public class EpgActivity extends AppCompatActivity {
   // Dialogs:
   // ---------------------------------------------------------------------------------------------
 
-  private SavedSearchKeywordsListDialog savedSearchDialog;
   private ImportProgressDialog          importProgressDialog;
+  private SavedSearchKeywordsListDialog savedSearchDialog;
 
   // ---------------------------------------------------------------------------------------------
   // Lifecycle Events:
@@ -66,27 +66,52 @@ public class EpgActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_epg);
 
-    initEpg();
-    initToolbar();
+    epgData = new EPGDataImpl(null);
 
-    onNewIntent(getIntent());
+    initToolbar();
+    initEpgView();
+
+    final String urlText = getNewIntentDataUri(getIntent());
+
+    if (urlText != null) {
+      importNewIntentDataUri(urlText);
+    }
+    else {
+      final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this, R.string.loading, getString(R.string.activity_epg));
+      importProgressDialog = listener;
+
+      // Read channels from DB on a background thread
+      new Thread(() -> initEpgData(listener)).start();
+    }
   }
 
   @Override
   protected void onNewIntent(Intent intent) {
-    try {
-      Uri data = intent.getData();
-      if (data == null) return;
+    final String urlText = getNewIntentDataUri(getIntent());
 
-      final String urlText = data.toString().trim();
-      if (urlText.isEmpty()) return;
+    if (urlText != null) {
+      importNewIntentDataUri(urlText);
+    }
+  }
 
-      final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
-      importProgressDialog = listener;
+  private String getNewIntentDataUri(Intent intent) {
+    if (intent == null) return null;
 
-      // Do network on a background thread
-      new Thread(() -> openUrlAsStream(urlText, listener)).start();
-    } catch (Exception ignored) {}
+    Uri data = intent.getData();
+    if (data == null) return null;
+
+    String urlText = data.toString().trim();
+    if (urlText.isEmpty()) return null;
+
+    return urlText;
+  }
+
+  private void importNewIntentDataUri(final String urlText) {
+    final ImportProgressDialog listener = new ImportProgressDialog(EpgActivity.this);
+    importProgressDialog = listener;
+
+    // Do network on a background thread
+    new Thread(() -> openUrlAsStream(urlText, listener)).start();
   }
 
   @Override
@@ -95,19 +120,19 @@ public class EpgActivity extends AppCompatActivity {
 
     initSavedSearchDialog();
 
-    if (importProgressDialog != null) importProgressDialog.resume();
+    if (importProgressDialog != null) importProgressDialog.resume(EpgActivity.this);
   }
 
   @Override
   protected void onPause() {
-    super.onPause();
+    if (importProgressDialog != null) importProgressDialog.pause();
 
     if (savedSearchDialog != null) {
       savedSearchDialog.release();
       savedSearchDialog = null;
     }
 
-    if (importProgressDialog != null) importProgressDialog.pause();
+    super.onPause();
   }
 
   @Override
@@ -253,7 +278,7 @@ public class EpgActivity extends AppCompatActivity {
         if (inputStream != null) inputStream.close();
       } catch (Exception ignored) {}
       if (conn != null) conn.disconnect();
-      listener.dismiss();
+      listener.dismiss(true);
       importProgressDialog = null;
     }
   }
@@ -305,7 +330,7 @@ public class EpgActivity extends AppCompatActivity {
       try {
         if (inputStream != null) inputStream.close();
       } catch (Exception ignored) {}
-      listener.dismiss();
+      listener.dismiss(true);
       importProgressDialog = null;
     }
   }
@@ -327,7 +352,7 @@ public class EpgActivity extends AppCompatActivity {
     });
   }
 
-  private void initEpg() {
+  private void initEpgView() {
     epgView = (EPG) findViewById(R.id.epg);
 
     epgView.setEPGClickListener(new EPGClickListener() {
@@ -383,13 +408,30 @@ public class EpgActivity extends AppCompatActivity {
         epgView.recalculateAndRedraw(true);
       }
     });
+  }
 
-    refreshEpg(null);
+  private void initEpgData(ImportProgressDialog listener) {
+    try {
+      final EPGDataImpl newEpgData = DbUtils.getDb().getEpgData(listener);
+
+      runOnUiThread(new Runnable() {
+        @Override
+        public void run() {
+          refreshEpg(newEpgData);
+        }
+      });
+    } catch (Exception e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    } finally {
+      listener.dismiss(true);
+      importProgressDialog = null;
+    }
   }
 
   private void refreshEpg(EPGDataImpl newEpgData) {
     boolean animate = (epgData != null);
 
+    // fallback: this should never happen; EPG data is always read in a background thread and passed as input.
     epgData = (newEpgData == null)
       ? DbUtils.getDb().getEpgData()
       : newEpgData;

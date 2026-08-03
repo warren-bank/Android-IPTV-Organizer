@@ -30,8 +30,8 @@ public class SQLiteStore extends SQLiteOpenHelper {
 
     db = getWritableDatabase();
 
-    if (Build.VERSION.SDK_INT >= 16) {
-      db.disableWriteAheadLogging();
+    if (Build.VERSION.SDK_INT >= 11) {
+      db.enableWriteAheadLogging();
     }
   }
 
