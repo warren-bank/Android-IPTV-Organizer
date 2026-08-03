@@ -11,6 +11,7 @@
   <string name="export_file">Eksportuoti failą</string>
   <string name="import_file">Importuoti failą</string>
   <string name="import_generic">Importas</string>
+  <string name="loading">Įkeliama</string>
   <string name="remove">Pašalinti</string>
   <string name="save">Išsaugoti</string>
   <string name="search">Paieška</string>

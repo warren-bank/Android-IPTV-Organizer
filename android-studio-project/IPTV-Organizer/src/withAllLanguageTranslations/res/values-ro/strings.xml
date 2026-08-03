@@ -11,6 +11,7 @@
   <string name="export_file">Exportare fișier</string>
   <string name="import_file">Importare fișier</string>
   <string name="import_generic">Import</string>
+  <string name="loading">Se încarcă</string>
   <string name="remove">Eliminare</string>
   <string name="save">Salvare</string>
   <string name="search">Căutare</string>

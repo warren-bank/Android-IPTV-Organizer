@@ -11,6 +11,7 @@
   <string name="export_file">Exportatu fitxategia</string>
   <string name="import_file">Inportatu fitxategia</string>
   <string name="import_generic">Inportatu</string>
+  <string name="loading">Kargatzen</string>
   <string name="remove">Kendu</string>
   <string name="save">Gorde</string>
   <string name="search">Bilatu</string>

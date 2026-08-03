@@ -11,6 +11,7 @@
   <string name="export_file">എക്സ്പോർട്ട് ഫയൽ</string>
   <string name="import_file">ഫയൽ ഇറക്കുമതി ചെയ്യുക</string>
   <string name="import_generic">ഇറക്കുമതി</string>
+  <string name="loading">ലോഡ് ചെയ്യുന്നു</string>
   <string name="remove">നീക്കുക</string>
   <string name="save">സേവ് ചെയ്യുക</string>
   <string name="search">തിരയുക</string>

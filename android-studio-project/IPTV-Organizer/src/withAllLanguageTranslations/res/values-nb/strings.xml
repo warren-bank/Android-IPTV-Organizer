@@ -11,6 +11,7 @@
   <string name="export_file">Eksporter fil</string>
   <string name="import_file">Importer fil</string>
   <string name="import_generic">Import</string>
+  <string name="loading">Laster</string>
   <string name="remove">Fjern</string>
   <string name="save">Lagre</string>
   <string name="search">Søk</string>

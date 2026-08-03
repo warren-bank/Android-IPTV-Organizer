@@ -11,6 +11,7 @@
   <string name="export_file">Faylni eksport qilish</string>
   <string name="import_file">Faylni import qilish</string>
   <string name="import_generic">Import</string>
+  <string name="loading">Yuklanmoqda</string>
   <string name="remove">Olib tashlash</string>
   <string name="save">Saqlash</string>
   <string name="search">Qidiruv</string>

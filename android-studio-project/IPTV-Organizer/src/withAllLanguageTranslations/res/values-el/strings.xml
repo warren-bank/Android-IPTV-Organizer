@@ -11,6 +11,7 @@
   <string name="export_file">Εξαγωγή αρχείου</string>
   <string name="import_file">Εισαγωγή αρχείου</string>
   <string name="import_generic">Εισαγωγή</string>
+  <string name="loading">Φόρτωση</string>
   <string name="remove">Κατάργηση</string>
   <string name="save">Αποθήκευση</string>
   <string name="search">Αναζήτηση</string>

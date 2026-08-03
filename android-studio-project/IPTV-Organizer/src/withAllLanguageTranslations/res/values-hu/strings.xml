@@ -11,6 +11,7 @@
   <string name="export_file">Fájl exportálása</string>
   <string name="import_file">Fájl importálása</string>
   <string name="import_generic">Importálás</string>
+  <string name="loading">Betöltés</string>
   <string name="remove">Eltávolítás</string>
   <string name="save">Mentés</string>
   <string name="search">Keresés</string>

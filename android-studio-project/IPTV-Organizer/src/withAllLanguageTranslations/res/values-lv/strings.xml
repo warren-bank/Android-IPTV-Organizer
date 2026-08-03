@@ -11,6 +11,7 @@
   <string name="export_file">Eksportēt failu</string>
   <string name="import_file">Importēt failu</string>
   <string name="import_generic">Importēt</string>
+  <string name="loading">Ielādējas</string>
   <string name="remove">Dzēst</string>
   <string name="save">Saglabāt</string>
   <string name="search">Meklēt</string>

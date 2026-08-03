@@ -11,6 +11,7 @@
   <string name="export_file">Xuất tệp</string>
   <string name="import_file">Nhập tệp</string>
   <string name="import_generic">Nhập khẩu</string>
+  <string name="loading">Đang tải</string>
   <string name="remove">Xóa</string>
   <string name="save">Lưu</string>
   <string name="search">Tìm kiếm</string>

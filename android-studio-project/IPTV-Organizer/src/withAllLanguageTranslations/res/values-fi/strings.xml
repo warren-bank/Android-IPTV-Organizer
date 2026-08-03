@@ -11,6 +11,7 @@
   <string name="export_file">Vie tiedosto</string>
   <string name="import_file">Tuo tiedosto</string>
   <string name="import_generic">Tuonti</string>
+  <string name="loading">Ladataan</string>
   <string name="remove">Poista</string>
   <string name="save">Tallenna</string>
   <string name="search">Haku</string>

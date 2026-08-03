@@ -11,6 +11,7 @@
   <string name="export_file">Bestand exporteren</string>
   <string name="import_file">Bestand importeren</string>
   <string name="import_generic">Importeren</string>
+  <string name="loading">Bezig met laden</string>
   <string name="remove">Verwijderen</string>
   <string name="save">Opslaan</string>
   <string name="search">Zoeken</string>

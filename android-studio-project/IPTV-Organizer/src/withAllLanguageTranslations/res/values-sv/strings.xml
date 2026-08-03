@@ -11,6 +11,7 @@
   <string name="export_file">Exportera fil</string>
   <string name="import_file">Importera fil</string>
   <string name="import_generic">Importera</string>
+  <string name="loading">Laddar</string>
   <string name="remove">Ta bort</string>
   <string name="save">Spara</string>
   <string name="search">Sök</string>

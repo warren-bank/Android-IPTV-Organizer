@@ -11,6 +11,7 @@
   <string name="export_file">Exportar lo fichièr</string>
   <string name="import_file">Importar fichièr</string>
   <string name="import_generic">Importar</string>
+  <string name="loading">Cargament</string>
   <string name="remove">Suprimir</string>
   <string name="save">Enregistrar</string>
   <string name="search">Cercar</string>

@@ -11,6 +11,7 @@
   <string name="export_file">Exporter le fichier</string>
   <string name="import_file">Importer un fichier</string>
   <string name="import_generic">Importer</string>
+  <string name="loading">Chargement en cours</string>
   <string name="remove">Supprimer</string>
   <string name="save">Enregistrer</string>
   <string name="search">Rechercher</string>

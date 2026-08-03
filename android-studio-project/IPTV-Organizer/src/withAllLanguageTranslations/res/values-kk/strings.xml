@@ -11,6 +11,7 @@
   <string name="export_file">Файлды экспорттау</string>
   <string name="import_file">Файлды импорттау</string>
   <string name="import_generic">Импорт</string>
+  <string name="loading">Жүктелуде</string>
   <string name="remove">Алып тастау</string>
   <string name="save">Сақтау</string>
   <string name="search">Іздеу</string>

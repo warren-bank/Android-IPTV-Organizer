@@ -11,6 +11,7 @@
   <string name="export_file">Файлыг экспортлох</string>
   <string name="import_file">Файл импортлох</string>
   <string name="import_generic">Импорт</string>
+  <string name="loading">Ачаалагдаж байна</string>
   <string name="remove">Арилгах</string>
   <string name="save">Хадгалах</string>
   <string name="search">Хайх</string>

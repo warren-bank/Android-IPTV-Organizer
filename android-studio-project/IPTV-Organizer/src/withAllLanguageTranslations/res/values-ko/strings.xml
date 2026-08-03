@@ -11,6 +11,7 @@
   <string name="export_file">파일 내보내기</string>
   <string name="import_file">파일 가져오기</string>
   <string name="import_generic">가져오기</string>
+  <string name="loading">로딩 중</string>
   <string name="remove">제거</string>
   <string name="save">저장</string>
   <string name="search">검색</string>

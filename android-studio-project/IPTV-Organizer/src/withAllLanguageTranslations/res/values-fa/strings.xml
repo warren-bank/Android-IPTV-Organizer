@@ -11,6 +11,7 @@
   <string name="export_file">صادرات فایل</string>
   <string name="import_file">وارد کردن فایل</string>
   <string name="import_generic">واردات</string>
+  <string name="loading">در حال بارگذاری</string>
   <string name="remove">حذف</string>
   <string name="save">ذخیره</string>
   <string name="search">جستجو</string>

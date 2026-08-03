@@ -11,6 +11,7 @@
   <string name="export_file">ფაილის ექსპორტი</string>
   <string name="import_file">ფაილის იმპორტი</string>
   <string name="import_generic">იმპორტი</string>
+  <string name="loading">ტვირთვა</string>
   <string name="remove">წაშლა</string>
   <string name="save">შენახვა</string>
   <string name="search">ძიება</string>

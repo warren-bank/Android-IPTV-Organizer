@@ -11,6 +11,7 @@
   <string name="export_file">ফাইল রপ্তানি করুন</string>
   <string name="import_file">ফাইল আমদানি করুন</string>
   <string name="import_generic">আমদানি</string>
+  <string name="loading">লোড হচ্ছে</string>
   <string name="remove">সরান</string>
   <string name="save">সংরক্ষণ করুন</string>
   <string name="search">অনুসন্ধান</string>

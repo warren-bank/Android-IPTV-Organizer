@@ -11,6 +11,7 @@
   <string name="export_file">ફાઇલ નિકાસ કરો</string>
   <string name="import_file">ફાઇલ આયાત કરો</string>
   <string name="import_generic">આયાત</string>
+  <string name="loading">લોડ થઈ રહ્યું છે</string>
   <string name="remove">હટાવો</string>
   <string name="save">બચાવો</string>
   <string name="search">શોધો</string>

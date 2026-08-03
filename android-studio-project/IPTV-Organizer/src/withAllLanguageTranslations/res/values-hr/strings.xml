@@ -11,6 +11,7 @@
   <string name="export_file">Izvoz datoteke</string>
   <string name="import_file">Uvezi datoteku</string>
   <string name="import_generic">Uvoz</string>
+  <string name="loading">Učitavanje</string>
   <string name="remove">Ukloni</string>
   <string name="save">Sačuvaj</string>
   <string name="search">Pretraži</string>

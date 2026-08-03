@@ -11,6 +11,7 @@
   <string name="export_file">ဖိုင်ကို ထုတ်ပို့ပါ</string>
   <string name="import_file">ဖိုင်တင်သွင်း</string>
   <string name="import_generic">တင်သွင်း</string>
+  <string name="loading">တင်နေပါသည်</string>
   <string name="remove">ဖယ်ရှားပါ</string>
   <string name="save">သိမ်းရန်</string>
   <string name="search">ရှာဖွေ</string>

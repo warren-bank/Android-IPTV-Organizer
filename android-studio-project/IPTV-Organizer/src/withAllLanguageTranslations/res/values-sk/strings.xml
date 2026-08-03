@@ -11,6 +11,7 @@
   <string name="export_file">Exportovať súbor</string>
   <string name="import_file">Načítať súbor</string>
   <string name="import_generic">Import</string>
+  <string name="loading">Načítava sa</string>
   <string name="remove">Odstrániť</string>
   <string name="save">Uložiť</string>
   <string name="search">Vyhľadávanie</string>

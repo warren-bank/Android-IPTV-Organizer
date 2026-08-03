@@ -11,6 +11,7 @@
   <string name="export_file">ফাইল ৰপ্তানি কৰক</string>
   <string name="import_file">ফাইল আমদানি কৰক</string>
   <string name="import_generic">আমদানি</string>
+  <string name="loading">লোড হৈ আছে</string>
   <string name="remove"> আঁতৰাওক</string>
   <string name="save">সংৰক্ষণ কৰক</string>
   <string name="search">খোজা</string>

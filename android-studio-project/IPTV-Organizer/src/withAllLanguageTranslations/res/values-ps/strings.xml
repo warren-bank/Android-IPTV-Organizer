@@ -11,6 +11,7 @@
   <string name="export_file">د فایل صادرول</string>
   <string name="import_file">فایل وارد کړئ</string>
   <string name="import_generic">واردول</string>
+  <string name="loading">بارول</string>
   <string name="remove">لرې کړئ</string>
   <string name="save">خوندي کول</string>
   <string name="search">لټون</string>

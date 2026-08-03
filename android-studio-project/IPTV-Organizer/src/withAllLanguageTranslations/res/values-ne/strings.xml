@@ -11,6 +11,7 @@
   <string name="export_file">निर्यात गर्नुहोस्</string>
   <string name="import_file">फाइल आयात गर्नुहोस्</string>
   <string name="import_generic">आयात</string>
+  <string name="loading">लोड हुँदैछ</string>
   <string name="remove">हटाउनुहोस्</string>
   <string name="save">बचाउनुहोस्</string>
   <string name="search">खोज्नुहोस्</string>

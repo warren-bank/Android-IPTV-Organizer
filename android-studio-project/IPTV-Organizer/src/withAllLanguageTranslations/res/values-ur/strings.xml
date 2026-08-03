@@ -11,6 +11,7 @@
   <string name="export_file">فائل برآمد کریں</string>
   <string name="import_file">فائل درآمد کریں</string>
   <string name="import_generic">درآمد</string>
+  <string name="loading">لوڈ ہو رہا ہے</string>
   <string name="remove">ہٹائیں</string>
   <string name="save">محفوظ کریں</string>
   <string name="search">تلاش</string>

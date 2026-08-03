@@ -11,6 +11,7 @@
   <string name="export_file">Експортувати файл</string>
   <string name="import_file">Імпортувати файл</string>
   <string name="import_generic">Імпорт</string>
+  <string name="loading">Завантаження</string>
   <string name="remove">Видалити</string>
   <string name="save">Зберегти</string>
   <string name="search">Пошук</string>

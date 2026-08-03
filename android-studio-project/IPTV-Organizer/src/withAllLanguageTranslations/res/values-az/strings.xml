@@ -11,6 +11,7 @@
   <string name="export_file">Faylı ixrac et</string>
   <string name="import_file">Fayl idxal et</string>
   <string name="import_generic">İdxal</string>
+  <string name="loading">Yüklənir</string>
   <string name="remove">Sil</string>
   <string name="save">Yadda saxla</string>
   <string name="search">Axtarış</string>

@@ -11,6 +11,7 @@
   <string name="export_file">ஏற்றுமதி கோப்பு</string>
   <string name="import_file">கோப்பை இறக்குமதி செய்</string>
   <string name="import_generic">இறக்குமதி</string>
+  <string name="loading">ஏற்றுகிறது</string>
   <string name="remove">நீக்கு</string>
   <string name="save">சேமி</string>
   <string name="search">தேடல்</string>

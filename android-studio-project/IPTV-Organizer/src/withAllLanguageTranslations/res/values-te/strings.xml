@@ -11,6 +11,7 @@
   <string name="export_file">ఎగుమతి ఫైల్</string>
   <string name="import_file">ఫైల్ దిగుమతి</string>
   <string name="import_generic">దిగుమతి</string>
+  <string name="loading">లోడ్ అవుతోంది</string>
   <string name="remove">తొలగించు</string>
   <string name="save">పొదుపు చేయండి</string>
   <string name="search">శోధన</string>

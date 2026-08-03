@@ -11,6 +11,7 @@
   <string name="export_file">Exporta skrá</string>
   <string name="import_file">Flytja inn skrá</string>
   <string name="import_generic">Innflutningur</string>
+  <string name="loading">Að hlaða</string>
   <string name="remove">Fjarlægja</string>
   <string name="save">Vista</string>
   <string name="search">Leita</string>

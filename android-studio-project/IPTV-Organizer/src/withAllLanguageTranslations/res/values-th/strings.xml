@@ -11,6 +11,7 @@
   <string name="export_file">ส่งออกไฟล์</string>
   <string name="import_file">นำเข้าไฟล์</string>
   <string name="import_generic">นำเข้า</string>
+  <string name="loading">กำลังโหลด</string>
   <string name="remove">ลบ</string>
   <string name="save">บันทึก</string>
   <string name="search">ค้นหา</string>

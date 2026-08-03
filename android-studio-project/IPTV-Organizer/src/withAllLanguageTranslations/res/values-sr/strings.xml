@@ -11,6 +11,7 @@
   <string name="export_file">Извези фајл</string>
   <string name="import_file">Увоз фајла</string>
   <string name="import_generic">Увоз</string>
+  <string name="loading">Учитавање</string>
   <string name="remove">Уклони</string>
   <string name="save">Сачувај</string>
   <string name="search">Претрага</string>

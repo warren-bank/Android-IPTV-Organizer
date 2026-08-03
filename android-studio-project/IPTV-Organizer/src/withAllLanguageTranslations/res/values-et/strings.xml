@@ -11,6 +11,7 @@
   <string name="export_file">Faili eksportimine</string>
   <string name="import_file">Faili importimine</string>
   <string name="import_generic">Import</string>
+  <string name="loading">Laadimine</string>
   <string name="remove">Eemalda</string>
   <string name="save">Salvesta</string>
   <string name="search">Otsing</string>
