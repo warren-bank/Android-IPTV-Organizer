@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa d\'a canal ID canalizar ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Un valor por linia. Formato: \"[viello tvg-id] =\> [nuevo tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrar por o nombre d\'o canal en a lista blanca</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un valor por linia. Formato: \"[nombre u tvg-name]\". Prefixo pa subcadena: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un valor por linia. Formato: \"[nombre u tvg-name]\". Prefixo pa substringa no sensible a mayusclas y minusclas: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrar por canal ID lista blanca</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Un valor por linia. Formato: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filtrar por o nombre d\'o canal en a lista negra</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrar por M3U Canals</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Canals trobadas en a lista blanca M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">No meter en lista blanca os canals trobaus en M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Una valura por linia. Prefixo pa la substringa: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Una valura por linia. Prefixo pa la substringa no sensible a mayusclas y minusclas: \"#~*\"</string>
 </resources>

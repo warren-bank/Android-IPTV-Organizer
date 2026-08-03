@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">वाहिन्याः मानचित्रम् ID मार्गयितुम् ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[पुरातनः tvg-id] =\> [नवीनः tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">चैनलनाम्ना श्वेतसूचीकरणं कुर्वन्तु</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[नाम वा tvg-name]\". उपपाठ्यशृंखलायाः उपसर्गः: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[नाम वा tvg-name]\". वर्णक्रमारहित-अन्तर्भागरेखायाः उपसर्गः: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">मार्गेण छानयतु ID श्वेतसूची</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">प्रत्येकपङ्क्तौ एकं मानं। स्वरूपम्: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">मार्गनाम्ना निषेधसूचीकरणम्</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">द्वारा छानय M3U वाहिन्यः</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >सूचीकृत-चैनलाः यत्र दृश्यन्ते M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">यत्र चैनलाः दृश्यन्ते, तान् श्वेतसूच्यां मा स्थापय। M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">प्रतिपङ्क्तौ एकः मानः।   उपश्रृंखलायाः पूर्वप्रत्ययः।: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">प्रत्येकपङ्क्तौ एकं मानं।   अक्षरभेदविहीन उपश्रृंखलायाः पूर्वप्रत्ययः।: \"#~*\"</string>
 </resources>

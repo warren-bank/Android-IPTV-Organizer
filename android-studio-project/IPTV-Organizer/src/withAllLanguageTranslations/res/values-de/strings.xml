@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Karte aus dem Kanal ID zu kanalisieren ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Ein Wert pro Zeile. Format: \"[alt tvg-id] =\> [neu tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Nach der Whitelist der Kanalnamen filtern</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ein Wert pro Zeile. Format: \"[Name oder tvg-name]\". Präfix für Teilzeichenfolge: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ein Wert pro Zeile. Format: \"[Name oder tvg-name]\". Präfix für eine Teilzeichenfolge, bei der die Groß-/Kleinschreibung nicht berücksichtigt wird: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Nach Kanal filtern ID Whitelist</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ein Wert pro Zeile. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Nach Kanalnamen filtern – Blacklist</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Nach filtern M3U Kanäle</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanäle auf die Whitelist setzen, die in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Füge Kanäle, die in M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Ein Wert pro Zeile. Präfix für Teilzeichenfolge: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Ein Wert pro Zeile. Präfix für eine Teilzeichenfolge, bei der Groß- und Kleinschreibung nicht berücksichtigt wird: \"#~*\"</string>
 </resources>

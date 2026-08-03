@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">ချန်နယ်မှ မြေပုံ ID လမ်းကြောင်းပေးရန် ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[ဟောင်း tvg-id] =\> [အသစ် tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">ချန်နယ်အမည်ဖြူစာရင်းဖြင့် စစ်ထုတ်</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[နာမည် သို့မဟုတ် tvg-name]\". စာကြောင်းအစိတ်အပိုင်းအတွက် ကြိုတင်ဆက်စပ်စကားလုံး: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[နာမည် သို့မဟုတ် tvg-name]\". စာလုံးအကြီးအငယ်မခွဲခြားသော စာကြောင်းအစိတ်အပိုင်းအတွက် ကြိုတင်ဆက်စပ်စကားလုံး: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">ချန်နယ်အလိုက် စစ်ထုတ်ပါ ID ဖြူစာရင်း</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ ဖော်မတ်: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">ချန်နယ်အမည်ဖြင့် ပိတ်ပင်စာရင်း စစ်ထုတ်ပါ</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">ဖြင့် စစ်ထုတ်ပါ M3U ချန်နယ်များ</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Whitelist ချန်နယ်များတွေ့ရှိသော M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">တွေ့ရှိထားသော ချန်နယ်များကို အဖြူစာရင်းမထည့်ပါနှင့်။ M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ စာကြောင်းအတွင်းမှ အစိတ်အပိုင်းအတွက် ကြိုတင်စာလုံး။: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ အက္ခရာကြီး/အသေး မခွဲခြားသော စာသားအတွင်းပိုင်းအတွက် ကြိုတင်စာလုံး: \"#~*\"</string>
 </resources>

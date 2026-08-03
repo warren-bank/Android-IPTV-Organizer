@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Imephu evela kwitshaneli ID ukwalathisa ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[indala tvg-id] =\> [entsha tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Hluzisa ngokwegama lesitishi esikuluhlu olumhlophe</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[igama okanye tvg-name]\". Isihlomelo seqhekeza lombhalo: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[igama okanye tvg-name]\". Isihlomelo somgca ongaphakathi ongenankathalo ngokwahlukana koonobumba: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Hlela ngomjelo ID Uluhlu oluvumelekileyo</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Inani elinye kumgca ngamnye. Ifomathi: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Hluzisa ngokwegama lesitishi kuluhlu olumnyama</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Ngalo M3U iziteshi</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Iitshaneli ezifunyenweyo kuluhlu oluvumelekileyo M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Musa ukufaka kuluhlu olukhuselekileyo iitshaneli ezifunyenweyo M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Inani elinye kumgca ngamnye. Isihlomelo somtya ongaphakathi.: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Elinye ixabiso ngomgca ngamnye. Isihlomelo somgca ongaphakathi ongenankathalo ngohlobo lwezinhlamvu ezinkulu nezincinci.: \"#~*\"</string>
 </resources>

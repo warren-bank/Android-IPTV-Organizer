@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kartta kanavalta ID kanavaan ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Yksi arvo riviä kohden. Muoto: \"[vanha tvg-id] =\> [uusi tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Suodata kanavan nimen sallittujen luettelon mukaan</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Yksi arvo riviä kohden. Muoto: \"[nimi tai tvg-name]\". Alimerkkijonon etuliite: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Yksi arvo riviä kohden. Muoto: \"[nimi tai tvg-name]\". Etuliite, joka poistaa kirjainkokoerojen merkityksen osajonosta: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Suodata kanavan mukaan ID sallittujen luettelo</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Yksi arvo riviä kohden. Muoto: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Suodata kanavan nimen mustan listan mukaan</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Suodata M3U kanavat</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Sallittujen kanavien luettelo löytyy kohdasta M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Älä lisää sallittujen kanavien luetteloon kanavia, jotka löytyvät M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Yksi arvo riviä kohden. Alijonon etuliite: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Yksi arvo riviä kohden. Etuliite, jonka avulla osajonoa etsitään kirjainkokoa huomioimatta: \"#~*\"</string>
 </resources>

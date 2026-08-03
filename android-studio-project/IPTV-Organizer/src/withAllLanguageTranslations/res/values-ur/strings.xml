@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">چینل سے نقشہ ID راہ دینا ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ہر لائن پر ایک قدر۔ فارمیٹ: \"[پرانا tvg-id] =\> [نیا tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">چینل کے نام کے مطابق وائٹ لسٹ کریں</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ہر لائن پر ایک قدر۔ فارمیٹ: \"[نام یا tvg-name]\". ذیلی سٹرنگ کے لیے پیشِ نام: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ہر لائن پر ایک عدد۔ فارمیٹ: \"[نام یا tvg-name]\". حروفِ بڑے/چھوٹے کے لحاظ سے غیر حساس ذیلی سٹرنگ کے لیے پیشِ لفظ: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">چینل کے لحاظ سے چھانٹیں ID سفید فہرست</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ہر لائن پر ایک قدر۔ فارمیٹ: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">چینل کے نام کے ذریعے بلیک لسٹ فلٹر کریں</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">کے ذریعے فلٹر کریں M3U نہادیں</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >وائٹ لسٹ چینلز جو میں پائے گئے M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">میں پائے جانے والے چینلز کو وائٹ لسٹ نہ کریں۔ M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">ہر لائن میں ایک قدر۔ ذیلی سٹرنگ کے لیے پیشِ لفظ: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">ہر لائن پر ایک قدر۔ کیس-انسِنسِٹیو ذیلی سٹرنگ کے لیے پیشِ لفظ: \"#~*\"</string>
 </resources>

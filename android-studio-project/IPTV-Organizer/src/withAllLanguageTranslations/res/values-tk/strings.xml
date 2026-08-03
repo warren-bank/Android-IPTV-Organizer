@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanal boýunça harita ID ugurlamaq ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Her setirde bir gymmat. Format: \"[köne tvg-id] =\> [täze tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Akylly sanaw boýunça kanal ady boýunça süzüň</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Her setirde bir gymmat. Format: \"[at ýa-da tvg-name]\". Alt satyr üçin öňgoşma: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Her setirde bir gymmat. Format: \"[at ýa-da tvg-name]\". Böyük-kiçi harpa garaşsyz alt satry üçin öňgoşma: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanal boýunça süzüň ID Ak sanaw</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Her setirde bir gymmat. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Kanal ady boýunça gara sanawda süzüň</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Boýunça süzüň M3U kanallar</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ak sanawdaky kanallar tapyldy M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Tapylan kanallary ak sanawa goýmaň M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Her setirde bir gymmat. Alt setir üçin öňgoşma: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Her setirde bir gymmat. Harp uly-kiçiligine garamazdan alt setir üçin öňgoşma: \"#~*\"</string>
 </resources>

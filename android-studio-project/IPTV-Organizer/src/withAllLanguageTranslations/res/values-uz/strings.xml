@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanalning xaritasi ID yo\'naltirish uchun ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Har bir satrda bitta qiymat. Format: \"[eski tvg-id] =\> [yangi tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Kanal nomiga ko\'ra oq ro\'yxat bo\'yicha filtrlash</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Har bir satrda bitta qiymat. Format: \"[nomi yoki tvg-name]\". Substring uchun prefiks: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Har bir satrda bitta qiymat. Format: \"[nomi yoki tvg-name]\". Bog\'lamasiz satr bo\'lagi uchun prefiks: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanal bo\'yicha filtrlash ID Oq ro\'yxat</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Har bir satrda bitta qiymat. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Kanal nomi bo\'yicha qora ro\'yxat bo\'yicha filtrlash</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrlash bo\'yicha M3U kanallar</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Oq ro\'yxatdagi kanallar topildi M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Topilgan kanallarni oq ro\'yxatga kiritmang M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Har bir satrda bitta qiymat.   Substring uchun prefiks: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Har bir satrda bitta qiymat.  Bog\'lamasiz satr bo\'laklari uchun prefiks: \"#~*\"</string>
 </resources>

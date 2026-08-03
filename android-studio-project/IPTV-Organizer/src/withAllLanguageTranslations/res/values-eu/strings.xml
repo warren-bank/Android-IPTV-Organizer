@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanaleko mapa ID bideratzeko ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Ilara bakoitzeko balio bat. Formatu: \"[zaharra tvg-id] =\> [berri tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Kanalaren izenaren arabera zuri-zerrendatu</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ilara bakoitzeko balio bat. Formatu: \"[izena edo tvg-name]\". Azpisoka-testuaren aurreizkia: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ilara bakoitzeko balio bat. Formatu: \"[izena edo tvg-name]\". Letra-kasurik gabeko azpikatearako aurreizkia: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanalaren arabera iragazi ID Zerrenda zuria</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ilara bakoitzeko balio bat. Formatu: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Kanalaren izenaren arabera zerrenda beltzean iragazi</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Iragazi honen arabera M3U kanalak</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Zerrenda-zuri kanalak aurkitu dira M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ez zerrenda zurian sartu bertan aurkitutako kanalak M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Ilara bakoitzeko balio bat. Azpi-katearen aurreizkia: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Ilara bakoitzeko balio bat. Letra-majuskulak eta -minuskulak bereizten ez dituen azpikatearen aurreizkia: \"#~*\"</string>
 </resources>

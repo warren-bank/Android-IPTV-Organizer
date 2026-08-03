@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Сувгаас авсан газрын зураг ID чиглүүлэх ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Мөр бүрт нэг утга. Формат: \"[хуучин tvg-id] =\> [шинэ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Сувгийн нэрний цагаан жагсаалтаар шүүгээрэй</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Мөр бүрт нэг утга. Формат: \"[нэр эсвэл tvg-name]\". Дэд ороомогт зориулсан урд талын залгаас: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Мөр бүрт нэг утга. Формат: \"[нэр эсвэл tvg-name]\". Үсгийн том жижиг ялгааг үл харгалзах дэд оронд зориулсан урд талын залгаас: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Сувгаар шүүх ID Цагаан жагсаалт</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Мөр бүрт нэг утга. Формат: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Сувгийн нэрээр хар жагсаалтад шүүх</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">...-ээр шүүх M3U сувгууд</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Олдсон цагаан жагсаалтын сувгууд M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Олдсон сувгуудыг цагаан жагсаалтад оруулахгүй M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Мөр бүрт нэг утга. Дэд мөрний урд талын урьдчилсан тэмдэгт: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Нэг мөрөнд нэг утга. Их, жижиг үсэг ялгадаггүй дэд олдцын урьд талын залгаас: \"#~*\"</string>
 </resources>

@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa z kanálu ID do kanálu ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Jedna hodnota na řádek. Formát: \"[starý tvg-id] =\> [nové tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrovat podle seznamu povolených názvů kanálů</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Jedna hodnota na řádek. Formát: \"[jméno nebo tvg-name]\". Předpona pro podřetězec: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Jedna hodnota na řádek. Formát: \"[jméno nebo tvg-name]\". Předpona pro podřetězec bez rozlišování velkých a malých písmen: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrovat podle kanálu ID seznam povolených adres</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Jedna hodnota na řádek. Formát: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filtrovat podle názvu kanálu – černá listina</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrovat podle M3U kanály</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanály na seznamu povolených, které se nacházejí v M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kanály nalezené v souboru M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Jedna hodnota na řádek. Předpona pro podřetězec: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Jedna hodnota na řádek. Předpona pro podřetězec, u kterého se nerozlišují velká a malá písmena: \"#~*\"</string>
 </resources>

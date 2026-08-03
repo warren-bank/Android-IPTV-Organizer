@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">চ্যানেল থেকে মানচিত্র ID পরিচালিত করার জন্য ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">প্রতি লাইনে একটি মান। ফরম্যাট: \"[পুরনো tvg-id] =\> [নতুন tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">চ্যানেল নামের হোয়াইটলিস্ট অনুযায়ী ফিল্টার করুন</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">প্রতি লাইনে একটি মান। ফরম্যাট: \"[নাম অথবা tvg-name]\". উপসর্গ সাবস্ট্রিংয়ের জন্য: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">প্রতি লাইনে একটি মান। ফরম্যাট: \"[নাম অথবা tvg-name]\". বড়হাতের-ছোটহাতের অক্ষর-সংবেদনশীল নয় এমন উপ-স্ট্রিংয়ের জন্য উপসর্গ: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">চ্যানেল অনুযায়ী ফিল্টার করুন ID সাদা তালিকা</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">প্রতি লাইনে একটি মান। ফরম্যাট: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">চ্যানেল নামের ব্ল্যাকলিস্ট অনুযায়ী ফিল্টার করুন</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">দ্বারা ফিল্টার করুন M3U চ্যানেলসমূহ</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >হোয়াইটলিস্ট চ্যানেলগুলি পাওয়া গেছে M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">এতে পাওয়া চ্যানেলগুলো হোয়াইটলিস্ট করবেন না M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">প্রতি লাইনে একটি মান। সাবস্ট্রিংয়ের জন্য উপসর্গ।: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">প্রতি লাইনে একটি মান। কেস-সংবেদনশীল নয় এমন সাবস্ট্রিংয়ের জন্য প্রিফিক্স।: \"#~*\"</string>
 </resources>

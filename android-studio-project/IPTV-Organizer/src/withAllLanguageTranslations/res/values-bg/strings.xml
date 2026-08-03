@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Карта от канала ID към канала ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Една стойност на ред. Формат: \"[стар tvg-id] =\> [ново tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Филтриране по списъка с разрешени имена на канали</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Една стойност на ред. Формат: \"[име или tvg-name]\". Префикс за подниз: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Една стойност на ред. Формат: \"[име или tvg-name]\". Префикс за подниз, при който не се прави разлика между главни и малки букви: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Филтриране по канал ID списък с разрешени адреси</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Една стойност на ред. Формат: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Филтриране по име на канал в черния списък</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Филтрирай по M3U канали</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Каналите от белия списък, открити в M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Не добавяйте в белия списък канали, намиращи се в M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Една стойност на ред. Префикс за подниз: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Една стойност на ред. Префикс за подниз, при който не се прави разлика между главни и малки букви: \"#~*\"</string>
 </resources>

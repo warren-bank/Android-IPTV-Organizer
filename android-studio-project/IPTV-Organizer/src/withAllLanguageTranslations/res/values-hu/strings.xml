@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Térkép a csatornáról ID csatornázni ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Soronként egy érték. Formátum: \"[régi tvg-id] =\> [új tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Szűrés a csatornanevek engedélyezett listája alapján</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Soronként egy érték. Formátum: \"[név vagy tvg-name]\". Előtag a részszöveghez: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Soronként egy érték. Formátum: \"[név vagy tvg-name]\". Előtag a kis- és nagybetűktől független részszöveghez: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Szűrés csatorna szerint ID fehér lista</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Soronként egy érték. Formátum: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Szűrés csatorna neve szerint (feketelista)</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Szűrés M3U csatornák</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >A következő helyeken található csatornák felvétele a fehérlistára: M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ne vegye fel a fehérlistára az alábbi helyeken található csatornákat: M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Soronként egy érték. Az alkaraktersorozat előtagja: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Soronként egy érték. A kis- és nagybetűktől független részszöveg előtagja: \"#~*\"</string>
 </resources>

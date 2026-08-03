@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mapa z kanału ID do kanału ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Jedna wartość w każdym wierszu. Format: \"[stary tvg-id] =\> [nowy tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtruj według białej listy nazw kanałów</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Jedna wartość w każdym wierszu. Format: \"[nazwa lub tvg-name]\". Przedrostek dla podciągu: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Jedna wartość w każdym wierszu. Format: \"[nazwa lub tvg-name]\". Przedrostek dla podciągu, w którym nie uwzględnia się wielkości liter: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtruj według kanału ID biała lista</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Jedna wartość w każdym wierszu. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filtruj według nazwy kanału z czarnej listy</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtruj według M3U kanały</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanały z białej listy znalezione w M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Nie dodawaj do białej listy kanałów znalezionych w M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Jedna wartość w każdym wierszu. Prefiks podciągu: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Jedna wartość w każdym wierszu. Prefiks dla podciągu, w którym nie uwzględnia się wielkości liter: \"#~*\"</string>
 </resources>

@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">ചാനലിൽ നിന്നുള്ള ഭൂപടം ID നയിക്കാൻ ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പഴയ tvg-id] =\> [പുതിയ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">വൈറ്റ്‌ലിസ്റ്റ് ചെയ്ത ചാനൽ പേര് അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പേര് അല്ലെങ്കിൽ tvg-name]\". സബ്സ്ട്രിംഗിനുള്ള പ്രിഫിക്സ്: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[പേര് അല്ലെങ്കിൽ tvg-name]\". വ്യക്തിവിശേഷം പരിഗണിക്കാത്ത ഉപസരണിക്കുള്ള പ്രിഫിക്സ്: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">ചാനൽ അനുസരിച്ച് ഫിൽട്ടർ ചെയ്യുക ID വൈറ്റ്‌ലിസ്റ്റ്</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. ഫോർമാറ്റ്: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">ചാനൽ പേര് ബ്ലാക്ക്‌ലിസ്റ്റ് ചെയ്ത് ഫിൽട്ടർ ചെയ്യുക</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">ഇതുവഴി ഫിൽട്ടർ ചെയ്യുക M3U ചാനലുകൾ</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >വൈറ്റ്‌ലിസ്റ്റ് ചെയ്ത ചാനലുകൾ കണ്ടെത്തിയത് M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ഇതിൽ കണ്ടെത്തിയ ചാനലുകൾ വൈറ്റ്‌ലിസ്റ്റ് ചെയ്യരുത് M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. സബ്സ്ട്രിംഗിനുള്ള പ്രിഫിക്സ്: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. അക്ഷരവലിഭേദമില്ലാത്ത ഉപസരണിക്കുള്ള പ്രിഫിക്സ്: \"#~*\"</string>
 </resources>

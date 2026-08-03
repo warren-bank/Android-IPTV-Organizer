@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">채널의 지도 ID ~로 유도하기 위해 ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">한 줄에 하나의 값을 입력하십시오. 형식: \"[옛날 tvg-id] =\> [새 tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">채널 이름 허용 목록으로 필터링</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">한 줄에 하나의 값을 입력하십시오. 형식: \"[이름 또는 tvg-name]\". 부분 문자열 접두사: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">한 줄에 하나의 값을 입력하십시오. 형식: \"[이름 또는 tvg-name]\". 대소문자를 구분하지 않는 부분 문자열에 대한 접두사: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">채널별로 필터링하기 ID 허용 목록</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">한 줄에 하나의 값을 입력하십시오. 형식: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">채널 이름 블랙리스트로 필터링</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">다음 기준으로 필터링 M3U 채널</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >다음 위치에서 발견된 화이트리스트 채널: M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">다음 위치에서 발견된 채널을 허용 목록에 추가하지 마십시오. M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">한 줄에 하나의 값. 부분 문자열의 접두사: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">한 줄에 하나의 값을 입력하십시오. 대소문자를 구분하지 않는 부분 문자열의 접두사: \"#~*\"</string>
 </resources>

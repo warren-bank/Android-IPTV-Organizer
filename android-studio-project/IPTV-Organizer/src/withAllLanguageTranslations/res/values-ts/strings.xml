@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mepe kusuka eka xitichi ID ku kongomisa ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[khale tvg-id] =\> [lentshwa tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Sefa hi vito ra xitichi lexi pfumeleriweke</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ntsengo wun\'we hi layini. Fomati: \"[vito kumbe tvg-name]\". Xirhangi xa xiphemu xa ntsari: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Ntsengo wun\'we hi layini. Fomati: \"[vito kumbe tvg-name]\". Xirhangi xa xiphemu xa tsalwa lexi nga riki na mhaka ya maletere lamakulu ni lamatsongo: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Hluta hi xitichi ID Nxaxamelo wa lava pfumeleriwaka</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Ntsengo wun\'we hi ntsariso. Fomati: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Sefa hi vito ra xitichi xa nxaxamelo wa vubihi</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Hluta hi M3U Switichi</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Switichi leswi kumekaka eka nxaxamelo wo pfumeleriwa M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">U nga pfumeleli switichi leswi kumekaka eka M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Ntsengo wun\'we hi layini. Xirhangi xa xiphemu xa layini.: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Ntsengo wun\'we hi layini. Xirhangi xa xiphemu xa layini lexi nga riki na mhaka na maletere lamakulu kumbe lamatsongo.: \"#~*\"</string>
 </resources>

@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Qhawanamanta saywiti ID pusay ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[Mawka tvg-id] =\> [musuq tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Q\'ispichay: ñan sutinwan yuraq listapi</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[suti utaq tvg-name]\". Sapsi qillqa t\'aqapaq ñawpaq k\'askaq: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[suti utaq tvg-name]\". Qillqa sayaynin mana chaninchakuq qillqa t\'aqapaq ñawpaq k\'askaq: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Ñanman hina suysuy ID Allin kaqkunapaq lista</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Sapa siqipi huk chanin. Rikch\'ay: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Q\'illaychay: Canal sutiwan hark\'asqa lista</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Akllaymanhina M3U Ñankuna</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Taripasqa yupasqa ñankuna M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ama allinchanchu tarisqa kanalakunata M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Sapa siqipi huk chanin. Ukhu siqipaq ñawpaq qillqa.: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Sapa siqipi huk chanin. Qillqa sayaynin mana chaninchasqa qatiq qillqa t\'aqapaq ñawpaq yapay.: \"#~*\"</string>
 </resources>

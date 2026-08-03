@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">ਚੈਨਲ ਤੋਂ ਨਕਸ਼ਾ ID ਨਾਲੀ ਲਗਾਉਣ ਲਈ ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਫਾਰਮੈਟ: \"[ਪੁਰਾਣਾ tvg-id] =\> [ਨਵਾਂ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">ਚੈਨਲ ਦੇ ਨਾਮ ਨਾਲ ਵ੍ਹਾਈਟਲਿਸਟ ਫਿਲਟਰ ਕਰੋ</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਫਾਰਮੈਟ: \"[ਨਾਮ ਜਾਂ tvg-name]\". ਸਬਸਟਰਿੰਗ ਲਈ ਪ੍ਰਿਫਿਕਸ: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਫਾਰਮੈਟ: \"[ਨਾਮ ਜਾਂ tvg-name]\". ਕੇਸ-ਅਣਪੱਖੀ ਉਪ-ਤਾਰ ਲਈ ਪ੍ਰਿਫਿਕਸ: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">ਚੈਨਲ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ ID ਵਾਈਟਲਿਸਟ</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਫਾਰਮੈਟ: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">ਚੈਨਲ ਦੇ ਨਾਮ ਨਾਲ ਬਲੈਕਲਿਸਟ ਕਰਕੇ ਫਿਲਟਰ ਕਰੋ</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">ਦੇ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ M3U ਚੈਨਲ</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ਵਿੱਚ ਲੱਭੇ ਗਏ ਵਾਈਟਲਿਸਟ ਚੈਨਲ M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ਵਿੱਚ ਪਾਏ ਗਏ ਚੈਨਲਾਂ ਨੂੰ ਵਾਈਟਲਿਸਟ ਨਾ ਕਰੋ M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">ਹਰ ਲਾਈਨ \'ਤੇ ਇੱਕ ਮੁੱਲ। ਸਬਸਟਰਿੰਗ ਲਈ ਪ੍ਰੀਫਿਕਸ: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">ਹਰ ਲਾਈਨ ਲਈ ਇੱਕ ਮੁੱਲ। ਕੇਸ-ਅਣਪੱਖੀ ਸਬਸਟਰਿੰਗ ਲਈ ਪ੍ਰਿਫਿਕਸ: \"#~*\"</string>
 </resources>

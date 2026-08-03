@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kanalın xəritəsi ID istiqamətləndirmək ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Hər sətrdə bir dəyər. Format: \"[köhnə tvg-id] =\> [yeni tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Kanal adı ağ siyahısı üzrə filtrləyin</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Hər sətrdə bir dəyər. Format: \"[ad və ya tvg-name]\". Alt sətir üçün ön şəkilçi: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Hər sətrdə bir dəyər. Format: \"[ad və ya tvg-name]\". Böyük-kiçik hərflərə baxmayan alt yazı üçün ön şəkilçi: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Kanal üzrə filtrləyin ID Ağ siyahı</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Hər sətrdə bir dəyər. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Kanal adı üzrə qara siyahı filtrləyin</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrlə M3U kanallar</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ağ siyahı kanalları tapıldı M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Tapılan kanalları ağ siyahıya salmayın M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Hər sətr üçün bir dəyər. Alt sətr üçün ön şəkilçi: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Hər sətrdə bir dəyər. Böyük-kiçik hərfə laqeyd alt sətir üçün ön şəkilçi: \"#~*\"</string>
 </resources>

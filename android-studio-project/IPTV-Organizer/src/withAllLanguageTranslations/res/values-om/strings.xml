@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaartaa chaanaalirraa ID gara ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Sarara tokko irratti gatii tokko. Unka: \"[moofaa tvg-id] =\> [haaraa tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Maqaa chaanaaliitiin filadhu (kanneen hayyamaman qofa)</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sarara tokko irratti gatii tokko. Unka: \"[Maqaa yookiin tvg-name]\". Jaalqabaa baafata barreeffamaa: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sarara tokko irratti gatii tokko. Unka: \"[Maqaa yookiin tvg-name]\". Jaalamaa barreeffama kutaa walqixa hin baafneef: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Chaanaaliin calali ID Tarree eeyyamamaa</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Sarara tokko irratti gatii tokko. Unka: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Maqaa chaanaaliitiin calali</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Akka M3U Daandiiwwan</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Chaanaalota tarree eeyyamamaa keessatti argaman M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kanneen keessatti argaman tarreessa addaa keessa hin galchin M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Sarara tokko irratti gatii tokko. Jijjiirraa jecha keessaa: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Sarara tokko irratti gatii tokko. Jeecha barreeffama keessaa kan qubee gurguddaa hin ilaaliniif dursaan.: \"#~*\"</string>
 </resources>

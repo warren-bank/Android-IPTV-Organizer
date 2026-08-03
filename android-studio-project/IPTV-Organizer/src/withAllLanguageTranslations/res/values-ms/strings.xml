@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Peta daripada saluran ID untuk menyalurkan ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Satu nilai setiap baris. Format: \"[lama tvg-id] =\> [baru tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Tapis mengikut nama saluran putih</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Satu nilai setiap baris. Format: \"[nama atau tvg-name]\". Awalan untuk rentetan sub: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Satu nilai setiap baris. Format: \"[nama atau tvg-name]\". Awalan untuk rentetan suburutan yang tidak peka huruf besar kecil: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Tapis mengikut saluran ID senarai putih</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Satu nilai setiap baris. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Tapis mengikut nama saluran senarai hitam</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Tapis mengikut M3U saluran</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Saluran senarai putih yang ditemui dalam M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Jangan masukkan saluran yang ditemui dalam senarai putih. M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Satu nilai setiap baris. Awalan untuk rentetan sub: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Satu nilai setiap baris. Awalan untuk rentetan sub-rantaian yang tidak peka huruf besar-kecil: \"#~*\"</string>
 </resources>

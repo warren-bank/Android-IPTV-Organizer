@@ -113,7 +113,7 @@
 
   <!-- SettingsActivity [M3U Channels]: Filter by channel name whitelist -->
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filter by channel name whitelist</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">One value per line. Format: \"[name or tvg-name]\". Prefix for substring: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">One value per line. Format: \"[name or tvg-name]\". Prefix for case-insensitive substring: \"#~*\"</string>
 
   <!-- SettingsActivity [M3U Channels]: Filter by channel ID whitelist -->
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filter by channel ID whitelist</string>
@@ -154,7 +154,7 @@
 
   <!-- SettingsActivity [EPG Channels]: Filter by channel name whitelist -->
   <string name="pref_epg_channels_filter_whitelist_names_title">@string/pref_m3u_channels_filter_whitelist_names_title</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">One value per line. Prefix for substring: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">One value per line. Prefix for case-insensitive substring: \"#~*\"</string>
 
   <!-- SettingsActivity [EPG Channels]: Filter by channel ID whitelist -->
   <string name="pref_epg_channels_filter_whitelist_ids_title">@string/pref_m3u_channels_filter_whitelist_ids_title</string>

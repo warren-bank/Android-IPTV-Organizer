@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">แผนที่จากช่อง ID เพื่อส่งผ่าน ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[เก่า tvg-id] =\> [ใหม่ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">กรองตามรายชื่อช่องที่อนุญาต</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[ชื่อ หรือ tvg-name]\". คำนำหน้าสำหรับส่วนย่อยของสตริง: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[ชื่อ หรือ tvg-name]\". คำนำหน้าสำหรับส่วนย่อยของข้อความที่ไม่แยกตัวอักษรใหญ่-เล็ก: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">กรองตามช่อง ID รายชื่ออนุญาต</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง รูปแบบ: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">กรองตามรายชื่อช่องที่ถูกบล็อก</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">กรองตาม M3U ช่อง</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ช่องที่อยู่ในรายชื่ออนุญาต (Whitelist) ที่พบใน M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">อย่าเพิ่มช่องที่พบใน M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง คำนำหน้าสำหรับส่วนย่อยของสตริง: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง คำนำหน้าสำหรับส่วนย่อยของสตริงที่ไม่แยกแยะตัวพิมพ์ใหญ่-เล็ก: \"#~*\"</string>
 </resources>

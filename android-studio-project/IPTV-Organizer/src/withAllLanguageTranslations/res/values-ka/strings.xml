@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">რუკა არხიდან ID მიმართულება მისცეს ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ერთი მნიშვნელობა თითო სტრიქონში. ფორმატი: \"[ძველი tvg-id] =\> [ახალი tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">ფილტრი არხის სახელის თეთრ სიაში</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ერთი მნიშვნელობა თითო სტრიქონში. ფორმატი: \"[სახელი ან tvg-name]\". პრაფიქსი სუბსტრიგისთვის: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ერთი მნიშვნელობა თითო სტრიქონში. ფორმატი: \"[სახელი ან tvg-name]\". პრეფიქსი რეგისტრისგან დამოუკიდებელი სუბსტრიქტისთვის: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">ფილტრი არხის მიხედვით ID თეთრი სია</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ერთი მნიშვნელობა თითო სტრიქონში. ფორმატი: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">ფილტრი არხის სახელის შავ სიაში</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">ფილტრით M3U არხები</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >თეთრ სიაში არსებული არხები იპოვეს M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">არ დაამატოთ თეთრ სიაში არხები, რომლებიც აღმოჩენილია M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">ერთი მნიშვნელობა თითო სტრიქონში. პრაფიქსი ქვე-სტრიქონისთვის: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">ერთი მნიშვნელობა თითო სტრიქონში. პრეფიქსი რეგულარული გამოსახულებისთვის, რომელიც არ განასხვავებს რეგისტრებს.: \"#~*\"</string>
 </resources>

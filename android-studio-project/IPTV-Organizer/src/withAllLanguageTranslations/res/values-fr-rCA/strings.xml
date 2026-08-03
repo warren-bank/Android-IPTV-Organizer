@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Carte tirée de la chaîne ID vers ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Une valeur par ligne. Format: \"[ancien tvg-id] =\> [nouveau tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrer selon la liste blanche des noms de chaînes</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Une valeur par ligne. Format: \"[nom ou tvg-name]\". Préfixe pour une sous-chaîne: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Une valeur par ligne. Format: \"[nom ou tvg-name]\". Préfixe pour une sous-chaîne sans distinction de majuscules et minuscules: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrer par chaîne ID liste blanche</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Une valeur par ligne. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filtrer par nom de chaîne figurant sur la liste noire</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrer par M3U chaînes</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ajouter à la liste blanche les chaînes trouvées dans M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ne pas ajouter à la liste blanche les chaînes trouvées dans M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Une valeur par ligne. Préfixe de la sous-chaîne: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Une valeur par ligne. Préfixe pour la sous-chaîne sans distinction de majuscules et minuscules: \"#~*\"</string>
 </resources>

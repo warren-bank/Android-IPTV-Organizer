@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Map o\'r sianel ID i sianelu ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Un gwerth fesul llinell. Fformat: \"[hen tvg-id] =\> [newydd tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Hidlo yn ôl enw sianel gwyn-rhestr</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un gwerth fesul llinell. Fformat: \"[enw neu tvg-name]\". Rhagddodiad ar gyfer is-llinyn: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un gwerth fesul llinell. Fformat: \"[enw neu tvg-name]\". Rhagddodiad ar gyfer is-llinyn an-sensitif i gofnod: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Hidlo yn ôl sianel ID rhestr wen</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Un gwerth fesul llinell. Fformat: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Hidlo yn ôl enw sianel gwaharddedig</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Hidlo yn ôl M3U sianeli</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Sianeli a ddarganfuwyd ar y rhestr wen M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Peidiwch â gwyn-rhestru sianeli a ddarganfuwyd yn M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Un gwerth fesul llinell. Rhagddodiad ar gyfer is-llinyn: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Un gwerth fesul llinell. Rhagddodiad ar gyfer is-llinyn di-wahaniaeth o ran priflythrennau a llythrennau bach.: \"#~*\"</string>
 </resources>

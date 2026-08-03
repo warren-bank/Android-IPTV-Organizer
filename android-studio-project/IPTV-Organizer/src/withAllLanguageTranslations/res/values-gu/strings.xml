@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">ચેનલમાંથી નકશો ID માર્ગદર્શિત કરવા ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">દરેક પંક્તિમાં એક મૂલ્ય. ફોર્મેટ: \"[જૂનું tvg-id] =\> [નવું tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">ચેનલ નામ વ્હાઇટલિસ્ટ દ્વારા ફિલ્ટર કરો</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">દરેક પંક્તિમાં એક મૂલ્ય. ફોર્મેટ: \"[નામ અથવા tvg-name]\". સબસ્ટ્રિંગ માટે પૂર્વપ્રત્યય: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">દરેક પંક્તિમાં એક મૂલ્ય. ફોર્મેટ: \"[નામ અથવા tvg-name]\". કેસ-અસંવેદનશીલ ઉપસૂત્ર માટે પૂર્વપ્રત્યય: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">ચેનલ દ્વારા ફિલ્ટર કરો ID સફેદ યાદી</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">દરેક પંક્તિમાં એક મૂલ્ય. ફોર્મેટ: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">ચેનલ નામ દ્વારા બ્લેકલિસ્ટ ફિલ્ટર કરો</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">દ્વારા ફિલ્ટર કરો M3U ચેનલ્સ</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >માં શ્વેતસૂચીમાં સામેલ ચેનલો મળ્યાં M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">માં મળતા ચેનલોને વ્હાઇટલિસ્ટ ન કરો M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">દરેક પંક્તિમાં એક મૂલ્ય. ઉપસૂત્ર માટે પૂર્વપ્રત્યય: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">દરેક પંક્તિમાં એક મૂલ્ય. કેસ-અસંવેદનશીલ ઉપસૂત્ર માટે પૂર્વપ્રત્યય: \"#~*\"</string>
 </resources>

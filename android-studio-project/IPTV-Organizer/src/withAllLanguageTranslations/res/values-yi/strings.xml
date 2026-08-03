@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">מאַפּע פֿון קאַנאַל ID צו קאַנאַליזירן ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[אַלט tvg-id] =\> [נײַ tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">פֿילטרירן לויט קאַנאַל־נאָמען ווײַטלײַסט</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[נאָמען אָדער tvg-name]\". פּרעפֿיקס פֿאַר אונטערשטרינג: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[נאָמען אָדער tvg-name]\". פּרעפֿיקס פֿאַר אַ פֿאַל-אומאָפּהענגיקן אונטערשטרינג: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">פֿילטרירן לויט קאַנאַל ID ווייסליסטע</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">איין ווערט פּער שורה. פֿאָרמאַט: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">פֿילטרירן לויט קאַנאַל־נאָמען שוואַרצע ליסטע</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">פֿילטער לויט M3U קאַנאַלן</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ווייטליסט־קאַנאַלן געפֿונען אין M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ניט ווײַטלײַסטן קאַנאַלן געפֿונען אין M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">איין ווערט פּער שורה. פּרעפֿיקס פֿאַר אונטערשרײַף: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">איין ווערט פּער שורה. פּרעפֿיקס פֿאַר אַ פֿאַל-אומאָפּהענגיקן אונטערשרײַף: \"#~*\"</string>
 </resources>

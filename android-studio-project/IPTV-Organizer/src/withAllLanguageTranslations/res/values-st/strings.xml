@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">\'Mapa o tsoang kanale ID ho tsamaisa ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Boleng bo le bong moleng o le mong. Fomate: \"[khale tvg-id] =\> [secha tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Sefa ka lebitso la kanale e thathamisitsoeng e tšoeu</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Boleng bo le bong moleng o le mong. Fomate: \"[Lebitso kapa tvg-name]\". Sehlongwa sa karoloana ea mola: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Boleng bo le bong moleng o le mong. Fomate: \"[Lebitso kapa tvg-name]\". Sehlongwa sa karolo e tsitsitseng e sa shebaneng le boholo ba litlhaku: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Sefa ka kanale ID Lethathamo le letle</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Boleng bo le bong moleng o le mong. Fomate: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Sefa ka lebitso la kanale e thibetsoeng</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Sefa ka M3U mekgwa</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Lekala tse fumanoeng lethathamong le lethekoang M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Se kenye lethathamong le lethefisitsoeng liteishene tse fumanoeng ho M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Boleng bo le bong moleng o le mong. Sehlongwatheng bakeng sa karoloana ea mola.: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Boleng bo le bong moleng o le mong. Sehlongwafatso bakeng sa karolo ea mongolo e sa shebaneng le boholo ba litlhaku.: \"#~*\"</string>
 </resources>

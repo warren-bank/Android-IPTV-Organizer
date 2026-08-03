@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kort úr rás ID að beina ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Eitt gildi á línu. Sniðmát: \"[gamall tvg-id] =\> [nýtt tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Sía eftir nafni hvíta lista rásarinnar</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eitt gildi á línu. Sniðmát: \"[nafn eða tvg-name]\". Forskeyting fyrir undirstreng: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eitt gildi á línu. Sniðmát: \"[nafn eða tvg-name]\". Forskeytisleit fyrir stafaháðslausan undirstreng: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Sía eftir rás ID hvítt listi</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Eitt gildi á línu. Sniðmát: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Sía eftir rásarnafni svartlista</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Sía eftir M3U rásir</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Hvíttlistaðir rásir fundnar í M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ekki setja rásir sem finnast í hvítlista M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Eitt gildi á hverri línu. Forskeytisletur fyrir undirlínu: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Eitt gildi á hverri línu. Forskeytisletur fyrir stór- og smáleturblind undirkeðju: \"#~*\"</string>
 </resources>

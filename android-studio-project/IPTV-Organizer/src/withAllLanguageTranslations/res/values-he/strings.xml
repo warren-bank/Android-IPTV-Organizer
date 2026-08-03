@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">מפה מהערוץ ID לערוץ ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ערך אחד בכל שורה. פורמט: \"[ישן tvg-id] =\> [חדש tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">סינון לפי רשימת שמות הערוצים המותרים</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ערך אחד בכל שורה. פורמט: \"[שם או tvg-name]\". קידומת למחרוזת משנה: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ערך אחד בכל שורה. פורמט: \"[שם או tvg-name]\". קידומת למחרוזת משנה שאינה מבחינה בין אותיות גדולות לקטנות: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">סינון לפי ערוץ ID רשימת המאושרים</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ערך אחד בכל שורה. פורמט: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">סינון לפי שם הערוץ ברשימת החסימה</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">סינון לפי M3U ערוצים</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ערוצים ברשימת ההיתרים שנמצאו ב- M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">אין להוסיף לרשימת ההיתרים ערוצים הנמצאים ב- M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">ערך אחד בכל שורה. קידומת למחרוזת משנה: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">ערך אחד בכל שורה. קידומת למחרוזת משנה שאינה מבחינה בין אותיות גדולות לקטנות: \"#~*\"</string>
 </resources>

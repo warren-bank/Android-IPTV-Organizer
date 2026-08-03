@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kartenn eus ar chadenn ID da ganoliañ ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Un talvoud dre linenn. Furmad: \"[kozh tvg-id] =\> [nevez tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Silit dre anv ar chadenn war ar roll aotreet</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un talvoud dre linenn. Furmad: \"[anv pe tvg-name]\". Ragstumm evit un is-sturienn: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Un talvoud dre linenn. Furmad: \"[anv pe tvg-name]\". Ragstumm evit un is-neudennad nann-sensibl d\'ar c\'hras: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Silañ dre ganol ID roll a-vihan</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Un talvoud dre linenn. Furmad: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Silit dre anv ar chadenn (rouestell du)</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Silit dre M3U kanolioù</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanolioù gwenn kavet e M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Na lakait ket war ar roll aotreet ar c\'hanolioù kavet e M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Un talvoud dre linenn. Rakger evit an is-stennadenn: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Un talvoud dre linenn. Rakger evit an is-sturienn diouzh ar c\'has.: \"#~*\"</string>
 </resources>

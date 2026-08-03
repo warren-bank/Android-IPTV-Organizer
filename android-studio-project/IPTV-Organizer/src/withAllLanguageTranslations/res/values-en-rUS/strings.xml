@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Map from channel ID to channel ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">One value per line. Format: \"[old tvg-id] =\> [new tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filter by channel name whitelist</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">One value per line. Format: \"[name or tvg-name]\". Prefix for substring: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">One value per line. Format: \"[name or tvg-name]\". Prefix for case-insensitive substring: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filter by channel ID whitelist</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">One value per line. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filter by channel name blacklist</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filter by M3U channels</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Whitelist channels found in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Do not whitelist channels found in M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">One value per line. Prefix for substring: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">One value per line. Prefix for case-insensitive substring: \"#~*\"</string>
 </resources>

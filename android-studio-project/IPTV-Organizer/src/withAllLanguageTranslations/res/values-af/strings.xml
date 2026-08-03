@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart vanaf kanaal ID om te kanaliseer ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Een waarde per reël. Formaat: \"[oud tvg-id] =\> [nuut tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtreer volgens kanaalnaam-witslys</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Een waarde per reël. Formaat: \"[naam of tvg-name]\". Voorsetsel vir substring: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Een waarde per reël. Formaat: \"[naam of tvg-name]\". Voorsetsel vir gevoeligheidsvrye subreeks: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtreer per kanaal ID witlys</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Een waarde per reël. Formaat: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filtreer volgens kanaalnaam swartlys</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtreer op grond van M3U kanale</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Op witlys gelysde kanale gevind in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Moenie kanale wat in gevind is, witlys nie. M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Een waarde per reël. Voorsetsel vir substring: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Een waarde per reël. Voorsetsel vir onderstring wat onderskeid tussen hoofletters en kleinletters ignoreer.: \"#~*\"</string>
 </resources>

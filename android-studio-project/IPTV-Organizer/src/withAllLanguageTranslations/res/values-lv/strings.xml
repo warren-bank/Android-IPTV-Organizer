@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Karte no kanāla ID uz kanālu ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Viena vērtība katrā rindā. Formāts: \"[vecs tvg-id] =\> [jauns tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtrēt pēc kanālu nosaukumu atļauto saraksta</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Viena vērtība katrā rindā. Formāts: \"[nosaukums vai tvg-name]\". Priekšvārds apakšvirknei: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Viena vērtība katrā rindā. Formāts: \"[nosaukums vai tvg-name]\". Priekšvārds apakšvirknei, kurā netiek ņemta vērā lielu un mazo burtu atšķirība: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtrēt pēc kanāla ID balto saraksts</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Viena vērtība katrā rindā. Formāts: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filtrēt pēc kanāla nosaukuma melnajā sarakstā</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrēt pēc M3U kanāli</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanāli, kas iekļauti baltajā sarakstā un atrasti M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Neiekļaujiet baltajā sarakstā kanālus, kas atrodami M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Viena vērtība katrā rindā. Apakšvirknes prefikss: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Viena vērtība katrā rindā. Prefikss apakšvirknei, kurā netiek ņemta vērā lielu un mazo burtu atšķirība: \"#~*\"</string>
 </resources>

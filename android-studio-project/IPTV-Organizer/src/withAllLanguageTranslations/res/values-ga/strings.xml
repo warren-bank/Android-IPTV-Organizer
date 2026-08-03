@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Léarscáil ón gcainéal ID a sheoladh ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Amháin luach in aghaidh an líne. Formáid: \"[sean tvg-id] =\> [nua tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Scag de réir ainm an chainéil ar an liosta bán</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Luach amháin in aghaidh an líne. Formáid: \"[ainm nó tvg-name]\". Réimír do fhotéacs: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Aon luach in aghaidh an líne. Formáid: \"[ainm nó tvg-name]\". Réimír do fhotéacs neamhchásmhaireach: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Scag de réir cainéil ID Liosta Bán</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Amháin luach in aghaidh an líne. Formáid: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Scag de réir ainm an chainéil ar an liosta dubh</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Scag de réir M3U cainéil</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Cainéil ar an liosta bán a fhaightear i M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ná cuir ar an liosta bán cainéil a fhaightear in M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Luach amháin in aghaidh an líne. Réimír don fho-teanga: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Luach amháin in aghaidh an líne. Réimír do fhotéacs neamhchásmhaireach.: \"#~*\"</string>
 </resources>

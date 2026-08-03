@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart van het kanaal ID naar ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Eén waarde per regel. Opmaak: \"[oud tvg-id] =\> [nieuw tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filteren op de witte lijst met kanaalnamen</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eén waarde per regel. Opmaak: \"[naam of tvg-name]\". Voorvoegsel voor een deelstring: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Eén waarde per regel. Opmaak: \"[naam of tvg-name]\". Voorvoegsel voor een deelstring waarbij geen onderscheid wordt gemaakt tussen hoofdletters en kleine letters: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filteren op kanaal ID witte lijst</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Eén waarde per regel. Opmaak: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filteren op de zwarte lijst met kanaalnamen</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filteren op M3U kanalen</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanalen op de witte lijst die zijn gevonden in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Zet kanalen die je aantreft in M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Eén waarde per regel. Voorvoegsel voor de deelstring: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Eén waarde per regel. Voorvoegsel voor een substring waarbij hoofdletters en kleine letters niet van belang zijn: \"#~*\"</string>
 </resources>

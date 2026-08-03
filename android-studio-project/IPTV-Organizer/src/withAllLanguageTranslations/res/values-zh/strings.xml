@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">来自频道的地图 ID 至通道 ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">每行一个值。格式: \"[旧的 tvg-id] =\> [新 tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">按频道名称白名单筛选</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">每行一个值。格式: \"[名称或 tvg-name]\". 子字符串的前缀: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">每行一个值。格式: \"[名称或 tvg-name]\". 不区分大小写的子字符串前缀: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">按频道筛选 ID 白名单</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">每行一个值。格式: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">按频道名称“blacklist”筛选</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">按...筛选 M3U 频道</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >将以下频道加入白名单： M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">请勿将位于 M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">每行一个值。子字符串的前缀: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">每行一个值。不区分大小写的子字符串前缀: \"#~*\"</string>
 </resources>

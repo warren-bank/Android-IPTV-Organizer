@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Mmapa go tswa mo kaneleng ID go tsamaisa ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[kgologolo tvg-id] =\> [sešwa tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Sefa ka leina la setšhaba se se letleletsweng</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[leina kgotsa tvg-name]\". Mokhutlo wa karolwana ya mola: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[leina kgotsa tvg-name]\". Mokufisetsi wa karolwana ya molaetsa e e sa farologanyeng magolo le dinnye: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Sefa ka mofuta wa phasalatso ID Lethathamo la ba ba letleletsweng</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Fomete: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Sefa ka leina la setšhaba la lenyatso</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Tlhotlha ka M3U ditsela</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ditsela tse di letleletsweng tse di fitlhelwang mo M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">O se ka wa tsenya mo lenaneong le le letleletsweng dikanale tse di fitlhelwang mo M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Se se tlang pele ga karolwana ya mola.: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Boleng bo le bongwe mo moleng mongwe le mongwe. Se se tsenang kwa pele go supa karolwana ya molaetsa e e sa kgathaleng ditlhaka tse dikgolo le tse dinnye.: \"#~*\"</string>
 </resources>

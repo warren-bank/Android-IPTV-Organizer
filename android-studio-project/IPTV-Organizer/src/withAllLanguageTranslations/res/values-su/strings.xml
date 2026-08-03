@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Peta tina saluran ID pikeun ngalirkeun ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Hiji nilai per baris. Format: \"[kolot tvg-id] =\> [anyar tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Nyaring ku nami saluran dina daptar bodas</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Hiji nilai per baris. Format: \"[nami atawa tvg-name]\". Awalan pikeun rentetan substring: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Hiji nilai per baris. Format: \"[nami atawa tvg-name]\". Awalan pikeun substring anu teu ngabédakeun hurup gedé jeung leutik: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Nyaring ku saluran ID daptar bodas</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Hiji nilai per baris. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Saring ku ngaran saluran dina daptar hideung</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Saring ku M3U saluran</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Saluran whitelist kapanggih di M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ulah ngalebetkeun kana daptar bodas saluran anu kapanggih di M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Hiji nilai per baris. Prefix pikeun substring: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Hiji nilai per baris. Prefix pikeun substring anu teu ngabédakeun hurup gedé jeung leutik: \"#~*\"</string>
 </resources>

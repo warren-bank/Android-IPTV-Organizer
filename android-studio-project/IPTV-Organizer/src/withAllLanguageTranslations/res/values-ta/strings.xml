@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">சேனலிலிருந்து வரைபடம் ID வழிக்க ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. வடிவம்: \"[பழைய tvg-id] =\> [புதிய tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">சேனல் பெயர் வெள்ளைப்பட்டியல் மூலம் வடிகட்டவும்</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. வடிவம்: \"[பெயர் அல்லது tvg-name]\". துணை சரத்திற்கான முன்னொட்டு: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. வடிவம்: \"[பெயர் அல்லது tvg-name]\". பெருந்தொடக்கிற்கு எழுத்துப் பேதமற்ற உட்பொதிப்பு: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">சேனல் மூலம் வடிகட்டவும் ID வெள்ளைப் பட்டியல்</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. வடிவம்: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">சேனல் பெயரால் தடைசெய்யப்பட்டவற்றை வடிகட்டவும்</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">வடிகட்டவும் M3U சேனல்கள்</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >கண்டறியப்பட்ட வெள்ளைப் பட்டியல் சேனல்கள் M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">கண்டறியப்பட்ட சேனல்களை வெள்ளைப் பட்டியலில் சேர்க்க வேண்டாம் M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. துணைச்சரிக்கு முன்னொட்டு: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">ஒவ்வொரு வரியிலும் ஒரு மதிப்பு. எழுத்துப் பெரிய எழுத்து வேறுபாடற்ற துணைச்சரளுக்கு முன்னொட்டு.: \"#~*\"</string>
 </resources>

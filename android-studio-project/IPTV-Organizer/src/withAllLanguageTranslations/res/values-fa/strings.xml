@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">نقشه از کانال ID راهنمایی کردن ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">یک مقدار در هر خط. قالب: \"[پیر tvg-id] =\> [جدید tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">فیلتر بر اساس نام کانال در لیست سفید</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">یک مقدار در هر خط. قالب: \"[نام یا tvg-name]\". پیشوند برای زیر رشته: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">یک مقدار در هر خط. قالب: \"[نام یا tvg-name]\". پیشوند برای زیر رشته بی‌توجه به حروف بزرگ و کوچک: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">فیلتر بر اساس کانال ID فهرست سفید</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">یک مقدار در هر خط. قالب: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">فیلتر بر اساس نام کانال در لیست سیاه</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">بر اساس فیلتر کنید M3U کانال‌ها</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >کانال‌های فهرست سفید یافت‌شده در M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">کانال‌های یافت‌شده در را سفیدنمایی نکنید M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">یک مقدار در هر خط. پیشوند برای زیر رشته: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">یک مقدار در هر خط. پیشوند برای زیرنویس بی‌حساس به حروف بزرگ و کوچک: \"#~*\"</string>
 </resources>

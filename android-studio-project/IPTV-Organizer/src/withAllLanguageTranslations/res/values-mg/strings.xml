@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Sarintany avy amin\'ny fantsona ID hanatontosa ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Sanda iray isaky ny andalana. Endrika: \"[Taloha tvg-id] =\> [vaovao tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Sivana araka ny anaran\'ny fantsona ao amin\'ny lisitra fotsy</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sanda iray isaky ny andalana. Endrika: \"[anarana na tvg-name]\". Fampidirana mialoha ho an\'ny andalana ampahany: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Sanda iray isaky ny andalana. Endrika: \"[anarana na tvg-name]\". Fampidirana mialoha ho an\'ny andalana anaty tsy mihevitra ny soratra lehibe sy kely: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Sivana araka ny fantsona ID Lisitra fotsy</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Sanda iray isaky ny andalana. Endrika: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Sivana araka ny anaran\'ny fantsona voarara</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Sivana araka ny M3U fantsona</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Lisitra fantsona hita ao amin\'ny M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Aza apetraka ao amin\'ny lisitra fotsy ireo fantsona hita ao amin\'ny M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Sanda iray isaky ny andalana. Mialoha ho an\'ny ampahany amin\'ny fehezanteny: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Sanda iray isaky ny andalana.   Mialoha ho an\'ny ampahany amin\'ny lahatsoratra tsy mihevitra ny soratra lehibe sy kely: \"#~*\"</string>
 </resources>

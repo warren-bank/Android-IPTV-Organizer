@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kat ki soti nan kanal la ID pou kanalize ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Yon valè pa liy. Fòma: \"[ansyen tvg-id] =\> [nouvo tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtre pa non chanèl ki sou lis blan an</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Yon valè pa liy. Fòma: \"[non oswa tvg-name]\". Prefiks pou soustreng: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Yon valè pa liy. Fòma: \"[non oswa tvg-name]\". Prefiks pou yon soustreng ki pa sansib a majiskil/miniskil: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtre pa kanal ID Lis blan</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Yon valè pa liy. Fòma: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filtre pa non chanèl ki sou lis nwa</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtre pa M3U chanèl</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Chèn ki jwenn sou lis blan M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Pa mete sou lis blan chanèl ki jwenn nan M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Yon valè pa liy. Prefix pou soustreng: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Yon valè pa liy. Prefix pou soustreng ki pa sansib a majiskil/miniskil: \"#~*\"</string>
 </resources>

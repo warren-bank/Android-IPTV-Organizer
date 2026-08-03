@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Karte uta na chaîne ID kokamba ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Motuya moko na molongo moko. Format: \"[Mokóló tvg-id] =\> [ya sika tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Pona na nkombo ya chaîne ya liste ya kondima</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Motuya moko na molongo moko. Format: \"[nkombo to tvg-name]\". Ebandeli mpo na eteni ya molongo: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Motuya moko na molongo moko. Format: \"[nkombo to tvg-name]\". Ebandeli mpo na eteni ya molongo oyo etalelaka makɛlɛlɛ ya minɛkɛ te: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Pona na kolanda chaîne ID Liste ya bato oyo bandimami</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Motuya moko na molongo moko. Format: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Pona na nkombo ya chaîne ya liste moindo</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Pona na M3U Banzela</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Liste ya ba chaines oyo ezwami M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kotia te na liste ya ba chaines oyo emonani na M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Motuya moko na molongo moko. Ebandeli mpo na eteni ya molongo.: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Motuya moko na molongo moko. Ebandeli mpo na eteni ya molongo oyo etalelaka makomi ya minene to ya mike te.: \"#~*\"</string>
 </resources>

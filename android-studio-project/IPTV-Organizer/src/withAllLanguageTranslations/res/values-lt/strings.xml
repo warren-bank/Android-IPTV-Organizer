@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Žemėlapis iš kanalo ID į kanalą ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Viena reikšmė vienoje eilutėje. Formatas: \"[senas tvg-id] =\> [naujas tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Filtruoti pagal leidžiamų kanalų sąrašą</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Viena reikšmė vienoje eilutėje. Formatas: \"[pavadinimas arba tvg-name]\". Priešdėlis daliniam eilutės fragmentui: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Viena reikšmė vienoje eilutėje. Formatas: \"[pavadinimas arba tvg-name]\". Priešdėlis, kai ieškoma dalinės eilutės, neatsižvelgiant į didžiųjų ir mažųjų raidžių skirtumą: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Filtruoti pagal kanalą ID baltasis sąrašas</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Viena reikšmė vienoje eilutėje. Formatas: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Filtruoti pagal kanalo pavadinimą (juodasis sąrašas)</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtruoti pagal M3U kanalai</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Į baltąjį sąrašą įtraukti kanalai, rasti M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Neįtraukite į baltąjį sąrašą kanalų, esančių M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Viena reikšmė vienoje eilutėje. Priešdėlis daliniam tekstui: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Viena reikšmė vienoje eilutėje. Prefiksas, kuriam nustatoma, kad nebūtų atsižvelgiama į didžiųjų ir mažųjų raidžių skirtumą: \"#~*\"</string>
 </resources>

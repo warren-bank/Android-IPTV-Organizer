@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Kaart bu jóge ci channel bi ID ngir joxe yoon ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Benn tolluwa ci rëdd bu nekk. Forma: \"[mag tvg-id] =\> [lu bees tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Tànnal ci turu chaîne yi nekk ci limu ñu maye.</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Benn tolluwa ci rëdd bu nekk. Formaat: \"[tur walla tvg-name]\". Jëkkantalu wàllu baat: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Benn tolluwa ci rëdd bu nekk. Formaat: \"[tur walla tvg-name]\". Jëkkantalu wut giir bu dul seetlu boppu araf yi: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Tànnal ci seenu yi ID Limu ñi ñu nangu</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Benn tolluwa ci rëdd bu nekk. Forma: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Tànnal ci turu chaîne yi ñu tere</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Tànnal ci M3U Sànn yi</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Limu seen yi ñu gis ci M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Bul duggal ci limu ñu nangu yoon yi ñu fekk ci M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Benn jëmm ci rëdd bu nekk. Li jiitu ci wàllu baat bi: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Benn njëkkat ci rëdd bu nekk. Jëkkante ngir wàllu biir-bataaxal bu dul seetlu màkka ak màgg.: \"#~*\"</string>
 </resources>

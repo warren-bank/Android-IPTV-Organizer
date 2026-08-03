@@ -43,7 +43,7 @@
   <string name="pref_m3u_channels_mapping_id_to_id_title">Арнадан карта ID бағыттау ID</string>
   <string name="pref_m3u_channels_mapping_id_to_id_summary">Әр жолда бір мән. Формат: \"[ескі tvg-id] =\> [жаңа tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_whitelist_names_title">Канал атауы бойынша ақ тізім бойынша сүзгілеу</string>
-  <string name="pref_m3u_channels_filter_whitelist_names_summary">Әр жолда бір мән. Формат: \"[аты немесе tvg-name]\". Субстрингке арналған алғыш: \"+*\"</string>
+  <string name="pref_m3u_channels_filter_whitelist_names_summary">Әр жолда бір мән. Формат: \"[аты немесе tvg-name]\". Бөлектелмейтін мәтін бөлігі үшін префикс: \"#~*\"</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_title">Арна бойынша сүзу ID ақ тізім</string>
   <string name="pref_m3u_channels_filter_whitelist_ids_summary">Әр жолда бір мән. Формат: \"[tvg-id]\"</string>
   <string name="pref_m3u_channels_filter_blacklist_names_title">Арна атауы бойынша қара тізім бойынша сүзу</string>
@@ -57,5 +57,5 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Сүзу арқылы M3U арналар</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Табылған арналар ақ тізімде M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Табылған арналарды ақ тізімге қоймаңыз M3U</string>
-  <string name="pref_epg_channels_filter_whitelist_names_summary">Әр жолда бір мән.   Субстринг үшін алғы тіркеме: \"+*\"</string>
+  <string name="pref_epg_channels_filter_whitelist_names_summary">Әр жолда бір мән. Тіркеспе мәтінді регистрге сезімтал емес іздеу үшін алғы қосымша: \"#~*\"</string>
 </resources>
