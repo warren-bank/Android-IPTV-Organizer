@@ -335,9 +335,11 @@ public class EPG extends ViewGroup {
         drawingRect.top += (((drawingRect.bottom - drawingRect.top) / 2) + (mMeasuringRect.height()/2));
 
         // Move drawing.left for a program that is in progress, so text will be visible within the viewport
-        int now = getXFrom(System.currentTimeMillis()) + mChannelLayoutPadding;
-        if (drawingRect.left < now)
-          drawingRect.left = now;
+        long now_ms = System.currentTimeMillis();
+        if ((event.getStart() < now_ms) && (event.getEnd() > now_ms)) {
+          int now_x = getXFrom(now_ms) + mChannelLayoutPadding;
+          drawingRect.left = now_x;
+        }
 
         String title = event.getTitle();
         title = title.substring(0,
