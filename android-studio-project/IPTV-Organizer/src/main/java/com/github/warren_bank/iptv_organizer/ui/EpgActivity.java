@@ -127,10 +127,7 @@ public class EpgActivity extends AppCompatActivity {
   protected void onPause() {
     if (dataProgressDialog != null) dataProgressDialog.pause();
 
-    if (savedSearchDialog != null) {
-      savedSearchDialog.release();
-      savedSearchDialog = null;
-    }
+    destroySavedSearchDialog();
 
     super.onPause();
   }
@@ -159,7 +156,7 @@ public class EpgActivity extends AppCompatActivity {
     menu.findItem(R.id.epg_menuitem_search).setVisible(isVisible);
 
     searchView = (SearchView) menu.findItem(R.id.epg_menuitem_search).getActionView();
-    initSavedSearchDialog();
+    initSavedSearchDialog(true);
     initSearch();
 
     return true;
@@ -467,8 +464,22 @@ public class EpgActivity extends AppCompatActivity {
   }
 
   private void initSavedSearchDialog() {
+    initSavedSearchDialog(false);
+  }
+
+  private void initSavedSearchDialog(boolean force) {
+    if (force)
+      destroySavedSearchDialog();
+
     if ((savedSearchDialog == null) && (searchView != null))
       savedSearchDialog = new SavedSearchKeywordsListDialog(EpgActivity.this, searchView, R.drawable.bookmark);
+  }
+
+  private void destroySavedSearchDialog() {
+    if (savedSearchDialog != null) {
+      savedSearchDialog.release();
+      savedSearchDialog = null;
+    }
   }
 
   private void initSearch() {

@@ -176,10 +176,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   protected void onPause() {
     if (dataProgressDialog != null) dataProgressDialog.pause();
 
-    if (savedSearchDialog != null) {
-      savedSearchDialog.release();
-      savedSearchDialog = null;
-    }
+    destroySavedSearchDialog();
 
     super.onPause();
   }
@@ -202,7 +199,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     menu.findItem(R.id.channels_menuitem_sort_alphabetic).setVisible(isVisible);
 
     searchView = (SearchView) menu.findItem(R.id.channels_menuitem_search).getActionView();
-    initSavedSearchDialog();
+    initSavedSearchDialog(true);
     initSearch();
 
     return true;
@@ -512,8 +509,22 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   }
 
   private void initSavedSearchDialog() {
+    initSavedSearchDialog(false);
+  }
+
+  private void initSavedSearchDialog(boolean force) {
+    if (force)
+      destroySavedSearchDialog();
+
     if ((savedSearchDialog == null) && (searchView != null))
       savedSearchDialog = new SavedSearchKeywordsListDialog(ChannelsActivity.this, searchView, R.drawable.bookmark);
+  }
+
+  private void destroySavedSearchDialog() {
+    if (savedSearchDialog != null) {
+      savedSearchDialog.release();
+      savedSearchDialog = null;
+    }
   }
 
   private void initSearch() {
