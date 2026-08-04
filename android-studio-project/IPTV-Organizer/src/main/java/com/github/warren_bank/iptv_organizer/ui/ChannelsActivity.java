@@ -294,6 +294,8 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
             final String urlText = input.getText().toString().trim();
             if (urlText.isEmpty()) return;
 
+            dialog.dismiss();
+
             final DataProgressDialog listener = new DataProgressDialog(ChannelsActivity.this);
             dataProgressDialog = listener;
 

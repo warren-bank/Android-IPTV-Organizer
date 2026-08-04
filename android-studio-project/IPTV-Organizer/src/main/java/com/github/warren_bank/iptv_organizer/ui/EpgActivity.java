@@ -239,6 +239,8 @@ public class EpgActivity extends AppCompatActivity {
             final String urlText = input.getText().toString().trim();
             if (urlText.isEmpty()) return;
 
+            dialog.dismiss();
+
             final DataProgressDialog listener = new DataProgressDialog(EpgActivity.this);
             dataProgressDialog = listener;
 
