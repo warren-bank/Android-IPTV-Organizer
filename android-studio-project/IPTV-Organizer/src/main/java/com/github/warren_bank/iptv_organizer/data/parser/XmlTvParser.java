@@ -70,7 +70,7 @@ public class XmlTvParser {
         case XmlPullParser.START_TAG:
           if ("channel".equals(tagName)) {
             String id = parser.getAttributeValue(null, "id");
-            if (id != null) {
+            if ((id != null) && (!channelMap.containsKey(id))) {
               currentChannel = new EPGChannel(id, null, null);
               channelMap.put(id, currentChannel);
             }

@@ -1,0 +1,21 @@
+purpose:
+========
+test that when EPG has multiple channels with the same ID,
+and one (or more) passes a whitelist,
+that it isn't removed when a subsequent channel does not pass whitelist filters.
+
+desired behavior:
+=================
+keep the first such channel that passes the filters,
+and ignore all subsequent channels having duplicate ID..
+regardless of whether or not they would pass the filters.
+
+=======
+epg.xml
+=======
+
+| ID       | name        | passes | display in EPG |
+|----------|-------------|--------|----------------|
+| msnbc.us | MSNBC       | yes    | yes            |
+| msnbc.us | !! MSNBC !! | yes    | no             |
+| msnbc.us | MS Now      | no     | no             |

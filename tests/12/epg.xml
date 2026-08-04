@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="msnbc.us">
+    <display-name>MSNBC</display-name>
+  </channel>
+  <channel id="msnbc.us">
+    <display-name>!! MSNBC !!</display-name>
+  </channel>
+  <channel id="msnbc.us">
+    <display-name>MS Now</display-name>
+  </channel>
+  <programme start="20260101000000 +0000" channel="msnbc.us">
+    <title>Best of MSNBC</title>
+  </programme>
+</tv>
