@@ -135,12 +135,13 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
     refreshList(null);
     initToolbar();
     initRecyclerView();
-    readSettings();
   }
 
   @Override
   protected void onResume() {
     super.onResume();
+
+    if (performConditionalRedirect()) return;
 
     initSavedSearchDialog();
     readSettings();
@@ -356,6 +357,16 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
     MainSearchChannelsActivity.SEARCH_INPUT_DEBOUNCE_INTERVAL_MS     = SettingsUtils.getSearchInputDebounceIntervalMs(        MainSearchChannelsActivity.this);
     MainSearchChannelsActivity.SEARCH_RESULTS_MAX_COUNT              = SettingsUtils.getMaxCountOfSearchResults(              MainSearchChannelsActivity.this);
     MainSearchChannelsActivity.SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES = SettingsUtils.getRemoveDuplicateNamesFromSearchResults(MainSearchChannelsActivity.this);
+  }
+
+  private boolean performConditionalRedirect() {
+    int channelCount = DbUtils.getDb().countM3u();
+    boolean doRedirect = (channelCount <= 0);
+
+    if (doRedirect)
+      ChannelsActivity.open(MainSearchChannelsActivity.this);
+
+    return doRedirect;
   }
 
   private void viewChannel(ChannelListItem channel) {

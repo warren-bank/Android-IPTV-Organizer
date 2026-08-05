@@ -364,6 +364,25 @@ public class DbGateway {
     }
   }
 
+  public int countM3u() {
+    String query = "SELECT COUNT(*) as count FROM m3u_channels";
+    int count = -1;
+
+    Cursor c = null;
+    try {
+      c = db.query(query);
+
+      if ((c != null) && c.moveToFirst() && c.isFirst()) {
+        count = getColumnInteger(c, "count", count);
+      }
+    }
+    catch (SQLiteException e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    }
+    if (c != null) c.close();
+    return count;
+  }
+
   public EPGDataImpl getEpgData() {
     return getEpgData(null);
   }
