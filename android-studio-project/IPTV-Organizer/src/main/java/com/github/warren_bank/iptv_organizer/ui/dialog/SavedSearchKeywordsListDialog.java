@@ -22,7 +22,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class SavedSearchKeywordsListDialog {
+
+  public interface Listener {
+    public void onSavedSearchKeywordsListItemClick(String keywords);
+  }
+
   private SearchView searchView;
+  private Listener listener;
   private List<String> keywordsList;
   private ArrayAdapter<String> adapter;
   private AlertDialog dialog;
@@ -35,7 +41,12 @@ public class SavedSearchKeywordsListDialog {
   }
 
   public SavedSearchKeywordsListDialog(Context context, SearchView searchView, int submitButtonResId) {
+    this(context, searchView, submitButtonResId, null);
+  }
+
+  public SavedSearchKeywordsListDialog(Context context, SearchView searchView, int submitButtonResId, Listener listener) {
     this.searchView   = searchView;
+    this.listener     = listener;
     this.keywordsList = DbUtils.getDb().getSavedSearchKeywordsList();
 
     this.adapter = new ArrayAdapter<>(
@@ -193,6 +204,7 @@ public class SavedSearchKeywordsListDialog {
     String selectKeywords = keywordsList.get(position);
     searchView.setQuery(selectKeywords, true);
     hide();
+    if (listener != null) listener.onSavedSearchKeywordsListItemClick(selectKeywords);
   }
 
   public boolean isShowing() {

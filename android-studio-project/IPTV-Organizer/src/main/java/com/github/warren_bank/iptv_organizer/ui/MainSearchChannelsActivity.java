@@ -39,7 +39,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainSearchChannelsActivity extends AppCompatActivity implements FilterableListItemOnClickListener {
+public class MainSearchChannelsActivity extends AppCompatActivity implements FilterableListItemOnClickListener, SavedSearchKeywordsListDialog.Listener {
 
   public static void open(Context context) {
     Intent intent = new Intent(context, MainSearchChannelsActivity.class);
@@ -113,14 +113,31 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
   private final Handler searchHandler = new Handler(Looper.getMainLooper());
 
   private void startSearch(String constraint) {
+    startSearch(constraint, false);
+  }
+
+  private void startSearch(String constraint, boolean force) {
     // cancel pending post
     searchHandler.removeCallbacksAndMessages(null);
 
-    // reschedule new pending post
-    searchHandler.postDelayed(
-      new SearchRunnable(MainSearchChannelsActivity.this, constraint),
-      SEARCH_INPUT_DEBOUNCE_INTERVAL_MS
-    );
+    if (force) {
+      // post now
+      searchHandler.post(
+        new SearchRunnable(MainSearchChannelsActivity.this, constraint)
+      );
+    }
+    else {
+      // reschedule new pending post
+      searchHandler.postDelayed(
+        new SearchRunnable(MainSearchChannelsActivity.this, constraint),
+        SEARCH_INPUT_DEBOUNCE_INTERVAL_MS
+      );
+    }
+  }
+
+  @Override
+  public void onSavedSearchKeywordsListItemClick(String constraint) {
+    startSearch(constraint, true);
   }
 
   // ---------------------------------------------------------------------------------------------
@@ -326,7 +343,7 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
       destroySavedSearchDialog();
 
     if ((savedSearchDialog == null) && (searchView != null))
-      savedSearchDialog = new SavedSearchKeywordsListDialog(MainSearchChannelsActivity.this, searchView, R.drawable.bookmark);
+      savedSearchDialog = new SavedSearchKeywordsListDialog(MainSearchChannelsActivity.this, searchView, R.drawable.bookmark, MainSearchChannelsActivity.this);
   }
 
   private void destroySavedSearchDialog() {
