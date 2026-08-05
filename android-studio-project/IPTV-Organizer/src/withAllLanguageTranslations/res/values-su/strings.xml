@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Nerapkeun nilai string statik kana impor standar anu dihartikeun ku pangguna URL cetakan</string>
   <string name="pref_apply_default_url_templates_summary_on" >Impor standar URL Nilai-nilai téh cétakan</string>
   <string name="pref_apply_default_url_templates_summary_off">Impor standar URL Nilai-nilai sanés cétakan</string>
+  <string name="pref_search_input_debounce_interval_title">Lebetkeun interval debounce</string>
+  <string name="pref_search_input_debounce_interval_summary">Jumlah waktos nu kudu ditunggu (dina milidetik) sanggeus mencét konci saméméh ngajalankeun hiji DB Peryogi pikeun ngamungkinkeun asupan data gancang.</string>
+  <string name="pref_search_results_max_count_title">Jumlah maksimal hasil pamilarian</string>
+  <string name="pref_search_results_max_count_summary">Watesan kana jumlah total M3U saluran anu dibalikeun ku a DB Pamundut. Langkung leutik langkung gancang..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Hapus nami duplikat</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Pikeun unggal nami anu béda, hasil pilarian ngan bakal némbongkeun hiji. M3U Saluran</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Pikeun unggal ngaran anu béda, hasil pilarian bakal nembongkeun sadayana anu aya. M3U saluran</string>
   <string name="pref_default_m3u_url_title">Standar M3U Daptar lagu URL</string>
   <string name="pref_default_m3u_url_summary">Nilai awal dina \"Impor M3U Daptar lagu URL\" paguneman.</string>
   <string name="pref_append_m3u_playlists_title">Tambihkeun M3U Daptar lagu</string>

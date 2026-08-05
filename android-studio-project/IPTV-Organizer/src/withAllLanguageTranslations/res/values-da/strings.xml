@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Anvend statiske strengværdier til brugerdefineret standardimport URL skabeloner</string>
   <string name="pref_apply_default_url_templates_summary_on" >Standardimport URL værdier er skabeloner</string>
   <string name="pref_apply_default_url_templates_summary_off">Standardimport URL værdier er ikke skabeloner</string>
+  <string name="pref_search_input_debounce_interval_title">Interval for debounce ved indgangssignaler</string>
+  <string name="pref_search_input_debounce_interval_summary">Den tid (i millisekunder), der skal gå efter et tastetryk, før der udføres en DB forespørgsel, der muliggør hurtig dataindtastning.</string>
+  <string name="pref_search_results_max_count_title">Maksimalt antal søgeresultater</string>
+  <string name="pref_search_results_max_count_summary">En begrænsning af det samlede antal M3U kanaler, der returneres af en DB forespørgsel. Jo mindre, jo hurtigere.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Fjern dublerede navne</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >For hvert unikt navn vises der kun ét søgeresultat M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">For hvert unikt navn vil søgeresultaterne vise alle tilgængelige M3U kanaler</string>
   <string name="pref_default_m3u_url_title">Standard M3U Afspilningsliste URL</string>
   <string name="pref_default_m3u_url_summary">Startværdi i \"Import M3U Afspilningsliste URL\" dialog.</string>
   <string name="pref_append_m3u_playlists_title">Tilføj M3U Afspilningslister</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Statikus karakterlánc-értékek alkalmazása a felhasználó által definiált alapértelmezett importálásra URL sablonok</string>
   <string name="pref_apply_default_url_templates_summary_on" >Alapértelmezett importálás URL az értékek sablonok</string>
   <string name="pref_apply_default_url_templates_summary_off">Alapértelmezett importálás URL az értékek nem sablonok</string>
+  <string name="pref_search_input_debounce_interval_title">A bemeneti visszhangcsökkentési intervallum</string>
+  <string name="pref_search_input_debounce_interval_summary">Mennyi időt (milliszekundumban kifejezve) kell várni egy billentyűleütés után, mielőtt egy DB lekérdezés a gyors adatbevitel érdekében.</string>
+  <string name="pref_search_results_max_count_title">A keresési találatok maximális száma</string>
+  <string name="pref_search_results_max_count_summary">A teljes számra vonatkozó korlátozás M3U az által visszaadott csatornák DB lekérdezés. Minél rövidebb, annál gyorsabb.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Az ismétlődő nevek eltávolítása</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Minden egyes név esetében a keresési eredmények között csak egy találat jelenik meg M3U csatorna</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Minden egyes név esetében a keresési eredmények között az összes elérhető M3U csatornák</string>
   <string name="pref_default_m3u_url_title">Alapértelmezett M3U Lejátszási lista URL</string>
   <string name="pref_default_m3u_url_summary">Kezdőérték a \"Importálás M3U Lejátszási lista URL\" párbeszéd.</string>
   <string name="pref_append_m3u_playlists_title">Hozzáadás M3U Lejátszási listák</string>

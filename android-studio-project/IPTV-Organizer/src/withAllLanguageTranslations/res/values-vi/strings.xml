@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Áp dụng các giá trị chuỗi cố định cho cài đặt nhập mặc định do người dùng định nghĩa URL mẫu</string>
   <string name="pref_apply_default_url_templates_summary_on" >Nhập mặc định URL các giá trị là các mẫu</string>
   <string name="pref_apply_default_url_templates_summary_off">Nhập mặc định URL các giá trị không phải là các mẫu</string>
+  <string name="pref_search_input_debounce_interval_title">Khoảng thời gian chống dội tín hiệu đầu vào</string>
+  <string name="pref_search_input_debounce_interval_summary">Thời gian chờ (tính bằng mili giây) sau khi nhấn phím trước khi thực thi một DB truy vấn nhằm cho phép nhập liệu nhanh chóng.</string>
+  <string name="pref_search_results_max_count_title">Số lượng kết quả tìm kiếm tối đa</string>
+  <string name="pref_search_results_max_count_summary">Một giới hạn về tổng số M3U các kênh được trả về bởi một DB Câu hỏi. Càng nhỏ thì càng nhanh.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Loại bỏ các tên trùng lặp</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Đối với mỗi tên riêng biệt, kết quả tìm kiếm sẽ chỉ hiển thị một kết quả M3U kênh</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Đối với mỗi tên riêng biệt, kết quả tìm kiếm sẽ hiển thị tất cả các kết quả có sẵn M3U kênh</string>
   <string name="pref_default_m3u_url_title">Mặc định M3U Danh sách phát URL</string>
   <string name="pref_default_m3u_url_summary">Giá trị ban đầu trong \"Nhập khẩu M3U Danh sách phát URL\" hộp thoại.</string>
   <string name="pref_append_m3u_playlists_title">Thêm vào M3U Danh sách phát</string>

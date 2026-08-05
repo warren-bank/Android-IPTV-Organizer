@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">將靜態字串值套用至使用者自訂的預設匯入設定 URL 範本</string>
   <string name="pref_apply_default_url_templates_summary_on" >預設匯入 URL 值是範本</string>
   <string name="pref_apply_default_url_templates_summary_off">預設匯入 URL 值並非範本</string>
+  <string name="pref_search_input_debounce_interval_title">輸入去抖動間隔</string>
+  <string name="pref_search_input_debounce_interval_summary">按下鍵盤按鍵後，需等待多久（以毫秒為單位）才會執行一個 DB 查詢功能，以便快速輸入資料.</string>
+  <string name="pref_search_results_max_count_title">搜尋結果的最大數量</string>
+  <string name="pref_search_results_max_count_summary">對總數的限制 M3U 由 a 所返回的頻道 DB 查詢。越小越快.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">移除重複的名稱</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >對於每個不同的名稱，搜尋結果將僅顯示一個 M3U 頻道</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">針對每個不同的名稱，搜尋結果將顯示所有可用的 M3U 頻道</string>
   <string name="pref_default_m3u_url_title">預設 M3U 播放清單 URL</string>
   <string name="pref_default_m3u_url_summary">初始值在 \"匯入 M3U 播放清單 URL\" 對話框.</string>
   <string name="pref_append_m3u_playlists_title">追加 M3U 播放清單</string>

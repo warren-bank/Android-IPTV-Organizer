@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Käytä staattisia merkkijonoarvoja käyttäjän määrittämässä oletusarvoisessa tuonnissa URL mallit</string>
   <string name="pref_apply_default_url_templates_summary_on" >Oletustuonti URL arvot ovat malleja</string>
   <string name="pref_apply_default_url_templates_summary_off">Oletustuonti URL arvot eivät ole malleja</string>
+  <string name="pref_search_input_debounce_interval_title">Syötteen heijastuksenpoistointervalli</string>
+  <string name="pref_search_input_debounce_interval_summary">Kuinka kauan (millisekunteina) näppäinpainalluksen jälkeen on odotettava, ennen kuin DB kysely, joka mahdollistaa nopean tietojen syöttämisen.</string>
+  <string name="pref_search_results_max_count_title">Hakutulosten enimmäismäärä</string>
+  <string name="pref_search_results_max_count_summary">Rajoitus, joka koskee M3U kanavat, jotka palautetaan komennolla DB kysely. Pienempi on nopeampi.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Poista päällekkäiset nimet</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Jokaisesta eri nimestä hakutuloksissa näkyy vain yksi M3U kanava</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Jokaisen yksilöllisen nimen kohdalla hakutuloksissa näkyvät kaikki saatavilla olevat M3U kanavat</string>
   <string name="pref_default_m3u_url_title">Oletus M3U Soittolista URL</string>
   <string name="pref_default_m3u_url_summary">Alkuarvo \"Tuonti M3U Soittolista URL\" valintaikkuna.</string>
   <string name="pref_append_m3u_playlists_title">Lisää M3U Soittolistat</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">ユーザー定義のデフォルトインポートに静的な文字列値を適用する URL テンプレート</string>
   <string name="pref_apply_default_url_templates_summary_on" >デフォルトのインポート URL 値はテンプレートです</string>
   <string name="pref_apply_default_url_templates_summary_off">デフォルトのインポート URL 値はテンプレートではありません</string>
+  <string name="pref_search_input_debounce_interval_title">入力デバウンス間隔</string>
+  <string name="pref_search_input_debounce_interval_summary">キー入力後、が実行されるまでの待機時間（ミリ秒単位） DB 迅速なデータ入力が可能になるクエリ.</string>
+  <string name="pref_search_results_max_count_title">検索結果の最大件数</string>
+  <string name="pref_search_results_max_count_summary">の総数に対する制限 M3U a によって返されるチャンネル DB クエリ。小さいほど高速です.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">重複する名前を削除する</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >異なる名前ごとに、検索結果には1件のみが表示されます M3U チャンネル</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">それぞれ異なる名前について、検索結果には利用可能なすべての項目が表示されます。 M3U チャンネル</string>
   <string name="pref_default_m3u_url_title">デフォルト M3U プレイリスト URL</string>
   <string name="pref_default_m3u_url_summary">初期値は \"インポート M3U プレイリスト URL\" ダイアログ.</string>
   <string name="pref_append_m3u_playlists_title">追加 M3U プレイリスト</string>

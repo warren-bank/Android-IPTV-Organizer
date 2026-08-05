@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">उपयोगकर्ता-परिभाषित डिफ़ॉल्ट आयात पर स्थिर स्ट्रिंग मान लागू करें URL टेम्पलेट्स</string>
   <string name="pref_apply_default_url_templates_summary_on" >डिफ़ॉल्ट आयात URL मूल्य टेम्पलेट्स हैं</string>
   <string name="pref_apply_default_url_templates_summary_off">डिफ़ॉल्ट आयात URL मूल्य टेम्पलेट नहीं हैं</string>
+  <string name="pref_search_input_debounce_interval_title">इनपुट डिबाउंस अंतराल</string>
+  <string name="pref_search_input_debounce_interval_summary">कीस्ट्रोके के बाद एक चलाने से पहले प्रतीक्षा करने का समय (मिलिसेकंड में) DB त्वरित डेटा प्रविष्टि की अनुमति देने के लिए क्वेरी.</string>
+  <string name="pref_search_results_max_count_title">खोज परिणामों की अधिकतम संख्या</string>
+  <string name="pref_search_results_max_count_summary">कुल संख्या पर एक प्रतिबंध M3U एक द्वारा लौटाए गए चैनल DB प्रश्न। छोटा तेज़ होता है।.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">डुप्लिकेट नाम हटाएँ</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >प्रत्येक अलग नाम के लिए खोज परिणाम केवल एक ही दिखाएगा। M3U चैनल</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">प्रत्येक अलग नाम के लिए, खोज परिणाम सभी उपलब्ध दिखाएंगे। M3U चैनल</string>
   <string name="pref_default_m3u_url_title">डिफ़ॉल्ट M3U प्लेलिस्ट URL</string>
   <string name="pref_default_m3u_url_summary">में प्रारंभिक मान \"आयात M3U प्लेलिस्ट URL\" संवाद.</string>
   <string name="pref_append_m3u_playlists_title">जोड़ें M3U प्लेलिस्ट</string>

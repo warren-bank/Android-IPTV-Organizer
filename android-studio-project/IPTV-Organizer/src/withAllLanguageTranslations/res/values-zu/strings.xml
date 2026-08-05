@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Faka amanani omsongo angaguquki ekungenisweni okujwayelekile okusethwe ngumsebenzisi URL amathayiphu</string>
   <string name="pref_apply_default_url_templates_summary_on" >Ukufaka okujwayelekile URL Amanani angamathuluzi okwakha.</string>
   <string name="pref_apply_default_url_templates_summary_off">Ukufaka okujwayelekile URL Amanani awangamathayiphu</string>
+  <string name="pref_search_input_debounce_interval_title">Faka isikhathi sokumisa ukuphindaphinda</string>
+  <string name="pref_search_input_debounce_interval_summary">Inani lesikhathi okufanele silinde (ngemilisekhondi) ngemva kokucindezela inkinobho ngaphambi kokuqhuba i- DB Umbuzo wokuvumela ukufakwa kwedatha ngokushesha.</string>
+  <string name="pref_search_results_max_count_title">Inani eliphezulu lemiphumela yokusesha</string>
+  <string name="pref_search_results_max_count_summary">Isithiyo enanini eliphelele lama M3U iziteshi ezibuyiselwe yi-a DB Umbuzo. Okuncane kushesha..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Susa amagama aphindwe kabili</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Kwegama ngalinye elihlukile, imiphumela yokusesha izoveza eyodwa kuphela. M3U isiteshi</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Kwegama ngalinye elihlukile, imiphumela yokusesha izoveza konke okutholakalayo. M3U iziteshi</string>
   <string name="pref_default_m3u_url_title">Okujwayelekile M3U Uhlu lokudlalwayo URL</string>
   <string name="pref_default_m3u_url_summary">Inani lokuqala ku \"Okungenayo M3U Uhlu lokudlalwayo URL\" inkulumo.</string>
   <string name="pref_append_m3u_playlists_title">Engeza M3U Uhlu lokudlalwayo</string>

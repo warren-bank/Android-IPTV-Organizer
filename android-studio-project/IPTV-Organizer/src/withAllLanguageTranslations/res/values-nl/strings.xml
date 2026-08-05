@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Stabiele tekenreekswaarden toepassen op door de gebruiker gedefinieerde standaardimport URL sjablonen</string>
   <string name="pref_apply_default_url_templates_summary_on" >Standaardimport URL waarden zijn sjablonen</string>
   <string name="pref_apply_default_url_templates_summary_off">Standaardimport URL waarden zijn geen sjablonen</string>
+  <string name="pref_search_input_debounce_interval_title">Interval voor het onderdrukken van valse signalen</string>
+  <string name="pref_search_input_debounce_interval_summary">De tijd (in milliseconden) die na een toetsaanslag moet worden afgewacht voordat een DB zoekopdracht om snelle gegevensinvoer mogelijk te maken.</string>
+  <string name="pref_search_results_max_count_title">Maximaal aantal zoekresultaten</string>
+  <string name="pref_search_results_max_count_summary">Een beperking op het totale aantal M3U kanalen die worden geretourneerd door een DB query. Kleiner is sneller.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Dubbele namen verwijderen</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Voor elke unieke naam wordt er in de zoekresultaten slechts één weergegeven M3U kanaal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Voor elke unieke naam worden in de zoekresultaten alle beschikbare M3U kanalen</string>
   <string name="pref_default_m3u_url_title">Standaard M3U Afspeellijst URL</string>
   <string name="pref_default_m3u_url_summary">Beginswaarde in \"Importeren M3U Afspeellijst URL\" dialoogvenster.</string>
   <string name="pref_append_m3u_playlists_title">Toevoegen M3U Afspeellijsten</string>

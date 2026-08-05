@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Foydalanuvchi belgilagan standart importga statik satm qiymatlarini qo\'llang URL shablonlar</string>
   <string name="pref_apply_default_url_templates_summary_on" >Standart import URL Qiymatlar shablonlardir</string>
   <string name="pref_apply_default_url_templates_summary_off">Standart import URL Qiymatlar shablonlar emas</string>
+  <string name="pref_search_input_debounce_interval_title">Kirish debounce oralig\'ini kiriting</string>
+  <string name="pref_search_input_debounce_interval_summary">Kalit bosilgandan so\'ng biror narsani ishga tushirishdan oldin kutish kerak bo\'lgan vaqt (millisekundlarda) DB Tez ma\'lumot kiritishga imkon beruvchi so\'rov.</string>
+  <string name="pref_search_results_max_count_title">Qidiruv natijalarining maksimal soni</string>
+  <string name="pref_search_results_max_count_summary">Jami soniga cheklov M3U a tomonidan qaytarilgan kanallar DB so\'rov. Kichikroq bo\'lsa, tezroq.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Takroriy nomlarni olib tashlang</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Har bir noyob nom uchun qidiruv natijalari faqat bittasini ko\'rsatadi. M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Har bir alohida nom uchun qidiruv natijalari mavjud bo\'lgan barcha natijalarni ko\'rsatadi. M3U kanallar</string>
   <string name="pref_default_m3u_url_title">Standart M3U Pleylist URL</string>
   <string name="pref_default_m3u_url_summary">Boshlang\'ich qiymat \"Import M3U Pleylist URL\" dialog.</string>
   <string name="pref_append_m3u_playlists_title">Ilova qilish M3U Pleylistlar</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Apliku statikajn ŝnurfunkciojn al uzant-difinita defaŭlta importo URL ŝablonoj</string>
   <string name="pref_apply_default_url_templates_summary_on" >Normala enigo URL Valoroj estas ŝablonoj.</string>
   <string name="pref_apply_default_url_templates_summary_off">Normala enigo URL Valoroj ne estas ŝablonoj.</string>
+  <string name="pref_search_input_debounce_interval_title">Eniga malŝaltintervalo</string>
+  <string name="pref_search_input_debounce_interval_summary">La kvanto de tempo por atendi (en milisekundoj) post klavopremo antaŭ ol ruli DB demando por permesi rapidan datum-enigon.</string>
+  <string name="pref_search_results_max_count_title">Maksimuma nombro de serĉrezultoj</string>
+  <string name="pref_search_results_max_count_summary">Restrikto pri la totala nombro de M3U kanaloj redonitaj de a DB demando. Pli malgranda estas pli rapida..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Forigu duoblajn nomojn</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Por ĉiu distinga nomo, la serĉrezultoj montros nur unu. M3U kanalo</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Por ĉiu distinga nomo, la serĉrezultoj montros ĉiujn disponeblajn. M3U kanaloj</string>
   <string name="pref_default_m3u_url_title">Normala M3U Ludlisto URL</string>
   <string name="pref_default_m3u_url_summary">Komenca valoro en \"Enporti M3U Ludlisto URL\" dialogo.</string>
   <string name="pref_append_m3u_playlists_title">Aldoni M3U Ludlistoj</string>

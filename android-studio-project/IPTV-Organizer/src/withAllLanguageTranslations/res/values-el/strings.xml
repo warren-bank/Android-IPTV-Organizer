@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Εφαρμογή στατικών τιμών συμβολοσειρών στην προεπιλεγμένη εισαγωγή που ορίζει ο χρήστης URL πρότυπα</string>
   <string name="pref_apply_default_url_templates_summary_on" >Προεπιλεγμένη εισαγωγή URL οι τιμές είναι πρότυπα</string>
   <string name="pref_apply_default_url_templates_summary_off">Προεπιλεγμένη εισαγωγή URL οι τιμές δεν είναι πρότυπα</string>
+  <string name="pref_search_input_debounce_interval_title">Διάστημα αναστολής αναπήδησης εισόδου</string>
+  <string name="pref_search_input_debounce_interval_summary">Ο χρόνος αναμονής (σε χιλιοστά του δευτερολέπτου) μετά από την πληκτρολόγηση ενός πλήκτρου πριν από την εκτέλεση μιας DB ερώτημα που επιτρέπει την ταχεία εισαγωγή δεδομένων.</string>
+  <string name="pref_search_results_max_count_title">Μέγιστος αριθμός αποτελεσμάτων αναζήτησης</string>
+  <string name="pref_search_results_max_count_summary">Ένας περιορισμός στον συνολικό αριθμό των M3U κανάλια που επιστρέφονται από ένα DB ερώτημα. Όσο μικρότερο, τόσο γρηγορότερο.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Αφαίρεση διπλών ονομάτων</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Για κάθε διαφορετικό όνομα, στα αποτελέσματα αναζήτησης θα εμφανίζεται μόνο ένα M3U κανάλι</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Για κάθε ξεχωριστό όνομα, τα αποτελέσματα της αναζήτησης θα εμφανίζουν όλα τα διαθέσιμα M3U κανάλια</string>
   <string name="pref_default_m3u_url_title">Προεπιλογή M3U Λίστα αναπαραγωγής URL</string>
   <string name="pref_default_m3u_url_summary">Αρχική τιμή σε \"Εισαγωγή M3U Λίστα αναπαραγωγής URL\" διάλογος.</string>
   <string name="pref_append_m3u_playlists_title">Προσθήκη M3U Λίστες αναπαραγωγής</string>

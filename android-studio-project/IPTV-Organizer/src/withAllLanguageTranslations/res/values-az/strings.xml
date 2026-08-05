@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">İstifadəçi tərəfindən təyin edilmiş standart idxala statik sətir dəyərlərini tətbiq edin URL şablonlar</string>
   <string name="pref_apply_default_url_templates_summary_on" >Standart idxal URL Dəyərlər şablonlardır</string>
   <string name="pref_apply_default_url_templates_summary_off">Standart idxal URL Dəyərlər şablonlar deyil</string>
+  <string name="pref_search_input_debounce_interval_title">Giriş debounce intervalı</string>
+  <string name="pref_search_input_debounce_interval_summary">Bir düymə vurulduqdan sonra bir ... işə salmazdan əvvəl gözləməli olan vaxt (millisaniyələrlə) DB Sürətli məlumat daxil etməyə imkan verən sorğu.</string>
+  <string name="pref_search_results_max_count_title">Axtarış nəticələrinin maksimum sayı</string>
+  <string name="pref_search_results_max_count_summary">Ümumi sayına qoyulan məhdudiyyət M3U a tərəfindən qaytarılan kanallar DB Sorğu. Kiçik daha sürətlidir..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Təkrarlanan adları silin</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Hər fərqli ad üçün axtarış nəticələri yalnız birini göstərəcək. M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Hər fərqli ad üçün axtarış nəticələri mövcud olanların hamısını göstərəcək. M3U kanallar</string>
   <string name="pref_default_m3u_url_title">Standart M3U Pleylist URL</string>
   <string name="pref_default_m3u_url_summary">Başlanğıc dəyəri daxil edin \"İdxal M3U Pleylist URL\" dialoq.</string>
   <string name="pref_append_m3u_playlists_title">Əlavə et M3U Pleylistlər</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Applicare valori di stringa statici all\'importazione predefinita definita dall\'utente URL modelli</string>
   <string name="pref_apply_default_url_templates_summary_on" >Importazione predefinita URL i valori sono modelli</string>
   <string name="pref_apply_default_url_templates_summary_off">Importazione predefinita URL i valori non sono modelli</string>
+  <string name="pref_search_input_debounce_interval_title">Intervallo di debounce dell\'ingresso</string>
+  <string name="pref_search_input_debounce_interval_summary">Il tempo di attesa (in millisecondi) dopo la pressione di un tasto prima di eseguire un DB query che consenta un inserimento rapido dei dati.</string>
+  <string name="pref_search_results_max_count_title">Numero massimo di risultati di ricerca</string>
+  <string name="pref_search_results_max_count_summary">Una limitazione al numero totale di M3U canali restituiti da un DB query. Più piccolo è, più veloce è.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Elimina i nomi duplicati</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Per ogni nome diverso, i risultati della ricerca ne mostreranno solo uno M3U canale</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Per ogni nome specifico, i risultati della ricerca mostreranno tutti i M3U canali</string>
   <string name="pref_default_m3u_url_title">Predefinito M3U Playlist URL</string>
   <string name="pref_default_m3u_url_summary">Valore iniziale in \"Importa M3U Playlist URL\" finestra di dialogo.</string>
   <string name="pref_append_m3u_playlists_title">Aggiungi M3U Playlist</string>

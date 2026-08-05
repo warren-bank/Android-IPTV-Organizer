@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Primijenite statičke vrijednosti niza na korisnički definirani zadani uvoz URL šabloni</string>
   <string name="pref_apply_default_url_templates_summary_on" >Zadani uvoz URL vrijednosti su predlošci</string>
   <string name="pref_apply_default_url_templates_summary_off">Zadani uvoz URL vrijednosti nisu predlošci</string>
+  <string name="pref_search_input_debounce_interval_title">Unesite interval za prigušivanje prekida</string>
+  <string name="pref_search_input_debounce_interval_summary">Vrijeme čekanja (u milisekundama) nakon pritiska tipke prije pokretanja DB upit za omogućavanje brzog unosa podataka.</string>
+  <string name="pref_search_results_max_count_title">Maksimalan broj rezultata pretrage</string>
+  <string name="pref_search_results_max_count_summary">Ograničenje na ukupan broj M3U kanali vraćeni od strane a DB upit. Manje je brže.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Uklonite duplana imena</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Za svako jedinstveno ime, rezultati pretrage će prikazati samo jedan. M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Za svako jedinstveno ime, rezultati pretrage će prikazati sve dostupne M3U kanali</string>
   <string name="pref_default_m3u_url_title">Zadano M3U Playlista URL</string>
   <string name="pref_default_m3u_url_summary">Početna vrijednost u \"Uvoz M3U Playlista URL\" dijalog.</string>
   <string name="pref_append_m3u_playlists_title">Dodaj M3U Playliste</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">将静态字符串值应用于用户定义的默认导入 URL 模板</string>
   <string name="pref_apply_default_url_templates_summary_on" >默认导入 URL 值是模板</string>
   <string name="pref_apply_default_url_templates_summary_off">默认导入 URL 值不是模板</string>
+  <string name="pref_search_input_debounce_interval_title">输入去抖动间隔</string>
+  <string name="pref_search_input_debounce_interval_summary">按下键后，在运行一个 DB 查询以实现快速数据录入.</string>
+  <string name="pref_search_results_max_count_title">搜索结果的最大数量</string>
+  <string name="pref_search_results_max_count_summary">对总数的限制 M3U 由一个返回的频道 DB 查询。越小越快.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">删除重复的名称</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >对于每个不同的名称，搜索结果只会显示一个 M3U 频道</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">对于每个不同的名称，搜索结果将显示所有可用的 M3U 频道</string>
   <string name="pref_default_m3u_url_title">默认 M3U 播放列表 URL</string>
   <string name="pref_default_m3u_url_summary">初始值在 \"导入 M3U 播放列表 URL\" 对话框.</string>
   <string name="pref_append_m3u_playlists_title">追加 M3U 播放列表</string>

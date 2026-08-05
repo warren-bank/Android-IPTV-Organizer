@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Jëfandikoo ay valeur yu sax yu ñu tëral ngir import bu ñu tëral bu jëfandikookat bi. URL Royukaay yi</string>
   <string name="pref_apply_default_url_templates_summary_on" >Importera bu ñëw URL Njariñ yi ay royukaay lañu.</string>
   <string name="pref_apply_default_url_templates_summary_off">Importera bu ñëw URL Njariñ yi duñu ay model.</string>
+  <string name="pref_search_input_debounce_interval_title">Duggal diggante ngir dakkanteg tàkk-tàkk bi</string>
+  <string name="pref_search_input_debounce_interval_summary">Diirub xaar bi (ci milisegond) ginnaaw buñu bësee ab tërë, laata muy doxal ab DB Laaj ngir maye duggal xibaar ci lu gaaw.</string>
+  <string name="pref_search_results_max_count_title">Limu gën a bari ci ay resultaa yu seet</string>
+  <string name="pref_search_results_max_count_summary">Benn tënk ci limu mbooleem M3U Sànnal yi b delloo DB Laaj. Lu gën a tuuti moo gën a gaaw..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Dindi tur yu ñaaral</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Ci tur bu wuute bu nekk, benn rekk la njariñu seet gi di wone. M3U Sànteer</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Ci tur bu nekk bu wuute, li gëstu gi jur dina wone lépp lu am. M3U Sànn yi</string>
   <string name="pref_default_m3u_url_title">Li ñu tëral M3U Limu woy yi URL</string>
   <string name="pref_default_m3u_url_summary">Njëlbéenu njëg ci biir \"Duggal M3U Limu woy yi URL\" Waxtaan.</string>
   <string name="pref_append_m3u_playlists_title">Yokk M3U Limu woy yi</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">تطبيق قيم سلاسل ثابتة على الاستيراد الافتراضي المحدد من قبل المستخدم URL القوالب</string>
   <string name="pref_apply_default_url_templates_summary_on" >الاستيراد الافتراضي URL القيم هي قوالب</string>
   <string name="pref_apply_default_url_templates_summary_off">الاستيراد الافتراضي URL القيم ليست قوالب</string>
+  <string name="pref_search_input_debounce_interval_title">فترة منع ارتداد الإدخال</string>
+  <string name="pref_search_input_debounce_interval_summary">مدة الانتظار (بالمللي ثانية) بعد الضغط على مفتاح ما قبل تشغيل DB استعلام يتيح الإدخال السريع للبيانات.</string>
+  <string name="pref_search_results_max_count_title">الحد الأقصى لعدد نتائج البحث</string>
+  <string name="pref_search_results_max_count_summary">تقييد على العدد الإجمالي لـ M3U القنوات التي تُرجعها دالة DB استعلام. كلما كان الحجم أصغر، كانت السرعة أعلى.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">إزالة الأسماء المكررة</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >بالنسبة لكل اسم مميز، لن تعرض نتائج البحث سوى اسم واحد فقط M3U قناة</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">بالنسبة لكل اسم مميز، ستعرض نتائج البحث جميع الخيارات المتاحة M3U القنوات</string>
   <string name="pref_default_m3u_url_title">الافتراضي M3U قائمة التشغيل URL</string>
   <string name="pref_default_m3u_url_summary">القيمة الأولية في \"استيراد M3U قائمة التشغيل URL\" حوار.</string>
   <string name="pref_append_m3u_playlists_title">إضافة M3U قوائم التشغيل</string>

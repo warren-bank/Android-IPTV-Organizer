@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Tirhisa mimpimo ya nsingi leyi nga cinciwiki eka ku nghenisa ka ntolovelo loku hlawuriweke hi mutirhisi URL Swipfumelelano</string>
   <string name="pref_apply_default_url_templates_summary_on" >Ku nghenisa loku tolovelekeke URL Tinhlayo i swikombiso</string>
   <string name="pref_apply_default_url_templates_summary_off">Ku nghenisa loku tolovelekeke URL Tinhlayo a hi swikombiso</string>
+  <string name="pref_search_input_debounce_interval_title">Nghenisa nkarhi wo yimisa ku tsekatseka</string>
+  <string name="pref_search_input_debounce_interval_summary">Nkarhi wo rindza (hi timilisekoni) endzhaku ko tshikelela xilotere u nga si sungula ku endla DB Xikombelo xo pfumelela ku nghenisa datha hi xihatla.</string>
+  <string name="pref_search_results_max_count_title">Nhlayo leyikulu ya mbuyelo wa vulavisisi</string>
+  <string name="pref_search_results_max_count_summary">Ntsanelo eka nhlayo hinkwayo ya M3U Switichi leswi vuyisiweke hi a DB Xivutiso. Leswitsongo swa hatlisa..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Susa mavito lama phindha-phindhaka</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Eka vito rin\'wana na rin\'wana leri hambaneke, mbuyelo wa vulavisisi wu ta kombisa rin\'we ntsena. M3U Xiteshi</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Eka vito rin\'wana na rin\'wana leri hambaneke, mbuyelo wa vulavisisi wu ta kombisa hinkwaswo leswi kumekaka. M3U Switeshi</string>
   <string name="pref_default_m3u_url_title">Lexi tolovelekeke M3U Nxaxamelo wa tinsimu URL</string>
   <string name="pref_default_m3u_url_summary">Ntsengo wo sungula endzeni \"Nghenisa M3U Nxaxamelo wa tinsimu URL\" bulo.</string>
   <string name="pref_append_m3u_playlists_title">Engetela M3U Nxaxamelo wa tinsimu</string>

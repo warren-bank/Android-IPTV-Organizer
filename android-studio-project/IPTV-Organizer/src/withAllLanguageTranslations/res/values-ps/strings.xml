@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">کاروونکي لخوا ټاکل شوي ډیفالټ واردولو ته ثابت سټرینګ ارزښتونه وکاروئ URL قالبونه</string>
   <string name="pref_apply_default_url_templates_summary_on" >اصلي واردول URL ارزښتونه قالبونه دي</string>
   <string name="pref_apply_default_url_templates_summary_off">اصلي واردول URL ارزښتونه قالبونه نه دي</string>
+  <string name="pref_search_input_debounce_interval_title">د انپوټ د ډیباونس وقفه</string>
+  <string name="pref_search_input_debounce_interval_summary">د کیلي وهلو وروسته د یو چلولو څخه مخکې د انتظار وخت (په ملی ثانیو کې) DB د چټک معلوماتو داخلولو لپاره پوښتنه.</string>
+  <string name="pref_search_results_max_count_title">د لټون پایلو اعظمي شمېر</string>
+  <string name="pref_search_results_max_count_summary">د ټول شمېر په اړه یو محدودیت M3U د ا لخوا راستانه شوي چینلونه DB پوښتنه. کوچنی ګړندی دی.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">تکراري نومونه لرې کړئ</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >د هر بېل نوم لپاره به د لټون پایلې یوازې یو ښکاره کړي. M3U کانال</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">د هر بېل نوم لپاره به د لټون پایلې ټول شته نومونه وښیي. M3U چینلونه</string>
   <string name="pref_default_m3u_url_title">اصلي M3U د سندرو لړلیک URL</string>
   <string name="pref_default_m3u_url_summary">په ... کې لومړنی ارزښت \"واردول M3U د سندرو لړلیک URL\" خبرې اترې.</string>
   <string name="pref_append_m3u_playlists_title">اضافه کول M3U د سندرو لړلیکونه</string>

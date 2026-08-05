@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Terapkan nilai rentetan statik kepada import lalai yang ditakrifkan oleh pengguna URL sempulan</string>
   <string name="pref_apply_default_url_templates_summary_on" >Import lalai URL nilai adalah templat</string>
   <string name="pref_apply_default_url_templates_summary_off">Import lalai URL Nilai bukan templat</string>
+  <string name="pref_search_input_debounce_interval_title">Masukkan selang penstabilan debounce</string>
+  <string name="pref_search_input_debounce_interval_summary">Jumlah masa menunggu (dalam milisaat) selepas menekan kekunci sebelum menjalankan DB perintah pertanyaan untuk membolehkan kemasukan data dengan pantas.</string>
+  <string name="pref_search_results_max_count_title">Bilangan maksimum hasil carian</string>
+  <string name="pref_search_results_max_count_summary">Sekatan ke atas jumlah keseluruhan M3U saluran yang dikembalikan oleh a DB permintaan. Lebih kecil, lebih pantas.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Hapuskan nama duplikat</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Untuk setiap nama yang berbeza, keputusan carian hanya akan memaparkan satu. M3U saluran</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Untuk setiap nama yang berbeza, keputusan carian akan memaparkan semua yang tersedia. M3U saluran</string>
   <string name="pref_default_m3u_url_title">Lalai M3U Senarai main URL</string>
   <string name="pref_default_m3u_url_summary">Nilai awal dalam \"Import M3U Senarai main URL\" dialog.</string>
   <string name="pref_append_m3u_playlists_title">Lampirkan M3U Senarai main</string>

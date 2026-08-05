@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Terapkan nilai string statis ke impor default yang ditentukan pengguna URL templat</string>
   <string name="pref_apply_default_url_templates_summary_on" >Impor default URL nilai-nilai tersebut adalah templat</string>
   <string name="pref_apply_default_url_templates_summary_off">Impor default URL nilai bukanlah templat</string>
+  <string name="pref_search_input_debounce_interval_title">Interval penundaan masukan</string>
+  <string name="pref_search_input_debounce_interval_summary">Lama waktu tunggu (dalam milidetik) setelah penekanan tombol sebelum menjalankan sebuah DB kueri untuk mempercepat proses entri data.</string>
+  <string name="pref_search_results_max_count_title">Jumlah maksimum hasil pencarian</string>
+  <string name="pref_search_results_max_count_summary">Pembatasan terhadap jumlah total M3U saluran yang dikembalikan oleh sebuah DB pertanyaan. Semakin kecil, semakin cepat.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Hapus nama yang sama</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Untuk setiap nama yang berbeda, hasil pencarian hanya akan menampilkan satu M3U saluran</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Untuk setiap nama yang berbeda, hasil pencarian akan menampilkan semua yang tersedia M3U saluran</string>
   <string name="pref_default_m3u_url_title">Default M3U Daftar Putar URL</string>
   <string name="pref_default_m3u_url_summary">Nilai awal di \"Impor M3U Daftar Putar URL\" dialog.</string>
   <string name="pref_append_m3u_playlists_title">Tambahkan M3U Daftar Putar</string>

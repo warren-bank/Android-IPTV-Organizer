@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">ব্যবহারকারী-সংজ্ঞায়িত ডিফল্ট ইমপোর্টে স্ট্যাটিক স্ট্রিং মান প্রয়োগ করুন URL টেমপ্লেটসমূহ</string>
   <string name="pref_apply_default_url_templates_summary_on" >ডিফল্ট আমদানি URL মানগুলো টেমপ্লেট</string>
   <string name="pref_apply_default_url_templates_summary_off">ডিফল্ট আমদানি URL মানগুলো টেমপ্লেট নয়</string>
+  <string name="pref_search_input_debounce_interval_title">ইনপুট ডেবাউন্স ইন্টারভাল</string>
+  <string name="pref_search_input_debounce_interval_summary">কীবোর্ড চাপার পর একটি চালানোর আগে অপেক্ষার সময় (মিলিসেকেন্ডে) DB দ্রুত ডেটা এন্ট্রি করার জন্য কুয়েরি.</string>
+  <string name="pref_search_results_max_count_title">অনুসন্ধান ফলাফলের সর্বোচ্চ সংখ্যা</string>
+  <string name="pref_search_results_max_count_summary">মোট সংখ্যার উপর একটি সীমাবদ্ধতা M3U একটি দ্বারা ফেরত চ্যানেলসমূহ DB ক্যুয়েরি। ছোট হলে দ্রুত হয়।.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">ডুপ্লিকেট নামগুলি সরান</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >প্রতিটি অনন্য নামের জন্য অনুসন্ধান ফলাফলে শুধুমাত্র একটিই প্রদর্শিত হবে। M3U চ্যানেল</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">প্রতিটি পৃথক নামের জন্য অনুসন্ধান ফলাফলে সব উপলব্ধ ফলাফল দেখানো হবে। M3U চ্যানেলসমূহ</string>
   <string name="pref_default_m3u_url_title">ডিফল্ট M3U প্লেলিস্ট URL</string>
   <string name="pref_default_m3u_url_summary">প্রাথমিক মান ইন \"আমদানি M3U প্লেলিস্ট URL\" সংলাপ.</string>
   <string name="pref_append_m3u_playlists_title">সংযোজন করুন M3U প্লেলিস্টসমূহ</string>

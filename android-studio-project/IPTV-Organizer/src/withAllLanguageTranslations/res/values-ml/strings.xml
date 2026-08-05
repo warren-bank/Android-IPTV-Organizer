@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">ഉപയോക്താവ് നിർവചിച്ച ഡിഫോൾട്ട് ഇമ്പോർട്ടിലേക്ക് സ്റ്റാറ്റിക് സ്ട്രിംഗ് മൂല്യങ്ങൾ പ്രയോഗിക്കുക URL മാതൃകകൾ</string>
   <string name="pref_apply_default_url_templates_summary_on" >നിലവിലെ ഇറക്കുമതി URL മൂല്യങ്ങൾ ടെംപ്ലേറ്റുകളാണ്</string>
   <string name="pref_apply_default_url_templates_summary_off">നിലവിലെ ഇറക്കുമതി URL മൂല്യങ്ങൾ ടെംപ്ലേറ്റുകളല്ല</string>
+  <string name="pref_search_input_debounce_interval_title">ഇൻപുട്ട് ഡീബൗൺസ് ഇടവേള</string>
+  <string name="pref_search_input_debounce_interval_summary">ഒരു കീസ്ട്രോക്കിന് ശേഷം ഒരു പ്രവർത്തനം നടത്തുന്നതിന് മുൻപ് കാത്തിരിക്കേണ്ട സമയം (മില്ലിസെക്കൻഡുകളിൽ) DB വേഗത്തിലുള്ള ഡാറ്റാ നൽകലിന് അനുവദിക്കുന്നതിനുള്ള ക്വറി.</string>
+  <string name="pref_search_results_max_count_title">തിരയൽ ഫലങ്ങളുടെ പരമാവധി എണ്ണം</string>
+  <string name="pref_search_results_max_count_summary">ആകെ എണ്ണത്തിൽ ഒരു നിയന്ത്രണം M3U ഒരു a തിരികെ നൽകുന്ന ചാനലുകൾ DB ചോദ്യം. ചെറുതാണ് വേഗതയേറിയത്.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">ഇരട്ടപ്പേരുകൾ നീക്കം ചെയ്യുക</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >ഓരോ പേരിനും തിരയൽ ഫലങ്ങളിൽ ഒരെണ്ണം മാത്രമേ കാണിക്കൂ. M3U ചാനൽ</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">ഓരോ പേരിനും, ലഭ്യമായ എല്ലാ ഫലങ്ങളും തിരയൽ ഫലങ്ങളിൽ കാണിക്കും. M3U ചാനലുകൾ</string>
   <string name="pref_default_m3u_url_title">നിലവിലുള്ള M3U പ്ലേലിസ്റ്റ് URL</string>
   <string name="pref_default_m3u_url_summary">പ്രാരംഭ മൂല്യം \"ഇറക്കുമതി M3U പ്ലേലിസ്റ്റ് URL\" സംഭാഷണം.</string>
   <string name="pref_append_m3u_playlists_title">ചേർക്കുക M3U പ്ലേലിസ്റ്റുകൾ</string>

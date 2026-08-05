@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Aplicarea valorilor statice sub formă de șiruri de caractere la importul implicit definit de utilizator URL șabloane</string>
   <string name="pref_apply_default_url_templates_summary_on" >Import implicit URL valorile sunt șabloane</string>
   <string name="pref_apply_default_url_templates_summary_off">Import implicit URL valorile nu sunt șabloane</string>
+  <string name="pref_search_input_debounce_interval_title">Intervalul de debounce al semnalului de intrare</string>
+  <string name="pref_search_input_debounce_interval_summary">Timpul de așteptare (în milisecunde) după apăsarea unei taste, înainte de a rula o DB interogare care să permită introducerea rapidă a datelor.</string>
+  <string name="pref_search_results_max_count_title">Numărul maxim de rezultate ale căutării</string>
+  <string name="pref_search_results_max_count_summary">O restricție privind numărul total de M3U canalele returnate de un DB interogare. Cu cât este mai mică, cu atât este mai rapidă.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Elimină numele duplicate</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Pentru fiecare nume distinct, rezultatele căutării vor afișa doar unul M3U canal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Pentru fiecare nume distinct, rezultatele căutării vor afișa toate opțiunile disponibile M3U canale</string>
   <string name="pref_default_m3u_url_title">Implicit M3U Listă de redare URL</string>
   <string name="pref_default_m3u_url_summary">Valoarea inițială în \"Import M3U Listă de redare URL\" dialog.</string>
   <string name="pref_append_m3u_playlists_title">Anexare M3U Liste de redare</string>

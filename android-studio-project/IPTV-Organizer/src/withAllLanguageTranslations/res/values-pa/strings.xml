@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">ਉਪਭੋਗਤਾ-ਨਿਰਧਾਰਿਤ ਡਿਫਾਲਟ ਇੰਪੋਰਟ ਲਈ ਸਥਿਰ ਸਟਰਿੰਗ ਮੁੱਲ ਲਾਗੂ ਕਰੋ URL ਟੈਂਪਲੇਟਸ</string>
   <string name="pref_apply_default_url_templates_summary_on" >ਡਿਫੌਲਟ ਆਯਾਤ URL ਮੁੱਲ ਟੈਂਪਲੇਟ ਹਨ</string>
   <string name="pref_apply_default_url_templates_summary_off">ਡਿਫੌਲਟ ਆਯਾਤ URL ਮੁੱਲ ਟੈਂਪਲੇਟ ਨਹੀਂ ਹੁੰਦੇ।</string>
+  <string name="pref_search_input_debounce_interval_title">ਇਨਪੁੱਟ ਡੀਬਾਊਂਸ ਅੰਤਰਾਲ</string>
+  <string name="pref_search_input_debounce_interval_summary">ਕੀਸਟ੍ਰੋਕ ਤੋਂ ਬਾਅਦ ਇੱਕ ਨੂੰ ਚਲਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਇੰਤਜ਼ਾਰ ਕਰਨ ਦੀ ਮਿਆਦ (ਮਿਲੀਸੈਕਿੰਡ ਵਿੱਚ) DB ਤੇਜ਼ ਡਾਟਾ ਦਰਜ ਕਰਨ ਦੀ ਆਗਿਆ ਦੇਣ ਲਈ ਪੁੱਛਗਿੱਛ.</string>
+  <string name="pref_search_results_max_count_title">ਖੋਜ ਨਤੀਜਿਆਂ ਦੀ ਵੱਧ ਤੋਂ ਵੱਧ ਗਿਣਤੀ</string>
+  <string name="pref_search_results_max_count_summary">ਕੁੱਲ ਗਿਣਤੀ \'ਤੇ ਇੱਕ ਪਾਬੰਦੀ M3U ਇੱਕ ਦੁਆਰਾ ਵਾਪਸ ਕੀਤੇ ਗਏ ਚੈਨਲ DB ਪੁੱਛਗਿੱਛ। ਛੋਟਾ ਤੇਜ਼ ਹੁੰਦਾ ਹੈ।.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">ਦੁਹਰੇ ਨਾਮ ਹਟਾਓ</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >ਹਰ ਵੱਖਰੇ ਨਾਮ ਲਈ, ਖੋਜ ਨਤੀਜੇ ਸਿਰਫ਼ ਇੱਕ ਹੀ ਦਿਖਾਉਣਗੇ। M3U ਚੈਨਲ</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">ਹਰ ਵੱਖਰੇ ਨਾਮ ਲਈ, ਖੋਜ ਨਤੀਜੇ ਸਾਰੇ ਉਪਲਬਧ ਦਿਖਾਉਣਗੇ। M3U ਚੈਨਲ</string>
   <string name="pref_default_m3u_url_title">ਮੂਲ M3U ਪਲੇਲਿਸਟ URL</string>
   <string name="pref_default_m3u_url_summary">ਵਿੱਚ ਸ਼ੁਰੂਆਤੀ ਮੁੱਲ \"ਆਯਾਤ M3U ਪਲੇਲਿਸਟ URL\" ਗੱਲਬਾਤ.</string>
   <string name="pref_append_m3u_playlists_title">ਜੋੜੋ M3U ਪਲੇਲਿਸਟਾਂ</string>

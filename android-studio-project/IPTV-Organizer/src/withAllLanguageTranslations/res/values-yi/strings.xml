@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">אַפּליצירן סטאַטישע שטריקל־ווערטן צו באַניצער־דעפֿינירטן דיפאָלט־אימפּאָרט URL מוסטערן</string>
   <string name="pref_apply_default_url_templates_summary_on" >סטאַנדאַרט־אימפּאָרט URL ווערטן זענען מוסטערן</string>
   <string name="pref_apply_default_url_templates_summary_off">סטאַנדאַרט־אימפּאָרט URL ווערטן זענען נישט קיין מוסטערן</string>
+  <string name="pref_search_input_debounce_interval_title">אַרײַנפֿיר: דעבאַונס־אינטערוואַל</string>
+  <string name="pref_search_input_debounce_interval_summary">די צײַט וואָס מען דאַרף וואַרטן (אין מיליסעקונדעס) נאָך אַ קלאַוויש־דרוק, איידער מען פֿירט אויס אַ DB אָנפֿרעג צו דערלויבן שנעלע דאַטן־אײַנפֿירונג.</string>
+  <string name="pref_search_results_max_count_title">מאַקסימאַלער צאָל פֿון זוך־רעזולטאַטן</string>
+  <string name="pref_search_results_max_count_summary">אַ באַגרענעצונג אויף דער גאַנצער צאָל פֿון M3U קאַנאַלן צוריקגעגעבן דורך אַ DB אָנפֿרעג. קלענער איז שנעלער..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">אַרויסנעמען דופּליקאַט־נעמען</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >פֿאַר יעדן איינציקן נאָמען, וועלן די זוך־רעזולטאַטן נאָר ווײַזן איין. M3U קאַנאַל</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">פֿאַר יעדן איינציקן נאָמען וועלן די זוך־רעזולטאַטן ווײַזן אַלע בנימצא. M3U קאַנאַלן</string>
   <string name="pref_default_m3u_url_title">סטאַנדאַרט M3U שפּיל־ליסטע URL</string>
   <string name="pref_default_m3u_url_summary">אָנהייב־ווערט אין \"אימפּאָרט M3U שפּיל־ליסטע URL\" דיאַלאָג.</string>
   <string name="pref_append_m3u_playlists_title">צוגעבן M3U שפּיל־ליסטעס</string>

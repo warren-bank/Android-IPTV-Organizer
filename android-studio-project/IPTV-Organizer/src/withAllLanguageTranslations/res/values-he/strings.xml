@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">החלת ערכי מחרוזת סטטיים על ייבוא ברירת מחדל שהוגדר על ידי המשתמש URL תבניות</string>
   <string name="pref_apply_default_url_templates_summary_on" >ייבוא ברירת מחדל URL ערכים הם תבניות</string>
   <string name="pref_apply_default_url_templates_summary_off">ייבוא ברירת מחדל URL ערכים אינם תבניות</string>
+  <string name="pref_search_input_debounce_interval_title">מרווח זמן בין לחיצות</string>
+  <string name="pref_search_input_debounce_interval_summary">משך הזמן שיש להמתין (במילי-שניות) לאחר לחיצה על מקש לפני הפעלת DB שאילתה שתאפשר הזנת נתונים מהירה.</string>
+  <string name="pref_search_results_max_count_title">המספר המרבי של תוצאות החיפוש</string>
+  <string name="pref_search_results_max_count_summary">הגבלה על המספר הכולל של M3U ערוצים המוחזרים על ידי a DB שאילתה. קטן יותר הוא מהיר יותר.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">הסר שמות כפולים</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >עבור כל שם ייחודי, תוצאות החיפוש יציגו רק אחד M3U ערוץ</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">עבור כל שם ייחודי, תוצאות החיפוש יציגו את כל האפשרויות הזמינות M3U ערוצים</string>
   <string name="pref_default_m3u_url_title">ברירת מחדל M3U רשימת השמעה URL</string>
   <string name="pref_default_m3u_url_summary">הערך ההתחלתי ב- \"ייבוא M3U רשימת השמעה URL\" דיאלוג.</string>
   <string name="pref_append_m3u_playlists_title">הוסף M3U רשימות השמעה</string>

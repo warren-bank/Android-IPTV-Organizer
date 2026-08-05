@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">مقادیر رشته‌ای ایستا را به واردکردن پیش‌فرض تعریف‌شده توسط کاربر اعمال کنید URL قالب‌ها</string>
   <string name="pref_apply_default_url_templates_summary_on" >واردات پیش‌فرض URL مقادیر قالب‌ها هستند</string>
   <string name="pref_apply_default_url_templates_summary_off">واردات پیش‌فرض URL مقادیر قالب نیستند</string>
+  <string name="pref_search_input_debounce_interval_title">فاصله زمانی ضدلرزش ورودی</string>
+  <string name="pref_search_input_debounce_interval_summary">میزان زمان انتظار (به میلی‌ثانیه) پس از فشردن یک کلید قبل از اجرای یک DB پرس‌وجو برای امکان‌پذیر ساختن ورود سریع داده‌ها.</string>
+  <string name="pref_search_results_max_count_title">حداکثر تعداد نتایج جستجو</string>
+  <string name="pref_search_results_max_count_summary">محدودیتی بر تعداد کل M3U کانال‌های بازگردانده‌شده توسط a DB پرس‌وجو. کوچکتر سریع‌تر است..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">حذف نام‌های تکراری</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >برای هر نام منحصربه‌فرد، نتایج جستجو فقط یک مورد را نمایش می‌دهد. M3U کانال</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">برای هر نام منحصربه‌فرد، نتایج جستجو همه موارد موجود را نمایش خواهد داد. M3U کانال‌ها</string>
   <string name="pref_default_m3u_url_title">پیش‌فرض M3U لیست پخش URL</string>
   <string name="pref_default_m3u_url_summary">مقدار اولیه در \"واردات M3U لیست پخش URL\" گفتگو.</string>
   <string name="pref_append_m3u_playlists_title">ضمیمه کردن M3U لیست‌های پخش</string>

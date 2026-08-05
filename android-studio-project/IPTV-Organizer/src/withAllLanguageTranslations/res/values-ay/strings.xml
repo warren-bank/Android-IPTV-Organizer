@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Apnaqirin uñstayat p\'iqinchir apthapiwirux jan kuyur chinu qillqatanaka uchaña URL Uñanchanaka</string>
   <string name="pref_apply_default_url_templates_summary_on" >Qallta apthapiwi URL Chanininakax plantillanakawa.</string>
   <string name="pref_apply_default_url_templates_summary_off">Qallta apthapiwi URL Chanininakax janiw plantillanakäkiti</string>
+  <string name="pref_search_input_debounce_interval_title">Mantawi ch\'irmthapi pacha</string>
+  <string name="pref_search_input_debounce_interval_summary">Mä tecla ñit\'ita qhipata, mä luräwi qalltañatakix qawqha pachas (milisegundos ukana) suyt\'añaxa. DB Jank\'aki yatiyawinaka uchañataki jiskt\'awi.</string>
+  <string name="pref_search_results_max_count_title">Thaqhañan jilpacha jikxatatanakapa</string>
+  <string name="pref_search_results_max_count_summary">Taqpach jakhuwipat mä jark\'awi M3U mä uñstayata kutt\'ayata thakhinaka DB Jisk\'akiwa jank\'aki.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Pä kuti utjiri sutinaka apsuña</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Sapa mayja sutitakixa, thaqhañan jikxatatanakaxa mayakiw uñacht\'ayani. M3U Thakhi</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Sapa mayja sutitakixa, thaqhañan jikxatatapaxa taqi utjirinak uñacht\'ayaniwa. M3U Thakhinaka</string>
   <string name="pref_default_m3u_url_title">Qallta M3U Jayllinaka URL</string>
   <string name="pref_default_m3u_url_summary">Qallta chani \"Apkataña M3U Jayllinaka URL\" Aruskipäwi.</string>
   <string name="pref_append_m3u_playlists_title">Yapxataña M3U Jayllinaka</string>

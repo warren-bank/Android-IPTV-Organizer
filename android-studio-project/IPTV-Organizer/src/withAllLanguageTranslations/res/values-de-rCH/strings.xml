@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Statische Zeichenfolgenwerte auf benutzerdefinierte Standardimporte anwenden URL Vorlagen</string>
   <string name="pref_apply_default_url_templates_summary_on" >Standardimport URL Werte sind Vorlagen</string>
   <string name="pref_apply_default_url_templates_summary_off">Standardimport URL Werte sind keine Vorlagen</string>
+  <string name="pref_search_input_debounce_interval_title">Entprellungsintervall für Eingänge</string>
+  <string name="pref_search_input_debounce_interval_summary">Die Wartezeit (in Millisekunden) nach einem Tastenanschlag, bevor ein DB Abfrage zur Ermöglichung einer schnellen Dateneingabe.</string>
+  <string name="pref_search_results_max_count_title">Maximale Anzahl Suchergebnisse</string>
+  <string name="pref_search_results_max_count_summary">Eine Begrenzung der Gesamtzahl von M3U Kanäle, die von einem DB Abfrage. Je kleiner, desto schneller.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Doppelte Namen entfernen</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Für jeden einzelnen Namen wird in den Suchergebnissen nur ein Eintrag angezeigt M3U Kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Für jeden einzelnen Namen werden in den Suchergebnissen alle verfügbaren M3U Kanäle</string>
   <string name="pref_default_m3u_url_title">Standard M3U Playlist URL</string>
   <string name="pref_default_m3u_url_summary">Anfangswert in \"Importieren M3U Playlist URL\" Dialog.</string>
   <string name="pref_append_m3u_playlists_title">Anhängen M3U Playlists</string>

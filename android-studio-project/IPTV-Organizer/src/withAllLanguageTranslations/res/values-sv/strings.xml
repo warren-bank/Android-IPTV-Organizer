@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Använd statiska strängvärden för användardefinierad standardimport URL mallar</string>
   <string name="pref_apply_default_url_templates_summary_on" >Standardimport URL värdena är mallar</string>
   <string name="pref_apply_default_url_templates_summary_off">Standardimport URL värden är inte mallar</string>
+  <string name="pref_search_input_debounce_interval_title">Intervall för avklingning av ingångssignalen</string>
+  <string name="pref_search_input_debounce_interval_summary">Den tid (i millisekunder) som ska förflyta efter ett tangenttryck innan en DB fråga som möjliggör snabb datainmatning.</string>
+  <string name="pref_search_results_max_count_title">Maximalt antal sökresultat</string>
+  <string name="pref_search_results_max_count_summary">En begränsning av det totala antalet M3U kanaler som returneras av en DB fråga. Ju mindre, desto snabbare.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Ta bort dubbla namn</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >För varje unikt namn visas endast ett sökresultat M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">För varje enskilt namn kommer sökresultaten att visa alla tillgängliga M3U kanaler</string>
   <string name="pref_default_m3u_url_title">Standard M3U Spellista URL</string>
   <string name="pref_default_m3u_url_summary">Startvärde i \"Importera M3U Spellista URL\" dialog.</string>
   <string name="pref_append_m3u_playlists_title">Lägg till M3U Spellistor</string>

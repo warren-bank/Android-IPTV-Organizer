@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Kohalda staatilisi string-väärtusi kasutaja määratud vaikimisi impordile URL mallid</string>
   <string name="pref_apply_default_url_templates_summary_on" >Vaikimisi import URL väärtused on mallid</string>
   <string name="pref_apply_default_url_templates_summary_off">Vaikimisi import URL väärtused ei ole mallid</string>
+  <string name="pref_search_input_debounce_interval_title">Sisendi tagasilöögivaba intervall</string>
+  <string name="pref_search_input_debounce_interval_summary">Kui kaua (millisekundites) tuleb pärast klahvivajutust oodata, enne kui käivitatakse DB päring, mis võimaldab andmeid kiiresti sisestada.</string>
+  <string name="pref_search_results_max_count_title">Otsingutulemuste maksimaalne arv</string>
+  <string name="pref_search_results_max_count_summary">Piirang koguarvule M3U kanalid, mida tagastab DB päring. Mida väiksem, seda kiirem.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Kustuta dubleeritud nimed</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Iga erineva nime puhul kuvatakse otsingutulemustes vaid üks M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Iga erineva nime puhul kuvatakse otsingutulemustes kõik kättesaadavad M3U kanalid</string>
   <string name="pref_default_m3u_url_title">Vaikimisi M3U Esitusloend URL</string>
   <string name="pref_default_m3u_url_summary">Algväärtus \"Import M3U Esitusloend URL\" dialoog.</string>
   <string name="pref_append_m3u_playlists_title">Lisa M3U Esitusloendid</string>

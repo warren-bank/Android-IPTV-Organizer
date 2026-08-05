@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Tinye uru eriri kwụ ọtọ na mbubata ndabara onye ọrụ kpebiri URL ntụziaka</string>
   <string name="pref_apply_default_url_templates_summary_on" >Ntinye ndabara URL Uru bụ ụdị atụ</string>
   <string name="pref_apply_default_url_templates_summary_off">Ntinye ndabara URL Uru abụghị nlereanya</string>
+  <string name="pref_search_input_debounce_interval_title">Tinye oge nkwụsị mberede</string>
+  <string name="pref_search_input_debounce_interval_summary">Oge a ga-echere (n\'ime milisekọnd) mgbe e pịrị bọtịnụ tupu ịgba DB Ajụjụ iji kwere ka a tinye data ngwa ngwa.</string>
+  <string name="pref_search_results_max_count_title">Ọnụọgụ kacha elu nke nsonaazụ ọchụchọ</string>
+  <string name="pref_search_results_max_count_summary">Oke na ọnụọgụ niile nke M3U ọwa ndị a laghachiri site na a DB Ajụjụ. Obere na-eme ngwa ngwa..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Wepu aha ndị e megharịrị</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Maka aha ọ bụla dị iche, nsonaazụ ọchụchọ ga-egosi naanị otu. M3U ọwa</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Maka aha ọ bụla dị iche, nsonaazụ ọchụchọ ga-egosi ihe niile dị. M3U ọwa</string>
   <string name="pref_default_m3u_url_title">Ntọala M3U Ndepụta egwu URL</string>
   <string name="pref_default_m3u_url_summary">Ọnụahịa mbido n\'ime \"Bubata M3U Ndepụta egwu URL\" mkparịta ụka.</string>
   <string name="pref_append_m3u_playlists_title">Tinye n\'akụkụ M3U Ndepụta egwu</string>

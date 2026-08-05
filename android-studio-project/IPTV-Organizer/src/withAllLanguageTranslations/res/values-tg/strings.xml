@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Арзишҳои статикӣ барои калидҳои сатрӣ дар воридоти пешфарзии муайянкардаи корбар татбиқ кунед URL шаблонҳо</string>
   <string name="pref_apply_default_url_templates_summary_on" >Воридоти пешфарз URL арзишҳо шаблонҳо ҳастанд</string>
   <string name="pref_apply_default_url_templates_summary_off">Воридоти пешфарз URL Арзишҳо шаблон нестанд</string>
+  <string name="pref_search_input_debounce_interval_title">Фосилаи дебаунс-ро ворид кунед</string>
+  <string name="pref_search_input_debounce_interval_summary">Миқдори вақти интизорӣ (дар миллисекундҳо) пас аз пахш кардани тугма пеш аз иҷрои DB пурсиш барои имкон додани воридкунии зудтари маълумот.</string>
+  <string name="pref_search_results_max_count_title">Ҳадди аксари шумораи натиҷаҳои ҷустуҷӯ</string>
+  <string name="pref_search_results_max_count_summary">Маҳдудият дар шумораи умумии M3U каналҳое, ки аз ҷониби a баргардонида шудаанд DB query. Хурдтар зудтар аст.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Номи такроршударо хориҷ кунед</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Барои ҳар номи алоҳида, натиҷаҳои ҷустуҷӯ танҳо як натиҷаро нишон медиҳанд. M3U канал</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Барои ҳар номи беназир, натиҷаҳои ҷустуҷӯ ҳамаи дастрасро нишон медиҳанд. M3U каналҳо</string>
   <string name="pref_default_m3u_url_title">Тавсиявӣ M3U Рӯйхати навозиш URL</string>
   <string name="pref_default_m3u_url_summary">Арзиши ибтидоӣ дар \"Воридкунӣ M3U Рӯйхати навозиш URL\" гуфтугӯ.</string>
   <string name="pref_append_m3u_playlists_title">Илова кардан M3U Плелистҳо</string>

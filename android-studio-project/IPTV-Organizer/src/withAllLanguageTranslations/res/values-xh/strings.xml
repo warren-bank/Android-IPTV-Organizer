@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Sebenzisa amaxabiso omtya angaguqukiyo ekungenisweni okuseta ngokusetyenziswa ngumsebenzisi. URL iitempleyithi</string>
   <string name="pref_apply_default_url_templates_summary_on" >Okungeniswe ngokuzenzekelayo URL Amaxabiso ziitemplates</string>
   <string name="pref_apply_default_url_templates_summary_off">Okungeniswe ngokuzenzekelayo URL Iinqobo azizizo iitemplates.</string>
+  <string name="pref_search_input_debounce_interval_title">Faka isithuba sokucima ukungazinzi</string>
+  <string name="pref_search_input_debounce_interval_summary">Ixesha lokulinda (ngemilisecondi) emva kokucofa iqhosha phambi kokuqhuba i- DB Umbuzo wokuvumela ukufakwa kwedatha ngokukhawuleza.</string>
+  <string name="pref_search_results_max_count_title">Elona nani liphezulu lemiphumela yokukhangela</string>
+  <string name="pref_search_results_max_count_summary">Ukuqiniswa kwinani lilonke le M3U iziteshi ezibuyisiweyo ngu-a DB Umbuzo. Okuncinci kuyakhawuleza..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Susa amagama aphindwe kabini</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Kwegama ngalinye elahlukileyo, iziphumo zokukhangela ziya kubonisa elinye kuphela. M3U Umjelo</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Kwegama ngalinye elahlukileyo, iziphumo zokukhangela ziya kubonisa zonke ezikhoyo. M3U iitshaneli</string>
   <string name="pref_default_m3u_url_title">Okumiselweyo M3U Uluhlu lweengoma URL</string>
   <string name="pref_default_m3u_url_summary">Ixabiso lokuqala elingena \"Ngenisa M3U Uluhlu lweengoma URL\" incoko.</string>
   <string name="pref_append_m3u_playlists_title">Yongeza M3U Uluhlu lweengoma</string>

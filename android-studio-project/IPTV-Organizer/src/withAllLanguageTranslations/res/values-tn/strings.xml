@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Tsenya boleng jwa mogala o o sa fetogeng mo go tsenyeng ka bo yone jo bo beilweng ke modirisi. URL ditempoleite</string>
   <string name="pref_apply_default_url_templates_summary_on" >Tsenyo e e tlwaelegileng URL Ditekanyetso ke ditempoleite</string>
   <string name="pref_apply_default_url_templates_summary_off">Tsenyo e e tlwaelegileng URL Ditekanyetso ga se ditempoleite</string>
+  <string name="pref_search_input_debounce_interval_title">Tsenya nako ya go diegisa go tsamaela ga konopo</string>
+  <string name="pref_search_input_debounce_interval_summary">Lekanyo la nako ya go leta (ka di-millisecond) morago ga go tobetsa konopo pele ga go tsamaisa DB Potso go letlelela tsenyo ya data ka bonako.</string>
+  <string name="pref_search_results_max_count_title">Palo e e kwa godimo ya dipholo tsa patlo</string>
+  <string name="pref_search_results_max_count_summary">Kganelo mo palong yotlhe ya M3U ditsela tse di busitsweng ke a DB Potso. Se se nnye se bofefo..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Tlosa maina a a ipoeletsang</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Mo leineng lengwe le lengwe le le farologaneng, dipholo tsa patlo di tla bontsha e le nngwe fela. M3U mosele</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Mo leineng lengwe le lengwe le le farologaneng, dipholo tsa patlo di tla bontsha tsotlhe tse di leng teng. M3U ditsela</string>
   <string name="pref_default_m3u_url_title">Tlwaelo M3U Lenaane la dipina URL</string>
   <string name="pref_default_m3u_url_summary">Boleng jwa tshimologo mo \"Tsenya M3U Lenaane la dipina URL\" Puisano.</string>
   <string name="pref_append_m3u_playlists_title">Koketša M3U Lethathamo la dipina</string>

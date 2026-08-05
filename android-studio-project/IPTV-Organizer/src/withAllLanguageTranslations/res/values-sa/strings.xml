@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">स्थिरतन्तुमूल्यानि प्रयोगकर्तृ-नियत-डिफ़ॉल्ट् आयासाय प्रयोजयतु। URL आदर्शरूपाणि</string>
   <string name="pref_apply_default_url_templates_summary_on" >पूर्वनिर्धारित आयात URL मूल्यानि आदर्शरूपाणि सन्ति।</string>
   <string name="pref_apply_default_url_templates_summary_off">पूर्वनिर्धारित आयात URL मूल्यानि रूपरेखाः न सन्ति।</string>
+  <string name="pref_search_input_debounce_interval_title">प्रवेश-विरामकालः</string>
+  <string name="pref_search_input_debounce_interval_summary">कीस्ट्रोक्-पश्चात् कार्यक्रमं सञ्चालयितुं प्रतीक्षायाः समयपरिमाणम् (मिलिसेकण्डेषु) DB द्रुतदत्तांशप्रवेशाय प्रश्नः.</string>
+  <string name="pref_search_results_max_count_title">अन्वेषणपरिणामानां अधिकतमसंख्या</string>
+  <string name="pref_search_results_max_count_summary">समग्रसंख्यायाः प्रतिबन्धः M3U एकस्य द्वारा प्रत्यागतानि चैनलाः DB प्रश्नः। लघुतरं शीघ्रतरम्।.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">प्रतिलिपिनामानि अपसारयतु</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >प्रत्येकस्य भिन्ननामस्य अन्वेषणफलानि केवलं एकं एव प्रदर्शयिष्यन्ति। M3U मार्गः</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">प्रत्येकस्य भिन्ननामस्य सर्वे उपलब्धानि परिणामानि प्रदर्शयिष्यन्ते। M3U वाहिन्यः</string>
   <string name="pref_default_m3u_url_title">पूर्वनिर्धारितम् M3U गीतसूची URL</string>
   <string name="pref_default_m3u_url_summary">प्रारम्भिक मूल्ये \"आयातः M3U गीतसूची URL\" संवादः.</string>
   <string name="pref_append_m3u_playlists_title">योजयतु M3U गीतसङ्ग्रहाः</string>

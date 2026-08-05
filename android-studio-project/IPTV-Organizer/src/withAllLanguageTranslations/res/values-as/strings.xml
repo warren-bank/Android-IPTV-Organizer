@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">ব্যৱহাৰকাৰী-নিৰ্ধাৰিত ডিফল্ট আমদানিৰ বাবে স্থিৰ শৃংখল মান প্ৰয়োগ কৰক URL নমুনা</string>
   <string name="pref_apply_default_url_templates_summary_on" >ডিফল্ট আমদানি URL মূল্যসমূহ টেমপ্লেট।</string>
   <string name="pref_apply_default_url_templates_summary_off">ডিফল্ট আমদানি URL মূল্যবোধবোৰ নমুনা নহয়।</string>
+  <string name="pref_search_input_debounce_interval_title">ইনপুট ডেবাউন্স বিৰতি</string>
+  <string name="pref_search_input_debounce_interval_summary">কীষ্ট্ৰোকৰ পিছত এটা ... চলাবলৈ অপেক্ষা কৰিবলগীয়া সময় (মিলিছেকেণ্ডত) DB দ্ৰুত তথ্য প্ৰবিষ্টিৰ বাবে প্ৰশ্ন.</string>
+  <string name="pref_search_results_max_count_title">অনুসন্ধান ফলাফলৰ সৰ্বাধিক সংখ্যা</string>
+  <string name="pref_search_results_max_count_summary">মুঠ সংখ্যাৰ ওপৰত এক বাধা-নিষেধ M3U এ-ৰ দ্বাৰা প্ৰত্যাৱৰ্তিত চেনেলসমূহ DB প্ৰশ্ন। সৰু হ\'লে দ্ৰুত।.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">ডুপ্লিকেট নামবোৰ আঁতৰাওক</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >প্ৰতিটো ভিন্ন নামৰ বাবে, অনুসন্ধানৰ ফলাফলত কেৱল এটা দেখুওৱা হ\'ব। M3U চেনেল</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">প্ৰতিটো ভিন্ন নামৰ বাবে, সন্ধানৰ ফলাফলত সকলো উপলব্ধ দেখুওৱা হ\'ব। M3U চেনেলসমূহ</string>
   <string name="pref_default_m3u_url_title">নিৰ্ধাৰিত M3U প্লেলিষ্ট URL</string>
   <string name="pref_default_m3u_url_summary">প্ৰাৰম্ভিক মান \"আমদানি M3U প্লেলিষ্ট URL\" সংলাপ.</string>
   <string name="pref_append_m3u_playlists_title">সংযোজন কৰক M3U প্লেলিষ্টসমূহ</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Sebelisa boleng ba mohala bo sa fetoheng ho kenyelletso e behiloeng ke mosebelisi. URL Ditempeleite</string>
   <string name="pref_apply_default_url_templates_summary_on" >Kenyo e tloaelehileng URL Boleng ke ditempeleite</string>
   <string name="pref_apply_default_url_templates_summary_off">Kenyo e tloaelehileng URL Boleng ha se ditempeleite</string>
+  <string name="pref_search_input_debounce_interval_title">Kenya nako ea ho emisa ho tsitsipana</string>
+  <string name="pref_search_input_debounce_interval_summary">Nako ea ho leta (ka li-millisecond) kamora ho tobetsa konopo pele ho tsamaisa a DB Potso e etselitsoeng ho lumella keno e potlakileng ea data.</string>
+  <string name="pref_search_results_max_count_title">Palo e phahameng ka ho fetisisa ea liphetho tsa patlo</string>
+  <string name="pref_search_results_max_count_summary">Thibelo palong eohle ea M3U mekhahlelo e kgutlisitsweng ke a DB Potso. E nyenyane e potlaka..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Tlosa mabitso a iphetang</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Lebitso le leng le le leng le fapaneng, liphetho tsa patlo li tla bontša le le leng feela. M3U mohala</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Lebitso ka leng le ikhethang, liphetho tsa patlo li tla bontša tsohle tse fumanehang. M3U mekgwa</string>
   <string name="pref_default_m3u_url_title">Tloaelehileng M3U Lenane la lipina URL</string>
   <string name="pref_default_m3u_url_summary">Boleng ba pele ka hare \"Kenya M3U Lenane la lipina URL\" Puisano.</string>
   <string name="pref_append_m3u_playlists_title">Eketsa M3U Manane a lipina</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Прымяніце статычныя значэнні радкоў да карыстальніцка-вызначанага па змаўчанні імпарту URL шаблоны</string>
   <string name="pref_apply_default_url_templates_summary_on" >Стандартны імпарт URL Значэнні — гэта шаблоны</string>
   <string name="pref_apply_default_url_templates_summary_off">Стандартны імпарт URL Каштоўнасці — не шаблоны</string>
+  <string name="pref_search_input_debounce_interval_title">Увядзіце інтэрвал адбойкі</string>
+  <string name="pref_search_input_debounce_interval_summary">Працягласць чакання (у мілісекундах) пасля націску клавішы перад запускам DB Запыт для дазволу хуткага ўводу даных.</string>
+  <string name="pref_search_results_max_count_title">Максімальная колькасць вынікаў пошуку</string>
+  <string name="pref_search_results_max_count_summary">Абмежаванне на агульную колькасць M3U каналы, вернутыя a DB Запыт. Чым меншы, тым хутчэйшы..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Выдаліць дублікаты імёнаў</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Для кожнага ўнікальнага імя ў выніках пошуку будзе паказаны толькі адзін вынік. M3U канал</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Для кожнага ўнікальнага імя будуць паказаны ўсе даступныя вынікі пошуку. M3U каналы</string>
   <string name="pref_default_m3u_url_title">Па змаўчанні M3U Плэйліст URL</string>
   <string name="pref_default_m3u_url_summary">Пачатковае значэнне ў \"Імпарт M3U Плэйліст URL\" дыялог.</string>
   <string name="pref_append_m3u_playlists_title">Дадаць M3U Плэйлісты</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Applica valores constantiae filorum ad importationem praedefinitam ab usore definitam. URL Formulae</string>
   <string name="pref_apply_default_url_templates_summary_on" >Importatio praedefinita URL Valores sunt exemplaria.</string>
   <string name="pref_apply_default_url_templates_summary_off">Importatio praedefinita URL Valores non sunt exemplaria.</string>
+  <string name="pref_search_input_debounce_interval_title">Intervallum demorsus aditum</string>
+  <string name="pref_search_input_debounce_interval_summary">Tempus exspectandum (in millesimis secundis) post clavem pulsatam antequam DB rogatio ad data celeriter inserenda.</string>
+  <string name="pref_search_results_max_count_title">Maximus numerus eventuum quaestionis</string>
+  <string name="pref_search_results_max_count_summary">Coercitio in summa numerō M3U Canales redditi a DB Interrogatio. Minus celerius..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Tolle nomina duplicata</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Pro singulis nominibus distinctis, unum tantum ex eventibus quaestionis monstrabitur. M3U canalis</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Pro singulis nominibus distinctis, omnes qui praesto sunt eventus quaesitionis monstrabuntur. M3U Canales</string>
   <string name="pref_default_m3u_url_title">Defectio M3U Index canticorum URL</string>
   <string name="pref_default_m3u_url_summary">Valor initialis in \"Importare M3U Index canticorum URL\" Sermo.</string>
   <string name="pref_append_m3u_playlists_title">Adfigere M3U Series cantuum</string>

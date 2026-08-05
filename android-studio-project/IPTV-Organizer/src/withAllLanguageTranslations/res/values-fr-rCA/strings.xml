@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Appliquer des valeurs de chaîne statiques à l\'importation par défaut définie par l\'utilisateur URL modèles</string>
   <string name="pref_apply_default_url_templates_summary_on" >Importation par défaut URL les valeurs sont des modèles</string>
   <string name="pref_apply_default_url_templates_summary_off">Importation par défaut URL les valeurs ne sont pas des modèles</string>
+  <string name="pref_search_input_debounce_interval_title">Intervalle de rebond de l\'entrée</string>
+  <string name="pref_search_input_debounce_interval_summary">Le délai d\'attente (en millisecondes) après une frappe avant d\'exécuter une DB requête permettant une saisie rapide des données.</string>
+  <string name="pref_search_results_max_count_title">Nombre maximal de résultats de recherche</string>
+  <string name="pref_search_results_max_count_summary">Une restriction sur le nombre total de M3U canaux retournés par un DB requête. Plus c’est petit, plus c’est rapide.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Supprimer les noms en double</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Pour chaque nom distinct, les résultats de recherche n\'afficheront qu\'un seul M3U chaîne</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Pour chaque nom distinct, les résultats de recherche afficheront toutes les options disponibles M3U chaînes</string>
   <string name="pref_default_m3u_url_title">Par défaut M3U Liste de lecture URL</string>
   <string name="pref_default_m3u_url_summary">Valeur initiale en \"Importation M3U Liste de lecture URL\" boîte de dialogue.</string>
   <string name="pref_append_m3u_playlists_title">Ajouter M3U Listes de lecture</string>

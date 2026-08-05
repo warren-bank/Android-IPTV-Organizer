@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Aplicar valores de cadea estática á importación predeterminada definida polo usuario URL plantillas</string>
   <string name="pref_apply_default_url_templates_summary_on" >Importación predeterminada URL Os valores son plantillas</string>
   <string name="pref_apply_default_url_templates_summary_off">Importación predeterminada URL Os valores non son plantillas</string>
+  <string name="pref_search_input_debounce_interval_title">Intervalo de rebote de entrada</string>
+  <string name="pref_search_input_debounce_interval_summary">A cantidade de tempo que hai que esperar (en milisegundos) despois dunha pulsación de tecla antes de executar un DB Consulta para permitir a introdución rápida de datos.</string>
+  <string name="pref_search_results_max_count_title">Número máximo de resultados da busca</string>
+  <string name="pref_search_results_max_count_summary">Unha restrición no número total de M3U canles devoltas por un DB Consulta. Canto máis pequeno, máis rápido..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Eliminar nomes duplicados</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Para cada nome distinto, os resultados da busca só amosarán un. M3U canle</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Para cada nome distinto, os resultados da busca amosarán todos os dispoñibles. M3U canles</string>
   <string name="pref_default_m3u_url_title">Por defecto M3U Lista de reprodución URL</string>
   <string name="pref_default_m3u_url_summary">Valor inicial en \"Importar M3U Lista de reprodución URL\" diálogo.</string>
   <string name="pref_append_m3u_playlists_title">Engadir M3U Listas de reprodución</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">વપરાશકર્તા-વ્યાખ્યાયિત ડિફોલ્ટ આયાત માટે સ્થિર સ્ટ્રિંગ મૂલ્યો લાગુ કરો URL નમૂનાઓ</string>
   <string name="pref_apply_default_url_templates_summary_on" >ડિફોલ્ટ આયાત URL મૂલ્યો ટેમ્પલેટ્સ છે</string>
   <string name="pref_apply_default_url_templates_summary_off">ડિફોલ્ટ આયાત URL મૂલ્યો ટેમ્પલેટ નથી</string>
+  <string name="pref_search_input_debounce_interval_title">ઇનપુટ ડિબાઉન્સ અંતરાલ</string>
+  <string name="pref_search_input_debounce_interval_summary">કીસ્ટ્રોક પછી ચલાવવા માટે રાહ જોવાની સમયગાળો (મિલીસેકન્ડમાં) DB ઝડપી ડેટા પ્રવેશ માટેની પૂછપરછ.</string>
+  <string name="pref_search_results_max_count_title">શોધ પરિણામોની મહત્તમ સંખ્યા</string>
+  <string name="pref_search_results_max_count_summary">કુલ સંખ્યા પર પ્રતિબંધ M3U એ દ્વારા પરત ફરતા ચેનલ્સ DB પ્રશ્ન. નાનું ઝડપી છે..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">ડુપ્લિકેટ નામો દૂર કરો</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >દરેક અલગ નામ માટે, શોધ પરિણામોમાં ફક્ત એક જ બતાવવામાં આવશે. M3U માધ્યમ</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">દરેક અલગ નામ માટે, શોધ પરિણામોમાં ઉપલબ્ધ તમામ બતાવવામાં આવશે. M3U ચેનલ્સ</string>
   <string name="pref_default_m3u_url_title">નિર્ધારિત M3U પ્લેલિસ્ટ URL</string>
   <string name="pref_default_m3u_url_summary">પ્રારંભિક મૂલ્ય \"આયાત M3U પ્લેલિસ્ટ URL\" સંવાદ.</string>
   <string name="pref_append_m3u_playlists_title">ઉમેરો M3U પ્લેલિસ્ટ્સ</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Uporabi statične vrednosti nizov za uvoz po privzetih nastavitvah, ki jih določi uporabnik URL predloge</string>
   <string name="pref_apply_default_url_templates_summary_on" >Uvoz po privzetih nastavitvah URL vrednosti so predloge</string>
   <string name="pref_apply_default_url_templates_summary_off">Uvoz po privzetih nastavitvah URL vrednosti niso predloge</string>
+  <string name="pref_search_input_debounce_interval_title">Interval za preprečevanje ponovnega vnosa</string>
+  <string name="pref_search_input_debounce_interval_summary">Čas (v milisekundah), ki ga je treba počakati po pritisku tipke, preden se izvede DB poizvedba, ki omogoča hiter vnos podatkov.</string>
+  <string name="pref_search_results_max_count_title">Največje število rezultatov iskanja</string>
+  <string name="pref_search_results_max_count_summary">Omejitev skupnega števila M3U kanali, ki jih vrne a DB poizvedba. Manjše je hitrejše.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Odstrani podvojena imena</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Za vsako posamezno ime se v rezultatih iskanja prikaže le eno M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Za vsako posamezno ime bodo rezultati iskanja prikazali vse razpoložljive M3U kanali</string>
   <string name="pref_default_m3u_url_title">Privzeto M3U Seznam predvajanja URL</string>
   <string name="pref_default_m3u_url_summary">Začetna vrednost v \"Uvoz M3U Seznam predvajanja URL\" pogovor.</string>
   <string name="pref_append_m3u_playlists_title">Dodaj M3U Seznami predvajanja</string>

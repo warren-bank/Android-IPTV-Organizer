@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Erabili kate estatikoen balioak erabiltzaileak definitutako lehenetsi inportazioan URL txantiloiak</string>
   <string name="pref_apply_default_url_templates_summary_on" >Inportazio lehenetsia URL Balioak txantiloiak dira</string>
   <string name="pref_apply_default_url_templates_summary_off">Inportazio lehenetsia URL Balioak ez dira txantiloiak</string>
+  <string name="pref_search_input_debounce_interval_title">Sarreraren desbounce tartea</string>
+  <string name="pref_search_input_debounce_interval_summary">Teklatuko sakatu baten ondoren exekutatu aurretik itxaron beharreko denbora (milisegundotan) DB Datu-sarrera azkarra ahalbidetzeko kontsulta.</string>
+  <string name="pref_search_results_max_count_title">Bilaketa-emaitzen gehienezko kopurua</string>
+  <string name="pref_search_results_max_count_summary">Guztizko kopuruaren gaineko muga M3U a-k itzuli dituen kanalak DB Kontsulta. Txikiagoa azkarragoa da..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Kendu izen bikoiztuak</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Izena desberdin bakoitzerako, bilaketa-emaitzek bakarra bakarrik erakutsiko dute. M3U kanala</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Izena desberdin bakoitzerako, bilaketa-emaitzek eskuragarri dauden guztiak erakutsiko dituzte. M3U kanalak</string>
   <string name="pref_default_m3u_url_title">Lehenetsia M3U Entzuteko zerrenda URL</string>
   <string name="pref_default_m3u_url_summary">Balio hasierakoa sartzeko \"Inportatu M3U Entzuteko zerrenda URL\" elkarrizketa.</string>
   <string name="pref_append_m3u_playlists_title">Erantsi M3U Playlistak</string>

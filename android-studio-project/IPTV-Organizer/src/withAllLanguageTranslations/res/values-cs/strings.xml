@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Použít statické řetězcové hodnoty pro uživatelsky definovaný výchozí import URL šablony</string>
   <string name="pref_apply_default_url_templates_summary_on" >Výchozí import URL hodnoty jsou šablony</string>
   <string name="pref_apply_default_url_templates_summary_off">Výchozí import URL hodnoty nejsou šablony</string>
+  <string name="pref_search_input_debounce_interval_title">Interval potlačení odskoku vstupu</string>
+  <string name="pref_search_input_debounce_interval_summary">Doba (v milisekundách), po kterou je třeba po stisknutí klávesy počkat, než se spustí DB dotaz umožňující rychlé zadávání dat.</string>
+  <string name="pref_search_results_max_count_title">Maximální počet výsledků vyhledávání</string>
+  <string name="pref_search_results_max_count_summary">Omezení celkového počtu M3U kanály vrácené funkcí DB dotaz. Čím menší, tím rychlejší.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Odstranit duplicitní názvy</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >U každého jedinečného názvu se ve výsledcích vyhledávání zobrazí pouze jeden M3U kanál</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">U každého jedinečného názvu se ve výsledcích vyhledávání zobrazí všechny dostupné M3U kanály</string>
   <string name="pref_default_m3u_url_title">Výchozí M3U Seznam skladeb URL</string>
   <string name="pref_default_m3u_url_summary">Počáteční hodnota v \"Import M3U Seznam skladeb URL\" dialog.</string>
   <string name="pref_append_m3u_playlists_title">Připojit M3U Seznamy skladeb</string>

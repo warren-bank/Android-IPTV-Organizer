@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Կիրառեք ստատիկ տողային արժեքներ օգտվողի սահմանած նախնական ներմուծմանը URL տemplատներ</string>
   <string name="pref_apply_default_url_templates_summary_on" >Ստանդարտ ներմուծում URL արժեքները ձևանմուշներ են</string>
   <string name="pref_apply_default_url_templates_summary_off">Ստանդարտ ներմուծում URL Արժեքները ձևանմուշներ չեն</string>
+  <string name="pref_search_input_debounce_interval_title">Մուտքի դեբաունսի միջակայք</string>
+  <string name="pref_search_input_debounce_interval_summary">Տեղագրության (միլի վայրկյաններով) ժամանակը ստեղն սեղմելուց հետո նախքան գործարկելը DB Հարցում՝ տվյալների արագ մուտքագրումն ապահովելու համար.</string>
+  <string name="pref_search_results_max_count_title">Հետազոտության արդյունքների առավելագույն քանակը</string>
+  <string name="pref_search_results_max_count_summary">Ընդհանուր թվի վրա սահմանափակում M3U a-ի կողմից վերադարձված ալիքներ DB Հարցում։ Փոքրը արագ է։.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Հեռացնել կրկնօրինակ անունները</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Յուրաքանչյուր առանձին անվան համար որոնման արդյունքները ցուցադրում են միայն մեկը։ M3U ալիք</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Յուրաքանչյուր առանձին անվան համար որոնման արդյունքները կցուցադրեն բոլոր մատչելի տարբերակները։ M3U ալիքներ</string>
   <string name="pref_default_m3u_url_title">Ստանդարտ M3U Ցուցակ URL</string>
   <string name="pref_default_m3u_url_summary">Սկզբնական արժեքը ներսում \"Իմպորտ M3U Ցուցակ URL\" զրույց.</string>
   <string name="pref_append_m3u_playlists_title">ավելացնել M3U Պլեյլիստներ</string>

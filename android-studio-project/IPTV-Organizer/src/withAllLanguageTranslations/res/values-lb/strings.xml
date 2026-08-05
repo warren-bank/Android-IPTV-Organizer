@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Statisch String-Wäerter op de benotzerdefinéierten Standard-Import uwenden URL Virlagen</string>
   <string name="pref_apply_default_url_templates_summary_on" >Standardimport URL Wäerter sinn Virlaagen</string>
   <string name="pref_apply_default_url_templates_summary_off">Standardimport URL Wäerter sinn keng Virlagen</string>
+  <string name="pref_search_input_debounce_interval_title">Eingabedéibounz-Intervall</string>
+  <string name="pref_search_input_debounce_interval_summary">D\'Zäit, déi een no engem Tastenklick (an Millisekonnen) muss waarden, ier een e ... ausféiert. DB Ufro fir eng séier Dateneingab ze erlaben.</string>
+  <string name="pref_search_results_max_count_title">Maximal Zuel vun Sichresultater</string>
+  <string name="pref_search_results_max_count_summary">Eng Beschränkung op d\'Gesamtzuel vun M3U Kanäl, déi vun engem zréckginn DB Ufro. Kleng ass méi séier..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Duplizéiert Nimm ewechhuelen</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Fir all eenzegen Numm ginn an de Sichresultater nëmmen ee ugewisen. M3U Kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Fir all eenzegen Numm ginn d\'Sichresultater all verfügbar ugewisen. M3U Kanäl</string>
   <string name="pref_default_m3u_url_title">Standard M3U Liddelëscht URL</string>
   <string name="pref_default_m3u_url_summary">Initialwäert an \"Importéieren M3U Liddelëscht URL\" Dialog.</string>
   <string name="pref_append_m3u_playlists_title">Bäifüügen M3U Playlëschten</string>

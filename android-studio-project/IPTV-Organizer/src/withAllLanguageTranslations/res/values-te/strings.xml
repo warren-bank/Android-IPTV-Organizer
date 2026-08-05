@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">వినియోగదారు-నిర్వచించిన డిఫాల్ట్ ఇంపోర్ట్‌కు స్థిరమైన స్ట్రింగ్ విలువలను వర్తింపజేయండి URL నమూనాలు</string>
   <string name="pref_apply_default_url_templates_summary_on" >డిఫాల్ట్ దిగుమతి URL విలువలు టెంప్లేట్లు</string>
   <string name="pref_apply_default_url_templates_summary_off">డిఫాల్ట్ దిగుమతి URL విలువలు టెంప్లేట్లు కావు</string>
+  <string name="pref_search_input_debounce_interval_title">ఇన్‌పుట్ డీబౌన్స్ వ్యవధి</string>
+  <string name="pref_search_input_debounce_interval_summary">కీస్ట్రోక్ తర్వాత ఒకటి నడపడానికి ముందు వేచి ఉండవలసిన సమయం (మిల్లీసెకన్లలో) DB త్వరిత డేటా నమోదును అనుమతించే ప్రశ్న.</string>
+  <string name="pref_search_results_max_count_title">శోధన ఫలితాల గరిష్ట సంఖ్య</string>
+  <string name="pref_search_results_max_count_summary">మొత్తం సంఖ్యపై ఒక పరిమితి M3U ఒకటి ద్వారా తిరిగి వచ్చిన ఛానెల్స్ DB క్వెరీ. చిన్నది వేగవంతమైనది.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">నకలు పేర్లను తొలగించండి</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >ప్రతి విభిన్న పేరుకు, శోధన ఫలితాలు కేవలం ఒక్కదాన్ని మాత్రమే ప్రదర్శిస్తాయి. M3U ఛానెల్</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">ప్రతి విభిన్న పేరుకు, అందుబాటులో ఉన్న అన్నింటినీ శోధన ఫలితాలు ప్రదర్శిస్తాయి. M3U ఛానెళ్ళు</string>
   <string name="pref_default_m3u_url_title">ప్రామాణికం M3U ప్లేలిస్ట్ URL</string>
   <string name="pref_default_m3u_url_summary">లో ప్రారంభ విలువ \"దిగుమతి M3U ప్లేలిస్ట్ URL\" సంభాషణ.</string>
   <string name="pref_append_m3u_playlists_title">జోడించు M3U ప్లేలిస్ట్‌లు</string>

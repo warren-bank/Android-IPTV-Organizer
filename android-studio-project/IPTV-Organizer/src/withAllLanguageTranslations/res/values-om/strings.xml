@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Gatiiwwan funyoo dhaabbataa galtee duraa fayyadamaan ibsameef hojiirra oolchi URL Unkaalee</string>
   <string name="pref_apply_default_url_templates_summary_on" >Galchii idilee URL Gatiinwwan unkaawwanidha</string>
   <string name="pref_apply_default_url_templates_summary_off">Galchii idilee URL Gatiinwwan unka miti.</string>
+  <string name="pref_search_input_debounce_interval_title">Gidduu yeroo deebii ittisuu galcha</string>
+  <string name="pref_search_input_debounce_interval_summary">Yeroo eeggannaa (miiliisekoondii keessatti) qulfii tuquu booda raawwachuun dura DB Gaaffii galmee daataa saffisaa hayyamuuf.</string>
+  <string name="pref_search_results_max_count_title">Baay\'ina guddicha bu\'aa barbaachaa</string>
+  <string name="pref_search_results_max_count_summary">Daangaa lakkoofsa waliigalaa irratti M3U karaawwan deebifaman kan DB Gaaffii. Xiqqaan saffisaa dha..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Maqaawwan irra deddeebi\'aman haqi</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Maqaa adda ta\'e tokkoon tokkoof, bu\'aan barbaachaa tokko qofa agarsiisa. M3U Madaala</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Maqaa adda ta\'e tokkoon tokkoof, bu\'aan barbaachaa kan argaman hunda ni agarsiisa. M3U Mijoota</string>
   <string name="pref_default_m3u_url_title">Akka duraan turetti M3U Tarree Weelluu URL</string>
   <string name="pref_default_m3u_url_summary">Gatii jalqabaa keessa \"Galuu M3U Tarree Weelluu URL\" Haasawa.</string>
   <string name="pref_append_m3u_playlists_title">Dabali M3U Tarree Weelluu</string>

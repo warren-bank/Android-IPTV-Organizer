@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Aplica valors de cadena estàtics a la importació per defecte definida per l\'usuari URL plantilles</string>
   <string name="pref_apply_default_url_templates_summary_on" >Importació per defecte URL Els valors són plantilles</string>
   <string name="pref_apply_default_url_templates_summary_off">Importació per defecte URL Els valors no són plantilles</string>
+  <string name="pref_search_input_debounce_interval_title">Interval de rebot d\'entrada</string>
+  <string name="pref_search_input_debounce_interval_summary">La quantitat de temps d\'espera (en mil·lisegons) després d\'una pulsació de tecla abans d\'executar un DB Consulta per permetre la introducció ràpida de dades.</string>
+  <string name="pref_search_results_max_count_title">Nombre màxim de resultats de cerca</string>
+  <string name="pref_search_results_max_count_summary">Una restricció sobre el nombre total de M3U canals retornats per un DB petició. Com més petit, més ràpid..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Elimina els noms duplicats</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Per a cada nom diferent, els resultats de la cerca només mostraran un. M3U canal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Per a cada nom diferent, els resultats de la cerca mostraran tots els disponibles. M3U canals</string>
   <string name="pref_default_m3u_url_title">Per defecte M3U Llista de reproducció URL</string>
   <string name="pref_default_m3u_url_summary">Valor inicial en \"Importar M3U Llista de reproducció URL\" diàleg.</string>
   <string name="pref_append_m3u_playlists_title">Afegir M3U Llistes de reproducció</string>

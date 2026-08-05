@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Ampiharo ny sanda tady statika amin\'ny fampidirana mahazatra voafaritin\'ny mpampiasa URL modely</string>
   <string name="pref_apply_default_url_templates_summary_on" >Fampidirana mahazatra URL Ny sanda dia modely</string>
   <string name="pref_apply_default_url_templates_summary_off">Fampidirana mahazatra URL Ny sanda dia tsy modely.</string>
+  <string name="pref_search_input_debounce_interval_title">Elanelam-pamoretana fidirana</string>
+  <string name="pref_search_input_debounce_interval_summary">Ny halavan\'ny fotoana andrasana (amin\'ny milisegondra) aorian\'ny fanindriana ny fitendry alohan\'ny hanatanterahana DB Fangatahana ahafahana mampiditra angon-drakitra haingana.</string>
+  <string name="pref_search_results_max_count_title">Isan\'ny valin\'ny fikarohana ambony indrindra</string>
+  <string name="pref_search_results_max_count_summary">Fetra amin\'ny isan\'ny M3U fantsona naverin\'ny a DB Fanontaniana. Kely kokoa dia haingana kokoa..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Esory ireo anarana miverimberina</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Ho an\'ny anarana samy hafa tsirairay, iray ihany no haseho amin\'ny valin\'ny fikarohana. M3U fantsona</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Ho an\'ny anarana tsirairay miavaka, dia haseho ny valin\'ny fikarohana rehetra misy. M3U fantsona</string>
   <string name="pref_default_m3u_url_title">Araka ny mahazatra M3U Lisitry ny hira URL</string>
   <string name="pref_default_m3u_url_summary">Sanda voalohany ao \"Fanafarana M3U Lisitry ny hira URL\" resadresaka.</string>
   <string name="pref_append_m3u_playlists_title">Manampy M3U Lisitry ny hira</string>

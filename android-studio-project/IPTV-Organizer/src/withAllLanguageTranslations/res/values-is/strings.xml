@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Beittu kyrrstæðum strengsgildum við notendadefineruðu sjálfgefnu innflutningi URL sniðmát</string>
   <string name="pref_apply_default_url_templates_summary_on" >Sjálfgefin innflutningur URL gildi eru sniðmát</string>
   <string name="pref_apply_default_url_templates_summary_off">Sjálfgefin innflutningur URL gildi eru ekki sniðmát</string>
+  <string name="pref_search_input_debounce_interval_title">Inntaksdempunartími</string>
+  <string name="pref_search_input_debounce_interval_summary">Bíða þarf (í millisekúndum) eftir lyklabrot, áður en keyrt er DB fyrirspurn til að gera kleift hraða gagnainnslátt.</string>
+  <string name="pref_search_results_max_count_title">Hámarksfjöldi leitarniðurstaðna</string>
+  <string name="pref_search_results_max_count_summary">Takmörkun á heildarfjölda M3U rásir sem skilað er af a DB fyrirspurn. Minni er hraðari.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Fjarlægja tvöföld nöfn</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Fyrir hvert einstakt nafn birta leitarniðurstöðurnar aðeins eitt. M3U rás</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Fyrir hvert einstakt nafn birta leitarniðurstöðurnar öll tiltæk. M3U rásir</string>
   <string name="pref_default_m3u_url_title">Sjálfgefið M3U Spilunarlisti URL</string>
   <string name="pref_default_m3u_url_summary">Upphafleg gildi í \"Innflutningur M3U Spilunarlisti URL\" Skilaboðargluggi.</string>
   <string name="pref_append_m3u_playlists_title">Bæta við M3U Spilunarlistar</string>

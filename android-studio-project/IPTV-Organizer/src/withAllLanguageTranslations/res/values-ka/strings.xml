@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">მივანიჭოთ სტატიკური სიმები მომხმარებლის მიერ განსაზღვრულ ნაგულისხმევ იმპორტს URL შაბლონები</string>
   <string name="pref_apply_default_url_templates_summary_on" >ნაგულისხმევი იმპორტი URL მნიშვნელობები შაბლონებია</string>
   <string name="pref_apply_default_url_templates_summary_off">ნაგულისხმევი იმპორტი URL ღირებულებები არ არის შაბლონები</string>
+  <string name="pref_search_input_debounce_interval_title">შემავალი სიგნალის დაბლოკვის ინტერვალი</string>
+  <string name="pref_search_input_debounce_interval_summary">კლავიშზე დაჭერის შემდეგ გასავლელი დრო (მილისექუნდებში) სანამ გაუშვებთ DB მოთხოვნა მონაცემების სწრაფად შეყვანისთვის.</string>
+  <string name="pref_search_results_max_count_title">საძიებო შედეგების მაქსიმალური რაოდენობა</string>
+  <string name="pref_search_results_max_count_summary">საერთო რაოდენობაზე შეზღუდვა M3U არხები, რომლებიც დაბრუნებულია a-ს მიერ DB მოთხოვნა. რაც უფრო მცირეა, მით უფრო სწრაფია.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">ამოშალეთ დუბლირებული სახელები</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >თითოეული განსხვავებული სახელისთვის, ძიების შედეგები მხოლოდ ერთს აჩვენებს. M3U არხი</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">თითოეული განსხვავებული სახელისთვის, ძიების შედეგები აჩვენებს ყველა ხელმისაწვდომს. M3U არხები</string>
   <string name="pref_default_m3u_url_title">ნაგულისხმევი M3U პლეისლიsti URL</string>
   <string name="pref_default_m3u_url_summary">საწყისი ღირებულება \"იმპორტი M3U პლეისლიsti URL\" დიალოგი.</string>
   <string name="pref_append_m3u_playlists_title">დამატება M3U პლეისლისტები</string>

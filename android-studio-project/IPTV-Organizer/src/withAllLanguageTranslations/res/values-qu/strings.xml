@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Chaylla qillqa chanikunata churay, runap kamachisqan sapsi apachimuyman. URL Qatinakuna</string>
   <string name="pref_apply_default_url_templates_summary_on" >Kikinmanta apamuy URL Chaninqa qatinakunam.</string>
   <string name="pref_apply_default_url_templates_summary_off">Kikinmanta apamuy URL Chaninqa manan qatinakunachu.</string>
+  <string name="pref_search_input_debounce_interval_title">Yaykuna hark\'ay pacha</string>
+  <string name="pref_search_input_debounce_interval_summary">Huk tecla ñit\'isqamanta, huk ruwayta qallarichinapaq hayk\'a unay suyana (milisegundokunapi). DB Usqhaylla willaykunata qillqaypaq tapukuy.</string>
+  <string name="pref_search_results_max_count_title">Mask\'aypa aswan achka tarisqankuna</string>
+  <string name="pref_search_results_max_count_summary">Tukuy yupayninmanta huk hark\'ay M3U hukpa kutichisqan ñankuna DB Tapukuy. Huch\'uyqa aswan utqaymi..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Iskaychasqa sutikunata hurquy</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Sapa sapaq sutipaqqa, mask\'asqakunaqa hukllatam rikuchinqa. M3U Ñan</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Sapa sapaq sutipaqqa, mask\'asqaykikunaqa llapan tarikuqkunata rikuchinqa. M3U Ñankuna</string>
   <string name="pref_default_m3u_url_title">Qallariylla M3U Takikunaq qatiynin URL</string>
   <string name="pref_default_m3u_url_summary">Qallariy chanin yaykunanpaq \"Hawa llaqtamanta apamuy M3U Takikunaq qatiynin URL\" Rimanakuy.</string>
   <string name="pref_append_m3u_playlists_title">Yapay M3U Takikuna Huñusqa</string>

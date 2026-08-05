@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Whakamahia ngā uara aho tū tonu ki te kawemai taunoa i tautuhia e te kaiwhakamahi URL Tārua</string>
   <string name="pref_apply_default_url_templates_summary_on" >Tāuru taunoa URL He tauira ngā uara</string>
   <string name="pref_apply_default_url_templates_summary_off">Tāuru taunoa URL Ehara ngā uara i te tauira</string>
+  <string name="pref_search_input_debounce_interval_title">Whakauruhia te wā whakaroa mō te whakakore peke</string>
+  <string name="pref_search_input_debounce_interval_summary">Te roa o te wā hei tatari (i roto i ngā milihēkona) i muri i te patu kī i mua i te whakahaere i tētahi DB Pātai hei āhei i te whakauru raraunga tere.</string>
+  <string name="pref_search_results_max_count_title">Te tatauranga nui rawa atu o ngā hua rapu</string>
+  <string name="pref_search_results_max_count_summary">He here mō te tapeke o M3U ngā hongere i whakahokia e tētahi DB Ui. He iti ake, he tere ake..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Tangohia ngā ingoa tārua</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Mō ia ingoa motuhake, kotahi anake ngā hua rapu ka whakaatuhia. M3U ara</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Mō ia ingoa motuhake, ka whakaatu ngā hua rapu i ngā mea katoa e wātea ana. M3U Ngā hongere</string>
   <string name="pref_default_m3u_url_title">Taunoa M3U Rārangi waiata URL</string>
   <string name="pref_default_m3u_url_summary">Uara tuatahi i roto \"Kaweake M3U Rārangi waiata URL\" Kōrero.</string>
   <string name="pref_append_m3u_playlists_title">Tāpiri M3U Rārangi waiata</string>

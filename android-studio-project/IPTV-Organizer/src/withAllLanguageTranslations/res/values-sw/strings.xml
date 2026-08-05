@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Tumia thamani za kamba zisizobadilika kwa uingizaji chaguo-msingi uliotolewa na mtumiaji URL Violezo</string>
   <string name="pref_apply_default_url_templates_summary_on" >Uingizaji chaguo-msingi URL Thamani ni kiolezo</string>
   <string name="pref_apply_default_url_templates_summary_off">Uingizaji chaguo-msingi URL Thamani si kiolezo</string>
+  <string name="pref_search_input_debounce_interval_title">Weka kipindi cha kuzuia mtikisiko</string>
+  <string name="pref_search_input_debounce_interval_summary">Muda wa kusubiri (kwa milisekunde) baada ya kubonyeza kitufe kabla ya kuendesha DB Ombi la kuwezesha uingizaji wa data wa haraka.</string>
+  <string name="pref_search_results_max_count_title">Idadi ya juu ya matokeo ya utafutaji</string>
+  <string name="pref_search_results_max_count_summary">Kizuizi juu ya jumla ya M3U kanali zilizorejeshwa na a DB uliza. Ndogo ni haraka zaidi.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Ondoa majina yanayorudiwa</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Kwa kila jina tofauti, matokeo ya utafutaji yataonyesha moja tu. M3U Kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Kwa kila jina tofauti, matokeo ya utafutaji yataonyesha yote yanayopatikana. M3U kanali</string>
   <string name="pref_default_m3u_url_title">Kawaida M3U Orodha ya nyimbo URL</string>
   <string name="pref_default_m3u_url_summary">Thamani ya awali katika \"Agiza M3U Orodha ya nyimbo URL\" mazungumzo.</string>
   <string name="pref_append_m3u_playlists_title">Ongeza M3U Orodha za nyimbo</string>

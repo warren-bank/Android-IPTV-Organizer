@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Emoĩ mbojoajuha jehaipyre opytáva puruhára omoĩva import-pe g̃uarã. URL Techaukarã</string>
   <string name="pref_apply_default_url_templates_summary_on" >Jeike ypykue URL Umi mba\'e hepy ha\'e techapyrã.</string>
   <string name="pref_apply_default_url_templates_summary_off">Jeike ypykue URL Umi mba\'e ndaha\'éi ta\'anga\'ita.</string>
+  <string name="pref_search_input_debounce_interval_title">Moinge pe intervalo oñembopytu\'u hag̃ua pe ñembota</string>
+  <string name="pref_search_input_debounce_interval_summary">Aravo\'i oñeha\'arõva (milisegúndope) oñembota rire peteĩ teklápe, oñemboguata mboyve peteĩ DB Porandu ohejáva oñemoinge pya\'e marandu.</string>
+  <string name="pref_search_results_max_count_title">Jeheka mbohovái hetavéva</string>
+  <string name="pref_search_results_max_count_summary">Peteĩ jeko\'o papapy pavẽ rehegua M3U mbohasaha ojevyva\'ekue peteĩgui DB Porandu. Michĩvéva ipya\'eve..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Eipe\'a umi téra ojejuajáva</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Peteĩteĩ téra iñambuéva rehe, umi jeheka osẽva ohechaukáta peteĩnte. M3U Tape\'i</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Peteĩteĩ téra iñambuéva rehe, umi ojejuhúva ohechaukáta opaite oĩva. M3U Tape\'akuéra</string>
   <string name="pref_default_m3u_url_title">Ojehechaháichaite M3U Purahéi aty URL</string>
   <string name="pref_default_m3u_url_summary">Mbohepy ñepyrũrã \"Mbohypy M3U Purahéi aty URL\" Ñomongeta.</string>
   <string name="pref_append_m3u_playlists_title">Omoĩve M3U Purahéi aty</string>

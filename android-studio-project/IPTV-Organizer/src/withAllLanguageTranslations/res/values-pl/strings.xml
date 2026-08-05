@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Zastosuj statyczne wartości ciągów znaków do domyślnego importu zdefiniowanego przez użytkownika URL szablony</string>
   <string name="pref_apply_default_url_templates_summary_on" >Import domyślny URL wartości są szablonami</string>
   <string name="pref_apply_default_url_templates_summary_off">Import domyślny URL wartości nie są szablonami</string>
+  <string name="pref_search_input_debounce_interval_title">Interwał wygaszania sygnału wejściowego</string>
+  <string name="pref_search_input_debounce_interval_summary">Czas oczekiwania (w milisekundach) po naciśnięciu klawisza przed uruchomieniem funkcji DB zapytanie umożliwiające szybkie wprowadzanie danych.</string>
+  <string name="pref_search_results_max_count_title">Maksymalna liczba wyników wyszukiwania</string>
+  <string name="pref_search_results_max_count_summary">Ograniczenie dotyczące łącznej liczby M3U kanały zwracane przez DB zapytanie. Im mniejsze, tym szybsze.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Usuń zduplikowane nazwy</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Dla każdej unikalnej nazwy w wynikach wyszukiwania wyświetli się tylko jeden M3U kanał</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Dla każdej unikalnej nazwy w wynikach wyszukiwania wyświetlą się wszystkie dostępne M3U kanały</string>
   <string name="pref_default_m3u_url_title">Domyślnie M3U Lista odtwarzania URL</string>
   <string name="pref_default_m3u_url_summary">Wartość początkowa w \"Importuj M3U Lista odtwarzania URL\" okno dialogowe.</string>
   <string name="pref_append_m3u_playlists_title">Dodaj M3U Listy odtwarzania</string>

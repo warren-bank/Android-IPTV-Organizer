@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Lakaat talvouzhioù kerdin statik da enporzhiañ dre ziouer termenet gant an implijer URL Patromoù</string>
   <string name="pref_apply_default_url_templates_summary_on" >Enporzh dre ziouer URL An talvoudoù zo patromoù.</string>
   <string name="pref_apply_default_url_templates_summary_off">Enporzh dre ziouer URL An talvoudoù n\'int ket patromoù.</string>
+  <string name="pref_search_input_debounce_interval_title">Etrekamm an digoradur</string>
+  <string name="pref_search_input_debounce_interval_summary">Padelezh an amzer da c\'hortoz (e milisekonnennoù) goude ur waskadenn-klouar a-raok lañsañ ur DB Goulenn evit aotren un enmont roadennoù prim.</string>
+  <string name="pref_search_results_max_count_title">Niver brasañ a zisoc\'hoù klask</string>
+  <string name="pref_search_results_max_count_summary">Ur strishadenn war an niver hollek a M3U kanolioù distroet gant ur DB Goulenn. Bihanoc\'h a ya buanoc\'h..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Lemel an anvioù doubl</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Evit pep anv disheñvel, ne vo diskouezet nemet un disoc\'h klask. M3U kanol</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Evit pep anv disheñvel, diskouez a raio disoc\'hoù ar c\'hlask an holl zo hegerz. M3U kanolioù</string>
   <string name="pref_default_m3u_url_title">Diouer M3U Roll sonioù URL</string>
   <string name="pref_default_m3u_url_summary">Talvoudegezh kentañ e \"Enporzhiañ M3U Roll sonioù URL\" Kaozeadenn.</string>
   <string name="pref_append_m3u_playlists_title">Ouzhpennañ M3U Rolladoù sonerezh</string>

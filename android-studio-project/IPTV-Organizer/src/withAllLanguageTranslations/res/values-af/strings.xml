@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Pas statiese stringwaardes toe op gebruiker-gedefinieerde verstek-invoer URL sjablone</string>
   <string name="pref_apply_default_url_templates_summary_on" >Standaardinvoer URL waardes is sjablone</string>
   <string name="pref_apply_default_url_templates_summary_off">Standaardinvoer URL waardes is nie sjablone nie</string>
+  <string name="pref_search_input_debounce_interval_title">Voer ontdofinterval in</string>
+  <string name="pref_search_input_debounce_interval_summary">Die hoeveelheid tyd om te wag (in millisekondes) na \'n toetsindruk voordat \'n DB navraag om vinnige datainvoer moontlik te maak.</string>
+  <string name="pref_search_results_max_count_title">Maximum aantal soekresultate</string>
+  <string name="pref_search_results_max_count_summary">\'n beperking op die totale aantal van M3U kanale wat deur \'n teruggegee is DB navraag. Klein is vinniger.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Verwyder duplikaatname</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Vir elke unieke naam sal die soekresultate slegs een vertoon. M3U kanaal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Vir elke unieke naam sal die soekresultate al die beskikbare vertoon. M3U kanale</string>
   <string name="pref_default_m3u_url_title">Standaard M3U Speellys URL</string>
   <string name="pref_default_m3u_url_summary">Inisiale waarde in \"Invoer M3U Speellys URL\" dialoog.</string>
   <string name="pref_append_m3u_playlists_title">Voeg by M3U Speellys</string>

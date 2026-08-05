@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Taikyti statines eilutės reikšmes vartotojo apibrėžtam numatytam importui URL šablonai</string>
   <string name="pref_apply_default_url_templates_summary_on" >Importavimas pagal numatytuosius nustatymus URL reikšmės yra šablonai</string>
   <string name="pref_apply_default_url_templates_summary_off">Importavimas pagal numatytuosius nustatymus URL reikšmės nėra šablonai</string>
+  <string name="pref_search_input_debounce_interval_title">Įvesties atgarsio slopinimo intervalas</string>
+  <string name="pref_search_input_debounce_interval_summary">Laikas (milisekundėmis), kurį reikia palaukti po klavišo paspaudimo prieš paleidžiant DB užklausa, skirta užtikrinti greitą duomenų įvedimą.</string>
+  <string name="pref_search_results_max_count_title">Maksimalus paieškos rezultatų skaičius</string>
+  <string name="pref_search_results_max_count_summary">Apribojimas dėl bendro skaičiaus M3U kanalai, kuriuos grąžina DB užklausa. Kuo mažesnė, tuo greitesnė.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Pašalinti pasikartojančius vardus</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Kiekvienam skirtingam pavadinimui paieškos rezultatuose bus rodomas tik vienas M3U kanalas</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Kiekvienam skirtingam pavadinimui paieškos rezultatuose bus rodomi visi turimi M3U kanalai</string>
   <string name="pref_default_m3u_url_title">Numatytasis M3U Grojaraštis URL</string>
   <string name="pref_default_m3u_url_summary">Pradinė vertė \"Importas M3U Grojaraštis URL\" dialogas.</string>
   <string name="pref_append_m3u_playlists_title">Pridėti M3U Grojaraščiai</string>

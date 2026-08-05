@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Хэрэглэгчийн тогтоосон анхдагч импортод статик оролт утгуудыг хэрэглэ URL шаблон</string>
   <string name="pref_apply_default_url_templates_summary_on" >Анхдагчаар импорт URL Үнэ цэнүүд нь шаблонууд юм</string>
   <string name="pref_apply_default_url_templates_summary_off">Анхдагчаар импорт URL Үнэ цэнүүд нь загвар биш</string>
+  <string name="pref_search_input_debounce_interval_title">Оролтын дебаунс интервал</string>
+  <string name="pref_search_input_debounce_interval_summary">Товчлуур дарагдсаны дараа (ммс-ээр) гүйцэтгэхээс өмнө хүлээх хугацаа DB өгөгдлийг хурдан оруулах боломж олгох асуулт.</string>
+  <string name="pref_search_results_max_count_title">Хайлтын үр дүнгийн хамгийн их тоо</string>
+  <string name="pref_search_results_max_count_summary">Нийт тооны хязгаарлалт M3U a-гаар буцаагдсан сувгууд DB query. Жижиг нь хурдан.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Давхардсан нэрсийг арилгах</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Нэр бүрд хайлтын үр дүн зөвхөн нэгийг харуулна. M3U суваг</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Нэр бүрд хайлтын үр дүн нь бүх боломжит үр дүнг харуулна. M3U сувгууд</string>
   <string name="pref_default_m3u_url_title">Анхдагч M3U Тоглолтын жагсаалт URL</string>
   <string name="pref_default_m3u_url_summary">Оролтын анхны утга \"Импорт M3U Тоглолтын жагсаалт URL\" харилцах.</string>
   <string name="pref_append_m3u_playlists_title">Нэмэх M3U Тоглолтын жагсаалтууд</string>

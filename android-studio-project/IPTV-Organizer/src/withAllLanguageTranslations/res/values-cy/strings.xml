@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Gwneud cais gwerthoedd llinyn statig i fewnforio diofyn a ddiffinnir gan y defnyddiwr URL Templedi</string>
   <string name="pref_apply_default_url_templates_summary_on" >Mewnforio diofyn URL Mae gwerthoedd yn dempledi</string>
   <string name="pref_apply_default_url_templates_summary_off">Mewnforio diofyn URL Nid templedi yw gwerthoedd</string>
+  <string name="pref_search_input_debounce_interval_title">Rhowch y cyfnod dad-syrthio</string>
+  <string name="pref_search_input_debounce_interval_summary">Yr amser i aros (mewn milieiliadau) ar ôl gwasgu bysell cyn rhedeg DB ymholiad i ganiatáu mewnbynnu data cyflym.</string>
+  <string name="pref_search_results_max_count_title">Uchafswm canlyniadau chwilio</string>
+  <string name="pref_search_results_max_count_summary">Cyfyngiad ar gyfanswm y M3U sianeli a ddychwelwyd gan a DB ymholiad. Po leiaf, po gyflymaf.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Tynnwch enwau dyblyg</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Ar gyfer pob enw unigryw, dim ond un fydd yn cael ei ddangos yn y canlyniadau chwilio. M3U sianel</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Ar gyfer pob enw gwahanol, bydd canlyniadau\'r chwiliad yn dangos yr holl rai sydd ar gael. M3U sianeli</string>
   <string name="pref_default_m3u_url_title">Rhagosodedig M3U Rhestr chwarae URL</string>
   <string name="pref_default_m3u_url_summary">Gwerth cychwynnol yn \"Mewnforio M3U Rhestr chwarae URL\" deialog.</string>
   <string name="pref_append_m3u_playlists_title">Atodi M3U Rhestri chwarae</string>

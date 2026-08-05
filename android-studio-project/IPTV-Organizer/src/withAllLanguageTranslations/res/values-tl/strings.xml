@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Ilapat ang mga nakapirming halaga ng string sa default na import na itinakda ng gumagamit URL mga template</string>
   <string name="pref_apply_default_url_templates_summary_on" >Default na pag-import URL Ang mga halaga ay mga template.</string>
   <string name="pref_apply_default_url_templates_summary_off">Default na pag-import URL Ang mga halaga ay hindi mga template.</string>
+  <string name="pref_search_input_debounce_interval_title">Ipasok ang pagkaantala ng pag-de-debounce</string>
+  <string name="pref_search_input_debounce_interval_summary">Ang dami ng oras na hihintayin (sa millisegundo) pagkatapos ng pag-type ng susi bago patakbuhin ang isang DB Pagtatanong upang payagan ang mabilis na pagpasok ng datos.</string>
+  <string name="pref_search_results_max_count_title">Pinakamataas na bilang ng mga resulta ng paghahanap</string>
+  <string name="pref_search_results_max_count_summary">Isang paghihigpit sa kabuuang bilang ng M3U mga channel na ibinalik ng a DB Maliit ay mas mabilis..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Alisin ang mga dobleng pangalan</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Para sa bawat natatanging pangalan, magpapakita lamang ng isa ang mga resulta ng paghahanap. M3U daanan</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Para sa bawat natatanging pangalan, ipapakita ng mga resulta ng paghahanap ang lahat ng magagamit. M3U mga daluyan</string>
   <string name="pref_default_m3u_url_title">Default M3U Playlist URL</string>
   <string name="pref_default_m3u_url_summary">Paunang halaga sa \"I-import M3U Playlist URL\" dayalogo.</string>
   <string name="pref_append_m3u_playlists_title">Magdagdag M3U Mga listahan ng kanta</string>

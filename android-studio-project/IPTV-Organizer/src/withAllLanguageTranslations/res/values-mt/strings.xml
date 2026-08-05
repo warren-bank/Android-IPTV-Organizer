@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Aplika valuri ta\' stringa statika għall-importazzjoni default definita mill-utent URL mudelli</string>
   <string name="pref_apply_default_url_templates_summary_on" >Importazzjoni default URL il-valuri huma mudelli</string>
   <string name="pref_apply_default_url_templates_summary_off">Importazzjoni default URL Il-valuri mhumiex mudelli</string>
+  <string name="pref_search_input_debounce_interval_title">Daħħal l-intervall ta\' debounce</string>
+  <string name="pref_search_input_debounce_interval_summary">Il-ammont ta\' żmien li għandu jitistenna (f\'millisekondi) wara l-pressjoni ta\' tast qabel ma jitwettaq DB mistoqsija biex tippermetti dħul rapidu tad-dejta.</string>
+  <string name="pref_search_results_max_count_title">L-ogħla numru ta\' riżultati tat-tfittxija</string>
+  <string name="pref_search_results_max_count_summary">Restrizzjoni fuq in-numru totali ta\' M3U kanali rritornati minn a DB mistoqsija. Iżgħar huwa aktar mgħaġġel.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Neħħi l-ismijiet doppji</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Għal kull isem distint, ir-riżultati tat-tfittxija se juru biss wieħed. M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Għal kull isem distint, ir-riżultati tat-tfittxija se juru kollox disponibbli. M3U kanali</string>
   <string name="pref_default_m3u_url_title">Default M3U Lista tal-kanzunetti URL</string>
   <string name="pref_default_m3u_url_summary">Valur inizjali f\' \"Importazzjoni M3U Lista tal-kanzunetti URL\" djalogu.</string>
   <string name="pref_append_m3u_playlists_title">Żid M3U Playlists</string>

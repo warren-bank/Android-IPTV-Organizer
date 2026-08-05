@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Ҡулланыусы билдәләгән стандарт импортҡа статик юл ҡиммәттәрен ҡулланығыҙ URL шаблондар</string>
   <string name="pref_apply_default_url_templates_summary_on" >Төп импорт URL Ҡиммәттәр шаблондар</string>
   <string name="pref_apply_default_url_templates_summary_off">Төп импорт URL Ҡиммәттәр шаблондар түгел</string>
+  <string name="pref_search_input_debounce_interval_title">Кереү дебаунс интервалын индерегеҙ</string>
+  <string name="pref_search_input_debounce_interval_summary">Клавиша баҫылғандан һуң (миллисекундтарҙа) эшләтеп ебәреүгә тиклем көтөргә кәрәкле ваҡыт DB Мәғлүмәтте тиҙ индереү мөмкинлеген биреү өсөн һорау.</string>
+  <string name="pref_search_results_max_count_title">Эҙләү һөҙөмтәләренең максималь һаны</string>
+  <string name="pref_search_results_max_count_summary">Бөтәһенең дөйөм һанына сикләү M3U a тарафынан ҡайтарылған каналдар DB Һорау. Кесеһе тиҙерәк..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Ҡабатланған исемдәрҙе алып ташла</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Һәр айырым исем өсөн эҙләү һөҙөмтәләре тик бер генә күрһәтәсәк. M3U канал</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Һәр айырым исем өсөн эҙләү һөҙөмтәләрендә бөтә мөмкин булғандары күрһәтеләсәк. M3U каналдар</string>
   <string name="pref_default_m3u_url_title">Төп M3U Плейлист URL</string>
   <string name="pref_default_m3u_url_summary">Башланғыс ҡиммәт \"Импорт M3U Плейлист URL\" диалог.</string>
   <string name="pref_append_m3u_playlists_title">Өҫтәргә M3U Плейлисттар</string>

@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Пайдаланушы анықтаған әдепкі импортқа статикалық жол мәндерін қолданыңыз URL шаблондар</string>
   <string name="pref_apply_default_url_templates_summary_on" >Әдепкі бойынша импорт URL Мәнділер шаблондар</string>
   <string name="pref_apply_default_url_templates_summary_off">Әдепкі бойынша импорт URL Мәнділер шаблондар емес</string>
+  <string name="pref_search_input_debounce_interval_title">Кірістің тербелісін басу аралығы</string>
+  <string name="pref_search_input_debounce_interval_summary">Перне басылғаннан кейін іске қосуға дейінгі күту уақытының ұзақтығы (миллисекундпен) DB Деректерді жылдам енгізуге мүмкіндік беретін сұрау.</string>
+  <string name="pref_search_results_max_count_title">Іздеу нәтижелерінің ең көп саны</string>
+  <string name="pref_search_results_max_count_summary">Жалпы санына қойылған шектеу M3U a арқылы қайтарылған арналар DB сұрау. Кішірек болса, жылдамдығы жоғары..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Қайталанатын есімдерді жою</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Әрбір бірегей атау үшін іздеу нәтижелерінде тек бір ғана көрсетіледі. M3U арна</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Әрбір ерекше атау үшін іздеу нәтижелерінде барлық қолжетімді нұсқалар көрсетіледі. M3U арналар</string>
   <string name="pref_default_m3u_url_title">Әдепкі M3U Плейлист URL</string>
   <string name="pref_default_m3u_url_summary">Кіріс мәні \"Импорт M3U Плейлист URL\" диалог.</string>
   <string name="pref_append_m3u_playlists_title">Қосу M3U Плейлисттер</string>

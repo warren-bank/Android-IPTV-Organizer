@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Применете статички вредности на стринг за кориснички дефиниран стандарден увоз URL шаблони</string>
   <string name="pref_apply_default_url_templates_summary_on" >Стандарден увоз URL Вредностите се шаблони</string>
   <string name="pref_apply_default_url_templates_summary_off">Стандарден увоз URL Вредностите не се шаблони</string>
+  <string name="pref_search_input_debounce_interval_title">Влезен интервал за поништување на отскокови</string>
+  <string name="pref_search_input_debounce_interval_summary">Времето на чекање (во милисекунди) по притискање на тастер пред извршување на DB побарување за овозможување на брз внез на податоци.</string>
+  <string name="pref_search_results_max_count_title">Максимален број на резултати од пребарувањето</string>
+  <string name="pref_search_results_max_count_summary">Ограничување на вкупниот број на M3U канали вратени од а DB побарување. Помало е побрзо.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Отстрани дуплирани имиња</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >За секое различно име, резултатите од пребарувањето ќе прикажат само еден. M3U канал</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">За секое различно име, резултатите од пребарувањето ќе ги прикажат сите достапни M3U канали</string>
   <string name="pref_default_m3u_url_title">Стандардно M3U Плејлиста URL</string>
   <string name="pref_default_m3u_url_summary">Почетна вредност во \"Увоз M3U Плејлиста URL\" дијалог.</string>
   <string name="pref_append_m3u_playlists_title">Прикачи M3U Плејлисти</string>

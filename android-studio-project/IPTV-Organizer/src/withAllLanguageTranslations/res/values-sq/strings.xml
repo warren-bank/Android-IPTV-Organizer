@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Aplikoni vlera statike të shiritit për importin e paracaktuar të përcaktuar nga përdoruesi URL shabllone</string>
   <string name="pref_apply_default_url_templates_summary_on" >Import i paracaktuar URL vlerat janë shabllone</string>
   <string name="pref_apply_default_url_templates_summary_off">Import i paracaktuar URL Vlerat nuk janë shabllone</string>
+  <string name="pref_search_input_debounce_interval_title">Intervali i shuarjes së sinjalit të hyrjes</string>
+  <string name="pref_search_input_debounce_interval_summary">Sasia e kohës që duhet të prisni (në milisekonda) pas shtypjes së një çelësi përpara se të ekzekutoni një DB pyetje për të lejuar futjen e shpejtë të të dhënave.</string>
+  <string name="pref_search_results_max_count_title">Numri maksimal i rezultateve të kërkimit</string>
+  <string name="pref_search_results_max_count_summary">Një kufizim mbi numrin total të M3U kanalet e kthyer nga një DB pyetje. Sa më i vogël, aq më i shpejtë.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Hiqni emrat e dyfishtë</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Për çdo emër të ndryshëm, rezultatet e kërkimit do të shfaqin vetëm një. M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Për çdo emër të ndryshëm, rezultatet e kërkimit do të shfaqin të gjitha të disponueshme. M3U kanalet</string>
   <string name="pref_default_m3u_url_title">Parazgjedhje M3U Lista e këngëve URL</string>
   <string name="pref_default_m3u_url_summary">Vlera fillestare në \"Importo M3U Lista e këngëve URL\" dialog.</string>
   <string name="pref_append_m3u_playlists_title">Shto M3U Lista të luajtjes</string>

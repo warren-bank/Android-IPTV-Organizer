@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Колдонуучу аныктаган демейки импортко статикалык сап маанилерин колдонуңуз URL шаблондор</string>
   <string name="pref_apply_default_url_templates_summary_on" >Стандарттык импорт URL Баалуулуктар шаблондор</string>
   <string name="pref_apply_default_url_templates_summary_off">Стандарттык импорт URL Баалуулуктар шаблондор эмес</string>
+  <string name="pref_search_input_debounce_interval_title">Киргизүү дебаунс аралыгы</string>
+  <string name="pref_search_input_debounce_interval_summary">Клавиша басылгандан кийин аткарууга чейин күтүү убактысы (миллисекундда) DB Маалыматтарды тез киргизүүгө мүмкүнчүлүк берүү үчүн суроо.</string>
+  <string name="pref_search_results_max_count_title">Издөө натыйжаларынын максималдуу саны</string>
+  <string name="pref_search_results_max_count_summary">Жалпы санына чектөө M3U a тарабынан кайтарылган каналдар DB query. Кичинекей болгондо ылдамыраак.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Көчүрмө ысымдарды алып салыңыз</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Ар бир уникалдуу ат үчүн издөө натыйжалары болгону бир гана натыйжаны көрсөтөт. M3U канал</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Ар бир уникалдуу ат үчүн издөө натыйжалары бардык жеткиликтүү варианттарды көрсөтөт. M3U каналдар</string>
   <string name="pref_default_m3u_url_title">Алгачкы M3U Плейлист URL</string>
   <string name="pref_default_m3u_url_summary">Киришүүчү баалуулук \"Импорт M3U Плейлист URL\" диалог.</string>
   <string name="pref_append_m3u_playlists_title">Кошуу M3U Плейлисттер</string>

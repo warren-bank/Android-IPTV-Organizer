@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Kɔtisa ba valeurs ya ba chaînes statiques oyo mosaleli aponi lokola import par défaut. URL Bandakisa</string>
   <string name="pref_apply_default_url_templates_summary_on" >Kotia ya liboso URL Ba valeurs ezali ba modèles</string>
   <string name="pref_apply_default_url_templates_summary_off">Kotia ya liboso URL Ba valeurs ezali ba modèles te.</string>
+  <string name="pref_search_input_debounce_interval_title">Kɔtisa ntango ya kozela mpo na kokanga mbala na mbala</string>
+  <string name="pref_search_input_debounce_interval_summary">Motango ya ntango ya kozela (na ba millisecond) sima ya kofina na touche liboso ya kosala DB Motuna mpo na kokotisa ba données noki.</string>
+  <string name="pref_search_results_max_count_title">Motango eleki monene ya ba résultats ya bolukiluki</string>
+  <string name="pref_search_results_max_count_summary">Ndelo na motango mobimba ya M3U Ba kanale oyo a ezongisi DB Motuna. Moke eleki mbangu..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Longola bankombo ya kozongela</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Mpo na kombo moko na moko ekeseni, ekozala kaka na ebimeli moko. M3U Nzela</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Mpo na kombo mokomoko, ba résultats ya bolukiluki ekolakisa nyonso oyo ezali. M3U Banzela</string>
   <string name="pref_default_m3u_url_title">Ndenge ezali M3U Liste ya nzembo URL</string>
   <string name="pref_default_m3u_url_summary">Motuya ya liboso na \"Kokɔtisa M3U Liste ya nzembo URL\" Lisolo.</string>
   <string name="pref_append_m3u_playlists_title">Bakisa M3U Liste ya nzembo</string>

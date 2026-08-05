@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">အသုံးပြုသူ သတ်မှတ်ထားသည့် မူလ တင်သွင်းမှုတွင် တည်ငြိမ်သော စာကြောင်းတန်ဖိုးများကို သတ်မှတ်ပါ။ URL နမူနာများ</string>
   <string name="pref_apply_default_url_templates_summary_on" >မူလတင်သွင်း URL တန်ဖိုးများသည် ပုံစံများဖြစ်သည်။</string>
   <string name="pref_apply_default_url_templates_summary_off">မူလတင်သွင်း URL တန်ဖိုးများသည် ပုံစံများ မဟုတ်ပါ။</string>
+  <string name="pref_search_input_debounce_interval_title">အင်ပွတ် ဒေဘောင်စ် အကြားကာလ</string>
+  <string name="pref_search_input_debounce_interval_summary">သော့နှိပ်ပြီးနောက် အလုပ်တစ်ခုကို စတင်လုပ်ရန် စောင့်ဆိုင်းရမည့် အချိန် (မီလီစက္ကန့်ဖြင့်) DB အမြန်ဒေတာထည့်သွင်းနိုင်ရန် မေးခွန်း.</string>
+  <string name="pref_search_results_max_count_title">ရှာဖွေမှုရလဒ်များ၏ အများဆုံးအရေအတွက်</string>
+  <string name="pref_search_results_max_count_summary">စုစုပေါင်းအရေအတွက်ပေါ်က ကန့်သတ်ချက် M3U a မှ ပြန်လည်ထုတ်ပေးသော ချန်နယ်များ DB မေးခွန်း။ သေးငယ်သမျှ မြန်ဆန်သည်။.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">အမည်တူများကို ဖယ်ရှားပါ။</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >နာမည်တစ်ခုချင်းစီအတွက် ရှာဖွေမှုရလဒ်တွင် တစ်ခုတည်းသာ ပြသမည်။ M3U ချန်နယ်</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">နာမည်တစ်ခုချင်းစီအတွက် ရှာဖွေမှုရလဒ်များတွင် ရနိုင်သမျှအားလုံးကို ပြသမည်။ M3U ချန်နယ်များ</string>
   <string name="pref_default_m3u_url_title">မူလတန်ဖိုး M3U ကစားစာရင်း URL</string>
   <string name="pref_default_m3u_url_summary">အစပိုင်းတန်ဖိုးကို ထည့်ပါ \"တင်သွင်း M3U ကစားစာရင်း URL\" ဆွေးနွေးချက်.</string>
   <string name="pref_append_m3u_playlists_title">ထပ်ထည့် M3U ဂီတစာရင်းများ</string>

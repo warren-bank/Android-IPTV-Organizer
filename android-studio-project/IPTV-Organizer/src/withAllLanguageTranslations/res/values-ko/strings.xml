@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">사용자 정의 기본 가져오기에 고정 문자열 값 적용 URL 템플릿</string>
   <string name="pref_apply_default_url_templates_summary_on" >기본 가져오기 URL 값은 템플릿입니다</string>
   <string name="pref_apply_default_url_templates_summary_off">기본 가져오기 URL 값은 템플릿이 아닙니다</string>
+  <string name="pref_search_input_debounce_interval_title">입력 데바운스 간격</string>
+  <string name="pref_search_input_debounce_interval_summary">키 입력이 발생한 후 함수가 실행되기까지 기다려야 하는 시간(밀리초 단위)은 DB 신속한 데이터 입력을 가능하게 하는 쿼리.</string>
+  <string name="pref_search_results_max_count_title">검색 결과의 최대 개수</string>
+  <string name="pref_search_results_max_count_summary">총 수에 대한 제한은 M3U a에 의해 반환된 채널들 DB 쿼리. 크기가 작을수록 빠릅니다..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">중복된 이름 제거</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >서로 다른 이름 하나당 검색 결과에는 하나만 표시됩니다. M3U 채널</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">각기 다른 이름마다, 검색 결과에는 이용 가능한 모든 항목이 표시됩니다. M3U 채널</string>
   <string name="pref_default_m3u_url_title">기본값 M3U 재생 목록 URL</string>
   <string name="pref_default_m3u_url_summary">초기값은 \"가져오기 M3U 재생 목록 URL\" 대화.</string>
   <string name="pref_append_m3u_playlists_title">추가 M3U 재생 목록</string>

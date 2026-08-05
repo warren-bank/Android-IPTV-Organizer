@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Piemērot statiskas teksta vērtības lietotāja definētajai noklusējuma importēšanai URL veidnes</string>
   <string name="pref_apply_default_url_templates_summary_on" >Importēšana pēc noklusējuma URL vērtības ir veidnes</string>
   <string name="pref_apply_default_url_templates_summary_off">Importēšana pēc noklusējuma URL vērtības nav veidnes</string>
+  <string name="pref_search_input_debounce_interval_title">Ievades atskaņošanas novēršanas intervāls</string>
+  <string name="pref_search_input_debounce_interval_summary">Laiks (milisekundēs), kas jāpagaida pēc taustiņa nospiešanas, pirms tiek palaista DB vaicājums, kas ļauj ātri ievadīt datus.</string>
+  <string name="pref_search_results_max_count_title">Maksimālais meklēšanas rezultātu skaits</string>
+  <string name="pref_search_results_max_count_summary">Ierobežojums attiecībā uz kopējo skaitu M3U kanāli, kurus atgriež a DB vaicājums. Mazāks ir ātrāks.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Noņemt dublētos nosaukumus</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Katram atšķirīgajam nosaukumam meklēšanas rezultātos tiks parādīts tikai viens M3U kanāls</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Katram atšķirīgajam nosaukumam meklēšanas rezultātos tiks parādīti visi pieejamie M3U kanāli</string>
   <string name="pref_default_m3u_url_title">Noklusējums M3U Atskaņošanas saraksts URL</string>
   <string name="pref_default_m3u_url_summary">Sākotnējā vērtība \"Importēt M3U Atskaņošanas saraksts URL\" dialogs.</string>
   <string name="pref_append_m3u_playlists_title">Pievienot M3U Atskaņošanas saraksti</string>

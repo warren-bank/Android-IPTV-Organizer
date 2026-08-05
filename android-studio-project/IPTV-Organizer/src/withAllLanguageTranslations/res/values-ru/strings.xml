@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Применить статические строковые значения к пользовательскому импорту по умолчанию URL шаблоны</string>
   <string name="pref_apply_default_url_templates_summary_on" >Импорт по умолчанию URL значения являются шаблонами</string>
   <string name="pref_apply_default_url_templates_summary_off">Импорт по умолчанию URL значения не являются шаблонами</string>
+  <string name="pref_search_input_debounce_interval_title">Интервал подавления дребезга входного сигнала</string>
+  <string name="pref_search_input_debounce_interval_summary">Время ожидания (в миллисекундах) после нажатия клавиши до запуска DB запрос, позволяющий быстро вводить данные.</string>
+  <string name="pref_search_results_max_count_title">Максимальное количество результатов поиска</string>
+  <string name="pref_search_results_max_count_summary">Ограничение на общее количество M3U каналы, возвращаемые функцией DB запрос. Чем меньше, тем быстрее.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Удалить повторяющиеся имена</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Для каждого уникального названия в результатах поиска будет отображаться только один M3U канал</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Для каждого уникального названия в результатах поиска будут отображаться все доступные M3U каналы</string>
   <string name="pref_default_m3u_url_title">По умолчанию M3U Плейлист URL</string>
   <string name="pref_default_m3u_url_summary">Начальное значение в \"Импорт M3U Плейлист URL\" диалог.</string>
   <string name="pref_append_m3u_playlists_title">Добавить M3U Плейлисты</string>

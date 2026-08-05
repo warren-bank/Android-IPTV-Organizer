@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Кулланучы билгеләгән стандарт импортка статик юл кыйммәтләрен кулланыгыз URL шаблоннар</string>
   <string name="pref_apply_default_url_templates_summary_on" >Стандарт импорт URL Киммәтләр шаблоннар</string>
   <string name="pref_apply_default_url_templates_summary_off">Стандарт импорт URL Киммәтләр шаблоннар түгел</string>
+  <string name="pref_search_input_debounce_interval_title">Керү дебаунс интервалын</string>
+  <string name="pref_search_input_debounce_interval_summary">Клавиша басканнан соң эшләтеп җибәрү алдыннан көтәргә кирәк булган вакыт күләме (миллисекундларда) DB Мәгълүматны тиз кертү мөмкинлеге бирүче сорау.</string>
+  <string name="pref_search_results_max_count_title">Эзләү нәтиҗәләренең максималь саны</string>
+  <string name="pref_search_results_max_count_summary">Барлыгы санына чикләү M3U a тарафыннан кайтарылган каналлар DB сорау. Кечкенәсе тизрәк.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Кабатланган исемнәрне бетерегез</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Һәр аерым исем өчен эзләү нәтиҗәләре бары тик бер генә күрсәтеләчәк. M3U канал</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Һәр аерым исем өчен эзләү нәтиҗәләре барлык мөмкин булганнарны күрсәтәчәк. M3U каналлар</string>
   <string name="pref_default_m3u_url_title">Төп M3U Плейлист URL</string>
   <string name="pref_default_m3u_url_summary">Керү кыйммәте \"Импорт M3U Плейлист URL\" Диалог.</string>
   <string name="pref_append_m3u_playlists_title">Өстәргә M3U Плейлистлар</string>

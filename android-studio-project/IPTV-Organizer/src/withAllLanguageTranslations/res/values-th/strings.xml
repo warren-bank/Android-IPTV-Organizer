@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">ใช้ค่าสตริงคงที่กับการนำเข้าค่าเริ่มต้นที่ผู้ใช้กำหนดเอง URL แม่แบบ</string>
   <string name="pref_apply_default_url_templates_summary_on" >การนำเข้าตามค่าเริ่มต้น URL ค่าคือเทมเพลต</string>
   <string name="pref_apply_default_url_templates_summary_off">การนำเข้าตามค่าเริ่มต้น URL ค่าไม่ใช่เทมเพลต</string>
+  <string name="pref_search_input_debounce_interval_title">ช่วงเวลาป้องกันการกดซ้ำ</string>
+  <string name="pref_search_input_debounce_interval_summary">ระยะเวลาที่ต้องรอ (ในมิลลิวินาที) หลังจากกดปุ่ม ก่อนที่จะดำเนินการ DB คำสั่งเพื่อช่วยให้การป้อนข้อมูลเป็นไปอย่างรวดเร็ว.</string>
+  <string name="pref_search_results_max_count_title">จำนวนผลลัพธ์การค้นหาสูงสุด</string>
+  <string name="pref_search_results_max_count_summary">ข้อจำกัดเกี่ยวกับจำนวนรวมของ M3U ช่องที่ส่งคืนโดย DB คำถาม: ยิ่งเล็ก ยิ่งเร็ว.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">ลบชื่อที่ซ้ำกัน</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >สำหรับชื่อแต่ละชื่อที่ไม่ซ้ำกัน ผลลัพธ์การค้นหาจะแสดงเพียงหนึ่งรายการเท่านั้น M3U ช่อง</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">สำหรับชื่อแต่ละชื่อที่แตกต่างกัน ผลลัพธ์การค้นหาจะแสดงทั้งหมดที่มีอยู่ M3U ช่อง</string>
   <string name="pref_default_m3u_url_title">ค่าเริ่มต้น M3U รายชื่อเพลง URL</string>
   <string name="pref_default_m3u_url_summary">ค่าเริ่มต้นใน \"นำเข้า M3U รายชื่อเพลง URL\" กล่องสนทนา.</string>
   <string name="pref_append_m3u_playlists_title">เพิ่ม M3U รายชื่อเพลง</string>

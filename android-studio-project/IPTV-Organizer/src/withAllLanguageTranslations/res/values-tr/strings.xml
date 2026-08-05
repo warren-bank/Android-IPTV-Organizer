@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Kullanıcı tanımlı varsayılan içe aktarmaya statik dize değerleri uygulayın URL şablonlar</string>
   <string name="pref_apply_default_url_templates_summary_on" >Varsayılan içe aktarma URL değerler şablonlardır</string>
   <string name="pref_apply_default_url_templates_summary_off">Varsayılan içe aktarma URL değerler şablon değildir</string>
+  <string name="pref_search_input_debounce_interval_title">Giriş yankılanma önleme aralığı</string>
+  <string name="pref_search_input_debounce_interval_summary">Bir tuşa basıldıktan sonra bir komutun çalıştırılmasından önce beklenmesi gereken süre (milisaniye cinsinden) DB hızlı veri girişine olanak sağlayan sorgu.</string>
+  <string name="pref_search_results_max_count_title">Arama sonuçlarının maksimum sayısı</string>
+  <string name="pref_search_results_max_count_summary">Toplam sayısına ilişkin bir sınırlama M3U bir tarafından döndürülen kanallar DB sorgu. Ne kadar küçükse o kadar hızlıdır.</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Yinelenen isimleri kaldır</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Her bir farklı isim için arama sonuçlarında yalnızca bir tane gösterilecektir M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Her bir farklı isim için, arama sonuçlarında mevcut olan tüm öğeler gösterilecektir M3U kanallar</string>
   <string name="pref_default_m3u_url_title">Varsayılan M3U Çalma listesi URL</string>
   <string name="pref_default_m3u_url_summary">Başlangıç değeri \"İthalat M3U Çalma listesi URL\" diyalog.</string>
   <string name="pref_append_m3u_playlists_title">Ekle M3U Çalma listeleri</string>

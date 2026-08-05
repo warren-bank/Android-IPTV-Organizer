@@ -34,6 +34,13 @@
   <string name="pref_apply_default_url_templates_title">Ulanyjynyň kesgitleýän standart importyna statik simli bahalary ulanyň URL şablonlar</string>
   <string name="pref_apply_default_url_templates_summary_on" >Öňünden kesgitlenen import URL Degerler şablonlardyr</string>
   <string name="pref_apply_default_url_templates_summary_off">Öňünden kesgitlenen import URL Degerler şablon däl.</string>
+  <string name="pref_search_input_debounce_interval_title">Giriş debounce aralygy</string>
+  <string name="pref_search_input_debounce_interval_summary">Bir klawiatura basyşyndan soň bir işi ýerine ýetirmek üçin garaşylmaly wagt möçberi (millisekundlarda) DB Maglumatlaryň çalt girizilmegine mümkinçilik berýän sorag.</string>
+  <string name="pref_search_results_max_count_title">Gözleg netijeleriniň iň köp sany</string>
+  <string name="pref_search_results_max_count_summary">Jemi sanyna çäklendirme M3U a tarapyndan gaýtarylan kanallar DB Sorag. Kiçi bolsa çalt..</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Täkrar atlary aýyr</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >Her tapawutly at üçin gözleg netijeleri diňe birini görkezýär. M3U kanal</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">Her bir tapawutly ad üçin gözleg netijeleri elýeterli bolanlaryň ählisini görkezýär. M3U kanallar</string>
   <string name="pref_default_m3u_url_title">Öňünden kesgitlenen M3U Aýdymlar sanawy URL</string>
   <string name="pref_default_m3u_url_summary">Başlangyç gymmaty \"Import M3U Aýdymlar sanawy URL\" dialog.</string>
   <string name="pref_append_m3u_playlists_title">Goşmak M3U Pleylistler</string>
