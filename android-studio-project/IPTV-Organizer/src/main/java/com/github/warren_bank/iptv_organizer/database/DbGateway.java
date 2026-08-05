@@ -196,7 +196,7 @@ public class DbGateway {
           cvals.put("name",      channel.name);
           cvals.put("media_url", channel.media_url);
           cvals.put("tvg_id",    channel.tvg_id);
-          cvals.put("tvg_name",  channel.tvg_name);
+          cvals.put("tvg_name",  channel.areNamesEqual() ? null : channel.tvg_name);
 
           insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels", null, cvals);
           cvals = null;

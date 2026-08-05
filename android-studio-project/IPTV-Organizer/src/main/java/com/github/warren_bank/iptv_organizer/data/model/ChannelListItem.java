@@ -37,6 +37,10 @@ public class ChannelListItem implements FilterableListItem {
     return this.media_url.equals(that.media_url);
   }
 
+  public boolean areNamesEqual() {
+    return this.name.equals(this.tvg_name);
+  }
+
   // Comparator private classes
 
   private static class SequentialOrderComparator implements Comparator<FilterableListItem> {
