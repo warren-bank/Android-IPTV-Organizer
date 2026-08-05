@@ -4,6 +4,8 @@ import com.github.warren_bank.iptv_organizer.R;
 import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.model.EPGDataImpl;
 import com.github.warren_bank.iptv_organizer.ui.ChannelsActivity;
+import com.github.warren_bank.iptv_organizer.ui.ExitActivity;
+import com.github.warren_bank.iptv_organizer.ui.MainSearchChannelsActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
 import com.github.warren_bank.iptv_organizer.ui.dialog.DataProgressDialog;
 import com.github.warren_bank.iptv_organizer.ui.dialog.SavedSearchKeywordsListDialog;
@@ -165,6 +167,11 @@ public class EpgActivity extends AppCompatActivity {
   @Override
   public boolean onOptionsItemSelected(MenuItem menuItem) {
     switch(menuItem.getItemId()) {
+
+      case R.id.epg_menuitem_main: {
+        MainSearchChannelsActivity.open(EpgActivity.this);
+        return true;
+      }
 
       case R.id.epg_menuitem_channels: {
         ChannelsActivity.open(EpgActivity.this);

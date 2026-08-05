@@ -4,6 +4,8 @@ import com.github.warren_bank.iptv_organizer.R;
 import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
 import com.github.warren_bank.iptv_organizer.ui.EpgActivity;
+import com.github.warren_bank.iptv_organizer.ui.ExitActivity;
+import com.github.warren_bank.iptv_organizer.ui.MainSearchChannelsActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
 import com.github.warren_bank.iptv_organizer.ui.dialog.DataProgressDialog;
 import com.github.warren_bank.iptv_organizer.ui.dialog.SavedSearchKeywordsListDialog;
@@ -208,6 +210,11 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
   @Override
   public boolean onOptionsItemSelected(MenuItem menuItem) {
     switch(menuItem.getItemId()) {
+
+      case R.id.channels_menuitem_main: {
+        MainSearchChannelsActivity.open(ChannelsActivity.this);
+        return true;
+      }
 
       case R.id.channels_menuitem_epg: {
         EpgActivity.open(ChannelsActivity.this);

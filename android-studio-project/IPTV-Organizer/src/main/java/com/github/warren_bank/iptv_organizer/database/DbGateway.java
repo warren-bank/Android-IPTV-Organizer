@@ -293,33 +293,74 @@ public class DbGateway {
   public List<ChannelListItem> getM3u(DataProgressListener listener) {
     List<ChannelListItem> channels = new ArrayList<ChannelListItem>();
     String query = "SELECT * FROM m3u_channels ORDER BY position ASC";
-    int position;
-    String name, media_url, tvg_id, tvg_name;
 
     Cursor c = null;
     try {
       c = db.query(query);
 
-      if ((c != null) && c.moveToFirst() && c.isFirst()) {
-        do {
-          position  = getColumnInteger(c, "position", -1);
-          name      = getColumnString (c, "name");
-          media_url = getColumnString (c, "media_url");
-          tvg_id    = getColumnString (c, "tvg_id");
-          tvg_name  = getColumnString (c, "tvg_name");
-
-          if (listener != null) listener.onData(name);
-
-          ChannelListItem channel = new ChannelListItem(position, name, media_url, tvg_id, tvg_name);
-          channels.add(channel);
-        } while (c.moveToNext());
-      }
+      readM3uResults(channels, c, listener);
     }
-    catch (SQLiteException e) {
+    catch (Exception e) {
       Log.e(Constants.LOG_TAG, e.getMessage());
     }
     if (c != null) c.close();
     return channels;
+  }
+
+  public List<ChannelListItem> searchM3u(String[] keywords, int LIMIT) {
+    return searchM3u(keywords, LIMIT, 2, null);
+  }
+
+  public List<ChannelListItem> searchM3u(String[] keywords, int LIMIT, int minKeywordLength, DataProgressListener listener) {
+    List<ChannelListItem> channels = new ArrayList<ChannelListItem>();
+
+    ArrayList<String> conditions = new ArrayList<String>();
+    for (String keyword : keywords) {
+      if (keyword.length() >= minKeywordLength) {
+        conditions.add("name"     + " LIKE " + sqlEscapeString("%" + keyword + "%")); // note: LIKE is always case-insensitive
+        conditions.add("tvg_name" + " LIKE " + sqlEscapeString("%" + keyword + "%"));
+      }
+    }
+
+    if (conditions.isEmpty())
+      return channels;
+
+    String WHERE = " WHERE " + TextUtils.join(" OR ", conditions);
+    String query = "SELECT * FROM m3u_channels" + WHERE + " ORDER BY name ASC LIMIT " + LIMIT;
+
+    Cursor c = null;
+    try {
+      c = db.query(query);
+
+      readM3uResults(channels, c, listener);
+    }
+    catch (Exception e) {
+      Log.e(Constants.LOG_TAG, e.getMessage());
+    }
+    if (c != null) c.close();
+    return channels;
+  }
+
+  private void readM3uResults(List<ChannelListItem> channels, Cursor c, DataProgressListener listener) throws Exception {
+    if (channels == null) throw new Exception("readM3uResults: 1st parameter must be a non-null List");
+
+    int position;
+    String name, media_url, tvg_id, tvg_name;
+
+    if ((c != null) && c.moveToFirst() && c.isFirst()) {
+      do {
+        position  = getColumnInteger(c, "position", -1);
+        name      = getColumnString (c, "name");
+        media_url = getColumnString (c, "media_url");
+        tvg_id    = getColumnString (c, "tvg_id");
+        tvg_name  = getColumnString (c, "tvg_name");
+
+        if (listener != null) listener.onData(name);
+
+        ChannelListItem channel = new ChannelListItem(position, name, media_url, tvg_id, tvg_name);
+        channels.add(channel);
+      } while (c.moveToNext());
+    }
   }
 
   public EPGDataImpl getEpgData() {

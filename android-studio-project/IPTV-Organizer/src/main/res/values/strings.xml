@@ -20,6 +20,7 @@
   <string name="settings">Settings</string>
 
   <!-- label: Activities -->
+  <string name="activity_main">M3U Search</string>
   <string name="activity_channels">M3U Channels</string>
   <string name="activity_epg">EPG Channels</string>
   <string name="activity_settings">@string/settings</string>
@@ -30,7 +31,15 @@
   <!-- common: Toasts -->
   <string name="toast_error_no_app_found">External media player not found</string>
 
+  <!-- MainSearchChannelsActivity: menu items -->
+  <string name="main_menuitem_search">@string/search</string>
+  <string name="main_menuitem_channels">@string/activity_channels</string>
+  <string name="main_menuitem_epg">@string/activity_epg</string>
+  <string name="main_menuitem_settings">@string/activity_settings</string>
+  <string name="main_menuitem_exit">@string/exit</string>
+
   <!-- ChannelsActivity: menu items -->
+  <string name="channels_menuitem_main">@string/activity_main</string>
   <string name="channels_menuitem_epg">@string/activity_epg</string>
   <string name="channels_menuitem_import_m3u_url">Import M3U Playlist URL</string>
   <string name="channels_menuitem_import_m3u_file">Import M3U Playlist File</string>
@@ -46,6 +55,7 @@
   <string name="channels_dialog_import_m3u_url_button_negative">@string/cancel</string>
 
   <!-- EpgActivity: menu items -->
+  <string name="epg_menuitem_main">@string/activity_main</string>
   <string name="epg_menuitem_channels">@string/activity_channels</string>
   <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG File</string>

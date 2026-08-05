@@ -2,45 +2,50 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/channels_menuitem_epg"
+        android:id="@+id/channels_menuitem_main"
         android:orderInCategory="1"
+        android:title="@string/channels_menuitem_main"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/channels_menuitem_epg"
+        android:orderInCategory="2"
         android:title="@string/channels_menuitem_epg"
         app:showAsAction="never" />
     <item
         android:id="@+id/channels_menuitem_import_m3u_url"
-        android:orderInCategory="2"
+        android:orderInCategory="3"
         android:title="@string/channels_menuitem_import_m3u_url"
         app:showAsAction="never" />
     <item
         android:id="@+id/channels_menuitem_import_m3u_file"
-        android:orderInCategory="3"
+        android:orderInCategory="4"
         android:title="@string/channels_menuitem_import_m3u_file"
         app:showAsAction="never" />
     <item
         android:id="@+id/channels_menuitem_search"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
-        android:orderInCategory="4"
+        android:orderInCategory="5"
         android:title="@string/channels_menuitem_search"
         android:icon="@drawable/search"
         app:showAsAction="always" />
     <item
         android:id="@+id/channels_menuitem_sort_sequential"
-        android:orderInCategory="5"
+        android:orderInCategory="6"
         android:title="@string/channels_menuitem_sort_sequential"
         app:showAsAction="never" />
     <item
         android:id="@+id/channels_menuitem_sort_alphabetic"
-        android:orderInCategory="6"
+        android:orderInCategory="7"
         android:title="@string/channels_menuitem_sort_alphabetic"
         app:showAsAction="never" />
     <item
         android:id="@+id/channels_menuitem_settings"
-        android:orderInCategory="7"
+        android:orderInCategory="8"
         android:title="@string/channels_menuitem_settings"
         app:showAsAction="never" />
     <item
         android:id="@+id/channels_menuitem_exit"
-        android:orderInCategory="8"
+        android:orderInCategory="9"
         android:title="@string/channels_menuitem_exit"
         app:showAsAction="never" />
 </menu>
