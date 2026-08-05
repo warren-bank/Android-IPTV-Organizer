@@ -141,7 +141,10 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
   protected void onResume() {
     super.onResume();
 
-    if (performConditionalRedirect()) return;
+    if (performConditionalRedirect()) {
+      finish();
+      return;
+    }
 
     initSavedSearchDialog();
     readSettings();

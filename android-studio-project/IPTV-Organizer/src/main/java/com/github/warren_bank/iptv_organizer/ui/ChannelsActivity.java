@@ -196,6 +196,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     menu.findItem(R.id.channels_menuitem_import_m3u_file).setVisible(isVisible);
 
     isVisible = !unfilteredList.isEmpty();
+    menu.findItem(R.id.channels_menuitem_main).setVisible(isVisible);
     menu.findItem(R.id.channels_menuitem_search).setVisible(isVisible);
     menu.findItem(R.id.channels_menuitem_sort_sequential).setVisible(isVisible);
     menu.findItem(R.id.channels_menuitem_sort_alphabetic).setVisible(isVisible);
@@ -274,6 +275,10 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     }
     if (!searchView.isIconified()) {
       searchView.setIconified(true);
+      return;
+    }
+    if (unfilteredList.isEmpty()) {
+      finish();
       return;
     }
     super.onBackPressed();
