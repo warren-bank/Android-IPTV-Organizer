@@ -133,6 +133,7 @@ public class SavedSearchKeywordsListDialog {
       submitButton.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+          searchView.clearFocus();
           show();
         }
       });

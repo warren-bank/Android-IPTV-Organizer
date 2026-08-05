@@ -274,7 +274,10 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       return;
     }
     if (!searchView.isIconified()) {
-      searchView.setIconified(true);
+      if (searchView.hasFocus())
+        searchView.clearFocus();
+      else
+        searchView.setIconified(true);
       return;
     }
     if (unfilteredList.isEmpty()) {

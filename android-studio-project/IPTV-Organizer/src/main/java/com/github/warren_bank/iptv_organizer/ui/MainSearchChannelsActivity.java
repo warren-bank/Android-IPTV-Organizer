@@ -230,7 +230,10 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
       return;
     }
     if (!searchView.isIconified()) {
-      searchView.setIconified(true);
+      if (searchView.hasFocus())
+        searchView.clearFocus();
+      else
+        searchView.setIconified(true);
       return;
     }
     super.onBackPressed();

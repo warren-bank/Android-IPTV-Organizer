@@ -218,7 +218,10 @@ public class EpgActivity extends AppCompatActivity {
       return;
     }
     if (!searchView.isIconified()) {
-      searchView.setIconified(true);
+      if (searchView.hasFocus())
+        searchView.clearFocus();
+      else
+        searchView.setIconified(true);
       return;
     }
     super.onBackPressed();
