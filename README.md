@@ -59,6 +59,20 @@ Android app that organizes IPTV channel and EPG information.
      - when `true`: Default import URL values are templates
      - when `false`: Default import URL values are not templates
      - default: `true`
+* M3U Search
+  1. Input debounce interval
+     - specify the amount of time to wait (in milliseconds) after a keystroke before running a DB query to allow for rapid data entry
+     - decrease this value to see the results update as you type
+     - increase this value to prevent unnecessary queries
+     - default: `2000`
+  2. Maximum count of search results
+     - specify a restriction on the total number of M3U channels returned by a DB query
+     - smaller is faster
+     - default: `100`
+  3. Remove duplicate names
+     - when `true`: For each distinct name, the search results will only display one M3U channel
+     - when `false`: For each distinct name, the search results will display all available M3U channels
+     - default: `true`
 * M3U Channels
   1. Default M3U Playlist URL
      - specify the initial value in the dialog: "Import M3U Playlist URL"
@@ -323,6 +337,15 @@ __Update Settings__
      1. name = `SETTINGS_APPLY_STATIC_STRINGS`
         * type = `Boolean`
         * setting = _Settings &gt; Apply static string values to user-defined default import URL templates_
+     1. name = `SEARCH_INPUT_DEBOUNCE_INTERVAL`
+        * type = `int`
+        * setting = _M3U Search &gt; Input debounce interval_
+     1. name = `SEARCH_RESULTS_MAX_COUNT`
+        * type = `int`
+        * setting = _M3U Search &gt; Maximum count of search results_
+     1. name = `SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES`
+        * type = `Boolean`
+        * setting = _M3U Search &gt; Remove duplicate names_
      1. name = `M3U_DEFAULT_PLAYLIST_URL`
         * type = `String`
         * setting = _M3U Channels &gt; Default M3U Playlist URL_
@@ -403,6 +426,9 @@ __Update Settings__
      extra-SETTINGS_AUTO_SAVE: (bool) true
      extra-SETTINGS_AUTO_CLOSE: (bool) true
      extra-SETTINGS_APPLY_STATIC_STRINGS: (bool) true
+     extra-SEARCH_INPUT_DEBOUNCE_INTERVAL: (int) 2000
+     extra-SEARCH_RESULTS_MAX_COUNT: (int) 100
+     extra-SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES: (bool) true
      extra-M3U_DEFAULT_PLAYLIST_URL: %4$s/playlist/%1$s/%2$s/m3u_plus?output=hls
      extra-M3U_APPEND_PLAYLISTS: (bool) false
      extra-M3U_MAP_CHANNEL_NAME_TO_ID: USA C-SPAN           => cspan.us

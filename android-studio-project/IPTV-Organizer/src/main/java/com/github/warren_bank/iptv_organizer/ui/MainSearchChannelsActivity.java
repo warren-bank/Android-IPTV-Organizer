@@ -9,6 +9,7 @@ import com.github.warren_bank.iptv_organizer.ui.ExitActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
 import com.github.warren_bank.iptv_organizer.ui.dialog.SavedSearchKeywordsListDialog;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
+import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
 import com.github.warren_bank.filterablerecyclerview.FilterableListItem;
 import com.github.warren_bank.filterablerecyclerview.FilterableListItemOnClickListener;
@@ -89,9 +90,9 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
   // Background Search Thread Management:
   // ---------------------------------------------------------------------------------------------
 
-  private static long    SEARCH_DEBOUNCE_INTERVAL_MS = 300L;
-  private static int     MAX_SEARCH_RESULTS          = 100;
-  private static boolean REMOVE_DUPLICATE_NAMES      = true;
+  private static int     SEARCH_INPUT_DEBOUNCE_INTERVAL_MS     = 2000;
+  private static int     SEARCH_RESULTS_MAX_COUNT              = 100;
+  private static boolean SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES = true;
 
   private static class SearchRunnable implements Runnable {
     private MainSearchChannelsActivity activity;
@@ -118,7 +119,7 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
     // reschedule new pending post
     searchHandler.postDelayed(
       new SearchRunnable(MainSearchChannelsActivity.this, constraint),
-      SEARCH_DEBOUNCE_INTERVAL_MS
+      SEARCH_INPUT_DEBOUNCE_INTERVAL_MS
     );
   }
 
@@ -134,6 +135,7 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
     refreshList(null);
     initToolbar();
     initRecyclerView();
+    readSettings();
   }
 
   @Override
@@ -141,6 +143,7 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
     super.onResume();
 
     initSavedSearchDialog();
+    readSettings();
   }
 
   @Override
@@ -226,7 +229,7 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
       else {
         String[] keywords = constraint.split(Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX);
 
-        newList = DbUtils.getDb().searchM3u(keywords, MAX_SEARCH_RESULTS, REMOVE_DUPLICATE_NAMES);
+        newList = DbUtils.getDb().searchM3u(keywords, SEARCH_RESULTS_MAX_COUNT, SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES);
       }
 
       if ((newList == null) && channelList.isEmpty())
@@ -347,6 +350,12 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
         return false;
       }
     });
+  }
+
+  private void readSettings() {
+    MainSearchChannelsActivity.SEARCH_INPUT_DEBOUNCE_INTERVAL_MS     = SettingsUtils.getSearchInputDebounceIntervalMs(        MainSearchChannelsActivity.this);
+    MainSearchChannelsActivity.SEARCH_RESULTS_MAX_COUNT              = SettingsUtils.getMaxCountOfSearchResults(              MainSearchChannelsActivity.this);
+    MainSearchChannelsActivity.SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES = SettingsUtils.getRemoveDuplicateNamesFromSearchResults(MainSearchChannelsActivity.this);
   }
 
   private void viewChannel(ChannelListItem channel) {

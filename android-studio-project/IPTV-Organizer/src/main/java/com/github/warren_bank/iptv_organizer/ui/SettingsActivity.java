@@ -21,26 +21,29 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
     context.startActivity(intent);
   }
 
-  private static final String EXTRA_SETTINGS_AUTO_SAVE            = "SETTINGS_AUTO_SAVE";             // Boolean
-  private static final String EXTRA_SETTINGS_AUTO_CLOSE           = "SETTINGS_AUTO_CLOSE";            // Boolean
-  private static final String EXTRA_SETTINGS_APPLY_STATIC_STRINGS = "SETTINGS_APPLY_STATIC_STRINGS";  // Boolean
-  private static final String EXTRA_M3U_DEFAULT_PLAYLIST_URL      = "M3U_DEFAULT_PLAYLIST_URL";       // String
-  private static final String EXTRA_M3U_APPEND_PLAYLISTS          = "M3U_APPEND_PLAYLISTS";           // Boolean
-  private static final String EXTRA_M3U_MAP_CHANNEL_NAME_TO_ID    = "M3U_MAP_CHANNEL_NAME_TO_ID";     // String[]
-  private static final String EXTRA_M3U_MAP_CHANNEL_ID_TO_ID      = "M3U_MAP_CHANNEL_ID_TO_ID";       // String[]
-  private static final String EXTRA_M3U_CHANNEL_NAME_WHITELIST    = "M3U_CHANNEL_NAME_WHITELIST";     // String[]
-  private static final String EXTRA_M3U_CHANNEL_ID_WHITELIST      = "M3U_CHANNEL_ID_WHITELIST";       // String[]
-  private static final String EXTRA_M3U_CHANNEL_NAME_BLACKLIST    = "M3U_CHANNEL_NAME_BLACKLIST";     // String[]
-  private static final String EXTRA_M3U_CHANNEL_ID_BLACKLIST      = "M3U_CHANNEL_ID_BLACKLIST";       // String[]
-  private static final String EXTRA_M3U_MEDIA_URL_STATIC_STRINGS  = "M3U_MEDIA_URL_STATIC_STRINGS";   // String[]
-  private static final String EXTRA_EPG_DEFAULT_XMLTV_URL         = "EPG_DEFAULT_XMLTV_URL";          // String
-  private static final String EXTRA_EPG_PREFERRED_LANGUAGE        = "EPG_PREFERRED_LANGUAGE";         // String
-  private static final String EXTRA_EPG_CHANNEL_M3U_WHITELIST     = "EPG_CHANNEL_M3U_WHITELIST";      // Boolean
-  private static final String EXTRA_EPG_CHANNEL_NAME_WHITELIST    = "EPG_CHANNEL_NAME_WHITELIST";     // String[]
-  private static final String EXTRA_EPG_CHANNEL_ID_WHITELIST      = "EPG_CHANNEL_ID_WHITELIST";       // String[]
-  private static final String EXTRA_EPG_CHANNEL_NAME_BLACKLIST    = "EPG_CHANNEL_NAME_BLACKLIST";     // String[]
-  private static final String EXTRA_EPG_CHANNEL_ID_BLACKLIST      = "EPG_CHANNEL_ID_BLACKLIST";       // String[]
-  private static final String EXTRA_SAVED_SEARCH_KEYWORDS_LIST    = "SAVED_SEARCH_KEYWORDS_LIST";     // String[]
+  private static final String EXTRA_SETTINGS_AUTO_SAVE                    = "SETTINGS_AUTO_SAVE";                     // Boolean
+  private static final String EXTRA_SETTINGS_AUTO_CLOSE                   = "SETTINGS_AUTO_CLOSE";                    // Boolean
+  private static final String EXTRA_SETTINGS_APPLY_STATIC_STRINGS         = "SETTINGS_APPLY_STATIC_STRINGS";          // Boolean
+  private static final String EXTRA_SEARCH_INPUT_DEBOUNCE_INTERVAL        = "SEARCH_INPUT_DEBOUNCE_INTERVAL";         // int
+  private static final String EXTRA_SEARCH_RESULTS_MAX_COUNT              = "SEARCH_RESULTS_MAX_COUNT";               // int
+  private static final String EXTRA_SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES = "SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES";  // Boolean
+  private static final String EXTRA_M3U_DEFAULT_PLAYLIST_URL              = "M3U_DEFAULT_PLAYLIST_URL";               // String
+  private static final String EXTRA_M3U_APPEND_PLAYLISTS                  = "M3U_APPEND_PLAYLISTS";                   // Boolean
+  private static final String EXTRA_M3U_MAP_CHANNEL_NAME_TO_ID            = "M3U_MAP_CHANNEL_NAME_TO_ID";             // String[]
+  private static final String EXTRA_M3U_MAP_CHANNEL_ID_TO_ID              = "M3U_MAP_CHANNEL_ID_TO_ID";               // String[]
+  private static final String EXTRA_M3U_CHANNEL_NAME_WHITELIST            = "M3U_CHANNEL_NAME_WHITELIST";             // String[]
+  private static final String EXTRA_M3U_CHANNEL_ID_WHITELIST              = "M3U_CHANNEL_ID_WHITELIST";               // String[]
+  private static final String EXTRA_M3U_CHANNEL_NAME_BLACKLIST            = "M3U_CHANNEL_NAME_BLACKLIST";             // String[]
+  private static final String EXTRA_M3U_CHANNEL_ID_BLACKLIST              = "M3U_CHANNEL_ID_BLACKLIST";               // String[]
+  private static final String EXTRA_M3U_MEDIA_URL_STATIC_STRINGS          = "M3U_MEDIA_URL_STATIC_STRINGS";           // String[]
+  private static final String EXTRA_EPG_DEFAULT_XMLTV_URL                 = "EPG_DEFAULT_XMLTV_URL";                  // String
+  private static final String EXTRA_EPG_PREFERRED_LANGUAGE                = "EPG_PREFERRED_LANGUAGE";                 // String
+  private static final String EXTRA_EPG_CHANNEL_M3U_WHITELIST             = "EPG_CHANNEL_M3U_WHITELIST";              // Boolean
+  private static final String EXTRA_EPG_CHANNEL_NAME_WHITELIST            = "EPG_CHANNEL_NAME_WHITELIST";             // String[]
+  private static final String EXTRA_EPG_CHANNEL_ID_WHITELIST              = "EPG_CHANNEL_ID_WHITELIST";               // String[]
+  private static final String EXTRA_EPG_CHANNEL_NAME_BLACKLIST            = "EPG_CHANNEL_NAME_BLACKLIST";             // String[]
+  private static final String EXTRA_EPG_CHANNEL_ID_BLACKLIST              = "EPG_CHANNEL_ID_BLACKLIST";               // String[]
+  private static final String EXTRA_SAVED_SEARCH_KEYWORDS_LIST            = "SAVED_SEARCH_KEYWORDS_LIST";             // String[]
 
   private static Activity             self   = null;
   private static DbEditTextPreference dbPref = null;
@@ -114,6 +117,28 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
       if (intent.hasExtra(EXTRA_SETTINGS_APPLY_STATIC_STRINGS)) {
         boolean value = intent.getBooleanExtra(EXTRA_SETTINGS_APPLY_STATIC_STRINGS, true);
         SettingsUtils.setApplyDefaultUrlTemplates(SettingsActivity.this, value);
+        didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_SEARCH_INPUT_DEBOUNCE_INTERVAL)) {
+        int value = intent.getIntExtra(EXTRA_SEARCH_INPUT_DEBOUNCE_INTERVAL, -1);
+        if (value >= 0) {
+          SettingsUtils.setSearchInputDebounceIntervalMs(SettingsActivity.this, value);
+          didUpdate = true;
+        }
+      }
+
+      if (intent.hasExtra(EXTRA_SEARCH_RESULTS_MAX_COUNT)) {
+        int value = intent.getIntExtra(EXTRA_SEARCH_RESULTS_MAX_COUNT, -1);
+        if (value >= 0) {
+          SettingsUtils.setMaxCountOfSearchResults(SettingsActivity.this, value);
+          didUpdate = true;
+        }
+      }
+
+      if (intent.hasExtra(EXTRA_SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES)) {
+        boolean value = intent.getBooleanExtra(EXTRA_SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES, true);
+        SettingsUtils.setRemoveDuplicateNamesFromSearchResults(SettingsActivity.this, value);
         didUpdate = true;
       }
 

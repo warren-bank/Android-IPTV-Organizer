@@ -70,6 +70,7 @@
 
   <!-- SettingsActivity: PreferenceCategory titles -->
   <string name="pref_category_settings">@string/activity_settings</string>
+  <string name="pref_category_m3u_search">@string/activity_main</string>
   <string name="pref_category_m3u_channels">@string/activity_channels</string>
   <string name="pref_category_epg_channels">@string/activity_epg</string>
 
@@ -98,6 +99,27 @@
   <string name="pref_apply_default_url_templates_summary_on" >Default import URL values are templates</string>
   <string name="pref_apply_default_url_templates_summary_off">Default import URL values are not templates</string>
   <string translatable="false" name="pref_apply_default_url_templates_default">true</string>
+
+  <!-- SettingsActivity [M3U Search]: Input debounce interval -->
+  <string translatable="false" name="pref_search_input_debounce_interval_key">pref_search_input_debounce_interval</string>
+  <string name="pref_search_input_debounce_interval_title">Input debounce interval</string>
+  <string name="pref_search_input_debounce_interval_summary">The amount of time to wait (in milliseconds) after a keystroke before running a DB query to allow for rapid data entry.</string>
+  <string translatable="false" name="pref_search_input_debounce_interval_hint">2000</string>
+  <string translatable="false" name="pref_search_input_debounce_interval_default">@string/pref_search_input_debounce_interval_hint</string>
+
+  <!-- SettingsActivity [M3U Search]: Maximum count of search results -->
+  <string translatable="false" name="pref_search_results_max_count_key">pref_search_results_max_count</string>
+  <string name="pref_search_results_max_count_title">Maximum count of search results</string>
+  <string name="pref_search_results_max_count_summary">A restriction on the total number of M3U channels returned by a DB query. Smaller is faster.</string>
+  <string translatable="false" name="pref_search_results_max_count_hint">100</string>
+  <string translatable="false" name="pref_search_results_max_count_default">@string/pref_search_results_max_count_hint</string>
+
+  <!-- SettingsActivity [M3U Search]: Remove duplicate names -->
+  <string translatable="false" name="pref_search_results_remove_duplicate_names_key">pref_search_results_remove_duplicate_names</string>
+  <string name="pref_search_results_remove_duplicate_names_title">Remove duplicate names</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_on" >For each distinct name, the search results will only display one M3U channel</string>
+  <string name="pref_search_results_remove_duplicate_names_summary_off">For each distinct name, the search results will display all available M3U channels</string>
+  <string translatable="false" name="pref_search_results_remove_duplicate_names_default">true</string>
 
   <!-- SettingsActivity [M3U Channels]: Default M3U Playlist URL -->
   <string translatable="false" name="pref_default_m3u_url_key">pref_default_m3u_url</string>

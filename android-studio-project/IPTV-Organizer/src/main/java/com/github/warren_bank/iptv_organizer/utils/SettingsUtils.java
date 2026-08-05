@@ -102,6 +102,94 @@ public class SettingsUtils {
 
   // --------------------
 
+  public static int getSearchInputDebounceIntervalMs(Context context) {
+    return getSearchInputDebounceIntervalMs(context, getPrefs(context));
+  }
+
+  private static int getSearchInputDebounceIntervalMs(Context context, SharedPreferences prefs) {
+    try {
+      String pref_key     = context.getString(R.string.pref_search_input_debounce_interval_key);
+      String pref_default = context.getString(R.string.pref_search_input_debounce_interval_default);
+      int     val_default = Integer.parseInt(pref_default, 10);
+
+      return prefs.getInt(pref_key, val_default);
+    }
+    catch(Exception e) {
+      return 2000;
+    }
+  }
+
+  public static boolean setSearchInputDebounceIntervalMs(Context context, int value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setSearchInputDebounceIntervalMs(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setSearchInputDebounceIntervalMs(Context context, int value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_search_input_debounce_interval_key);
+
+    editor.putInt(pref_key, value);
+  }
+
+  // --------------------
+
+  public static int getMaxCountOfSearchResults(Context context) {
+    return getMaxCountOfSearchResults(context, getPrefs(context));
+  }
+
+  private static int getMaxCountOfSearchResults(Context context, SharedPreferences prefs) {
+    try {
+      String pref_key     = context.getString(R.string.pref_search_results_max_count_key);
+      String pref_default = context.getString(R.string.pref_search_results_max_count_default);
+      int     val_default = Integer.parseInt(pref_default, 10);
+
+      return prefs.getInt(pref_key, val_default);
+    }
+    catch(Exception e) {
+      return 100;
+    }
+  }
+
+  public static boolean setMaxCountOfSearchResults(Context context, int value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setMaxCountOfSearchResults(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setMaxCountOfSearchResults(Context context, int value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_search_results_max_count_key);
+
+    editor.putInt(pref_key, value);
+  }
+
+  // --------------------
+
+  public static boolean getRemoveDuplicateNamesFromSearchResults(Context context) {
+    return getRemoveDuplicateNamesFromSearchResults(context, getPrefs(context));
+  }
+
+  private static boolean getRemoveDuplicateNamesFromSearchResults(Context context, SharedPreferences prefs) {
+    String pref_key     = context.getString(R.string.pref_search_results_remove_duplicate_names_key);
+    String pref_default = context.getString(R.string.pref_search_results_remove_duplicate_names_default);
+    boolean val_default = "true".equals(pref_default);
+
+    return prefs.getBoolean(pref_key, val_default);
+  }
+
+  public static boolean setRemoveDuplicateNamesFromSearchResults(Context context, boolean value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setRemoveDuplicateNamesFromSearchResults(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setRemoveDuplicateNamesFromSearchResults(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_search_results_remove_duplicate_names_key);
+
+    editor.putBoolean(pref_key, value);
+  }
+
+  // --------------------
+
   public static String getDefaultM3uUrlPreference(Context context) {
     return getDefaultM3uUrlPreference(context, getPrefs(context));
   }

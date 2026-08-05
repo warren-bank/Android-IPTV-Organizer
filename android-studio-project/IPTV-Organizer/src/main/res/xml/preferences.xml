@@ -27,6 +27,37 @@
 
   </PreferenceCategory>
   <PreferenceCategory
+    android:title="@string/pref_category_m3u_search">
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.NumericPreference
+      android:key="@string/pref_search_input_debounce_interval_key"
+      android:title="@string/pref_search_input_debounce_interval_title"
+      android:summary="@string/pref_search_input_debounce_interval_summary"
+      android:inputType="number"
+      android:numeric="integer"
+      android:maxLength="4"
+      android:hint="@string/pref_search_input_debounce_interval_hint"
+      android:defaultValue="@string/pref_search_input_debounce_interval_default" />
+
+    <com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.NumericPreference
+      android:key="@string/pref_search_results_max_count_key"
+      android:title="@string/pref_search_results_max_count_title"
+      android:summary="@string/pref_search_results_max_count_summary"
+      android:inputType="number"
+      android:numeric="integer"
+      android:maxLength="4"
+      android:hint="@string/pref_search_results_max_count_hint"
+      android:defaultValue="@string/pref_search_results_max_count_default" />
+
+    <CheckBoxPreference
+      android:key="@string/pref_search_results_remove_duplicate_names_key"
+      android:title="@string/pref_search_results_remove_duplicate_names_title"
+      android:summaryOn="@string/pref_search_results_remove_duplicate_names_summary_on"
+      android:summaryOff="@string/pref_search_results_remove_duplicate_names_summary_off"
+      android:defaultValue="@string/pref_search_results_remove_duplicate_names_default" />
+
+  </PreferenceCategory>
+  <PreferenceCategory
     android:title="@string/pref_category_m3u_channels">
 
     <EditTextPreference
