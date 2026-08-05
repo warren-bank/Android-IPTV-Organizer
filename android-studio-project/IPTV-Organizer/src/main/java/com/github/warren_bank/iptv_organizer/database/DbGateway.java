@@ -307,11 +307,11 @@ public class DbGateway {
     return channels;
   }
 
-  public List<ChannelListItem> searchM3u(String[] keywords, int LIMIT) {
-    return searchM3u(keywords, LIMIT, 2, null);
+  public List<ChannelListItem> searchM3u(String[] keywords, int LIMIT, boolean removeDuplicateNames) {
+    return searchM3u(keywords, LIMIT, removeDuplicateNames, 2, null);
   }
 
-  public List<ChannelListItem> searchM3u(String[] keywords, int LIMIT, int minKeywordLength, DataProgressListener listener) {
+  public List<ChannelListItem> searchM3u(String[] keywords, int LIMIT, boolean removeDuplicateNames, int minKeywordLength, DataProgressListener listener) {
     List<ChannelListItem> channels = new ArrayList<ChannelListItem>();
 
     ArrayList<String> conditions = new ArrayList<String>();
@@ -325,8 +325,9 @@ public class DbGateway {
     if (conditions.isEmpty())
       return channels;
 
-    String WHERE = " WHERE " + TextUtils.join(" OR ", conditions);
-    String query = "SELECT * FROM m3u_channels" + WHERE + " ORDER BY name ASC LIMIT " + LIMIT;
+    String WHERE    = " WHERE " + TextUtils.join(" OR ", conditions);
+    String GROUP_BY = removeDuplicateNames ? " GROUP BY name" : "";
+    String query    = "SELECT * FROM m3u_channels" + WHERE + GROUP_BY + " ORDER BY name ASC LIMIT " + LIMIT;
 
     Cursor c = null;
     try {

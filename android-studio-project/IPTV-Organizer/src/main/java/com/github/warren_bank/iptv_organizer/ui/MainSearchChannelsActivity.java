@@ -89,8 +89,9 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
   // Background Search Thread Management:
   // ---------------------------------------------------------------------------------------------
 
-  private static long SEARCH_DEBOUNCE_INTERVAL_MS = 300L;
-  private static int  MAX_SEARCH_RESULTS = 100;
+  private static long    SEARCH_DEBOUNCE_INTERVAL_MS = 300L;
+  private static int     MAX_SEARCH_RESULTS          = 100;
+  private static boolean REMOVE_DUPLICATE_NAMES      = true;
 
   private static class SearchRunnable implements Runnable {
     private MainSearchChannelsActivity activity;
@@ -225,7 +226,7 @@ public class MainSearchChannelsActivity extends AppCompatActivity implements Fil
       else {
         String[] keywords = constraint.split(Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX);
 
-        newList = DbUtils.getDb().searchM3u(keywords, MAX_SEARCH_RESULTS);
+        newList = DbUtils.getDb().searchM3u(keywords, MAX_SEARCH_RESULTS, REMOVE_DUPLICATE_NAMES);
       }
 
       if ((newList == null) && channelList.isEmpty())
