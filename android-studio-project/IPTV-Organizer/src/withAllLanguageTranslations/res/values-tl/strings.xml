@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Tagapag-ayos</string>
+  <string name="activity_main">M3U Maghanap</string>
   <string name="activity_channels">M3U Mga Kanal</string>
   <string name="activity_epg">EPG Mga Kanal</string>
   <string name="add">Magdagdag</string>

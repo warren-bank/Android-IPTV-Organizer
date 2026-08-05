@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Organizatör</string>
+  <string name="activity_main">M3U Arama</string>
   <string name="activity_channels">M3U Kanallar</string>
   <string name="activity_epg">EPG Kanallar</string>
   <string name="add">Ekle</string>

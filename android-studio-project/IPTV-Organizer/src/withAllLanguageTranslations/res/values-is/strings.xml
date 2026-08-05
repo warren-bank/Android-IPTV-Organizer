@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Skipuleggjandi</string>
+  <string name="activity_main">M3U Leita</string>
   <string name="activity_channels">M3U Rásir</string>
   <string name="activity_epg">EPG Rásir</string>
   <string name="add">Bæta við</string>

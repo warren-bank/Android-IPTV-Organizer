@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV 主辦單位</string>
+  <string name="activity_main">M3U 搜尋</string>
   <string name="activity_channels">M3U 頻道</string>
   <string name="activity_epg">EPG 頻道</string>
   <string name="add">新增</string>

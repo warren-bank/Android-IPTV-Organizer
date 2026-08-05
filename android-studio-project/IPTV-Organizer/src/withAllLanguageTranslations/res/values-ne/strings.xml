@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV आयोजक</string>
+  <string name="activity_main">M3U खोज्नुहोस्</string>
   <string name="activity_channels">M3U च्यानलहरू</string>
   <string name="activity_epg">EPG च्यानलहरू</string>
   <string name="add">थप्नुहोस्</string>

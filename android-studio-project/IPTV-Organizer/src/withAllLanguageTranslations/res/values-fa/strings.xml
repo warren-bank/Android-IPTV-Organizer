@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV برگزارکننده</string>
+  <string name="activity_main">M3U جستجو</string>
   <string name="activity_channels">M3U کانال‌ها</string>
   <string name="activity_epg">EPG کانال‌ها</string>
   <string name="add">افزودن</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Aozour</string>
+  <string name="activity_main">M3U Klask</string>
   <string name="activity_channels">M3U Kanolioù</string>
   <string name="activity_epg">EPG Kanolioù</string>
   <string name="add">Ouzhpennañ</string>

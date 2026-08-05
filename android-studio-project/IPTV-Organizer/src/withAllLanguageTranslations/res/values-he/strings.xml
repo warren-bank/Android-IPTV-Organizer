@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV מארגן</string>
+  <string name="activity_main">M3U חיפוש</string>
   <string name="activity_channels">M3U ערוצים</string>
   <string name="activity_epg">EPG ערוצים</string>
   <string name="add">הוסף</string>

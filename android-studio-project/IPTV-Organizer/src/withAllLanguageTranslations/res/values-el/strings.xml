@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Διοργανωτής</string>
+  <string name="activity_main">M3U Αναζήτηση</string>
   <string name="activity_channels">M3U Κανάλια</string>
   <string name="activity_epg">EPG Κανάλια</string>
   <string name="add">Προσθήκη</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Penganjur</string>
+  <string name="activity_main">M3U Cari</string>
   <string name="activity_channels">M3U Saluran</string>
   <string name="activity_epg">EPG Saluran</string>
   <string name="add">Tambah</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV אָרגאַניזאַטאָר</string>
+  <string name="activity_main">M3U זוכן</string>
   <string name="activity_channels">M3U קאַנאַלן</string>
   <string name="activity_epg">EPG קאַנאַלן</string>
   <string name="add">צוגעבן</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Eagraitheoir</string>
+  <string name="activity_main">M3U Cuardaigh</string>
   <string name="activity_channels">M3U Cainéil</string>
   <string name="activity_epg">EPG Cainéil</string>
   <string name="add">Cuir leis</string>

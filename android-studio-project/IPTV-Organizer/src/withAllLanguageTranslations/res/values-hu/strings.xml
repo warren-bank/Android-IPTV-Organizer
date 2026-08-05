@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Szervező</string>
+  <string name="activity_main">M3U Keresés</string>
   <string name="activity_channels">M3U Csatornák</string>
   <string name="activity_epg">EPG Csatornák</string>
   <string name="add">Hozzáadás</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Organizator</string>
+  <string name="activity_main">M3U Kërko</string>
   <string name="activity_channels">M3U Kanalet</string>
   <string name="activity_epg">EPG Kanalet</string>
   <string name="add">Shto</string>

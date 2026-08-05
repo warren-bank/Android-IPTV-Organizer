@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Pořadatel</string>
+  <string name="activity_main">M3U Hledat</string>
   <string name="activity_channels">M3U Kanály</string>
   <string name="activity_epg">EPG Kanály</string>
   <string name="add">Přidat</string>

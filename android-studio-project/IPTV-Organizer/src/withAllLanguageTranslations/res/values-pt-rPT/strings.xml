@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Organizador</string>
+  <string name="activity_main">M3U Pesquisar</string>
   <string name="activity_channels">M3U Canais</string>
   <string name="activity_epg">EPG Canais</string>
   <string name="add">Adicionar</string>

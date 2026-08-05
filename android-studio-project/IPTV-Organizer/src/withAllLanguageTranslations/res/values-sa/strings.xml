@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV आयोजकः</string>
+  <string name="activity_main">M3U अन्वेषणम्</string>
   <string name="activity_channels">M3U वाहिन्यः</string>
   <string name="activity_epg">EPG वाहिन्यः</string>
   <string name="add">योजयतु</string>

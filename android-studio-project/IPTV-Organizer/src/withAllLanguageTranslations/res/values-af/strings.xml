@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Organiseerder</string>
+  <string name="activity_main">M3U Soek</string>
   <string name="activity_channels">M3U Kanale</string>
   <string name="activity_epg">EPG Kanale</string>
   <string name="add">Voeg by</string>

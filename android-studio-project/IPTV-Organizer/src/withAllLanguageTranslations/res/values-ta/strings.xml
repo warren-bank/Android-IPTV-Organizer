@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV நிறுவனர்</string>
+  <string name="activity_main">M3U தேடல்</string>
   <string name="activity_channels">M3U சேனல்கள்</string>
   <string name="activity_epg">EPG சேனல்கள்</string>
   <string name="add">சேர்</string>

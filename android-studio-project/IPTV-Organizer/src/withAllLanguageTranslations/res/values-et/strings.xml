@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Korraldaja</string>
+  <string name="activity_main">M3U Otsing</string>
   <string name="activity_channels">M3U Kanalid</string>
   <string name="activity_epg">EPG Kanalid</string>
   <string name="add">Lisa</string>

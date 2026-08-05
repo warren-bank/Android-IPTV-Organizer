@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Арганізатар</string>
+  <string name="activity_main">M3U Пошук</string>
   <string name="activity_channels">M3U Кanaлы</string>
   <string name="activity_epg">EPG Кanaлы</string>
   <string name="add">Дадаць</string>

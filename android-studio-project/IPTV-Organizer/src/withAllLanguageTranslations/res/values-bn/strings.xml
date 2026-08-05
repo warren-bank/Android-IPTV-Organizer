@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV আয়োজক</string>
+  <string name="activity_main">M3U অনুসন্ধান</string>
   <string name="activity_channels">M3U চ্যানেলসমূহ</string>
   <string name="activity_epg">EPG চ্যানেলসমূহ</string>
   <string name="add">যোগ করুন</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Wakichiri</string>
+  <string name="activity_main">M3U Thaqhaña</string>
   <string name="activity_channels">M3U Thakhinaka</string>
   <string name="activity_epg">EPG Thakhinaka</string>
   <string name="add">Yapaña</string>

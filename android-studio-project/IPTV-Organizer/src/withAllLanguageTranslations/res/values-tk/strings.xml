@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Gurnamaçy</string>
+  <string name="activity_main">M3U Gözläň</string>
   <string name="activity_channels">M3U Kanalary</string>
   <string name="activity_epg">EPG Kanalary</string>
   <string name="add">Goş</string>

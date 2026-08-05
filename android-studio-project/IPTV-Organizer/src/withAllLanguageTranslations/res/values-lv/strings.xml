@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Rīkotājs</string>
+  <string name="activity_main">M3U Meklēt</string>
   <string name="activity_channels">M3U Kanāli</string>
   <string name="activity_epg">EPG Kanāli</string>
   <string name="add">Pievienot</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Đơn vị tổ chức</string>
+  <string name="activity_main">M3U Tìm kiếm</string>
   <string name="activity_channels">M3U Kênh</string>
   <string name="activity_epg">EPG Kênh</string>
   <string name="add">Thêm</string>

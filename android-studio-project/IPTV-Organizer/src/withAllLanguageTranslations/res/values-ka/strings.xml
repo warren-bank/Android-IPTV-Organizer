@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV ორგანიზატორი</string>
+  <string name="activity_main">M3U ძიება</string>
   <string name="activity_channels">M3U არხები</string>
   <string name="activity_epg">EPG არხები</string>
   <string name="add">დამატება</string>

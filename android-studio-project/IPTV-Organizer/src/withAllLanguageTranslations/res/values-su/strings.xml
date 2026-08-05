@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Panata</string>
+  <string name="activity_main">M3U Pilarian</string>
   <string name="activity_channels">M3U Saluran</string>
   <string name="activity_epg">EPG Saluran</string>
   <string name="add">Tambahkeun</string>

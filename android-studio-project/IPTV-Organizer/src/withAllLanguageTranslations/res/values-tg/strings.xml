@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Ташкилкунанда</string>
+  <string name="activity_main">M3U Ҷустуҷӯ</string>
   <string name="activity_channels">M3U Каналҳо</string>
   <string name="activity_epg">EPG Каналҳо</string>
   <string name="add">Илова кунед</string>

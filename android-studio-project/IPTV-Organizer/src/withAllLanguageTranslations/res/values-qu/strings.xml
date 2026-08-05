@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Wakichiq</string>
+  <string name="activity_main">M3U Mask\'ay</string>
   <string name="activity_channels">M3U Ñankuna</string>
   <string name="activity_epg">EPG Ñankuna</string>
   <string name="add">Yapay</string>

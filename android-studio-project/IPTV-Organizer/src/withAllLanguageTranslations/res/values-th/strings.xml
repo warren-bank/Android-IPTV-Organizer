@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV ผู้จัดงาน</string>
+  <string name="activity_main">M3U ค้นหา</string>
   <string name="activity_channels">M3U ช่อง</string>
   <string name="activity_epg">EPG ช่อง</string>
   <string name="add">เพิ่ม</string>

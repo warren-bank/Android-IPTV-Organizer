@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV 주최자</string>
+  <string name="activity_main">M3U 검색</string>
   <string name="activity_channels">M3U 채널</string>
   <string name="activity_epg">EPG 채널</string>
   <string name="add">추가</string>

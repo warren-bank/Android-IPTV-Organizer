@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Umlungelisi</string>
+  <string name="activity_main">M3U Khangela</string>
   <string name="activity_channels">M3U Iitshaneli</string>
   <string name="activity_epg">EPG Iitshaneli</string>
   <string name="add">Yongeza</string>

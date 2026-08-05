@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Ki taxawal</string>
+  <string name="activity_main">M3U Seet</string>
   <string name="activity_channels">M3U Sànn yi</string>
   <string name="activity_epg">EPG Sànn yi</string>
   <string name="add">Yokk</string>

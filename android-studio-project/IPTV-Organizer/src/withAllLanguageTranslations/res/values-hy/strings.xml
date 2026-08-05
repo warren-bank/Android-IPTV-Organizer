@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Կազմակերպիչ</string>
+  <string name="activity_main">M3U Փնտրել</string>
   <string name="activity_channels">M3U Ալիքներ</string>
   <string name="activity_epg">EPG Ալիքներ</string>
   <string name="add">Ավելացնել</string>

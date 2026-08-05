@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV စီစဉ်သူ</string>
+  <string name="activity_main">M3U ရှာဖွေ</string>
   <string name="activity_channels">M3U ချန်နယ်များ</string>
   <string name="activity_epg">EPG ချန်နယ်များ</string>
   <string name="add">ထည့်ပါ</string>

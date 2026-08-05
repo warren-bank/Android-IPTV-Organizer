@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">IPTV Зохион байгуулагч</string>
+  <string name="activity_main">M3U Хайх</string>
   <string name="activity_channels">M3U Сувгууд</string>
   <string name="activity_epg">EPG Сувгууд</string>
   <string name="add">Нэмэх</string>
