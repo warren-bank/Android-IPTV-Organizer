@@ -1,5 +1,6 @@
 package com.github.warren_bank.iptv_organizer.ui;
 
+import com.github.warren_bank.iptv_organizer.ui.ChannelsActivity;
 import com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEditTextPreference;
 import com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbPreferenceDataStore;
 import com.github.warren_bank.iptv_organizer.ui.settings.MySharedPreferenceChangeListener;
@@ -110,6 +111,11 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
           SettingsActivity.this,
           getContentResolver().openInputStream(uri)
         );
+
+        // open "M3U Channels" and force data refresh
+        ChannelsActivity.open(SettingsActivity.this, true);
+
+        finish();
       }
       catch(Exception ignored) {}
       return;

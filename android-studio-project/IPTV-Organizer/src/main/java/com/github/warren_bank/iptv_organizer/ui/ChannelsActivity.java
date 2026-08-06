@@ -51,9 +51,18 @@ import java.util.Comparator;
 import java.util.List;
 
 public class ChannelsActivity extends AppCompatActivity implements FilterableListItemOnClickListener {
+  private static String ACTION_REFRESH_LIST = "REFRESH_LIST";
 
   public static void open(Context context) {
+    open(context, false);
+  }
+
+  public static void open(Context context, boolean refreshList) {
     Intent intent = new Intent(context, ChannelsActivity.class);
+
+    if (refreshList)
+      intent.setAction(ACTION_REFRESH_LIST);
+
     context.startActivity(intent);
   }
 
@@ -128,11 +137,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
       importNewIntentDataUri(urlText);
     }
     else {
-      final DataProgressDialog listener = new DataProgressDialog(ChannelsActivity.this, R.string.loading, getString(R.string.activity_channels));
-      dataProgressDialog = listener;
-
-      // Read channels from DB on a background thread
-      new Thread(() -> initList(listener)).start();
+      readChannelsFromDb();
     }
   }
 
@@ -142,6 +147,9 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
 
     if (urlText != null) {
       importNewIntentDataUri(urlText);
+    }
+    else if (ACTION_REFRESH_LIST.equals(intent.getAction())) {
+      readChannelsFromDb();
     }
   }
 
@@ -163,6 +171,14 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
 
     // Do network on a background thread
     new Thread(() -> openUrlAsStream(urlText, listener)).start();
+  }
+
+  private void readChannelsFromDb() {
+    final DataProgressDialog listener = new DataProgressDialog(ChannelsActivity.this, R.string.loading, getString(R.string.activity_channels));
+    dataProgressDialog = listener;
+
+    // Read channels from DB on a background thread
+    new Thread(() -> initList(listener)).start();
   }
 
   @Override
