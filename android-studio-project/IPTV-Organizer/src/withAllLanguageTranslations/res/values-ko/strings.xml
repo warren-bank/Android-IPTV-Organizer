@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">알파벳순 정렬</string>
   <string name="epg_menuitem_import_xmltv_url">가져오기 XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">가져오기 XMLTV EPG 파일</string>
+  <string name="pref_category_advanced">고급</string>
   <string name="pref_dbedittextpreference_autosave_title">파일 가져오기 후 데이터 자동 저장</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >가져온 데이터는 즉시 다음 위치에 저장됩니다. DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">가져온 데이터는 대화 상자의 텍스트 필드에 복사되지만, 아직 다음 위치에는 저장되지 않았습니다. DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >다음 위치에서 발견된 화이트리스트 채널: M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">다음 위치에서 발견된 채널을 허용 목록에 추가하지 마십시오. M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">한 줄에 하나의 값을 입력하십시오. 대소문자를 구분하지 않는 부분 문자열의 접두사: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">데이터베이스 백업</string>
+  <string name="pref_advanced_backup_db_summary">내보내기 SQLite 데이터베이스.</string>
+  <string name="pref_advanced_restore_db_title">데이터베이스 복원</string>
+  <string name="pref_advanced_restore_db_summary">가져오기 SQLite 데이터베이스.</string>
 </resources>

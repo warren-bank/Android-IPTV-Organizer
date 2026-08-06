@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Rūšiuoti abėcėlės tvarka</string>
   <string name="epg_menuitem_import_xmltv_url">Importas XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importas XMLTV EPG Failas</string>
+  <string name="pref_category_advanced">Išplėstinis</string>
   <string name="pref_dbedittextpreference_autosave_title">Automatinis duomenų išsaugojimas po failo importavimo</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Importuoti duomenys iš karto išsaugomi į DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Importuoti duomenys nukopijuojami į dialogo lango tekstinį laukelį, tačiau dar nėra išsaugoti į DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Į baltąjį sąrašą įtraukti kanalai, rasti M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Neįtraukite į baltąjį sąrašą kanalų, esančių M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Viena reikšmė vienoje eilutėje. Prefiksas, kuriam nustatoma, kad nebūtų atsižvelgiama į didžiųjų ir mažųjų raidžių skirtumą: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Duomenų bazės atsarginė kopija</string>
+  <string name="pref_advanced_backup_db_summary">Eksportuoti SQLite duomenų bazė.</string>
+  <string name="pref_advanced_restore_db_title">Atkurti duomenų bazę</string>
+  <string name="pref_advanced_restore_db_summary">Importas SQLite duomenų bazė.</string>
 </resources>

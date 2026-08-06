@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Simi qillqahina t\'aqay</string>
   <string name="epg_menuitem_import_xmltv_url">Hawa llaqtamanta apamuy XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Hawa llaqtamanta apamuy XMLTV EPG Willañiqita</string>
+  <string name="pref_category_advanced">Ñawparisqa</string>
   <string name="pref_dbedittextpreference_autosave_title">Willakuykunata kikinmanta waqaychay willakuykunata apamusqay qhipata</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Hawaqmanta apamusqa willakunaqa chaylla waqaychasqa kachkan DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Hamuq willakunaqa rimanakuypa qillqa k\'uchunman iskaychaykusqa kachkan, ichaqa manaraq waqaychasqachu kachkan. DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Taripasqa yupasqa ñankuna M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ama allinchanchu tarisqa kanalakunata M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Sapa siqipi huk chanin. Qillqa sayaynin mana chaninchasqa qatiq qillqa t\'aqapaq ñawpaq yapay.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Willaykuna T\'aqata Waqaychay</string>
+  <string name="pref_advanced_backup_db_summary">Hawaman apachiy SQLite Willaykuna T\'aqa.</string>
+  <string name="pref_advanced_restore_db_title">Willay T\'aqata Kutichiy</string>
+  <string name="pref_advanced_restore_db_summary">Hawa llaqtamanta apamuy SQLite Willaykuna T\'aqa.</string>
 </resources>

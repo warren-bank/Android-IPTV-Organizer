@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Hlela hi maletere</string>
   <string name="epg_menuitem_import_xmltv_url">Nghenisa XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Nghenisa XMLTV EPG Fayili</string>
+  <string name="pref_category_advanced">Swa le henhla</string>
   <string name="pref_dbedittextpreference_autosave_title">Ku hlayisa datha hi xoxe endzhaku ko nghenisa fayili</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Datha leyi nghenisiweke yi hlayisiwa hi xihatla eka DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Datha leyi nghenisiweke yi kopiwile eka xibedlhele xa matsalwa eka bokisi ra mbulavurisano, kambe a yi si hlayisiwa eka DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Switichi leswi kumekaka eka nxaxamelo wo pfumeleriwa M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">U nga pfumeleli switichi leswi kumekaka eka M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Ntsengo wun\'we hi layini. Xirhangi xa xiphemu xa layini lexi nga riki na mhaka na maletere lamakulu kumbe lamatsongo.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Phemelo wa Database</string>
+  <string name="pref_advanced_backup_db_summary">Rhumela ehandle SQLite Xihlayiselo xa vuxokoxoko.</string>
+  <string name="pref_advanced_restore_db_title">Vuyisela Dathabesi</string>
+  <string name="pref_advanced_restore_db_summary">Nghenisa SQLite Xihlayiselo xa vuxokoxoko.</string>
 </resources>

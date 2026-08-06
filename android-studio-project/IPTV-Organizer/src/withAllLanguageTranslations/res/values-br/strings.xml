@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Renkañ dre an urzh alfabetek</string>
   <string name="epg_menuitem_import_xmltv_url">Enporzhiañ XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Enporzhiañ XMLTV EPG Restr</string>
+  <string name="pref_category_advanced">Urzhiet</string>
   <string name="pref_dbedittextpreference_autosave_title">Enrollañ emgefre ar roadennoù goude enporzhiañ ar restr</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >An roadennoù enporzhiet a vez enrollet diouzhtu e DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Eiladet eo ar roadennoù enporzhiet d\'ar vaezienn destenn er voest diviz, met n\'int ket bet enrollet c\'hoazh e DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanolioù gwenn kavet e M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Na lakait ket war ar roll aotreet ar c\'hanolioù kavet e M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Un talvoud dre linenn. Rakger evit an is-sturienn diouzh ar c\'has.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Reizhiad-stok</string>
+  <string name="pref_advanced_backup_db_summary">Ezporzhiañ SQLite diaz-roadennoù.</string>
+  <string name="pref_advanced_restore_db_title">Adsevel an diaz-roadennoù</string>
+  <string name="pref_advanced_restore_db_summary">Enporzhiañ SQLite diaz-roadennoù.</string>
 </resources>

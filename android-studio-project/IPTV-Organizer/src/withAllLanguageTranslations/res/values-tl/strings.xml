@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Ayusin ayon sa alpabeto</string>
   <string name="epg_menuitem_import_xmltv_url">I-import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">I-import XMLTV EPG File</string>
+  <string name="pref_category_advanced">Nabanggit</string>
   <string name="pref_dbedittextpreference_autosave_title">Awtomatikong i-save ang datos pagkatapos ng pag-import ng file.</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Ang na-import na datos ay agad na nai-save sa DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Kinokopya ang na-import na datos sa patlang ng teksto sa dialog, ngunit hindi pa ito nai-save sa DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Mga channel sa whitelist na matatagpuan sa M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Huwag i-whitelist ang mga channel na matatagpuan sa M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Isang halaga bawat linya. Harang para sa substring na hindi sensitibo sa malalaking titik at maliliit na titik.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Reserbang Database</string>
+  <string name="pref_advanced_backup_db_summary">I-export SQLite pang-imbakan ng datos.</string>
+  <string name="pref_advanced_restore_db_title">Ibalik ang Database</string>
+  <string name="pref_advanced_restore_db_summary">I-import SQLite pang-imbakan ng datos.</string>
 </resources>

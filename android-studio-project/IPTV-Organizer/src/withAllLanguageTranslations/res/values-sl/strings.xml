@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Razvrsti po abecedi</string>
   <string name="epg_menuitem_import_xmltv_url">Uvoz XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Uvoz XMLTV EPG Datoteka</string>
+  <string name="pref_category_advanced">Napredno</string>
   <string name="pref_dbedittextpreference_autosave_title">Samodejno shranjevanje podatkov po uvozu datoteke</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Uvoženi podatki se takoj shranijo v DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Uvoženi podatki se kopirajo v besedilno polje v pogovornem oknu, vendar še niso shranjeni v DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanali na seznamu dovoljenih, ki so bili najdeni v M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Kanalov, ki se nahajajo v, ne dodajajte na belo listo M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Ena vrednost na vrstico. Predpona za podniz, pri katerem se ne upošteva velika/mala črka: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Varnostna kopija baze podatkov</string>
+  <string name="pref_advanced_backup_db_summary">Izvoz SQLite podatkovna baza.</string>
+  <string name="pref_advanced_restore_db_title">Obnovi bazo podatkov</string>
+  <string name="pref_advanced_restore_db_summary">Uvoz SQLite podatkovna baza.</string>
 </resources>

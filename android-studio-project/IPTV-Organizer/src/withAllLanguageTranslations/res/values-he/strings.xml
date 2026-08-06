@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">מיון לפי סדר אלפביתי</string>
   <string name="epg_menuitem_import_xmltv_url">ייבוא XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">ייבוא XMLTV EPG קובץ</string>
+  <string name="pref_category_advanced">מתקדם</string>
   <string name="pref_dbedittextpreference_autosave_title">שמירת נתונים אוטומטית לאחר ייבוא קובץ</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >הנתונים המיובאים נשמרים מיד ב- DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">הנתונים המיובאים מועתקים לשדה הטקסט בתיבת הדו-שיח, אך עדיין לא נשמרו ב- DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ערוצים ברשימת ההיתרים שנמצאו ב- M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">אין להוסיף לרשימת ההיתרים ערוצים הנמצאים ב- M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">ערך אחד בכל שורה. קידומת למחרוזת משנה שאינה מבחינה בין אותיות גדולות לקטנות: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">גיבוי מסד נתונים</string>
+  <string name="pref_advanced_backup_db_summary">ייצוא SQLite מסד נתונים.</string>
+  <string name="pref_advanced_restore_db_title">שחזור מסד הנתונים</string>
+  <string name="pref_advanced_restore_db_summary">ייבוא SQLite מסד נתונים.</string>
 </resources>

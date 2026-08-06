@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Emohenda tai rupive</string>
   <string name="epg_menuitem_import_xmltv_url">Mbohypy XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Mbohypy XMLTV EPG Kuatiarogue</string>
+  <string name="pref_category_advanced">Tenonde gotyo</string>
   <string name="pref_dbedittextpreference_autosave_title">Oñeñongatu ijeheguiete marandu oñemoinge rire kuatiarogue.</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Marandu ojeguerúva oñeñongatu voi DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Dato ojeguerúva oñekopia pe ñe\'ẽrã rendápe diálogo-pe, ha katu ne\'ĩra oñeñongatu DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Mbohasaha rysýi ojejuhúva M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ani emoinge umi canal ojejuhúva M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Peteĩ mba\'e káda tysýipe. Moñepyrũha jehaipyre pehẽngue ojehechakuaa\'ỹva tai guasu ha tai michĩme g̃uarã.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Báda ryrurã</string>
+  <string name="pref_advanced_backup_db_summary">Mbohasávo SQLite Marandu ñongatuha.</string>
+  <string name="pref_advanced_restore_db_title">Moĩporãjey Tembikuaarupa</string>
+  <string name="pref_advanced_restore_db_summary">Mbohypy SQLite Marandu ñongatuha.</string>
 </resources>

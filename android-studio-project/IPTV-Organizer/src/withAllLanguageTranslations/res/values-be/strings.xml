@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Сартаваць па алфавіце</string>
   <string name="epg_menuitem_import_xmltv_url">Імпарт XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Імпарт XMLTV EPG Файл</string>
+  <string name="pref_category_advanced">Прасунуты</string>
   <string name="pref_dbedittextpreference_autosave_title">Аўтаматычнае захаванне даных пасля імпарту файла</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Імпартаваныя даныя неадкладна захоўваюцца ў DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Імпартаваныя даныя капіруюцца ў тэкставае поле ў дыялогу, але яшчэ не захаваны ў DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Знайдзены каналы ў белым спісе M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Не дадаваць у белы спіс знойдзеныя каналы M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Адно значэнне на радок. Прэфікс для рэгулярнага выразу, які не адрознівае вялікія і малыя літары: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Рэзервовае капіраванне базы даных</string>
+  <string name="pref_advanced_backup_db_summary">Экспарт SQLite даных база.</string>
+  <string name="pref_advanced_restore_db_title">Аднавіць базу даных</string>
+  <string name="pref_advanced_restore_db_summary">Імпарт SQLite даных база.</string>
 </resources>

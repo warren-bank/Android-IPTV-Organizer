@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">ترتیب الفبایی</string>
   <string name="epg_menuitem_import_xmltv_url">واردات XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">واردات XMLTV EPG فایل</string>
+  <string name="pref_category_advanced">پیشرفته</string>
   <string name="pref_dbedittextpreference_autosave_title">خودکار ذخیره کردن داده‌ها پس از وارد کردن فایل</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >داده‌های واردشده بلافاصله در DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">داده‌های واردشده به فیلد متن در کادر محاوره‌ای کپی می‌شوند، اما هنوز ذخیره نشده‌اند. DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >کانال‌های فهرست سفید یافت‌شده در M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">کانال‌های یافت‌شده در را سفیدنمایی نکنید M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">یک مقدار در هر خط. پیشوند برای زیرنویس بی‌حساس به حروف بزرگ و کوچک: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">پشتیبان‌گیری از پایگاه داده</string>
+  <string name="pref_advanced_backup_db_summary">صادرات SQLite پایگاه داده.</string>
+  <string name="pref_advanced_restore_db_title">بازیابی پایگاه داده</string>
+  <string name="pref_advanced_restore_db_summary">واردات SQLite پایگاه داده.</string>
 </resources>

@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Alfabetisch sorteren</string>
   <string name="epg_menuitem_import_xmltv_url">Importeren XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importeren XMLTV EPG Bestand</string>
+  <string name="pref_category_advanced">Gevorderd</string>
   <string name="pref_dbedittextpreference_autosave_title">Gegevens automatisch opslaan na het importeren van een bestand</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Geïmporteerde gegevens worden onmiddellijk opgeslagen in DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">De geïmporteerde gegevens worden naar het tekstveld in het dialoogvenster gekopieerd, maar nog niet opgeslagen in DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanalen op de witte lijst die zijn gevonden in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Zet kanalen die je aantreft in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Eén waarde per regel. Voorvoegsel voor een substring waarbij hoofdletters en kleine letters niet van belang zijn: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Back-up van de database</string>
+  <string name="pref_advanced_backup_db_summary">Exporteren SQLite database.</string>
+  <string name="pref_advanced_restore_db_title">Database herstellen</string>
+  <string name="pref_advanced_restore_db_summary">Importeren SQLite database.</string>
 </resources>

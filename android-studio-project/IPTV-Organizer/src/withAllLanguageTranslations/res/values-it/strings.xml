@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Ordina in ordine alfabetico</string>
   <string name="epg_menuitem_import_xmltv_url">Importa XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importa XMLTV EPG File</string>
+  <string name="pref_category_advanced">Avanzato</string>
   <string name="pref_dbedittextpreference_autosave_title">Salvataggio automatico dei dati dopo l\'importazione del file</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >I dati importati vengono immediatamente salvati in DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">I dati importati vengono copiati nel campo di testo della finestra di dialogo, ma non vengono ancora salvati in DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Canali inseriti nella whitelist presenti in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Non inserire nella whitelist i canali presenti in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Un valore per riga. Prefisso per la sottostringa che non distingue tra maiuscole e minuscole: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Backup del database</string>
+  <string name="pref_advanced_backup_db_summary">Esporta SQLite database.</string>
+  <string name="pref_advanced_restore_db_title">Ripristina database</string>
+  <string name="pref_advanced_restore_db_summary">Importa SQLite database.</string>
 </resources>

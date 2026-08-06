@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Ալֆավիտային կարգավորել</string>
   <string name="epg_menuitem_import_xmltv_url">Իմպորտ XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Իմպորտ XMLTV EPG Ֆայլ</string>
+  <string name="pref_category_advanced">Ընդլայնված</string>
   <string name="pref_dbedittextpreference_autosave_title">Ֆայլի ներմուծումից հետո ավտոմատ պահպանել տվյալները</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Իմպորտացված տվյալները անմիջապես պահվում են DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Իմպորտացված տվյալները պատճենվում են երկխոսության տեքստային դաշտում, սակայն դեռ չեն պահպանվել DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ցուցակում գտնվող ալիքները հայտնաբերվել են M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Մի՛ ավելացրեք սպիտակ ցուցակում գտնված ալիքները։ M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Յուրաքանչյուր տողում մեկ արժեք։ Մեծատառ-փոքրատառի նկատմամբ անզգայուն ենթատողի նախածանց: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Պահուստային տվյալների բազա</string>
+  <string name="pref_advanced_backup_db_summary">Ելք SQLite Տվյալների բազա.</string>
+  <string name="pref_advanced_restore_db_title">Վերականգնել տվյալների բազան</string>
+  <string name="pref_advanced_restore_db_summary">Իմպորտ SQLite Տվյալների բազա.</string>
 </resources>

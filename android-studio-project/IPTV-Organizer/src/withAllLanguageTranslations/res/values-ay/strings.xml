@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Qillqa tuqirjam t\'aqaña</string>
   <string name="epg_menuitem_import_xmltv_url">Apkataña XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Apkataña XMLTV EPG Qillqata</string>
+  <string name="pref_category_advanced">Jilïri</string>
   <string name="pref_dbedittextpreference_autosave_title">Archivo apantañ qhipata, datos jupa pachpa imasiñapa</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Anqat apanit datunakax jank\'akiw imasi DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Anqat apanit datonakaxa aruskipañ tuqinkir qillqañ chiqaru kopiyasiwa, ukampirusa janira imatäkiti DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Jalsuñataki churanaka jikxatasi M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Janiw jikxatat canales ukanakax q\'umachat listaru uchañati. M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Sapa siqitaki mä chani. Qillqa jach\'a jisk\'a jan uñjiri chika qillqataki nayraqat: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Reserva Base de Datos</string>
+  <string name="pref_advanced_backup_db_summary">Apayaña SQLite Yatiyäwinak imaña.</string>
+  <string name="pref_advanced_restore_db_title">Qillqatanaka Kutt\'ayaña</string>
+  <string name="pref_advanced_restore_db_summary">Apantaña SQLite Yatiyäwinak imaña.</string>
 </resources>

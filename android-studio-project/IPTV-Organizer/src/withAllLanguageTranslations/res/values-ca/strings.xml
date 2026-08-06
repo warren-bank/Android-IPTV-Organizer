@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Ordena alfabèticament</string>
   <string name="epg_menuitem_import_xmltv_url">Importar XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importar XMLTV EPG Fitxer</string>
+  <string name="pref_category_advanced">Avançat</string>
   <string name="pref_dbedittextpreference_autosave_title">Després d\'importar el fitxer, desa automàticament les dades.</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Les dades importades es guarden immediatament a DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Les dades importades es copien al camp de text del diàleg, però encara no s\'han desat a DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Canals de llista blanca trobats a M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">No marqueu com a permesos els canals trobats a M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Un valor per línia. Prefix per a la substringa insensitiva a majúscules i minúscules: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Còpia de seguretat de la base de dades</string>
+  <string name="pref_advanced_backup_db_summary">Exportar SQLite base de dades.</string>
+  <string name="pref_advanced_restore_db_title">Restablix la base de dades</string>
+  <string name="pref_advanced_restore_db_summary">Importar SQLite base de dades.</string>
 </resources>

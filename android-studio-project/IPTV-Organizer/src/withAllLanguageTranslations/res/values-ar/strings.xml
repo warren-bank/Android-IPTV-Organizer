@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">الترتيب الأبجدي</string>
   <string name="epg_menuitem_import_xmltv_url">استيراد XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">استيراد XMLTV EPG ملف</string>
+  <string name="pref_category_advanced">متقدم</string>
   <string name="pref_dbedittextpreference_autosave_title">الحفظ التلقائي للبيانات بعد استيراد الملف</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >يتم حفظ البيانات المستوردة على الفور في DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">يتم نسخ البيانات المستوردة إلى حقل النص في مربع الحوار، ولكن لم يتم حفظها بعد في DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >القنوات المدرجة في القائمة البيضاء الموجودة في M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">لا تضف القنوات الموجودة في إلى قائمة المسموح بها M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">قيمة واحدة في كل سطر. البادئة الخاصة بالسلسلة الفرعية التي لا تميز بين الأحرف الكبيرة والصغيرة: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">نسخ قاعدة البيانات احتياطيًا</string>
+  <string name="pref_advanced_backup_db_summary">تصدير SQLite قاعدة البيانات.</string>
+  <string name="pref_advanced_restore_db_title">استعادة قاعدة البيانات</string>
+  <string name="pref_advanced_restore_db_summary">استيراد SQLite قاعدة البيانات.</string>
 </resources>

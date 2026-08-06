@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Sorter alfabetisk</string>
   <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Fil</string>
+  <string name="pref_category_advanced">Avansert</string>
   <string name="pref_dbedittextpreference_autosave_title">Lagre data automatisk etter filimport</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Importerte data lagres umiddelbart i DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Importerte data kopieres til tekstfeltet i dialogboksen, men er ennå ikke lagret i DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Legg kanalene som ble funnet i til hvitelisten M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ikke sett kanaler som finnes i på hvitelisten M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Én verdi per linje. Prefiks for delstreng der store og små bokstaver ikke skiller seg fra hverandre: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Sikkerhetskopiere database</string>
+  <string name="pref_advanced_backup_db_summary">Eksport SQLite database.</string>
+  <string name="pref_advanced_restore_db_title">Gjenopprett database</string>
+  <string name="pref_advanced_restore_db_summary">Import SQLite database.</string>
 </resources>

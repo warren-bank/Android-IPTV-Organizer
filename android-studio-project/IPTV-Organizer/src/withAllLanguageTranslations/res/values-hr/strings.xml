@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Sortiraj abecednim redom</string>
   <string name="epg_menuitem_import_xmltv_url">Uvoz XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Uvoz XMLTV EPG Datoteka</string>
+  <string name="pref_category_advanced">Napredno</string>
   <string name="pref_dbedittextpreference_autosave_title">Automatsko spremanje podataka nakon uvoza datoteke</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Uvezeni podaci se odmah spremaju u DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Uvezeni podaci su kopirani u tekstno polje u dijaloškom okviru, ali još nisu spremljeni u DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Pronađeni kanali na bijeloj listi M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Nemojte dodavati na bijelu listu kanale pronađene u M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Jedna vrijednost po retku. Prefix za neosjetljivu podnišku.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Sigurnosno kopiranje baze podataka</string>
+  <string name="pref_advanced_backup_db_summary">Izvoz SQLite baza podataka.</string>
+  <string name="pref_advanced_restore_db_title">Obnovi bazu podataka</string>
+  <string name="pref_advanced_restore_db_summary">Uvoz SQLite baza podataka.</string>
 </resources>

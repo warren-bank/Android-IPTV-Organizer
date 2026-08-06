@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Alfavit bo\'yicha tartiblash</string>
   <string name="epg_menuitem_import_xmltv_url">Import XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Import XMLTV EPG Hujjat</string>
+  <string name="pref_category_advanced">Rivojlangan</string>
   <string name="pref_dbedittextpreference_autosave_title">Faylni import qilgandan so\'ng ma\'lumotlarni avtomatik saqlash</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Import qilingan ma\'lumotlar darhol saqlanadi DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Import qilingan ma\'lumotlar dialogdagi matn maydoniga nusxalanadi, lekin hali saqlangan emas. DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Oq ro\'yxatdagi kanallar topildi M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Topilgan kanallarni oq ro\'yxatga kiritmang M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Har bir satrda bitta qiymat.  Bog\'lamasiz satr bo\'laklari uchun prefiks: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Zaxira ma\'lumotlar bazasi</string>
+  <string name="pref_advanced_backup_db_summary">Eksport SQLite ma\'lumotlar bazasi.</string>
+  <string name="pref_advanced_restore_db_title">Ma\'lumotlar bazasini tiklash</string>
+  <string name="pref_advanced_restore_db_summary">Import SQLite ma\'lumotlar bazasi.</string>
 </resources>

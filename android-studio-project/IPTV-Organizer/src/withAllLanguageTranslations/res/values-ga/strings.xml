@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Sórtáil in ord aibítre</string>
   <string name="epg_menuitem_import_xmltv_url">Iompórtáil XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Iompórtáil XMLTV EPG Comhad</string>
+  <string name="pref_category_advanced">Ardleibhéal</string>
   <string name="pref_dbedittextpreference_autosave_title">Sábháil uathoibríoch sonraí tar éis ionportáil comhaid</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Sábháiltear sonraí iompórtáilte láithreach chuig DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Cóipeáiltear sonraí iompórtáilte chuig réimse téacs sa bhosca dialóige, ach níl siad sábháilte go fóill chuig DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Cainéil ar an liosta bán a fhaightear i M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ná cuir ar an liosta bán cainéil a fhaightear in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Luach amháin in aghaidh an líne. Réimír do fhotéacs neamhchásmhaireach.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Bunachar Sonraí Cúltaca</string>
+  <string name="pref_advanced_backup_db_summary">Easpórtáil SQLite bunachar sonraí.</string>
+  <string name="pref_advanced_restore_db_title">Athchuir an Bunachar Sonraí</string>
+  <string name="pref_advanced_restore_db_summary">Iompórtáil SQLite bunachar sonraí.</string>
 </resources>

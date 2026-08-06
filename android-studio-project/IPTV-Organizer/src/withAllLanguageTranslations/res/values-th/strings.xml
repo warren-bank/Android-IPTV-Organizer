@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">จัดเรียงตามตัวอักษร</string>
   <string name="epg_menuitem_import_xmltv_url">นำเข้า XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">นำเข้า XMLTV EPG ไฟล์</string>
+  <string name="pref_category_advanced">ระดับสูง</string>
   <string name="pref_dbedittextpreference_autosave_title">บันทึกข้อมูลอัตโนมัติหลังจากนำเข้าไฟล์</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >ข้อมูลที่นำเข้าจะถูกบันทึกทันทีไปยัง DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">ข้อมูลที่นำเข้าถูกคัดลอกไปยังช่องข้อความในหน้าต่างสนทนา แต่ยังไม่ได้บันทึกไปยัง DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ช่องที่อยู่ในรายชื่ออนุญาต (Whitelist) ที่พบใน M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">อย่าเพิ่มช่องที่พบใน M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">ค่าหนึ่งต่อบรรทัดหนึ่ง คำนำหน้าสำหรับส่วนย่อยของสตริงที่ไม่แยกแยะตัวพิมพ์ใหญ่-เล็ก: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">สำรองข้อมูลฐานข้อมูล</string>
+  <string name="pref_advanced_backup_db_summary">ส่งออก SQLite ฐานข้อมูล.</string>
+  <string name="pref_advanced_restore_db_title">กู้คืนฐานข้อมูล</string>
+  <string name="pref_advanced_restore_db_summary">นำเข้า SQLite ฐานข้อมูล.</string>
 </resources>

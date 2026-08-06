@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Alphabetesch sortéieren</string>
   <string name="epg_menuitem_import_xmltv_url">Importéieren XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importéieren XMLTV EPG Datei</string>
+  <string name="pref_category_advanced">Fortgeschratt</string>
   <string name="pref_dbedittextpreference_autosave_title">Dateien no dem Import automatesch späicheren</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Importéiert Donnéeën ginn direkt op DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Importéiert Donnéeën ginn an d\'Textfeld am Dialog kopéiert, awer nach net gespäichert zu DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Op der Weisse Lëscht fonnt Kanäl an M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Maacht keng Weisse Lëscht vun de Kanäl, déi an M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Eng Wäert pro Zeil. Virleef fir eng onempfindlech Ënnerstring: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Reservekopie vun der Datebank</string>
+  <string name="pref_advanced_backup_db_summary">Exportéieren SQLite Databank.</string>
+  <string name="pref_advanced_restore_db_title">Datenbank restauréieren</string>
+  <string name="pref_advanced_restore_db_summary">Importéieren SQLite Databank.</string>
 </resources>

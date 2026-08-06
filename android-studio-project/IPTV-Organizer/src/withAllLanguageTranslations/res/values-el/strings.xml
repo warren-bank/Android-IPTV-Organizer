@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Αλφαβητική ταξινόμηση</string>
   <string name="epg_menuitem_import_xmltv_url">Εισαγωγή XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Εισαγωγή XMLTV EPG Αρχείο</string>
+  <string name="pref_category_advanced">Για προχωρημένους</string>
   <string name="pref_dbedittextpreference_autosave_title">Αυτόματη αποθήκευση δεδομένων μετά την εισαγωγή αρχείου</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Τα εισαγόμενα δεδομένα αποθηκεύονται αμέσως στο DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Τα εισαγόμενα δεδομένα αντιγράφονται στο πεδίο κειμένου του παραθύρου διαλόγου, αλλά δεν έχουν ακόμη αποθηκευτεί στο DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Κανάλια της λίστας επιτρεπόμενων που βρέθηκαν στο M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Μην προσθέτετε στη λίστα εξαιρέσεων τα κανάλια που βρίσκονται στο M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Μία τιμή ανά γραμμή. Πρόθεμα για υποστροφή χωρίς διάκριση κεφαλαίων-μικρών: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Δημιουργία αντιγράφου ασφαλείας της βάσης δεδομένων</string>
+  <string name="pref_advanced_backup_db_summary">Εξαγωγή SQLite βάση δεδομένων.</string>
+  <string name="pref_advanced_restore_db_title">Επαναφορά βάσης δεδομένων</string>
+  <string name="pref_advanced_restore_db_summary">Εισαγωγή SQLite βάση δεδομένων.</string>
 </resources>

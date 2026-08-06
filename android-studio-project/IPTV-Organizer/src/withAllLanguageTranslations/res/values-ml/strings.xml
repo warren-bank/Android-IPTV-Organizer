@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">അക്ഷരമാലാക്രമത്തിൽ ചിട്ടപ്പെടുത്തുക</string>
   <string name="epg_menuitem_import_xmltv_url">ഇറക്കുമതി XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">ഇറക്കുമതി XMLTV EPG ഫയൽ</string>
+  <string name="pref_category_advanced">ഉന്നതമായ</string>
   <string name="pref_dbedittextpreference_autosave_title">ഫയൽ ഇമ്പോർട്ടിന് ശേഷം ഡാറ്റ ഓട്ടോ സേവ് ചെയ്യുക</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >ഇറക്കുമതി ചെയ്ത ഡാറ്റ ഉടനടി സേവ് ചെയ്യപ്പെടുന്നു DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">ഇറക്കുമതി ചെയ്ത ഡാറ്റ ഡയലോഗിലെ ടെക്സ്റ്റ് ഫീൽഡിലേക്ക് പകർത്തുന്നു, എന്നാൽ ഇതുവരെ സേവ് ചെയ്തിട്ടില്ല DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >വൈറ്റ്‌ലിസ്റ്റ് ചെയ്ത ചാനലുകൾ കണ്ടെത്തിയത് M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ഇതിൽ കണ്ടെത്തിയ ചാനലുകൾ വൈറ്റ്‌ലിസ്റ്റ് ചെയ്യരുത് M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">ഓരോ വരിയിലും ഒരു മൂല്യം. അക്ഷരവലിഭേദമില്ലാത്ത ഉപസരണിക്കുള്ള പ്രിഫിക്സ്: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">ഡാറ്റാബേസ് ബാക്കപ്പ്</string>
+  <string name="pref_advanced_backup_db_summary">പുറത്തേക്ക് കയറ്റുക SQLite ഡാറ്റാബേസ്.</string>
+  <string name="pref_advanced_restore_db_title">ഡാറ്റാബേസ് പുനഃസ്ഥാപിക്കുക</string>
+  <string name="pref_advanced_restore_db_summary">ഇറക്കുമതി SQLite ഡാറ്റാബേസ്.</string>
 </resources>

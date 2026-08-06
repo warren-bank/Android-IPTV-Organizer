@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Trefnu\'n alffanrifol</string>
   <string name="epg_menuitem_import_xmltv_url">Mewnforio XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Mewnforio XMLTV EPG Ffeil</string>
+  <string name="pref_category_advanced">Uwch</string>
   <string name="pref_dbedittextpreference_autosave_title">Cadw data\'n awtomatig ar ôl mewnforio ffeil</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Caiff data a fewnforiwyd ei gadw ar unwaith i DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Mae\'r data a fewnforiwyd yn cael ei gopïo i\'r maes testun yn y deialog, ond nid yw wedi\'i gadw eto i DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Sianeli a ddarganfuwyd ar y rhestr wen M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Peidiwch â gwyn-rhestru sianeli a ddarganfuwyd yn M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Un gwerth fesul llinell. Rhagddodiad ar gyfer is-llinyn di-wahaniaeth o ran priflythrennau a llythrennau bach.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Copi wrth gefn o\'r gronfa ddata</string>
+  <string name="pref_advanced_backup_db_summary">Allforio SQLite cronfa ddata.</string>
+  <string name="pref_advanced_restore_db_title">Adfer Cronfa Ddata</string>
+  <string name="pref_advanced_restore_db_summary">Mewnforio SQLite cronfa ddata.</string>
 </resources>

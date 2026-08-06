@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Alaharo araka ny abidy</string>
   <string name="epg_menuitem_import_xmltv_url">Fanafarana XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Fanafarana XMLTV EPG Rakitra</string>
+  <string name="pref_category_advanced">Mandroso</string>
   <string name="pref_dbedittextpreference_autosave_title">Fitehirizana mandeha ho azy ny angona aorian\'ny fampidirana rakitra</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Ny angon-drakitra nafarana dia voatahiry avy hatrany ao amin\'ny DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Ny angon-drakitra nafarana dia adika ao amin\'ny saha lahatsoratra ao amin\'ny boaty fifanakalozan-kevitra, saingy mbola tsy voatahiry ao amin\'ny DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Lisitra fantsona hita ao amin\'ny M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Aza apetraka ao amin\'ny lisitra fotsy ireo fantsona hita ao amin\'ny M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Sanda iray isaky ny andalana.   Mialoha ho an\'ny ampahany amin\'ny lahatsoratra tsy mihevitra ny soratra lehibe sy kely: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Fandraketana tahiry</string>
+  <string name="pref_advanced_backup_db_summary">Export SQLite tahirin-kevitra.</string>
+  <string name="pref_advanced_restore_db_title">Avereno amin\'ny laoniny ny tahiry</string>
+  <string name="pref_advanced_restore_db_summary">Fanafarana SQLite tahirin-kevitra.</string>
 </resources>

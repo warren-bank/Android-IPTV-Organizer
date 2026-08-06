@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Urutkan Menurut Abjad</string>
   <string name="epg_menuitem_import_xmltv_url">Impor XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Impor XMLTV EPG Berkas</string>
+  <string name="pref_category_advanced">Lanjutan</string>
   <string name="pref_dbedittextpreference_autosave_title">Menyimpan data secara otomatis setelah mengimpor berkas</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Data yang diimpor langsung disimpan ke DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Data yang diimpor disalin ke kolom teks di kotak dialog, tetapi belum disimpan ke DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Saluran yang masuk daftar putih yang terdapat di M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Jangan masukkan saluran yang ditemukan di M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Satu nilai per baris. Awalan untuk substring yang tidak membedakan huruf besar-kecil: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Pencadangan Basis Data</string>
+  <string name="pref_advanced_backup_db_summary">Ekspor SQLite basis data.</string>
+  <string name="pref_advanced_restore_db_title">Memulihkan Basis Data</string>
+  <string name="pref_advanced_restore_db_summary">Impor SQLite basis data.</string>
 </resources>

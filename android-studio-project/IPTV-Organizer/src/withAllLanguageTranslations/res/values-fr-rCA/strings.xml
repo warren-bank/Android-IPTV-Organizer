@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Trier par ordre alphabétique</string>
   <string name="epg_menuitem_import_xmltv_url">Importation XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importation XMLTV EPG Fichier</string>
+  <string name="pref_category_advanced">Avancé</string>
   <string name="pref_dbedittextpreference_autosave_title">Enregistrement automatique des données après l\'importation d\'un fichier</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Les données importées sont immédiatement enregistrées dans DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Les données importées sont copiées dans le champ de texte de la boîte de dialogue, mais ne sont pas encore enregistrées dans DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ajouter à la liste blanche les chaînes trouvées dans M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ne pas ajouter à la liste blanche les chaînes trouvées dans M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Une valeur par ligne. Préfixe pour la sous-chaîne sans distinction de majuscules et minuscules: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Sauvegarde de la base de données</string>
+  <string name="pref_advanced_backup_db_summary">Exporter SQLite base de données.</string>
+  <string name="pref_advanced_restore_db_title">Restaurer la base de données</string>
+  <string name="pref_advanced_restore_db_summary">Importation SQLite base de données.</string>
 </resources>

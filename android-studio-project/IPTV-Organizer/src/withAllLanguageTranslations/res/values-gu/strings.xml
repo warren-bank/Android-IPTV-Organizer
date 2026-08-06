@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">વર્ણક્રમ અનુસાર ગોઠવો</string>
   <string name="epg_menuitem_import_xmltv_url">આયાત XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">આયાત XMLTV EPG ફાઇલ</string>
+  <string name="pref_category_advanced">ઉન્નત</string>
   <string name="pref_dbedittextpreference_autosave_title">ફાઇલ આયાત પછી આપોઆપ ડેટા સાચવો</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >આયાત કરેલા ડેટાને તરત જ સાચવવામાં આવે છે DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">આયાત કરેલું ડેટા સંવાદમાં ટેક્સ્ટ ફીલ્ડમાં નકલ થાય છે, પરંતુ હજી સુધી તે સાચવવામાં આવ્યું નથી. DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >માં શ્વેતસૂચીમાં સામેલ ચેનલો મળ્યાં M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">માં મળતા ચેનલોને વ્હાઇટલિસ્ટ ન કરો M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">દરેક પંક્તિમાં એક મૂલ્ય. કેસ-અસંવેદનશીલ ઉપસૂત્ર માટે પૂર્વપ્રત્યય: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">બેકઅપ ડેટાબેઝ</string>
+  <string name="pref_advanced_backup_db_summary">નિકાસ SQLite ડેટાબેઝ.</string>
+  <string name="pref_advanced_restore_db_title">ડેટાબેઝ પુનઃસ્થાપિત કરો</string>
+  <string name="pref_advanced_restore_db_summary">આયાત SQLite ડેટાબેઝ.</string>
 </resources>

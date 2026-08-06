@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Tànnal ci araf</string>
   <string name="epg_menuitem_import_xmltv_url">Duggal XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Duggal XMLTV EPG Dosye</string>
+  <string name="pref_category_advanced">Jëm kanam</string>
   <string name="pref_dbedittextpreference_autosave_title">Dencal xibaar yi boppam ginnaaw buñu dugalee dosye bi</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Xibaar yi ñu importé, dañu leen di denc ci saa si. DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Xibaar yi ñu dugal dañu leen koppiye ci toolu mbind mi ci boyet bi, waaye dencaguñu leen ba léegi. DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Limu seen yi ñu gis ci M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Bul duggal ci limu ñu nangu yoon yi ñu fekk ci M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Benn njëkkat ci rëdd bu nekk. Jëkkante ngir wàllu biir-bataaxal bu dul seetlu màkka ak màgg.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Denc banku-xibaar</string>
+  <string name="pref_advanced_backup_db_summary">Yóbbu SQLite Dàttub xibaar.</string>
+  <string name="pref_advanced_restore_db_title">Delloosi Dàttabées bi</string>
+  <string name="pref_advanced_restore_db_summary">Duggal SQLite Dàttub xibaar.</string>
 </resources>

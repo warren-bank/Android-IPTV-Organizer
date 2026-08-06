@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Kārtot pēc alfabēta</string>
   <string name="epg_menuitem_import_xmltv_url">Importēt XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importēt XMLTV EPG Fails</string>
+  <string name="pref_category_advanced">Papildu</string>
   <string name="pref_dbedittextpreference_autosave_title">Datu automātiska saglabāšana pēc faila importēšanas</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Importētie dati tiek nekavējoties saglabāti DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Importētie dati tiek kopēti dialoglodziņa teksta laukā, bet vēl nav saglabāti DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Kanāli, kas iekļauti baltajā sarakstā un atrasti M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Neiekļaujiet baltajā sarakstā kanālus, kas atrodami M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Viena vērtība katrā rindā. Prefikss apakšvirknei, kurā netiek ņemta vērā lielu un mazo burtu atšķirība: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Datu bāzes dublējums</string>
+  <string name="pref_advanced_backup_db_summary">Eksports SQLite datu bāze.</string>
+  <string name="pref_advanced_restore_db_title">Atjaunot datu bāzi</string>
+  <string name="pref_advanced_restore_db_summary">Importēt SQLite datu bāze.</string>
 </resources>

@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">ਵਰਣਮਾਲਾ ਅਨੁਸਾਰ ਕ੍ਰਮਬੱਧ ਕਰੋ</string>
   <string name="epg_menuitem_import_xmltv_url">ਆਯਾਤ XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">ਆਯਾਤ XMLTV EPG ਫਾਈਲ</string>
+  <string name="pref_category_advanced">ਉੱਨਤ</string>
   <string name="pref_dbedittextpreference_autosave_title">ਫਾਈਲ ਇੰਪੋਰਟ ਕਰਨ ਤੋਂ ਬਾਅਦ ਡੇਟਾ ਆਪਣੇ ਆਪ ਸੇਵ ਕਰੋ</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >ਆਯਾਤ ਕੀਤਾ ਡਾਟਾ ਤੁਰੰਤ ਨੂੰ ਸੇਵ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">ਇੰਪੋਰਟ ਕੀਤਾ ਡਾਟਾ ਡਾਇਲਾਗ ਵਿੱਚ ਟੈਕਸਟ ਫੀਲਡ ਵਿੱਚ ਕਾਪੀ ਕੀਤਾ ਗਿਆ ਹੈ, ਪਰ ਅਜੇ ਤੱਕ ਸੇਵ ਨਹੀਂ ਕੀਤਾ ਗਿਆ। DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ਵਿੱਚ ਲੱਭੇ ਗਏ ਵਾਈਟਲਿਸਟ ਚੈਨਲ M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ਵਿੱਚ ਪਾਏ ਗਏ ਚੈਨਲਾਂ ਨੂੰ ਵਾਈਟਲਿਸਟ ਨਾ ਕਰੋ M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">ਹਰ ਲਾਈਨ ਲਈ ਇੱਕ ਮੁੱਲ। ਕੇਸ-ਅਣਪੱਖੀ ਸਬਸਟਰਿੰਗ ਲਈ ਪ੍ਰਿਫਿਕਸ: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">ਬੈਕਅੱਪ ਡੇਟਾਬੇਸ</string>
+  <string name="pref_advanced_backup_db_summary">ਨਿਰਯਾਤ SQLite ਡੇਟਾਬੇਸ.</string>
+  <string name="pref_advanced_restore_db_title">ਡੇਟਾਬੇਸ ਬਹਾਲ ਕਰੋ</string>
+  <string name="pref_advanced_restore_db_summary">ਆਯਾਤ SQLite ਡੇਟਾਬੇਸ.</string>
 </resources>

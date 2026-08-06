@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Сортирај по азбучен ред</string>
   <string name="epg_menuitem_import_xmltv_url">Увоз XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Увоз XMLTV EPG Датотека</string>
+  <string name="pref_category_advanced">Напредно</string>
   <string name="pref_dbedittextpreference_autosave_title">Автоматско зачувување на податоците по увоз на датотека</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Увезените податоци веднаш се зачувуваат во DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Увезените податоци се копираат во поле за текст во дијалогот, но сè уште не се зачувани во DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Канали на белата листа пронајдени во M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Не ги додавајте на белата листа каналите пронајдени во M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Една вредност по ред. Префикс за нечувствителен подуниз: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Резервна копија на базата на податоци</string>
+  <string name="pref_advanced_backup_db_summary">Извези SQLite база на податоци.</string>
+  <string name="pref_advanced_restore_db_title">Обновување на базата на податоци</string>
+  <string name="pref_advanced_restore_db_summary">Увоз SQLite база на податоци.</string>
 </resources>

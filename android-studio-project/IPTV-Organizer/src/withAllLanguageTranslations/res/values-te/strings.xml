@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">అక్షర క్రమంలో అమర్చు</string>
   <string name="epg_menuitem_import_xmltv_url">దిగుమతి XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">దిగుమతి XMLTV EPG ఫైల్</string>
+  <string name="pref_category_advanced">అధునాతన</string>
   <string name="pref_dbedittextpreference_autosave_title">ఫైల్ దిగుమతి తర్వాత ఆటో సేవ్ డేటా</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >దిగుమతి చేసుకున్న డేటా వెంటనే సేవ్ చేయబడుతుంది DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">దిగుమతి చేసుకున్న డేటా డైలాగ్‌లోని టెక్స్ట్ ఫీల్డ్‌కు కాపీ చేయబడింది, కానీ ఇంకా సేవ్ చేయబడలేదు DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >లో కనుగొనబడిన వైట్‌లిస్ట్ ఛానెల్‌లు M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">లో కనుగొనబడిన ఛానెళ్లలను వైట్‌లిస్ట్ చేయవద్దు M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">ప్రతి లైన్‌కు ఒక విలువ. కేస్-ఇన్సెన్సిటివ్ సబ్‌స్ట్రింగ్ కోసం ప్రిఫిక్స్: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">బ్యాకప్ డేటాబేస్</string>
+  <string name="pref_advanced_backup_db_summary">ఎగుమతి SQLite డేటాబేస్.</string>
+  <string name="pref_advanced_restore_db_title">డేటాబేస్‌ను పునరుద్ధరించండి</string>
+  <string name="pref_advanced_restore_db_summary">దిగుమతి SQLite డేటాబేస్.</string>
 </resources>

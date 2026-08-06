@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Альфа тәртибендә сортлау</string>
   <string name="epg_menuitem_import_xmltv_url">Импорт XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Импорт XMLTV EPG Файл</string>
+  <string name="pref_category_advanced">Үскән</string>
   <string name="pref_dbedittextpreference_autosave_title">Файлны импортлаганнан соң мәгълүматны автомат рәвештә саклау</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Импортланган мәгълүмат шунда ук саклана DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Импортланган мәгълүмат диалогтагы текст кырына күчерелә, ләкин әле сакланмаган DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ак исемлек каналнары табылды M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Табылган каналларны ак исемлеккә кертмәгез M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Һәр юлда бер кыйммәт.   Өлгегә туры килгән, хәреф зурлыгына карамаган эчке юл өчен алдан куела торган өлеш.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Резерв күчермә ясау базасы</string>
+  <string name="pref_advanced_backup_db_summary">Читкә чыгару SQLite мәгълүматлар базасы.</string>
+  <string name="pref_advanced_restore_db_title">Бازаны торгызу</string>
+  <string name="pref_advanced_restore_db_summary">Импорт SQLite мәгълүматлар базасы.</string>
 </resources>

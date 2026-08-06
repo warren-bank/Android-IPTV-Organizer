@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">დალაგება ანბანის მიხედვით</string>
   <string name="epg_menuitem_import_xmltv_url">იმპორტი XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">იმპორტი XMLTV EPG ფაილი</string>
+  <string name="pref_category_advanced">გარდამავალი</string>
   <string name="pref_dbedittextpreference_autosave_title">ფაილის იმპორტის შემდეგ მონაცემების ავტომატური შენახვა</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >იმპორტირებული მონაცემები დაუყოვნებლივ ინახება DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">იმპორტირებული მონაცემები დიალოგის ტექსტურ ველში კოპირდება, მაგრამ ჯერ არ არის შენახული DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >თეთრ სიაში არსებული არხები იპოვეს M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">არ დაამატოთ თეთრ სიაში არხები, რომლებიც აღმოჩენილია M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">ერთი მნიშვნელობა თითო სტრიქონში. პრეფიქსი რეგულარული გამოსახულებისთვის, რომელიც არ განასხვავებს რეგისტრებს.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">სარეზერვო ბაზა</string>
+  <string name="pref_advanced_backup_db_summary">ექსპორტი SQLite მონაცემთა ბაზა.</string>
+  <string name="pref_advanced_restore_db_title">ბაზის აღდგენა</string>
+  <string name="pref_advanced_restore_db_summary">იმპორტი SQLite მონაცემთა ბაზა.</string>
 </resources>

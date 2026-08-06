@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">အက္ခရာအလိုက် စီရန်</string>
   <string name="epg_menuitem_import_xmltv_url">တင်သွင်း XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">တင်သွင်း XMLTV EPG ဖိုင်</string>
+  <string name="pref_category_advanced">တိုးတက်ပြီး</string>
   <string name="pref_dbedittextpreference_autosave_title">ဖိုင်တင်သွင်းပြီးနောက် ဒေတာကို အလိုအလျောက် သိမ်းဆည်းပါ။</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >တင်သွင်းထားသော ဒေတာကို ချက်ချင်း သိမ်းဆည်းသည်။ DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">တင်သွင်းထားသော ဒေတာကို ဒိုင်ယာလော့ခ်ရှိ စာသားကွက်ထဲသို့ မိတ္တူကူးထားသော်လည်း၊ မသိမ်းဆည်းသေးပါ။ DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Whitelist ချန်နယ်များတွေ့ရှိသော M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">တွေ့ရှိထားသော ချန်နယ်များကို အဖြူစာရင်းမထည့်ပါနှင့်။ M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု။ အက္ခရာကြီး/အသေး မခွဲခြားသော စာသားအတွင်းပိုင်းအတွက် ကြိုတင်စာလုံး: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">ဒေတာဘေ့စ် မိတ္တူသိမ်းဆည်းခြင်း</string>
+  <string name="pref_advanced_backup_db_summary">တင်ပို့ SQLite ဒေတာဘေ့စ်.</string>
+  <string name="pref_advanced_restore_db_title">ဒေတာဘေ့စ် ပြန်လည်ထူထောင်</string>
+  <string name="pref_advanced_restore_db_summary">တင်သွင်း SQLite ဒေတာဘေ့စ်.</string>
 </resources>

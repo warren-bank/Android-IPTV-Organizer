@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">סאָרטן לויט אַלף־בית</string>
   <string name="epg_menuitem_import_xmltv_url">אימפּאָרט XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">אימפּאָרט XMLTV EPG טעקע</string>
+  <string name="pref_category_advanced">פֿאָרגעשריטן</string>
   <string name="pref_dbedittextpreference_autosave_title">אויטאָמאַטיש אויפֿהיטן דאַטן נאָך אַרײַנפֿירן פֿון אַ טעקע</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >אימפּאָרטירטע דאַטן ווערן גלייך געשפּאַרט צו DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">אימפּאָרטירטע דאַטן ווערן קאָפּירט אין טעקסט־פֿעלד אין דעם דיאַלאָג, אָבער נאָך נישט געשפּאַרט צו DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >ווייטליסט־קאַנאַלן געפֿונען אין M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">ניט ווײַטלײַסטן קאַנאַלן געפֿונען אין M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">איין ווערט פּער שורה. פּרעפֿיקס פֿאַר אַ פֿאַל-אומאָפּהענגיקן אונטערשרײַף: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">רעזערוו־קאָפּיע פֿון דער דאַטאַבאַזע</string>
+  <string name="pref_advanced_backup_db_summary">עקספּאָרט SQLite דאַטאַבאַנק.</string>
+  <string name="pref_advanced_restore_db_title">צוריקשטעלן די דאַטאַבייס</string>
+  <string name="pref_advanced_restore_db_summary">אימפּאָרט SQLite דאַטאַבאַנק.</string>
 </resources>

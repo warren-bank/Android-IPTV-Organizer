@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Sorteer alfabeties</string>
   <string name="epg_menuitem_import_xmltv_url">Invoer XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Invoer XMLTV EPG Lêer</string>
+  <string name="pref_category_advanced">Gevorderd</string>
   <string name="pref_dbedittextpreference_autosave_title">Outomaties data stoor na lêer-invoer</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Ingevoerde data word onmiddellik gestoor in DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Ingevoerde data word na die tekskassie in die dialoog gekopieer, maar nog nie daarin gestoor nie. DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Op witlys gelysde kanale gevind in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Moenie kanale wat in gevind is, witlys nie. M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Een waarde per reël. Voorsetsel vir onderstring wat onderskeid tussen hoofletters en kleinletters ignoreer.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Rugsteun databasis</string>
+  <string name="pref_advanced_backup_db_summary">Uitvoer SQLite databasis.</string>
+  <string name="pref_advanced_restore_db_title">Herstel databasis</string>
+  <string name="pref_advanced_restore_db_summary">Invoer SQLite databasis.</string>
 </resources>

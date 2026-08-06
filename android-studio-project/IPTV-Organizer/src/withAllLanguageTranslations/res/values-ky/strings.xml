@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Алифвеолук тартипке келтирүү</string>
   <string name="epg_menuitem_import_xmltv_url">Импорт XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Импорт XMLTV EPG Файл</string>
+  <string name="pref_category_advanced">Жогорку деңгээлдеги</string>
   <string name="pref_dbedittextpreference_autosave_title">Файлды импорттогондон кийин маалыматтарды автоматтык түрдө сактоо</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Импорттолгон маалымат дароо сакталат DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Импорттолгон маалымат диалогдогу текст талаасына көчүрүлдү, бирок азырынча сакталган жок. DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Ак тизмедеги каналдар табылды M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Табылган каналдарды ак тизмеге киргизбеңиз M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Ар бир сап үчүн бир маани.   Белгилерге сезгич эмес подстрока үчүн префикс: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Колдоочу маалымат базасы</string>
+  <string name="pref_advanced_backup_db_summary">Экспорттоо SQLite маалымат базасы.</string>
+  <string name="pref_advanced_restore_db_title">Маалымат базасын калыбына келтирүү</string>
+  <string name="pref_advanced_restore_db_summary">Импорт SQLite маалымат базасы.</string>
 </resources>

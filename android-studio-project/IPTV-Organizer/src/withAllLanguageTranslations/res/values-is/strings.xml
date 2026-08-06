@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Raða eftir stafrófi</string>
   <string name="epg_menuitem_import_xmltv_url">Innflutningur XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Innflutningur XMLTV EPG Skjal</string>
+  <string name="pref_category_advanced">Ítarlegt</string>
   <string name="pref_dbedittextpreference_autosave_title">Sjálfgeymir gögn eftir innflutning skráar</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Innflutt gögn eru strax vistuð í DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Innflutt gögn eru afrituð í textareit í glugga, en ekki enn vistuð í DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Hvíttlistaðir rásir fundnar í M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Ekki setja rásir sem finnast í hvítlista M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Eitt gildi á hverri línu. Forskeytisletur fyrir stór- og smáleturblind undirkeðju: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Afritaðu gagnagrunninn</string>
+  <string name="pref_advanced_backup_db_summary">Útflutningur SQLite gagnagrunnur.</string>
+  <string name="pref_advanced_restore_db_title">Endurheimta gagnagrunn</string>
+  <string name="pref_advanced_restore_db_summary">Innflutningur SQLite gagnagrunnur.</string>
 </resources>

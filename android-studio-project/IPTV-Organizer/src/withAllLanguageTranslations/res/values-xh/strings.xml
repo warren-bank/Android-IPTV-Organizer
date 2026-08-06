@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Cwangcisa ngokwe-alfabhethi</string>
   <string name="epg_menuitem_import_xmltv_url">Ngenisa XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Ngenisa XMLTV EPG Ifayile</string>
+  <string name="pref_category_advanced">Eziphucukileyo</string>
   <string name="pref_dbedittextpreference_autosave_title">Igcina ngokuzenzekelayo idatha emva kokungeniswa kwefayile.</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Idatha engenisiweyo igcinwa kwangoko kwi- DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Idatha engenisiweyo ikopishwa kwibala lombhalo kwibhokisi yencoko, kodwa ayikagcinwa DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Iitshaneli ezifunyenweyo kuluhlu oluvumelekileyo M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Musa ukufaka kuluhlu olukhuselekileyo iitshaneli ezifunyenweyo M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Elinye ixabiso ngomgca ngamnye. Isihlomelo somgca ongaphakathi ongenankathalo ngohlobo lwezinhlamvu ezinkulu nezincinci.: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Gcina i-database</string>
+  <string name="pref_advanced_backup_db_summary">Thumela ngaphandle SQLite isiseko sedatha.</string>
+  <string name="pref_advanced_restore_db_title">Buyisela iDathabheyisi</string>
+  <string name="pref_advanced_restore_db_summary">Ngenisa SQLite isiseko sedatha.</string>
 </resources>

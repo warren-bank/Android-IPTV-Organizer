@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Sortera alfabetiskt</string>
   <string name="epg_menuitem_import_xmltv_url">Importera XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Importera XMLTV EPG Fil</string>
+  <string name="pref_category_advanced">Avancerat</string>
   <string name="pref_dbedittextpreference_autosave_title">Spara data automatiskt efter filimport</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Importerade data sparas omedelbart i DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Importerade data kopieras till textfältet i dialogrutan, men har ännu inte sparats till DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Lägg till kanaler som finns i M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Lägg inte till kanaler som finns i M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Ett värde per rad. Prefix för delsträng där storleksskillnader mellan bokstäver inte beaktas: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Säkerhetskopiera databasen</string>
+  <string name="pref_advanced_backup_db_summary">Export SQLite databas.</string>
+  <string name="pref_advanced_restore_db_title">Återställ databasen</string>
+  <string name="pref_advanced_restore_db_summary">Importera SQLite databas.</string>
 </resources>

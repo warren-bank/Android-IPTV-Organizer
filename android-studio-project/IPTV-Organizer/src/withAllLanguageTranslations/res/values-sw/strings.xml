@@ -25,6 +25,7 @@
   <string name="channels_menuitem_sort_alphabetic">Panga kwa herufi</string>
   <string name="epg_menuitem_import_xmltv_url">Agiza XMLTV EPG URL</string>
   <string name="epg_menuitem_import_xmltv_file">Agiza XMLTV EPG Faili</string>
+  <string name="pref_category_advanced">Za juu</string>
   <string name="pref_dbedittextpreference_autosave_title">Hifadhi data kiotomatiki baada ya kuagiza faili</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Data iliyoingizwa huhifadhiwa mara moja kwenye DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Data iliyopakiwa ina nakiliwa kwenye uwanja wa maandishi katika kisanduku cha mazungumzo, lakini bado haijasalishwa kwenye DB</string>
@@ -66,4 +67,8 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Orodha ya njia zilizo kwenye M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Usiorodheshe kwenye orodha nyeupe vituo vinavyopatikana katika M3U</string>
   <string name="pref_epg_channels_filter_whitelist_names_summary">Thamani moja kwa kila mstari. Kiambishi awali kwa mfululizo wa herufi usiobadilisha kesi: \"#~*\"</string>
+  <string name="pref_advanced_backup_db_title">Hifadhi nakala ya hifadhidata</string>
+  <string name="pref_advanced_backup_db_summary">Tuma nje SQLite Hifadhidata.</string>
+  <string name="pref_advanced_restore_db_title">Rejesha Hifadhidata</string>
+  <string name="pref_advanced_restore_db_summary">Agiza SQLite Hifadhidata.</string>
 </resources>
