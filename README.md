@@ -224,6 +224,11 @@ Android app that organizes IPTV channel and EPG information.
      - specify one channel ID (ie: `target_value`) per line
      - format of input and usage is identical to the "channel ID whitelist"
        * matching EPG channels are discarded during import
+* Advanced
+  1. Backup Database
+     - export SQLite database
+  2. Restore Database
+     - import SQLite database
 
 #### Special Map and Filter Formats
 

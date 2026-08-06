@@ -158,4 +158,18 @@
       android:summary="@string/pref_epg_channels_filter_blacklist_ids_summary" />
 
   </PreferenceCategory>
+  <PreferenceCategory
+    android:title="@string/pref_category_advanced">
+
+    <Preference
+      android:key="@string/pref_advanced_backup_db_key"
+      android:title="@string/pref_advanced_backup_db_title"
+      android:summary="@string/pref_advanced_backup_db_summary" />
+
+    <Preference
+      android:key="@string/pref_advanced_restore_db_key"
+      android:title="@string/pref_advanced_restore_db_title"
+      android:summary="@string/pref_advanced_restore_db_summary" />
+
+  </PreferenceCategory>
 </PreferenceScreen>

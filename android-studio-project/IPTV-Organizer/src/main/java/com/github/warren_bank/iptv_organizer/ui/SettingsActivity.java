@@ -4,6 +4,7 @@ import com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbEdi
 import com.github.warren_bank.iptv_organizer.ui.settings.custom_preference.DbPreferenceDataStore;
 import com.github.warren_bank.iptv_organizer.ui.settings.MySharedPreferenceChangeListener;
 import com.github.warren_bank.iptv_organizer.ui.settings.SettingsFragment;
+import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
 import android.app.Activity;
@@ -20,6 +21,9 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
     Intent intent = new Intent(context, SettingsActivity.class);
     context.startActivity(intent);
   }
+
+  public static final int DB_FILE_EXPORT_REQUEST_CODE = 1;
+  public static final int DB_FILE_IMPORT_REQUEST_CODE = 2;
 
   private static final String EXTRA_SETTINGS_AUTO_SAVE                    = "SETTINGS_AUTO_SAVE";                     // Boolean
   private static final String EXTRA_SETTINGS_AUTO_CLOSE                   = "SETTINGS_AUTO_CLOSE";                    // Boolean
@@ -83,13 +87,35 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     super.onActivityResult(requestCode, resultCode, data);
 
-    if (dbPref == null) return;
     if (resultCode != RESULT_OK) return;
     if (data == null) return;
 
     Uri uri = data.getData();
     if (uri == null) return;
 
+    if (requestCode == DB_FILE_EXPORT_REQUEST_CODE) {
+      try {
+        DbUtils.doDbBackup(
+          SettingsActivity.this,
+          getContentResolver().openOutputStream(uri, "w")
+        );
+      }
+      catch(Exception ignored) {}
+      return;
+    }
+
+    if (requestCode == DB_FILE_IMPORT_REQUEST_CODE) {
+      try {
+        DbUtils.doDbRestore(
+          SettingsActivity.this,
+          getContentResolver().openInputStream(uri)
+        );
+      }
+      catch(Exception ignored) {}
+      return;
+    }
+
+    if (dbPref == null) return;
     dbPref.onResult(requestCode, uri);
   }
 

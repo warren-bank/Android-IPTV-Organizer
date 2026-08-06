@@ -43,8 +43,8 @@ public class DbEditTextPreference extends EditTextPreference {
     applyCustomizations();
   }
 
-  private static final int FILE_IMPORT_REQUEST_CODE = 1;
-  private static final int FILE_EXPORT_REQUEST_CODE = 2;
+  private static final int FILE_IMPORT_REQUEST_CODE = 101;
+  private static final int FILE_EXPORT_REQUEST_CODE = 102;
 
   private CharSequence mNeutralButtonText;
 

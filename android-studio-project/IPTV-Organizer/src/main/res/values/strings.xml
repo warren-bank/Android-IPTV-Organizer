@@ -73,6 +73,7 @@
   <string name="pref_category_m3u_search">@string/activity_main</string>
   <string name="pref_category_m3u_channels">@string/activity_channels</string>
   <string name="pref_category_epg_channels">@string/activity_epg</string>
+  <string name="pref_category_advanced">Advanced</string>
 
   <!-- SettingsActivity: DbEditTextPreference button labels -->
   <string name="dbedittextpreference_buttontext_negative">@string/import_file</string>
@@ -199,4 +200,14 @@
   <!-- SettingsActivity [EPG Channels]: Filter by channel ID blacklist -->
   <string name="pref_epg_channels_filter_blacklist_ids_title">@string/pref_m3u_channels_filter_blacklist_ids_title</string>
   <string name="pref_epg_channels_filter_blacklist_ids_summary">@string/pref_epg_channels_filter_whitelist_ids_summary</string>
+
+  <!-- SettingsActivity [Advanced]: Backup Database -->
+  <string translatable="false" name="pref_advanced_backup_db_key">pref_advanced_backup_db</string>
+  <string name="pref_advanced_backup_db_title">Backup Database</string>
+  <string name="pref_advanced_backup_db_summary">Export SQLite database.</string>
+
+  <!-- SettingsActivity [Advanced]: Restore Database -->
+  <string translatable="false" name="pref_advanced_restore_db_key">pref_advanced_restore_db</string>
+  <string name="pref_advanced_restore_db_title">Restore Database</string>
+  <string name="pref_advanced_restore_db_summary">Import SQLite database.</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.github.warren_bank.iptv_organizer.utils;
 
 import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
+import com.github.warren_bank.iptv_organizer.utils.StreamUtils;
 
 import com.github.warren_bank.iptv_organizer.database.DbGateway;
 import com.github.warren_bank.iptv_organizer.database.Update;
@@ -10,6 +11,9 @@ import se.kmdev.tvepg.epg.domain.EPGChannel;
 import android.content.Context;
 import android.text.TextUtils;
 
+import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -30,6 +34,34 @@ public class DbUtils {
 
   public static DbGateway getDb() {
     return DbUtils.db;
+  }
+
+  // ---------------------------------------------------------------------------
+  // backup and restore:
+  // ---------------------------------------------------------------------------
+
+  private static String getDbPath() {
+    return DbUtils.db.getSQLiteStore().getSQLiteDatabase().getPath();
+  }
+
+  private static File getDbFile() {
+    return new File(getDbPath());
+  }
+
+  public static void doDbBackup(Context context, OutputStream outputStream) {
+    File dbFile = getDbFile();
+
+    DbUtils.db.getSQLiteStore().close();
+    StreamUtils.pipeFromFile(dbFile, outputStream);
+    DbUtils.db.getSQLiteStore().open(context);
+  }
+
+  public static void doDbRestore(Context context, InputStream inputStream) {
+    File dbFile = getDbFile();
+
+    DbUtils.db.getSQLiteStore().close();
+    StreamUtils.pipeToFile(inputStream, dbFile);
+    DbUtils.db.getSQLiteStore().open(context);
   }
 
   // ---------------------------------------------------------------------------

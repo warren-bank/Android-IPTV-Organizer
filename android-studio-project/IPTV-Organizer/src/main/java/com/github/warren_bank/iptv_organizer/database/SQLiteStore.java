@@ -6,6 +6,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabaseCorruptException;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Build;
@@ -28,10 +29,26 @@ public class SQLiteStore extends SQLiteOpenHelper {
   private SQLiteStore(Context context) {
     super(context, Constants.DB_FILENAME, null, 1);
 
-    db = getWritableDatabase();
+    open(context);
+  }
 
-    if (Build.VERSION.SDK_INT >= 11) {
-      db.enableWriteAheadLogging();
+  public void open(Context context) {
+    try {
+      if (db != null) db.close();
+
+      db = getWritableDatabase();
+
+      if (Build.VERSION.SDK_INT >= 11) {
+        db.enableWriteAheadLogging();
+      }
+    }
+    catch(SQLiteDatabaseCorruptException e) {
+      close();
+      context.deleteDatabase(Constants.DB_FILENAME);
+      open(context);
+    }
+    catch(Exception e) {
+      close();
     }
   }
 
@@ -122,7 +139,10 @@ public class SQLiteStore extends SQLiteOpenHelper {
 
   @Override
   public synchronized void close() {
-    if (db != null) db.close();
+    if (db != null) {
+      db.close();
+      db = null;
+    }
     super.close();
   }
 
