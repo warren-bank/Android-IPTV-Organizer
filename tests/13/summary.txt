@@ -1,0 +1,77 @@
+purpose:
+========
+test that GZIP compressed data can be properly imported
+
+sample data:
+============
+
+--------------------------
+M3U (non-compressed) data:
+--------------------------
+
+https://github.com/iptv-org/iptv/raw/gh-pages/index.m3u
+
+https://iptv-org.github.io/iptv/index.m3u
+
+---------------------------
+EPG (GZIP compressed) data:
+---------------------------
+
+https://github.com/iptv-org/iptv/blob/gh-pages/index.m3u#L1
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/StrangeDrVN/epg/public/guide.xml.gz,https://worker-9dd4.onrender.com/guide.xml.gz"
+
+https://worker-9dd4.onrender.com/guide.xml.gz
+  response: 200
+
+https://raw.githubusercontent.com/StrangeDrVN/epg/public/guide.xml.gz
+  response: 404
+
+https://github.com/StrangeDrVN/epg/tree/public
+  fork of:
+https://github.com/iptv-org/epg
+
+https://github.com/StrangeDrVN/epg/raw/public/output/guide.xml.gz
+  response: 302
+https://raw.githubusercontent.com/StrangeDrVN/epg/public/output/guide.xml.gz
+  response: 200
+
+-------
+test #1
+-------
+
+1. EPG Channels > Import XMLTV EPG URL:
+
+   https://raw.githubusercontent.com/StrangeDrVN/epg/public/output/guide.xml.gz
+
+-------
+test #2
+-------
+
+1. download file to Android device:
+
+   https://raw.githubusercontent.com/StrangeDrVN/epg/public/output/guide.xml.gz
+
+2. EPG Channels > Import XMLTV EPG File:
+
+   guide.xml.gz
+
+-------
+test #3
+-------
+
+1. bash:
+
+# network address for running instance of 'ExoPlayer AirPlay Receiver'
+airplay_ip='192.168.1.100:8192'
+
+post_body='
+  package: com.github.warren_bank.iptv_organizer
+  class: com.github.warren_bank.iptv_organizer.ui.EpgActivity
+  data: https://raw.githubusercontent.com/StrangeDrVN/epg/public/output/guide.xml.gz
+  type: application/gzip
+'
+
+curl --silent -X POST \
+  -H "Content-Type: text/parameters" \
+  --data-binary "$post_body" \
+  "http://${airplay_ip}/start-activity"

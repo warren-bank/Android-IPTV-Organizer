@@ -40,6 +40,7 @@ import androidx.appcompat.widget.Toolbar;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.zip.GZIPInputStream;
 
 public class EpgActivity extends AppCompatActivity {
 
@@ -79,11 +80,7 @@ public class EpgActivity extends AppCompatActivity {
       importNewIntentDataUri(urlText);
     }
     else {
-      final DataProgressDialog listener = new DataProgressDialog(EpgActivity.this, R.string.loading, getString(R.string.activity_epg));
-      dataProgressDialog = listener;
-
-      // Read channels from DB on a background thread
-      new Thread(() -> initEpgData(listener)).start();
+      readChannelsFromDb();
     }
   }
 
@@ -114,6 +111,14 @@ public class EpgActivity extends AppCompatActivity {
 
     // Do network on a background thread
     new Thread(() -> openUrlAsStream(urlText, listener)).start();
+  }
+
+  private void readChannelsFromDb() {
+    final DataProgressDialog listener = new DataProgressDialog(EpgActivity.this, R.string.loading, getString(R.string.activity_epg));
+    dataProgressDialog = listener;
+
+    // Read channels from DB on a background thread
+    new Thread(() -> initEpgData(listener)).start();
   }
 
   @Override
@@ -278,7 +283,24 @@ public class EpgActivity extends AppCompatActivity {
         throw new Exception("HTTP " + code);
       }
 
+      boolean isGzip = urlText.substring(urlText.length() - 3).toLowerCase().equals(".gz");
+      if (!isGzip) {
+        // check HTTP response header: content-type
+        String contentType = conn.getContentType();
+        if (contentType != null) {
+          contentType = contentType.toLowerCase();
+          isGzip = (
+            contentType.equals("application/gzip")   || contentType.startsWith("application/gzip;") ||
+            contentType.equals("application/x-gzip") || contentType.startsWith("application/x-gzip;")
+          );
+        }
+      }
+
       inputStream = conn.getInputStream();
+
+      if (isGzip)
+        inputStream = (InputStream) new GZIPInputStream(inputStream);
+
       importXmlTvFromStream(inputStream, listener);
     } catch (Exception e) {
       Log.e(Constants.LOG_TAG, e.getMessage());
@@ -305,7 +327,7 @@ public class EpgActivity extends AppCompatActivity {
 
     // https://android.googlesource.com/platform/external/mime-support/+/9817b71a54a2ee8b691c1dfa937c0f9b16b3473c/mime.types
     // https://android.googlesource.com/platform/frameworks/base/+/4fa4de177280/mime/java-res/android.mime.types
-    String[] mimeTypes = {"application/xml", "application/xmltv", "text/xml", "text/xmltv"};
+    String[] mimeTypes = {"application/xml", "application/xmltv", "text/xml", "text/xmltv", "application/gzip", "application/x-gzip", "application/octet-stream"};
     intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
 
     startActivityForResult(intent, FILE_CHOOSER_REQUEST_CODE);
@@ -331,7 +353,14 @@ public class EpgActivity extends AppCompatActivity {
     InputStream inputStream = null;
 
     try {
+      String uriText = uri.getPath();
+      boolean isGzip = uriText.substring(uriText.length() - 3).toLowerCase().equals(".gz");
+
       inputStream = getContentResolver().openInputStream(uri);
+
+      if (isGzip)
+        inputStream = (InputStream) new GZIPInputStream(inputStream);
+
       importXmlTvFromStream(inputStream, listener);
     } catch (Exception e) {
       Log.e(Constants.LOG_TAG, e.getMessage());

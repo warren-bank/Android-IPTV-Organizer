@@ -5,6 +5,7 @@ Android app that organizes IPTV channel and EPG information.
 #### Features
 
 * M3U (IPTV channels) and XMLTV (EPG) files can be imported from either a network URL or the local filesystem
+  - supports GZIP compression
 * during import&hellip;
   - M3U (IPTV channels) data can&hellip;
     * assign a new channel ID value based on the channel name
@@ -281,7 +282,7 @@ Enables the automatic updating of IPTV channel and EPG information from external
 
 Supported Intents:
 
-__Import M3U (IPTV channels)__
+__Import non-compressed M3U (IPTV channels)__
 
 1. action = `android.intent.action.VIEW`
    * (optional) package = `com.github.warren_bank.iptv_organizer`
@@ -305,9 +306,41 @@ __Import M3U (IPTV channels)__
 2. action = `android.intent.action.VIEW`
    * (optional) package = `com.github.warren_bank.iptv_organizer`
    * (optional) class   = `com.github.warren_bank.iptv_organizer.ui.ChannelsActivity`
-   * data = `<URL that ends with a .m3u or .M3U file extension>`
+   * data = `<URL>` having a path that ends with any of:
+     ```json
+     [
+       ".m3u",
+       ".M3U"
+     ]
+     ```
 
-__Import XMLTV (EPG)__
+__Import GZIP-compressed M3U (IPTV channels)__
+
+1. action = `android.intent.action.VIEW`
+   * (optional) package = `com.github.warren_bank.iptv_organizer`
+   * (optional) class   = `com.github.warren_bank.iptv_organizer.ui.ChannelsActivity`
+   * data = `<any URL>`
+   * type = any of:
+     ```json
+     [
+       "application/gzip",
+       "application/x-gzip"
+     ]
+     ```
+2. action = `android.intent.action.VIEW`
+   * (optional) package = `com.github.warren_bank.iptv_organizer`
+   * (optional) class   = `com.github.warren_bank.iptv_organizer.ui.ChannelsActivity`
+   * data = `<URL>` having a path that ends with any of:
+     ```json
+     [
+       ".gz",
+       ".m3u.gz",
+       ".GZ",
+       ".M3U.GZ"
+     ]
+     ```
+
+__Import non-compressed XMLTV (EPG)__
 
 1. action = `android.intent.action.VIEW`
    * (optional) package = `com.github.warren_bank.iptv_organizer`
@@ -325,7 +358,43 @@ __Import XMLTV (EPG)__
 2. action = `android.intent.action.VIEW`
    * (optional) package = `com.github.warren_bank.iptv_organizer`
    * (optional) class   = `com.github.warren_bank.iptv_organizer.ui.EpgActivity`
-   * data = `<URL that ends with a .xml, .xmltv, .XML, or .XMLTV file extension>`
+   * data = `<URL>` having a path that ends with any of:
+     ```json
+     [
+       ".xml",
+       ".xmltv",
+       ".XML",
+       ".XMLTV"
+     ]
+     ```
+
+__Import GZIP-compressed XMLTV (EPG)__
+
+1. action = `android.intent.action.VIEW`
+   * (optional) package = `com.github.warren_bank.iptv_organizer`
+   * (optional) class   = `com.github.warren_bank.iptv_organizer.ui.EpgActivity`
+   * data = `<any URL>`
+   * type = any of:
+     ```json
+     [
+       "application/gzip",
+       "application/x-gzip"
+     ]
+     ```
+2. action = `android.intent.action.VIEW`
+   * (optional) package = `com.github.warren_bank.iptv_organizer`
+   * (optional) class   = `com.github.warren_bank.iptv_organizer.ui.EpgActivity`
+   * data = `<URL>` having a path that ends with any of:
+     ```json
+     [
+       ".gz",
+       ".xml.gz",
+       ".xmltv.gz",
+       ".GZ",
+       ".XML.GZ",
+       ".XMLTV.GZ"
+     ]
+     ```
 
 __Update Settings__
 

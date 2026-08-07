@@ -49,6 +49,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.zip.GZIPInputStream;
 
 public class ChannelsActivity extends AppCompatActivity implements FilterableListItemOnClickListener {
   private static String ACTION_REFRESH_LIST = "REFRESH_LIST";
@@ -354,7 +355,24 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
         throw new Exception("HTTP " + code);
       }
 
+      boolean isGzip = urlText.substring(urlText.length() - 3).toLowerCase().equals(".gz");
+      if (!isGzip) {
+        // check HTTP response header: content-type
+        String contentType = conn.getContentType();
+        if (contentType != null) {
+          contentType = contentType.toLowerCase();
+          isGzip = (
+            contentType.equals("application/gzip")   || contentType.startsWith("application/gzip;") ||
+            contentType.equals("application/x-gzip") || contentType.startsWith("application/x-gzip;")
+          );
+        }
+      }
+
       inputStream = conn.getInputStream();
+
+      if (isGzip)
+        inputStream = (InputStream) new GZIPInputStream(inputStream);
+
       importM3uFromStream(inputStream, listener);
     } catch (Exception e) {
       Log.e(Constants.LOG_TAG, e.getMessage());
@@ -381,7 +399,7 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
 
     // https://android.googlesource.com/platform/external/mime-support/+/9817b71a54a2ee8b691c1dfa937c0f9b16b3473c/mime.types
     // https://android.googlesource.com/platform/frameworks/base/+/4fa4de177280/mime/java-res/android.mime.types
-    String[] mimeTypes = {"application/vnd.apple.mpegurl", "application/mpegurl", "audio/mpegurl", "video/mpegurl", "application/x-mpegurl", "audio/x-mpegurl", "video/x-mpegurl", "application/x-mpegURL", "audio/x-mpegURL", "video/x-mpegURL"};
+    String[] mimeTypes = {"application/vnd.apple.mpegurl", "application/mpegurl", "audio/mpegurl", "video/mpegurl", "application/x-mpegurl", "audio/x-mpegurl", "video/x-mpegurl", "application/x-mpegURL", "audio/x-mpegURL", "video/x-mpegURL", "application/gzip", "application/x-gzip", "application/octet-stream"};
     intent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
 
     startActivityForResult(intent, FILE_CHOOSER_REQUEST_CODE);
@@ -407,7 +425,14 @@ public class ChannelsActivity extends AppCompatActivity implements FilterableLis
     InputStream inputStream = null;
 
     try {
+      String uriText = uri.getPath();
+      boolean isGzip = uriText.substring(uriText.length() - 3).toLowerCase().equals(".gz");
+
       inputStream = getContentResolver().openInputStream(uri);
+
+      if (isGzip)
+        inputStream = (InputStream) new GZIPInputStream(inputStream);
+
       importM3uFromStream(inputStream, listener);
     } catch (Exception e) {
       Log.e(Constants.LOG_TAG, e.getMessage());

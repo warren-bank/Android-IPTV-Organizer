@@ -56,6 +56,9 @@
         <data android:mimeType="application/x-mpegURL"/>
         <data android:mimeType="audio/x-mpegURL"/>
         <data android:mimeType="video/x-mpegURL"/>
+
+        <data android:mimeType="application/gzip"/>
+        <data android:mimeType="application/x-gzip"/>
       </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.VIEW"/>
@@ -69,6 +72,11 @@
 
         <data android:pathPattern=".*\\.m3u"/>
         <data android:pathPattern=".*\\.M3U"/>
+
+        <data android:pathPattern=".*\\.gz"/>
+        <data android:pathPattern=".*\\.m3u.gz"/>
+        <data android:pathPattern=".*\\.GZ"/>
+        <data android:pathPattern=".*\\.M3U.GZ"/>
       </intent-filter>
     </activity>
 
@@ -92,6 +100,9 @@
         <data android:mimeType="application/xmltv"/>
         <data android:mimeType="text/xml"/>
         <data android:mimeType="text/xmltv"/>
+
+        <data android:mimeType="application/gzip"/>
+        <data android:mimeType="application/x-gzip"/>
       </intent-filter>
       <intent-filter>
         <action android:name="android.intent.action.VIEW"/>
@@ -107,6 +118,13 @@
         <data android:pathPattern=".*\\.xmltv"/>
         <data android:pathPattern=".*\\.XML"/>
         <data android:pathPattern=".*\\.XMLTV"/>
+
+        <data android:pathPattern=".*\\.gz"/>
+        <data android:pathPattern=".*\\.xml.gz"/>
+        <data android:pathPattern=".*\\.xmltv.gz"/>
+        <data android:pathPattern=".*\\.GZ"/>
+        <data android:pathPattern=".*\\.XML.GZ"/>
+        <data android:pathPattern=".*\\.XMLTV.GZ"/>
       </intent-filter>
     </activity>
 
