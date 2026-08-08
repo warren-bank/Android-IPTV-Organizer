@@ -86,6 +86,7 @@ Android app that organizes IPTV channel and EPG information.
          ```text
          %4$s/playlist/%1$s/%2$s/m3u_plus?output=hls
          ```
+     - default: `https://iptv-org.github.io/iptv/index.m3u`
   2. Append M3U Playlists
      - when `true`: Imported data is added to the existing list of M3U channels
      - when `false`: Imported data replaces the existing list of M3U channels

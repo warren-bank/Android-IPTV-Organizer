@@ -127,7 +127,7 @@
   <string name="pref_default_m3u_url_title">Default M3U Playlist URL</string>
   <string name="pref_default_m3u_url_summary">Initial value in \"Import M3U Playlist URL\" dialog.</string>
   <string translatable="false" name="pref_default_m3u_url_hint">https://example.com/playlist.m3u</string>
-  <string translatable="false" name="pref_default_m3u_url_default"></string>
+  <string translatable="false" name="pref_default_m3u_url_default">https://iptv-org.github.io/iptv/index.m3u</string>
 
   <!-- SettingsActivity [M3U Channels]: Append M3U Playlists -->
   <string translatable="false" name="pref_append_m3u_playlists_key">pref_append_m3u_playlists</string>
