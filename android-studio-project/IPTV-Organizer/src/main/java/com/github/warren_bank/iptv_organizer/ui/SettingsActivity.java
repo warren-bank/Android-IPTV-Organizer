@@ -42,6 +42,8 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
   private static final String EXTRA_M3U_CHANNEL_ID_BLACKLIST              = "M3U_CHANNEL_ID_BLACKLIST";               // String[]
   private static final String EXTRA_M3U_MEDIA_URL_STATIC_STRINGS          = "M3U_MEDIA_URL_STATIC_STRINGS";           // String[]
   private static final String EXTRA_EPG_DEFAULT_XMLTV_URL                 = "EPG_DEFAULT_XMLTV_URL";                  // String
+  private static final String EXTRA_EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL     = "EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL";      // Boolean
+  private static final String EXTRA_EPG_PARSE_LIST_IN_XMLTV_URL           = "EPG_PARSE_LIST_IN_XMLTV_URL";            // Boolean
   private static final String EXTRA_EPG_PREFERRED_LANGUAGE                = "EPG_PREFERRED_LANGUAGE";                 // String
   private static final String EXTRA_EPG_CHANNEL_M3U_WHITELIST             = "EPG_CHANNEL_M3U_WHITELIST";              // Boolean
   private static final String EXTRA_EPG_CHANNEL_NAME_WHITELIST            = "EPG_CHANNEL_NAME_WHITELIST";             // String[]
@@ -252,6 +254,18 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
       if (intent.hasExtra(EXTRA_EPG_DEFAULT_XMLTV_URL)) {
         String value = intent.getStringExtra(EXTRA_EPG_DEFAULT_XMLTV_URL);
         SettingsUtils.setDefaultXmltvEpgUrlPreference(SettingsActivity.this, value);
+        didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL)) {
+        boolean value = intent.getBooleanExtra(EXTRA_EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL, true);
+        SettingsUtils.setAutoUpdateDefaultXmltvEpgUrl(SettingsActivity.this, value);
+        didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_EPG_PARSE_LIST_IN_XMLTV_URL)) {
+        boolean value = intent.getBooleanExtra(EXTRA_EPG_PARSE_LIST_IN_XMLTV_URL, true);
+        SettingsUtils.setParseListInXmltvEpgUrl(SettingsActivity.this, value);
         didUpdate = true;
       }
 

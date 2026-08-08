@@ -177,7 +177,36 @@ Android app that organizes IPTV channel and EPG information.
          ```text
          %3$s/xmltv.php?username=%1$s&password=%2$s
          ```
-  2. Preferred language
+  2. Automatically update "Default XMLTV EPG URL" from imported M3U
+     - when `true`: If found, save value of `x-tvg-url` or `url-tvg` parameter in `#EXTM3U` file header directive
+     - when `false`: Disabled
+     - example:
+       * first line of M3U (IPTV channels) data:
+         ```text
+         #EXTM3U x-tvg-url="https://raw.githubusercontent.com/StrangeDrVN/epg/public/output/guide.xml.gz,https://worker-9dd4.onrender.com/guide.xml.gz"
+         ```
+     - default: `true`
+  3. Parse token separated list in XMLTV EPG URL
+     - when `true`: Parse value in "Import XMLTV EPG URL" dialog. Import first working URL in list.
+     - when `false`: Disabled
+     - token:
+       * this implementation
+         - uses the same token separator as the boolean `OR` used by [Search Keywords](#search-keywords)
+       * my rationale
+         - `,` is the defacto-standard token separator
+           * I see this as problematic, because the `,` character is allowed to occur in URL values without being escaped
+         - `|` is a non-standard token separator
+           * I see this as a better choice, because the `|` character is _not_ allowed to occur in URL values without being escaped
+         - optional whitespace padding around the token separator is non-standard
+           * provides better readability
+           * cannot interfere with URL parsing, because whitespace characters are _not_ allowed to occur in URL values without being escaped
+           * as an aside, if the convention of adding whitespace following the defacto-standard comma separator was made mandatory&hellip; the problem would be solved
+     - example:
+       ```text
+       https://raw.githubusercontent.com/StrangeDrVN/epg/public/output/guide.xml.gz,https://worker-9dd4.onrender.com/guide.xml.gz
+       ```
+     - default: `true`
+  4. Preferred language
      - specify the exact value of the `lang` attribute on `display-name`, `title` and `desc` fields to prioritize
      - example:
        * XMLTV (EPG) data:
@@ -210,19 +239,19 @@ Android app that organizes IPTV channel and EPG information.
          - program title = The News
          - program description = A daily look at global events.
      - default: `en`
-  3. Filter by M3U channels
+  5. Filter by M3U channels
      - when `true`: Whitelist channels found in M3U
      - when `false`: Do not whitelist channels found in M3U
      - default: `true`
-  4. Filter by channel name whitelist
+  6. Filter by channel name whitelist
      - specify one channel name (ie: `target_value`) per line
-  5. Filter by channel ID whitelist
+  7. Filter by channel ID whitelist
      - specify one channel ID (ie: `target_value`) per line
-  6. Filter by channel name blacklist
+  8. Filter by channel name blacklist
      - specify one channel name (ie: `target_value`) per line
      - format of input and usage is identical to the "channel name whitelist"
        * matching EPG channels are discarded during import
-  7. Filter by channel ID blacklist
+  9. Filter by channel ID blacklist
      - specify one channel ID (ie: `target_value`) per line
      - format of input and usage is identical to the "channel ID whitelist"
        * matching EPG channels are discarded during import
@@ -464,6 +493,12 @@ __Update Settings__
      1. name = `EPG_DEFAULT_XMLTV_URL`
         * type = `String`
         * setting = _EPG Channels &gt; Default XMLTV EPG URL_
+     1. name = `EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL`
+        * type = `Boolean`
+        * setting = _EPG Channels &gt; Automatically update "Default XMLTV EPG URL" from imported M3U_
+     1. name = `EPG_PARSE_LIST_IN_XMLTV_URL`
+        * type = `Boolean`
+        * setting = _EPG Channels &gt; Parse token separated list in XMLTV EPG URL_
      1. name = `EPG_PREFERRED_LANGUAGE`
         * type = `String`
         * setting = _EPG Channels &gt; Preferred language_
@@ -529,6 +564,8 @@ __Update Settings__
      extra-M3U_MEDIA_URL_STATIC_STRINGS: http://kytv.xyz:80
      extra-M3U_MEDIA_URL_STATIC_STRINGS: http://kytv.xyz:25461
      extra-EPG_DEFAULT_XMLTV_URL: %3$s/xmltv.php?username=%1$s&password=%2$s
+     extra-EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL: (bool) true
+     extra-EPG_PARSE_LIST_IN_XMLTV_URL: (bool) true
      extra-EPG_PREFERRED_LANGUAGE: en
      extra-EPG_CHANNEL_M3U_WHITELIST: (bool) true
      extra-EPG_CHANNEL_NAME_WHITELIST: (String[]) null

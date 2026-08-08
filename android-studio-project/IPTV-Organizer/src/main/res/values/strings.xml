@@ -7,6 +7,7 @@
   <string name="add">Add</string>
   <string name="cancel">Cancel</string>
   <string name="close">Close</string>
+  <string name="disabled">Disabled</string>
   <string name="enter_url">Enter URL</string>
   <string name="exit">Exit</string>
   <string name="export_file">Export File</string>
@@ -18,6 +19,8 @@
   <string name="save">Save</string>
   <string name="search">Search</string>
   <string name="settings">Settings</string>
+  <string translatable="false" name="value_false">false</string>
+  <string translatable="false" name="value_true">true</string>
 
   <!-- label: Activities -->
   <string name="activity_main">M3U Search</string>
@@ -85,21 +88,21 @@
   <string name="pref_dbedittextpreference_autosave_title">Auto save data after file import</string>
   <string name="pref_dbedittextpreference_autosave_summary_on" >Imported data is immediately saved to DB</string>
   <string name="pref_dbedittextpreference_autosave_summary_off">Imported data is copied to text field in dialog, but not yet saved to DB</string>
-  <string translatable="false" name="pref_dbedittextpreference_autosave_default">true</string>
+  <string translatable="false" name="pref_dbedittextpreference_autosave_default">@string/value_true</string>
 
   <!-- SettingsActivity [Settings]: Auto close dialog after file import -->
   <string translatable="false" name="pref_dbedittextpreference_autoclose_key">pref_dbedittextpreference_autoclose</string>
   <string name="pref_dbedittextpreference_autoclose_title">Auto close dialog after file import</string>
   <string name="pref_dbedittextpreference_autoclose_summary_on" >Close dialog after data is imported and automatically saved to DB</string>
   <string name="pref_dbedittextpreference_autoclose_summary_off">Do not close dialog after data is imported and automatically saved to DB</string>
-  <string translatable="false" name="pref_dbedittextpreference_autoclose_default">true</string>
+  <string translatable="false" name="pref_dbedittextpreference_autoclose_default">@string/value_true</string>
 
   <!-- SettingsActivity [Settings]: Apply static string values to user-defined default import URL templates -->
   <string translatable="false" name="pref_apply_default_url_templates_key">pref_apply_default_url_templates</string>
   <string name="pref_apply_default_url_templates_title">Apply static string values to user-defined default import URL templates</string>
   <string name="pref_apply_default_url_templates_summary_on" >Default import URL values are templates</string>
   <string name="pref_apply_default_url_templates_summary_off">Default import URL values are not templates</string>
-  <string translatable="false" name="pref_apply_default_url_templates_default">true</string>
+  <string translatable="false" name="pref_apply_default_url_templates_default">@string/value_true</string>
 
   <!-- SettingsActivity [M3U Search]: Input debounce interval -->
   <string translatable="false" name="pref_search_input_debounce_interval_key">pref_search_input_debounce_interval</string>
@@ -120,7 +123,7 @@
   <string name="pref_search_results_remove_duplicate_names_title">Remove duplicate names</string>
   <string name="pref_search_results_remove_duplicate_names_summary_on" >For each distinct name, the search results will only display one M3U channel</string>
   <string name="pref_search_results_remove_duplicate_names_summary_off">For each distinct name, the search results will display all available M3U channels</string>
-  <string translatable="false" name="pref_search_results_remove_duplicate_names_default">true</string>
+  <string translatable="false" name="pref_search_results_remove_duplicate_names_default">@string/value_true</string>
 
   <!-- SettingsActivity [M3U Channels]: Default M3U Playlist URL -->
   <string translatable="false" name="pref_default_m3u_url_key">pref_default_m3u_url</string>
@@ -134,7 +137,7 @@
   <string name="pref_append_m3u_playlists_title">Append M3U Playlists</string>
   <string name="pref_append_m3u_playlists_summary_on" >Imported data is added to the existing list of M3U channels</string>
   <string name="pref_append_m3u_playlists_summary_off">Imported data replaces the existing list of M3U channels</string>
-  <string translatable="false" name="pref_append_m3u_playlists_default">false</string>
+  <string translatable="false" name="pref_append_m3u_playlists_default">@string/value_false</string>
 
   <!-- SettingsActivity [M3U Channels]: Map from channel name to channel ID -->
   <string name="pref_m3u_channels_mapping_name_to_id_title">Map from channel name to channel ID</string>
@@ -171,6 +174,20 @@
   <string translatable="false" name="pref_default_xmltv_url_hint">https://example.com/epg.xmltv</string>
   <string translatable="false" name="pref_default_xmltv_url_default"></string>
 
+  <!-- SettingsActivity [EPG Channels]: Automatically update "Default XMLTV EPG URL" from imported M3U -->
+  <string translatable="false" name="pref_auto_update_default_xmltv_url_key">pref_auto_update_default_xmltv_url</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Automatically update \"Default XMLTV EPG URL\" from imported M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >If found, save value of \"x-tvg-url\" or \"url-tvg\" parameter in \"#EXTM3U\" file header directive</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_off">@string/disabled</string>
+  <string translatable="false" name="pref_auto_update_default_xmltv_url_default">@string/value_true</string>
+
+  <!-- SettingsActivity [EPG Channels]: Parse token separated list in XMLTV EPG URL -->
+  <string translatable="false" name="pref_parse_list_in_xmltv_url_key">pref_parse_list_in_xmltv_url</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Parse token separated list in XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Parse value in \"Import XMLTV EPG URL\" dialog. Import first working URL in list.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_off">@string/disabled</string>
+  <string translatable="false" name="pref_parse_list_in_xmltv_url_default">@string/value_true</string>
+
   <!-- SettingsActivity [EPG Channels]: Preferred language -->
   <string translatable="false" name="pref_preferred_xmltv_language_key">pref_preferred_xmltv_language</string>
   <string name="pref_preferred_xmltv_language_title">Preferred language</string>
@@ -183,7 +200,7 @@
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filter by M3U channels</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_on" >Whitelist channels found in M3U</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_summary_off">Do not whitelist channels found in M3U</string>
-  <string translatable="false" name="pref_epg_channels_filter_whitelist_m3u_default">true</string>
+  <string translatable="false" name="pref_epg_channels_filter_whitelist_m3u_default">@string/value_true</string>
 
   <!-- SettingsActivity [EPG Channels]: Filter by channel name whitelist -->
   <string name="pref_epg_channels_filter_whitelist_names_title">@string/pref_m3u_channels_filter_whitelist_names_title</string>

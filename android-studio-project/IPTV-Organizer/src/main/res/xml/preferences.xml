@@ -122,6 +122,20 @@
       android:hint="@string/pref_default_xmltv_url_hint"
       android:defaultValue="@string/pref_default_xmltv_url_default" />
 
+    <CheckBoxPreference
+      android:key="@string/pref_auto_update_default_xmltv_url_key"
+      android:title="@string/pref_auto_update_default_xmltv_url_title"
+      android:summaryOn="@string/pref_auto_update_default_xmltv_url_summary_on"
+      android:summaryOff="@string/pref_auto_update_default_xmltv_url_summary_off"
+      android:defaultValue="@string/pref_auto_update_default_xmltv_url_default" />
+
+    <CheckBoxPreference
+      android:key="@string/pref_parse_list_in_xmltv_url_key"
+      android:title="@string/pref_parse_list_in_xmltv_url_title"
+      android:summaryOn="@string/pref_parse_list_in_xmltv_url_summary_on"
+      android:summaryOff="@string/pref_parse_list_in_xmltv_url_summary_off"
+      android:defaultValue="@string/pref_parse_list_in_xmltv_url_default" />
+
     <EditTextPreference
       android:key="@string/pref_preferred_xmltv_language_key"
       android:title="@string/pref_preferred_xmltv_language_title"

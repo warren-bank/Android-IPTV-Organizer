@@ -266,6 +266,58 @@ public class SettingsUtils {
 
   // --------------------
 
+  public static boolean getAutoUpdateDefaultXmltvEpgUrl(Context context) {
+    return getAutoUpdateDefaultXmltvEpgUrl(context, getPrefs(context));
+  }
+
+  private static boolean getAutoUpdateDefaultXmltvEpgUrl(Context context, SharedPreferences prefs) {
+    String pref_key     = context.getString(R.string.pref_auto_update_default_xmltv_url_key);
+    String pref_default = context.getString(R.string.pref_auto_update_default_xmltv_url_default);
+    boolean val_default = "true".equals(pref_default);
+
+    return prefs.getBoolean(pref_key, val_default);
+  }
+
+  public static boolean setAutoUpdateDefaultXmltvEpgUrl(Context context, boolean value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setAutoUpdateDefaultXmltvEpgUrl(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setAutoUpdateDefaultXmltvEpgUrl(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_auto_update_default_xmltv_url_key);
+
+    editor.putBoolean(pref_key, value);
+  }
+
+  // --------------------
+
+  public static boolean getParseListInXmltvEpgUrl(Context context) {
+    return getParseListInXmltvEpgUrl(context, getPrefs(context));
+  }
+
+  private static boolean getParseListInXmltvEpgUrl(Context context, SharedPreferences prefs) {
+    String pref_key     = context.getString(R.string.pref_parse_list_in_xmltv_url_key);
+    String pref_default = context.getString(R.string.pref_parse_list_in_xmltv_url_default);
+    boolean val_default = "true".equals(pref_default);
+
+    return prefs.getBoolean(pref_key, val_default);
+  }
+
+  public static boolean setParseListInXmltvEpgUrl(Context context, boolean value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setParseListInXmltvEpgUrl(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setParseListInXmltvEpgUrl(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_parse_list_in_xmltv_url_key);
+
+    editor.putBoolean(pref_key, value);
+  }
+
+  // --------------------
+
   public static String getPreferredXmltvLanguage(Context context) {
     return getPreferredXmltvLanguage(context, getPrefs(context));
   }
