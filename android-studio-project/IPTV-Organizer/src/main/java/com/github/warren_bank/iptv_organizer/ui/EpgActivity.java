@@ -11,6 +11,7 @@ import com.github.warren_bank.iptv_organizer.ui.dialog.DataProgressDialog;
 import com.github.warren_bank.iptv_organizer.ui.dialog.SavedSearchKeywordsListDialog;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
+import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
 import se.kmdev.tvepg.epg.EPG;
 import se.kmdev.tvepg.epg.EPGClickListener;
@@ -272,16 +273,45 @@ public class EpgActivity extends AppCompatActivity {
     InputStream inputStream = null;
 
     try {
-      URL url = new URL(urlText);
-      conn = (HttpURLConnection) url.openConnection();
-      conn.setRequestMethod("GET");
-      conn.setConnectTimeout(15000);
-      conn.setReadTimeout(15000);
+      if (urlText == null)
+        throw new Exception("Invalid EPG URL");
 
-      int code = conn.getResponseCode();
-      if (code < 200 || code >= 300) {
-        throw new Exception("HTTP " + code);
+      urlText = urlText.trim();
+
+      String[] allUrls = SettingsUtils.getParseListInXmltvEpgUrl(EpgActivity.this)
+        ? urlText.split(Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX)
+        : new String[]{urlText};
+
+      for (String nextUrl : allUrls) {
+        if (nextUrl.isEmpty() || !"http".equals(nextUrl.substring(0, 4).toLowerCase())) continue;
+
+        try {
+          URL url = new URL(nextUrl);
+          conn = (HttpURLConnection) url.openConnection();
+          conn.setRequestMethod("GET");
+          conn.setFollowRedirects(true);
+          conn.setConnectTimeout(15000);
+          conn.setReadTimeout(15000);
+
+          // note: 3xx redirects won't surface; they are automatically followed by HttpURLConnection.
+          int code = conn.getResponseCode();
+          if (code < 200 || code >= 300)
+            throw new Exception("HTTP " + code);
+
+          // OK: good connection
+          break;
+        }
+        catch(Exception e) {
+          if (conn != null) {
+            conn.disconnect();
+            conn = null;
+          }
+          continue;
+        }
       }
+
+      if (conn == null)
+        throw new Exception("Unable to connect to any EPG URL");
 
       boolean isGzip = urlText.substring(urlText.length() - 3).toLowerCase().equals(".gz");
       if (!isGzip) {
