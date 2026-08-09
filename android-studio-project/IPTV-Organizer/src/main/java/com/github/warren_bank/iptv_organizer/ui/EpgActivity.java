@@ -41,6 +41,8 @@ import androidx.appcompat.widget.Toolbar;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.zip.GZIPInputStream;
 
 public class EpgActivity extends AppCompatActivity {
@@ -269,8 +271,11 @@ public class EpgActivity extends AppCompatActivity {
   }
 
   private void openUrlAsStream(String urlText, DataProgressDialog listener) {
-    HttpURLConnection conn = null;
-    InputStream inputStream = null;
+    List<HttpURLConnection> connList  = new ArrayList<HttpURLConnection>();
+    List<InputStream> inputStreamList = new ArrayList<InputStream>();
+
+    boolean parseListInXmltvUrl = SettingsUtils.getParseListInXmltvEpgUrl(EpgActivity.this);
+    boolean importAllListValues = parseListInXmltvUrl && SettingsUtils.getImportAllListValuesInXmltvEpgUrl(EpgActivity.this);
 
     try {
       if (urlText == null)
@@ -278,12 +283,15 @@ public class EpgActivity extends AppCompatActivity {
 
       urlText = urlText.trim();
 
-      String[] allUrls = SettingsUtils.getParseListInXmltvEpgUrl(EpgActivity.this)
+      String[] allUrls = parseListInXmltvUrl
         ? urlText.split(Constants.SEARCH_KEYWORD_ARRAY_SPLIT_REGEX)
         : new String[]{urlText};
 
       for (String nextUrl : allUrls) {
         if (nextUrl.isEmpty() || !"http".equals(nextUrl.substring(0, 4).toLowerCase())) continue;
+
+        HttpURLConnection conn = null;
+        InputStream inputStream = null;
 
         try {
           URL url = new URL(nextUrl);
@@ -298,47 +306,56 @@ public class EpgActivity extends AppCompatActivity {
           if (code < 200 || code >= 300)
             throw new Exception("HTTP " + code);
 
-          // OK: good connection
-          break;
+          boolean isGzip = urlText.substring(urlText.length() - 3).toLowerCase().equals(".gz");
+          if (!isGzip) {
+            // check HTTP response header: content-type
+            String contentType = conn.getContentType();
+            if (contentType != null) {
+              contentType = contentType.toLowerCase();
+              isGzip = (
+                contentType.equals("application/gzip")   || contentType.startsWith("application/gzip;") ||
+                contentType.equals("application/x-gzip") || contentType.startsWith("application/x-gzip;")
+              );
+            }
+          }
+
+          inputStream = conn.getInputStream();
+
+          if (isGzip)
+            inputStream = (InputStream) new GZIPInputStream(inputStream);
+
+          connList.add(conn);
+          inputStreamList.add(inputStream);
+
+          if (importAllListValues)
+            continue;
+          else
+            break;
         }
         catch(Exception e) {
-          if (conn != null) {
-            conn.disconnect();
-            conn = null;
-          }
+          try {
+            if (inputStream != null) inputStream.close();
+          } catch (Exception ignored) {}
+          if (conn != null) conn.disconnect();
           continue;
         }
       }
 
-      if (conn == null)
+      if (inputStreamList.isEmpty())
         throw new Exception("Unable to connect to any EPG URL");
 
-      boolean isGzip = urlText.substring(urlText.length() - 3).toLowerCase().equals(".gz");
-      if (!isGzip) {
-        // check HTTP response header: content-type
-        String contentType = conn.getContentType();
-        if (contentType != null) {
-          contentType = contentType.toLowerCase();
-          isGzip = (
-            contentType.equals("application/gzip")   || contentType.startsWith("application/gzip;") ||
-            contentType.equals("application/x-gzip") || contentType.startsWith("application/x-gzip;")
-          );
-        }
-      }
-
-      inputStream = conn.getInputStream();
-
-      if (isGzip)
-        inputStream = (InputStream) new GZIPInputStream(inputStream);
-
-      importXmlTvFromStream(inputStream, listener);
+      importXmlTvFromStream(inputStreamList, listener);
     } catch (Exception e) {
       Log.e(Constants.LOG_TAG, e.getMessage());
     } finally {
-      try {
-        if (inputStream != null) inputStream.close();
-      } catch (Exception ignored) {}
-      if (conn != null) conn.disconnect();
+      for (InputStream inputStream : inputStreamList) {
+        try {
+          if (inputStream != null) inputStream.close();
+        } catch (Exception ignored) {}
+      }
+      for (HttpURLConnection conn : connList) {
+        if (conn != null) conn.disconnect();
+      }
       listener.dismiss(true);
       dataProgressDialog = null;
     }
@@ -412,6 +429,18 @@ public class EpgActivity extends AppCompatActivity {
       ImportUtils.importXmlTv(inputStream, listener)
     );
 
+    refreshEpgOnUiThread(newEpgData);
+  }
+
+  private void importXmlTvFromStream(List<InputStream> inputStreamList, DataProgressDialog listener) throws Exception {
+    final EPGDataImpl newEpgData = new EPGDataImpl(
+      ImportUtils.importXmlTv(inputStreamList, listener)
+    );
+
+    refreshEpgOnUiThread(newEpgData);
+  }
+
+  private void refreshEpgOnUiThread(final EPGDataImpl newEpgData) {
     runOnUiThread(new Runnable() {
       @Override
       public void run() {

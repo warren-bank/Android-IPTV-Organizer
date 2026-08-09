@@ -1,7 +1,7 @@
 purpose:
 ========
 test the "#*" (substring) and "#~*" (case-insensitive substring) prefix in setting:
-  05. Filter by channel name whitelist
+  M3U Channels > Filter by channel name whitelist
 
 ================
 10. channels.m3u

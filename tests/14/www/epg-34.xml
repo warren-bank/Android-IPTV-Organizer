@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv>
+  <channel id="channel-3.tv">
+    <display-name>CHANNEL 3</display-name>
+  </channel>
+  <channel id="channel-4.tv">
+    <display-name>CHANNEL 4</display-name>
+  </channel>
+  <programme start="20220331180000 +0000" channel="channel-3.tv">
+    <title>Best of CHANNEL 3</title>
+  </programme>
+  <programme start="20220331180000 +0000" channel="channel-4.tv">
+    <title>Best of CHANNEL 4</title>
+  </programme>
+</tv>

@@ -1,7 +1,7 @@
 purpose:
 ========
 test the "#*" prefix to match substrings in setting:
-  07. Filter by channel name blacklist
+  M3U Channels > Filter by channel name blacklist
 
 ================
 10. channels.m3u

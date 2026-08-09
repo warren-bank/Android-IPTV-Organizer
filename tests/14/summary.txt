@@ -1,0 +1,100 @@
+purpose:
+========
+test the settings:
+  EPG Channels > Parse token separated list in XMLTV EPG URL
+  EPG Channels > Import all URL values in token separated list
+
+common test setup:
+==================
+* www/ is served at: http://localhost/
+
+==========
+epg-12.xml
+==========
+
+| channel name |
+|--------------|
+| CHANNEL 1    |
+| CHANNEL 2    |
+
+==========
+epg-34.xml
+==========
+
+| channel name |
+|--------------|
+| CHANNEL 3    |
+| CHANNEL 4    |
+
+==========
+epg-56.xml
+==========
+
+| channel name |
+|--------------|
+| CHANNEL 5    |
+| CHANNEL 6    |
+
+test #1:
+========
+* settings:
+    EPG Channels > Parse token separated list in XMLTV EPG URL   = true
+    EPG Channels > Import all URL values in token separated list = false
+* import EPG URLs:
+    http://example.com/404,http://localhost/epg-12.xml,http://localhost/epg-34.xml,http://localhost/epg-56.xml
+* expected behavior:
+  - URL #1 is 404: continue
+  - URL #2 is 200: import and break
+
+| channel name |
+|--------------|
+| CHANNEL 1    |
+| CHANNEL 2    |
+
+test #2:
+========
+* settings:
+    EPG Channels > Parse token separated list in XMLTV EPG URL   = true
+    EPG Channels > Import all URL values in token separated list = true
+* import EPG URLs:
+    http://example.com/404,http://localhost/epg-12.xml,http://localhost/epg-34.xml,http://localhost/epg-56.xml
+* expected behavior:
+  - URL #1 is 404: continue
+  - URL #2 is 200: import and continue
+  - URL #3 is 200: import and continue
+  - URL #4 is 200: import and continue
+
+| channel name |
+|--------------|
+| CHANNEL 1    |
+| CHANNEL 2    |
+| CHANNEL 3    |
+| CHANNEL 4    |
+| CHANNEL 5    |
+| CHANNEL 6    |
+
+test #3:
+========
+* settings:
+    EPG Channels > Parse token separated list in XMLTV EPG URL   = true
+    EPG Channels > Import all URL values in token separated list = true
+* import EPG URLs:
+    http://example.com/404,http://localhost/epg-12.xml,http://localhost/epg-34.xml,http://localhost/epg-56.xml,http://example.com/404,http://localhost/epg-12.xml,http://localhost/epg-34.xml,http://localhost/epg-56.xml
+* expected behavior:
+  - URL #1 is 404: continue
+  - URL #2 is 200: import and continue
+  - URL #3 is 200: import and continue
+  - URL #4 is 200: import and continue
+  - URL #5 is 404: continue
+  - URL #6 is 200: import and continue => all channels are duplicate and filtered
+  - URL #7 is 200: import and continue => all channels are duplicate and filtered
+  - URL #8 is 200: import and continue => all channels are duplicate and filtered
+
+| channel name |
+|--------------|
+| CHANNEL 1    |
+| CHANNEL 2    |
+| CHANNEL 3    |
+| CHANNEL 4    |
+| CHANNEL 5    |
+| CHANNEL 6    |

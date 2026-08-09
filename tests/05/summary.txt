@@ -1,7 +1,7 @@
 purpose:
 ========
 test the setting:
-  2. Append M3U Playlists
+  M3U Channels > Append M3U Playlists
 
 ===============
 channels-12.m3u

@@ -37,8 +37,8 @@ public class FilterUtils {
 
     // fuzzy match: find any key in haystack that is a substring of needle
     for (Map.Entry<String, String> entry : haystack.entrySet()) {
-      String substr = entry.getKey();
-      if (needle.contains(substr)) return entry.getValue();
+      String substr = (String) entry.getKey();
+      if (needle.contains(substr)) return (String) entry.getValue();
     }
 
     return null;
