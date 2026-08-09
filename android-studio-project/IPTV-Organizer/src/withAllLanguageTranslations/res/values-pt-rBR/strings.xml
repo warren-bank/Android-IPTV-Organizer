@@ -66,6 +66,9 @@
   <string name="pref_auto_update_default_xmltv_url_summary_on" >Se fou encontrado, salve o valor de \"x-tvg-url\" or \"url-tvg\" parâmetro em \"#EXTM3U\" diretiva de cabeçalho de arquivo</string>
   <string name="pref_parse_list_in_xmltv_url_title">Analisar uma lista separada por tokens em XMLTV EPG URL</string>
   <string name="pref_parse_list_in_xmltv_url_summary_on" >Analisar o valor em \"Importar XMLTV EPG URL\" caixa de diálogo. Importar o primeiro arquivo funcional URL na lista.</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_title">Importar tudo URL valores em uma lista separada por delimitadores</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Misture o EPG dados de todas as fontes</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Importar o primeiro arquivo de trabalho URL na lista</string>
   <string name="pref_preferred_xmltv_language_title">Idioma preferido</string>
   <string name="pref_preferred_xmltv_language_summary">Priorize os títulos e as descrições com um \"lang\" atributo com exatamente esse valor.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrar por M3U canais</string>

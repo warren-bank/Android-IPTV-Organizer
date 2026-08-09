@@ -66,6 +66,9 @@
   <string name="pref_auto_update_default_xmltv_url_summary_on" >Má aimsítear, sábháil luach \"x-tvg-url\" nó \"url-tvg\" paraiméadar isteach \"#EXTM3U\" treoir ceanntásc comhaid</string>
   <string name="pref_parse_list_in_xmltv_url_title">Anailís a dhéanamh ar liosta comhartha-dheighilte i XMLTV EPG URL</string>
   <string name="pref_parse_list_in_xmltv_url_summary_on" >An luach a pharsáil i \"Iompórtáil XMLTV EPG URL\" dialóg. Iompórtáil an chéad oibre URL sa liosta.</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_title">Iompórtáil gach rud URL luachanna i liosta arna scaradh le comharthaí</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Cuir an EPG sonraí ó gach fhoinse</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Iompórtáil an chéad oibre URL sa liosta</string>
   <string name="pref_preferred_xmltv_language_title">Teanga thosaigh</string>
   <string name="pref_preferred_xmltv_language_summary">Leag tús áite ar theidil agus ar chur síos le \"lang\" tréith a bhfuil an luach beacht seo aici.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Scag de réir M3U cainéil</string>

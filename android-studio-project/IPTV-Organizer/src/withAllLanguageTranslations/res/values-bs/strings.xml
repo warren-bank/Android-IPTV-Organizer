@@ -66,6 +66,9 @@
   <string name="pref_auto_update_default_xmltv_url_summary_on" >Ako se pronađe, sačuvajte vrijednost \"x-tvg-url\" ili \"url-tvg\" parametar u \"#EXTM3U\" direktiva zaglavlja datoteke</string>
   <string name="pref_parse_list_in_xmltv_url_title">Parse listu odvojenu tokenima u XMLTV EPG URL</string>
   <string name="pref_parse_list_in_xmltv_url_summary_on" >Parse vrijednost u \"Uvoz XMLTV EPG URL\" dijalog. Uvezi prvi radni URL u listi.</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_title">Uvezi sve URL vrijednosti u listi odvojenoj tokenima</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Kombinirajte EPG podaci iz svih izvora</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Uvezi prvi radni URL u listi</string>
   <string name="pref_preferred_xmltv_language_title">Preferirani jezik</string>
   <string name="pref_preferred_xmltv_language_summary">Prioritetizirajte naslove i opise pomoću \"lang\" atribut s ovom tačnom vrijednošću.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtriraj po M3U kanali</string>

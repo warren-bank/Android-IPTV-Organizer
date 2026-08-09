@@ -66,6 +66,9 @@
   <string name="pref_auto_update_default_xmltv_url_summary_on" >Si es troba, desar el valo de \"x-tvg-url\" or \"url-tvg\" paràmetre en \"#EXTM3U\" directiva d\'encapçalament de fitxer</string>
   <string name="pref_parse_list_in_xmltv_url_title">Analitzar una llista separada per tokens en XMLTV EPG URL</string>
   <string name="pref_parse_list_in_xmltv_url_summary_on" >Analitzar el valor en \"Importar XMLTV EPG URL\" diàleg. Importa la primera operació URL a la llista.</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_title">Importa tot URL valors en una llista separada per tokens</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Combina el EPG dades de totes les fonts</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Importa el primer treballador URL a la llista</string>
   <string name="pref_preferred_xmltv_language_title">Idioma preferit</string>
   <string name="pref_preferred_xmltv_language_summary">Prioritzeu els títols i les descripcions amb un \"lang\" atribut amb aquest valor exacte.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtra per M3U canals</string>

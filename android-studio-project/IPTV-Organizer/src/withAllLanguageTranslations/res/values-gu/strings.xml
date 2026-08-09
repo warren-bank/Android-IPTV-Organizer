@@ -66,6 +66,9 @@
   <string name="pref_auto_update_default_xmltv_url_summary_on" >જો મળે, તો મૂલ્ય સાચવો \"x-tvg-url\" અથવા \"url-tvg\" પેરામીટર ઇન \"#EXTM3U\" ફાઇલ હેડર નિર્દેશ</string>
   <string name="pref_parse_list_in_xmltv_url_title">ટોકનથી વિભાજિત સૂચિને માં પાર્સ કરો XMLTV EPG URL</string>
   <string name="pref_parse_list_in_xmltv_url_summary_on" >માં મૂલ્ય પાર્સ કરો \"આયાત XMLTV EPG URL\" પ્રથમ કાર્ય ઇમ્પોર્ટ કરો. URL યાદીમાં.</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_title">બધું આયાત કરો URL ટોકનથી વિભાજિત સૂચિમાં મૂલ્યો</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >સંયોજન કરો EPG બધા સ્ત્રોતોથી ડેટા</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_off">પ્રથમ વર્કિંગ આયાત કરો URL સૂચીમાં</string>
   <string name="pref_preferred_xmltv_language_title">પસંદગીની ભાષા</string>
   <string name="pref_preferred_xmltv_language_summary">શીર્ષકો અને વર્ણનોને એક સાથે પ્રાથમિકતા આપો \"lang\" આ ચોક્કસ મૂલ્ય ધરાવતું લક્ષણ.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">દ્વારા ફિલ્ટર કરો M3U ચેનલ્સ</string>

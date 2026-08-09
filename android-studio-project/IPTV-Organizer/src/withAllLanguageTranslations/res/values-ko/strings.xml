@@ -66,6 +66,9 @@
   <string name="pref_auto_update_default_xmltv_url_summary_on" >발견되면 다음 값을 저장하십시오. \"x-tvg-url\" 또는 \"url-tvg\" ~의 매개변수 \"#EXTM3U\" 파일 헤더 지시문</string>
   <string name="pref_parse_list_in_xmltv_url_title">토큰으로 구분된 목록을 파싱하려면 XMLTV EPG URL</string>
   <string name="pref_parse_list_in_xmltv_url_summary_on" >값을 구문 분석합니다. \"가져오기 XMLTV EPG URL\" 대화 상자. 첫 번째 작동하는 내용을 가져오기 URL 목록에서.</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_title">모두 가져오기 URL 토큰으로 구분된 목록의 값들</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >다음과 같이 합치세요. EPG 모든 출처의 데이터</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_off">첫 번째 작동 파일을 가져오기 URL 목록에서</string>
   <string name="pref_preferred_xmltv_language_title">선호 언어</string>
   <string name="pref_preferred_xmltv_language_summary">제목과 설명의 우선순위를 다음과 같이 정하십시오. \"lang\" 정확히 이 값을 갖는 속성.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">다음 기준으로 필터링 M3U 채널</string>

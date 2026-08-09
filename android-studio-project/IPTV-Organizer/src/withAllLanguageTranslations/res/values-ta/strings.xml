@@ -66,6 +66,9 @@
   <string name="pref_auto_update_default_xmltv_url_summary_on" >கண்டறியப்பட்டால், மதிப்பைச் சேமி \"x-tvg-url\" அல்லது \"url-tvg\" பராமீட்டர் உள்ளே \"#EXTM3U\" கோப்பு தலைப்பு வழிமுறை</string>
   <string name="pref_parse_list_in_xmltv_url_title">குறியீட்டுப் பிரிக்கப்பட்ட பட்டியலைப் பிரித்தெடு XMLTV EPG URL</string>
   <string name="pref_parse_list_in_xmltv_url_summary_on" >மதிப்பைப் பிரித்தெடு \"இறக்குமதி XMLTV EPG URL\" உரையாடல். முதலில் வேலை செய்யும் பகுதியை இறக்குமதி செய்யவும் URL பட்டியலில்.</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_title">அனைத்தையும் இறக்குமதி செய் URL டோக்கனால் பிரிக்கப்பட்ட பட்டியலில் உள்ள மதிப்புகள்</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >இணைக்கவும் EPG அனைத்து மூலங்களிலிருந்தும் தரவுகள்</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_off">முதல் வேலையை இறக்குமதி செய்யவும் URL பட்டியலில்</string>
   <string name="pref_preferred_xmltv_language_title">விரும்பிய மொழி</string>
   <string name="pref_preferred_xmltv_language_summary">தலைப்புகள் மற்றும் விளக்கங்களுக்கு முன்னுரிமை அளிக்கவும் \"lang\" இந்தத் துல்லியமான மதிப்பைக் கொண்ட பண்பு.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">வடிகட்டவும் M3U சேனல்கள்</string>
