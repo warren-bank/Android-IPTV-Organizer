@@ -57,4 +57,10 @@ public class EPGChannel {
 
         return true;
     }
+
+    @Override
+    public int hashCode() {
+      String uniqueId = this.channelID + "|" + this.name;
+      return uniqueId.hashCode();
+    }
 }
