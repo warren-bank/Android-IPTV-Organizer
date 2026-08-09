@@ -87,11 +87,11 @@ Android app that organizes IPTV channel and EPG information.
          %4$s/playlist/%1$s/%2$s/m3u_plus?output=hls
          ```
      - default: `https://iptv-org.github.io/iptv/index.m3u`
-  2. Append M3U Playlists
+  1. Append M3U Playlists
      - when `true`: Imported data is added to the existing list of M3U channels
      - when `false`: Imported data replaces the existing list of M3U channels
      - default: `false`
-  3. Map from channel name to channel ID
+  1. Map from channel name to channel ID
      - specify one mapping per line in the format:
        ```text
        "${target_value}\s+=>\s+${new_tvg_id}"
@@ -107,7 +107,7 @@ Android app that organizes IPTV channel and EPG information.
        USA C-SPAN 3      => cspan3.us
        CNN INTERNATIONAL => cnninternational.us
        ```
-  4. Map from channel ID to channel ID
+  1. Map from channel ID to channel ID
      - specify one mapping per line in the format:
        ```text
        "${target_value}\s+=>\s+${new_tvg_id}"
@@ -122,7 +122,7 @@ Android app that organizes IPTV channel and EPG information.
        cspan3           => cspan3.us
        cnninternational => cnninternational.us
        ```
-  5. Filter by channel name whitelist
+  1. Filter by channel name whitelist
      - specify one channel name (ie: `target_value`) per line
      - where `target_value` is equal to either:
        * channel `name`
@@ -134,7 +134,7 @@ Android app that organizes IPTV channel and EPG information.
        USA C-SPAN 3
        CNN INTERNATIONAL
        ```
-  6. Filter by channel ID whitelist
+  1. Filter by channel ID whitelist
      - specify one channel ID (ie: `target_value`) per line
      - where `target_value` is equal to:
        * channel `tvg_id`
@@ -145,15 +145,15 @@ Android app that organizes IPTV channel and EPG information.
        cspan3.us
        cnninternational.us
        ```
-  7. Filter by channel name blacklist
+  1. Filter by channel name blacklist
      - specify one channel name (ie: `target_value`) per line
      - format of input and usage is identical to the "channel name whitelist"
        * matching M3U channels are discarded during import
-  8. Filter by channel ID blacklist
+  1. Filter by channel ID blacklist
      - specify one channel ID (ie: `target_value`) per line
      - format of input and usage is identical to the "channel ID whitelist"
        * matching M3U channels are discarded during import
-  9. Media URL static string values
+  1. Media URL static string values
      - specify one static string (ie: `target_value`) per line
      - where all substring occurances of `target_value` in channel `media_url` values are replaced by template variables during import of M3U (IPTV channels) data
      - when static string values are updated, channel `media_url` values will immediately reflect the changes&hellip; the media URLs are rehydrated by substituting the static strings for template variables
@@ -177,7 +177,7 @@ Android app that organizes IPTV channel and EPG information.
          ```text
          %3$s/xmltv.php?username=%1$s&password=%2$s
          ```
-  2. Automatically update "Default XMLTV EPG URL" from imported M3U
+  1. Automatically update "Default XMLTV EPG URL" from imported M3U
      - when `true`: If found, save value of `x-tvg-url` or `url-tvg` parameter in `#EXTM3U` file header directive
      - when `false`: Disabled
      - example:
@@ -186,7 +186,7 @@ Android app that organizes IPTV channel and EPG information.
          #EXTM3U x-tvg-url="https://raw.githubusercontent.com/StrangeDrVN/epg/public/output/guide.xml.gz,https://worker-9dd4.onrender.com/guide.xml.gz"
          ```
      - default: `true`
-  3. Parse token separated list in XMLTV EPG URL
+  1. Parse token separated list in XMLTV EPG URL
      - when `true`: Parse value in "Import XMLTV EPG URL" dialog. Import first working URL in list.
      - when `false`: Disabled
      - token:
@@ -206,7 +206,11 @@ Android app that organizes IPTV channel and EPG information.
        https://raw.githubusercontent.com/StrangeDrVN/epg/public/output/guide.xml.gz,https://worker-9dd4.onrender.com/guide.xml.gz
        ```
      - default: `true`
-  4. Preferred language
+  1. Import all URL values in token separated list
+     - when `true`: Combine the EPG data from all sources
+     - when `false`: Import the first working URL in list
+     - default: `false`
+  1. Preferred language
      - specify the exact value of the `lang` attribute on `display-name`, `title` and `desc` fields to prioritize
      - example:
        * XMLTV (EPG) data:
@@ -239,19 +243,19 @@ Android app that organizes IPTV channel and EPG information.
          - program title = The News
          - program description = A daily look at global events.
      - default: `en`
-  5. Filter by M3U channels
+  1. Filter by M3U channels
      - when `true`: Whitelist channels found in M3U
      - when `false`: Do not whitelist channels found in M3U
      - default: `true`
-  6. Filter by channel name whitelist
+  1. Filter by channel name whitelist
      - specify one channel name (ie: `target_value`) per line
-  7. Filter by channel ID whitelist
+  1. Filter by channel ID whitelist
      - specify one channel ID (ie: `target_value`) per line
-  8. Filter by channel name blacklist
+  1. Filter by channel name blacklist
      - specify one channel name (ie: `target_value`) per line
      - format of input and usage is identical to the "channel name whitelist"
        * matching EPG channels are discarded during import
-  9. Filter by channel ID blacklist
+  1. Filter by channel ID blacklist
      - specify one channel ID (ie: `target_value`) per line
      - format of input and usage is identical to the "channel ID whitelist"
        * matching EPG channels are discarded during import
@@ -499,6 +503,9 @@ __Update Settings__
      1. name = `EPG_PARSE_LIST_IN_XMLTV_URL`
         * type = `Boolean`
         * setting = _EPG Channels &gt; Parse token separated list in XMLTV EPG URL_
+     1. name = `EPG_IMPORT_ALL_LIST_VALUES_IN_XMLTV_URL`
+        * type = `Boolean`
+        * setting = _EPG Channels &gt; Import all URL values in token separated list_
      1. name = `EPG_PREFERRED_LANGUAGE`
         * type = `String`
         * setting = _EPG Channels &gt; Preferred language_
@@ -566,6 +573,7 @@ __Update Settings__
      extra-EPG_DEFAULT_XMLTV_URL: %3$s/xmltv.php?username=%1$s&password=%2$s
      extra-EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL: (bool) true
      extra-EPG_PARSE_LIST_IN_XMLTV_URL: (bool) true
+     extra-EPG_IMPORT_ALL_LIST_VALUES_IN_XMLTV_URL: (bool) false
      extra-EPG_PREFERRED_LANGUAGE: en
      extra-EPG_CHANNEL_M3U_WHITELIST: (bool) true
      extra-EPG_CHANNEL_NAME_WHITELIST: (String[]) null

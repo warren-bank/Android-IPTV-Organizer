@@ -26,31 +26,32 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
   public static final int DB_FILE_EXPORT_REQUEST_CODE = 1;
   public static final int DB_FILE_IMPORT_REQUEST_CODE = 2;
 
-  private static final String EXTRA_SETTINGS_AUTO_SAVE                    = "SETTINGS_AUTO_SAVE";                     // Boolean
-  private static final String EXTRA_SETTINGS_AUTO_CLOSE                   = "SETTINGS_AUTO_CLOSE";                    // Boolean
-  private static final String EXTRA_SETTINGS_APPLY_STATIC_STRINGS         = "SETTINGS_APPLY_STATIC_STRINGS";          // Boolean
-  private static final String EXTRA_SEARCH_INPUT_DEBOUNCE_INTERVAL        = "SEARCH_INPUT_DEBOUNCE_INTERVAL";         // int
-  private static final String EXTRA_SEARCH_RESULTS_MAX_COUNT              = "SEARCH_RESULTS_MAX_COUNT";               // int
-  private static final String EXTRA_SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES = "SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES";  // Boolean
-  private static final String EXTRA_M3U_DEFAULT_PLAYLIST_URL              = "M3U_DEFAULT_PLAYLIST_URL";               // String
-  private static final String EXTRA_M3U_APPEND_PLAYLISTS                  = "M3U_APPEND_PLAYLISTS";                   // Boolean
-  private static final String EXTRA_M3U_MAP_CHANNEL_NAME_TO_ID            = "M3U_MAP_CHANNEL_NAME_TO_ID";             // String[]
-  private static final String EXTRA_M3U_MAP_CHANNEL_ID_TO_ID              = "M3U_MAP_CHANNEL_ID_TO_ID";               // String[]
-  private static final String EXTRA_M3U_CHANNEL_NAME_WHITELIST            = "M3U_CHANNEL_NAME_WHITELIST";             // String[]
-  private static final String EXTRA_M3U_CHANNEL_ID_WHITELIST              = "M3U_CHANNEL_ID_WHITELIST";               // String[]
-  private static final String EXTRA_M3U_CHANNEL_NAME_BLACKLIST            = "M3U_CHANNEL_NAME_BLACKLIST";             // String[]
-  private static final String EXTRA_M3U_CHANNEL_ID_BLACKLIST              = "M3U_CHANNEL_ID_BLACKLIST";               // String[]
-  private static final String EXTRA_M3U_MEDIA_URL_STATIC_STRINGS          = "M3U_MEDIA_URL_STATIC_STRINGS";           // String[]
-  private static final String EXTRA_EPG_DEFAULT_XMLTV_URL                 = "EPG_DEFAULT_XMLTV_URL";                  // String
-  private static final String EXTRA_EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL     = "EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL";      // Boolean
-  private static final String EXTRA_EPG_PARSE_LIST_IN_XMLTV_URL           = "EPG_PARSE_LIST_IN_XMLTV_URL";            // Boolean
-  private static final String EXTRA_EPG_PREFERRED_LANGUAGE                = "EPG_PREFERRED_LANGUAGE";                 // String
-  private static final String EXTRA_EPG_CHANNEL_M3U_WHITELIST             = "EPG_CHANNEL_M3U_WHITELIST";              // Boolean
-  private static final String EXTRA_EPG_CHANNEL_NAME_WHITELIST            = "EPG_CHANNEL_NAME_WHITELIST";             // String[]
-  private static final String EXTRA_EPG_CHANNEL_ID_WHITELIST              = "EPG_CHANNEL_ID_WHITELIST";               // String[]
-  private static final String EXTRA_EPG_CHANNEL_NAME_BLACKLIST            = "EPG_CHANNEL_NAME_BLACKLIST";             // String[]
-  private static final String EXTRA_EPG_CHANNEL_ID_BLACKLIST              = "EPG_CHANNEL_ID_BLACKLIST";               // String[]
-  private static final String EXTRA_SAVED_SEARCH_KEYWORDS_LIST            = "SAVED_SEARCH_KEYWORDS_LIST";             // String[]
+  private static final String EXTRA_SETTINGS_AUTO_SAVE                      = "SETTINGS_AUTO_SAVE";                       // Boolean
+  private static final String EXTRA_SETTINGS_AUTO_CLOSE                     = "SETTINGS_AUTO_CLOSE";                      // Boolean
+  private static final String EXTRA_SETTINGS_APPLY_STATIC_STRINGS           = "SETTINGS_APPLY_STATIC_STRINGS";            // Boolean
+  private static final String EXTRA_SEARCH_INPUT_DEBOUNCE_INTERVAL          = "SEARCH_INPUT_DEBOUNCE_INTERVAL";           // int
+  private static final String EXTRA_SEARCH_RESULTS_MAX_COUNT                = "SEARCH_RESULTS_MAX_COUNT";                 // int
+  private static final String EXTRA_SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES   = "SEARCH_RESULTS_REMOVE_DUPLICATE_NAMES";    // Boolean
+  private static final String EXTRA_M3U_DEFAULT_PLAYLIST_URL                = "M3U_DEFAULT_PLAYLIST_URL";                 // String
+  private static final String EXTRA_M3U_APPEND_PLAYLISTS                    = "M3U_APPEND_PLAYLISTS";                     // Boolean
+  private static final String EXTRA_M3U_MAP_CHANNEL_NAME_TO_ID              = "M3U_MAP_CHANNEL_NAME_TO_ID";               // String[]
+  private static final String EXTRA_M3U_MAP_CHANNEL_ID_TO_ID                = "M3U_MAP_CHANNEL_ID_TO_ID";                 // String[]
+  private static final String EXTRA_M3U_CHANNEL_NAME_WHITELIST              = "M3U_CHANNEL_NAME_WHITELIST";               // String[]
+  private static final String EXTRA_M3U_CHANNEL_ID_WHITELIST                = "M3U_CHANNEL_ID_WHITELIST";                 // String[]
+  private static final String EXTRA_M3U_CHANNEL_NAME_BLACKLIST              = "M3U_CHANNEL_NAME_BLACKLIST";               // String[]
+  private static final String EXTRA_M3U_CHANNEL_ID_BLACKLIST                = "M3U_CHANNEL_ID_BLACKLIST";                 // String[]
+  private static final String EXTRA_M3U_MEDIA_URL_STATIC_STRINGS            = "M3U_MEDIA_URL_STATIC_STRINGS";             // String[]
+  private static final String EXTRA_EPG_DEFAULT_XMLTV_URL                   = "EPG_DEFAULT_XMLTV_URL";                    // String
+  private static final String EXTRA_EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL       = "EPG_AUTO_UPDATE_DEFAULT_XMLTV_URL";        // Boolean
+  private static final String EXTRA_EPG_PARSE_LIST_IN_XMLTV_URL             = "EPG_PARSE_LIST_IN_XMLTV_URL";              // Boolean
+  private static final String EXTRA_EPG_IMPORT_ALL_LIST_VALUES_IN_XMLTV_URL = "EPG_IMPORT_ALL_LIST_VALUES_IN_XMLTV_URL";  // Boolean
+  private static final String EXTRA_EPG_PREFERRED_LANGUAGE                  = "EPG_PREFERRED_LANGUAGE";                   // String
+  private static final String EXTRA_EPG_CHANNEL_M3U_WHITELIST               = "EPG_CHANNEL_M3U_WHITELIST";                // Boolean
+  private static final String EXTRA_EPG_CHANNEL_NAME_WHITELIST              = "EPG_CHANNEL_NAME_WHITELIST";               // String[]
+  private static final String EXTRA_EPG_CHANNEL_ID_WHITELIST                = "EPG_CHANNEL_ID_WHITELIST";                 // String[]
+  private static final String EXTRA_EPG_CHANNEL_NAME_BLACKLIST              = "EPG_CHANNEL_NAME_BLACKLIST";               // String[]
+  private static final String EXTRA_EPG_CHANNEL_ID_BLACKLIST                = "EPG_CHANNEL_ID_BLACKLIST";                 // String[]
+  private static final String EXTRA_SAVED_SEARCH_KEYWORDS_LIST              = "SAVED_SEARCH_KEYWORDS_LIST";               // String[]
 
   private static Activity             self   = null;
   private static DbEditTextPreference dbPref = null;
@@ -266,6 +267,12 @@ public class SettingsActivity extends PreferenceActivity implements MySharedPref
       if (intent.hasExtra(EXTRA_EPG_PARSE_LIST_IN_XMLTV_URL)) {
         boolean value = intent.getBooleanExtra(EXTRA_EPG_PARSE_LIST_IN_XMLTV_URL, true);
         SettingsUtils.setParseListInXmltvEpgUrl(SettingsActivity.this, value);
+        didUpdate = true;
+      }
+
+      if (intent.hasExtra(EXTRA_EPG_IMPORT_ALL_LIST_VALUES_IN_XMLTV_URL)) {
+        boolean value = intent.getBooleanExtra(EXTRA_EPG_IMPORT_ALL_LIST_VALUES_IN_XMLTV_URL, true);
+        SettingsUtils.setImportAllListValuesInXmltvEpgUrl(SettingsActivity.this, value);
         didUpdate = true;
       }
 

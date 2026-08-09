@@ -318,6 +318,32 @@ public class SettingsUtils {
 
   // --------------------
 
+  public static boolean getImportAllListValuesInXmltvEpgUrl(Context context) {
+    return getImportAllListValuesInXmltvEpgUrl(context, getPrefs(context));
+  }
+
+  private static boolean getImportAllListValuesInXmltvEpgUrl(Context context, SharedPreferences prefs) {
+    String pref_key     = context.getString(R.string.pref_import_all_list_values_in_xmltv_url_key);
+    String pref_default = context.getString(R.string.pref_import_all_list_values_in_xmltv_url_default);
+    boolean val_default = "true".equals(pref_default);
+
+    return prefs.getBoolean(pref_key, val_default);
+  }
+
+  public static boolean setImportAllListValuesInXmltvEpgUrl(Context context, boolean value) {
+    SharedPreferences.Editor editor = getPrefsEditor(context);
+    setImportAllListValuesInXmltvEpgUrl(context, value, editor);
+    return editor.commit();
+  }
+
+  private static void setImportAllListValuesInXmltvEpgUrl(Context context, boolean value, SharedPreferences.Editor editor) {
+    String pref_key = context.getString(R.string.pref_import_all_list_values_in_xmltv_url_key);
+
+    editor.putBoolean(pref_key, value);
+  }
+
+  // --------------------
+
   public static String getPreferredXmltvLanguage(Context context) {
     return getPreferredXmltvLanguage(context, getPrefs(context));
   }

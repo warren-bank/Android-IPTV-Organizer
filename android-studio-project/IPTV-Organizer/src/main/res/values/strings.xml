@@ -188,6 +188,13 @@
   <string name="pref_parse_list_in_xmltv_url_summary_off">@string/disabled</string>
   <string translatable="false" name="pref_parse_list_in_xmltv_url_default">@string/value_true</string>
 
+  <!-- SettingsActivity [EPG Channels]: Import all URL values in token separated list -->
+  <string translatable="false" name="pref_import_all_list_values_in_xmltv_url_key">pref_import_all_list_values_in_xmltv_url</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_title">Import all URL values in token separated list</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Combine the EPG data from all sources</string>
+  <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Import the first working URL in list</string>
+  <string translatable="false" name="pref_import_all_list_values_in_xmltv_url_default">@string/value_false</string>
+
   <!-- SettingsActivity [EPG Channels]: Preferred language -->
   <string translatable="false" name="pref_preferred_xmltv_language_key">pref_preferred_xmltv_language</string>
   <string name="pref_preferred_xmltv_language_title">Preferred language</string>
