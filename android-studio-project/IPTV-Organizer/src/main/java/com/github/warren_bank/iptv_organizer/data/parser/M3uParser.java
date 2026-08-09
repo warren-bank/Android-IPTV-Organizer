@@ -1,9 +1,11 @@
 package com.github.warren_bank.iptv_organizer.data.parser;
 
+import com.github.warren_bank.iptv_organizer.App;
 import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.DataProgressListener;
 import com.github.warren_bank.iptv_organizer.data.filter.M3uFilter;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
+import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
 import android.util.Log;
 
@@ -17,6 +19,7 @@ public class M3uParser {
 
   public static List<ChannelListItem> parseM3u(InputStream inputStream, int firstPosition, DataProgressListener listener) throws Exception {
     ArrayList<ChannelListItem> channels = new ArrayList<ChannelListItem>();
+    boolean autoUpdateDefaultXmltvEpgUrl = SettingsUtils.getAutoUpdateDefaultXmltvEpgUrl(App.context);
     BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
     M3uFilter m3uFilter = new M3uFilter();
     int position = firstPosition;
@@ -27,6 +30,20 @@ public class M3uParser {
 
     while ((line = reader.readLine()) != null) {
       line = line.trim();
+      if (line.isEmpty()) continue;
+      if (autoUpdateDefaultXmltvEpgUrl) {
+        // only ever process first non-empty line
+        autoUpdateDefaultXmltvEpgUrl = false;
+
+        if (line.startsWith("#EXTM3U")) {
+          String xmltvEpgUrl = SimpleM3UParser.parseExtM3u(line);
+
+          if (xmltvEpgUrl != null)
+            SettingsUtils.setDefaultXmltvEpgUrlPreference(App.context, xmltvEpgUrl);
+
+          continue;
+        }
+      }
       if (line.startsWith("#EXTINF:")) {
         try {
           SimpleM3UParser.M3U_Entry curEntry = SimpleM3UParser.parseExtInf(line);
@@ -39,7 +56,7 @@ public class M3uParser {
         catch(Exception e) {
           Log.e(Constants.LOG_TAG, "Failed to parse M3U line: " + line);
         }
-      } else if (!line.isEmpty() && !line.startsWith("#")) {
+      } else if (!line.startsWith("#")) {
         // media URL
         if (currentName != null) {
           if (listener != null) listener.onData(currentName);
@@ -71,6 +88,56 @@ public class M3uParser {
   //   Unlicense <https://unlicense.org/>
   // ---------------------------------------------------------------------------
   private static class SimpleM3UParser {
+    private final static String EXTM3U_TAG = "#EXTM3U";
+    private final static String[] EXTM3U_TVG_URL_VARIATIONS = new String[]{
+      "x-tvg-url=\"",
+      "tvg-url=\"",
+      "tvg-epg=\"",
+      "tvg-epgurl=\"",
+      "tvg-epg-url=\"",
+      "epg-url=\"",
+      "url-epg=\"",
+      "url-tvg=\""
+    };
+
+    public static String parseExtM3u(String line) {
+      String xmltvEpgUrl = null;
+
+      if (line.length() < EXTM3U_TAG.length() + 1) {
+        return xmltvEpgUrl;
+      }
+
+      // Strip tag
+      line = line.substring(EXTM3U_TAG.length());
+
+      // tvg tags
+      String old = null;
+      processAllAttributeVariations:
+      while ((xmltvEpgUrl == null) && !line.isEmpty() && !line.equals(old)) {
+        old = line = line.trim();
+        for (String EXTM3U_TVG_URL : EXTM3U_TVG_URL_VARIATIONS) {
+          if (line.startsWith(EXTM3U_TVG_URL) && line.length() > EXTM3U_TVG_URL.length()) {
+            line = line.substring(EXTM3U_TVG_URL.length());
+            int i = line.indexOf("\"");
+            if (i > 0) xmltvEpgUrl = line.substring(0, i);
+            if (i >= 0) line = line.substring(i + 1);
+            continue processAllAttributeVariations;
+          }
+        }
+
+        // no attribute variation found
+        int i = line.indexOf("\"");
+        if (i >= 0) {
+          line = line.substring(i + 1);
+
+          i = line.indexOf("\"");
+          if (i >= 0) line = line.substring(i + 1);
+        }
+      }
+
+      return xmltvEpgUrl;
+    }
+
     private final static String EXTINF_TAG = "#EXTINF:";
     private final static String EXTINF_TVG_NAME = "tvg-name=\"";
     private final static String EXTINF_TVG_ID = "tvg-id=\"";
@@ -124,41 +191,46 @@ public class M3uParser {
         if (line.startsWith(EXTINF_TVG_NAME) && line.length() > EXTINF_TVG_NAME.length()) {
           line = line.substring(EXTINF_TVG_NAME.length());
           int i = line.indexOf("\"");
-          curEntry.tvgName = line.substring(0, i).replace("'", "");
-          line = line.substring(i + 1);
+          if (i > 0) curEntry.tvgName = line.substring(0, i).replace("'", "");
+          if (i >= 0) line = line.substring(i + 1);
         } else if (line.startsWith(EXTINF_TVG_LOGO) && line.length() > EXTINF_TVG_LOGO.length()) {
           line = line.substring(EXTINF_TVG_LOGO.length());
           int i = line.indexOf("\"");
-          curEntry.tvgLogo = line.substring(0, i);
-          line = line.substring(i + 1);
+          if (i > 0) curEntry.tvgLogo = line.substring(0, i);
+          if (i >= 0) line = line.substring(i + 1);
         } else if (line.startsWith(EXTINF_TVG_EPGURL) && line.length() > EXTINF_TVG_EPGURL.length()) {
           line = line.substring(EXTINF_TVG_EPGURL.length());
           int i = line.indexOf("\"");
-          curEntry.tvgEpgUrl = line.substring(0, i);
-          line = line.substring(i + 1);
+          if (i > 0) curEntry.tvgEpgUrl = line.substring(0, i);
+          if (i >= 0) line = line.substring(i + 1);
         } else if (line.startsWith(EXTINF_RADIO) && line.length() > EXTINF_RADIO.length()) {
           line = line.substring(EXTINF_RADIO.length());
           int i = line.indexOf("\"");
-          curEntry.isRadio = Boolean.parseBoolean(line.substring(0, i));
-          line = line.substring(i + 1);
+          if (i > 0) curEntry.isRadio = Boolean.parseBoolean(line.substring(0, i));
+          if (i >= 0) line = line.substring(i + 1);
         } else if (line.startsWith(EXTINF_GROUP_TITLE) && line.length() > EXTINF_GROUP_TITLE.length()) {
           line = line.substring(EXTINF_GROUP_TITLE.length());
           int i = line.indexOf("\"");
-          curEntry.groupTitle = line.substring(0, i);
-          line = line.substring(i + 1);
+          if (i > 0) curEntry.groupTitle = line.substring(0, i);
+          if (i >= 0) line = line.substring(i + 1);
         } else if (line.startsWith(EXTINF_TVG_ID) && line.length() > EXTINF_TVG_ID.length()) {
           line = line.substring(EXTINF_TVG_ID.length());
           int i = line.indexOf("\"");
-          curEntry.tvgId = line.substring(0, i);
-          line = line.substring(i + 1);
+          if (i > 0) curEntry.tvgId = line.substring(0, i);
+          if (i >= 0) line = line.substring(i + 1);
         } else if (line.startsWith(EXTINF_TAGS) && line.length() > EXTINF_TAGS.length()) {
           line = line.substring(EXTINF_TAGS.length());
           int i = line.indexOf("\"");
-          curEntry.tags = line.substring(0, i).split(",");
-          line = line.substring(i + 1);
+          if (i > 0) curEntry.tags = line.substring(0, i).split(",");
+          if (i >= 0) line = line.substring(i + 1);
         } else {
-          line = line.substring(line.indexOf("\"") + 1);
-          line = line.substring(line.indexOf("\"") + 1);
+          int i = line.indexOf("\"");
+          if (i >= 0) {
+            line = line.substring(i + 1);
+
+            i = line.indexOf("\"");
+            if (i >= 0) line = line.substring(i + 1);
+          }
         }
       }
 
