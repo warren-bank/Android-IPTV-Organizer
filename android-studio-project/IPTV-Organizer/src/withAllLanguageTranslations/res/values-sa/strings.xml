@@ -7,6 +7,7 @@
   <string name="add">योजयतु</string>
   <string name="cancel">रद्दीकरणम्</string>
   <string name="close">अवरोधय</string>
+  <string name="disabled">विकलांगः</string>
   <string name="enter_url">प्रवेशयतु URL</string>
   <string name="exit">निर्गमनम्</string>
   <string name="export_file">निर्यातपत्रिका</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">प्रतिपङ्क्तौ एकः मानः.</string>
   <string name="pref_default_xmltv_url_title">पूर्वनिर्धारितम् XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">प्रारम्भिक मूल्ये \"आयातः XMLTV EPG URL\" संवादः.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">स्वयमेव अद्यतनं कुरु \"पूर्वनिर्धारितम् XMLTV EPG URL\" आयातित M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >यदि लभ्यते तर्हि मानं रक्षतु। \"x-tvg-url\" वा \"url-tvg\" परिमाणम् अन्तर्गतम् \"#EXTM3U\" सञ्चिका शीर्षक निर्देशः</string>
+  <string name="pref_parse_list_in_xmltv_url_title">टोकनैः विभक्तां सूचीं अन्तर्भाष्यतु XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >मूल्यं विश्लेषयतु \"आयातः XMLTV EPG URL\" संवादः। प्रथमं कार्यम् आयातय। URL सूच्याम्.</string>
   <string name="pref_preferred_xmltv_language_title">पसंदीदा भाषा</string>
   <string name="pref_preferred_xmltv_language_summary">शीर्षकानि च विवरणानि च एकस्य सहितं प्राथमिकतां ददातु। \"lang\" एतत् यथार्थं मानं युक्तं गुणविशेषः.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">द्वारा छानय M3U वाहिन्यः</string>

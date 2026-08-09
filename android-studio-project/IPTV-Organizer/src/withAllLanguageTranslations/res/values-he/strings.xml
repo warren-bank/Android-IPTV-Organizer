@@ -7,6 +7,7 @@
   <string name="add">הוסף</string>
   <string name="cancel">ביטול</string>
   <string name="close">סגור</string>
+  <string name="disabled">מוגבלים</string>
   <string name="enter_url">הזן URL</string>
   <string name="exit">יציאה</string>
   <string name="export_file">ייצא קובץ</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ערך אחד בכל שורה.</string>
   <string name="pref_default_xmltv_url_title">ברירת מחדל XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">הערך ההתחלתי ב- \"ייבוא XMLTV EPG URL\" דיאלוג.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">עדכון אוטומטי \"ברירת מחדל XMLTV EPG URL\" מיבוא M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >אם נמצא, שמור את הערך של \"x-tvg-url\" או \"url-tvg\" פרמטר ב- \"#EXTM3U\" הוראת כותרת קובץ</string>
+  <string name="pref_parse_list_in_xmltv_url_title">לנתח רשימה המופרדת באמצעות תווים ב- XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >לנתח את הערך ב- \"ייבוא XMLTV EPG URL\" תיבת דו-שיח. ייבוא הגרסה הראשונה שעובדת URL ברשימה.</string>
   <string name="pref_preferred_xmltv_language_title">שפה מועדפת</string>
   <string name="pref_preferred_xmltv_language_summary">קבעו סדר עדיפויות לכותרות ולתיאורים באמצעות \"lang\" תכונה בעלת הערך המדויק הזה.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">סינון לפי M3U ערוצים</string>

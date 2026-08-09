@@ -7,6 +7,7 @@
   <string name="add">Přidat</string>
   <string name="cancel">Zrušit</string>
   <string name="close">Zavřít</string>
+  <string name="disabled">Znevýhodnění</string>
   <string name="enter_url">Zadejte URL</string>
   <string name="exit">Konec</string>
   <string name="export_file">Exportovat soubor</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Jedna hodnota na řádek.</string>
   <string name="pref_default_xmltv_url_title">Výchozí XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Počáteční hodnota v \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Automatická aktualizace \"Výchozí nastavení XMLTV EPG URL\" z importovaných M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Pokud se najde, uložte hodnotu \"x-tvg-url\" nebo \"url-tvg\" parametr v \"#EXTM3U\" direktiva záhlaví souboru</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Analyzovat seznam oddělený oddělovači v XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analyzovat hodnotu v \"Import XMLTV EPG URL\" dialog. Importovat první funkční URL v seznamu.</string>
   <string name="pref_preferred_xmltv_language_title">Preferovaný jazyk</string>
   <string name="pref_preferred_xmltv_language_summary">Seřaďte názvy a popisy podle priority pomocí \"lang\" atribut s přesně touto hodnotou.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrovat podle M3U kanály</string>

@@ -7,6 +7,7 @@
   <string name="add">Hinzufügen</string>
   <string name="cancel">Abbrechen</string>
   <string name="close">Schliessen</string>
+  <string name="disabled">Deaktiviert</string>
   <string name="enter_url">Eingabe URL</string>
   <string name="exit">Beenden</string>
   <string name="export_file">Datei exportieren</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Ein Wert pro Zeile.</string>
   <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Anfangswert in \"Importieren XMLTV EPG URL\" Dialog.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Automatisch aktualisieren \"Standard XMLTV EPG URL\" aus importiert M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Falls gefunden, Wert von speichern \"x-tvg-url\" oder \"url-tvg\" Parameter in \"#EXTM3U\" Dateikopf-Anweisung</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Eine durch Trennzeichen getrennte Liste in XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Wert in \"Importieren XMLTV EPG URL\" Dialogfeld. Erstes Arbeitsbeispiel importieren URL in der Liste.</string>
   <string name="pref_preferred_xmltv_language_title">Bevorzugte Sprache</string>
   <string name="pref_preferred_xmltv_language_summary">Priorisieren Sie Titel und Beschreibungen mit einem \"lang\" Attribut mit genau diesem Wert.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Nach filtern M3U Kanäle</string>

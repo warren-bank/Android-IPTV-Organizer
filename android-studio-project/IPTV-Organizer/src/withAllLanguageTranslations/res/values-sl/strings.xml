@@ -7,6 +7,7 @@
   <string name="add">Dodaj</string>
   <string name="cancel">Prekliči</string>
   <string name="close">Zapri</string>
+  <string name="disabled">Invalidi</string>
   <string name="enter_url">Vnesite URL</string>
   <string name="exit">Izhod</string>
   <string name="export_file">Izvoz datoteke</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Ena vrednost na vrstico.</string>
   <string name="pref_default_xmltv_url_title">Privzeto XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Začetna vrednost v \"Uvoz XMLTV EPG URL\" pogovor.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Samodejna posodobitev \"Privzeto XMLTV EPG URL\" iz uvoženega M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Če se najde, shranite vrednost \"x-tvg-url\" ali \"url-tvg\" parameter v \"#EXTM3U\" direktiva za glavo datoteke</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Parsiranje seznama, ločenega z ločilnimi znaki, v XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Parsiranje vrednosti v \"Uvoz XMLTV EPG URL\" pogovorno okno. Uvozi prvo delovno URL v seznamu.</string>
   <string name="pref_preferred_xmltv_language_title">Želeni jezik</string>
   <string name="pref_preferred_xmltv_language_summary">Naslove in opise razvrstite po pomembnosti z \"lang\" atribut s točno to vrednostjo.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtriraj po M3U kanali</string>

@@ -7,6 +7,7 @@
   <string name="add">Goş</string>
   <string name="cancel">Bygatlamak</string>
   <string name="close">Ýap</string>
+  <string name="disabled">Maýyp</string>
   <string name="enter_url">Girmek URL</string>
   <string name="exit">Çykmak</string>
   <string name="export_file">Faýly eksport etmek</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Her setirde bir gymmat.</string>
   <string name="pref_default_xmltv_url_title">Öňünden kesgitlenen XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Başlangyç gymmaty \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Awtomatik täzeläp durmak \"Öňünden kesgitlenen XMLTV EPG URL\" import edilen M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Tapylsa, gymmatyny sakla \"x-tvg-url\" ýa-da \"url-tvg\" parametrde \"#EXTM3U\" Faýl başlyk görkezmesi</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Tokenler bilen bölünip berlen sanawy işläp çykmak XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Degerini parse ediň \"Import XMLTV EPG URL\" dialog. Ilkinji işi import ediň URL Sanawda.</string>
   <string name="pref_preferred_xmltv_language_title">Artyk görlen dil</string>
   <string name="pref_preferred_xmltv_language_summary">Başlyklar we düşündirişler üçin birine üstünlük beriň \"lang\" Takyk şu gymmatlyga eýe häsiýet.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Boýunça süzüň M3U kanallar</string>

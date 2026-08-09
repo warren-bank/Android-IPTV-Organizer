@@ -7,6 +7,7 @@
   <string name="add">新增</string>
   <string name="cancel">取消</string>
   <string name="close">關閉</string>
+  <string name="disabled">已停用</string>
   <string name="enter_url">輸入 URL</string>
   <string name="exit">退出</string>
   <string name="export_file">匯出檔案</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">每行一個數值.</string>
   <string name="pref_default_xmltv_url_title">預設 XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">初始值在 \"匯入 XMLTV EPG URL\" 對話框.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">自動更新 \"預設 XMLTV EPG URL\" 來自進口 M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >若找到，請儲存該值 \"x-tvg-url\" 或 \"url-tvg\" 參數在 \"#EXTM3U\" 檔案標頭指令</string>
+  <string name="pref_parse_list_in_xmltv_url_title">解析以分隔符分隔的清單，位於 XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >解析值 \"匯入 XMLTV EPG URL\" 對話框。匯入第一個可運作的 URL 在清單中.</string>
   <string name="pref_preferred_xmltv_language_title">首選語言</string>
   <string name="pref_preferred_xmltv_language_summary">使用 \"lang\" 具有此精確值的屬性.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">依...篩選 M3U 頻道</string>

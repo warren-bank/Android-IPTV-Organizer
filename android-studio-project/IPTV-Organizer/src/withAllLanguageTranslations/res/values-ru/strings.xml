@@ -7,6 +7,7 @@
   <string name="add">Добавить</string>
   <string name="cancel">Отменить</string>
   <string name="close">Закрыть</string>
+  <string name="disabled">С ограниченными возможностями</string>
   <string name="enter_url">Ввести URL</string>
   <string name="exit">Выход</string>
   <string name="export_file">Экспорт файла</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Одно значение в каждой строке.</string>
   <string name="pref_default_xmltv_url_title">По умолчанию XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Начальное значение в \"Импорт XMLTV EPG URL\" диалог.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Автоматическое обновление \"По умолчанию XMLTV EPG URL\" из импортированных M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Если найдено, сохраните значение \"x-tvg-url\" или \"url-tvg\" параметр в \"#EXTM3U\" директива заголовка файла</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Разбор списка, разделенного разделителями, в XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Обработать значение в \"Импорт XMLTV EPG URL\" диалог. Импорт первого рабочего URL в списке.</string>
   <string name="pref_preferred_xmltv_language_title">Предпочтительный язык</string>
   <string name="pref_preferred_xmltv_language_summary">Укажите приоритет названий и описаний с помощью \"lang\" атрибут, имеющий именно это значение.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Фильтровать по M3U каналы</string>

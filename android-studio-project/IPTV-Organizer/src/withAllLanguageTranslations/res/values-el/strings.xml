@@ -7,6 +7,7 @@
   <string name="add">Προσθήκη</string>
   <string name="cancel">Ακύρωση</string>
   <string name="close">Κλείσιμο</string>
+  <string name="disabled">Άτομα με αναπηρία</string>
   <string name="enter_url">Εισαγωγή URL</string>
   <string name="exit">Έξοδος</string>
   <string name="export_file">Εξαγωγή αρχείου</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Μία τιμή ανά γραμμή.</string>
   <string name="pref_default_xmltv_url_title">Προεπιλογή XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Αρχική τιμή σε \"Εισαγωγή XMLTV EPG URL\" διάλογος.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Αυτόματη ενημέρωση \"Προεπιλογή XMLTV EPG URL\" από εισαγόμενα M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Εάν βρεθεί, αποθηκεύστε την τιμή του \"x-tvg-url\" ή \"url-tvg\" παράμετρος στο \"#EXTM3U\" οδηγία κεφαλίδας αρχείου</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Ανάλυση λίστας με διαχωριστικά σε XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Ανάλυση τιμής στο \"Εισαγωγή XMLTV EPG URL\" διάλογος. Εισαγωγή πρώτης λειτουργικής URL στη λίστα.</string>
   <string name="pref_preferred_xmltv_language_title">Προτιμώμενη γλώσσα</string>
   <string name="pref_preferred_xmltv_language_summary">Προτεραιοποιήστε τους τίτλους και τις περιγραφές με ένα \"lang\" χαρακτηριστικό που έχει ακριβώς αυτή την τιμή.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Φιλτράρισμα κατά M3U κανάλια</string>

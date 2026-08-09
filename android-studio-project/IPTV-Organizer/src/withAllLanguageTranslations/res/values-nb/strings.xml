@@ -7,6 +7,7 @@
   <string name="add">Legg til</string>
   <string name="cancel">Avbryt</string>
   <string name="close">Lukk</string>
+  <string name="disabled">Funksjonshemmet</string>
   <string name="enter_url">Trykk Enter URL</string>
   <string name="exit">Avslutt</string>
   <string name="export_file">Eksporter fil</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Én verdi per linje.</string>
   <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Startverdi i \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Oppdater automatisk \"Standard XMLTV EPG URL\" fra importert M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Hvis den blir funnet, lagre verdien av \"x-tvg-url\" eller \"url-tvg\" parameter i \"#EXTM3U\" filhode-direktiv</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Analysere en liste med token-separerte elementer i XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analyser verdien i \"Import XMLTV EPG URL\" dialog. Importer første fungerende URL i listen.</string>
   <string name="pref_preferred_xmltv_language_title">Foretrukket språk</string>
   <string name="pref_preferred_xmltv_language_summary">Prioriter titler og beskrivelser med en \"lang\" attributt med akkurat denne verdien.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrer etter M3U kanaler</string>

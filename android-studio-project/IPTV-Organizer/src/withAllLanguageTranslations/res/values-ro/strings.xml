@@ -7,6 +7,7 @@
   <string name="add">Adăugare</string>
   <string name="cancel">Anulează</string>
   <string name="close">Închide</string>
+  <string name="disabled">Persoane cu dizabilități</string>
   <string name="enter_url">Introduceți URL</string>
   <string name="exit">Ieșire</string>
   <string name="export_file">Exportare fișier</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">O singură valoare pe rând.</string>
   <string name="pref_default_xmltv_url_title">Implicit XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valoarea inițială în \"Import XMLTV EPG URL\" dialog.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Actualizare automată \"Implicit XMLTV EPG URL\" din import M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Dacă se găsește, salvați valoarea lui \"x-tvg-url\" sau \"url-tvg\" parametrul din \"#EXTM3U\" directivă de antet de fișier</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Analizează lista separată prin tokeni în XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analizează valoarea din \"Import XMLTV EPG URL\" fereastră de dialog. Importați prima versiune funcțională URL în listă.</string>
   <string name="pref_preferred_xmltv_language_title">Limba preferată</string>
   <string name="pref_preferred_xmltv_language_summary">Stabiliți ordinea de prioritate a titlurilor și descrierilor folosind un \"lang\" atribut care are exact această valoare.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtrează după M3U canale</string>

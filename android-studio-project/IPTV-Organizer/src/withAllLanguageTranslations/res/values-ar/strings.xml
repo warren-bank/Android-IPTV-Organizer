@@ -7,6 +7,7 @@
   <string name="add">إضافة</string>
   <string name="cancel">إلغاء</string>
   <string name="close">إغلاق</string>
+  <string name="disabled">ذوو الإعاقة</string>
   <string name="enter_url">أدخل URL</string>
   <string name="exit">خروج</string>
   <string name="export_file">تصدير الملف</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">قيمة واحدة في كل سطر.</string>
   <string name="pref_default_xmltv_url_title">الافتراضي XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">القيمة الأولية في \"استيراد XMLTV EPG URL\" حوار.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">التحديث التلقائي \"الافتراضي XMLTV EPG URL\" من المستورد M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >في حالة العثور عليه، احفظ قيمة \"x-tvg-url\" أو \"url-tvg\" المعلمة في \"#EXTM3U\" توجيه رأس الملف</string>
+  <string name="pref_parse_list_in_xmltv_url_title">تحليل قائمة مفصولة برموز في XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >تحليل القيمة في \"استيراد XMLTV EPG URL\" حوار. استيراد أول نسخة صالحة للعمل URL في القائمة.</string>
   <string name="pref_preferred_xmltv_language_title">اللغة المفضلة</string>
   <string name="pref_preferred_xmltv_language_summary">حدد أولوية العناوين والأوصاف باستخدام \"lang\" السمة التي لها هذه القيمة بالضبط.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">التصفية حسب M3U القنوات</string>

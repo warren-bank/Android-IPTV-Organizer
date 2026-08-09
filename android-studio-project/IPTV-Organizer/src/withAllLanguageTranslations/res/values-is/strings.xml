@@ -7,6 +7,7 @@
   <string name="add">Bæta við</string>
   <string name="cancel">Hætta</string>
   <string name="close">Hafa lokað</string>
+  <string name="disabled">Hömlusamur</string>
   <string name="enter_url">Sláðu inn URL</string>
   <string name="exit">Útgangur</string>
   <string name="export_file">Exporta skrá</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Eitt gildi á línu.</string>
   <string name="pref_default_xmltv_url_title">Sjálfgefið XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Upphafleg gildi í \"Innflutningur XMLTV EPG URL\" Skilaboðargluggi.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Uppfæra sjálfkrafa \"Sjálfgefið XMLTV EPG URL\" frá fluttu M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ef fundið er, vista gildi af \"x-tvg-url\" eða \"url-tvg\" breytur í \"#EXTM3U\" Skjálausnarleiðbeining í skráarhausi</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Greina táknskilnaða lista í XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Greina gildi í \"Innflutningur XMLTV EPG URL\" Skýrslugluggur. Innflutningur fyrsta vinnu URL í lista.</string>
   <string name="pref_preferred_xmltv_language_title">Valið tungumál</string>
   <string name="pref_preferred_xmltv_language_summary">Forgangsraðið titla og lýsingar með a \"lang\" eiginleiki sem hefur þetta nákvæma gildi.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Sía eftir M3U rásir</string>

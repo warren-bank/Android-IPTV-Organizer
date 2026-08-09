@@ -7,6 +7,7 @@
   <string name="add">derbäisetzen</string>
   <string name="cancel">Ofsoen</string>
   <string name="close">Zoumaachen</string>
+  <string name="disabled">Behënnert</string>
   <string name="enter_url">Gitt eran URL</string>
   <string name="exit">Ausgang</string>
   <string name="export_file">Exportdatei</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Eng Wäert pro Zeil.</string>
   <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Initialwäert an \"Importéieren XMLTV EPG URL\" Dialog.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Automatesch aktualiséieren \"Standard XMLTV EPG URL\" aus importéiert M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Wann et fonnt gëtt, späichert de Wäert vun \"x-tvg-url\" oder \"url-tvg\" Parameter an \"#EXTM3U\" Datei-Kapp-Direktiv</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Parse d\'Token-getrennte Lëscht an XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Wäert an Parséieren \"Importéieren XMLTV EPG URL\" Dialog. Importéiert déi éischt Aarbecht. URL an der Lëscht.</string>
   <string name="pref_preferred_xmltv_language_title">Virgezunn Sprooch</string>
   <string name="pref_preferred_xmltv_language_summary">Prioritéiert Titelen a Beschreiwungen mat engem \"lang\" Eegeschaft mat dësem exakten Wäert.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filteren no M3U Kanäl</string>

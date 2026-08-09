@@ -7,6 +7,7 @@
   <string name="add">ചേർക്കുക</string>
   <string name="cancel">റദ്ദാക്കുക</string>
   <string name="close">അടയ്ക്കുക</string>
+  <string name="disabled">വികലാംഗൻ</string>
   <string name="enter_url">പ്രവേശിക്കുക URL</string>
   <string name="exit">പുറത്തുകടക്കുക</string>
   <string name="export_file">എക്സ്പോർട്ട് ഫയൽ</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">ഓരോ വരിയിലും ഒരു മൂല്യം.</string>
   <string name="pref_default_xmltv_url_title">നിലവിലുള്ള XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">പ്രാരംഭ മൂല്യം \"ഇറക്കുമതി XMLTV EPG URL\" സംഭാഷണം.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">സ്വയമേവ അപ്ഡേറ്റ് ചെയ്യുക \"നിലവിലുള്ള XMLTV EPG URL\" ഇറക്കുമതി ചെയ്ത M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >കണ്ടെത്തിയാൽ, മൂല്യം സേവ് ചെയ്യുക \"x-tvg-url\" അല്ലെങ്കിൽ \"url-tvg\" പാരാമീറ്റർ ഇൻ \"#EXTM3U\" ഫയൽ ഹെഡർ നിർദ്ദേശം</string>
+  <string name="pref_parse_list_in_xmltv_url_title">ടോക്കൺ ഉപയോഗിച്ച് വേർതിരിച്ച ലിസ്റ്റ് പാർസ് ചെയ്യുക XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >വില പാർസ് ചെയ്യുക \"ഇറക്കുമതി XMLTV EPG URL\" സംഭാഷണം. ആദ്യം പ്രവർത്തിക്കുന്നത് ഇറക്കുമതി ചെയ്യുക URL ലിസ്റ്റിൽ.</string>
   <string name="pref_preferred_xmltv_language_title">ഇഷ്ടപ്പെട്ട ഭാഷ</string>
   <string name="pref_preferred_xmltv_language_summary">ശീർഷകങ്ങളും വിവരണങ്ങളും ഒരു ... ഉപയോഗിച്ച് മുൻഗണിക്കുക \"lang\" ഈ കൃത്യമായ മൂല്യമുള്ള ആട്രിബ്യൂട്ട്.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">ഇതുവഴി ഫിൽട്ടർ ചെയ്യുക M3U ചാനലുകൾ</string>

@@ -7,6 +7,7 @@
   <string name="add">Ավելացնել</string>
   <string name="cancel">Չեղարկել</string>
   <string name="close">Փակել</string>
+  <string name="disabled">Հաշմանդամ</string>
   <string name="enter_url">Մուտք գործել URL</string>
   <string name="exit">Ելք</string>
   <string name="export_file">Ֆայլի արտահանման</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Յուրաքանչյուր տողում մեկ արժեք.</string>
   <string name="pref_default_xmltv_url_title">Ստանդարտ XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Սկզբնական արժեքը ներսում \"Իմպորտ XMLTV EPG URL\" զրույց.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Ավտոմատ թարմացնել \"Ստանդարտ XMLTV EPG URL\" ներմուծվածից M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Եթե հայտնաբերվի, պահպանել արժեքը \"x-tvg-url\" կամ \"url-tvg\" պարամետր ներսում \"#EXTM3U\" ֆայլի վերնագրային հրահանգ</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Տոկեններով բաժանված ցուցակը վերլուծել XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Արժեքը վերծել \"Իմպորտ XMLTV EPG URL\" դիալոգ։ Ներմուծել առաջին աշխատանքը URL ցուցակում.</string>
   <string name="pref_preferred_xmltv_language_title">Նախընտրելի լեզու</string>
   <string name="pref_preferred_xmltv_language_summary">Առաջնահերթեք վերնագրերն ու նկարագրությունները a-ով \"lang\" այս ճշգրիտ արժեքը ունեցող հատկանիշ.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Ըստ զտիչի M3U ալիքներ</string>

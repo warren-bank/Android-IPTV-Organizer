@@ -7,6 +7,7 @@
   <string name="add">ထည့်ပါ</string>
   <string name="cancel">ဖျက်ရန်</string>
   <string name="close">ပိတ်</string>
+  <string name="disabled">မသန်စွမ်းသူ</string>
   <string name="enter_url">ထည့်ပါ URL</string>
   <string name="exit">ထွက်ရန်</string>
   <string name="export_file">ဖိုင်ကို ထုတ်ပို့ပါ</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">တစ်ကြောင်းလျှင် တန်ဖိုးတစ်ခု.</string>
   <string name="pref_default_xmltv_url_title">မူလတန်ဖိုး XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">အစပိုင်းတန်ဖိုးကို ထည့်ပါ \"တင်သွင်း XMLTV EPG URL\" ဆွေးနွေးချက်.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">အလိုအလျောက် အပ်ဒိတ်လုပ် \"မူလတန်ဖိုး XMLTV EPG URL\" တင်သွင်းမှ M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >တွေ့ပါက တန်ဖိုးကို သိမ်းပါ။ \"x-tvg-url\" သို့မဟုတ် \"url-tvg\" အတွင်းရှိ ပါရာမီတာ \"#EXTM3U\" ဖိုင်ခေါင်းစဉ်ညွှန်ကြားချက်</string>
+  <string name="pref_parse_list_in_xmltv_url_title">token ဖြင့် ခွဲထားသော စာရင်းကို XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >တန်ဖိုးကို အတွင်းတွင် ခွဲခြမ်းစိတ်ဖြာပါ။ \"တင်သွင်း XMLTV EPG URL\" ဒိုင်ယာလော့ဂ်။ ပထမဆုံး အလုပ်ကို တင်သွင်းပါ။ URL စာရင်းတွင်.</string>
   <string name="pref_preferred_xmltv_language_title">နှစ်သက်ရာဘာသာစကား</string>
   <string name="pref_preferred_xmltv_language_summary">ခေါင်းစဉ်များနှင့် ဖော်ပြချက်များကို အတူတကွ ဦးစားပေးပါ။ \"lang\" ဤ တိကျသော တန်ဖိုးရှိသော အင်္ဂါရပ်.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">ဖြင့် စစ်ထုတ်ပါ M3U ချန်နယ်များ</string>

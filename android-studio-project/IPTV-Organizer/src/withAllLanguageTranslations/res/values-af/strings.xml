@@ -7,6 +7,7 @@
   <string name="add">Voeg by</string>
   <string name="cancel">Kanselleer</string>
   <string name="close">Sluit</string>
+  <string name="disabled">Gestremd</string>
   <string name="enter_url">Gaan in URL</string>
   <string name="exit">Uitstek</string>
   <string name="export_file">Eksporteer lêer</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Een waarde per reël.</string>
   <string name="pref_default_xmltv_url_title">Standaard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Inisiale waarde in \"Invoer XMLTV EPG URL\" dialoog.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Outomaties opdateer \"Standaard XMLTV EPG URL\" van ingevoer M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Indien gevind, stoof die waarde van \"x-tvg-url\" or \"url-tvg\" parameter in \"#EXTM3U\" lêer-opskrif-instruksie</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Ontleed \'n token-geskeide lys in XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Ontleed waarde in \"Invoer XMLTV EPG URL\" dialoog. Voer eers die werk in URL in lys.</string>
   <string name="pref_preferred_xmltv_language_title">Voorkeurtaal</string>
   <string name="pref_preferred_xmltv_language_summary">Gee titels en beskrywings prioriteit met \'n \"lang\" eienskap met hierdie presiese waarde.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Filtreer op grond van M3U kanale</string>

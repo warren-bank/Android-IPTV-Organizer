@@ -7,6 +7,7 @@
   <string name="add">Tambahake</string>
   <string name="cancel">Batal</string>
   <string name="close">Tutup</string>
+  <string name="disabled">Cacat</string>
   <string name="enter_url">Mlebu URL</string>
   <string name="exit">Metu</string>
   <string name="export_file">Ekspor Berkas</string>
@@ -61,6 +62,10 @@
   <string name="pref_m3u_channels_media_url_static_values_summary">Siji nilai saben baris.</string>
   <string name="pref_default_xmltv_url_title">Standar XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Nilai awal ing \"Impor XMLTV EPG URL\" obrolan.</string>
+  <string name="pref_auto_update_default_xmltv_url_title">Nganyari kanthi otomatis \"Standar XMLTV EPG URL\" saka sing diimpor M3U</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Yen ditemokake, simpen nilaine \"x-tvg-url\" utawa \"url-tvg\" parameter ing \"#EXTM3U\" direktif header file</string>
+  <string name="pref_parse_list_in_xmltv_url_title">Mapar dhaptar sing dipisahake nganggo token ing XMLTV EPG URL</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Nggolongaké nilai ing \"Impor XMLTV EPG URL\" dialog. Impor pisanan sing digunakake URL ing dhaptar.</string>
   <string name="pref_preferred_xmltv_language_title">Basa sing disenengi</string>
   <string name="pref_preferred_xmltv_language_summary">Prioritasake judhul lan katrangan nganggo a \"lang\" atribut sing duwé nilai iki persis.</string>
   <string name="pref_epg_channels_filter_whitelist_m3u_title">Nyaring miturut M3U saluran</string>
