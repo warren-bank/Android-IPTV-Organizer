@@ -186,10 +186,12 @@ public class DbGateway {
       }
 
       if ((channels != null) && !channels.isEmpty()) {
-        List<ChannelListItem> pendingDeletion = new ArrayList<ChannelListItem>();
+        List<Integer> pendingDeletion = new ArrayList<Integer>();
+        ChannelListItem channel;
         long rowId;
 
-        for (ChannelListItem channel : channels) {
+        for (int i=0; i < channels.size(); i++) {
+          channel = channels.get(i);
           if (channel == null) continue;
 
           if (listener != null) listener.onData(channel.name);
@@ -204,12 +206,14 @@ public class DbGateway {
           rowId = insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels", null, cvals);
           cvals = null;
 
-          if (rowId == -1L) pendingDeletion.add(channel);
+          if (rowId == -1L) pendingDeletion.add(i);
         }
 
         if (!pendingDeletion.isEmpty()) {
-          for (ChannelListItem channel : pendingDeletion) {
-            channels.remove(channel);
+          for (int i = (pendingDeletion.size() - 1); i >= 0; i--) {
+            channels.remove(
+              (int) pendingDeletion.get(i)
+            );
           }
           pendingDeletion.clear();
         }
@@ -274,9 +278,11 @@ public class DbGateway {
             continue;
           }
 
-          List<EPGEvent> eventsPendingDeletion = new ArrayList<EPGEvent>();
+          List<Integer> eventsPendingDeletion = new ArrayList<Integer>();
+          EPGEvent program;
 
-          for (EPGEvent program : programs) {
+          for (int i=0; i < programs.size(); i++) {
+            program = programs.get(i);
             if (program == null) continue;
 
             cvals = new ContentValues();
@@ -289,12 +295,14 @@ public class DbGateway {
             rowId = insertOrThrowUnlessConstraintViolated(dbase, "xmltv_programs", null, cvals);
             cvals = null;
 
-            if (rowId == -1L) eventsPendingDeletion.add(program);
+            if (rowId == -1L) eventsPendingDeletion.add(i);
           }
 
           if (!eventsPendingDeletion.isEmpty()) {
-            for (EPGEvent program : eventsPendingDeletion) {
-              programs.remove(program);
+            for (int i = (eventsPendingDeletion.size() - 1); i >= 0; i--) {
+              programs.remove(
+                (int) eventsPendingDeletion.get(i)
+              );
             }
             eventsPendingDeletion.clear();
           }
