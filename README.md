@@ -4,19 +4,30 @@ Android app that organizes IPTV channel and EPG information.
 
 #### Features
 
-* M3U (IPTV channels) and XMLTV (EPG) files can be imported from either a network URL or the local filesystem
-  - supports GZIP compression
+* M3U (IPTV channels) and XMLTV (EPG) files&hellip;
+  - can be imported from:
+    * a network URL
+    * the local filesystem
+  - can support:
+    * GZIP compression
 * during import&hellip;
   - M3U (IPTV channels) data can&hellip;
-    * assign a new channel ID value based on the channel name
-    * assign a new channel ID value based on the channel ID
-    * determine whether to save (or discard) channels by whitelist and blacklist filters:
+    * assign a new channel ID value, based on the:
       1. channel name
       2. channel ID
-         - after all remapping assignments have occurred
+    * determine whether to save (or discard) channels by:
+      - whitelist and blacklist filters:
+        1. channel name
+        2. channel ID
+           - after all remapping assignments have occurred
+    * rewrite media URL values to a template format
   - XMLTV (EPG) data can&hellip;
-    * determine whether to save (or discard) channels by the existence of a matching M3U (IPTV channel)
-      - where matching is based on the equality of either of the fields:
+    * determine whether to save (or discard) channels by:
+      - the existence of a matching M3U (IPTV channel)
+        * where matching is based on the equality of either of the fields:
+          1. channel name
+          2. channel ID
+      - whitelist and blacklist filters:
         1. channel name
         2. channel ID
 * during display&hellip;
@@ -25,10 +36,18 @@ Android app that organizes IPTV channel and EPG information.
     * sorted by either:
       - sequential order (as channels occur in the M3U file)
       - alphabetic order (by channel name)
-    * clicked to start an Intent, which can open the channel's audio/video stream in an external media player
+    * clicked to start an Intent, which can open the channel's media URL in an external application
+      - examples:
+        * VOD and live stream media can play in a media player
+        * VOD media (when served as a single static file) can be downloaded in a download manager
   - XMLTV (EPG) data can be&hellip;
     * searched by keyword
-    * clicked to start an Intent, which can open the channel's audio/video stream in an external media player
+    * clicked:
+      - on channel names (in the leftmost column) to start an Intent, which can open the channel's media URL in an external application
+      - on program names to open a modal dialog that displays additional information about the selected program:
+        * channel name
+        * program title
+        * program description (if available)
 
 #### Search Keywords
 
