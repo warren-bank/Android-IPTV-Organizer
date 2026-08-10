@@ -31,10 +31,25 @@ public class ChannelListItem implements FilterableListItem {
     return name;
   }
 
-  public boolean equals(ChannelListItem that) {
-    if (that == null) return false;
+  @Override
+  public boolean equals(Object obj) {
+    if (obj == this)
+      return true;
 
-    return this.media_url.equals(that.media_url);
+    if ((obj == null) || !(obj instanceof ChannelListItem))
+      return false;
+
+    ChannelListItem that = (ChannelListItem) obj;
+
+    if (!this.media_url.equals(that.media_url))
+      return false;
+
+    return true;
+  }
+
+  @Override
+  public int hashCode() {
+    return this.media_url.hashCode();
   }
 
   public boolean areNamesEqual() {

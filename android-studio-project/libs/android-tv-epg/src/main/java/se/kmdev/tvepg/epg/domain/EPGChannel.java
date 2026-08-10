@@ -44,7 +44,7 @@ public class EPGChannel {
         if (obj == this)
             return true;
 
-        if (!(obj instanceof EPGChannel))
+        if ((obj == null) || !(obj instanceof EPGChannel))
             return false;
 
         EPGChannel that = (EPGChannel) obj;
@@ -52,15 +52,11 @@ public class EPGChannel {
         if (!this.channelID.equals(that.getChannelID()))
             return false;
 
-        if (!this.name.equals(that.getName()))
-            return false;
-
         return true;
     }
 
     @Override
     public int hashCode() {
-      String uniqueId = this.channelID + "|" + this.name;
-      return uniqueId.hashCode();
+      return this.channelID.hashCode();
     }
 }

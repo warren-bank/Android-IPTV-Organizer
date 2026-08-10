@@ -1,5 +1,7 @@
 package se.kmdev.tvepg.epg.domain;
 
+import java.util.Calendar;
+
 /**
  * Created by Kristoffer.
  */
@@ -59,17 +61,36 @@ public class EPGEvent {
         if (obj == this)
             return true;
 
-        if (!(obj instanceof EPGEvent))
+        if ((obj == null) || !(obj instanceof EPGEvent))
             return false;
 
         EPGEvent that = (EPGEvent) obj;
-
-        if (!this.title.equals(that.getTitle()))
-            return false;
 
         if (this.start != that.start)
             return false;
 
         return true;
+    }
+
+    @Override
+    public int hashCode() {
+        // 1. calculate a timestamp in the recent past to use as epoch (ex: first day of previous month)
+        // 2. rebase start timestamp relative to recent epoch
+        // 3. reduce precision of relative timestamp from milliseconds to seconds (note: an int can only hold 24.8 days worth of milliseconds, but it can hold 68 years worth of seconds)
+        // 4. cast relative timestamp from long to int
+
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.MONTH, -1);
+        cal.set(Calendar.DAY_OF_MONTH, 1);
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        long epoch = cal.getTimeInMillis();
+
+        long relativeMs = this.start - epoch;
+        int relativeSec = (int) (relativeMs / 1000L);
+
+        return relativeSec;
     }
 }
