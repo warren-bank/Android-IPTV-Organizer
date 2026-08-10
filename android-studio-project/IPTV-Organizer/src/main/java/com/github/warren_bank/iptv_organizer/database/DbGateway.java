@@ -161,7 +161,7 @@ public class DbGateway {
     }
     catch(SQLException e) {
       if (e instanceof SQLiteConstraintException)
-        return -1;
+        return -1L;
       else
         throw e;
     }
@@ -186,6 +186,9 @@ public class DbGateway {
       }
 
       if ((channels != null) && !channels.isEmpty()) {
+        List<ChannelListItem> pendingDeletion = new ArrayList<ChannelListItem>();
+        long rowId;
+
         for (ChannelListItem channel : channels) {
           if (channel == null) continue;
 
@@ -198,8 +201,17 @@ public class DbGateway {
           cvals.put("tvg_id",    channel.tvg_id);
           cvals.put("tvg_name",  channel.areNamesEqual() ? null : channel.tvg_name);
 
-          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels", null, cvals);
+          rowId = insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels", null, cvals);
           cvals = null;
+
+          if (rowId == -1L) pendingDeletion.add(channel);
+        }
+
+        if (!pendingDeletion.isEmpty()) {
+          for (ChannelListItem channel : pendingDeletion) {
+            channels.remove(channel);
+          }
+          pendingDeletion.clear();
         }
       }
 
@@ -240,6 +252,9 @@ public class DbGateway {
       query = null;
 
       if ((data != null) && !data.isEmpty()) {
+        List<EPGChannel> pendingDeletion = new ArrayList<EPGChannel>();
+        long rowId;
+
         for (Map.Entry<EPGChannel, List<EPGEvent>> entry : data.entrySet()) {
           EPGChannel     channel  = (EPGChannel)     entry.getKey();
           List<EPGEvent> programs = (List<EPGEvent>) entry.getValue();
@@ -251,8 +266,15 @@ public class DbGateway {
           cvals.put("name",     channel.getName());
           cvals.put("icon_url", channel.getImageURL());
 
-          insertOrThrowUnlessConstraintViolated(dbase, "xmltv_channels", null, cvals);
+          rowId = insertOrThrowUnlessConstraintViolated(dbase, "xmltv_channels", null, cvals);
           cvals = null;
+
+          if (rowId == -1L) {
+            pendingDeletion.add(channel);
+            continue;
+          }
+
+          List<EPGEvent> eventsPendingDeletion = new ArrayList<EPGEvent>();
 
           for (EPGEvent program : programs) {
             if (program == null) continue;
@@ -264,9 +286,25 @@ public class DbGateway {
             cvals.put("title",              program.getTitle());
             cvals.put("description",        program.getDescription());
 
-            insertOrThrowUnlessConstraintViolated(dbase, "xmltv_programs", null, cvals);
+            rowId = insertOrThrowUnlessConstraintViolated(dbase, "xmltv_programs", null, cvals);
             cvals = null;
+
+            if (rowId == -1L) eventsPendingDeletion.add(program);
           }
+
+          if (!eventsPendingDeletion.isEmpty()) {
+            for (EPGEvent program : eventsPendingDeletion) {
+              programs.remove(program);
+            }
+            eventsPendingDeletion.clear();
+          }
+        }
+
+        if (!pendingDeletion.isEmpty()) {
+          for (EPGChannel channel : pendingDeletion) {
+            data.remove(channel);
+          }
+          pendingDeletion.clear();
         }
       }
 
@@ -490,6 +528,7 @@ public class DbGateway {
 
       if ((values != null) && !values.isEmpty()) {
         int position = 1;
+        long rowId;
 
         for (String value : values) {
           if (TextUtils.isEmpty(value)) continue;
@@ -498,9 +537,10 @@ public class DbGateway {
           cvals.put("position", position);
           cvals.put("value",    value);
 
-          insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_media_url_static_values", null, cvals);
+          rowId = insertOrThrowUnlessConstraintViolated(dbase, "m3u_channels_media_url_static_values", null, cvals);
           cvals = null;
-          position += 1;
+
+          if (rowId != -1L) position += 1;
         }
       }
 
