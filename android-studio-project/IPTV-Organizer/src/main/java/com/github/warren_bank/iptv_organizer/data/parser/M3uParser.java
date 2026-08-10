@@ -5,6 +5,7 @@ import com.github.warren_bank.iptv_organizer.common.Constants;
 import com.github.warren_bank.iptv_organizer.data.DataProgressListener;
 import com.github.warren_bank.iptv_organizer.data.filter.M3uFilter;
 import com.github.warren_bank.iptv_organizer.data.model.ChannelListItem;
+import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
 
 import android.util.Log;
@@ -38,8 +39,12 @@ public class M3uParser {
         if (line.startsWith("#EXTM3U")) {
           String xmltvEpgUrl = SimpleM3UParser.parseExtM3u(line);
 
-          if (xmltvEpgUrl != null)
+          if (xmltvEpgUrl != null) {
+            if (SettingsUtils.getApplyDefaultUrlTemplates(App.context))
+              xmltvEpgUrl = DbUtils.extractM3uMediaTemplate(xmltvEpgUrl);
+
             SettingsUtils.setDefaultXmltvEpgUrlPreference(App.context, xmltvEpgUrl);
+          }
 
           continue;
         }
