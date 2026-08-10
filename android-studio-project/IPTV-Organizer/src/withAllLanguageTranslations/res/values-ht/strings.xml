@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Pa defo XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valè inisyal an \"Enpòte XMLTV EPG URL\" Dyalòg.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Mete ajou otomatikman \"Pa defo XMLTV EPG URL\" ki enpòte M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Si yo jwenn li, sove valè a \"x-tvg-url\" oswa \"url-tvg\" paramèt nan \"#EXTM3U\" dirèktiv antèt fichye</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Si yo jwenn li, sove valè a \"x-tvg-url\" paramèt nan \"#EXTM3U\" dirèktiv antèt fichye</string>
   <string name="pref_parse_list_in_xmltv_url_title">Analize lis separe pa jeton nan XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analize valè nan \"Enpòte XMLTV EPG URL\" Dialog. Enpòte premye travay la. URL nan lis.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analize valè nan \"Enpòte XMLTV EPG URL\" Dyalòg</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Enpòte tout URL valè yo nan yon lis separe pa blòk</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Konbine EPG done ki soti nan tout sous</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Enpòte premye travay la URL nan lis</string>

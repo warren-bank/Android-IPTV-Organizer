@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">प्राथमिक XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">मूळ मूल्य इनमध्ये \"आयात XMLTV EPG URL\" संवाद.</string>
   <string name="pref_auto_update_default_xmltv_url_title">स्वयंचलितपणे अद्ययावत करा \"प्राथमिक XMLTV EPG URL\" आयातित M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >मिळ्यास, मूल्य जतन करा \"x-tvg-url\" किंवा \"url-tvg\" पॅरामीटर मध्ये \"#EXTM3U\" फाइल हेडर निर्देश</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >मिळ्यास, मूल्य जतन करा \"x-tvg-url\" पॅरामीटर मध्ये \"#EXTM3U\" फाइल हेडर निर्देश</string>
   <string name="pref_parse_list_in_xmltv_url_title">टोकनने विभाजित यादी पार्स करा XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >मध्ये मूल्य पार्स करा \"आयात XMLTV EPG URL\" संवाद. प्रथम कार्य आयात करा URL यादीत.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >मध्ये मूल्य पार्स करा \"आयात XMLTV EPG URL\" संवाद</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">सर्व आयात करा URL टोकनने विभाजित यादीतील मूल्ये</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >एकत्र करा EPG सर्व स्रोतांमधील डेटा</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">पहिल्या वर्किंगचे आयात करा URL यादीत</string>

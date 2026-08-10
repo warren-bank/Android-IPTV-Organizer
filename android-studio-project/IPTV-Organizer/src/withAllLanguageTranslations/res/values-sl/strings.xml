@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Privzeto XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Začetna vrednost v \"Uvoz XMLTV EPG URL\" pogovor.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Samodejna posodobitev \"Privzeto XMLTV EPG URL\" iz uvoženega M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Če se najde, shranite vrednost \"x-tvg-url\" ali \"url-tvg\" parameter v \"#EXTM3U\" direktiva za glavo datoteke</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Če se najde, shranite vrednost \"x-tvg-url\" parameter v \"#EXTM3U\" direktiva za glavo datoteke</string>
   <string name="pref_parse_list_in_xmltv_url_title">Parsiranje seznama, ločenega z ločilnimi znaki, v XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Parsiranje vrednosti v \"Uvoz XMLTV EPG URL\" pogovorno okno. Uvozi prvo delovno URL v seznamu.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Parsiranje vrednosti v \"Uvoz XMLTV EPG URL\" pogovor</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Uvozi vse URL vrednosti v seznamu, ločenem s presledki</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Zmešajte EPG podatki iz vseh virov</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Uvozi prvo delovno URL v seznamu</string>

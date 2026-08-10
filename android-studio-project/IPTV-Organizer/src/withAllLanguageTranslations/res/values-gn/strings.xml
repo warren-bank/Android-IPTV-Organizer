@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Ojehechaháichaite XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Mbohepy ñepyrũrã \"Mbohypy XMLTV EPG URL\" Ñomongeta.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Oñembopyahu ijehegui \"Oñemboikéva ijehegui XMLTV EPG URL\" oguerúva okáguio M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ojejuhúrõ, eñongatu hepykue \"x-tvg-url\" térã \"url-tvg\" Mbohekorã ipype \"#EXTM3U\" Tembiporu rysýi moñepyrũha tekorã</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ojejuhúrõ, eñongatu hepykue \"x-tvg-url\" Mbohekorã ipype \"#EXTM3U\" Tembiporu rysýi moñepyrũha tekorã</string>
   <string name="pref_parse_list_in_xmltv_url_title">Embohasa peteĩ tysýi oñemboja\'óva toképe XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Omyesakã mboýpa ipype \"Mba\'e ojeguerúva XMLTV EPG URL\" Ñomongeta. Eike peteĩha omba\'apóva. URL lístape.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Omyesakã mba\'e hepy \"Mbohypy XMLTV EPG URL\" Ñomongeta</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Opaite gueru URL Mbojojaha kuatiápe oñemboja\'óva token rupive</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Embojehe\'a umi EPG Marandu opaite hendágui</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Emoinge pe peteĩha omba\'apóva URL lístape</string>

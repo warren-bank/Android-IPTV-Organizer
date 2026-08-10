@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">ค่าเริ่มต้น XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">ค่าเริ่มต้นใน \"นำเข้า XMLTV EPG URL\" กล่องสนทนา.</string>
   <string name="pref_auto_update_default_xmltv_url_title">อัปเดตอัตโนมัติ \"ค่าเริ่มต้น XMLTV EPG URL\" จากสินค้านำเข้า M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >หากพบ ให้บันทึกค่าของ \"x-tvg-url\" หรือ \"url-tvg\" พารามิเตอร์ใน \"#EXTM3U\" คำสั่งส่วนหัวของไฟล์</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >หากพบ ให้บันทึกค่าของ \"x-tvg-url\" พารามิเตอร์ใน \"#EXTM3U\" คำสั่งส่วนหัวของไฟล์</string>
   <string name="pref_parse_list_in_xmltv_url_title">วิเคราะห์รายการที่แยกด้วยตัวคั่นใน XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >วิเคราะห์ค่าใน \"นำเข้า XMLTV EPG URL\" dialog. นำเข้าเวอร์ชันที่ทำงานได้ครั้งแรก URL ในรายการ.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >วิเคราะห์ค่าใน \"นำเข้า XMLTV EPG URL\" กล่องสนทนา</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">นำเข้าทั้งหมด URL ค่าในรายการที่แยกด้วยตัวคั่น</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >ผสม EPG ข้อมูลจากทุกแหล่ง</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">นำเข้าโค้ดที่ทำงานได้ครั้งแรก URL ในรายการ</string>

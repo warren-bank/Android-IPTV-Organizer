@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Defectio XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valor initialis in \"Importare XMLTV EPG URL\" Sermo.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Sponte renovare \"Defectio XMLTV EPG URL\" Ex importato M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Si repertum, serva valvelem \"x-tvg-url\" or \"url-tvg\" parameter in \"#EXTM3U\" praeceptum capitis documenti</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Si repertum, serva valorem \"x-tvg-url\" parameter in \"#EXTM3U\" praeceptum capitis documenti</string>
   <string name="pref_parse_list_in_xmltv_url_title">Elencho separatis signis digerere. XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Valorem in parse \"Importare XMLTV EPG URL\" Dialogus. Importa primum opus. URL in indice.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Valorem in \"Importare XMLTV EPG URL\" Sermo</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Omnia importa URL Valores in indice virgululis separato</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Misce EPG Data ex omnibus fontibus</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Importa primum operarium URL in indice</string>

@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Akka duraan turetti XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Gatii jalqabaa keessa \"Galuu XMLTV EPG URL\" Haasawa.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Ofumaan haaromsi \"Akka duraan turetti XMLTV EPG URL\" Kan alaa galfame irraa M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Yoo argame, gatii isaa ol kaa\'i \"x-tvg-url\" ykn \"url-tvg\" Daangaa keessa \"#EXTM3U\" Ajaja mata duree faayilii</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Yoo argame, gatii isaa ol kaa\'i \"x-tvg-url\" Daangaa keessa \"#EXTM3U\" Ajaja mata duree faayilii</string>
   <string name="pref_parse_list_in_xmltv_url_title">Tarree walakkaan addaan ba\'e hiikaa XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Gatii keessatti hiiki \"Galuu XMLTV EPG URL\" Marii. Hojii jalqabaa galchi URL Tarree keessatti.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Gatii keessa hiikaa \"Galuu XMLTV EPG URL\" Haasawa</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Hunda galfadhu URL Gatiiwwan tarree addaan baafame keessatti</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Walitti maki EPG Ragaa madda hundarraa</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Hojii jalqabaa galchi URL Tarree keessatti</string>

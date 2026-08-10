@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Numatytasis XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Pradinė vertė \"Importas XMLTV EPG URL\" dialogas.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Atnaujinti automatiškai \"Numatytasis XMLTV EPG URL\" iš importuotų M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Jei rasta, išsaugokite reikšmę \"x-tvg-url\" arba \"url-tvg\" parametras \"#EXTM3U\" failo antraštės direktyva</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Jei rasta, išsaugokite reikšmę \"x-tvg-url\" parametras \"#EXTM3U\" failo antraštės direktyva</string>
   <string name="pref_parse_list_in_xmltv_url_title">Išanalizuoti žodžiais atskirtą sąrašą XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Išanalizuoti reikšmę \"Importas XMLTV EPG URL\" dialogas. Importuoti pirmąjį veikiantį URL sąraše.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Išanalizuoti reikšmę \"Importas XMLTV EPG URL\" dialogas</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Importuoti viską URL reikšmės sąraše, atskirtos simboliais</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Sumaišykite EPG duomenys iš visų šaltinių</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Įkelkite pirmąjį veikiantį URL sąraše</string>

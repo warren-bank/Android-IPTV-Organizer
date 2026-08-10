@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Standaard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Inisiale waarde in \"Invoer XMLTV EPG URL\" dialoog.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Outomaties opdateer \"Standaard XMLTV EPG URL\" van ingevoer M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Indien gevind, stoof die waarde van \"x-tvg-url\" or \"url-tvg\" parameter in \"#EXTM3U\" lêer-opskrif-instruksie</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Indien gevind, stoor die waarde van \"x-tvg-url\" parameter in \"#EXTM3U\" lêer-opskrif-instruksie</string>
   <string name="pref_parse_list_in_xmltv_url_title">Ontleed \'n token-geskeide lys in XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Ontleed waarde in \"Invoer XMLTV EPG URL\" dialoog. Voer eers die werk in URL in lys.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Ontleed waarde in \"Invoer XMLTV EPG URL\" dialoog</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Invoer alles URL waardes in \'n deur tokens geskeide lys</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Kombineer die EPG data uit alle bronne</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Voer die eerste werksinvoer in URL in lys</string>

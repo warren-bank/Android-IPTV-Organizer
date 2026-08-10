@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Par défaut XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valeur initiale en \"Importation XMLTV EPG URL\" boîte de dialogue.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Mise à jour automatique \"Par défaut XMLTV EPG URL\" provenant d\'importations M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Si trouvé, enregistrer la valeur de \"x-tvg-url\" ou \"url-tvg\" paramètre dans \"#EXTM3U\" directive d\'en-tête de fichier</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Si trouvé, enregistrer la valeur de \"x-tvg-url\" paramètre dans \"#EXTM3U\" directive d\'en-tête de fichier</string>
   <string name="pref_parse_list_in_xmltv_url_title">Analyser une liste séparée par des délimiteurs dans XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analyser la valeur dans \"Importation XMLTV EPG URL\" boîte de dialogue. Importer la première version fonctionnelle URL dans la liste.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analyser la valeur dans \"Importation XMLTV EPG URL\" boîte de dialogue</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Tout importer URL valeurs dans une liste séparée par des délimiteurs</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Mélanger les EPG données provenant de toutes les sources</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Importer le premier fichier de travail URL dans la liste</string>

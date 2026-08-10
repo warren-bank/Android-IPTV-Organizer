@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">पूर्वनिर्धारितम् XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">प्रारम्भिक मूल्ये \"आयातः XMLTV EPG URL\" संवादः.</string>
   <string name="pref_auto_update_default_xmltv_url_title">स्वयमेव अद्यतनं कुरु \"पूर्वनिर्धारितम् XMLTV EPG URL\" आयातित M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >यदि लभ्यते तर्हि मानं रक्षतु। \"x-tvg-url\" वा \"url-tvg\" परिमाणम् अन्तर्गतम् \"#EXTM3U\" सञ्चिका शीर्षक निर्देशः</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >यदि लभ्यते तर्हि मानं रक्षतु। \"x-tvg-url\" परिमाणम् अन्तर्गतम् \"#EXTM3U\" सञ्चिका शीर्षक निर्देशः</string>
   <string name="pref_parse_list_in_xmltv_url_title">टोकनैः विभक्तां सूचीं अन्तर्भाष्यतु XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >मूल्यं विश्लेषयतु \"आयातः XMLTV EPG URL\" संवादः। प्रथमं कार्यम् आयातय। URL सूच्याम्.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >मूल्यं विश्लेषयतु \"आयातः XMLTV EPG URL\" संवादः</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">सर्वं आयातयतु URL टोकनविभक्तसूच्यां मानयः</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >संयोजयतु EPG सर्वेभ्यः स्रोताभ्यः दत्तानि</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">प्रथमं कार्यम् आयातयतु। URL सूच्याम्</string>

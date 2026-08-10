@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Per defaut XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valor iniciala dins \"Importar XMLTV EPG URL\" Dialòg.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Metre a jorn automaticament \"Per defaut XMLTV EPG URL\" d\'importat M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Se trobat, sauvar la valo de \"x-tvg-url\" or \"url-tvg\" parametre dins \"#EXTM3U\" Directiva d\'entèsta de fichièr</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Se trobat, sauvar la valor de \"x-tvg-url\" parametre dins \"#EXTM3U\" Directiva d\'entèsta de fichièr</string>
   <string name="pref_parse_list_in_xmltv_url_title">Analizar una lista de tokens separats dins XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analizar la valor dins \"Importar XMLTV EPG URL\" Dialòg. Importar lo primièr trabalh. URL dins la lista.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analizar la valor dins \"Importar XMLTV EPG URL\" Dialòg</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Importar tot URL Valors dins una lista separada per de tokens</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Combinar lo EPG donadas de totas las fonts</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Importar lo primièr trabalhant URL dins la lista</string>

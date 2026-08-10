@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">ნაგულისხმევი XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">საწყისი ღირებულება \"იმპორტი XMLTV EPG URL\" დიალოგი.</string>
   <string name="pref_auto_update_default_xmltv_url_title">ავტომატური განახლება \"ნაგულისხმევი XMLTV EPG URL\" იმპორტირებულიდან M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >პოვნის შემთხვევაში, შეინახეთ მნიშვნელობა \"x-tvg-url\" ან \"url-tvg\" პარამეტრიში \"#EXTM3U\" ფაილის სათავის დირექტივა</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >პოვნის შემთხვევაში, შეინახეთ მნიშვნელობა \"x-tvg-url\" პარამეტრიში \"#EXTM3U\" ფაილის სათავის დირექტივა</string>
   <string name="pref_parse_list_in_xmltv_url_title">ტოკენებით გამოყოფილი სიის გარდაქმნა XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >მნიშვნელობის გაანალიზება \"იმპორტი XMLTV EPG URL\" დიალოგი. იმპორტი პირველი სამუშაო URL სიაში.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >მნიშვნელობის გაანალიზება \"იმპორტი XMLTV EPG URL\" დიალოგი</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">იმპორტი ყველაფრის URL მნიშვნელობები ტოკენებით გამოყოფილ სიაში</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >შეურიეთ EPG მონაცემები ყველა წყაროდან</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">იმპორტი პირველი სამუშაო URL სიაში</string>

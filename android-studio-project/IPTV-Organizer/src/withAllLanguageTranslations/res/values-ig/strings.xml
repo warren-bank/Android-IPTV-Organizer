@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Ntọala XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Ọnụahịa mbido n\'ime \"Bubata XMLTV EPG URL\" mkparịta ụka.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Mee ka ọ dị ọhụrụ akpaghị aka \"Ntọala XMLTV EPG URL\" si na mbubata M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ọ bụrụ na achọtara ya, chekwaa uru nke \"x-tvg-url\" ma ọ bụ \"url-tvg\" parameta n\'ime \"#EXTM3U\" Ntuziaka isi faịlụ</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ọ bụrụ na achọtara ya, chekwaa uru nke \"x-tvg-url\" parameta n\'ime \"#EXTM3U\" Ntuziaka isi faịlụ</string>
   <string name="pref_parse_list_in_xmltv_url_title">Nyochaa ndepụta kewara site na tokens na XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Nyochaa uru na \"Bubata XMLTV EPG URL\" Mgba mkparịta ụka. Bupụta nke mbụ na-arụ ọrụ. URL n\'ime ndepụta.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Nyochaa uru na \"Bupụta XMLTV EPG URL\" mkparịta ụka</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Bubata ihe niile URL uru n\'ime ndepụta kewara site na akara</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Jikọta ihe ndị ahụ EPG Data sitere na isi mmalite niile</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Bubata nke mbụ na-arụ ọrụ URL n\'ime ndepụta</string>

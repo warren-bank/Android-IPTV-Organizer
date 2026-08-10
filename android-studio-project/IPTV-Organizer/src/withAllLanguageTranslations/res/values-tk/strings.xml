@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Öňünden kesgitlenen XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Başlangyç gymmaty \"Import XMLTV EPG URL\" dialog.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Awtomatik täzeläp durmak \"Öňünden kesgitlenen XMLTV EPG URL\" import edilen M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Tapylsa, gymmatyny sakla \"x-tvg-url\" ýa-da \"url-tvg\" parametrde \"#EXTM3U\" Faýl başlyk görkezmesi</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Tapylsa, gymmatyny sakla \"x-tvg-url\" parametrde \"#EXTM3U\" Faýl başlyk görkezmesi</string>
   <string name="pref_parse_list_in_xmltv_url_title">Tokenler bilen bölünip berlen sanawy işläp çykmak XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Degerini parse ediň \"Import XMLTV EPG URL\" dialog. Ilkinji işi import ediň URL Sanawda.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Değerini işläp çykarmak \"Import XMLTV EPG URL\" dialog</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Hemmesini import et URL Tokenler bilen bölünip berlen sanawdaky gymmatlar</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Birleşdiriň EPG Ähli çeşmelerden alnan maglumatlar</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Ilkinji işi import ediň URL Sanawda</string>

@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Normala XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Komenca valoro en \"Enporti XMLTV EPG URL\" dialogo.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Aŭtomate ĝisdatigi \"Normala XMLTV EPG URL\" el importita M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Se trovita, konservu la valaŭon de \"x-tvg-url\" or \"url-tvg\" parametro en \"#EXTM3U\" dosierkap-direktivo</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Se trovita, konservu la valoron de \"x-tvg-url\" parametro en \"#EXTM3U\" dosierkap-direktivo</string>
   <string name="pref_parse_list_in_xmltv_url_title">Analizi liston apartigitan per tokenoj en XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analizi valoron en \"Enporti XMLTV EPG URL\" dialogo. Importu unuan laboron URL en listo.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analizu valoron en \"Enporti XMLTV EPG URL\" dialogo</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Enporti ĉion URL valoroj en per simboloj disigita listo</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Kombinu la EPG datumoj el ĉiuj fontoj</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Enportu la unuan laboron URL en listo</string>

@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">الافتراضي XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">القيمة الأولية في \"استيراد XMLTV EPG URL\" حوار.</string>
   <string name="pref_auto_update_default_xmltv_url_title">التحديث التلقائي \"الافتراضي XMLTV EPG URL\" من المستورد M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >في حالة العثور عليه، احفظ قيمة \"x-tvg-url\" أو \"url-tvg\" المعلمة في \"#EXTM3U\" توجيه رأس الملف</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >في حالة العثور عليه، احفظ قيمة \"x-tvg-url\" المعلمة في \"#EXTM3U\" توجيه رأس الملف</string>
   <string name="pref_parse_list_in_xmltv_url_title">تحليل قائمة مفصولة برموز في XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >تحليل القيمة في \"استيراد XMLTV EPG URL\" حوار. استيراد أول نسخة صالحة للعمل URL في القائمة.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >تحليل القيمة في \"استيراد XMLTV EPG URL\" حوار</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">استيراد الكل URL القيم في قائمة مفصولة برموز</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >امزج EPG البيانات من جميع المصادر</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">استيراد الملف الأول القابل للتشغيل URL في القائمة</string>

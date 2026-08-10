@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Okujwayelekile XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Inani lokuqala ku \"Okungenayo XMLTV EPG URL\" inkulumo.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Vuselela ngokuzenzakalelayo \"Okujwayelekile XMLTV EPG URL\" okusuka ekungenisweni M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Uma kutholakala, gcina inani lika \"x-tvg-url\" noma \"url-tvg\" ipharamitha ngaphakathi \"#EXTM3U\" umyalelo wesihloko sefayela</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Uma kutholakala, gcina inani lika \"x-tvg-url\" ipharamitha ngaphakathi \"#EXTM3U\" umyalo we-header yefayela</string>
   <string name="pref_parse_list_in_xmltv_url_title">Hlaziya uhlu lwamathokheni ahlukanisiwe ku XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Hlaziya inani ku \"Okungenayo XMLTV EPG URL\" Ingxoxo. Landa okokuqala okusebenzayo URL kuluhlu.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Hlaziya inani ku \"Ngenisa XMLTV EPG URL\" Ingxoxo</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Landa konke URL amanani ohlwini oluhlukaniswe ngamathokheni</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Hlanganisa i- EPG Idatha evela kuwo wonke imithombo</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Faka okokuqala okusebenzayo URL ohlwini</string>

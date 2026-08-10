@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Standard XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Initialwäert an \"Importéieren XMLTV EPG URL\" Dialog.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Automatesch aktualiséieren \"Standard XMLTV EPG URL\" aus importéiert M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Wann et fonnt gëtt, späichert de Wäert vun \"x-tvg-url\" oder \"url-tvg\" Parameter an \"#EXTM3U\" Datei-Kapp-Direktiv</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Wann et fonnt gëtt, späichert de Wäert vun \"x-tvg-url\" Parameter an \"#EXTM3U\" Datei-Kappdirektiv</string>
   <string name="pref_parse_list_in_xmltv_url_title">Parse d\'Token-getrennte Lëscht an XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Wäert an Parséieren \"Importéieren XMLTV EPG URL\" Dialog. Importéiert déi éischt Aarbecht. URL an der Lëscht.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Wäert an Parséieren \"Importéieren XMLTV EPG URL\" Dialog</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Alles importéieren URL Wäerter an enger duerch Token getrennt Lëscht</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Kombinéiert d\' EPG Donnéeën aus allen Quellen</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Importéiert déi éischt Aarbecht URL an der Lëscht</string>

@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Προεπιλογή XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Αρχική τιμή σε \"Εισαγωγή XMLTV EPG URL\" διάλογος.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Αυτόματη ενημέρωση \"Προεπιλογή XMLTV EPG URL\" από εισαγόμενα M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Εάν βρεθεί, αποθηκεύστε την τιμή του \"x-tvg-url\" ή \"url-tvg\" παράμετρος στο \"#EXTM3U\" οδηγία κεφαλίδας αρχείου</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Εάν βρεθεί, αποθηκεύστε την τιμή του \"x-tvg-url\" παράμετρος στο \"#EXTM3U\" οδηγία κεφαλίδας αρχείου</string>
   <string name="pref_parse_list_in_xmltv_url_title">Ανάλυση λίστας με διαχωριστικά σε XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Ανάλυση τιμής στο \"Εισαγωγή XMLTV EPG URL\" διάλογος. Εισαγωγή πρώτης λειτουργικής URL στη λίστα.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Ανάλυση τιμής στο \"Εισαγωγή XMLTV EPG URL\" διάλογος</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Εισαγωγή όλων URL τιμές σε λίστα διαχωρισμένη με διαχωριστικά</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Ανακατέψτε τα EPG δεδομένα από όλες τις πηγές</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Εισαγάγετε το πρώτο λειτουργικό URL στη λίστα</string>

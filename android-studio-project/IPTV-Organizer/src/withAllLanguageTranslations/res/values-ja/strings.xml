@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">デフォルト XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">初期値は \"インポート XMLTV EPG URL\" ダイアログ.</string>
   <string name="pref_auto_update_default_xmltv_url_title">自動更新 \"デフォルト XMLTV EPG URL\" インポート元： M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >見つかった場合は、その値を保存してください。 \"x-tvg-url\" または \"url-tvg\" パラメータは \"#EXTM3U\" ファイルヘッダーディレクティブ</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >見つかった場合は、その値を保存してください。 \"x-tvg-url\" パラメータは \"#EXTM3U\" ファイルヘッダーディレクティブ</string>
   <string name="pref_parse_list_in_xmltv_url_title">トークン区切りのリストを解析する XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >値を解析する \"インポート XMLTV EPG URL\" ダイアログ。最初に動作するものをインポート URL リスト内.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >値を解析する \"インポート XMLTV EPG URL\" ダイアログ</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">すべてインポート URL トークン区切りのリスト内の値</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >を混ぜ合わせて EPG すべての情報源からのデータ</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">最初の動作するコードをインポートする URL リスト内</string>

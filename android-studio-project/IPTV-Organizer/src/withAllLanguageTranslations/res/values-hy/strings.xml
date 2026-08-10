@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Ստանդարտ XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Սկզբնական արժեքը ներսում \"Իմպորտ XMLTV EPG URL\" զրույց.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Ավտոմատ թարմացնել \"Ստանդարտ XMLTV EPG URL\" ներմուծվածից M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Եթե հայտնաբերվի, պահպանել արժեքը \"x-tvg-url\" կամ \"url-tvg\" պարամետր ներսում \"#EXTM3U\" ֆայլի վերնագրային հրահանգ</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Եթե հայտնաբերվի, պահպանեք արժեքը \"x-tvg-url\" պարամետր ներսում \"#EXTM3U\" ֆայլի վերնագրային հրահանգ</string>
   <string name="pref_parse_list_in_xmltv_url_title">Տոկեններով բաժանված ցուցակը վերլուծել XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Արժեքը վերծել \"Իմպորտ XMLTV EPG URL\" դիալոգ։ Ներմուծել առաջին աշխատանքը URL ցուցակում.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Արժեքը վերծել \"Իմպորտ XMLTV EPG URL\" զրույց</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Բոլորը ներմուծել URL արժեքներ տոկեններով բաժանված ցուցակում</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Միացրեք EPG բոլոր աղբյուրներից տվյալներ</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Ներմուծեք առաջին աշխատողը URL ցուցակում</string>

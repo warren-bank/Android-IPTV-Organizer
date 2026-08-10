@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Mặc định XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Giá trị ban đầu trong \"Nhập khẩu XMLTV EPG URL\" hộp thoại.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Cập nhật tự động \"Mặc định XMLTV EPG URL\" từ hàng nhập khẩu M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Nếu tìm thấy, hãy lưu giá trị của \"x-tvg-url\" hoặc \"url-tvg\" tham số trong \"#EXTM3U\" hướng dẫn tiêu đề tệp</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Nếu tìm thấy, hãy lưu giá trị của \"x-tvg-url\" tham số trong \"#EXTM3U\" hướng dẫn tiêu đề tệp</string>
   <string name="pref_parse_list_in_xmltv_url_title">Phân tích danh sách các phần tử được phân tách bằng dấu phân cách trong XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Phân tích giá trị trong \"Nhập khẩu XMLTV EPG URL\" hộp thoại. Nhập bản làm việc đầu tiên URL trong danh sách.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Phân tích giá trị trong \"Nhập khẩu XMLTV EPG URL\" hộp thoại</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Nhập tất cả URL các giá trị trong danh sách được phân tách bằng dấu phân cách</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Trộn đều EPG dữ liệu từ tất cả các nguồn</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Nhập tệp làm việc đầu tiên URL trong danh sách</string>

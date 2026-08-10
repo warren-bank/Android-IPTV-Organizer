@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">По умолчанию XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Начальное значение в \"Импорт XMLTV EPG URL\" диалог.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Автоматическое обновление \"По умолчанию XMLTV EPG URL\" из импортированных M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Если найдено, сохраните значение \"x-tvg-url\" или \"url-tvg\" параметр в \"#EXTM3U\" директива заголовка файла</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Если найдено, сохраните значение \"x-tvg-url\" параметр в \"#EXTM3U\" директива заголовка файла</string>
   <string name="pref_parse_list_in_xmltv_url_title">Разбор списка, разделенного разделителями, в XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Обработать значение в \"Импорт XMLTV EPG URL\" диалог. Импорт первого рабочего URL в списке.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Обработать значение в \"Импорт XMLTV EPG URL\" диалог</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Импортировать всё URL значения в списке, разделенном токенами</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Смешайте EPG данные из всех источников</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Импортировать первый рабочий файл URL в списке</string>

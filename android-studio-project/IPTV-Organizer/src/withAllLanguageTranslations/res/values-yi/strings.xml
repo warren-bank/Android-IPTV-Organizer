@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">סטאַנדאַרט XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">אָנהייב־ווערט אין \"אימפּאָרט XMLTV EPG URL\" דיאַלאָג.</string>
   <string name="pref_auto_update_default_xmltv_url_title">אויטאָמאַטיש דערהײַנטיקן \"סטאַנדאַרט XMLTV EPG URL\" פֿון אימפּאָרטירט M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >אויב געפֿונען, שפּאָרן ווערט פֿון \"x-tvg-url\" אָדער \"url-tvg\" פּאַראַמעטער אין \"#EXTM3U\" טעקע־העדער־דירעקטיוו</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >אויב געפֿונען, שפּאָרן ווערט פֿון \"x-tvg-url\" פּאַראַמעטער אין \"#EXTM3U\" טעקע־העדער־דירעקטיוו</string>
   <string name="pref_parse_list_in_xmltv_url_title">פּאַרסירן אַ טאָקען־אָפּגעטיילטע ליסטע אין XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >פּאַרסירן ווערט אין \"אימפּאָרט XMLTV EPG URL\" דיאַלאָג. אימפּאָרט ערשטן אַרבעט URL אין רשימה.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >פּאַרסירן ווערט אין \"אימפּאָרט XMLTV EPG URL\" דיאַלאָג</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">אימפּאָרטירן אַלץ URL ווערטער אין אַ טאָקען־אָפּגעטיילטער רשימה</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >פֿאַרבינד די EPG דאַטן פֿון אַלע מקורים</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">אימפּאָרטירן דעם ערשטן אַרבעטנדיקן URL אין רשימה</string>

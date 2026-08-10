@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Lalai XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Nilai awal dalam \"Import XMLTV EPG URL\" dialog.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Kemas kini secara automatik \"Tetapan lalai XMLTV EPG URL\" daripada yang diimport M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Jika ditemui, simpan nilai \"x-tvg-url\" atau \"url-tvg\" parameter dalam \"#EXTM3U\" arah header fail</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Jika ditemui, simpan nilai \"x-tvg-url\" parameter dalam \"#EXTM3U\" arah header fail</string>
   <string name="pref_parse_list_in_xmltv_url_title">Parsir senarai yang dipisahkan oleh token dalam XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Parskan nilai dalam \"Import XMLTV EPG URL\" dialog. Import pertama bekerja URL dalam senarai.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Parskan nilai dalam \"Import XMLTV EPG URL\" dialog</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Import semua URL nilai dalam senarai yang dipisahkan oleh token</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Gabungkan EPG data daripada semua sumber</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Muat masuk kerja pertama URL dalam senarai</string>

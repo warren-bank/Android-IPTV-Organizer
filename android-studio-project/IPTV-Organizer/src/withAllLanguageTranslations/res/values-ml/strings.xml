@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">നിലവിലുള്ള XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">പ്രാരംഭ മൂല്യം \"ഇറക്കുമതി XMLTV EPG URL\" സംഭാഷണം.</string>
   <string name="pref_auto_update_default_xmltv_url_title">സ്വയമേവ അപ്ഡേറ്റ് ചെയ്യുക \"നിലവിലുള്ള XMLTV EPG URL\" ഇറക്കുമതി ചെയ്ത M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >കണ്ടെത്തിയാൽ, മൂല്യം സേവ് ചെയ്യുക \"x-tvg-url\" അല്ലെങ്കിൽ \"url-tvg\" പാരാമീറ്റർ ഇൻ \"#EXTM3U\" ഫയൽ ഹെഡർ നിർദ്ദേശം</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >കണ്ടെത്തിയാൽ, മൂല്യം സേവ് ചെയ്യുക \"x-tvg-url\" പാരാമീറ്റർ ഇൻ \"#EXTM3U\" ഫയൽ ഹെഡർ ഡയറക്റ്റീവ്</string>
   <string name="pref_parse_list_in_xmltv_url_title">ടോക്കൺ ഉപയോഗിച്ച് വേർതിരിച്ച ലിസ്റ്റ് പാർസ് ചെയ്യുക XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >വില പാർസ് ചെയ്യുക \"ഇറക്കുമതി XMLTV EPG URL\" സംഭാഷണം. ആദ്യം പ്രവർത്തിക്കുന്നത് ഇറക്കുമതി ചെയ്യുക URL ലിസ്റ്റിൽ.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >വില പാർസ് ചെയ്യുക \"ഇറക്കുമതി XMLTV EPG URL\" സംഭാഷണം</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">എല്ലാം ഇറക്കുമതി ചെയ്യുക URL ടോക്കൺ ഉപയോഗിച്ച് വേർതിരിച്ച ലിസ്റ്റിലെ മൂല്യങ്ങൾ</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >ഇവയെല്ലാം ചേർക്കുക EPG എല്ലാ ഉറവിടങ്ങളിൽ നിന്നുമുള്ള ഡാറ്റ</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">ആദ്യത്തെ വർക്കിംഗ് ഇമ്പോർട്ട് ചെയ്യുക URL പട്ടികയിൽ</string>

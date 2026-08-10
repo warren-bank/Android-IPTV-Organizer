@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Standart XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Başlanğıc dəyəri daxil edin \"İdxal XMLTV EPG URL\" dialoq.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Avtomatik yeniləsin \"Standart XMLTV EPG URL\" İdxal olunmuşdan M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Tapılarsa, dəyərini saxlayın \"x-tvg-url\" və ya \"url-tvg\" parametr daxilində \"#EXTM3U\" fayl başlığı direktivi</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Tapılarsa, dəyərini saxlayın \"x-tvg-url\" parametr daxilində \"#EXTM3U\" fayl başlığı direktivi</string>
   <string name="pref_parse_list_in_xmltv_url_title">Tokenlərlə ayrılmış siyahını işləyin XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Dəyəri işlə \"İdxal XMLTV EPG URL\" dialoq. İlk işləməni idxal edin URL siyahıda.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Dəyəri işlə \"İdxal XMLTV EPG URL\" dialoq</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Həmməsini idxal et URL Tokenlərlə ayrılmış siyahıdakı dəyərlər</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Birləşdirin EPG bütün mənbələrdən məlumat</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Birinci işləməni idxal edin URL siyahıda</string>

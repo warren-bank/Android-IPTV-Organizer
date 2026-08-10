@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Тавсиявӣ XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Арзиши ибтидоӣ дар \"Воридкунӣ XMLTV EPG URL\" гуфтугӯ.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Автоматикӣ навсозӣ кунед \"Тавсиявӣ XMLTV EPG URL\" аз воридот M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Агар пайдо шавад, арзишро захира кунед \"x-tvg-url\" ё \"url-tvg\" параметр дар \"#EXTM3U\" директиваи сарлавҳаи файл</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Агар пайдо шавад, арзишро захира кунед \"x-tvg-url\" параметр дар \"#EXTM3U\" директиваи сарлавҳаи файл</string>
   <string name="pref_parse_list_in_xmltv_url_title">Рӯйхати ҷудошуда бо токенҳоро дар XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Арзишро дар парсинг кунед \"Воридкунӣ XMLTV EPG URL\" Диалог. Аввалин кориро ворид кунед URL дар рӯйхат.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Арзишро дар парсинг кунед \"Воридкунӣ XMLTV EPG URL\" гуфтугӯ</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Ҳамаашро ворид кунед URL арзишҳо дар рӯйхати ҷудошуда бо токенҳо</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Якҷоя кунед EPG маълумот аз ҳамаи манбаъҳо</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Аввалин кориро ворид кунед URL дар рӯйхат</string>

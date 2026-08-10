@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">ప్రామాణికం XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">లో ప్రారంభ విలువ \"దిగుమతి XMLTV EPG URL\" సంభాషణ.</string>
   <string name="pref_auto_update_default_xmltv_url_title">స్వయంచాలకంగా నవీకరించు \"ప్రామాణికం XMLTV EPG URL\" దిగుమతి చేయబడిన M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >కనుగొనబడితే, విలువను సేవ్ చేయండి \"x-tvg-url\" లేదా \"url-tvg\" పారామీటర్‌లో \"#EXTM3U\" ఫైల్ హెడర్ డైరెక్టివ్</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >కనుగొనబడితే, విలువను సేవ్ చేయండి \"x-tvg-url\" పారామీటర్‌లో \"#EXTM3U\" ఫైల్ హెడర్ డైరెక్టివ్</string>
   <string name="pref_parse_list_in_xmltv_url_title">టోకెన్‌లతో వేరు చేయబడిన జాబితాను లోపల విశ్లేషించండి XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >లో విలువను విశ్లేషించండి \"దిగుమతి XMLTV EPG URL\" సంభాషణ. మొదటి పనిని దిగుమతి చేసుకోండి URL జాబితాలో.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >లో విలువను విశ్లేషించండి \"దిగుమతి XMLTV EPG URL\" సంభాషణ</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">అన్నింటినీ దిగుమతి చేసుకోండి URL టోకెన్‌లతో వేరు చేయబడిన జాబితాలోని విలువలు</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >కలపండి EPG అన్ని మూలాల నుండి డేటా</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">మొదటి వర్కింగ్‌ను దిగుమతి చేసుకోండి URL జాబితాలో</string>

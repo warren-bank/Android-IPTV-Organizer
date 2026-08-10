@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">اصلي XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">په ... کې لومړنی ارزښت \"واردول XMLTV EPG URL\" خبرې اترې.</string>
   <string name="pref_auto_update_default_xmltv_url_title">په اتوماتيک ډول تازه کول \"اصلي XMLTV EPG URL\" له وارداتو M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >که وموندل شي، د ... ارزښت خوندي کړئ \"x-tvg-url\" یا \"url-tvg\" پرایمر په \"#EXTM3U\" د فایل سرلیک لارښود</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >که وموندل شي، د ارزښت خوندي کړئ \"x-tvg-url\" پرایمر په \"#EXTM3U\" د فایل سرلیک لارښود</string>
   <string name="pref_parse_list_in_xmltv_url_title">په ... کې د توکنونو په واسطه جلا شوې لړۍ تجزیه کړئ XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >په ... کې ارزښت تجزیه کړئ \"واردول XMLTV EPG URL\" ډیالوګ. لومړی کاري وارد کړئ URL په لیست کې.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >په ... کې ارزښت تجزیه کړئ \"واردول XMLTV EPG URL\" خبرې اترې</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">ټول وارد کړئ URL په ټوکنونو سره جلا شوی لیست کې ارزښتونه</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >تر ګډولو یې EPG له ټولو سرچینو څخه معلومات</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">لومړی کاري وارد کړئ URL په لیست کې</string>

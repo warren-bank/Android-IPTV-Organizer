@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">မူလတန်ဖိုး XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">အစပိုင်းတန်ဖိုးကို ထည့်ပါ \"တင်သွင်း XMLTV EPG URL\" ဆွေးနွေးချက်.</string>
   <string name="pref_auto_update_default_xmltv_url_title">အလိုအလျောက် အပ်ဒိတ်လုပ် \"မူလတန်ဖိုး XMLTV EPG URL\" တင်သွင်းမှ M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >တွေ့ပါက တန်ဖိုးကို သိမ်းပါ။ \"x-tvg-url\" သို့မဟုတ် \"url-tvg\" အတွင်းရှိ ပါရာမီတာ \"#EXTM3U\" ဖိုင်ခေါင်းစဉ်ညွှန်ကြားချက်</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >တွေ့ပါက တန်ဖိုးကို သိမ်းပါ။ \"x-tvg-url\" အတွင်းရှိ ပါရာမီတာ \"#EXTM3U\" ဖိုင်ခေါင်းစဉ်ညွှန်ကြားချက်</string>
   <string name="pref_parse_list_in_xmltv_url_title">token ဖြင့် ခွဲထားသော စာရင်းကို XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >တန်ဖိုးကို အတွင်းတွင် ခွဲခြမ်းစိတ်ဖြာပါ။ \"တင်သွင်း XMLTV EPG URL\" ဒိုင်ယာလော့ဂ်။ ပထမဆုံး အလုပ်ကို တင်သွင်းပါ။ URL စာရင်းတွင်.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >တန်ဖိုးကို ခွဲခြမ်းစိတ်ဖြာပါ။ \"တင်သွင်း XMLTV EPG URL\" ဆွေးနွေးချက်</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">အားလုံးကို တင်သွင်းပါ URL token ဖြင့် ခွဲထားသော စာရင်းရှိ တန်ဖိုးများ</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >ပေါင်းစပ်ပါ EPG အရင်းအမြစ်အားလုံးမှ ဒေတာ</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">ပထမဆုံး အလုပ်လုပ်ခြင်းကို တင်သွင်းပါ။ URL စာရင်းတွင်</string>

@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Diouer XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Talvoudegezh kentañ e \"Enporzhiañ XMLTV EPG URL\" Kaozeadenn.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Hizivaat ent emgefre \"Diazez XMLTV EPG URL\" eus an enporzhiet M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ma vez kavet, enrollañ an talvoud \"x-tvg-url\" pe \"url-tvg\" arventenn e \"#EXTM3U\" Renerenn talbenn restr</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ma vez kavet, enrollañ an talvoud \"x-tvg-url\" arventenn e \"#EXTM3U\" Renerenn talbenn ar restr</string>
   <string name="pref_parse_list_in_xmltv_url_title">Dielfennañ ur roll dispartiet gant tokenoù e XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Displegañ an talvoud e \"Enporzhiañ XMLTV EPG URL\" Diviz. Enporzhiañ ar c\'hentañ labour. URL e listenn.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Dielfennañ an talvoud e \"Enporzhiañ XMLTV EPG URL\" Kaozeadenn</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Enporzhiañ an holl URL Talvoudoù en ur roll dispartiet gant tikedennoù</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Kendeuziñ an EPG Roadennoù eus an holl vammennoù</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Enporzhiañ ar c\'hentañ labour URL e listenn</string>

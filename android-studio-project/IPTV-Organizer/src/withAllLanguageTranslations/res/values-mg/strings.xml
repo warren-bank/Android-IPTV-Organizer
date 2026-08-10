@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Araka ny mahazatra XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Sanda voalohany ao \"Fanafarana XMLTV EPG URL\" resadresaka.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Manavao ho azy \"Araka ny mahazatra XMLTV EPG URL\" avy amin\'ny fanafarana M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Raha hita, tehirizo ny sanda \"x-tvg-url\" na \"url-tvg\" masontsivana ao \"#EXTM3U\" Didy lohatenin\'ny rakitra</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Raha hita, tehirizo ny sanda \"x-tvg-url\" masontsivana ao \"#EXTM3U\" Tondro lohatenin\'ny rakitra</string>
   <string name="pref_parse_list_in_xmltv_url_title">Mandikà lisitra voasaraka amin\'ny token ao anatin\'ny XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Mandikà ny sanda ao anaty \"Fanafarana XMLTV EPG URL\" Dika. Ampidiro aloha ny miasa voalohany URL ao anaty lisitra.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Mandikà ny sanda ao anaty \"Fanafarana XMLTV EPG URL\" resadresaka</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Ampidiro daholo URL Sanda ao anaty lisitra misaraka amin\'ny token</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Afangaro ny EPG Angon-drakitra avy amin\'ny loharano rehetra</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Ampidiro ny voalohany miasa URL ao anaty lisitra</string>

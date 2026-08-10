@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Predvolené nastavenie XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Počiatočná hodnota v \"Import XMLTV EPG URL\" dialóg.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Automatická aktualizácia \"Predvolené nastavenie XMLTV EPG URL\" z importovaných M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ak sa nájde, uložte hodnotu \"x-tvg-url\" alebo \"url-tvg\" parameter v \"#EXTM3U\" smernica pre hlavičku súboru</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ak sa nájde, uložte hodnotu \"x-tvg-url\" parameter v \"#EXTM3U\" smernica pre hlavičku súboru</string>
   <string name="pref_parse_list_in_xmltv_url_title">Analyzovať zoznam oddelený oddeličmi v XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analyzovať hodnotu v \"Import XMLTV EPG URL\" dialógové okno. Importovať prvý pracovný URL v zozname.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analyzovať hodnotu v \"Import XMLTV EPG URL\" dialóg</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Načítať všetko URL hodnoty v zozname oddelenom oddeľovačmi</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Zmiešajte EPG údaje zo všetkých zdrojov</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Načítajte prvý pracovný súbor URL v zozname</string>

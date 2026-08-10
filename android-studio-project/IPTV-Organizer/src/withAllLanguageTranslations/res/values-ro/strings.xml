@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Implicit XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valoarea inițială în \"Import XMLTV EPG URL\" dialog.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Actualizare automată \"Implicit XMLTV EPG URL\" din import M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Dacă se găsește, salvați valoarea lui \"x-tvg-url\" sau \"url-tvg\" parametrul din \"#EXTM3U\" directivă de antet de fișier</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Dacă se găsește, salvați valoarea lui \"x-tvg-url\" parametrul din \"#EXTM3U\" directivă de antet de fișier</string>
   <string name="pref_parse_list_in_xmltv_url_title">Analizează lista separată prin tokeni în XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analizează valoarea din \"Import XMLTV EPG URL\" fereastră de dialog. Importați prima versiune funcțională URL în listă.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analizează valoarea din \"Import XMLTV EPG URL\" dialog</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Importă tot URL valori într-o listă separată prin tokenuri</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Amestecați EPG date din toate sursele</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Importați primul fișier de lucru URL în listă</string>

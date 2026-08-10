@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Алгачкы XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Киришүүчү баалуулук \"Импорт XMLTV EPG URL\" диалог.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Автоматтык түрдө жаңыртуу \"Алгачкы XMLTV EPG URL\" импорттолгондон M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Эгер табылса, маанисин сактаңыз \"x-tvg-url\" же \"url-tvg\" параметр ичинде \"#EXTM3U\" файлдын башындагы директива</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Эгер табылса, маанисин сактаңыз \"x-tvg-url\" параметр ичинде \"#EXTM3U\" файлдын башындагы директива</string>
   <string name="pref_parse_list_in_xmltv_url_title">Токендер менен бөлүнгөн тизмени иштетүү XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Маанисин ичинде талдоо \"Импорт XMLTV EPG URL\" диалог. Биринчи иштөөнү импорттоо URL тизмеде.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Маанисин иштетүү \"Импорт XMLTV EPG URL\" диалог</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Баарын импорттоо URL Токендер менен бөлүнгөн тизмедеги маанилер</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Бириктириңиз EPG бардык булактардан алынган маалыматтар</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Биринчи иштөөчүсүн импорттоңуз URL тизмеде</string>

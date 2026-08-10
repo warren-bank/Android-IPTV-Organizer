@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Por defecto XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Valor inicial en \"Importar XMLTV EPG URL\" diálogo.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Actualizar automaticamente \"Por defecto XMLTV EPG URL\" de importado M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Se se atopa, garda o valou de \"x-tvg-url\" or \"url-tvg\" parámetro en \"#EXTM3U\" directiva de encabezado de ficheiro</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Se se atopa, garda o valor de \"x-tvg-url\" parámetro en \"#EXTM3U\" directiva de encabezado de ficheiro</string>
   <string name="pref_parse_list_in_xmltv_url_title">Analizar lista separada por tokens en XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analizar valor en \"Importar XMLTV EPG URL\" diálogo. Importar o primeiro traballo URL na lista.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Analizar valor en \"Importar XMLTV EPG URL\" diálogo</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Importar todo URL valores nunha lista separada por tokens</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Combina o EPG datos de todas as fontes</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Importar o primeiro traballo URL na lista</string>

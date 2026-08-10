@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Parazgjedhje XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Vlera fillestare në \"Importo XMLTV EPG URL\" dialog.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Përditëso automatikisht \"Parazgjedhje XMLTV EPG URL\" nga i importuar M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Nëse gjendet, ruaj vlerën e \"x-tvg-url\" ose \"url-tvg\" parametër në \"#EXTM3U\" Direktiva e kokës së skedarit</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Nëse gjendet, ruaj vlerën e \"x-tvg-url\" parametër në \"#EXTM3U\" Direktiva e kokës së skedarit</string>
   <string name="pref_parse_list_in_xmltv_url_title">Përpunoni listën e ndarë me tokenë në XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Përpunoni vlerën në \"Importo XMLTV EPG URL\" Dialog. Importo punën e parë URL në listë.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Përpunoni vlerën në \"Importo XMLTV EPG URL\" dialog</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Importo të gjitha URL vlerat në një listë të ndarë me tokenë</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Kombino EPG të dhëna nga të gjitha burimet</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Importo punën e parë URL në listë</string>

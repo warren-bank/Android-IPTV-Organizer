@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">پیش‌فرض XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">مقدار اولیه در \"واردات XMLTV EPG URL\" گفتگو.</string>
   <string name="pref_auto_update_default_xmltv_url_title">به‌روزرسانی خودکار \"پیش‌فرض XMLTV EPG URL\" وارداتی M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >در صورت یافتن، مقدار را ذخیره کنید \"x-tvg-url\" یا \"url-tvg\" پارامتر در \"#EXTM3U\" دستور سرآیند فایل</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >در صورت یافتن، مقدار را ذخیره کنید \"x-tvg-url\" پارامتر در \"#EXTM3U\" دستور سربرگ فایل</string>
   <string name="pref_parse_list_in_xmltv_url_title">فهرست جداشده با توکن را در XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >مقدار را در پارس کنید \"واردات XMLTV EPG URL\" گفتگو. وارد کردن اول کاری URL در فهرست.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >مقدار را در پارس کنید \"وارد کردن XMLTV EPG URL\" گفتگو</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">وارد کردن همه URL مقادیر در لیست جداشده با توکن</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >ترکیب کنید EPG داده‌ها از تمام منابع</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">اولین ورژن را وارد کنید URL در فهرست</string>

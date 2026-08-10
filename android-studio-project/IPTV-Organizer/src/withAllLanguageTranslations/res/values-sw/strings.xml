@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Kawaida XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Thamani ya awali katika \"Agiza XMLTV EPG URL\" mazungumzo.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Sasisha kiotomatiki \"Kawaida XMLTV EPG URL\" kutoka kwa uagizaji M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ikipatikana, hifadhi thamani ya \"x-tvg-url\" au \"url-tvg\" kigezo ndani \"#EXTM3U\" Maelekezo ya kichwa cha faili</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Ikipatikana, hifadhi thamani ya \"x-tvg-url\" Kigezo ndani \"#EXTM3U\" amri ya kichwa cha faili</string>
   <string name="pref_parse_list_in_xmltv_url_title">Changanua orodha iliyotenganishwa na tokeni katika XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Changanua thamani katika \"Agiza XMLTV EPG URL\" Dialogi. Agiza kazi ya kwanza. URL katika orodha.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Changanua thamani katika \"Agiza XMLTV EPG URL\" mazungumzo</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Ingiza yote URL Thamani katika orodha iliyotenganishwa na alama za tokeni</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Changanya EPG Takwimu kutoka vyanzo vyote</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Agiza kazi ya kwanza URL katika orodha</string>

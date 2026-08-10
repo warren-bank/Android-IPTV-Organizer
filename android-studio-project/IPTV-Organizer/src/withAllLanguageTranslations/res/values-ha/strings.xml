@@ -63,9 +63,9 @@
   <string name="pref_default_xmltv_url_title">Zaɓi na asali XMLTV EPG URL</string>
   <string name="pref_default_xmltv_url_summary">Kimar farko a cikin \"Shigo XMLTV EPG URL\" tattaunawa.</string>
   <string name="pref_auto_update_default_xmltv_url_title">Sabunta ta atomatik \"Tsoho XMLTV EPG URL\" daga shigo da kaya M3U</string>
-  <string name="pref_auto_update_default_xmltv_url_summary_on" >Idan an sami, ajiye ƙimar \"x-tvg-url\" ko \"url-tvg\" ma\'auni a ciki \"#EXTM3U\" umarnin taken fayil</string>
+  <string name="pref_auto_update_default_xmltv_url_summary_on" >Idan an sami, ajiye ƙimar \"x-tvg-url\" ma\'auni a ciki \"#EXTM3U\" umarnin taken fayil</string>
   <string name="pref_parse_list_in_xmltv_url_title">Fassar jerin abubuwa da aka raba da alamomi a XMLTV EPG URL</string>
-  <string name="pref_parse_list_in_xmltv_url_summary_on" >Nazarin ƙima a \"Shigo da XMLTV EPG URL\" Dialog. Shigo da aiki na farko URL a cikin jerin.</string>
+  <string name="pref_parse_list_in_xmltv_url_summary_on" >Nazarin ƙima a \"Shigo XMLTV EPG URL\" tattaunawa</string>
   <string name="pref_import_all_list_values_in_xmltv_url_title">Shigo da duka URL ƙimomi a cikin jerin da aka raba da alamomin token</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_on" >Haɗa EPG Bayanan daga duk majiyoyi</string>
   <string name="pref_import_all_list_values_in_xmltv_url_summary_off">Shigo da aikin farko URL a cikin jerin</string>
