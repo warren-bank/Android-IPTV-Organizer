@@ -387,9 +387,7 @@ __Import GZIP-compressed M3U (IPTV channels)__
      ```json
      [
        ".gz",
-       ".m3u.gz",
-       ".GZ",
-       ".M3U.GZ"
+       ".GZ"
      ]
      ```
 
@@ -441,11 +439,7 @@ __Import GZIP-compressed XMLTV (EPG)__
      ```json
      [
        ".gz",
-       ".xml.gz",
-       ".xmltv.gz",
-       ".GZ",
-       ".XML.GZ",
-       ".XMLTV.GZ"
+       ".GZ"
      ]
      ```
 

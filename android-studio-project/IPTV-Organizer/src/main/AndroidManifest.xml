@@ -74,9 +74,7 @@
         <data android:pathPattern=".*\\.M3U"/>
 
         <data android:pathPattern=".*\\.gz"/>
-        <data android:pathPattern=".*\\.m3u.gz"/>
         <data android:pathPattern=".*\\.GZ"/>
-        <data android:pathPattern=".*\\.M3U.GZ"/>
       </intent-filter>
     </activity>
 
@@ -120,11 +118,7 @@
         <data android:pathPattern=".*\\.XMLTV"/>
 
         <data android:pathPattern=".*\\.gz"/>
-        <data android:pathPattern=".*\\.xml.gz"/>
-        <data android:pathPattern=".*\\.xmltv.gz"/>
         <data android:pathPattern=".*\\.GZ"/>
-        <data android:pathPattern=".*\\.XML.GZ"/>
-        <data android:pathPattern=".*\\.XMLTV.GZ"/>
       </intent-filter>
     </activity>
 
