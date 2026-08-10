@@ -197,7 +197,7 @@ Android app that organizes IPTV channel and EPG information.
          %3$s/xmltv.php?username=%1$s&password=%2$s
          ```
   1. Automatically update "Default XMLTV EPG URL" from imported M3U
-     - when `true`: If found, save value of `x-tvg-url` or `url-tvg` parameter in `#EXTM3U` file header directive
+     - when `true`: If found, save value of `x-tvg-url` parameter in `#EXTM3U` file header directive
      - when `false`: Disabled
      - example:
        * first line of M3U (IPTV channels) data:
@@ -206,7 +206,7 @@ Android app that organizes IPTV channel and EPG information.
          ```
      - default: `true`
   1. Parse token separated list in XMLTV EPG URL
-     - when `true`: Parse value in "Import XMLTV EPG URL" dialog. Import first working URL in list.
+     - when `true`: Parse value in "Import XMLTV EPG URL" dialog
      - when `false`: Disabled
      - token:
        * this implementation
