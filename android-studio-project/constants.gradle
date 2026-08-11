@@ -1,7 +1,7 @@
 project.ext {
     applicationId      = 'com.github.warren_bank.iptv_organizer'
-    releaseVersionCode = Integer.parseInt("003050219", 10)  //Integer.MAX_VALUE == 2147483647
-    releaseVersion     = '003.05.02-19API'
+    releaseVersionCode = Integer.parseInt("003060019", 10)  //Integer.MAX_VALUE == 2147483647
+    releaseVersion     = '003.06.00-19API'
     javaVersion        = JavaVersion.VERSION_1_8
     minSdkVersion      = 19
     targetSdkVersion   = 35
