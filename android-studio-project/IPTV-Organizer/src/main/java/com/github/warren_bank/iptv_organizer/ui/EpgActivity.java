@@ -9,6 +9,7 @@ import com.github.warren_bank.iptv_organizer.ui.MainSearchChannelsActivity;
 import com.github.warren_bank.iptv_organizer.ui.SettingsActivity;
 import com.github.warren_bank.iptv_organizer.ui.dialog.DataProgressDialog;
 import com.github.warren_bank.iptv_organizer.ui.dialog.SavedSearchKeywordsListDialog;
+import com.github.warren_bank.iptv_organizer.utils.DateUtils;
 import com.github.warren_bank.iptv_organizer.utils.DbUtils;
 import com.github.warren_bank.iptv_organizer.utils.ImportUtils;
 import com.github.warren_bank.iptv_organizer.utils.SettingsUtils;
@@ -475,27 +476,51 @@ public class EpgActivity extends AppCompatActivity {
 
         EPGChannel epgChannel = epgData.getChannel(channelPosition);
 
-        String channelName  = (epgChannel != null) ? epgChannel.getName() : null;
-        String programTitle = epgEvent.getTitle();
-        String programDescr = epgEvent.getDescription();
+        String   channelName    = (epgChannel != null) ? epgChannel.getName() : null;
+        String   programTitle   = epgEvent.getTitle();
+        String   programDescr   = epgEvent.getDescription();
+        long     programTsStart = epgEvent.hasStart() ? epgEvent.getStart() : -1L;
+        long     programTsEnd   = epgEvent.hasEnd()   ? epgEvent.getEnd()   : -1L;
+        String[] programTsRange = DateUtils.formatTimestampRange(programTsStart, programTsEnd, null);
 
         if (TextUtils.isEmpty(channelName))  channelName  = null;
         if (TextUtils.isEmpty(programTitle)) programTitle = null;
         if (TextUtils.isEmpty(programDescr)) programDescr = null;
 
-        StringBuilder message = new StringBuilder();
-        if (programTitle != null)
-          message.append(programTitle);
-        if ((programTitle != null) && (programDescr != null))
-          message.append("\n\n");
-        if (programDescr != null)
-          message.append(programDescr);
+        StringBuffer programTsBuf = new StringBuffer();
+        if (programTsRange[0] != null) {
+          programTsBuf.append(programTsRange[0]);
 
-        if (message.length() <= 0) return;
+          if (programTsRange[1] != null) {
+            programTsBuf.append(" -");
+
+            programTsBuf.append(
+              programTsRange[2].startsWith("yyyy")
+                ? "\n"
+                : " "
+            );
+            programTsBuf.append(programTsRange[1]);
+          }
+        }
+        String programTs = (programTsBuf.length() == 0)
+          ? null
+          : programTsBuf.toString();
+
+        ArrayList<String> messageList = new ArrayList<String>();
+        if (programTitle != null)
+          messageList.add(programTitle);
+        if (programTs != null)
+          messageList.add(programTs);
+        if (programDescr != null)
+          messageList.add(programDescr);
+
+        if (messageList.isEmpty()) return;
+
+        String message = TextUtils.join("\n\n", messageList);
 
         new AlertDialog.Builder(EpgActivity.this)
           .setTitle(channelName)
-          .setMessage(message.toString())
+          .setMessage(message)
           .setPositiveButton(R.string.ok, null)
           .show();
       }

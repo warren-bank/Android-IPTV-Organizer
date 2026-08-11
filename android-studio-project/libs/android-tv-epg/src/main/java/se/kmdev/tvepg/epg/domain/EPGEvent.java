@@ -7,23 +7,32 @@ import java.util.Calendar;
  */
 public class EPGEvent {
 
+    public static long UNDEFINED_TIMESTAMP = -1L;
+
+    private static final long MILLISECONDS_PER_YEAR  = 31_536_000_000L;
+    private static final long INDETERMINATE_END_TIME = System.currentTimeMillis() + MILLISECONDS_PER_YEAR;
+
     private long start;
     private long end;
     private String title;
     private String description;
 
     public EPGEvent(long start, long end, String title, String description) {
-        this.start = start;
-        this.end = end;
-        this.title = title;
-        this.description = description;
+        setStart(start);
+        setEnd(end);
+        setTitle(title);
+        setDescription(description);
     }
 
     public void setStart(long start) {
+        if (start < 0L) start = UNDEFINED_TIMESTAMP;
+
         this.start = start;
     }
 
     public void setEnd(long end) {
+        if (end < 0L) end = UNDEFINED_TIMESTAMP;
+
         this.end = end;
     }
 
@@ -35,12 +44,24 @@ public class EPGEvent {
         this.description = description;
     }
 
+    public boolean hasStart() {
+        return (start != UNDEFINED_TIMESTAMP);
+    }
+
+    public boolean hasEnd() {
+        return (end != UNDEFINED_TIMESTAMP);
+    }
+
     public long getStart() {
-        return start;
+        return hasStart()
+            ? start
+            : 0L;
     }
 
     public long getEnd() {
-        return end;
+        return hasEnd()
+            ? end
+            : INDETERMINATE_END_TIME;
     }
 
     public String getTitle() {

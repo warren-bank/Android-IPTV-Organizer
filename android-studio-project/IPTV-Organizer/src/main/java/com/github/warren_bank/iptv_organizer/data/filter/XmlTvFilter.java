@@ -159,6 +159,6 @@ public class XmlTvFilter {
 
   public boolean passesXmlTvValidator(EPGEvent program) {
     // required fields: start, title
-    return ((program != null) && (program.getStart() >= 0) && !TextUtils.isEmpty(program.getTitle()));
+    return ((program != null) && program.hasStart() && !TextUtils.isEmpty(program.getTitle()));
   }
 }

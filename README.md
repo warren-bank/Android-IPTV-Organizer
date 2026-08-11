@@ -47,6 +47,8 @@ Android app that organizes IPTV channel and EPG information.
       - on program names to open a modal dialog that displays additional information about the selected program:
         * channel name
         * program title
+        * program start time
+        * program stop time (if available)
         * program description (if available)
 
 #### Search Keywords

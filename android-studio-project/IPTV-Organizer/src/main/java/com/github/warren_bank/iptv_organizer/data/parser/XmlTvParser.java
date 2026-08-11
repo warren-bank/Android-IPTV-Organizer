@@ -22,8 +22,6 @@ import java.util.Map;
 public class XmlTvParser {
   // Standard XMLTV date format: 20260716171500 +0000
   private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss Z", Locale.US);
-  private static final long MILLISECONDS_PER_YEAR  = 31_536_000_000L;
-  private static final long INDETERMINATE_END_TIME = System.currentTimeMillis() + MILLISECONDS_PER_YEAR;
 
   private static long parseDateFormat(String value) {
     try {
@@ -60,8 +58,8 @@ public class XmlTvParser {
     String currentDescription = null;
     boolean currentTitleIsPreferredLang = false;
     boolean currentDescriptionIsPreferredLang = false;
-    long startTime = 0;
-    long endTime = 0;
+    long startTime = -1L;
+    long endTime = -1L;
 
     while (eventType != XmlPullParser.END_DOCUMENT) {
       String tagName = parser.getName();
@@ -87,8 +85,6 @@ public class XmlTvParser {
             currentChannelId = parser.getAttributeValue(null, "channel");
             startTime = XmlTvParser.parseDateFormat(parser.getAttributeValue(null, "start"));
             endTime   = XmlTvParser.parseDateFormat(parser.getAttributeValue(null, "stop"));
-
-            if (endTime == -1L) endTime = INDETERMINATE_END_TIME;
           } else if ("title".equals(tagName) && currentChannelId != null) {
             if ((preferredLang != null) && !currentTitleIsPreferredLang && preferredLang.equals(parser.getAttributeValue(null, "lang"))) {
               currentTitle = null;
